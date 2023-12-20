@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::ExodusHeaderInfo类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classlibMesh_1_1ExodusHeaderInfo-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::ExodusHeaderInfo类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class is used as both an external data structure for passing around Exodus file header information, and for storing information internally in <a class="el" href="classlibMesh_1_1ExodusII__IO__Helper.html" title="This is the ExodusII_IO_Helper class. ">ExodusII_IO_Helper</a>.  
+ <a href="classlibMesh_1_1ExodusHeaderInfo.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a74a55af818883ec5388d3b024870b12d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#a74a55af818883ec5388d3b024870b12d">ExodusHeaderInfo</a> ()=default</td></tr>
+<tr class="separator:a74a55af818883ec5388d3b024870b12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990cddb20aa8cc5cf82246a5b0154faf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#a990cddb20aa8cc5cf82246a5b0154faf">ExodusHeaderInfo</a> (<a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a990cddb20aa8cc5cf82246a5b0154faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8149c7ba720864a2f35c60676c73592d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#a8149c7ba720864a2f35c60676c73592d">ExodusHeaderInfo</a> (const <a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a> &amp;)=default</td></tr>
+<tr class="separator:a8149c7ba720864a2f35c60676c73592d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15f3158ee25b31620e21da02f5e8ed6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#ac15f3158ee25b31620e21da02f5e8ed6">operator=</a> (const <a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a> &amp;)=default</td></tr>
+<tr class="separator:ac15f3158ee25b31620e21da02f5e8ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2357ecd098dbb27e6a0d56043cbb716"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#ad2357ecd098dbb27e6a0d56043cbb716">operator=</a> (<a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:ad2357ecd098dbb27e6a0d56043cbb716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42353a781c2ff62c7845c97545ea0a1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#a42353a781c2ff62c7845c97545ea0a1b">~ExodusHeaderInfo</a> ()=default</td></tr>
+<tr class="separator:a42353a781c2ff62c7845c97545ea0a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0ba6f1ca55fc3fe937c87dc4fe3ec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#afb0ba6f1ca55fc3fe937c87dc4fe3ec5">broadcast</a> (const Parallel::Communicator &amp;comm)</td></tr>
+<tr class="memdesc:afb0ba6f1ca55fc3fe937c87dc4fe3ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts data from processor 0 to other procs using the provided Communicator.  <a href="#afb0ba6f1ca55fc3fe937c87dc4fe3ec5">更多...</a><br/></td></tr>
+<tr class="separator:afb0ba6f1ca55fc3fe937c87dc4fe3ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:afd98121f34579703a3b886a84d292225"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#afd98121f34579703a3b886a84d292225">title</a></td></tr>
+<tr class="separator:afd98121f34579703a3b886a84d292225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50407fce74db023968d9f9ee9f65908b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#a50407fce74db023968d9f9ee9f65908b">num_dim</a></td></tr>
+<tr class="separator:a50407fce74db023968d9f9ee9f65908b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a3a51d5235562116e0ef737c79368b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#aa9a3a51d5235562116e0ef737c79368b">num_nodes</a></td></tr>
+<tr class="separator:aa9a3a51d5235562116e0ef737c79368b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53cc651c2ca5a8b48a8bac3922deea4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#ab53cc651c2ca5a8b48a8bac3922deea4">num_elem</a></td></tr>
+<tr class="separator:ab53cc651c2ca5a8b48a8bac3922deea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae357b56d66d3e6535dfe393749b3d09b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#ae357b56d66d3e6535dfe393749b3d09b">num_elem_blk</a></td></tr>
+<tr class="separator:ae357b56d66d3e6535dfe393749b3d09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e285ca8e0cacc6d1d1605c162d64c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#a53e285ca8e0cacc6d1d1605c162d64c7">num_node_sets</a></td></tr>
+<tr class="separator:a53e285ca8e0cacc6d1d1605c162d64c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de21690a0fb5538eafa6b4e755c5b44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#a3de21690a0fb5538eafa6b4e755c5b44">num_side_sets</a></td></tr>
+<tr class="separator:a3de21690a0fb5538eafa6b4e755c5b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cf0c85b074e6f50c44e6f4e5758767"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#af1cf0c85b074e6f50c44e6f4e5758767">num_elem_sets</a></td></tr>
+<tr class="separator:af1cf0c85b074e6f50c44e6f4e5758767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a3578a7327dc5c66f2e1f4705bae7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#a83a3578a7327dc5c66f2e1f4705bae7e">num_edge_blk</a></td></tr>
+<tr class="separator:a83a3578a7327dc5c66f2e1f4705bae7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dca11781b649320115bdd21df9bc52d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html#a3dca11781b649320115bdd21df9bc52d">num_edge</a></td></tr>
+<tr class="separator:a3dca11781b649320115bdd21df9bc52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This class is used as both an external data structure for passing around Exodus file header information, and for storing information internally in <a class="el" href="classlibMesh_1_1ExodusII__IO__Helper.html" title="This is the ExodusII_IO_Helper class. ">ExodusII_IO_Helper</a>. </p>
+<p>It can't really be defined in either of those existing headers, so it has its own header... </p>
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00037">37</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a74a55af818883ec5388d3b024870b12d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ExodusHeaderInfo::ExodusHeaderInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a990cddb20aa8cc5cf82246a5b0154faf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ExodusHeaderInfo::ExodusHeaderInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8149c7ba720864a2f35c60676c73592d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ExodusHeaderInfo::ExodusHeaderInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42353a781c2ff62c7845c97545ea0a1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ExodusHeaderInfo::~ExodusHeaderInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="afb0ba6f1ca55fc3fe937c87dc4fe3ec5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::ExodusHeaderInfo::broadcast </td>
+          <td>(</td>
+          <td class="paramtype">const Parallel::Communicator &amp;&#160;</td>
+          <td class="paramname"><em>comm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Broadcasts data from processor 0 to other procs using the provided Communicator. </p>
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00052">52</a> 行定义.</p>
+
+<p>参考 <a class="el" href="exodus__header__info_8h_source.html#l00078">num_dim</a>, <a class="el" href="exodus__header__info_8h_source.html#l00086">num_edge</a>, <a class="el" href="exodus__header__info_8h_source.html#l00085">num_edge_blk</a>, <a class="el" href="exodus__header__info_8h_source.html#l00080">num_elem</a>, <a class="el" href="exodus__header__info_8h_source.html#l00081">num_elem_blk</a>, <a class="el" href="exodus__header__info_8h_source.html#l00084">num_elem_sets</a>, <a class="el" href="exodus__header__info_8h_source.html#l00082">num_node_sets</a>, <a class="el" href="exodus__header__info_8h_source.html#l00083">num_side_sets</a> , 以及 <a class="el" href="exodus__header__info_8h_source.html#l00077">title</a>.</p>
+
+<p>参考自 <a class="el" href="exodusII__io_8C_source.html#l00894">libMesh::ExodusII_IO::read_header()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// broadcast vector&lt;char&gt; separately</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    comm.broadcast(<a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#afd98121f34579703a3b886a84d292225">title</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Pack individual integers into vector</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::vector&lt;int&gt; buffer =</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      {<a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#a50407fce74db023968d9f9ee9f65908b">num_dim</a>, <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#ab53cc651c2ca5a8b48a8bac3922deea4">num_elem</a>, <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#ae357b56d66d3e6535dfe393749b3d09b">num_elem_blk</a>, <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#a53e285ca8e0cacc6d1d1605c162d64c7">num_node_sets</a>,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;       <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#a3de21690a0fb5538eafa6b4e755c5b44">num_side_sets</a>, <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#af1cf0c85b074e6f50c44e6f4e5758767">num_elem_sets</a>, <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#a83a3578a7327dc5c66f2e1f4705bae7e">num_edge_blk</a>, <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#a3dca11781b649320115bdd21df9bc52d">num_edge</a>};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// broadcast integers</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    comm.broadcast(buffer);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// unpack</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ctr = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#a50407fce74db023968d9f9ee9f65908b">num_dim</a>       = buffer[ctr++];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#ab53cc651c2ca5a8b48a8bac3922deea4">num_elem</a>      = buffer[ctr++];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#ae357b56d66d3e6535dfe393749b3d09b">num_elem_blk</a>  = buffer[ctr++];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#a53e285ca8e0cacc6d1d1605c162d64c7">num_node_sets</a> = buffer[ctr++];</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#a3de21690a0fb5538eafa6b4e755c5b44">num_side_sets</a> = buffer[ctr++];</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#af1cf0c85b074e6f50c44e6f4e5758767">num_elem_sets</a> = buffer[ctr++];</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#a83a3578a7327dc5c66f2e1f4705bae7e">num_edge_blk</a>  = buffer[ctr++];</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classlibMesh_1_1ExodusHeaderInfo.html#a3dca11781b649320115bdd21df9bc52d">num_edge</a>      = buffer[ctr++];</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1ExodusHeaderInfo_html_a3dca11781b649320115bdd21df9bc52d"><div class="ttname"><a href="classlibMesh_1_1ExodusHeaderInfo.html#a3dca11781b649320115bdd21df9bc52d">libMesh::ExodusHeaderInfo::num_edge</a></div><div class="ttdeci">int num_edge</div><div class="ttdef"><b>Definition:</b> <a href="exodus__header__info_8h_source.html#l00086">exodus_header_info.h:86</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ExodusHeaderInfo_html_af1cf0c85b074e6f50c44e6f4e5758767"><div class="ttname"><a href="classlibMesh_1_1ExodusHeaderInfo.html#af1cf0c85b074e6f50c44e6f4e5758767">libMesh::ExodusHeaderInfo::num_elem_sets</a></div><div class="ttdeci">int num_elem_sets</div><div class="ttdef"><b>Definition:</b> <a href="exodus__header__info_8h_source.html#l00084">exodus_header_info.h:84</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ExodusHeaderInfo_html_a83a3578a7327dc5c66f2e1f4705bae7e"><div class="ttname"><a href="classlibMesh_1_1ExodusHeaderInfo.html#a83a3578a7327dc5c66f2e1f4705bae7e">libMesh::ExodusHeaderInfo::num_edge_blk</a></div><div class="ttdeci">int num_edge_blk</div><div class="ttdef"><b>Definition:</b> <a href="exodus__header__info_8h_source.html#l00085">exodus_header_info.h:85</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ExodusHeaderInfo_html_afd98121f34579703a3b886a84d292225"><div class="ttname"><a href="classlibMesh_1_1ExodusHeaderInfo.html#afd98121f34579703a3b886a84d292225">libMesh::ExodusHeaderInfo::title</a></div><div class="ttdeci">std::vector&lt; char &gt; title</div><div class="ttdef"><b>Definition:</b> <a href="exodus__header__info_8h_source.html#l00077">exodus_header_info.h:77</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ExodusHeaderInfo_html_ab53cc651c2ca5a8b48a8bac3922deea4"><div class="ttname"><a href="classlibMesh_1_1ExodusHeaderInfo.html#ab53cc651c2ca5a8b48a8bac3922deea4">libMesh::ExodusHeaderInfo::num_elem</a></div><div class="ttdeci">int num_elem</div><div class="ttdef"><b>Definition:</b> <a href="exodus__header__info_8h_source.html#l00080">exodus_header_info.h:80</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ExodusHeaderInfo_html_a3de21690a0fb5538eafa6b4e755c5b44"><div class="ttname"><a href="classlibMesh_1_1ExodusHeaderInfo.html#a3de21690a0fb5538eafa6b4e755c5b44">libMesh::ExodusHeaderInfo::num_side_sets</a></div><div class="ttdeci">int num_side_sets</div><div class="ttdef"><b>Definition:</b> <a href="exodus__header__info_8h_source.html#l00083">exodus_header_info.h:83</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ExodusHeaderInfo_html_a53e285ca8e0cacc6d1d1605c162d64c7"><div class="ttname"><a href="classlibMesh_1_1ExodusHeaderInfo.html#a53e285ca8e0cacc6d1d1605c162d64c7">libMesh::ExodusHeaderInfo::num_node_sets</a></div><div class="ttdeci">int num_node_sets</div><div class="ttdef"><b>Definition:</b> <a href="exodus__header__info_8h_source.html#l00082">exodus_header_info.h:82</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ExodusHeaderInfo_html_a50407fce74db023968d9f9ee9f65908b"><div class="ttname"><a href="classlibMesh_1_1ExodusHeaderInfo.html#a50407fce74db023968d9f9ee9f65908b">libMesh::ExodusHeaderInfo::num_dim</a></div><div class="ttdeci">int num_dim</div><div class="ttdef"><b>Definition:</b> <a href="exodus__header__info_8h_source.html#l00078">exodus_header_info.h:78</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ExodusHeaderInfo_html_ae357b56d66d3e6535dfe393749b3d09b"><div class="ttname"><a href="classlibMesh_1_1ExodusHeaderInfo.html#ae357b56d66d3e6535dfe393749b3d09b">libMesh::ExodusHeaderInfo::num_elem_blk</a></div><div class="ttdeci">int num_elem_blk</div><div class="ttdef"><b>Definition:</b> <a href="exodus__header__info_8h_source.html#l00081">exodus_header_info.h:81</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac15f3158ee25b31620e21da02f5e8ed6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a>&amp; libMesh::ExodusHeaderInfo::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2357ecd098dbb27e6a0d56043cbb716"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a>&amp; libMesh::ExodusHeaderInfo::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1ExodusHeaderInfo.html">ExodusHeaderInfo</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a50407fce74db023968d9f9ee9f65908b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int libMesh::ExodusHeaderInfo::num_dim</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00078">78</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exodus__header__info_8h_source.html#l00052">broadcast()</a> , 以及 <a class="el" href="exodusII__io__helper_8C_source.html#l00697">libMesh::ExodusII_IO_Helper::read_header()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3dca11781b649320115bdd21df9bc52d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int libMesh::ExodusHeaderInfo::num_edge</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00086">86</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exodus__header__info_8h_source.html#l00052">broadcast()</a> , 以及 <a class="el" href="exodusII__io__helper_8C_source.html#l00697">libMesh::ExodusII_IO_Helper::read_header()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83a3578a7327dc5c66f2e1f4705bae7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int libMesh::ExodusHeaderInfo::num_edge_blk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00085">85</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exodus__header__info_8h_source.html#l00052">broadcast()</a> , 以及 <a class="el" href="exodusII__io__helper_8C_source.html#l00697">libMesh::ExodusII_IO_Helper::read_header()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab53cc651c2ca5a8b48a8bac3922deea4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int libMesh::ExodusHeaderInfo::num_elem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00080">80</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exodus__header__info_8h_source.html#l00052">broadcast()</a> , 以及 <a class="el" href="exodusII__io__helper_8C_source.html#l00697">libMesh::ExodusII_IO_Helper::read_header()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae357b56d66d3e6535dfe393749b3d09b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int libMesh::ExodusHeaderInfo::num_elem_blk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00081">81</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exodus__header__info_8h_source.html#l00052">broadcast()</a> , 以及 <a class="el" href="exodusII__io__helper_8C_source.html#l00697">libMesh::ExodusII_IO_Helper::read_header()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af1cf0c85b074e6f50c44e6f4e5758767"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int libMesh::ExodusHeaderInfo::num_elem_sets</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00084">84</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exodus__header__info_8h_source.html#l00052">broadcast()</a> , 以及 <a class="el" href="exodusII__io__helper_8C_source.html#l00697">libMesh::ExodusII_IO_Helper::read_header()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a53e285ca8e0cacc6d1d1605c162d64c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int libMesh::ExodusHeaderInfo::num_node_sets</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00082">82</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exodus__header__info_8h_source.html#l00052">broadcast()</a> , 以及 <a class="el" href="exodusII__io__helper_8C_source.html#l00697">libMesh::ExodusII_IO_Helper::read_header()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9a3a51d5235562116e0ef737c79368b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int libMesh::ExodusHeaderInfo::num_nodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00079">79</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exodusII__io__helper_8C_source.html#l00697">libMesh::ExodusII_IO_Helper::read_header()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3de21690a0fb5538eafa6b4e755c5b44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int libMesh::ExodusHeaderInfo::num_side_sets</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00083">83</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exodus__header__info_8h_source.html#l00052">broadcast()</a> , 以及 <a class="el" href="exodusII__io__helper_8C_source.html#l00697">libMesh::ExodusII_IO_Helper::read_header()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd98121f34579703a3b886a84d292225"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;char&gt; libMesh::ExodusHeaderInfo::title</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a> 第 <a class="el" href="exodus__header__info_8h_source.html#l00077">77</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exodus__header__info_8h_source.html#l00052">broadcast()</a> , 以及 <a class="el" href="exodusII__io__helper_8C_source.html#l00697">libMesh::ExodusII_IO_Helper::read_header()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/mesh/<a class="el" href="exodus__header__info_8h_source.html">exodus_header_info.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:33 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

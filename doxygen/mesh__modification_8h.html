@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/mesh/mesh_modification.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_f8c4e882537aef67e047d37e5f9a7fb2.html">mesh</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">mesh_modification.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="mesh__modification_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FunctionBase.html">libMesh::FunctionBase&lt; Output &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FunctionBase是一个函数对象的基类，可以在某一点（可选地包括时间）进行评估。  <a href="classlibMesh_1_1FunctionBase.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespacelibMesh"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh.html">libMesh</a></td></tr>
+<tr class="memdesc:namespacelibMesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code><a class="el" href="namespacelibMesh.html" title="The libMesh namespace provides an interface to certain functionality in the library. ">libMesh</a></code> namespace provides an interface to certain functionality in the library. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacelibMesh_1_1MeshTools"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools.html">libMesh::MeshTools</a></td></tr>
+<tr class="memdesc:namespacelibMesh_1_1MeshTools"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespacelibMesh_1_1Utility.html">Utility</a> functions for operations on a <code><a class="el" href="classlibMesh_1_1Mesh.html" title="The Mesh class is a thin wrapper, around the ReplicatedMesh class by default. ">Mesh</a></code> object. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacelibMesh_1_1MeshTools_1_1Modification"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html">libMesh::MeshTools::Modification</a></td></tr>
+<tr class="memdesc:namespacelibMesh_1_1MeshTools_1_1Modification"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools for <code><a class="el" href="classlibMesh_1_1Mesh.html" title="The Mesh class is a thin wrapper, around the ReplicatedMesh class by default. ">Mesh</a></code> modification. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ab3c34bd675ddf6c6675daa7fcc96d7cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#ab3c34bd675ddf6c6675daa7fcc96d7cf">libMesh::MeshTools::Modification::distort</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>, const Real factor, const bool perturb_boundary=false)</td></tr>
+<tr class="memdesc:ab3c34bd675ddf6c6675daa7fcc96d7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomly perturb the nodal locations.  <a href="#ab3c34bd675ddf6c6675daa7fcc96d7cf">更多...</a><br/></td></tr>
+<tr class="separator:ab3c34bd675ddf6c6675daa7fcc96d7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88b1bb86002656c58fec4773ded37eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#ae88b1bb86002656c58fec4773ded37eb">libMesh::MeshTools::Modification::permute_elements</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>)</td></tr>
+<tr class="memdesc:ae88b1bb86002656c58fec4773ded37eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomly permute the nodal ordering of each element (without twisting the element mapping).  <a href="#ae88b1bb86002656c58fec4773ded37eb">更多...</a><br/></td></tr>
+<tr class="separator:ae88b1bb86002656c58fec4773ded37eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9ac0e7e1bf7780bfe5af0db582e03d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#abf9ac0e7e1bf7780bfe5af0db582e03d">libMesh::MeshTools::Modification::orient_elements</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>)</td></tr>
+<tr class="memdesc:abf9ac0e7e1bf7780bfe5af0db582e03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redo the nodal ordering of each element as necessary to give the element Jacobian a positive orientation.  <a href="#abf9ac0e7e1bf7780bfe5af0db582e03d">更多...</a><br/></td></tr>
+<tr class="separator:abf9ac0e7e1bf7780bfe5af0db582e03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb33f8faabadb6dbad5d5cf6c0efd9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#a9bb33f8faabadb6dbad5d5cf6c0efd9f">libMesh::MeshTools::Modification::redistribute</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>, const FunctionBase&lt; Real &gt; &amp;mapfunc)</td></tr>
+<tr class="memdesc:a9bb33f8faabadb6dbad5d5cf6c0efd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deterministically perturb the nodal locations.  <a href="#a9bb33f8faabadb6dbad5d5cf6c0efd9f">更多...</a><br/></td></tr>
+<tr class="separator:a9bb33f8faabadb6dbad5d5cf6c0efd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add16d717dcc51dfd7d2bf671fe8e811b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#add16d717dcc51dfd7d2bf671fe8e811b">libMesh::MeshTools::Modification::translate</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>, const Real xt=0., const Real yt=0., const Real zt=0.)</td></tr>
+<tr class="memdesc:add16d717dcc51dfd7d2bf671fe8e811b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the mesh.  <a href="#add16d717dcc51dfd7d2bf671fe8e811b">更多...</a><br/></td></tr>
+<tr class="separator:add16d717dcc51dfd7d2bf671fe8e811b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa8c039f8798c59c495409e370a4db8"><td class="memItemLeft" align="right" valign="top">RealTensorValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#adaa8c039f8798c59c495409e370a4db8">libMesh::MeshTools::Modification::rotate</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>, const Real phi, const Real theta=0., const Real psi=0.)</td></tr>
+<tr class="memdesc:adaa8c039f8798c59c495409e370a4db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the mesh in the xy plane.  <a href="#adaa8c039f8798c59c495409e370a4db8">更多...</a><br/></td></tr>
+<tr class="separator:adaa8c039f8798c59c495409e370a4db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c03ebd8ce97c6c8aef8e2a05a94a16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#a48c03ebd8ce97c6c8aef8e2a05a94a16">libMesh::MeshTools::Modification::scale</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>, const Real xs, const Real ys=0., const Real zs=0.)</td></tr>
+<tr class="memdesc:a48c03ebd8ce97c6c8aef8e2a05a94a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the mesh.  <a href="#a48c03ebd8ce97c6c8aef8e2a05a94a16">更多...</a><br/></td></tr>
+<tr class="separator:a48c03ebd8ce97c6c8aef8e2a05a94a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249f04550c345984831d08e013155668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#a249f04550c345984831d08e013155668">libMesh::MeshTools::Modification::all_tri</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>)</td></tr>
+<tr class="memdesc:a249f04550c345984831d08e013155668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the 2D quadrilateral elements of a <a class="el" href="classlibMesh_1_1Mesh.html" title="The Mesh class is a thin wrapper, around the ReplicatedMesh class by default. ">Mesh</a> into triangular elements.  <a href="#a249f04550c345984831d08e013155668">更多...</a><br/></td></tr>
+<tr class="separator:a249f04550c345984831d08e013155668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e817d4980341bde2cc3fba486d0d8e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#a2e817d4980341bde2cc3fba486d0d8e6">libMesh::MeshTools::Modification::smooth</a> (MeshBase &amp;, unsigned int, Real)</td></tr>
+<tr class="memdesc:a2e817d4980341bde2cc3fba486d0d8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smooth the mesh with a simple Laplace smoothing algorithm.  <a href="#a2e817d4980341bde2cc3fba486d0d8e6">更多...</a><br/></td></tr>
+<tr class="separator:a2e817d4980341bde2cc3fba486d0d8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ce3f7f69838b3326f9bcabae3f2cd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#a31ce3f7f69838b3326f9bcabae3f2cd6">libMesh::MeshTools::Modification::flatten</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>)</td></tr>
+<tr class="memdesc:a31ce3f7f69838b3326f9bcabae3f2cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all the refinement tree structure of <a class="el" href="classlibMesh_1_1Mesh.html" title="The Mesh class is a thin wrapper, around the ReplicatedMesh class by default. ">Mesh</a>, leaving only the highest-level (most-refined) elements.  <a href="#a31ce3f7f69838b3326f9bcabae3f2cd6">更多...</a><br/></td></tr>
+<tr class="separator:a31ce3f7f69838b3326f9bcabae3f2cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355d0c7c33b55d44e9e77946caadbef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#a355d0c7c33b55d44e9e77946caadbef6">libMesh::MeshTools::Modification::change_boundary_id</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>, const boundary_id_type old_id, const boundary_id_type new_id)</td></tr>
+<tr class="memdesc:a355d0c7c33b55d44e9e77946caadbef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds any boundary ids that are currently old_id, changes them to new_id.  <a href="#a355d0c7c33b55d44e9e77946caadbef6">更多...</a><br/></td></tr>
+<tr class="separator:a355d0c7c33b55d44e9e77946caadbef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30caf6b7a7280e592b7c177ff85b97a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1MeshTools_1_1Modification.html#a30caf6b7a7280e592b7c177ff85b97a0">libMesh::MeshTools::Modification::change_subdomain_id</a> (MeshBase &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>, const subdomain_id_type old_id, const subdomain_id_type new_id)</td></tr>
+<tr class="memdesc:a30caf6b7a7280e592b7c177ff85b97a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds any subdomain ids that are currently old_id, changes them to new_id.  <a href="#a30caf6b7a7280e592b7c177ff85b97a0">更多...</a><br/></td></tr>
+<tr class="separator:a30caf6b7a7280e592b7c177ff85b97a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:06 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

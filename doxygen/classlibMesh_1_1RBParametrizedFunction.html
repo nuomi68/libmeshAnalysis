@@ -1,0 +1,1903 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::RBParametrizedFunction类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classlibMesh_1_1RBParametrizedFunction-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::RBParametrizedFunction类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A simple functor class that provides a RBParameter-dependent function.  
+ <a href="classlibMesh_1_1RBParametrizedFunction.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a941347dec39c2244a4762636baa6e6ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a941347dec39c2244a4762636baa6e6ab">RBParametrizedFunction</a> ()</td></tr>
+<tr class="memdesc:a941347dec39c2244a4762636baa6e6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a941347dec39c2244a4762636baa6e6ab">更多...</a><br/></td></tr>
+<tr class="separator:a941347dec39c2244a4762636baa6e6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72cefda56f12dd198501f10e98e00ae8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a72cefda56f12dd198501f10e98e00ae8">RBParametrizedFunction</a> (<a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:a72cefda56f12dd198501f10e98e00ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special functions.  <a href="#a72cefda56f12dd198501f10e98e00ae8">更多...</a><br/></td></tr>
+<tr class="separator:a72cefda56f12dd198501f10e98e00ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e1dacb934d81fe0f1e76b7a9fb19ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a64e1dacb934d81fe0f1e76b7a9fb19ea">RBParametrizedFunction</a> (const <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a> &amp;)=default</td></tr>
+<tr class="separator:a64e1dacb934d81fe0f1e76b7a9fb19ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691aa1c81ae8a70cf8b74b06316fd252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a691aa1c81ae8a70cf8b74b06316fd252">operator=</a> (const <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a> &amp;)=default</td></tr>
+<tr class="separator:a691aa1c81ae8a70cf8b74b06316fd252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a0a1339577aab0dc513ef63e8d3beb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a05a0a1339577aab0dc513ef63e8d3beb">operator=</a> (<a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a05a0a1339577aab0dc513ef63e8d3beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e4feb041cdc3893a85447154f70e98"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ae5e4feb041cdc3893a85447154f70e98">~RBParametrizedFunction</a> ()</td></tr>
+<tr class="separator:ae5e4feb041cdc3893a85447154f70e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9fb7894b24596f7a68864bfd86eb06b"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ae9fb7894b24596f7a68864bfd86eb06b">get_n_components</a> () const =0</td></tr>
+<tr class="memdesc:ae9fb7894b24596f7a68864bfd86eb06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the number of components in this parametrized function.  <a href="#ae9fb7894b24596f7a68864bfd86eb06b">更多...</a><br/></td></tr>
+<tr class="separator:ae9fb7894b24596f7a68864bfd86eb06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac27b5adfcea86a841f3d79f453fee8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a1ac27b5adfcea86a841f3d79f453fee8">evaluate_comp</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;mu, unsigned int comp, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;xyz, <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> elem_id, unsigned int qp, <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> subdomain_id, const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;xyz_perturb, const std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;phi_i_qp)</td></tr>
+<tr class="memdesc:a1ac27b5adfcea86a841f3d79f453fee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the parametrized function at the specified point for parameter <code>mu</code>.  <a href="#a1ac27b5adfcea86a841f3d79f453fee8">更多...</a><br/></td></tr>
+<tr class="separator:a1ac27b5adfcea86a841f3d79f453fee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c0cd8b493eabafbc9178cdabd0947d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a94c0cd8b493eabafbc9178cdabd0947d">side_evaluate_comp</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;mu, unsigned int comp, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;xyz, <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> elem_id, unsigned int side_index, unsigned int qp, <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> subdomain_id, <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> boundary_id, const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;xyz_perturb, const std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;phi_i_qp)</td></tr>
+<tr class="memdesc:a94c0cd8b493eabafbc9178cdabd0947d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a1ac27b5adfcea86a841f3d79f453fee8" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate_comp()</a> but for element sides.  <a href="#a94c0cd8b493eabafbc9178cdabd0947d">更多...</a><br/></td></tr>
+<tr class="separator:a94c0cd8b493eabafbc9178cdabd0947d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3441a2cb3484859a96cca1a5cda54071"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a3441a2cb3484859a96cca1a5cda54071">node_evaluate_comp</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;mu, unsigned int comp, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;xyz, <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> node_id, <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> boundary_id)</td></tr>
+<tr class="memdesc:a3441a2cb3484859a96cca1a5cda54071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a1ac27b5adfcea86a841f3d79f453fee8" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate_comp()</a> but for element nodes.  <a href="#a3441a2cb3484859a96cca1a5cda54071">更多...</a><br/></td></tr>
+<tr class="separator:a3441a2cb3484859a96cca1a5cda54071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e85ed9383edc4c48d21b8de150804e"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a87e85ed9383edc4c48d21b8de150804e">evaluate</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;mu, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;xyz, <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> elem_id, unsigned int qp, <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> subdomain_id, const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;xyz_perturb, const std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;phi_i_qp)</td></tr>
+<tr class="memdesc:a87e85ed9383edc4c48d21b8de150804e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the parametrized function at the specified point for parameter <code>mu</code>.  <a href="#a87e85ed9383edc4c48d21b8de150804e">更多...</a><br/></td></tr>
+<tr class="separator:a87e85ed9383edc4c48d21b8de150804e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c9b142b3c90ecac208bc858d7f1679"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a71c9b142b3c90ecac208bc858d7f1679">side_evaluate</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;mu, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;xyz, <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> elem_id, unsigned int side_index, unsigned int qp, <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> subdomain_id, <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> boundary_id, const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;xyz_perturb, const std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;phi_i_qp)</td></tr>
+<tr class="memdesc:a71c9b142b3c90ecac208bc858d7f1679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a87e85ed9383edc4c48d21b8de150804e" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate()</a> but for element sides.  <a href="#a71c9b142b3c90ecac208bc858d7f1679">更多...</a><br/></td></tr>
+<tr class="separator:a71c9b142b3c90ecac208bc858d7f1679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ded99b3e19a38c4ea7e23ef5ef8540"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ab7ded99b3e19a38c4ea7e23ef5ef8540">node_evaluate</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;mu, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;xyz, <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> node_id, <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> boundary_id)</td></tr>
+<tr class="memdesc:ab7ded99b3e19a38c4ea7e23ef5ef8540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a87e85ed9383edc4c48d21b8de150804e" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate()</a> but for element nodes.  <a href="#ab7ded99b3e19a38c4ea7e23ef5ef8540">更多...</a><br/></td></tr>
+<tr class="separator:ab7ded99b3e19a38c4ea7e23ef5ef8540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace82c5dc64aec70d5528e9937e96a970"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ace82c5dc64aec70d5528e9937e96a970">vectorized_evaluate</a> (const std::vector&lt; <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &gt; &amp;mus, const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;all_xyz, const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;elem_ids, const std::vector&lt; unsigned int &gt; &amp;qps, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;sbd_ids, const std::vector&lt; std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &amp;all_xyz_perturb, const std::vector&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt;&gt; &amp;phi_i_qp, std::vector&lt; std::vector&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&gt;&gt; &amp;output)</td></tr>
+<tr class="memdesc:ace82c5dc64aec70d5528e9937e96a970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vectorized version of evaluate.  <a href="#ace82c5dc64aec70d5528e9937e96a970">更多...</a><br/></td></tr>
+<tr class="separator:ace82c5dc64aec70d5528e9937e96a970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efc718846cb5c5125b5adbd0f2c3782"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a1efc718846cb5c5125b5adbd0f2c3782">side_vectorized_evaluate</a> (const std::vector&lt; <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &gt; &amp;mus, const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;all_xyz, const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;elem_ids, const std::vector&lt; unsigned int &gt; &amp;side_indices, const std::vector&lt; unsigned int &gt; &amp;qps, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;sbd_ids, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;boundary_ids, const std::vector&lt; std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &amp;all_xyz_perturb, const std::vector&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt;&gt; &amp;phi_i_qp, std::vector&lt; std::vector&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&gt;&gt; &amp;output)</td></tr>
+<tr class="memdesc:a1efc718846cb5c5125b5adbd0f2c3782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ace82c5dc64aec70d5528e9937e96a970" title="Vectorized version of evaluate. ">vectorized_evaluate()</a> but on element sides.  <a href="#a1efc718846cb5c5125b5adbd0f2c3782">更多...</a><br/></td></tr>
+<tr class="separator:a1efc718846cb5c5125b5adbd0f2c3782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef09db509d58c680c142bfdd639ca2e9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#aef09db509d58c680c142bfdd639ca2e9">node_vectorized_evaluate</a> (const std::vector&lt; <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &gt; &amp;mus, const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;all_xyz, const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;node_ids, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;boundary_ids, std::vector&lt; std::vector&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&gt;&gt; &amp;output)</td></tr>
+<tr class="memdesc:aef09db509d58c680c142bfdd639ca2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ace82c5dc64aec70d5528e9937e96a970" title="Vectorized version of evaluate. ">vectorized_evaluate()</a> but on element nodes.  <a href="#aef09db509d58c680c142bfdd639ca2e9">更多...</a><br/></td></tr>
+<tr class="separator:aef09db509d58c680c142bfdd639ca2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed62e14158151a854c7637789ec4df6d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#aed62e14158151a854c7637789ec4df6d">preevaluate_parametrized_function_on_mesh</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;mu, const std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &amp;all_xyz, const std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;sbd_ids, const std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector&lt; std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &gt; &amp;all_xyz_perturb, const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;sys)</td></tr>
+<tr class="memdesc:aed62e14158151a854c7637789ec4df6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the result of vectorized_evaluate.  <a href="#aed62e14158151a854c7637789ec4df6d">更多...</a><br/></td></tr>
+<tr class="separator:aed62e14158151a854c7637789ec4df6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488364aa5df89105b2526b66251ab24a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a488364aa5df89105b2526b66251ab24a">preevaluate_parametrized_function_on_mesh_sides</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;mu, const std::map&lt; std::pair&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;, std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &amp;side_all_xyz, const std::map&lt; std::pair&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;, <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;sbd_ids, const std::map&lt; std::pair&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;, <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;side_boundary_ids, const std::map&lt; std::pair&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;, unsigned int &gt; &amp;side_types, const std::map&lt; std::pair&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;, std::vector&lt; std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &gt; &amp;side_all_xyz_perturb, const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;sys)</td></tr>
+<tr class="memdesc:a488364aa5df89105b2526b66251ab24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#aed62e14158151a854c7637789ec4df6d" title="Store the result of vectorized_evaluate. ">preevaluate_parametrized_function_on_mesh()</a> except for mesh sides.  <a href="#a488364aa5df89105b2526b66251ab24a">更多...</a><br/></td></tr>
+<tr class="separator:a488364aa5df89105b2526b66251ab24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccf44dd61d7794ce03129c76774e03d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a0ccf44dd61d7794ce03129c76774e03d">preevaluate_parametrized_function_on_mesh_nodes</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;mu, const std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;all_xyz, const std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;node_boundary_ids, const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;sys)</td></tr>
+<tr class="memdesc:a0ccf44dd61d7794ce03129c76774e03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#aed62e14158151a854c7637789ec4df6d" title="Store the result of vectorized_evaluate. ">preevaluate_parametrized_function_on_mesh()</a> except for mesh nodes.  <a href="#a0ccf44dd61d7794ce03129c76774e03d">更多...</a><br/></td></tr>
+<tr class="separator:a0ccf44dd61d7794ce03129c76774e03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec98c0ccc4c83f9e20de711dd1926ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a5ec98c0ccc4c83f9e20de711dd1926ca">lookup_preevaluated_value_on_mesh</a> (unsigned int comp, <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> elem_id, unsigned int qp) const </td></tr>
+<tr class="memdesc:a5ec98c0ccc4c83f9e20de711dd1926ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the preevaluate values of the parametrized function for component <code>comp</code>, element <code>elem_id</code>, and quadrature point <code>qp</code>.  <a href="#a5ec98c0ccc4c83f9e20de711dd1926ca">更多...</a><br/></td></tr>
+<tr class="separator:a5ec98c0ccc4c83f9e20de711dd1926ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec368087ac68dee40586ac9002ec0681"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#aec368087ac68dee40586ac9002ec0681">lookup_preevaluated_side_value_on_mesh</a> (unsigned int comp, <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> elem_id, unsigned int side_index, unsigned int qp) const </td></tr>
+<tr class="memdesc:aec368087ac68dee40586ac9002ec0681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the preevaluated values of the parametrized function for component <code>comp</code>, element <code>elem_id</code>, <code>side_index</code>, and quadrature point <code>qp</code>.  <a href="#aec368087ac68dee40586ac9002ec0681">更多...</a><br/></td></tr>
+<tr class="separator:aec368087ac68dee40586ac9002ec0681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a8f07b59786243ef68e0d945623503"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#aa3a8f07b59786243ef68e0d945623503">lookup_preevaluated_node_value_on_mesh</a> (unsigned int comp, <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> node_id) const </td></tr>
+<tr class="memdesc:aa3a8f07b59786243ef68e0d945623503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the preevaluate values of the parametrized function for component <code>comp</code>, node <code>node_id</code>.  <a href="#aa3a8f07b59786243ef68e0d945623503">更多...</a><br/></td></tr>
+<tr class="separator:aa3a8f07b59786243ef68e0d945623503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d041eba5c1597668f2f0a5565b42b78"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a4d041eba5c1597668f2f0a5565b42b78">initialize_lookup_table</a> ()</td></tr>
+<tr class="memdesc:a4d041eba5c1597668f2f0a5565b42b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this parametrized function is defined based on a lookup table then we can call this function to initialize the table.  <a href="#a4d041eba5c1597668f2f0a5565b42b78">更多...</a><br/></td></tr>
+<tr class="separator:a4d041eba5c1597668f2f0a5565b42b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac774cdca6ccc68a244d5ceed4698814a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ac774cdca6ccc68a244d5ceed4698814a">get_parameter_independent_data</a> (const std::string &amp;property_name, <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> sbd_id) const </td></tr>
+<tr class="memdesc:ac774cdca6ccc68a244d5ceed4698814a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value stored in _parameter_independent_data associated with <code>region_name</code> and <code>property_name</code>.  <a href="#ac774cdca6ccc68a244d5ceed4698814a">更多...</a><br/></td></tr>
+<tr class="separator:ac774cdca6ccc68a244d5ceed4698814a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a946a71d8e580a0629b92a95674c13692"><td class="memItemLeft" align="right" valign="top">const std::set<br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a946a71d8e580a0629b92a95674c13692">get_parametrized_function_boundary_ids</a> () const </td></tr>
+<tr class="memdesc:a946a71d8e580a0629b92a95674c13692"><td class="mdescLeft">&#160;</td><td class="mdescRight">For RBParametrizedFunctions defined on element sides or nodes, we get/set the boundary IDs that this parametrized function is defined on.  <a href="#a946a71d8e580a0629b92a95674c13692">更多...</a><br/></td></tr>
+<tr class="separator:a946a71d8e580a0629b92a95674c13692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161c6215e0fb8198399e91b2e6190e2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a161c6215e0fb8198399e91b2e6190e2c">set_parametrized_function_boundary_ids</a> (const std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;boundary_ids, bool is_nodal_boundary)</td></tr>
+<tr class="separator:a161c6215e0fb8198399e91b2e6190e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b48026a2f015c50e7a46c1cab11aa0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ac4b48026a2f015c50e7a46c1cab11aa0">on_mesh_sides</a> () const </td></tr>
+<tr class="separator:ac4b48026a2f015c50e7a46c1cab11aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55eb4c15f8ca3577adef1806bd36cfb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a55eb4c15f8ca3577adef1806bd36cfb4">on_mesh_nodes</a> () const </td></tr>
+<tr class="separator:a55eb4c15f8ca3577adef1806bd36cfb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c74a04fd38b3e9d90c64028ee1630ac"><td class="memItemLeft" align="right" valign="top">virtual std::vector<br class="typebreak"/>
+&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a7c74a04fd38b3e9d90c64028ee1630ac">evaluate_at_observation_points</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;mu, const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;observation_points, const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;elem_ids, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;sbd_ids, const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;sys)</td></tr>
+<tr class="memdesc:a7c74a04fd38b3e9d90c64028ee1630ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the parametrized function for the parameter <code>mu</code> at the set of <code>observation_points</code>.  <a href="#a7c74a04fd38b3e9d90c64028ee1630ac">更多...</a><br/></td></tr>
+<tr class="separator:a7c74a04fd38b3e9d90c64028ee1630ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80296dafac99aae26d17371875be8639"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a80296dafac99aae26d17371875be8639">get_spatial_indices</a> (std::vector&lt; std::vector&lt; unsigned int &gt;&gt; &amp;spatial_indices, const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;elem_ids, const std::vector&lt; unsigned int &gt; &amp;side_indices, const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;node_ids, const std::vector&lt; unsigned int &gt; &amp;qps, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;sbd_ids, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;boundary_ids)</td></tr>
+<tr class="memdesc:a80296dafac99aae26d17371875be8639"><td class="mdescLeft">&#160;</td><td class="mdescRight">In some cases a parametrized function is defined based on array data that we index into based on the spatial data from the mesh (e.g.  <a href="#a80296dafac99aae26d17371875be8639">更多...</a><br/></td></tr>
+<tr class="separator:a80296dafac99aae26d17371875be8639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3cb5d3371edf7d6f64879270a2fa48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a0c3cb5d3371edf7d6f64879270a2fa48">initialize_spatial_indices</a> (const std::vector&lt; std::vector&lt; unsigned int &gt;&gt; &amp;spatial_indices, const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;elem_ids, const std::vector&lt; unsigned int &gt; &amp;side_indices, const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;node_ids, const std::vector&lt; unsigned int &gt; &amp;qps, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;sbd_ids, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;boundary_ids)</td></tr>
+<tr class="memdesc:a0c3cb5d3371edf7d6f64879270a2fa48"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Online stage counterpart of <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a80296dafac99aae26d17371875be8639" title="In some cases a parametrized function is defined based on array data that we index into based on the ...">get_spatial_indices()</a>.  <a href="#a0c3cb5d3371edf7d6f64879270a2fa48">更多...</a><br/></td></tr>
+<tr class="separator:a0c3cb5d3371edf7d6f64879270a2fa48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71beef295d611fca3e2fee88bddff78"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#aa71beef295d611fca3e2fee88bddff78">preevaluate_parametrized_function_cleanup</a> ()</td></tr>
+<tr class="memdesc:aa71beef295d611fca3e2fee88bddff78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual function that performs cleanup after each "preevaluate parametrized function" evaluation.  <a href="#aa71beef295d611fca3e2fee88bddff78">更多...</a><br/></td></tr>
+<tr class="separator:aa71beef295d611fca3e2fee88bddff78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a566eba7815d32b360cc1750881b94677"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
+&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a566eba7815d32b360cc1750881b94677">preevaluated_values</a></td></tr>
+<tr class="memdesc:a566eba7815d32b360cc1750881b94677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for pre-evaluated values.  <a href="#a566eba7815d32b360cc1750881b94677">更多...</a><br/></td></tr>
+<tr class="separator:a566eba7815d32b360cc1750881b94677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af9fd690c321be5595b9db599378759"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector<br class="typebreak"/>
+&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a7af9fd690c321be5595b9db599378759">mesh_to_preevaluated_values_map</a></td></tr>
+<tr class="memdesc:a7af9fd690c321be5595b9db599378759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indexing into preevaluated_values for the case where the preevaluated values were obtained from evaluations at elements/quadrature points on a mesh.  <a href="#a7af9fd690c321be5595b9db599378759">更多...</a><br/></td></tr>
+<tr class="separator:a7af9fd690c321be5595b9db599378759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3520c9504457a414f85a0a9e90aed5c7"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::pair<br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;<br class="typebreak"/>
+, std::vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a3520c9504457a414f85a0a9e90aed5c7">mesh_to_preevaluated_side_values_map</a></td></tr>
+<tr class="memdesc:a3520c9504457a414f85a0a9e90aed5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to the above except this map stores the data on element sides.  <a href="#a3520c9504457a414f85a0a9e90aed5c7">更多...</a><br/></td></tr>
+<tr class="separator:a3520c9504457a414f85a0a9e90aed5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3cabf122dc1274510d485af063daf42"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ab3cabf122dc1274510d485af063daf42">mesh_to_preevaluated_node_values_map</a></td></tr>
+<tr class="memdesc:ab3cabf122dc1274510d485af063daf42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indexing into preevaluated_values for the case where the preevaluated values were obtained from evaluations at elements/quadrature points on a mesh.  <a href="#ab3cabf122dc1274510d485af063daf42">更多...</a><br/></td></tr>
+<tr class="separator:ab3cabf122dc1274510d485af063daf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09e5a970fc5733f42100c14540de6f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ae09e5a970fc5733f42100c14540de6f6">requires_xyz_perturbations</a></td></tr>
+<tr class="memdesc:ae09e5a970fc5733f42100c14540de6f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to indicate whether this parametrized function requires xyz perturbations in order to evaluate function values.  <a href="#ae09e5a970fc5733f42100c14540de6f6">更多...</a><br/></td></tr>
+<tr class="separator:ae09e5a970fc5733f42100c14540de6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1891c87095954aaca084b766b07c6dbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a1891c87095954aaca084b766b07c6dbb">is_lookup_table</a></td></tr>
+<tr class="memdesc:a1891c87095954aaca084b766b07c6dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to indicate if this parametrized function is defined based on a lookup table or not.  <a href="#a1891c87095954aaca084b766b07c6dbb">更多...</a><br/></td></tr>
+<tr class="separator:a1891c87095954aaca084b766b07c6dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02eade35ee9ddd512dcc53aa19d7a6d5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a02eade35ee9ddd512dcc53aa19d7a6d5">lookup_table_param_name</a></td></tr>
+<tr class="memdesc:a02eade35ee9ddd512dcc53aa19d7a6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is a lookup table, then lookup_table_param_name specifies the parameter that is used to index into the lookup table.  <a href="#a02eade35ee9ddd512dcc53aa19d7a6d5">更多...</a><br/></td></tr>
+<tr class="separator:a02eade35ee9ddd512dcc53aa19d7a6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4a029ea6174198f178f1a4cccc076d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a1f4a029ea6174198f178f1a4cccc076d">fd_delta</a></td></tr>
+<tr class="memdesc:a1f4a029ea6174198f178f1a4cccc076d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The finite difference step size in the case that this function in the case that this function uses finite differencing.  <a href="#a1f4a029ea6174198f178f1a4cccc076d">更多...</a><br/></td></tr>
+<tr class="separator:a1f4a029ea6174198f178f1a4cccc076d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a67f4ceb4a748391de323b8246799dd95"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
+std::map&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a>, <br class="typebreak"/>
+<a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a67f4ceb4a748391de323b8246799dd95">_parameter_independent_data</a></td></tr>
+<tr class="memdesc:a67f4ceb4a748391de323b8246799dd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">In some cases we need to store parameter-independent data which is related to this function but since it is parameter-indepedent should not be returned as part of <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a87e85ed9383edc4c48d21b8de150804e" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate()</a>.  <a href="#a67f4ceb4a748391de323b8246799dd95">更多...</a><br/></td></tr>
+<tr class="separator:a67f4ceb4a748391de323b8246799dd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ef91ccfcf33d85b9bb193375a412ef"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a44ef91ccfcf33d85b9bb193375a412ef">_parametrized_function_boundary_ids</a></td></tr>
+<tr class="memdesc:a44ef91ccfcf33d85b9bb193375a412ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">In the case of an <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html" title="A simple functor class that provides a RBParameter-dependent function. ">RBParametrizedFunction</a> defined on element sides, this defines the set of boundary IDs that the function is defined on.  <a href="#a44ef91ccfcf33d85b9bb193375a412ef">更多...</a><br/></td></tr>
+<tr class="separator:a44ef91ccfcf33d85b9bb193375a412ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a6dbde25070d41441ae18dbc4f66f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a68a6dbde25070d41441ae18dbc4f66f0">_is_nodal_boundary</a></td></tr>
+<tr class="memdesc:a68a6dbde25070d41441ae18dbc4f66f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">In the case that _parametrized_function_boundary_ids is not empty, then this parametrized function is defined on a mesh boundary.  <a href="#a68a6dbde25070d41441ae18dbc4f66f0">更多...</a><br/></td></tr>
+<tr class="separator:a68a6dbde25070d41441ae18dbc4f66f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A simple functor class that provides a RBParameter-dependent function. </p>
+<dl class="section author"><dt>作者</dt><dd>David Knezevic </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2012 Provides a reduced basis parameterized function. </dd></dl>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00046">46</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a941347dec39c2244a4762636baa6e6ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBParametrizedFunction::RBParametrizedFunction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a72cefda56f12dd198501f10e98e00ae8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBParametrizedFunction::RBParametrizedFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Special functions. </p>
+<ul>
+<li>This class can be default copy/move assigned/constructed.</li>
+<li>The destructor is defaulted out-of-line. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a64e1dacb934d81fe0f1e76b7a9fb19ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBParametrizedFunction::RBParametrizedFunction </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae5e4feb041cdc3893a85447154f70e98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual libMesh::RBParametrizedFunction::~RBParametrizedFunction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a87e85ed9383edc4c48d21b8de150804e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;<a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&gt; libMesh::RBParametrizedFunction::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>elem_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>qp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a>&#160;</td>
+          <td class="paramname"><em>subdomain_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>xyz_perturb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>phi_i_qp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evaluate the parametrized function at the specified point for parameter <code>mu</code>. </p>
+<p>If requires_xyz_perturbations==false, then xyz_perturb will not be used.</p>
+<p>In this case we evaluate for all components. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7c74a04fd38b3e9d90c64028ee1630ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;std::vector&lt;<a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&gt; &gt; libMesh::RBParametrizedFunction::evaluate_at_observation_points </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>observation_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>elem_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sbd_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>sys</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evaluate the parametrized function for the parameter <code>mu</code> at the set of <code>observation_points</code>. </p>
+<p>We return a vector of values at each observation point since we may want to evaluate more than one component of the parametrized function. We also provide <code>elem_ids</code> and <code>sbd_ids</code> since that info can be required for the evaluation in some cases. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1ac27b5adfcea86a841f3d79f453fee8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> libMesh::RBParametrizedFunction::evaluate_comp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>elem_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>qp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a>&#160;</td>
+          <td class="paramname"><em>subdomain_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>xyz_perturb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>phi_i_qp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evaluate the parametrized function at the specified point for parameter <code>mu</code>. </p>
+<p>If requires_xyz_perturbations==false, then xyz_perturb will not be used.</p>
+<p>In this case we return the value for component <code>comp</code> only, but the base class implementation simply calls the vector-returning <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a87e85ed9383edc4c48d21b8de150804e" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate()</a> function below and returns the comp'th component, so derived classes should provide a more efficient routine or just call the vector-returning function instead. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae9fb7894b24596f7a68864bfd86eb06b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned int libMesh::RBParametrizedFunction::get_n_components </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specify the number of components in this parametrized function. </p>
+<p>A scalar-valued function has one component, a vector-valued function has more than one component. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac774cdca6ccc68a244d5ceed4698814a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> libMesh::RBParametrizedFunction::get_parameter_independent_data </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>property_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a>&#160;</td>
+          <td class="paramname"><em>sbd_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value stored in _parameter_independent_data associated with <code>region_name</code> and <code>property_name</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a946a71d8e580a0629b92a95674c13692"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::set&lt;<a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a>&gt;&amp; libMesh::RBParametrizedFunction::get_parametrized_function_boundary_ids </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For RBParametrizedFunctions defined on element sides or nodes, we get/set the boundary IDs that this parametrized function is defined on. </p>
+
+</div>
+</div>
+<a class="anchor" id="a80296dafac99aae26d17371875be8639"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::RBParametrizedFunction::get_spatial_indices </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; unsigned int &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>spatial_indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>elem_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>side_indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>node_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>qps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sbd_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundary_ids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In some cases a parametrized function is defined based on array data that we index into based on the spatial data from the mesh (e.g. </p>
+<p>element, node, or side indices). We refer to the indices that we use to index into this array data as "spatial indices". This method sets <code>spatial_indices</code> based on the provided mesh-based indices.</p>
+<p>Note that <code>spatial_indices</code> is defined as a doubly-nested vector so that we can handle the case where the spatial function evaluation requires us to have indices from all nodes of an element, since in that case we need a vector of indices (one per node) for each point. Other cases, such as when we define the paramtrized function based on the element index only, only require a singly-nested vector which we handle as a special case of the doubly-nested vector.</p>
+<p>This method is typically used in the Offline stage in order to generate and store the relevant spatial indices.</p>
+<p>This method is a no-op by default, but it can be overridden in subclasses to provide the relevant behavior. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4d041eba5c1597668f2f0a5565b42b78"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::RBParametrizedFunction::initialize_lookup_table </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If this parametrized function is defined based on a lookup table then we can call this function to initialize the table. </p>
+<p>This is a no-op by default, but it can be overridden in subclasses as needed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0c3cb5d3371edf7d6f64879270a2fa48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::RBParametrizedFunction::initialize_spatial_indices </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; unsigned int &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>spatial_indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>elem_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>side_indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>node_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>qps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sbd_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundary_ids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The Online stage counterpart of <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a80296dafac99aae26d17371875be8639" title="In some cases a parametrized function is defined based on array data that we index into based on the ...">get_spatial_indices()</a>. </p>
+<p>This method is used to initialize the spatial index data in this object so that we can evaluate it during an Online solve. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa3a8f07b59786243ef68e0d945623503"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> libMesh::RBParametrizedFunction::lookup_preevaluated_node_value_on_mesh </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>node_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Look up the preevaluate values of the parametrized function for component <code>comp</code>, node <code>node_id</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aec368087ac68dee40586ac9002ec0681"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> libMesh::RBParametrizedFunction::lookup_preevaluated_side_value_on_mesh </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>elem_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>side_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>qp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Look up the preevaluated values of the parametrized function for component <code>comp</code>, element <code>elem_id</code>, <code>side_index</code>, and quadrature point <code>qp</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ec98c0ccc4c83f9e20de711dd1926ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> libMesh::RBParametrizedFunction::lookup_preevaluated_value_on_mesh </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>elem_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>qp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Look up the preevaluate values of the parametrized function for component <code>comp</code>, element <code>elem_id</code>, and quadrature point <code>qp</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab7ded99b3e19a38c4ea7e23ef5ef8540"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;<a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&gt; libMesh::RBParametrizedFunction::node_evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>node_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a>&#160;</td>
+          <td class="paramname"><em>boundary_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a87e85ed9383edc4c48d21b8de150804e" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate()</a> but for element nodes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3441a2cb3484859a96cca1a5cda54071"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> libMesh::RBParametrizedFunction::node_evaluate_comp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>node_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a>&#160;</td>
+          <td class="paramname"><em>boundary_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a1ac27b5adfcea86a841f3d79f453fee8" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate_comp()</a> but for element nodes. </p>
+
+</div>
+</div>
+<a class="anchor" id="aef09db509d58c680c142bfdd639ca2e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::RBParametrizedFunction::node_vectorized_evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>node_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundary_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ace82c5dc64aec70d5528e9937e96a970" title="Vectorized version of evaluate. ">vectorized_evaluate()</a> but on element nodes. </p>
+<p>The base class implementation of this function loops over the input "mus" vector and calls <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ab7ded99b3e19a38c4ea7e23ef5ef8540" title="Same as evaluate() but for element nodes. ">node_evaluate()</a> for each entry. The <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ab7ded99b3e19a38c4ea7e23ef5ef8540" title="Same as evaluate() but for element nodes. ">node_evaluate()</a> function may be overridden in derived classes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a55eb4c15f8ca3577adef1806bd36cfb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::RBParametrizedFunction::on_mesh_nodes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>true if this parametrized function is defined on mesh nodes. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac4b48026a2f015c50e7a46c1cab11aa0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::RBParametrizedFunction::on_mesh_sides </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>true if this parametrized function is defined on mesh sides. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a691aa1c81ae8a70cf8b74b06316fd252"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a>&amp; libMesh::RBParametrizedFunction::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05a0a1339577aab0dc513ef63e8d3beb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a>&amp; libMesh::RBParametrizedFunction::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1RBParametrizedFunction.html">RBParametrizedFunction</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa71beef295d611fca3e2fee88bddff78"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::RBParametrizedFunction::preevaluate_parametrized_function_cleanup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual function that performs cleanup after each "preevaluate parametrized function" evaluation. </p>
+<p>This function is a no-op by default, but it can be overridden in subclasses in order to do necessary cleanup, such as clearing cached data. </p>
+
+</div>
+</div>
+<a class="anchor" id="aed62e14158151a854c7637789ec4df6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::RBParametrizedFunction::preevaluate_parametrized_function_on_mesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sbd_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector&lt; std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_xyz_perturb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>sys</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Store the result of vectorized_evaluate. </p>
+<p>This is helpful during EIM training, since we can pre-evaluate and store the parameterized function for each training sample. If requires_xyz_perturbations==false, then all_xyz_perturb will not be used. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0ccf44dd61d7794ce03129c76774e03d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::RBParametrizedFunction::preevaluate_parametrized_function_on_mesh_nodes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>node_boundary_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>sys</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#aed62e14158151a854c7637789ec4df6d" title="Store the result of vectorized_evaluate. ">preevaluate_parametrized_function_on_mesh()</a> except for mesh nodes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a488364aa5df89105b2526b66251ab24a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::RBParametrizedFunction::preevaluate_parametrized_function_on_mesh_sides </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::pair&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;, std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>side_all_xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::pair&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;, <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sbd_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::pair&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;, <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>side_boundary_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::pair&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;, unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>side_types</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::pair&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int &gt;, std::vector&lt; std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>side_all_xyz_perturb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>sys</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#aed62e14158151a854c7637789ec4df6d" title="Store the result of vectorized_evaluate. ">preevaluate_parametrized_function_on_mesh()</a> except for mesh sides. </p>
+
+</div>
+</div>
+<a class="anchor" id="a161c6215e0fb8198399e91b2e6190e2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParametrizedFunction::set_parametrized_function_boundary_ids </td>
+          <td>(</td>
+          <td class="paramtype">const std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundary_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_nodal_boundary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a71c9b142b3c90ecac208bc858d7f1679"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;<a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&gt; libMesh::RBParametrizedFunction::side_evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>elem_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>side_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>qp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a>&#160;</td>
+          <td class="paramname"><em>subdomain_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a>&#160;</td>
+          <td class="paramname"><em>boundary_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>xyz_perturb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>phi_i_qp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a87e85ed9383edc4c48d21b8de150804e" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate()</a> but for element sides. </p>
+
+</div>
+</div>
+<a class="anchor" id="a94c0cd8b493eabafbc9178cdabd0947d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> libMesh::RBParametrizedFunction::side_evaluate_comp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>elem_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>side_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>qp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a>&#160;</td>
+          <td class="paramname"><em>subdomain_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a>&#160;</td>
+          <td class="paramname"><em>boundary_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>xyz_perturb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>phi_i_qp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a1ac27b5adfcea86a841f3d79f453fee8" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate_comp()</a> but for element sides. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1efc718846cb5c5125b5adbd0f2c3782"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::RBParametrizedFunction::side_vectorized_evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>elem_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>side_indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>qps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sbd_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundary_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_xyz_perturb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>phi_i_qp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#ace82c5dc64aec70d5528e9937e96a970" title="Vectorized version of evaluate. ">vectorized_evaluate()</a> but on element sides. </p>
+<p>The base class implementation of this function loops over the input "mus" vector and calls <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a71c9b142b3c90ecac208bc858d7f1679" title="Same as evaluate() but for element sides. ">side_evaluate()</a> for each entry. The <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a71c9b142b3c90ecac208bc858d7f1679" title="Same as evaluate() but for element sides. ">side_evaluate()</a> function may be overridden in derived classes. </p>
+
+</div>
+</div>
+<a class="anchor" id="ace82c5dc64aec70d5528e9937e96a970"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::RBParametrizedFunction::vectorized_evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_xyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>elem_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>qps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sbd_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; <a class="el" href="classlibMesh_1_1Point.html">Point</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_xyz_perturb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>phi_i_qp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; std::vector&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vectorized version of evaluate. </p>
+<p>If requires_xyz_perturbations==false, then all_xyz_perturb will not be used.</p>
+<p>The base class implementation of this function loops over the input "mus" vector and calls <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a87e85ed9383edc4c48d21b8de150804e" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate()</a> for each entry. The <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a87e85ed9383edc4c48d21b8de150804e" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate()</a> function may be overridden in derived classes. </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a68a6dbde25070d41441ae18dbc4f66f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::RBParametrizedFunction::_is_nodal_boundary</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In the case that _parametrized_function_boundary_ids is not empty, then this parametrized function is defined on a mesh boundary. </p>
+<p>This boolean indicates if the mesh boundary under consideration is a set of sides, or a set of nodes. </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00427">427</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67f4ceb4a748391de323b8246799dd95"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::map&lt;<a class="el" href="namespacelibMesh.html#a634d676f703fd1cf217d85d6794abcb3">subdomain_id_type</a>, <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&gt; &gt; libMesh::RBParametrizedFunction::_parameter_independent_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In some cases we need to store parameter-independent data which is related to this function but since it is parameter-indepedent should not be returned as part of <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html#a87e85ed9383edc4c48d21b8de150804e" title="Evaluate the parametrized function at the specified point for parameter mu. ">evaluate()</a>. </p>
+<p>We index this data by "property name" &ndash;&gt; subdomain_id &ndash;&gt; value. </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00414">414</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44ef91ccfcf33d85b9bb193375a412ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a>&gt; libMesh::RBParametrizedFunction::_parametrized_function_boundary_ids</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In the case of an <a class="el" href="classlibMesh_1_1RBParametrizedFunction.html" title="A simple functor class that provides a RBParameter-dependent function. ">RBParametrizedFunction</a> defined on element sides, this defines the set of boundary IDs that the function is defined on. </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00420">420</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f4a029ea6174198f178f1a4cccc076d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBParametrizedFunction::fd_delta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The finite difference step size in the case that this function in the case that this function uses finite differencing. </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00403">403</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1891c87095954aaca084b766b07c6dbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::RBParametrizedFunction::is_lookup_table</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Boolean to indicate if this parametrized function is defined based on a lookup table or not. </p>
+<p>If it is defined based on a lookup table, then the evaluation functions will access a discrete parameter to determine the index to lookup. </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00391">391</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02eade35ee9ddd512dcc53aa19d7a6d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string libMesh::RBParametrizedFunction::lookup_table_param_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If this is a lookup table, then lookup_table_param_name specifies the parameter that is used to index into the lookup table. </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00397">397</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3cabf122dc1274510d485af063daf42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, unsigned int&gt; libMesh::RBParametrizedFunction::mesh_to_preevaluated_node_values_map</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indexing into preevaluated_values for the case where the preevaluated values were obtained from evaluations at elements/quadrature points on a mesh. </p>
+<p>The indexing here is: node_id &ndash;&gt; point_index </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00376">376</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3520c9504457a414f85a0a9e90aed5c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::pair&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>,unsigned int&gt;, std::vector&lt;unsigned int&gt; &gt; libMesh::RBParametrizedFunction::mesh_to_preevaluated_side_values_map</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Similar to the above except this map stores the data on element sides. </p>
+<p>The indexing here is: (elem_id,side index) &ndash;&gt; qp &ndash;&gt; point_index </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00368">368</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7af9fd690c321be5595b9db599378759"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector&lt;unsigned int&gt; &gt; libMesh::RBParametrizedFunction::mesh_to_preevaluated_values_map</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indexing into preevaluated_values for the case where the preevaluated values were obtained from evaluations at elements/quadrature points on a mesh. </p>
+<p>The indexing here is: elem_id &ndash;&gt; qp &ndash;&gt; point_index Then preevaluated_values[0][point_index] provides the vector of component values at that point. </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00361">361</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a566eba7815d32b360cc1750881b94677"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;std::vector&lt;<a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&gt; &gt; &gt; libMesh::RBParametrizedFunction::preevaluated_values</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Storage for pre-evaluated values. </p>
+<p>The indexing is given by: parameter index &ndash;&gt; point index &ndash;&gt; component index &ndash;&gt; value. </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00351">351</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae09e5a970fc5733f42100c14540de6f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::RBParametrizedFunction::requires_xyz_perturbations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Boolean to indicate whether this parametrized function requires xyz perturbations in order to evaluate function values. </p>
+<p>An example of where perturbations are required is when the parametrized function is based on finite difference approximations to derivatives. </p>
+
+<p>在文件 <a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a> 第 <a class="el" href="rb__parametrized__function_8h_source.html#l00384">384</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/reduced_basis/<a class="el" href="rb__parametrized__function_8h_source.html">rb_parametrized_function.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:40 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

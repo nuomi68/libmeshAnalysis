@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::Elem::SideIter类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1Elem.html">Elem</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classlibMesh_1_1Elem_1_1SideIter-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::Elem::SideIter类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The definition of the protected nested <a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html" title="The definition of the protected nested SideIter class. ">SideIter</a> class.  
+ <a href="classlibMesh_1_1Elem_1_1SideIter.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="elem_8h_source.html">elem.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:affdbd63cf626eb846551b56573502b88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#affdbd63cf626eb846551b56573502b88">SideIter</a> (const unsigned int side_number, <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> *<a class="el" href="classlibMesh_1_1Elem.html#a7cdd994bb4245128f8617b62d7968e35">parent</a>)</td></tr>
+<tr class="separator:affdbd63cf626eb846551b56573502b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1006a7c1b73323d96a4dc4ad43048e0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#a1006a7c1b73323d96a4dc4ad43048e0d">SideIter</a> ()</td></tr>
+<tr class="separator:a1006a7c1b73323d96a4dc4ad43048e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6e22258e00981edc26328d6f1f35ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#aee6e22258e00981edc26328d6f1f35ae">SideIter</a> (const <a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a> &amp;other)</td></tr>
+<tr class="separator:aee6e22258e00981edc26328d6f1f35ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399fb3a267031c24fe9441228409ff81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#a399fb3a267031c24fe9441228409ff81">operator=</a> (const <a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a> &amp;other)</td></tr>
+<tr class="separator:a399fb3a267031c24fe9441228409ff81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8359ee94fc7c579fa671f70c1dcac814"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Elem.html">Elem</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#a8359ee94fc7c579fa671f70c1dcac814">operator*</a> () const </td></tr>
+<tr class="separator:a8359ee94fc7c579fa671f70c1dcac814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac515842767bdeeeb1cc3003df6e17085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#ac515842767bdeeeb1cc3003df6e17085">operator++</a> ()</td></tr>
+<tr class="separator:ac515842767bdeeeb1cc3003df6e17085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf58c97872dbfa3fa7dc9c2d6b7fd644"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#aaf58c97872dbfa3fa7dc9c2d6b7fd644">operator==</a> (const <a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a> &amp;other) const </td></tr>
+<tr class="separator:aaf58c97872dbfa3fa7dc9c2d6b7fd644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61cd9a395bfca5ee4c3c5023670d2b01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#a61cd9a395bfca5ee4c3c5023670d2b01">side_on_boundary</a> () const </td></tr>
+<tr class="separator:a61cd9a395bfca5ee4c3c5023670d2b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a8fad21a66e9fe5b0116da928c8496a7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#a8fad21a66e9fe5b0116da928c8496a7b">_update_side_ptr</a> () const </td></tr>
+<tr class="separator:a8fad21a66e9fe5b0116da928c8496a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a47e562fa6a9117bd0f664747cff61fe1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#a47e562fa6a9117bd0f664747cff61fe1">_side</a></td></tr>
+<tr class="separator:a47e562fa6a9117bd0f664747cff61fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0288d3f11382ebf673191c9308e763f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Elem.html">Elem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">_side_ptr</a></td></tr>
+<tr class="separator:ad0288d3f11382ebf673191c9308e763f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a884752fe628048a4815cbbc406a4b18a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Elem.html">Elem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">_parent</a></td></tr>
+<tr class="separator:a884752fe628048a4815cbbc406a4b18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ea6b61dd88dc15a5243fffb6631368"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">_side_number</a></td></tr>
+<tr class="separator:a80ea6b61dd88dc15a5243fffb6631368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The definition of the protected nested <a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html" title="The definition of the protected nested SideIter class. ">SideIter</a> class. </p>
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03154">3154</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="affdbd63cf626eb846551b56573502b88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Elem::SideIter::SideIter </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>side_number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1Elem.html">Elem</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03158">3158</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l03160"></a><span class="lineno"> 3160</span>&#160;    : <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a47e562fa6a9117bd0f664747cff61fe1">_side</a>(),</div>
+<div class="line"><a name="l03161"></a><span class="lineno"> 3161</span>&#160;      <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">_side_ptr</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l03162"></a><span class="lineno"> 3162</span>&#160;      <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">_parent</a>(<a class="code" href="classlibMesh_1_1Elem.html#a7cdd994bb4245128f8617b62d7968e35">parent</a>),</div>
+<div class="line"><a name="l03163"></a><span class="lineno"> 3163</span>&#160;      <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">_side_number</a>(side_number)</div>
+<div class="line"><a name="l03164"></a><span class="lineno"> 3164</span>&#160;  {}</div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_a7cdd994bb4245128f8617b62d7968e35"><div class="ttname"><a href="classlibMesh_1_1Elem.html#a7cdd994bb4245128f8617b62d7968e35">libMesh::Elem::parent</a></div><div class="ttdeci">const Elem * parent() const </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l02843">elem.h:2843</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a884752fe628048a4815cbbc406a4b18a"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">libMesh::Elem::SideIter::_parent</a></div><div class="ttdeci">Elem * _parent</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03255">elem.h:3255</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a80ea6b61dd88dc15a5243fffb6631368"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">libMesh::Elem::SideIter::_side_number</a></div><div class="ttdeci">unsigned int _side_number</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03258">elem.h:3258</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a47e562fa6a9117bd0f664747cff61fe1"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a47e562fa6a9117bd0f664747cff61fe1">libMesh::Elem::SideIter::_side</a></div><div class="ttdeci">std::unique_ptr&lt; Elem &gt; _side</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03243">elem.h:3243</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_ad0288d3f11382ebf673191c9308e763f"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">libMesh::Elem::SideIter::_side_ptr</a></div><div class="ttdeci">Elem * _side_ptr</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03252">elem.h:3252</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1006a7c1b73323d96a4dc4ad43048e0d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Elem::SideIter::SideIter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03168">3168</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l03169"></a><span class="lineno"> 3169</span>&#160;    : <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a47e562fa6a9117bd0f664747cff61fe1">_side</a>(),</div>
+<div class="line"><a name="l03170"></a><span class="lineno"> 3170</span>&#160;      <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">_side_ptr</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l03171"></a><span class="lineno"> 3171</span>&#160;      <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">_parent</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l03172"></a><span class="lineno"> 3172</span>&#160;      <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">_side_number</a>(<a class="code" href="namespacelibMesh.html#a5588f6411946120c9d917450ab73e2e2">libMesh::invalid_uint</a>)</div>
+<div class="line"><a name="l03173"></a><span class="lineno"> 3173</span>&#160;  {}</div>
+<div class="ttc" id="namespacelibMesh_html_a5588f6411946120c9d917450ab73e2e2"><div class="ttname"><a href="namespacelibMesh.html#a5588f6411946120c9d917450ab73e2e2">libMesh::invalid_uint</a></div><div class="ttdeci">const unsigned int invalid_uint</div><div class="ttdoc">A number which is used quite often to represent an invalid or uninitialized value for an unsigned int...</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8h_source.html#l00254">libmesh.h:254</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a884752fe628048a4815cbbc406a4b18a"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">libMesh::Elem::SideIter::_parent</a></div><div class="ttdeci">Elem * _parent</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03255">elem.h:3255</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a80ea6b61dd88dc15a5243fffb6631368"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">libMesh::Elem::SideIter::_side_number</a></div><div class="ttdeci">unsigned int _side_number</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03258">elem.h:3258</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a47e562fa6a9117bd0f664747cff61fe1"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a47e562fa6a9117bd0f664747cff61fe1">libMesh::Elem::SideIter::_side</a></div><div class="ttdeci">std::unique_ptr&lt; Elem &gt; _side</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03243">elem.h:3243</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_ad0288d3f11382ebf673191c9308e763f"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">libMesh::Elem::SideIter::_side_ptr</a></div><div class="ttdeci">Elem * _side_ptr</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03252">elem.h:3252</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aee6e22258e00981edc26328d6f1f35ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Elem::SideIter::SideIter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03177">3177</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l03178"></a><span class="lineno"> 3178</span>&#160;    : <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a47e562fa6a9117bd0f664747cff61fe1">_side</a>(),</div>
+<div class="line"><a name="l03179"></a><span class="lineno"> 3179</span>&#160;      <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">_side_ptr</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l03180"></a><span class="lineno"> 3180</span>&#160;      <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">_parent</a>(other._parent),</div>
+<div class="line"><a name="l03181"></a><span class="lineno"> 3181</span>&#160;      <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">_side_number</a>(other._side_number)</div>
+<div class="line"><a name="l03182"></a><span class="lineno"> 3182</span>&#160;  {}</div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a884752fe628048a4815cbbc406a4b18a"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">libMesh::Elem::SideIter::_parent</a></div><div class="ttdeci">Elem * _parent</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03255">elem.h:3255</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a80ea6b61dd88dc15a5243fffb6631368"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">libMesh::Elem::SideIter::_side_number</a></div><div class="ttdeci">unsigned int _side_number</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03258">elem.h:3258</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a47e562fa6a9117bd0f664747cff61fe1"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a47e562fa6a9117bd0f664747cff61fe1">libMesh::Elem::SideIter::_side</a></div><div class="ttdeci">std::unique_ptr&lt; Elem &gt; _side</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03243">elem.h:3243</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_ad0288d3f11382ebf673191c9308e763f"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">libMesh::Elem::SideIter::_side_ptr</a></div><div class="ttdeci">Elem * _side_ptr</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03252">elem.h:3252</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a8fad21a66e9fe5b0116da928c8496a7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Elem::SideIter::_update_side_ptr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03231">3231</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l03232"></a><span class="lineno"> 3232</span>&#160;  {</div>
+<div class="line"><a name="l03233"></a><span class="lineno"> 3233</span>&#160;    <span class="comment">// Construct new side, store in std::unique_ptr</span></div>
+<div class="line"><a name="l03234"></a><span class="lineno"> 3234</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a47e562fa6a9117bd0f664747cff61fe1">_side</a> = this-&gt;<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">_parent</a>-&gt;<a class="code" href="classlibMesh_1_1Elem.html#a1bf88879d9f98fe51372e11a77ade828">build_side_ptr</a>(this-&gt;<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">_side_number</a>);</div>
+<div class="line"><a name="l03235"></a><span class="lineno"> 3235</span>&#160;</div>
+<div class="line"><a name="l03236"></a><span class="lineno"> 3236</span>&#160;    <span class="comment">// Also set our internal naked pointer.  Memory is still owned</span></div>
+<div class="line"><a name="l03237"></a><span class="lineno"> 3237</span>&#160;    <span class="comment">// by the std::unique_ptr.</span></div>
+<div class="line"><a name="l03238"></a><span class="lineno"> 3238</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">_side_ptr</a> = <a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a47e562fa6a9117bd0f664747cff61fe1">_side</a>.get();</div>
+<div class="line"><a name="l03239"></a><span class="lineno"> 3239</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a884752fe628048a4815cbbc406a4b18a"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">libMesh::Elem::SideIter::_parent</a></div><div class="ttdeci">Elem * _parent</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03255">elem.h:3255</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a80ea6b61dd88dc15a5243fffb6631368"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">libMesh::Elem::SideIter::_side_number</a></div><div class="ttdeci">unsigned int _side_number</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03258">elem.h:3258</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_a1bf88879d9f98fe51372e11a77ade828"><div class="ttname"><a href="classlibMesh_1_1Elem.html#a1bf88879d9f98fe51372e11a77ade828">libMesh::Elem::build_side_ptr</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Elem &gt; build_side_ptr(const unsigned int i, bool proxy=false)=0</div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a47e562fa6a9117bd0f664747cff61fe1"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a47e562fa6a9117bd0f664747cff61fe1">libMesh::Elem::SideIter::_side</a></div><div class="ttdeci">std::unique_ptr&lt; Elem &gt; _side</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03243">elem.h:3243</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_ad0288d3f11382ebf673191c9308e763f"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">libMesh::Elem::SideIter::_side_ptr</a></div><div class="ttdeci">Elem * _side_ptr</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03252">elem.h:3252</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8359ee94fc7c579fa671f70c1dcac814"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Elem.html">Elem</a>*&amp; libMesh::Elem::SideIter::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03194">3194</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l03195"></a><span class="lineno"> 3195</span>&#160;  {</div>
+<div class="line"><a name="l03196"></a><span class="lineno"> 3196</span>&#160;    <span class="comment">// Set the std::unique_ptr</span></div>
+<div class="line"><a name="l03197"></a><span class="lineno"> 3197</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a8fad21a66e9fe5b0116da928c8496a7b">_update_side_ptr</a>();</div>
+<div class="line"><a name="l03198"></a><span class="lineno"> 3198</span>&#160;</div>
+<div class="line"><a name="l03199"></a><span class="lineno"> 3199</span>&#160;    <span class="comment">// Return a reference to _side_ptr</span></div>
+<div class="line"><a name="l03200"></a><span class="lineno"> 3200</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">_side_ptr</a>;</div>
+<div class="line"><a name="l03201"></a><span class="lineno"> 3201</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a8fad21a66e9fe5b0116da928c8496a7b"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a8fad21a66e9fe5b0116da928c8496a7b">libMesh::Elem::SideIter::_update_side_ptr</a></div><div class="ttdeci">void _update_side_ptr() const </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03231">elem.h:3231</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_ad0288d3f11382ebf673191c9308e763f"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#ad0288d3f11382ebf673191c9308e763f">libMesh::Elem::SideIter::_side_ptr</a></div><div class="ttdeci">Elem * _side_ptr</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03252">elem.h:3252</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac515842767bdeeeb1cc3003df6e17085"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a>&amp; libMesh::Elem::SideIter::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03204">3204</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l03205"></a><span class="lineno"> 3205</span>&#160;  {</div>
+<div class="line"><a name="l03206"></a><span class="lineno"> 3206</span>&#160;    ++<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">_side_number</a>;</div>
+<div class="line"><a name="l03207"></a><span class="lineno"> 3207</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l03208"></a><span class="lineno"> 3208</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a80ea6b61dd88dc15a5243fffb6631368"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">libMesh::Elem::SideIter::_side_number</a></div><div class="ttdeci">unsigned int _side_number</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03258">elem.h:3258</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a399fb3a267031c24fe9441228409ff81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a>&amp; libMesh::Elem::SideIter::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03186">3186</a> 行定义.</p>
+
+<p>参考 <a class="el" href="elem_8h_source.html#l03255">_parent</a> , 以及 <a class="el" href="elem_8h_source.html#l03258">_side_number</a>.</p>
+<div class="fragment"><div class="line"><a name="l03187"></a><span class="lineno"> 3187</span>&#160;  {</div>
+<div class="line"><a name="l03188"></a><span class="lineno"> 3188</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">_parent</a>      = other._parent;</div>
+<div class="line"><a name="l03189"></a><span class="lineno"> 3189</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">_side_number</a> = other._side_number;</div>
+<div class="line"><a name="l03190"></a><span class="lineno"> 3190</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l03191"></a><span class="lineno"> 3191</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a884752fe628048a4815cbbc406a4b18a"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">libMesh::Elem::SideIter::_parent</a></div><div class="ttdeci">Elem * _parent</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03255">elem.h:3255</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a80ea6b61dd88dc15a5243fffb6631368"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">libMesh::Elem::SideIter::_side_number</a></div><div class="ttdeci">unsigned int _side_number</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03258">elem.h:3258</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aaf58c97872dbfa3fa7dc9c2d6b7fd644"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::Elem::SideIter::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Elem_1_1SideIter.html">SideIter</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03212">3212</a> 行定义.</p>
+
+<p>参考 <a class="el" href="elem_8h_source.html#l03255">_parent</a> , 以及 <a class="el" href="elem_8h_source.html#l03258">_side_number</a>.</p>
+<div class="fragment"><div class="line"><a name="l03213"></a><span class="lineno"> 3213</span>&#160;  {</div>
+<div class="line"><a name="l03214"></a><span class="lineno"> 3214</span>&#160;    <span class="keywordflow">return</span> (this-&gt;<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">_side_number</a> == other._side_number &amp;&amp;</div>
+<div class="line"><a name="l03215"></a><span class="lineno"> 3215</span>&#160;            this-&gt;_parent      == other._parent);</div>
+<div class="line"><a name="l03216"></a><span class="lineno"> 3216</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a80ea6b61dd88dc15a5243fffb6631368"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">libMesh::Elem::SideIter::_side_number</a></div><div class="ttdeci">unsigned int _side_number</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03258">elem.h:3258</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a61cd9a395bfca5ee4c3c5023670d2b01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::Elem::SideIter::side_on_boundary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03223">3223</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l03224"></a><span class="lineno"> 3224</span>&#160;  {</div>
+<div class="line"><a name="l03225"></a><span class="lineno"> 3225</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">_parent</a>-&gt;<a class="code" href="classlibMesh_1_1Elem.html#a3b58ea2b1f0983f12b64ef5d011331a6">neighbor_ptr</a>(<a class="code" href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">_side_number</a>) == <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l03226"></a><span class="lineno"> 3226</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a884752fe628048a4815cbbc406a4b18a"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a884752fe628048a4815cbbc406a4b18a">libMesh::Elem::SideIter::_parent</a></div><div class="ttdeci">Elem * _parent</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03255">elem.h:3255</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_1_1SideIter_html_a80ea6b61dd88dc15a5243fffb6631368"><div class="ttname"><a href="classlibMesh_1_1Elem_1_1SideIter.html#a80ea6b61dd88dc15a5243fffb6631368">libMesh::Elem::SideIter::_side_number</a></div><div class="ttdeci">unsigned int _side_number</div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03258">elem.h:3258</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_a3b58ea2b1f0983f12b64ef5d011331a6"><div class="ttname"><a href="classlibMesh_1_1Elem.html#a3b58ea2b1f0983f12b64ef5d011331a6">libMesh::Elem::neighbor_ptr</a></div><div class="ttdeci">const Elem * neighbor_ptr(unsigned int i) const </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l02383">elem.h:2383</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a884752fe628048a4815cbbc406a4b18a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Elem.html">Elem</a>* libMesh::Elem::SideIter::_parent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03255">3255</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="elem_8h_source.html#l03186">operator=()</a> , 以及 <a class="el" href="elem_8h_source.html#l03212">operator==()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47e562fa6a9117bd0f664747cff61fe1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classlibMesh_1_1Elem.html">Elem</a>&gt; libMesh::Elem::SideIter::_side</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03243">3243</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80ea6b61dd88dc15a5243fffb6631368"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::Elem::SideIter::_side_number</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03258">3258</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="elem_8h_source.html#l03186">operator=()</a> , 以及 <a class="el" href="elem_8h_source.html#l03212">operator==()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0288d3f11382ebf673191c9308e763f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Elem.html">Elem</a>* libMesh::Elem::SideIter::_side_ptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="elem_8h_source.html">elem.h</a> 第 <a class="el" href="elem_8h_source.html#l03252">3252</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/geom/<a class="el" href="elem_8h_source.html">elem.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:25 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

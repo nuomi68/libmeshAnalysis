@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/src/parallel/parallel_ghost_sync.C 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_fbfaffe73f2c6284e33a5381beeb793d.html">parallel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">parallel_ghost_sync.C</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="parallel__ghost__sync_8C.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;libmesh/parallel_ghost_sync.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;libmesh/int_range.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structlibMesh_1_1SyncNodalPositions.html#a6a4d6dfb575b772540274ff73aa358cf">   26</a></span>&#160;<a class="code" href="structlibMesh_1_1SyncNodalPositions.html#a6a4d6dfb575b772540274ff73aa358cf">SyncNodalPositions::SyncNodalPositions</a>(<a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; m)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  : <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>(m)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structlibMesh_1_1SyncNodalPositions.html#ae16ce3ef2bb8b5272e4b13e84429e385">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="structlibMesh_1_1SyncNodalPositions.html#ae16ce3ef2bb8b5272e4b13e84429e385">SyncNodalPositions::gather_data</a> (<span class="keyword">const</span> std::vector&lt;dof_id_type&gt; &amp; ids,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                      std::vector&lt;datum&gt; &amp; data)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  data.resize(ids.size());</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// Gather (x,y,z) data for all node IDs in the ids vector</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(ids))</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="comment">// Look for this node in the mesh</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; pt = <a class="code" href="structlibMesh_1_1SyncNodalPositions.html#a172a108dd2af5b58227c09318a0b5062">mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a00e863731129afaba604816c2db55aed">point</a>(ids[i]);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="comment">// Store this node&#39;s position in the data array.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="comment">// This should call Point::op=</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      data[i] = pt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    } <span class="comment">// end for</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// gather_data()</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structlibMesh_1_1SyncNodalPositions.html#a8ad46699cc816c62fabfb2ebfee9ea3f">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="structlibMesh_1_1SyncNodalPositions.html#a8ad46699cc816c62fabfb2ebfee9ea3f">SyncNodalPositions::act_on_data</a> (<span class="keyword">const</span> std::vector&lt;dof_id_type&gt; &amp; ids,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                      <span class="keyword">const</span> std::vector&lt;datum&gt; &amp; data)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(ids))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="comment">// Get a pointer to the node whose position is to be updated.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="classlibMesh_1_1Node.html">Node</a> &amp; node = <a class="code" href="structlibMesh_1_1SyncNodalPositions.html#a172a108dd2af5b58227c09318a0b5062">mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#af6e7cea860ccee9625012f9fcb0ae13b">node_ref</a>(ids[i]);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="comment">// Update this node&#39;s position.  Should call Point::op=</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      node = data[i];</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    } <span class="comment">// end for</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// act_on_data()</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structlibMesh_1_1SyncSubdomainIds.html#adac6238bd8625eafb99d5da5e4ef340d">   65</a></span>&#160;<a class="code" href="structlibMesh_1_1SyncSubdomainIds.html#adac6238bd8625eafb99d5da5e4ef340d">SyncSubdomainIds::SyncSubdomainIds</a>(<a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; m)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  : <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>(m)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structlibMesh_1_1SyncSubdomainIds.html#ae317dc088b33422bdd965a7f00e42b01">   69</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="structlibMesh_1_1SyncSubdomainIds.html#ae317dc088b33422bdd965a7f00e42b01">SyncSubdomainIds::gather_data</a> (<span class="keyword">const</span> std::vector&lt;dof_id_type&gt; &amp; ids,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                    std::vector&lt;datum&gt; &amp; ids_out)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  ids_out.reserve(ids.size());</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; <span class="keywordtype">id</span> : ids)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> &amp; elem = <a class="code" href="structlibMesh_1_1SyncSubdomainIds.html#ae66b448bb829be94271f4ffefd527e94">mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a42b7a9f2869772ac1a7d072f45a8378d">elem_ref</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      ids_out.push_back(elem.<a class="code" href="classlibMesh_1_1Elem.html#a96faae17e7ede5aa89c687d54cefb4b3">subdomain_id</a>());</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structlibMesh_1_1SyncSubdomainIds.html#af3e627d431096bf54964ce31d82280c3">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="structlibMesh_1_1SyncSubdomainIds.html#af3e627d431096bf54964ce31d82280c3">SyncSubdomainIds::act_on_data</a> (<span class="keyword">const</span> std::vector&lt;dof_id_type&gt; &amp; ids,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                    <span class="keyword">const</span> std::vector&lt;datum&gt; &amp; subdomain_ids)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(ids))</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> &amp; elem = <a class="code" href="structlibMesh_1_1SyncSubdomainIds.html#ae66b448bb829be94271f4ffefd527e94">mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a42b7a9f2869772ac1a7d072f45a8378d">elem_ref</a>(ids[i]);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      elem.<a class="code" href="classlibMesh_1_1Elem.html#a96faae17e7ede5aa89c687d54cefb4b3">subdomain_id</a>()=subdomain_ids[i];</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structlibMesh_1_1SyncElementIntegers.html#a1158e9715393bf16fbc752fa436e53cf">   91</a></span>&#160;<a class="code" href="structlibMesh_1_1SyncElementIntegers.html#a1158e9715393bf16fbc752fa436e53cf">SyncElementIntegers::SyncElementIntegers</a>(<a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; m, <span class="keyword">const</span> std::string &amp; integer_name)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  : <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>(m), ind(m.get_elem_integer_index(integer_name))</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structlibMesh_1_1SyncElementIntegers.html#ae587241cb2fe9794503af751d6e96765">   95</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="structlibMesh_1_1SyncElementIntegers.html#ae587241cb2fe9794503af751d6e96765">SyncElementIntegers::gather_data</a>(<span class="keyword">const</span> std::vector&lt;dof_id_type&gt; &amp; ids,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                      std::vector&lt;dof_id_type&gt; &amp; ids_out)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  ids_out.reserve(ids.size());</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; <span class="keywordtype">id</span> : ids)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> &amp; elem = <a class="code" href="structlibMesh_1_1SyncElementIntegers.html#ac25ba8e9a1068f2348a5c0dcff869752">mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a42b7a9f2869772ac1a7d072f45a8378d">elem_ref</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      ids_out.push_back(elem.<a class="code" href="classlibMesh_1_1DofObject.html#aa93b0fce35bfd3390ab33491a8d37ce8">get_extra_integer</a>(<a class="code" href="structlibMesh_1_1SyncElementIntegers.html#ad108fe5563eb69b72dcd24276949e052">ind</a>));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="structlibMesh_1_1SyncElementIntegers.html#af8b1d684b2a4ed137ba92d2b76fcdad9">  107</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="structlibMesh_1_1SyncElementIntegers.html#af8b1d684b2a4ed137ba92d2b76fcdad9">SyncElementIntegers::act_on_data</a>(<span class="keyword">const</span> std::vector&lt;dof_id_type&gt; &amp; ids,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                      <span class="keyword">const</span> std::vector&lt;dof_id_type&gt; &amp; integer_ids)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(ids))</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> &amp; elem = <a class="code" href="structlibMesh_1_1SyncElementIntegers.html#ac25ba8e9a1068f2348a5c0dcff869752">mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a42b7a9f2869772ac1a7d072f45a8378d">elem_ref</a>(ids[i]);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      elem.<a class="code" href="classlibMesh_1_1DofObject.html#ae3ad33fd55ef000261bf20ff77100049">set_extra_integer</a>(<a class="code" href="structlibMesh_1_1SyncElementIntegers.html#ad108fe5563eb69b72dcd24276949e052">ind</a>, integer_ids[i]);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;} <span class="comment">// namespace</span></div>
+<div class="ttc" id="structlibMesh_1_1SyncNodalPositions_html_a8ad46699cc816c62fabfb2ebfee9ea3f"><div class="ttname"><a href="structlibMesh_1_1SyncNodalPositions.html#a8ad46699cc816c62fabfb2ebfee9ea3f">libMesh::SyncNodalPositions::act_on_data</a></div><div class="ttdeci">void act_on_data(const std::vector&lt; dof_id_type &gt; &amp;ids, const std::vector&lt; datum &gt; &amp;data) const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8C_source.html#l00051">parallel_ghost_sync.C:51</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncElementIntegers_html_ad108fe5563eb69b72dcd24276949e052"><div class="ttname"><a href="structlibMesh_1_1SyncElementIntegers.html#ad108fe5563eb69b72dcd24276949e052">libMesh::SyncElementIntegers::ind</a></div><div class="ttdeci">unsigned int ind</div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8h_source.html#l00880">parallel_ghost_sync.h:880</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Node_html"><div class="ttname"><a href="classlibMesh_1_1Node.html">libMesh::Node</a></div><div class="ttdoc">A Node is like a Point, but with more information. </div><div class="ttdef"><b>Definition:</b> <a href="node_8h_source.html#l00052">node.h:52</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_af6e7cea860ccee9625012f9fcb0ae13b"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#af6e7cea860ccee9625012f9fcb0ae13b">libMesh::MeshBase::node_ref</a></div><div class="ttdeci">virtual const Node &amp; node_ref(const dof_id_type i) const </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00571">mesh_base.h:571</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html"><div class="ttname"><a href="classlibMesh_1_1Elem.html">libMesh::Elem</a></div><div class="ttdoc">This is the base class from which all geometric element types are derived. </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l00094">elem.h:94</a></div></div>
+<div class="ttc" id="mesh__communication_8C_html_afaa03b874c297f4693d9cdef7f50f3c6"><div class="ttname"><a href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__communication_8C_source.html#l01308">mesh_communication.C:1308</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncSubdomainIds_html_ae66b448bb829be94271f4ffefd527e94"><div class="ttname"><a href="structlibMesh_1_1SyncSubdomainIds.html#ae66b448bb829be94271f4ffefd527e94">libMesh::SyncSubdomainIds::mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8h_source.html#l00853">parallel_ghost_sync.h:853</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncSubdomainIds_html_af3e627d431096bf54964ce31d82280c3"><div class="ttname"><a href="structlibMesh_1_1SyncSubdomainIds.html#af3e627d431096bf54964ce31d82280c3">libMesh::SyncSubdomainIds::act_on_data</a></div><div class="ttdeci">void act_on_data(const std::vector&lt; dof_id_type &gt; &amp;ids, const std::vector&lt; datum &gt; &amp;data) const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8C_source.html#l00081">parallel_ghost_sync.C:81</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html">libMesh::MeshBase</a></div><div class="ttdoc">This is the MeshBase class. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00070">mesh_base.h:70</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncNodalPositions_html_a172a108dd2af5b58227c09318a0b5062"><div class="ttname"><a href="structlibMesh_1_1SyncNodalPositions.html#a172a108dd2af5b58227c09318a0b5062">libMesh::SyncNodalPositions::mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8h_source.html#l00828">parallel_ghost_sync.h:828</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncNodalPositions_html_ae16ce3ef2bb8b5272e4b13e84429e385"><div class="ttname"><a href="structlibMesh_1_1SyncNodalPositions.html#ae16ce3ef2bb8b5272e4b13e84429e385">libMesh::SyncNodalPositions::gather_data</a></div><div class="ttdeci">void gather_data(const std::vector&lt; dof_id_type &gt; &amp;ids, std::vector&lt; datum &gt; &amp;data) const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8C_source.html#l00032">parallel_ghost_sync.C:32</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncSubdomainIds_html_adac6238bd8625eafb99d5da5e4ef340d"><div class="ttname"><a href="structlibMesh_1_1SyncSubdomainIds.html#adac6238bd8625eafb99d5da5e4ef340d">libMesh::SyncSubdomainIds::SyncSubdomainIds</a></div><div class="ttdeci">SyncSubdomainIds(MeshBase &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8C_source.html#l00065">parallel_ghost_sync.C:65</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncSubdomainIds_html_ae317dc088b33422bdd965a7f00e42b01"><div class="ttname"><a href="structlibMesh_1_1SyncSubdomainIds.html#ae317dc088b33422bdd965a7f00e42b01">libMesh::SyncSubdomainIds::gather_data</a></div><div class="ttdeci">void gather_data(const std::vector&lt; dof_id_type &gt; &amp;ids, std::vector&lt; datum &gt; &amp;data) const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8C_source.html#l00069">parallel_ghost_sync.C:69</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncElementIntegers_html_ae587241cb2fe9794503af751d6e96765"><div class="ttname"><a href="structlibMesh_1_1SyncElementIntegers.html#ae587241cb2fe9794503af751d6e96765">libMesh::SyncElementIntegers::gather_data</a></div><div class="ttdeci">void gather_data(const std::vector&lt; dof_id_type &gt; &amp;ids, std::vector&lt; datum &gt; &amp;data) const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8C_source.html#l00095">parallel_ghost_sync.C:95</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncElementIntegers_html_a1158e9715393bf16fbc752fa436e53cf"><div class="ttname"><a href="structlibMesh_1_1SyncElementIntegers.html#a1158e9715393bf16fbc752fa436e53cf">libMesh::SyncElementIntegers::SyncElementIntegers</a></div><div class="ttdeci">SyncElementIntegers(MeshBase &amp;m, const std::string &amp;integer_name)</div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8C_source.html#l00091">parallel_ghost_sync.C:91</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncElementIntegers_html_ac25ba8e9a1068f2348a5c0dcff869752"><div class="ttname"><a href="structlibMesh_1_1SyncElementIntegers.html#ac25ba8e9a1068f2348a5c0dcff869752">libMesh::SyncElementIntegers::mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8h_source.html#l00879">parallel_ghost_sync.h:879</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_a96faae17e7ede5aa89c687d54cefb4b3"><div class="ttname"><a href="classlibMesh_1_1Elem.html#a96faae17e7ede5aa89c687d54cefb4b3">libMesh::Elem::subdomain_id</a></div><div class="ttdeci">subdomain_id_type subdomain_id() const </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l02367">elem.h:2367</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_a42b7a9f2869772ac1a7d072f45a8378d"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#a42b7a9f2869772ac1a7d072f45a8378d">libMesh::MeshBase::elem_ref</a></div><div class="ttdeci">virtual const Elem &amp; elem_ref(const dof_id_type i) const </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00614">mesh_base.h:614</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncElementIntegers_html_af8b1d684b2a4ed137ba92d2b76fcdad9"><div class="ttname"><a href="structlibMesh_1_1SyncElementIntegers.html#af8b1d684b2a4ed137ba92d2b76fcdad9">libMesh::SyncElementIntegers::act_on_data</a></div><div class="ttdeci">void act_on_data(const std::vector&lt; dof_id_type &gt; &amp;ids, const std::vector&lt; datum &gt; &amp;data) const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8C_source.html#l00107">parallel_ghost_sync.C:107</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_a00e863731129afaba604816c2db55aed"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#a00e863731129afaba604816c2db55aed">libMesh::MeshBase::point</a></div><div class="ttdeci">virtual const Point &amp; point(const dof_id_type i) const =0</div></div>
+<div class="ttc" id="classlibMesh_1_1DofObject_html_aa93b0fce35bfd3390ab33491a8d37ce8"><div class="ttname"><a href="classlibMesh_1_1DofObject.html#aa93b0fce35bfd3390ab33491a8d37ce8">libMesh::DofObject::get_extra_integer</a></div><div class="ttdeci">dof_id_type get_extra_integer(const unsigned int index) const </div><div class="ttdoc">Gets the value on this object of the extra integer associated with index, which should have been obta...</div><div class="ttdef"><b>Definition:</b> <a href="dof__object_8h_source.html#l01095">dof_object.h:1095</a></div></div>
+<div class="ttc" id="structlibMesh_1_1SyncNodalPositions_html_a6a4d6dfb575b772540274ff73aa358cf"><div class="ttname"><a href="structlibMesh_1_1SyncNodalPositions.html#a6a4d6dfb575b772540274ff73aa358cf">libMesh::SyncNodalPositions::SyncNodalPositions</a></div><div class="ttdeci">SyncNodalPositions(MeshBase &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="parallel__ghost__sync_8C_source.html#l00026">parallel_ghost_sync.C:26</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Point_html"><div class="ttname"><a href="classlibMesh_1_1Point.html">libMesh::Point</a></div><div class="ttdoc">A Point defines a location in LIBMESH_DIM dimensional Real space. </div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00039">point.h:39</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a26e38c0dc87c05a5e8df7e26bfed543b"><div class="ttname"><a href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">libMesh::index_range</a></div><div class="ttdeci">auto index_range(const T &amp;sizable)</div><div class="ttdoc">Helper function that returns an IntRange&amp;lt;std::size_t&amp;gt; representing all the indices of the passed-in v...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00111">int_range.h:111</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofObject_html_ae3ad33fd55ef000261bf20ff77100049"><div class="ttname"><a href="classlibMesh_1_1DofObject.html#ae3ad33fd55ef000261bf20ff77100049">libMesh::DofObject::set_extra_integer</a></div><div class="ttdeci">void set_extra_integer(const unsigned int index, const dof_id_type value)</div><div class="ttdoc">Sets the value on this object of the extra integer associated with index, which should have been obta...</div><div class="ttdef"><b>Definition:</b> <a href="dof__object_8h_source.html#l01079">dof_object.h:1079</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:05 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/base/variant_filter_iterator.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_1ae07b608d825b42a1c0038f6919e609.html">base</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">variant_filter_iterator.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="variant__filter__iterator_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator&lt; Predicate, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Original Authors: Corwin Joy * Michael Gradman <a href="#" onclick="location.href='mai'+'lto:'+'cjo'+'y@'+'hou'+'st'+'on.'+'rr'+'.co'+'m'; return false;">cjoy@<span style="display: none;">.nosp@m.</span>hous<span style="display: none;">.nosp@m.</span>ton.r<span style="display: none;">.nosp@m.</span>r.co<span style="display: none;">.nosp@m.</span>m</a> * <a href="#" onclick="location.href='mai'+'lto:'+'Mic'+'ha'+'el.'+'Gr'+'adm'+'an'+'@ca'+'mi'+'nus'+'.c'+'om'; return false;">Micha<span style="display: none;">.nosp@m.</span>el.G<span style="display: none;">.nosp@m.</span>radma<span style="display: none;">.nosp@m.</span>n@ca<span style="display: none;">.nosp@m.</span>minus<span style="display: none;">.nosp@m.</span>.com</a> Caminus, Suite 1150, Two Allen Center, 1200 Smith Street, Houston, TX 77002 This class is an extension of variant_bidirectional_iterator to a filter_iterator similar to boost's.  <a href="classvariant__filter__iterator.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvariant__filter__iterator_1_1IterBase.html">variant_filter_iterator&lt; Predicate, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::IterBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for the iterator type.  <a href="structvariant__filter__iterator_1_1IterBase.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvariant__filter__iterator_1_1PredBase.html">variant_filter_iterator&lt; Predicate, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::PredBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for the predicate.  <a href="structvariant__filter__iterator_1_1PredBase.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvariant__filter__iterator_1_1Iter.html">variant_filter_iterator&lt; Predicate, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::Iter&lt; IterType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual iterator object is held as a template parameter here.  <a href="structvariant__filter__iterator_1_1Iter.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvariant__filter__iterator_1_1Pred.html">variant_filter_iterator&lt; Predicate, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::Pred&lt; IterType, PredType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual predicate is held as a template parameter here.  <a href="structvariant__filter__iterator_1_1Pred.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aaeb0c0ca12ab706c4f5845bbc28f7be5"><td class="memTemplParams" colspan="2">template&lt;class Predicate , class Type , class ReferenceType , class PointerType , class OtherConstType , class OtherConstReferenceType , class OtherConstPointerType &gt; </td></tr>
+<tr class="memitem:aaeb0c0ca12ab706c4f5845bbc28f7be5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="variant__filter__iterator_8h.html#aaeb0c0ca12ab706c4f5845bbc28f7be5">operator==</a> (const <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; Predicate, Type, ReferenceType, PointerType, OtherConstType, OtherConstReferenceType, OtherConstPointerType &gt; &amp;x, const <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; Predicate, Type, ReferenceType, PointerType, OtherConstType, OtherConstReferenceType, OtherConstPointerType &gt; &amp;y)</td></tr>
+<tr class="separator:aaeb0c0ca12ab706c4f5845bbc28f7be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31ba2cfa6fa42543099140b5b279c10"><td class="memTemplParams" colspan="2">template&lt;class Predicate , class Type , class ReferenceType , class PointerType , class OtherConstType , class OtherConstReferenceType , class OtherConstPointerType &gt; </td></tr>
+<tr class="memitem:af31ba2cfa6fa42543099140b5b279c10"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="variant__filter__iterator_8h.html#af31ba2cfa6fa42543099140b5b279c10">operator!=</a> (const <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; Predicate, Type, ReferenceType, PointerType, OtherConstType, OtherConstReferenceType, OtherConstPointerType &gt; &amp;x, const <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; Predicate, Type, ReferenceType, PointerType, OtherConstType, OtherConstReferenceType, OtherConstPointerType &gt; &amp;y)</td></tr>
+<tr class="separator:af31ba2cfa6fa42543099140b5b279c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="af31ba2cfa6fa42543099140b5b279c10"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate , class Type , class ReferenceType , class PointerType , class OtherConstType , class OtherConstReferenceType , class OtherConstPointerType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; Predicate, Type, ReferenceType, PointerType, OtherConstType, OtherConstReferenceType, OtherConstPointerType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; Predicate, Type, ReferenceType, PointerType, OtherConstType, OtherConstReferenceType, OtherConstPointerType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00484">484</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;{</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  <span class="keywordflow">return</span> !(x == y);</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aaeb0c0ca12ab706c4f5845bbc28f7be5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate , class Type , class ReferenceType , class PointerType , class OtherConstType , class OtherConstReferenceType , class OtherConstPointerType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; Predicate, Type, ReferenceType, PointerType, OtherConstType, OtherConstReferenceType, OtherConstPointerType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; Predicate, Type, ReferenceType, PointerType, OtherConstType, OtherConstReferenceType, OtherConstPointerType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00470">470</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;{</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="keywordflow">return</span> x.<a class="code" href="classvariant__filter__iterator.html#acaa28ea02adc975493be4d709ae20687">equal</a>(y);</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;}</div>
+<div class="ttc" id="classvariant__filter__iterator_html_acaa28ea02adc975493be4d709ae20687"><div class="ttname"><a href="classvariant__filter__iterator.html#acaa28ea02adc975493be4d709ae20687">variant_filter_iterator::equal</a></div><div class="ttdeci">bool equal(const variant_filter_iterator &amp;other) const </div><div class="ttdoc">Forwards to the equal() function defined for the IterBase pointer. </div><div class="ttdef"><b>Definition:</b> <a href="variant__filter__iterator_8h_source.html#l00416">variant_filter_iterator.h:416</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:06 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

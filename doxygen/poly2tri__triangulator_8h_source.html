@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/mesh/poly2tri_triangulator.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_f8c4e882537aef67e047d37e5f9a7fb2.html">mesh</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">poly2tri_triangulator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="poly2tri__triangulator_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef LIBMESH_POLY2TRI_TRIANGULATOR_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_POLY2TRI_TRIANGULATOR_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_config.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifdef LIBMESH_HAVE_POLY2TRI</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// Local Includes</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;libmesh/dof_object.h&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;libmesh/triangulator_interface.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// Forward Declarations</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>BoundaryInfo;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>Elem;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Poly2TriTriangulator.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html">Poly2TriTriangulator</a> : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1TriangulatorInterface.html">TriangulatorInterface</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">explicit</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a93d7b432e5c4b8b1ddd2c7f067cce7f7">Poly2TriTriangulator</a>(<a class="code" href="classlibMesh_1_1UnstructuredMesh.html">UnstructuredMesh</a> &amp; <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                       <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> n_boundary_nodes =</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                         <a class="code" href="classlibMesh_1_1DofObject.html#adf3b0ebe7fcc0c41bced4c9f17bf4822">DofObject::invalid_id</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a8f15f0146512982904b1ef6d41108b9b">~Poly2TriTriangulator</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a8aca5dadab0078b8512131375a001472">triangulate</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a452b231a4d4152fb6c37174dba32e4a8">set_desired_area_function</a> (<a class="code" href="classlibMesh_1_1FunctionBase.html">FunctionBase&lt;Real&gt;</a> * desired) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1FunctionBase.html">FunctionBase&lt;Real&gt;</a> * <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a2a4476468324b55a26798eae9c8bc913">get_desired_area_function</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Poly2TriTriangulator.html#a3a61a8291f3306e61e45ab9b444bbc2a">   97</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a3a61a8291f3306e61e45ab9b444bbc2a">set_refine_boundary_allowed</a> (<span class="keywordtype">bool</span> refine_bdy_allowed)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">  </span>{ <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a06071d10460b85ec783a35057d9de674">_refine_bdy_allowed</a> = refine_bdy_allowed; }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Poly2TriTriangulator.html#ac290c7c1ac766680820277c2b6859899">  104</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#ac290c7c1ac766680820277c2b6859899">refine_boundary_allowed</a> ()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">  </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a06071d10460b85ec783a35057d9de674">_refine_bdy_allowed</a>; }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a543eb9c26c027644303d0b513087ec6e">is_refine_boundary_allowed</a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1BoundaryInfo.html">BoundaryInfo</a> &amp; boundary_info,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> &amp; elem,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> side);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#aec8429cd4acea7f398a92ac54841e523">triangulate_current_points</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#acf8b01211fe4812b1a56c267b67c865f">insert_refinement_points</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#aaa5129e86fca8949202432458b9cdd19">should_refine_elem</a>(<a class="code" href="classlibMesh_1_1Elem.html">Elem</a> &amp; elem);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Poly2TriTriangulator.html#a76a084f3c9dbfe13cd52d01ce832ff7f">  139</a></span>&#160;  std::map&lt;const Hole *, std::unique_ptr&lt;ArbitraryHole&gt;&gt; <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a76a084f3c9dbfe13cd52d01ce832ff7f">replaced_holes</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Poly2TriTriangulator.html#af0e2a13bd9c525f285c137716a6d64eb">  144</a></span>&#160;  <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#af0e2a13bd9c525f285c137716a6d64eb">_n_boundary_nodes</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Poly2TriTriangulator.html#a7de6999fdde61ec833f953077c9ddcf9">  149</a></span>&#160;  std::unique_ptr&lt;FunctionBase&lt;Real&gt;&gt; <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a7de6999fdde61ec833f953077c9ddcf9">_desired_area_func</a>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Poly2TriTriangulator.html#a06071d10460b85ec783a35057d9de674">  154</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Poly2TriTriangulator.html#a06071d10460b85ec783a35057d9de674">_refine_bdy_allowed</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif // LIBMESH_HAVE_TRIANGLE</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif // ifndef LIBMESH_POLY2TRI_TRIANGULATOR_H</span></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_ac290c7c1ac766680820277c2b6859899"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#ac290c7c1ac766680820277c2b6859899">libMesh::Poly2TriTriangulator::refine_boundary_allowed</a></div><div class="ttdeci">virtual bool refine_boundary_allowed() const override</div><div class="ttdoc">Get whether or not the triangulation is allowed to refine the mesh boundary when refining the interio...</div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8h_source.html#l00104">poly2tri_triangulator.h:104</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_a7de6999fdde61ec833f953077c9ddcf9"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#a7de6999fdde61ec833f953077c9ddcf9">libMesh::Poly2TriTriangulator::_desired_area_func</a></div><div class="ttdeci">std::unique_ptr&lt; FunctionBase&lt; Real &gt; &gt; _desired_area_func</div><div class="ttdoc">Location-dependent area requirements. </div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8h_source.html#l00149">poly2tri_triangulator.h:149</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_a3a61a8291f3306e61e45ab9b444bbc2a"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#a3a61a8291f3306e61e45ab9b444bbc2a">libMesh::Poly2TriTriangulator::set_refine_boundary_allowed</a></div><div class="ttdeci">virtual void set_refine_boundary_allowed(bool refine_bdy_allowed) override</div><div class="ttdoc">Set whether or not the triangulation is allowed to refine the mesh boundary when refining the interio...</div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8h_source.html#l00097">poly2tri_triangulator.h:97</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html"><div class="ttname"><a href="classlibMesh_1_1Elem.html">libMesh::Elem</a></div><div class="ttdoc">This is the base class from which all geometric element types are derived. </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l00094">elem.h:94</a></div></div>
+<div class="ttc" id="mesh__communication_8C_html_afaa03b874c297f4693d9cdef7f50f3c6"><div class="ttname"><a href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__communication_8C_source.html#l01308">mesh_communication.C:1308</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_a06071d10460b85ec783a35057d9de674"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#a06071d10460b85ec783a35057d9de674">libMesh::Poly2TriTriangulator::_refine_bdy_allowed</a></div><div class="ttdeci">bool _refine_bdy_allowed</div><div class="ttdoc">Whether to allow boundary refinement. </div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8h_source.html#l00154">poly2tri_triangulator.h:154</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_a2a4476468324b55a26798eae9c8bc913"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#a2a4476468324b55a26798eae9c8bc913">libMesh::Poly2TriTriangulator::get_desired_area_function</a></div><div class="ttdeci">virtual FunctionBase&lt; Real &gt; * get_desired_area_function() override</div><div class="ttdoc">Get the function giving desired triangle area as a function of position, or nullptr if no such functi...</div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8C_source.html#l00452">poly2tri_triangulator.C:452</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_aec8429cd4acea7f398a92ac54841e523"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#aec8429cd4acea7f398a92ac54841e523">libMesh::Poly2TriTriangulator::triangulate_current_points</a></div><div class="ttdeci">void triangulate_current_points()</div><div class="ttdoc">Triangulate the current mesh and hole points. </div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8C_source.html#l00486">poly2tri_triangulator.C:486</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_a452b231a4d4152fb6c37174dba32e4a8"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#a452b231a4d4152fb6c37174dba32e4a8">libMesh::Poly2TriTriangulator::set_desired_area_function</a></div><div class="ttdeci">virtual void set_desired_area_function(FunctionBase&lt; Real &gt; *desired) override</div><div class="ttdoc">Set a function giving desired triangle area as a function of position. </div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8C_source.html#l00443">poly2tri_triangulator.C:443</a></div></div>
+<div class="ttc" id="classlibMesh_1_1UnstructuredMesh_html"><div class="ttname"><a href="classlibMesh_1_1UnstructuredMesh.html">libMesh::UnstructuredMesh</a></div><div class="ttdoc">The UnstructuredMesh class is derived from the MeshBase class. </div><div class="ttdef"><b>Definition:</b> <a href="unstructured__mesh_8h_source.html#l00048">unstructured_mesh.h:48</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_a93d7b432e5c4b8b1ddd2c7f067cce7f7"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#a93d7b432e5c4b8b1ddd2c7f067cce7f7">libMesh::Poly2TriTriangulator::Poly2TriTriangulator</a></div><div class="ttdeci">Poly2TriTriangulator(UnstructuredMesh &amp;mesh, dof_id_type n_boundary_nodes=DofObject::invalid_id)</div><div class="ttdoc">The constructor. </div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8C_source.html#l00355">poly2tri_triangulator.C:355</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_a76a084f3c9dbfe13cd52d01ce832ff7f"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#a76a084f3c9dbfe13cd52d01ce832ff7f">libMesh::Poly2TriTriangulator::replaced_holes</a></div><div class="ttdeci">std::map&lt; const Hole *, std::unique_ptr&lt; ArbitraryHole &gt; &gt; replaced_holes</div><div class="ttdoc">We might have to replace the user-provided holes with refined versions. </div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8h_source.html#l00139">poly2tri_triangulator.h:139</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_acf8b01211fe4812b1a56c267b67c865f"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#acf8b01211fe4812b1a56c267b67c865f">libMesh::Poly2TriTriangulator::insert_refinement_points</a></div><div class="ttdeci">bool insert_refinement_points()</div><div class="ttdoc">Add Steiner points as new mesh nodes, as necessary to refine an existing trangulation. </div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8C_source.html#l00780">poly2tri_triangulator.C:780</a></div></div>
+<div class="ttc" id="classlibMesh_1_1BoundaryInfo_html"><div class="ttname"><a href="classlibMesh_1_1BoundaryInfo.html">libMesh::BoundaryInfo</a></div><div class="ttdoc">The BoundaryInfo class contains information relevant to boundary conditions including storing faces...</div><div class="ttdef"><b>Definition:</b> <a href="boundary__info_8h_source.html#l00057">boundary_info.h:57</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofObject_html_adf3b0ebe7fcc0c41bced4c9f17bf4822"><div class="ttname"><a href="classlibMesh_1_1DofObject.html#adf3b0ebe7fcc0c41bced4c9f17bf4822">libMesh::DofObject::invalid_id</a></div><div class="ttdeci">static const dof_id_type invalid_id</div><div class="ttdoc">An invalid id to distinguish an uninitialized DofObject. </div><div class="ttdef"><b>Definition:</b> <a href="dof__object_8h_source.html#l00477">dof_object.h:477</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_a8aca5dadab0078b8512131375a001472"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#a8aca5dadab0078b8512131375a001472">libMesh::Poly2TriTriangulator::triangulate</a></div><div class="ttdeci">virtual void triangulate() override</div><div class="ttdoc">Internally, this calls the poly2tri triangulation code in a loop, inserting our owner Steiner points ...</div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8C_source.html#l00368">poly2tri_triangulator.C:368</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_a543eb9c26c027644303d0b513087ec6e"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#a543eb9c26c027644303d0b513087ec6e">libMesh::Poly2TriTriangulator::is_refine_boundary_allowed</a></div><div class="ttdeci">bool is_refine_boundary_allowed(const BoundaryInfo &amp;boundary_info, const Elem &amp;elem, unsigned int side)</div><div class="ttdoc">Is refining this element&amp;#39;s boundary side allowed? </div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8C_source.html#l00459">poly2tri_triangulator.C:459</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_a8f15f0146512982904b1ef6d41108b9b"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#a8f15f0146512982904b1ef6d41108b9b">libMesh::Poly2TriTriangulator::~Poly2TriTriangulator</a></div><div class="ttdeci">virtual ~Poly2TriTriangulator()</div><div class="ttdoc">Empty destructor. </div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html">libMesh::Poly2TriTriangulator</a></div><div class="ttdoc">A C++ interface between LibMesh and the poly2tri library, with custom code for Steiner point insertio...</div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8h_source.html#l00046">poly2tri_triangulator.h:46</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_af0e2a13bd9c525f285c137716a6d64eb"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#af0e2a13bd9c525f285c137716a6d64eb">libMesh::Poly2TriTriangulator::_n_boundary_nodes</a></div><div class="ttdeci">dof_id_type _n_boundary_nodes</div><div class="ttdoc">Keep track of how many mesh nodes are boundary nodes. </div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8h_source.html#l00144">poly2tri_triangulator.h:144</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Poly2TriTriangulator_html_aaa5129e86fca8949202432458b9cdd19"><div class="ttname"><a href="classlibMesh_1_1Poly2TriTriangulator.html#aaa5129e86fca8949202432458b9cdd19">libMesh::Poly2TriTriangulator::should_refine_elem</a></div><div class="ttdeci">bool should_refine_elem(Elem &amp;elem)</div><div class="ttdoc">Returns true if the given element ought to be refined according to current criteria. </div><div class="ttdef"><b>Definition:</b> <a href="poly2tri__triangulator_8C_source.html#l01481">poly2tri_triangulator.C:1481</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FunctionBase_html"><div class="ttname"><a href="classlibMesh_1_1FunctionBase.html">libMesh::FunctionBase&lt; Real &gt;</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TriangulatorInterface_html"><div class="ttname"><a href="classlibMesh_1_1TriangulatorInterface.html">libMesh::TriangulatorInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="triangulator__interface_8h_source.html#l00040">triangulator_interface.h:40</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ab4541d74809228310a715b11c40587fc"><div class="ttname"><a href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">libMesh::dof_id_type</a></div><div class="ttdeci">uint8_t dof_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00067">id_types.h:67</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:02 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

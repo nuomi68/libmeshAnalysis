@@ -1,0 +1,9 @@
+digraph "/home/lwz/libmesh/src/partitioning" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b67bea1992da7c14177dd4764c9b03c0 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_b67bea1992da7c14177dd4764c9b03c0.html"]
+  dir_6399c56f21f13cd25a059e343a1aef4c [shape=box, label="partitioning", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6399c56f21f13cd25a059e343a1aef4c.html"];
+  }
+}

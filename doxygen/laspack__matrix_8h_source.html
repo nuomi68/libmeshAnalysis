@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/numerics/laspack_matrix.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">laspack_matrix.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="laspack__matrix_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_LASPACK_MATRIX_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_LASPACK_MATRIX_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_config.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifdef LIBMESH_HAVE_LASPACK</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;libmesh/sparse_matrix.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Laspack includes</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;qmatrix.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Forward declarations</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>DenseMatrix;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackVector.html">   42</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classlibMesh_1_1LaspackVector.html">LaspackVector</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackLinearSolver.html">   43</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classlibMesh_1_1LaspackLinearSolver.html">LaspackLinearSolver</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1LaspackMatrix.html">LaspackMatrix</a> final : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt;T&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a142d1585c3d2db9a2bfe04f03c2ebb63">LaspackMatrix</a> (<span class="keyword">const</span> Parallel::Communicator &amp; <a class="code" href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">comm</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a142d1585c3d2db9a2bfe04f03c2ebb63">LaspackMatrix</a> (<a class="code" href="classlibMesh_1_1LaspackMatrix.html">LaspackMatrix</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a142d1585c3d2db9a2bfe04f03c2ebb63">LaspackMatrix</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html">LaspackMatrix</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classlibMesh_1_1LaspackMatrix.html">LaspackMatrix</a> &amp; <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a061078c739ec516aa4305b7b121ec751">operator= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html">LaspackMatrix</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classlibMesh_1_1LaspackMatrix.html">LaspackMatrix</a> &amp; <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a061078c739ec516aa4305b7b121ec751">operator= </a>(<a class="code" href="classlibMesh_1_1LaspackMatrix.html">LaspackMatrix</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a943c2d5db5e6c137c491a7c630d1d71d">~LaspackMatrix</a> ();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#a9c15dcff18b9de22970c9826be16b6b5">   83</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a9c15dcff18b9de22970c9826be16b6b5">need_full_sparsity_pattern</a>()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">  </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#ae2d76cab11ba6e5851d1ddf1b1067de9">update_sparsity_pattern</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1SparsityPattern_1_1Graph.html">SparsityPattern::Graph</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#ae0ba6686f0e805313b6d62b4176dacc5">init</a> (<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#ae65d58732c965f8acb6d7830cef1b9b3">m</a>,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#ad9f8bf71483539740d3b2a6b407f810c">n</a>,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> m_l,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> n_l,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> nnz=30,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> noz=10,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> blocksize=1) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#ae0ba6686f0e805313b6d62b4176dacc5">init</a> (<a class="code" href="namespacelibMesh.html#a2f87e215292aa3e352afd4f8f14c3d7f">ParallelType</a> = <a class="code" href="namespacelibMesh.html#a2f87e215292aa3e352afd4f8f14c3d7fadd57c032a7a8399fb39de740c7572b1f">PARALLEL</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a0a0db312d6577e0d1d0a52ee7e1f3480">clear</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a22aa0a53ed4ccdede28ea547631ead2e">zero</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;SparseMatrix&lt;T&gt;&gt; <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a8a589e41c9abba75f5987480f3fde874">zero_clone</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;SparseMatrix&lt;T&gt;&gt; <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a5ccec3ec2bf0949855a4a46e58290e09">clone</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a382c9d7124ab4a34bac9c96962eb1a9f">close</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#ae65d58732c965f8acb6d7830cef1b9b3">m</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#ad9f8bf71483539740d3b2a6b407f810c">n</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#af3adc40d3b0841c8a5889344b6c9f241">row_start</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a8e562a98628b7f4e7c788a932577e32b">row_stop</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a18b12232297c7ba17e6e3eeed94b4984">set</a> (<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> i,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> j,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    <span class="keyword">const</span> T <a class="code" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a920591d24046584d2fa661dba7671c69">add</a> (<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> i,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                    <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> j,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                    <span class="keyword">const</span> T <a class="code" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a4bd59d331d80a4cd5b7946a1ce5a5a35">add_matrix</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1DenseMatrix.html">DenseMatrix&lt;T&gt;</a> &amp; dm,</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                        <span class="keyword">const</span> std::vector&lt;numeric_index_type&gt; &amp; rows,</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                        <span class="keyword">const</span> std::vector&lt;numeric_index_type&gt; &amp; cols) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a4bd59d331d80a4cd5b7946a1ce5a5a35">add_matrix</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1DenseMatrix.html">DenseMatrix&lt;T&gt;</a> &amp; dm,</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                        <span class="keyword">const</span> std::vector&lt;numeric_index_type&gt; &amp; dof_indices) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a920591d24046584d2fa661dba7671c69">add</a> (<span class="keyword">const</span> T a, <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;T&gt;</a> &amp; X) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keyword">virtual</span> T <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a90519dc6c2b03328453f5822bbe949c9">operator () </a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> i,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                        <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> j) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#a369ec8b6fc6fff38d8a2345627e90f11">  233</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a369ec8b6fc6fff38d8a2345627e90f11">l1_norm</a> ()<span class="keyword"> const override </span>{ libmesh_not_implemented(); <span class="keywordflow">return</span> 0.; }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#aa0969dce81d4ccb4cece64101b8661a7">  238</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#aa0969dce81d4ccb4cece64101b8661a7">linfty_norm</a> ()<span class="keyword"> const override </span>{ libmesh_not_implemented(); <span class="keywordflow">return</span> 0.; }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#ae22c5c779d4441dc2da7c0641646c62e">  244</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#ae22c5c779d4441dc2da7c0641646c62e">closed</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#acb97bb8a409c0239856127155e3acb81">_closed</a>; }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#a8aafec9c309ce5e59754a223aafb44b8">  250</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a8aafec9c309ce5e59754a223aafb44b8">print_personal</a>(std::ostream &amp; os=<a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>)<span class="keyword"> const override </span>{ this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#afcdf5bc4246bc646599e5d1a031b3c96">print</a>(os); }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#af45565fe488157dc7af53741653aed2f">get_diagonal</a> (<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; dest) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#ab41c6b9fa61fd90341b9f4c36f9a5edc">get_transpose</a> (<a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;T&gt;</a> &amp; dest) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a2af52fd207dc350e15153cf2aa997bf1">pos</a> (<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> i,</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                          <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> j) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#a29df7284b5cc9a1f699b86b0cf14aec4">  281</a></span>&#160;  QMatrix <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a29df7284b5cc9a1f699b86b0cf14aec4">_QMat</a>;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#a28e6977288da03310aad694ebe0cfd61">  289</a></span>&#160;  std::vector&lt;numeric_index_type&gt; <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a28e6977288da03310aad694ebe0cfd61">_csr</a>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#a50b503818bc5ca72ba3e791c8546e3b0">  297</a></span>&#160;  std::vector&lt;std::vector&lt;numeric_index_type&gt;::const_iterator&gt; <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a50b503818bc5ca72ba3e791c8546e3b0">_row_start</a>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#acb97bb8a409c0239856127155e3acb81">  302</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#acb97bb8a409c0239856127155e3acb81">_closed</a>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#a349576c19432153b5f5a0c544a29dbaf">  307</a></span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classlibMesh_1_1LaspackVector.html">LaspackVector</a>&lt;T&gt;;</div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#a0be0354b510b1eba31ee700b6a44408b">  308</a></span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classlibMesh_1_1LaspackLinearSolver.html">LaspackLinearSolver</a>&lt;T&gt;;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;};</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#endif // #ifdef LIBMESH_HAVE_LASPACK</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // #ifdef LIBMESH_LASPACK_MATRIX_H</span></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a8a589e41c9abba75f5987480f3fde874"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a8a589e41c9abba75f5987480f3fde874">libMesh::LaspackMatrix::zero_clone</a></div><div class="ttdeci">virtual std::unique_ptr&lt; SparseMatrix&lt; T &gt; &gt; zero_clone() const override</div><div class="ttdoc">创建一个与LaspackMatrix对象具有相同属性但所有元素为零的新矩阵。 这个函数用于创建一个与原矩阵具有相同大小和属性的全零矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00300">laspack_matrix.C:300</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_af45565fe488157dc7af53741653aed2f"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#af45565fe488157dc7af53741653aed2f">libMesh::LaspackMatrix::get_diagonal</a></div><div class="ttdeci">virtual void get_diagonal(NumericVector&lt; T &gt; &amp;dest) const override</div><div class="ttdoc">获取矩阵的对角线元素，并存储到指定的NumericVector对象中。 这个函数用于获取矩阵的对角线元素。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00221">laspack_matrix.C:221</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a369ec8b6fc6fff38d8a2345627e90f11"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a369ec8b6fc6fff38d8a2345627e90f11">libMesh::LaspackMatrix::l1_norm</a></div><div class="ttdeci">virtual Real l1_norm() const override</div><div class="ttdoc">返回矩阵的  范数。当前未实现。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00233">laspack_matrix.h:233</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a2f87e215292aa3e352afd4f8f14c3d7fadd57c032a7a8399fb39de740c7572b1f"><div class="ttname"><a href="namespacelibMesh.html#a2f87e215292aa3e352afd4f8f14c3d7fadd57c032a7a8399fb39de740c7572b1f">libMesh::PARALLEL</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__parallel__type_8h_source.html#l00036">enum_parallel_type.h:36</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_aa0969dce81d4ccb4cece64101b8661a7"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#aa0969dce81d4ccb4cece64101b8661a7">libMesh::LaspackMatrix::linfty_norm</a></div><div class="ttdeci">virtual Real linfty_norm() const override</div><div class="ttdoc">返回矩阵的  范数。当前未实现。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00238">laspack_matrix.h:238</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a28e6977288da03310aad694ebe0cfd61"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a28e6977288da03310aad694ebe0cfd61">libMesh::LaspackMatrix::_csr</a></div><div class="ttdeci">std::vector&lt; numeric_index_type &gt; _csr</div><div class="ttdoc">压缩行索引。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00289">laspack_matrix.h:289</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a9c15dcff18b9de22970c9826be16b6b5"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a9c15dcff18b9de22970c9826be16b6b5">libMesh::LaspackMatrix::need_full_sparsity_pattern</a></div><div class="ttdeci">virtual bool need_full_sparsity_pattern() const override</div><div class="ttdoc">LaspackMatrix 需要完整的稀疏性模式。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00083">laspack_matrix.h:83</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NumericVector_html"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html">libMesh::NumericVector</a></div><div class="ttdoc">提供了不同线性代数库的向量存储方案的统一接口。 </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00067">dof_map.h:67</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a29df7284b5cc9a1f699b86b0cf14aec4"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a29df7284b5cc9a1f699b86b0cf14aec4">libMesh::LaspackMatrix::_QMat</a></div><div class="ttdeci">QMatrix _QMat</div><div class="ttdoc">Laspack稀疏矩阵指针。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00281">laspack_matrix.h:281</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a8aafec9c309ce5e59754a223aafb44b8"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a8aafec9c309ce5e59754a223aafb44b8">libMesh::LaspackMatrix::print_personal</a></div><div class="ttdeci">virtual void print_personal(std::ostream &amp;os=libMesh::out) const override</div><div class="ttdoc">打印LaspackMatrix对象的信息到指定的输出流（默认为libMesh::out）。 这个函数用于将矩阵的信息输出到指定的输出流中。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00250">laspack_matrix.h:250</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a920591d24046584d2fa661dba7671c69"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a920591d24046584d2fa661dba7671c69">libMesh::LaspackMatrix::add</a></div><div class="ttdeci">virtual void add(const numeric_index_type i, const numeric_index_type j, const T value) override</div><div class="ttdoc">将  处的值增加 value。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00388">laspack_matrix.C:388</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SparseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a></div><div class="ttdoc">这是一个通用的稀疏矩阵类。该类包含了必须在派生类中覆盖的纯虚拟成员。 使用一个公共的基类允许从不同的求解器包中以不同的格式统一访问稀疏矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00066">dof_map.h:66</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a5ccec3ec2bf0949855a4a46e58290e09"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a5ccec3ec2bf0949855a4a46e58290e09">libMesh::LaspackMatrix::clone</a></div><div class="ttdeci">virtual std::unique_ptr&lt; SparseMatrix&lt; T &gt; &gt; clone() const override</div><div class="ttdoc">克隆LaspackMatrix对象，创建一个具有相同属性和数据的新矩阵。 这个函数用于创建一个与原矩阵具有相同大小、属性和数据的新矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00319">laspack_matrix.C:319</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackLinearSolver_html"><div class="ttname"><a href="classlibMesh_1_1LaspackLinearSolver.html">libMesh::LaspackLinearSolver</a></div><div class="ttdoc">This class provides an interface to Laspack iterative solvers that is compatible with the libMesh Lin...</div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00043">laspack_matrix.h:43</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_ab41c6b9fa61fd90341b9f4c36f9a5edc"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#ab41c6b9fa61fd90341b9f4c36f9a5edc">libMesh::LaspackMatrix::get_transpose</a></div><div class="ttdeci">virtual void get_transpose(SparseMatrix&lt; T &gt; &amp;dest) const override</div><div class="ttdoc">获取矩阵的转置，并存储到指定的SparseMatrix对象中。 这个函数用于获取矩阵的转置矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00229">laspack_matrix.C:229</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a382c9d7124ab4a34bac9c96962eb1a9f"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a382c9d7124ab4a34bac9c96962eb1a9f">libMesh::LaspackMatrix::close</a></div><div class="ttdeci">virtual void close() override</div><div class="ttdoc">关闭LaspackMatrix对象，标记矩阵已经完成构建，不再修改其结构。 这个函数用于标记矩阵的状态为已完成构建，之后不再修改其结构。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00499">laspack_matrix.C:499</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a7b7f67063580fe2c771a3dc5095d6ecb"><div class="ttname"><a href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">libMesh::numeric_index_type</a></div><div class="ttdeci">dof_id_type numeric_index_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00099">id_types.h:99</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a90519dc6c2b03328453f5822bbe949c9"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a90519dc6c2b03328453f5822bbe949c9">libMesh::LaspackMatrix::operator()</a></div><div class="ttdeci">virtual T operator()(const numeric_index_type i, const numeric_index_type j) const override</div><div class="ttdoc">获取LaspackMatrix对象的指定位置  处的值。 这个函数用于获取矩阵的特定元素的值。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00462">laspack_matrix.C:462</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_af3adc40d3b0841c8a5889344b6c9f241"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#af3adc40d3b0841c8a5889344b6c9f241">libMesh::LaspackMatrix::row_start</a></div><div class="ttdeci">virtual numeric_index_type row_start() const override</div><div class="ttdoc">返回LaspackMatrix对象的行起始位置。 这个函数用于获取矩阵的行起始位置，通常用于稀疏矩阵的索引操作。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00352">laspack_matrix.C:352</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a943c2d5db5e6c137c491a7c630d1d71d"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a943c2d5db5e6c137c491a7c630d1d71d">libMesh::LaspackMatrix::~LaspackMatrix</a></div><div class="ttdeci">virtual ~LaspackMatrix()</div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00246">laspack_matrix.C:246</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_ae0ba6686f0e805313b6d62b4176dacc5"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#ae0ba6686f0e805313b6d62b4176dacc5">libMesh::LaspackMatrix::init</a></div><div class="ttdeci">virtual void init(const numeric_index_type m, const numeric_index_type n, const numeric_index_type m_l, const numeric_index_type n_l, const numeric_index_type nnz=30, const numeric_index_type noz=10, const numeric_index_type blocksize=1) override</div><div class="ttdoc">初始化LaspackMatrix对象的属性，包括矩阵的行数、列数、非零元素的预估数量等。这些参数将影响矩阵的内存分配和性能。 </div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a22aa0a53ed4ccdede28ea547631ead2e"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a22aa0a53ed4ccdede28ea547631ead2e">libMesh::LaspackMatrix::zero</a></div><div class="ttdeci">virtual void zero() override</div><div class="ttdoc">将LaspackMatrix对象的所有元素置零。 这个函数用于将矩阵中的所有元素设置为零。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00270">laspack_matrix.C:270</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_ae22c5c779d4441dc2da7c0641646c62e"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#ae22c5c779d4441dc2da7c0641646c62e">libMesh::LaspackMatrix::closed</a></div><div class="ttdeci">virtual bool closed() const override</div><div class="ttdoc">检查LaspackMatrix对象是否已关闭。 这个函数用于检查矩阵是否已经完成构建并关闭，不再修改其结构。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00244">laspack_matrix.h:244</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a0a0db312d6577e0d1d0a52ee7e1f3480"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a0a0db312d6577e0d1d0a52ee7e1f3480">libMesh::LaspackMatrix::clear</a></div><div class="ttdeci">virtual void clear() override</div><div class="ttdoc">清空LaspackMatrix对象，释放分配的内存和资源。 这个函数用于清除矩阵的数据和状态。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00254">laspack_matrix.C:254</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackVector_html"><div class="ttname"><a href="classlibMesh_1_1LaspackVector.html">libMesh::LaspackVector</a></div><div class="ttdoc">这个类为基于laspackc的串行向量数据结构提供了一个很好的接口。 所有被覆盖的虚函数都记录在numeric_vector.h中。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00042">laspack_matrix.h:42</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a50b503818bc5ca72ba3e791c8546e3b0"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a50b503818bc5ca72ba3e791c8546e3b0">libMesh::LaspackMatrix::_row_start</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; numeric_index_type &gt;::const_iterator &gt; _row_start</div><div class="ttdoc">压缩行索引数据结构中每行的起始位置。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00297">laspack_matrix.h:297</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_ae65d58732c965f8acb6d7830cef1b9b3"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#ae65d58732c965f8acb6d7830cef1b9b3">libMesh::LaspackMatrix::m</a></div><div class="ttdeci">virtual numeric_index_type m() const override</div><div class="ttdoc">返回LaspackMatrix对象的行数。 这个函数用于获取矩阵的行数。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00332">laspack_matrix.C:332</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ParallelObject_html_a20de1180df21bdc9e6ca6151ed4ffda9"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">libMesh::ParallelObject::comm</a></div><div class="ttdeci">const Parallel::Communicator &amp; comm() const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00097">parallel_object.h:97</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_ad9f8bf71483539740d3b2a6b407f810c"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#ad9f8bf71483539740d3b2a6b407f810c">libMesh::LaspackMatrix::n</a></div><div class="ttdeci">virtual numeric_index_type n() const override</div><div class="ttdoc">返回LaspackMatrix对象的列数。 这个函数用于获取矩阵的列数。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00342">laspack_matrix.C:342</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SparseMatrix_html_afcdf5bc4246bc646599e5d1a031b3c96"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#afcdf5bc4246bc646599e5d1a031b3c96">libMesh::SparseMatrix::print</a></div><div class="ttdeci">void print(std::ostream &amp;os=libMesh::out, const bool sparse=false) const </div><div class="ttdoc">将矩阵的内容以统一的样式打印到屏幕上，而不考虑正在使用的矩阵/求解器包。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00225">sparse_matrix.C:225</a></div></div>
+<div class="ttc" id="xdr__io_8C_html_a11ddd051208250c32dc4985abcafa86d"><div class="ttname"><a href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a></div><div class="ttdeci">static const bool value</div><div class="ttdef"><b>Definition:</b> <a href="xdr__io_8C_source.html#l00054">xdr_io.C:54</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SparsityPattern_1_1Graph_html"><div class="ttname"><a href="classlibMesh_1_1SparsityPattern_1_1Graph.html">libMesh::SparsityPattern::Graph</a></div><div class="ttdef"><b>Definition:</b> <a href="sparsity__pattern_8h_source.html#l00052">sparsity_pattern.h:52</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_acb97bb8a409c0239856127155e3acb81"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#acb97bb8a409c0239856127155e3acb81">libMesh::LaspackMatrix::_closed</a></div><div class="ttdeci">bool _closed</div><div class="ttdoc">指示矩阵是否已关闭的标志。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00302">laspack_matrix.h:302</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_ae2d76cab11ba6e5851d1ddf1b1067de9"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#ae2d76cab11ba6e5851d1ddf1b1067de9">libMesh::LaspackMatrix::update_sparsity_pattern</a></div><div class="ttdeci">virtual void update_sparsity_pattern(const SparsityPattern::Graph &amp;) override</div><div class="ttdoc">更新矩阵的稀疏性模式。这将告诉底层矩阵存储方案如何映射  元素。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00042">laspack_matrix.C:42</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a8e562a98628b7f4e7c788a932577e32b"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a8e562a98628b7f4e7c788a932577e32b">libMesh::LaspackMatrix::row_stop</a></div><div class="ttdeci">virtual numeric_index_type row_stop() const override</div><div class="ttdoc">返回LaspackMatrix对象的行结束位置。 这个函数用于获取矩阵的行结束位置，通常用于稀疏矩阵的索引操作。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00360">laspack_matrix.C:360</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html">libMesh::LaspackMatrix</a></div><div class="ttdoc">LaspackMatrix类封装了Laspack库中的QMatrix对象。 目前，Laspack仅支持实数数据类型，因此这个类是对 SparseMatrix&amp;lt;T&amp;gt; 的全特化，其中 T = Real。 所...</div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00056">laspack_matrix.h:56</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a18b12232297c7ba17e6e3eeed94b4984"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a18b12232297c7ba17e6e3eeed94b4984">libMesh::LaspackMatrix::set</a></div><div class="ttdeci">virtual void set(const numeric_index_type i, const numeric_index_type j, const T value) override</div><div class="ttdoc">设置LaspackMatrix对象的指定位置  处的值为 value。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00368">laspack_matrix.C:368</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1DenseMatrix.html">libMesh::DenseMatrix</a></div><div class="ttdoc">定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00065">dof_map.h:65</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a63e3c3158308e2184c12b55ab9ea9a35"><div class="ttname"><a href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></div><div class="ttdeci">OStreamProxy out(std::cout)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00100">libmesh_common.h:100</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a061078c739ec516aa4305b7b121ec751"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a061078c739ec516aa4305b7b121ec751">libMesh::LaspackMatrix::operator=</a></div><div class="ttdeci">LaspackMatrix &amp; operator=(const LaspackMatrix &amp;)=delete</div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a2af52fd207dc350e15153cf2aa997bf1"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a2af52fd207dc350e15153cf2aa997bf1">libMesh::LaspackMatrix::pos</a></div><div class="ttdeci">numeric_index_type pos(const numeric_index_type i, const numeric_index_type j) const </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00475">laspack_matrix.C:475</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a4bd59d331d80a4cd5b7946a1ce5a5a35"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a4bd59d331d80a4cd5b7946a1ce5a5a35">libMesh::LaspackMatrix::add_matrix</a></div><div class="ttdeci">virtual void add_matrix(const DenseMatrix&lt; T &gt; &amp;dm, const std::vector&lt; numeric_index_type &gt; &amp;rows, const std::vector&lt; numeric_index_type &gt; &amp;cols) override</div><div class="ttdoc">将一个DenseMatrix对象的元素加到LaspackMatrix对象的指定行和列。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00201">laspack_matrix.C:201</a></div></div>
+<div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a142d1585c3d2db9a2bfe04f03c2ebb63"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a142d1585c3d2db9a2bfe04f03c2ebb63">libMesh::LaspackMatrix::LaspackMatrix</a></div><div class="ttdeci">LaspackMatrix(const Parallel::Communicator &amp;comm)</div><div class="ttdoc">构造函数；将矩阵初始化为空，没有任何结构，即矩阵无法使用。因此，此构造函数仅适用于类的成员矩阵。 所有其他矩阵应在所有必要信息都可用的数据流的某一点创建。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00237">laspack_matrix.C:237</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a2f87e215292aa3e352afd4f8f14c3d7f"><div class="ttname"><a href="namespacelibMesh.html#a2f87e215292aa3e352afd4f8f14c3d7f">libMesh::ParallelType</a></div><div class="ttdeci">ParallelType</div><div class="ttdoc">Defines an enum for parallel data structure types. </div><div class="ttdef"><b>Definition:</b> <a href="enum__parallel__type_8h_source.html#l00033">enum_parallel_type.h:33</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:02 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

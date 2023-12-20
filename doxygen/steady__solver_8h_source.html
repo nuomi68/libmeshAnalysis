@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/solvers/steady_solver.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_d45ce12a4fd6845d30540ba69d2ec3cd.html">solvers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">steady_solver.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="steady__solver_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_STEADY_SOLVER_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_STEADY_SOLVER_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/time_solver.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Forward Declarations</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>DiffContext;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>DifferentiableSystem;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>TimeSolver;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SteadySolver.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1SteadySolver.html">SteadySolver</a> : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1TimeSolver.html">TimeSolver</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SteadySolver.html#a2cc737808aec6c524ff25d48abc501af">   53</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classlibMesh_1_1DifferentiableSystem.html">DifferentiableSystem</a> <a class="code" href="classlibMesh_1_1SteadySolver.html#a2cc737808aec6c524ff25d48abc501af">sys_type</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SteadySolver.html#a24d8c0eaae3b9ee1b419017d010d6d41">   58</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classlibMesh_1_1TimeSolver.html">TimeSolver</a> <a class="code" href="classlibMesh_1_1SteadySolver.html#a24d8c0eaae3b9ee1b419017d010d6d41">Parent</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">explicit</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SteadySolver.html#ad812c368c8dca2e760cac50b660214cc">   65</a></span>&#160;  <a class="code" href="classlibMesh_1_1SteadySolver.html#ad812c368c8dca2e760cac50b660214cc">SteadySolver</a> (<a class="code" href="classlibMesh_1_1DifferentiableSystem.html">sys_type</a> &amp; s) : <a class="code" href="classlibMesh_1_1TimeSolver.html">Parent</a>(s) {}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1SteadySolver.html#a808ba69b2087df85f16892cffdc6e3eb">~SteadySolver</a> ();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SteadySolver.html#a6b6b322b54bb3f4d5bacb1047023e2cf">   76</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1SteadySolver.html#a6b6b322b54bb3f4d5bacb1047023e2cf">error_order</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 0.; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1SteadySolver.html#a712c41a72c339ac46e6a7313908090fb">element_residual</a> (<span class="keywordtype">bool</span> request_jacobian,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                 <a class="code" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1SteadySolver.html#a38b41a20f52563837511a24cab91ef2a">side_residual</a> (<span class="keywordtype">bool</span> request_jacobian,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                              <a class="code" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1SteadySolver.html#af8bfc5a996a99dab2dc1ff53db428bb1">nonlocal_residual</a> (<span class="keywordtype">bool</span> request_jacobian,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                  <a class="code" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SteadySolver.html#a7b6328c5706942b02ac7c977662a22eb">  107</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1SteadySolver.html#a7b6328c5706942b02ac7c977662a22eb">du</a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1SystemNorm.html">SystemNorm</a> &amp;)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SteadySolver.html#a9dd5a4897b1b762ce4035598652ea36c">  112</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1SteadySolver.html#a9dd5a4897b1b762ce4035598652ea36c">is_steady</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1SteadySolver.html#a51d4572a8487042ad90228dbed794211">integrate_qoi_timestep</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1SteadySolver.html#a6b12b8cf676029477c3e540d77fbedc8">integrate_adjoint_sensitivity</a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1QoISet.html">QoISet</a> &amp; qois, <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1ParameterVector.html">ParameterVector</a> &amp; parameter_vector, <a class="code" href="classlibMesh_1_1SensitivityData.html">SensitivityData</a> &amp; sensitivities) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#ifdef LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1SteadySolver.html#abe6fa954faeda8f72f9d21555aecdb38">integrate_adjoint_refinement_error_estimate</a>(<a class="code" href="classlibMesh_1_1AdjointRefinementEstimator.html">AdjointRefinementEstimator</a> &amp; adjoint_refinement_error_estimator, <a class="code" href="classlibMesh_1_1ErrorVector.html">ErrorVector</a> &amp; QoI_elementwise_error) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif // LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1SteadySolver.html#a9f31c252d1fc79c176f6f6b555f59fc9">_general_residual</a> (<span class="keywordtype">bool</span> request_jacobian,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                  <a class="code" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                                  <a class="code" href="classlibMesh_1_1TimeSolver.html#a2bef2e6f4f3010907ca9a6c9183d475a">ResFuncType</a> time_deriv,</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                                  <a class="code" href="classlibMesh_1_1TimeSolver.html#a2bef2e6f4f3010907ca9a6c9183d475a">ResFuncType</a> constraint);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;};</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#endif // LIBMESH_STEADY_SOLVER_H</span></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a7b6328c5706942b02ac7c977662a22eb"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a7b6328c5706942b02ac7c977662a22eb">libMesh::SteadySolver::du</a></div><div class="ttdeci">virtual Real du(const SystemNorm &amp;) const override</div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8h_source.html#l00107">steady_solver.h:107</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a6b6b322b54bb3f4d5bacb1047023e2cf"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a6b6b322b54bb3f4d5bacb1047023e2cf">libMesh::SteadySolver::error_order</a></div><div class="ttdeci">virtual Real error_order() const </div><div class="ttdoc">error convergence order against deltat is not applicable to a steady problem. </div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8h_source.html#l00076">steady_solver.h:76</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html">libMesh::DiffContext</a></div><div class="ttdoc">该类提供了执行本地单元残差和雅可比积分所需的所有数据，用于物理包（例如 DifferentiableSystem 子类）。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00051">diff_context.h:51</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a808ba69b2087df85f16892cffdc6e3eb"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a808ba69b2087df85f16892cffdc6e3eb">libMesh::SteadySolver::~SteadySolver</a></div><div class="ttdeci">virtual ~SteadySolver()</div><div class="ttdoc">Destructor. </div></div>
+<div class="ttc" id="classlibMesh_1_1ParameterVector_html"><div class="ttname"><a href="classlibMesh_1_1ParameterVector.html">libMesh::ParameterVector</a></div><div class="ttdoc">Data structure for specifying which Parameters should be independent variables in a parameter sensiti...</div><div class="ttdef"><b>Definition:</b> <a href="parameter__vector_8h_source.html#l00044">parameter_vector.h:44</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TimeSolver_html"><div class="ttname"><a href="classlibMesh_1_1TimeSolver.html">libMesh::TimeSolver</a></div><div class="ttdoc">This is a generic class that defines a solver to handle time integration of DifferentiableSystems. </div><div class="ttdef"><b>Definition:</b> <a href="time__solver_8h_source.html#l00063">time_solver.h:63</a></div></div>
+<div class="ttc" id="classlibMesh_1_1AdjointRefinementEstimator_html"><div class="ttname"><a href="classlibMesh_1_1AdjointRefinementEstimator.html">libMesh::AdjointRefinementEstimator</a></div><div class="ttdoc">This class implements a &amp;quot;brute force&amp;quot; goal-oriented error estimator which computes an estimate of err...</div><div class="ttdef"><b>Definition:</b> <a href="adjoint__refinement__estimator_8h_source.html#l00050">adjoint_refinement_estimator.h:50</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a51d4572a8487042ad90228dbed794211"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a51d4572a8487042ad90228dbed794211">libMesh::SteadySolver::integrate_qoi_timestep</a></div><div class="ttdeci">virtual void integrate_qoi_timestep() override</div><div class="ttdoc">A method to integrate the system::QoI functionals. </div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8C_source.html#l00096">steady_solver.C:96</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QoISet_html"><div class="ttname"><a href="classlibMesh_1_1QoISet.html">libMesh::QoISet</a></div><div class="ttdoc">Data structure for specifying which Quantities of Interest should be calculated in an adjoint or a pa...</div><div class="ttdef"><b>Definition:</b> <a href="qoi__set_8h_source.html#l00045">qoi_set.h:45</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html">libMesh::ErrorVector</a></div><div class="ttdoc">The ErrorVector is a specialization of the StatisticsVector for error data computed on a finite eleme...</div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8h_source.html#l00050">error_vector.h:50</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a2cc737808aec6c524ff25d48abc501af"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a2cc737808aec6c524ff25d48abc501af">libMesh::SteadySolver::sys_type</a></div><div class="ttdeci">DifferentiableSystem sys_type</div><div class="ttdoc">The type of system. </div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8h_source.html#l00053">steady_solver.h:53</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TimeSolver_html_a2bef2e6f4f3010907ca9a6c9183d475a"><div class="ttname"><a href="classlibMesh_1_1TimeSolver.html#a2bef2e6f4f3010907ca9a6c9183d475a">libMesh::TimeSolver::ResFuncType</a></div><div class="ttdeci">bool(DifferentiablePhysics::* ResFuncType)(bool, DiffContext &amp;)</div><div class="ttdoc">Definitions of argument types for use in refactoring subclasses. </div><div class="ttdef"><b>Definition:</b> <a href="time__solver_8h_source.html#l00325">time_solver.h:325</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_abe6fa954faeda8f72f9d21555aecdb38"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#abe6fa954faeda8f72f9d21555aecdb38">libMesh::SteadySolver::integrate_adjoint_refinement_error_estimate</a></div><div class="ttdeci">virtual void integrate_adjoint_refinement_error_estimate(AdjointRefinementEstimator &amp;adjoint_refinement_error_estimator, ErrorVector &amp;QoI_elementwise_error) override</div><div class="ttdoc">A method to compute the adjoint refinement error estimate at the current timestep. </div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8C_source.html#l00112">steady_solver.C:112</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemNorm_html"><div class="ttname"><a href="classlibMesh_1_1SystemNorm.html">libMesh::SystemNorm</a></div><div class="ttdoc">This class defines a norm/seminorm to be applied to a NumericVector which contains coefficients in a ...</div><div class="ttdef"><b>Definition:</b> <a href="system__norm_8h_source.html#l00045">system_norm.h:45</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DifferentiableSystem_html"><div class="ttname"><a href="classlibMesh_1_1DifferentiableSystem.html">libMesh::DifferentiableSystem</a></div><div class="ttdoc">该类提供了一个特定的系统类。它旨在泛化任何系统，线性或非线性，提供残差和雅可比矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__system_8h_source.html#l00050">diff_system.h:50</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SensitivityData_html"><div class="ttname"><a href="classlibMesh_1_1SensitivityData.html">libMesh::SensitivityData</a></div><div class="ttdoc">Data structure for holding completed parameter sensitivity calculations. </div><div class="ttdef"><b>Definition:</b> <a href="sensitivity__data_8h_source.html#l00046">sensitivity_data.h:46</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_ad812c368c8dca2e760cac50b660214cc"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#ad812c368c8dca2e760cac50b660214cc">libMesh::SteadySolver::SteadySolver</a></div><div class="ttdeci">SteadySolver(sys_type &amp;s)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8h_source.html#l00065">steady_solver.h:65</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a9dd5a4897b1b762ce4035598652ea36c"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a9dd5a4897b1b762ce4035598652ea36c">libMesh::SteadySolver::is_steady</a></div><div class="ttdeci">virtual bool is_steady() const override</div><div class="ttdoc">This is a steady-state solver. </div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8h_source.html#l00112">steady_solver.h:112</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html">libMesh::SteadySolver</a></div><div class="ttdoc">This class implements a TimeSolver which does a single solve of the steady state problem. </div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8h_source.html#l00047">steady_solver.h:47</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a24d8c0eaae3b9ee1b419017d010d6d41"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a24d8c0eaae3b9ee1b419017d010d6d41">libMesh::SteadySolver::Parent</a></div><div class="ttdeci">TimeSolver Parent</div><div class="ttdoc">The parent class. </div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8h_source.html#l00058">steady_solver.h:58</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a9f31c252d1fc79c176f6f6b555f59fc9"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a9f31c252d1fc79c176f6f6b555f59fc9">libMesh::SteadySolver::_general_residual</a></div><div class="ttdeci">virtual bool _general_residual(bool request_jacobian, DiffContext &amp;, ResFuncType time_deriv, ResFuncType constraint)</div><div class="ttdoc">This method is the underlying implementation of the public residual methods. </div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8C_source.html#l00068">steady_solver.C:68</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_af8bfc5a996a99dab2dc1ff53db428bb1"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#af8bfc5a996a99dab2dc1ff53db428bb1">libMesh::SteadySolver::nonlocal_residual</a></div><div class="ttdeci">virtual bool nonlocal_residual(bool request_jacobian, DiffContext &amp;) override</div><div class="ttdoc">This method uses the DifferentiablePhysics&amp;#39; nonlocal_time_derivative() and nonlocal_constraint() to b...</div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8C_source.html#l00057">steady_solver.C:57</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a712c41a72c339ac46e6a7313908090fb"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a712c41a72c339ac46e6a7313908090fb">libMesh::SteadySolver::element_residual</a></div><div class="ttdeci">virtual bool element_residual(bool request_jacobian, DiffContext &amp;) override</div><div class="ttdoc">This method uses the DifferentiablePhysics&amp;#39; element_time_derivative() and element_constraint() to bui...</div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8C_source.html#l00035">steady_solver.C:35</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a38b41a20f52563837511a24cab91ef2a"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a38b41a20f52563837511a24cab91ef2a">libMesh::SteadySolver::side_residual</a></div><div class="ttdeci">virtual bool side_residual(bool request_jacobian, DiffContext &amp;) override</div><div class="ttdoc">This method uses the DifferentiablePhysics&amp;#39; side_time_derivative() and side_constraint() to build a f...</div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8C_source.html#l00046">steady_solver.C:46</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SteadySolver_html_a6b12b8cf676029477c3e540d77fbedc8"><div class="ttname"><a href="classlibMesh_1_1SteadySolver.html#a6b12b8cf676029477c3e540d77fbedc8">libMesh::SteadySolver::integrate_adjoint_sensitivity</a></div><div class="ttdeci">virtual void integrate_adjoint_sensitivity(const QoISet &amp;qois, const ParameterVector &amp;parameter_vector, SensitivityData &amp;sensitivities) override</div><div class="ttdoc">A method to integrate the adjoint sensitivity w.r.t a given parameter vector. </div><div class="ttdef"><b>Definition:</b> <a href="steady__solver_8C_source.html#l00103">steady_solver.C:103</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

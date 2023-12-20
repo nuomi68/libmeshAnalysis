@@ -1,0 +1,10 @@
+digraph "类继承关系图"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="libMesh::SparsityPattern\l::AugmentSparsityPattern",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1SparsityPattern_1_1AugmentSparsityPattern.html",tooltip="Abstract base class to be used to add user-defined implicit degree of freedom couplings. "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="libMesh::DofMap::Augment\lSparsityPattern",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DofMap_1_1AugmentSparsityPattern.html",tooltip="Backwards compatibility for prior AugmentSparsityPattern users. "];
+}

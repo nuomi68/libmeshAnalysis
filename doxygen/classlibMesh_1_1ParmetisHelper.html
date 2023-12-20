@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::ParmetisHelper类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classlibMesh_1_1ParmetisHelper-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::ParmetisHelper类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <code><a class="el" href="classlibMesh_1_1ParmetisHelper.html" title="The ParmetisHelper class allows us to use a &#39;pimpl&#39; strategy in the ParmetisPartitioner class...">ParmetisHelper</a></code> class allows us to use a 'pimpl' strategy in the <a class="el" href="classlibMesh_1_1ParmetisPartitioner.html" title="The ParmetisPartitioner uses the Parmetis graph partitioner to partition the elements. ">ParmetisPartitioner</a> class.  
+ <a href="classlibMesh_1_1ParmetisHelper.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:addaed280ce1087616b24ed0ef2920a55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#addaed280ce1087616b24ed0ef2920a55">ParmetisHelper</a> ()=default</td></tr>
+<tr class="memdesc:addaed280ce1087616b24ed0ef2920a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaulted constructors, assignment operators, and destructor.  <a href="#addaed280ce1087616b24ed0ef2920a55">更多...</a><br/></td></tr>
+<tr class="separator:addaed280ce1087616b24ed0ef2920a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242a15b268321ce7c8ac87f05ab77c3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a242a15b268321ce7c8ac87f05ab77c3e">ParmetisHelper</a> (const <a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a> &amp;)=default</td></tr>
+<tr class="separator:a242a15b268321ce7c8ac87f05ab77c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f76082b670fc0c6750d4efef532284"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a60f76082b670fc0c6750d4efef532284">ParmetisHelper</a> (<a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a60f76082b670fc0c6750d4efef532284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3949ff612af47be1e515632c29b33543"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a3949ff612af47be1e515632c29b33543">operator=</a> (const <a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a> &amp;)=default</td></tr>
+<tr class="separator:a3949ff612af47be1e515632c29b33543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a142e0794b496eebca157025b55fa4fa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a142e0794b496eebca157025b55fa4fa9">operator=</a> (<a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a142e0794b496eebca157025b55fa4fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876777551f009bb62f437193d7dc4ece"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a876777551f009bb62f437193d7dc4ece">~ParmetisHelper</a> ()=default</td></tr>
+<tr class="separator:a876777551f009bb62f437193d7dc4ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aec2e07acab7031dfeda4febd5af6cc83"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Parmetis::idx_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#aec2e07acab7031dfeda4febd5af6cc83">vtxdist</a></td></tr>
+<tr class="memdesc:aec2e07acab7031dfeda4febd5af6cc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structures used by ParMETIS to describe the connectivity graph of the mesh.  <a href="#aec2e07acab7031dfeda4febd5af6cc83">更多...</a><br/></td></tr>
+<tr class="separator:aec2e07acab7031dfeda4febd5af6cc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3303b9584fcb696405aec34b301f9c85"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Parmetis::idx_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a3303b9584fcb696405aec34b301f9c85">xadj</a></td></tr>
+<tr class="separator:a3303b9584fcb696405aec34b301f9c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3a24d32901977d6220eccd60a84e9d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Parmetis::idx_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#acb3a24d32901977d6220eccd60a84e9d">adjncy</a></td></tr>
+<tr class="separator:acb3a24d32901977d6220eccd60a84e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03f0a86b333a59dfc86045cad666c32"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#aa03f0a86b333a59dfc86045cad666c32">part</a></td></tr>
+<tr class="separator:aa03f0a86b333a59dfc86045cad666c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd748b7469cd70159ddf2f4bf7ed5022"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Parmetis::real_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#abd748b7469cd70159ddf2f4bf7ed5022">tpwgts</a></td></tr>
+<tr class="separator:abd748b7469cd70159ddf2f4bf7ed5022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8566ebe6122573a303a500b0e0882dc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Parmetis::real_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#ad8566ebe6122573a303a500b0e0882dc">ubvec</a></td></tr>
+<tr class="separator:ad8566ebe6122573a303a500b0e0882dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b71b9e2e5f164c244aa84c72bcd9197"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Parmetis::idx_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a1b71b9e2e5f164c244aa84c72bcd9197">options</a></td></tr>
+<tr class="separator:a1b71b9e2e5f164c244aa84c72bcd9197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b50ef8304c9d2ed0e19d333d27ca466"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Parmetis::idx_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a1b50ef8304c9d2ed0e19d333d27ca466">vwgt</a></td></tr>
+<tr class="separator:a1b50ef8304c9d2ed0e19d333d27ca466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f0c0d85aca68b0211546f42e7557f91"><td class="memItemLeft" align="right" valign="top">Parmetis::idx_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a1f0c0d85aca68b0211546f42e7557f91">wgtflag</a></td></tr>
+<tr class="separator:a1f0c0d85aca68b0211546f42e7557f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe51a022a02e6b326e593373b9f29c99"><td class="memItemLeft" align="right" valign="top">Parmetis::idx_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#afe51a022a02e6b326e593373b9f29c99">ncon</a></td></tr>
+<tr class="separator:afe51a022a02e6b326e593373b9f29c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffab99c25075d0f12b24065be4fd492"><td class="memItemLeft" align="right" valign="top">Parmetis::idx_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a1ffab99c25075d0f12b24065be4fd492">numflag</a></td></tr>
+<tr class="separator:a1ffab99c25075d0f12b24065be4fd492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91ec0c06f0cb501c69c2f61d4741e5e"><td class="memItemLeft" align="right" valign="top">Parmetis::idx_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#ac91ec0c06f0cb501c69c2f61d4741e5e">nparts</a></td></tr>
+<tr class="separator:ac91ec0c06f0cb501c69c2f61d4741e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f16e42cad3047b2f68c938b0da24bf8"><td class="memItemLeft" align="right" valign="top">Parmetis::idx_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParmetisHelper.html#a8f16e42cad3047b2f68c938b0da24bf8">edgecut</a></td></tr>
+<tr class="separator:a8f16e42cad3047b2f68c938b0da24bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The <code><a class="el" href="classlibMesh_1_1ParmetisHelper.html" title="The ParmetisHelper class allows us to use a &#39;pimpl&#39; strategy in the ParmetisPartitioner class...">ParmetisHelper</a></code> class allows us to use a 'pimpl' strategy in the <a class="el" href="classlibMesh_1_1ParmetisPartitioner.html" title="The ParmetisPartitioner uses the Parmetis graph partitioner to partition the elements. ">ParmetisPartitioner</a> class. </p>
+<p>Since we don't include the parmetis.h header file here, we don't have to install it, either. This class is empty when <a class="el" href="namespaceParmetis.html">Parmetis</a> is not available, otherwise it is simply a data container.</p>
+<dl class="section author"><dt>作者</dt><dd>John W. Peterson </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2015 Pointer-to-implementation class used by <a class="el" href="classlibMesh_1_1ParmetisPartitioner.html" title="The ParmetisPartitioner uses the Parmetis graph partitioner to partition the elements. ">ParmetisPartitioner</a>. </dd></dl>
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00061">61</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="addaed280ce1087616b24ed0ef2920a55"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ParmetisHelper::ParmetisHelper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defaulted constructors, assignment operators, and destructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a242a15b268321ce7c8ac87f05ab77c3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ParmetisHelper::ParmetisHelper </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a60f76082b670fc0c6750d4efef532284"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ParmetisHelper::ParmetisHelper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a876777551f009bb62f437193d7dc4ece"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ParmetisHelper::~ParmetisHelper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a3949ff612af47be1e515632c29b33543"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a>&amp; libMesh::ParmetisHelper::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a142e0794b496eebca157025b55fa4fa9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a>&amp; libMesh::ParmetisHelper::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1ParmetisHelper.html">ParmetisHelper</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="acb3a24d32901977d6220eccd60a84e9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Parmetis::idx_t&gt; libMesh::ParmetisHelper::adjncy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f16e42cad3047b2f68c938b0da24bf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Parmetis::idx_t libMesh::ParmetisHelper::edgecut</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00102">102</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe51a022a02e6b326e593373b9f29c99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Parmetis::idx_t libMesh::ParmetisHelper::ncon</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00099">99</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac91ec0c06f0cb501c69c2f61d4741e5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Parmetis::idx_t libMesh::ParmetisHelper::nparts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ffab99c25075d0f12b24065be4fd492"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Parmetis::idx_t libMesh::ParmetisHelper::numflag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00100">100</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b71b9e2e5f164c244aa84c72bcd9197"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Parmetis::idx_t&gt; libMesh::ParmetisHelper::options</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00095">95</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa03f0a86b333a59dfc86045cad666c32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&gt; libMesh::ParmetisHelper::part</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abd748b7469cd70159ddf2f4bf7ed5022"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Parmetis::real_t&gt; libMesh::ParmetisHelper::tpwgts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00091">91</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8566ebe6122573a303a500b0e0882dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Parmetis::real_t&gt; libMesh::ParmetisHelper::ubvec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec2e07acab7031dfeda4febd5af6cc83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Parmetis::idx_t&gt; libMesh::ParmetisHelper::vtxdist</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data structures used by ParMETIS to describe the connectivity graph of the mesh. </p>
+<p>Consult the ParMETIS documentation. </p>
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00080">80</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b50ef8304c9d2ed0e19d333d27ca466"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Parmetis::idx_t&gt; libMesh::ParmetisHelper::vwgt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f0c0d85aca68b0211546f42e7557f91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Parmetis::idx_t libMesh::ParmetisHelper::wgtflag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00098">98</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3303b9584fcb696405aec34b301f9c85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Parmetis::idx_t&gt; libMesh::ParmetisHelper::xadj</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a> 第 <a class="el" href="parmetis__helper_8h_source.html#l00081">81</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/partitioning/<a class="el" href="parmetis__helper_8h_source.html">parmetis_helper.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:38 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

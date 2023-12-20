@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/mesh/dyna_io.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_f8c4e882537aef67e047d37e5f9a7fb2.html">mesh</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">dyna_io.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dyna__io_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_DYNA_IO_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_DYNA_IO_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_common.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;libmesh/mesh_input.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;libmesh/mesh_output.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// Forward declarations</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>MeshBase;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DynaIO.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1DynaIO.html">DynaIO</a> : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1MeshInput.html">MeshInput</a>&lt;MeshBase&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">explicit</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classlibMesh_1_1DynaIO.html#a50a8b45b380f3b5e92a3907eedcf3ca1">DynaIO</a> (<a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; <a class="code" href="classlibMesh_1_1MeshInput.html#ac18df20ac8c6a96bc404d08bae1e481b">mesh</a>,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          <span class="keywordtype">bool</span> keep_spline_nodes = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DynaIO.html#ad4d676bec85c6d90ca651fe17f1c00ed">read</a> (<span class="keyword">const</span> std::string &amp; <a class="code" href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">name</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DynaIO.html#ad4ccf2d4bf67085c786af1d6ce34078b">add_spline_constraints</a>(<a class="code" href="classlibMesh_1_1DofMap.html">DofMap</a> &amp; dof_map,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                              <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sys_num,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                              <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> var_num);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DynaIO.html#a99bdb7c56ded7ae34969978f0f2f295d">clear_spline_nodes</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">  112</a></span>&#160;  <span class="keyword">typedef</span> int32_t <a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html">  121</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html">ElementDefinition</a></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#acad1d5aaa31dd489e56934122fb369c4">ElementDefinition</a>(<a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a> type_in,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                      <a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a> dyna_type_in,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                      <a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a> dim_in,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                      <a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a> p_in);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#acad1d5aaa31dd489e56934122fb369c4">ElementDefinition</a>(<a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a> type_in,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                      <a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a> dyna_type_in,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                      <a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a> dim_in,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                      <a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a> p_in,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                      std::vector&lt;unsigned int&gt; &amp;&amp; nodes_in);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a1f22070d264ea5ba6989f6a0ccc0f712">  134</a></span>&#160;    <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a> <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a1f22070d264ea5ba6989f6a0ccc0f712">type</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#ad6f62403ee7eb05ef0d7f1f412df1943">  135</a></span>&#160;    <a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a> <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#ad6f62403ee7eb05ef0d7f1f412df1943">dyna_type</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a17f5abba8ec10d6d09b64b6a80a7a06e">  136</a></span>&#160;    <a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a> <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a17f5abba8ec10d6d09b64b6a80a7a06e">dim</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a0805d3750173ea530787e6f8d3261d31">  137</a></span>&#160;    <a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a> <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a0805d3750173ea530787e6f8d3261d31">p</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#aa3a43f9bb1a95001710ad303fc8a941c">  138</a></span>&#160;    std::vector&lt;unsigned int&gt; <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#aa3a43f9bb1a95001710ad303fc8a941c">nodes</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  };</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html">ElementDefinition</a> &amp;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="classlibMesh_1_1DynaIO.html#adc5d30d18ea183302337e91fa180d1d8">find_elem_definition</a>(<a class="code" href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">dyna_int_type</a> dyna_elem, <span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> p);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html">ElementDefinition</a> &amp;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <a class="code" href="classlibMesh_1_1DynaIO.html#adc5d30d18ea183302337e91fa180d1d8">find_elem_definition</a>(<a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a> libmesh_elem, <span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> p);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="comment">// Keep track of spline node indexing, so as to enable adding</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="comment">// constraint rows easily later.</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DynaIO.html#a915ed4a9c43e703e0ace44a028ecc219">  155</a></span>&#160;  std::vector&lt;Node *&gt; <a class="code" href="classlibMesh_1_1DynaIO.html#a915ed4a9c43e703e0ace44a028ecc219">spline_node_ptrs</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DynaIO.html#ad97b886e8321bba4ccae9537739dc216">  156</a></span>&#160;  std::unordered_map&lt;Node *, Elem *&gt; <a class="code" href="classlibMesh_1_1DynaIO.html#ad97b886e8321bba4ccae9537739dc216">spline_nodeelem_ptrs</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DynaIO.html#a97d7c12748f9492d77d5279561d81e1d">  161</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1DynaIO.html#a97d7c12748f9492d77d5279561d81e1d">_keep_spline_nodes</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DynaIO.html#a059b73c4979c676133f2b76ad7f1d80e">read_mesh</a> (std::istream &amp; in);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DynaIO.html#a30a2173143d29a4242839fb6d490fa8c">  173</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1DynaIO.html#a30a2173143d29a4242839fb6d490fa8c">max_ints_per_line</a> = 10;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DynaIO.html#a3c29d65b913331036971196ccb195e00">  178</a></span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="classlibMesh_1_1DynaIO.html#a3c29d65b913331036971196ccb195e00">dyna_fp_type</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DynaIO.html#a09aa6470ec0e13d9054397e1cc1b0f85">  183</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1DynaIO.html#a09aa6470ec0e13d9054397e1cc1b0f85">max_fps_per_line</a> = 5;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html">  189</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html">ElementMaps</a></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">// Helper function to add a (key, value) pair to both maps</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a74d8f653e375f89011c06316211d1d68">  192</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a74d8f653e375f89011c06316211d1d68">add_def</a>(<span class="keyword">const</span> <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html">ElementDefinition</a> &amp; eledef)</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a3b49eefb2bfd7eb2f26faaa8f0fbf7f8">out</a>.emplace(eledef.<a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a1f22070d264ea5ba6989f6a0ccc0f712">type</a>, eledef);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a5a095d381bd6117071c4cba23c01de97">in</a>.emplace(std::make_tuple(eledef.<a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#ad6f62403ee7eb05ef0d7f1f412df1943">dyna_type</a>, eledef.<a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a17f5abba8ec10d6d09b64b6a80a7a06e">dim</a>, eledef.<a class="code" href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a0805d3750173ea530787e6f8d3261d31">p</a>), eledef);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a3b49eefb2bfd7eb2f26faaa8f0fbf7f8">  198</a></span>&#160;    std::map&lt;ElemType, ElementDefinition&gt; <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a3b49eefb2bfd7eb2f26faaa8f0fbf7f8">out</a>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a9262697ee3148cf4a7e2e3b6c2086825">  200</a></span>&#160;    <span class="keyword">typedef</span> std::tuple&lt;dyna_int_type, dyna_int_type, dyna_int_type&gt; <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a9262697ee3148cf4a7e2e3b6c2086825">Key</a>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a5a095d381bd6117071c4cba23c01de97">  202</a></span>&#160;    std::map&lt;Key, ElementDefinition&gt; <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a5a095d381bd6117071c4cba23c01de97">in</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  };</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DynaIO.html#a56f1bd1970376c1bc8ce7cbe65401dc1">  209</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html">ElementMaps</a> <a class="code" href="classlibMesh_1_1DynaIO.html#a56f1bd1970376c1bc8ce7cbe65401dc1">_element_maps</a>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keyword">static</span> <a class="code" href="structlibMesh_1_1DynaIO_1_1ElementMaps.html">ElementMaps</a> <a class="code" href="classlibMesh_1_1DynaIO.html#afb6d05b2cc5cca4445c5f71be1a29ac3">build_element_maps</a>();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;};</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#endif // LIBMESH_DYNA_IO_H</span></div>
+<div class="ttc" id="namespacelibMesh_1_1Quality_html_a1d3617b89c15ade245910fc9a4ddfa34"><div class="ttname"><a href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">libMesh::Quality::name</a></div><div class="ttdeci">std::string name(const ElemQuality q)</div><div class="ttdoc">This function returns a string containing some name for q. </div><div class="ttdef"><b>Definition:</b> <a href="elem__quality_8C_source.html#l00042">elem_quality.C:42</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a3f482b3acb4beb528f0ce89f161ff967"><div class="ttname"><a href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">libMesh::ElemType</a></div><div class="ttdeci">ElemType</div><div class="ttdoc">Defines an enum for geometric element types. </div><div class="ttdef"><b>Definition:</b> <a href="enum__elem__type_8h_source.html#l00033">enum_elem_type.h:33</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_ad4d676bec85c6d90ca651fe17f1c00ed"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#ad4d676bec85c6d90ca651fe17f1c00ed">libMesh::DynaIO::read</a></div><div class="ttdeci">virtual void read(const std::string &amp;name) override</div><div class="ttdoc">Reads in a mesh in the Dyna format from the ASCII file given by name. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8C_source.html#l00139">dyna_io.C:139</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_a915ed4a9c43e703e0ace44a028ecc219"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#a915ed4a9c43e703e0ace44a028ecc219">libMesh::DynaIO::spline_node_ptrs</a></div><div class="ttdeci">std::vector&lt; Node * &gt; spline_node_ptrs</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00155">dyna_io.h:155</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_acf2b7ce924b2cd99be60d12e68be8092"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#acf2b7ce924b2cd99be60d12e68be8092">libMesh::DynaIO::dyna_int_type</a></div><div class="ttdeci">int32_t dyna_int_type</div><div class="ttdoc">The integer type DYNA uses. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00112">dyna_io.h:112</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html">libMesh::DynaIO</a></div><div class="ttdoc">Reading and writing meshes in (a subset of) LS-DYNA format. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00052">dyna_io.h:52</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_a3c29d65b913331036971196ccb195e00"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#a3c29d65b913331036971196ccb195e00">libMesh::DynaIO::dyna_fp_type</a></div><div class="ttdeci">double dyna_fp_type</div><div class="ttdoc">The floating-point type DYNA uses. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00178">dyna_io.h:178</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_a059b73c4979c676133f2b76ad7f1d80e"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#a059b73c4979c676133f2b76ad7f1d80e">libMesh::DynaIO::read_mesh</a></div><div class="ttdeci">void read_mesh(std::istream &amp;in)</div><div class="ttdoc">Implementation of the read() function. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8C_source.html#l00177">dyna_io.C:177</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementDefinition_html_a17f5abba8ec10d6d09b64b6a80a7a06e"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a17f5abba8ec10d6d09b64b6a80a7a06e">libMesh::DynaIO::ElementDefinition::dim</a></div><div class="ttdeci">dyna_int_type dim</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00136">dyna_io.h:136</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementDefinition_html"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html">libMesh::DynaIO::ElementDefinition</a></div><div class="ttdoc">Defines mapping from libMesh element types to LS-DYNA element types or vice-versa. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00121">dyna_io.h:121</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementDefinition_html_ad6f62403ee7eb05ef0d7f1f412df1943"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#ad6f62403ee7eb05ef0d7f1f412df1943">libMesh::DynaIO::ElementDefinition::dyna_type</a></div><div class="ttdeci">dyna_int_type dyna_type</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00135">dyna_io.h:135</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_a99bdb7c56ded7ae34969978f0f2f295d"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#a99bdb7c56ded7ae34969978f0f2f295d">libMesh::DynaIO::clear_spline_nodes</a></div><div class="ttdeci">void clear_spline_nodes()</div><div class="ttdoc">Removes any spline nodes (both NodeElem and Node), leaving only the FE mesh generated from those spli...</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8C_source.html#l00744">dyna_io.C:744</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementMaps_html_a74d8f653e375f89011c06316211d1d68"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a74d8f653e375f89011c06316211d1d68">libMesh::DynaIO::ElementMaps::add_def</a></div><div class="ttdeci">void add_def(const ElementDefinition &amp;eledef)</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00192">dyna_io.h:192</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_a97d7c12748f9492d77d5279561d81e1d"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#a97d7c12748f9492d77d5279561d81e1d">libMesh::DynaIO::_keep_spline_nodes</a></div><div class="ttdeci">bool _keep_spline_nodes</div><div class="ttdoc">Whether to keep or eventually discard spline nodes. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00161">dyna_io.h:161</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html">libMesh::MeshBase</a></div><div class="ttdoc">This is the MeshBase class. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00070">mesh_base.h:70</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_ad4ccf2d4bf67085c786af1d6ce34078b"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#ad4ccf2d4bf67085c786af1d6ce34078b">libMesh::DynaIO::add_spline_constraints</a></div><div class="ttdeci">void add_spline_constraints(DofMap &amp;dof_map, unsigned int sys_num, unsigned int var_num)</div><div class="ttdoc">Constrains finite element degrees of freedom in terms of spline degrees of freedom by adding user-def...</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8C_source.html#l00737">dyna_io.C:737</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html"><div class="ttname"><a href="classlibMesh_1_1DofMap.html">libMesh::DofMap</a></div><div class="ttdoc">This class handles the numbering of degrees of freedom on a mesh. </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00169">dof_map.h:169</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_adc5d30d18ea183302337e91fa180d1d8"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#adc5d30d18ea183302337e91fa180d1d8">libMesh::DynaIO::find_elem_definition</a></div><div class="ttdeci">static const ElementDefinition &amp; find_elem_definition(dyna_int_type dyna_elem, int dim, int p)</div><div class="ttdoc">Finds the ElementDefinition corresponding to a particular element type. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8C_source.html#l00754">dyna_io.C:754</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshInput_html"><div class="ttname"><a href="classlibMesh_1_1MeshInput.html">libMesh::MeshInput</a></div><div class="ttdoc">This class defines an abstract interface for Mesh input. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00052">mesh_base.h:52</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementMaps_html_a3b49eefb2bfd7eb2f26faaa8f0fbf7f8"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a3b49eefb2bfd7eb2f26faaa8f0fbf7f8">libMesh::DynaIO::ElementMaps::out</a></div><div class="ttdeci">std::map&lt; ElemType, ElementDefinition &gt; out</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00198">dyna_io.h:198</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementDefinition_html_a1f22070d264ea5ba6989f6a0ccc0f712"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a1f22070d264ea5ba6989f6a0ccc0f712">libMesh::DynaIO::ElementDefinition::type</a></div><div class="ttdeci">ElemType type</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00134">dyna_io.h:134</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_afb6d05b2cc5cca4445c5f71be1a29ac3"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#afb6d05b2cc5cca4445c5f71be1a29ac3">libMesh::DynaIO::build_element_maps</a></div><div class="ttdeci">static ElementMaps build_element_maps()</div><div class="ttdoc">A static function used to construct the _element_maps struct, statically. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8C_source.html#l00055">dyna_io.C:55</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_a09aa6470ec0e13d9054397e1cc1b0f85"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#a09aa6470ec0e13d9054397e1cc1b0f85">libMesh::DynaIO::max_fps_per_line</a></div><div class="ttdeci">static const int max_fps_per_line</div><div class="ttdoc">How many can we find on a line? </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00183">dyna_io.h:183</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementDefinition_html_a0805d3750173ea530787e6f8d3261d31"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#a0805d3750173ea530787e6f8d3261d31">libMesh::DynaIO::ElementDefinition::p</a></div><div class="ttdeci">dyna_int_type p</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00137">dyna_io.h:137</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_a50a8b45b380f3b5e92a3907eedcf3ca1"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#a50a8b45b380f3b5e92a3907eedcf3ca1">libMesh::DynaIO::DynaIO</a></div><div class="ttdeci">DynaIO(MeshBase &amp;mesh, bool keep_spline_nodes=true)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8C_source.html#l00130">dyna_io.C:130</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementMaps_html_a9262697ee3148cf4a7e2e3b6c2086825"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a9262697ee3148cf4a7e2e3b6c2086825">libMesh::DynaIO::ElementMaps::Key</a></div><div class="ttdeci">std::tuple&lt; dyna_int_type, dyna_int_type, dyna_int_type &gt; Key</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00200">dyna_io.h:200</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_ad97b886e8321bba4ccae9537739dc216"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#ad97b886e8321bba4ccae9537739dc216">libMesh::DynaIO::spline_nodeelem_ptrs</a></div><div class="ttdeci">std::unordered_map&lt; Node *, Elem * &gt; spline_nodeelem_ptrs</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00156">dyna_io.h:156</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_a56f1bd1970376c1bc8ce7cbe65401dc1"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#a56f1bd1970376c1bc8ce7cbe65401dc1">libMesh::DynaIO::_element_maps</a></div><div class="ttdeci">static ElementMaps _element_maps</div><div class="ttdoc">A static ElementMaps object that is built statically and used by all instances of this class...</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00209">dyna_io.h:209</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DynaIO_html_a30a2173143d29a4242839fb6d490fa8c"><div class="ttname"><a href="classlibMesh_1_1DynaIO.html#a30a2173143d29a4242839fb6d490fa8c">libMesh::DynaIO::max_ints_per_line</a></div><div class="ttdeci">static const int max_ints_per_line</div><div class="ttdoc">How many can we find on a line? </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00173">dyna_io.h:173</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementMaps_html"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementMaps.html">libMesh::DynaIO::ElementMaps</a></div><div class="ttdoc">struct which holds a map from LS-DYNA to libMesh element numberings and vice-versa. </div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00189">dyna_io.h:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshInput_html_ac18df20ac8c6a96bc404d08bae1e481b"><div class="ttname"><a href="classlibMesh_1_1MeshInput.html#ac18df20ac8c6a96bc404d08bae1e481b">libMesh::MeshInput&lt; MeshBase &gt;::mesh</a></div><div class="ttdeci">MeshBase &amp; mesh()</div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementDefinition_html_aa3a43f9bb1a95001710ad303fc8a941c"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#aa3a43f9bb1a95001710ad303fc8a941c">libMesh::DynaIO::ElementDefinition::nodes</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; nodes</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00138">dyna_io.h:138</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementMaps_html_a5a095d381bd6117071c4cba23c01de97"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementMaps.html#a5a095d381bd6117071c4cba23c01de97">libMesh::DynaIO::ElementMaps::in</a></div><div class="ttdeci">std::map&lt; Key, ElementDefinition &gt; in</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8h_source.html#l00202">dyna_io.h:202</a></div></div>
+<div class="ttc" id="structlibMesh_1_1DynaIO_1_1ElementDefinition_html_acad1d5aaa31dd489e56934122fb369c4"><div class="ttname"><a href="structlibMesh_1_1DynaIO_1_1ElementDefinition.html#acad1d5aaa31dd489e56934122fb369c4">libMesh::DynaIO::ElementDefinition::ElementDefinition</a></div><div class="ttdeci">ElementDefinition(ElemType type_in, dyna_int_type dyna_type_in, dyna_int_type dim_in, dyna_int_type p_in)</div><div class="ttdef"><b>Definition:</b> <a href="dyna__io_8C_source.html#l00100">dyna_io.C:100</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:02 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,1284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::RBParameters类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classlibMesh_1_1RBParameters-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::RBParameters类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class is part of the rbOOmit framework.  
+ <a href="classlibMesh_1_1RBParameters.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="rb__parameters_8h_source.html">rb_parameters.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html">const_iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a constant iterator for this class.  <a href="classlibMesh_1_1RBParameters_1_1const__iterator.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3aa7540cb05ef504c4424de85aa36c7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a3aa7540cb05ef504c4424de85aa36c7a">RBParameters</a> ()</td></tr>
+<tr class="memdesc:a3aa7540cb05ef504c4424de85aa36c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a3aa7540cb05ef504c4424de85aa36c7a">更多...</a><br/></td></tr>
+<tr class="separator:a3aa7540cb05ef504c4424de85aa36c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cdc75eb2fafd882a01c0108c3d14fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a65cdc75eb2fafd882a01c0108c3d14fd">RBParameters</a> (<a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:a65cdc75eb2fafd882a01c0108c3d14fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The special functions can be defaulted for this class, as it does not manage any memory itself.  <a href="#a65cdc75eb2fafd882a01c0108c3d14fd">更多...</a><br/></td></tr>
+<tr class="separator:a65cdc75eb2fafd882a01c0108c3d14fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab862902ce9627ea0ff56e0f012fd4f76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#ab862902ce9627ea0ff56e0f012fd4f76">RBParameters</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;)=default</td></tr>
+<tr class="separator:ab862902ce9627ea0ff56e0f012fd4f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b9eb228303b844e517bef81aa4d7b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a22b9eb228303b844e517bef81aa4d7b7">operator=</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;)=default</td></tr>
+<tr class="separator:a22b9eb228303b844e517bef81aa4d7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352ede13006899aaf3001f34af2510a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a352ede13006899aaf3001f34af2510a9">operator=</a> (<a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a352ede13006899aaf3001f34af2510a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee30cd70b38061e8310ce527e62f73ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#aee30cd70b38061e8310ce527e62f73ad">~RBParameters</a> ()=default</td></tr>
+<tr class="separator:aee30cd70b38061e8310ce527e62f73ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e4597bfe5dbb576bb99db165d9b98e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a57e4597bfe5dbb576bb99db165d9b98e">RBParameters</a> (const std::map&lt; std::string, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;parameter_map)</td></tr>
+<tr class="memdesc:a57e4597bfe5dbb576bb99db165d9b98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a57e4597bfe5dbb576bb99db165d9b98e">更多...</a><br/></td></tr>
+<tr class="separator:a57e4597bfe5dbb576bb99db165d9b98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dab8f0543d227b23dfe5dfb38d65bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a7dab8f0543d227b23dfe5dfb38d65bd5">clear</a> ()</td></tr>
+<tr class="memdesc:a7dab8f0543d227b23dfe5dfb38d65bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear this object.  <a href="#a7dab8f0543d227b23dfe5dfb38d65bd5">更多...</a><br/></td></tr>
+<tr class="separator:a7dab8f0543d227b23dfe5dfb38d65bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761ac7fb5b5675948f63f196d27d330f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a761ac7fb5b5675948f63f196d27d330f">has_value</a> (const std::string &amp;param_name) const </td></tr>
+<tr class="separator:a761ac7fb5b5675948f63f196d27d330f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2235f18c4ddcc7c2ce8b821f77e754ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a2235f18c4ddcc7c2ce8b821f77e754ba">has_extra_value</a> (const std::string &amp;param_name) const </td></tr>
+<tr class="separator:a2235f18c4ddcc7c2ce8b821f77e754ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ff7b4c6b8599667da0d1f6eeab197a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#aa6ff7b4c6b8599667da0d1f6eeab197a">get_value</a> (const std::string &amp;param_name) const </td></tr>
+<tr class="memdesc:aa6ff7b4c6b8599667da0d1f6eeab197a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the specified parameter, throwing an error if it does not exist.  <a href="#aa6ff7b4c6b8599667da0d1f6eeab197a">更多...</a><br/></td></tr>
+<tr class="separator:aa6ff7b4c6b8599667da0d1f6eeab197a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bf01d0cf72eb3c636a9e04a34228d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a48bf01d0cf72eb3c636a9e04a34228d2">get_value</a> (const std::string &amp;param_name, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &amp;default_val) const </td></tr>
+<tr class="memdesc:a48bf01d0cf72eb3c636a9e04a34228d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the specified parameter, returning the provided default value if it does not exist.  <a href="#a48bf01d0cf72eb3c636a9e04a34228d2">更多...</a><br/></td></tr>
+<tr class="separator:a48bf01d0cf72eb3c636a9e04a34228d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda1b85533c68cd104f4db5c34a12cbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#afda1b85533c68cd104f4db5c34a12cbc">get_step_value</a> (const std::string &amp;param_name, std::size_t step) const </td></tr>
+<tr class="memdesc:afda1b85533c68cd104f4db5c34a12cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the specified parameter at the specified step, throwing an error if it does not exist.  <a href="#afda1b85533c68cd104f4db5c34a12cbc">更多...</a><br/></td></tr>
+<tr class="separator:afda1b85533c68cd104f4db5c34a12cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa2f34fcbe147d91415fc2608004bb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#abaa2f34fcbe147d91415fc2608004bb7">get_step_value</a> (const std::string &amp;param_name, std::size_t step, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &amp;default_val) const </td></tr>
+<tr class="memdesc:abaa2f34fcbe147d91415fc2608004bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the specified parameter at the specified step, returning the provided default value if either the parameter is not defined or the step is invalid.  <a href="#abaa2f34fcbe147d91415fc2608004bb7">更多...</a><br/></td></tr>
+<tr class="separator:abaa2f34fcbe147d91415fc2608004bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff45622338bf5bf4c2488f8f201f54ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#aff45622338bf5bf4c2488f8f201f54ef">set_value</a> (const std::string &amp;param_name, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>)</td></tr>
+<tr class="memdesc:aff45622338bf5bf4c2488f8f201f54ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of the specified parameter.  <a href="#aff45622338bf5bf4c2488f8f201f54ef">更多...</a><br/></td></tr>
+<tr class="separator:aff45622338bf5bf4c2488f8f201f54ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c90b66e36f33c70de102fcd6111d8c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a6c90b66e36f33c70de102fcd6111d8c5">set_value</a> (const std::string &amp;param_name, std::size_t index, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>)</td></tr>
+<tr class="memdesc:a6c90b66e36f33c70de102fcd6111d8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of the specified parameter at the specified vector index.  <a href="#a6c90b66e36f33c70de102fcd6111d8c5">更多...</a><br/></td></tr>
+<tr class="separator:a6c90b66e36f33c70de102fcd6111d8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bdf5b47b901c895b3934b62f5e05640"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a9bdf5b47b901c895b3934b62f5e05640">push_back_value</a> (const std::string &amp;param_name, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>)</td></tr>
+<tr class="memdesc:a9bdf5b47b901c895b3934b62f5e05640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to set_value(name, index, value) but instead of specifying a particular index, just appends one more.  <a href="#a9bdf5b47b901c895b3934b62f5e05640">更多...</a><br/></td></tr>
+<tr class="separator:a9bdf5b47b901c895b3934b62f5e05640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6865c536b3b3a76d29a2dfa1098703"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a8c6865c536b3b3a76d29a2dfa1098703">push_back_extra_value</a> (const std::string &amp;param_name, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>)</td></tr>
+<tr class="memdesc:a8c6865c536b3b3a76d29a2dfa1098703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classlibMesh_1_1RBParameters.html#a9bdf5b47b901c895b3934b62f5e05640" title="Similar to set_value(name, index, value) but instead of specifying a particular index, just appends one more. ">push_back_value()</a>, but for "extra" parameters.  <a href="#a8c6865c536b3b3a76d29a2dfa1098703">更多...</a><br/></td></tr>
+<tr class="separator:a8c6865c536b3b3a76d29a2dfa1098703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0802ec8099611eb849313541f50a5d6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a0802ec8099611eb849313541f50a5d6d">get_extra_value</a> (const std::string &amp;param_name) const </td></tr>
+<tr class="memdesc:a0802ec8099611eb849313541f50a5d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the specified extra parameter, throwing an error if it does not exist.  <a href="#a0802ec8099611eb849313541f50a5d6d">更多...</a><br/></td></tr>
+<tr class="separator:a0802ec8099611eb849313541f50a5d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff19b86cbb77d4906e065f9256a05ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#aeff19b86cbb77d4906e065f9256a05ba">get_extra_value</a> (const std::string &amp;param_name, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &amp;default_val) const </td></tr>
+<tr class="memdesc:aeff19b86cbb77d4906e065f9256a05ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the specified extra parameter, returning the provided default value if it does not exist.  <a href="#aeff19b86cbb77d4906e065f9256a05ba">更多...</a><br/></td></tr>
+<tr class="separator:aeff19b86cbb77d4906e065f9256a05ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77165bcd534a0679083874447ef41e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#ad77165bcd534a0679083874447ef41e9">get_extra_step_value</a> (const std::string &amp;param_name, std::size_t step) const </td></tr>
+<tr class="memdesc:ad77165bcd534a0679083874447ef41e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the specified "extra" parameter at the specified step, throwing an error if it does not exist.  <a href="#ad77165bcd534a0679083874447ef41e9">更多...</a><br/></td></tr>
+<tr class="separator:ad77165bcd534a0679083874447ef41e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fdce1c3ff5eebf9b3b9e69369790ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#aa2fdce1c3ff5eebf9b3b9e69369790ef">get_extra_step_value</a> (const std::string &amp;param_name, std::size_t step, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &amp;default_val) const </td></tr>
+<tr class="memdesc:aa2fdce1c3ff5eebf9b3b9e69369790ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the specified extra parameter at the specified step, returning the provided default value if either the parameter is not defined or the step is invalid.  <a href="#aa2fdce1c3ff5eebf9b3b9e69369790ef">更多...</a><br/></td></tr>
+<tr class="separator:aa2fdce1c3ff5eebf9b3b9e69369790ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad419648c5d56225f7cbfee1ffcbcc6f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#ad419648c5d56225f7cbfee1ffcbcc6f5">set_extra_value</a> (const std::string &amp;param_name, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>)</td></tr>
+<tr class="memdesc:ad419648c5d56225f7cbfee1ffcbcc6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of the specified extra parameter.  <a href="#ad419648c5d56225f7cbfee1ffcbcc6f5">更多...</a><br/></td></tr>
+<tr class="separator:ad419648c5d56225f7cbfee1ffcbcc6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a433408be8edf983a2259dfe5480f3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a8a433408be8edf983a2259dfe5480f3e">set_extra_value</a> (const std::string &amp;param_name, std::size_t index, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>)</td></tr>
+<tr class="memdesc:a8a433408be8edf983a2259dfe5480f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of the specified extra parameter at the specified vector index.  <a href="#a8a433408be8edf983a2259dfe5480f3e">更多...</a><br/></td></tr>
+<tr class="separator:a8a433408be8edf983a2259dfe5480f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c06238ea3783ad6f7882bfea814b7c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#ab3c06238ea3783ad6f7882bfea814b7c">n_parameters</a> () const </td></tr>
+<tr class="memdesc:ab3c06238ea3783ad6f7882bfea814b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of parameters that have been added.  <a href="#ab3c06238ea3783ad6f7882bfea814b7c">更多...</a><br/></td></tr>
+<tr class="separator:ab3c06238ea3783ad6f7882bfea814b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e98f8ed8aec1b83fb5b2276be05098"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a45e98f8ed8aec1b83fb5b2276be05098">set_n_steps</a> (unsigned int <a class="el" href="classlibMesh_1_1RBParameters.html#a47ecebd3476a3cadb5f52e47dea7147e">n_steps</a>)</td></tr>
+<tr class="memdesc:a45e98f8ed8aec1b83fb5b2276be05098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of steps this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object is intended to represent, in the case that there are no actual parameters stored on it.  <a href="#a45e98f8ed8aec1b83fb5b2276be05098">更多...</a><br/></td></tr>
+<tr class="separator:a45e98f8ed8aec1b83fb5b2276be05098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ecebd3476a3cadb5f52e47dea7147e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a47ecebd3476a3cadb5f52e47dea7147e">n_steps</a> () const </td></tr>
+<tr class="memdesc:a47ecebd3476a3cadb5f52e47dea7147e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of steps stored for all parameters.  <a href="#a47ecebd3476a3cadb5f52e47dea7147e">更多...</a><br/></td></tr>
+<tr class="separator:a47ecebd3476a3cadb5f52e47dea7147e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb471ebbbaf6780b1b34e02c0de9adc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#acb471ebbbaf6780b1b34e02c0de9adc0">get_parameter_names</a> (std::set&lt; std::string &gt; &amp;param_names) const </td></tr>
+<tr class="memdesc:acb471ebbbaf6780b1b34e02c0de9adc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill <code>param_names</code> with the names of the parameters.  <a href="#acb471ebbbaf6780b1b34e02c0de9adc0">更多...</a><br/></td></tr>
+<tr class="separator:acb471ebbbaf6780b1b34e02c0de9adc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc3ecf1faa619754ddd8a5691d251c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#adcc3ecf1faa619754ddd8a5691d251c9">get_extra_parameter_names</a> (std::set&lt; std::string &gt; &amp;param_names) const </td></tr>
+<tr class="memdesc:adcc3ecf1faa619754ddd8a5691d251c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill <code>param_names</code> with the names of the extra parameters.  <a href="#adcc3ecf1faa619754ddd8a5691d251c9">更多...</a><br/></td></tr>
+<tr class="separator:adcc3ecf1faa619754ddd8a5691d251c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88bddc1c46dfdb616501f2e19eb0954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#ae88bddc1c46dfdb616501f2e19eb0954">erase_parameter</a> (const std::string &amp;param_name)</td></tr>
+<tr class="memdesc:ae88bddc1c46dfdb616501f2e19eb0954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase <code>param_name</code> from _parameters.  <a href="#ae88bddc1c46dfdb616501f2e19eb0954">更多...</a><br/></td></tr>
+<tr class="separator:ae88bddc1c46dfdb616501f2e19eb0954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb7327ddc5a874b8771ef6f17a0bc76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a1bb7327ddc5a874b8771ef6f17a0bc76">erase_extra_parameter</a> (const std::string &amp;param_name)</td></tr>
+<tr class="memdesc:a1bb7327ddc5a874b8771ef6f17a0bc76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase <code>param_name</code> from _extra_parameters.  <a href="#a1bb7327ddc5a874b8771ef6f17a0bc76">更多...</a><br/></td></tr>
+<tr class="separator:a1bb7327ddc5a874b8771ef6f17a0bc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7eb44ca3b6b530e1b365f24b88eda9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a6e7eb44ca3b6b530e1b365f24b88eda9">begin</a> () const </td></tr>
+<tr class="memdesc:a6e7eb44ca3b6b530e1b365f24b88eda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html" title="Define a constant iterator for this class. ">const_iterator</a> access to the parameters stored in this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object.  <a href="#a6e7eb44ca3b6b530e1b365f24b88eda9">更多...</a><br/></td></tr>
+<tr class="separator:a6e7eb44ca3b6b530e1b365f24b88eda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c50eff927c2be40b0b3fcba79525fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a39c50eff927c2be40b0b3fcba79525fc">end</a> () const </td></tr>
+<tr class="separator:a39c50eff927c2be40b0b3fcba79525fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193c6ceb435a9fbac928e94020c81232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a193c6ceb435a9fbac928e94020c81232">extra_begin</a> () const </td></tr>
+<tr class="memdesc:a193c6ceb435a9fbac928e94020c81232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html" title="Define a constant iterator for this class. ">const_iterator</a> access to the extra parameters stored in this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object.  <a href="#a193c6ceb435a9fbac928e94020c81232">更多...</a><br/></td></tr>
+<tr class="separator:a193c6ceb435a9fbac928e94020c81232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a87419b6a19a510098cb9010b91a041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a9a87419b6a19a510098cb9010b91a041">extra_end</a> () const </td></tr>
+<tr class="separator:a9a87419b6a19a510098cb9010b91a041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767f740a01746b4160947d3645c48e40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a767f740a01746b4160947d3645c48e40">operator==</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;rhs) const </td></tr>
+<tr class="memdesc:a767f740a01746b4160947d3645c48e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> are equal if they have the same _parameters map.  <a href="#a767f740a01746b4160947d3645c48e40">更多...</a><br/></td></tr>
+<tr class="separator:a767f740a01746b4160947d3645c48e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9754c4ad682c5d252cabe17f3c6cad12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a9754c4ad682c5d252cabe17f3c6cad12">operator!=</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;rhs) const </td></tr>
+<tr class="separator:a9754c4ad682c5d252cabe17f3c6cad12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4638d4b253550b506807f245883d614e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a4638d4b253550b506807f245883d614e">operator+=</a> (const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a4638d4b253550b506807f245883d614e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append "rhs" to "*this".  <a href="#a4638d4b253550b506807f245883d614e">更多...</a><br/></td></tr>
+<tr class="separator:a4638d4b253550b506807f245883d614e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9d5292a77669724e85516247656b55"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a3d9d5292a77669724e85516247656b55">get_string</a> (unsigned int precision=6) const </td></tr>
+<tr class="memdesc:a3d9d5292a77669724e85516247656b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string that specifies the contents of this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object.  <a href="#a3d9d5292a77669724e85516247656b55">更多...</a><br/></td></tr>
+<tr class="separator:a3d9d5292a77669724e85516247656b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8343fd0346f7afe00f8b453e12817092"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a8343fd0346f7afe00f8b453e12817092">print</a> () const </td></tr>
+<tr class="memdesc:a8343fd0346f7afe00f8b453e12817092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the parameters.  <a href="#a8343fd0346f7afe00f8b453e12817092">更多...</a><br/></td></tr>
+<tr class="separator:a8343fd0346f7afe00f8b453e12817092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a18afdb6c703f3381de6ea750b0579a29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a18afdb6c703f3381de6ea750b0579a29">set_value_helper</a> (std::map&lt; std::string, std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt;&gt; &amp;map, const std::string &amp;param_name, std::size_t index, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>)</td></tr>
+<tr class="memdesc:a18afdb6c703f3381de6ea750b0579a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for the 3-parameter versions of <a class="el" href="classlibMesh_1_1RBParameters.html#aff45622338bf5bf4c2488f8f201f54ef" title="Set the value of the specified parameter. ">set_value()</a> and <a class="el" href="classlibMesh_1_1RBParameters.html#ad419648c5d56225f7cbfee1ffcbcc6f5" title="Set the value of the specified extra parameter. ">set_extra_value()</a>.  <a href="#a18afdb6c703f3381de6ea750b0579a29">更多...</a><br/></td></tr>
+<tr class="separator:a18afdb6c703f3381de6ea750b0579a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ad9dc5cc87a69ae37e35f94faf6169290"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#ad9dc5cc87a69ae37e35f94faf6169290">_n_steps</a></td></tr>
+<tr class="memdesc:ad9dc5cc87a69ae37e35f94faf6169290"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of steps represented by this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object, in the case where there are no parameters actually stored on it.  <a href="#ad9dc5cc87a69ae37e35f94faf6169290">更多...</a><br/></td></tr>
+<tr class="separator:ad9dc5cc87a69ae37e35f94faf6169290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f665dd794e39db70e0e953459501ffd"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
+std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a9f665dd794e39db70e0e953459501ffd">_parameters</a></td></tr>
+<tr class="memdesc:a9f665dd794e39db70e0e953459501ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The map that stores the actual parameter vectors.  <a href="#a9f665dd794e39db70e0e953459501ffd">更多...</a><br/></td></tr>
+<tr class="separator:a9f665dd794e39db70e0e953459501ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0944750c5bbc309db837ff308aef6176"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
+std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBParameters.html#a0944750c5bbc309db837ff308aef6176">_extra_parameters</a></td></tr>
+<tr class="memdesc:a0944750c5bbc309db837ff308aef6176"><td class="mdescLeft">&#160;</td><td class="mdescRight">The map that stores extra parameter vectors not used for RB training.  <a href="#a0944750c5bbc309db837ff308aef6176">更多...</a><br/></td></tr>
+<tr class="separator:a0944750c5bbc309db837ff308aef6176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This class is part of the rbOOmit framework. </p>
+<p>This class defines a set of parameters index by strings.</p>
+<dl class="section author"><dt>作者</dt><dd>David J. Knezevic </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2012 </dd></dl>
+
+<p>在文件 <a class="el" href="rb__parameters_8h_source.html">rb_parameters.h</a> 第 <a class="el" href="rb__parameters_8h_source.html#l00043">43</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a3aa7540cb05ef504c4424de85aa36c7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBParameters::RBParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>Initializes the _n_steps parameter to 1 for backwards compatibility, but the <a class="el" href="classlibMesh_1_1RBParameters.html#a45e98f8ed8aec1b83fb5b2276be05098" title="Set the number of steps this RBParameters object is intended to represent, in the case that there are...">set_n_steps()</a> function can always be called later to update this value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a65cdc75eb2fafd882a01c0108c3d14fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBParameters::RBParameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The special functions can be defaulted for this class, as it does not manage any memory itself. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab862902ce9627ea0ff56e0f012fd4f76"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBParameters::RBParameters </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee30cd70b38061e8310ce527e62f73ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBParameters::~RBParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a57e4597bfe5dbb576bb99db165d9b98e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBParameters::RBParameters </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; std::string, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>parameter_map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>Set parameters based on the std::map <code>parameter_map</code>.</p>
+<p>This constructor will still be supported once we switch over to the vector-based storage for <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> objects. It will just set the 0th entry of the vector corresponding to each parameter name. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a6e7eb44ca3b6b530e1b365f24b88eda9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html">const_iterator</a> libMesh::RBParameters::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html" title="Define a constant iterator for this class. ">const_iterator</a> access to the parameters stored in this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7dab8f0543d227b23dfe5dfb38d65bd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear this object. </p>
+
+</div>
+</div>
+<a class="anchor" id="a39c50eff927c2be40b0b3fcba79525fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html">const_iterator</a> libMesh::RBParameters::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1bb7327ddc5a874b8771ef6f17a0bc76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::erase_extra_parameter </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Erase <code>param_name</code> from _extra_parameters. </p>
+<p>If <code>param_name</code> is not present in _extra_parameters, then do nothing. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae88bddc1c46dfdb616501f2e19eb0954"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::erase_parameter </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Erase <code>param_name</code> from _parameters. </p>
+<p>If <code>param_name</code> is not present in _parameters, then do nothing. </p>
+
+</div>
+</div>
+<a class="anchor" id="a193c6ceb435a9fbac928e94020c81232"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html">const_iterator</a> libMesh::RBParameters::extra_begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html" title="Define a constant iterator for this class. ">const_iterator</a> access to the extra parameters stored in this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a87419b6a19a510098cb9010b91a041"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBParameters_1_1const__iterator.html">const_iterator</a> libMesh::RBParameters::extra_end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adcc3ecf1faa619754ddd8a5691d251c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::get_extra_parameter_names </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>param_names</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fill <code>param_names</code> with the names of the extra parameters. </p>
+<p>Note: this function was previously deprecated, but now that multi-step <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> objects are possible, this is actually the most efficient way to get a list of the parameter names stored on this object. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad77165bcd534a0679083874447ef41e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBParameters::get_extra_step_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of the specified "extra" parameter at the specified step, throwing an error if it does not exist. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa2fdce1c3ff5eebf9b3b9e69369790ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBParameters::get_extra_step_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &amp;&#160;</td>
+          <td class="paramname"><em>default_val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of the specified extra parameter at the specified step, returning the provided default value if either the parameter is not defined or the step is invalid. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0802ec8099611eb849313541f50a5d6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBParameters::get_extra_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of the specified extra parameter, throwing an error if it does not exist. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeff19b86cbb77d4906e065f9256a05ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBParameters::get_extra_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &amp;&#160;</td>
+          <td class="paramname"><em>default_val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of the specified extra parameter, returning the provided default value if it does not exist. </p>
+
+</div>
+</div>
+<a class="anchor" id="acb471ebbbaf6780b1b34e02c0de9adc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::get_parameter_names </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>param_names</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fill <code>param_names</code> with the names of the parameters. </p>
+<p>Note: this function was previously deprecated, but now that multi-step <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> objects are possible, this is actually the most efficient way to get a list of the parameter names stored on this object. </p>
+
+</div>
+</div>
+<a class="anchor" id="afda1b85533c68cd104f4db5c34a12cbc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBParameters::get_step_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of the specified parameter at the specified step, throwing an error if it does not exist. </p>
+
+</div>
+</div>
+<a class="anchor" id="abaa2f34fcbe147d91415fc2608004bb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBParameters::get_step_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &amp;&#160;</td>
+          <td class="paramname"><em>default_val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of the specified parameter at the specified step, returning the provided default value if either the parameter is not defined or the step is invalid. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3d9d5292a77669724e85516247656b55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string libMesh::RBParameters::get_string </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>precision</em> = <code>6</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a string that specifies the contents of this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object. </p>
+<p><code>precision</code> specifies the number of digits of precision we use in scientific notation in the string. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa6ff7b4c6b8599667da0d1f6eeab197a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBParameters::get_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of the specified parameter, throwing an error if it does not exist. </p>
+
+</div>
+</div>
+<a class="anchor" id="a48bf01d0cf72eb3c636a9e04a34228d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBParameters::get_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &amp;&#160;</td>
+          <td class="paramname"><em>default_val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of the specified parameter, returning the provided default value if it does not exist. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2235f18c4ddcc7c2ce8b821f77e754ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::RBParameters::has_extra_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>true if there is an extra parameter named "param_name" present in this class, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a761ac7fb5b5675948f63f196d27d330f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::RBParameters::has_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>true if there is a parameter named "param_name" present in this class, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab3c06238ea3783ad6f7882bfea814b7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::RBParameters::n_parameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of parameters that have been added. </p>
+
+</div>
+</div>
+<a class="anchor" id="a47ecebd3476a3cadb5f52e47dea7147e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::RBParameters::n_steps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of steps stored for all parameters. </p>
+<p>For simplicity, we require all parameters to store the same number of steps ("step" here may refer to time step or load step) and in debug mode we actually verify that is the case. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9754c4ad682c5d252cabe17f3c6cad12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::RBParameters::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>!(*this == rhs). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4638d4b253550b506807f245883d614e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a>&amp; libMesh::RBParameters::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append "rhs" to "*this". </p>
+<p>Both <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> objects must have the same <a class="el" href="classlibMesh_1_1RBParameters.html#a47ecebd3476a3cadb5f52e47dea7147e" title="Returns the number of steps stored for all parameters. ">n_steps()</a>, otherwise an error is thrown. If some of the parameter names overlap, then the values from rhs overwrite *this. Both parameters and "extra" parameters are appended. </p>
+
+</div>
+</div>
+<a class="anchor" id="a22b9eb228303b844e517bef81aa4d7b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a>&amp; libMesh::RBParameters::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a352ede13006899aaf3001f34af2510a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a>&amp; libMesh::RBParameters::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a767f740a01746b4160947d3645c48e40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::RBParameters::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBParameters.html">RBParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Two <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> are equal if they have the same _parameters map. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8343fd0346f7afe00f8b453e12817092"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print the parameters. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c6865c536b3b3a76d29a2dfa1098703"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::push_back_extra_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="classlibMesh_1_1RBParameters.html#a9bdf5b47b901c895b3934b62f5e05640" title="Similar to set_value(name, index, value) but instead of specifying a particular index, just appends one more. ">push_back_value()</a>, but for "extra" parameters. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9bdf5b47b901c895b3934b62f5e05640"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::push_back_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Similar to set_value(name, index, value) but instead of specifying a particular index, just appends one more. </p>
+<p>Calling <a class="el" href="classlibMesh_1_1RBParameters.html#a9bdf5b47b901c895b3934b62f5e05640" title="Similar to set_value(name, index, value) but instead of specifying a particular index, just appends one more. ">push_back_value()</a> many times is more efficient than calling set_value(name, index, value) many times because it takes advantage of the std::vector's size-doubling t reduce allocations. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad419648c5d56225f7cbfee1ffcbcc6f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::set_extra_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the value of the specified extra parameter. </p>
+<p>If param_name doesn't already exist, it is added to the extra parameters. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8a433408be8edf983a2259dfe5480f3e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::set_extra_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the value of the specified extra parameter at the specified vector index. </p>
+<p>Note: each parameter is now allowed to be vector-valued, it is up to the user to organize what the vector indices refer to (e.g. load or time steps). </p>
+
+</div>
+</div>
+<a class="anchor" id="a45e98f8ed8aec1b83fb5b2276be05098"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::set_n_steps </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>n_steps</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the number of steps this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object is intended to represent, in the case that there are no actual parameters stored on it. </p>
+<p>Note: this value will only be used in the no-parameters case; if there are actual parameters specified in this class, the number set via this API is ignored. All parameters stored within the <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object must have <a class="el" href="classlibMesh_1_1RBParameters.html#a47ecebd3476a3cadb5f52e47dea7147e" title="Returns the number of steps stored for all parameters. ">n_steps()</a> steps. </p>
+
+</div>
+</div>
+<a class="anchor" id="aff45622338bf5bf4c2488f8f201f54ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::set_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the value of the specified parameter. </p>
+<p>If param_name doesn't already exist, it is added to the <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object. For backwards compatibility, calling this function sets up "param_name" to be a single-entry vector with "value" as the only entry. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c90b66e36f33c70de102fcd6111d8c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::set_value </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the value of the specified parameter at the specified vector index. </p>
+<p>Note: each parameter is now allowed to be vector-valued, it is up to the user to organize what the vector indices refer to (e.g. load or time steps). </p>
+
+</div>
+</div>
+<a class="anchor" id="a18afdb6c703f3381de6ea750b0579a29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBParameters::set_value_helper </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper function for the 3-parameter versions of <a class="el" href="classlibMesh_1_1RBParameters.html#aff45622338bf5bf4c2488f8f201f54ef" title="Set the value of the specified parameter. ">set_value()</a> and <a class="el" href="classlibMesh_1_1RBParameters.html#ad419648c5d56225f7cbfee1ffcbcc6f5" title="Set the value of the specified extra parameter. ">set_extra_value()</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a0944750c5bbc309db837ff308aef6176"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::vector&lt;<a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&gt; &gt; libMesh::RBParameters::_extra_parameters</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The map that stores extra parameter vectors not used for RB training. </p>
+<p>Each vector is indexed by a name. </p>
+
+<p>在文件 <a class="el" href="rb__parameters_8h_source.html">rb_parameters.h</a> 第 <a class="el" href="rb__parameters_8h_source.html#l00405">405</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9dc5cc87a69ae37e35f94faf6169290"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::RBParameters::_n_steps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of steps represented by this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object, in the case where there are no parameters actually stored on it. </p>
+<p>If there are parameters stored on this <a class="el" href="classlibMesh_1_1RBParameters.html" title="This class is part of the rbOOmit framework. ">RBParameters</a> object, then the <a class="el" href="classlibMesh_1_1RBParameters.html#a47ecebd3476a3cadb5f52e47dea7147e" title="Returns the number of steps stored for all parameters. ">n_steps()</a> API returns that number of steps instead. </p>
+
+<p>在文件 <a class="el" href="rb__parameters_8h_source.html">rb_parameters.h</a> 第 <a class="el" href="rb__parameters_8h_source.html#l00393">393</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f665dd794e39db70e0e953459501ffd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::vector&lt;<a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&gt; &gt; libMesh::RBParameters::_parameters</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The map that stores the actual parameter vectors. </p>
+<p>Each vector is indexed by a name. </p>
+
+<p>在文件 <a class="el" href="rb__parameters_8h_source.html">rb_parameters.h</a> 第 <a class="el" href="rb__parameters_8h_source.html#l00399">399</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/reduced_basis/<a class="el" href="rb__parameters_8h_source.html">rb_parameters.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:39 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

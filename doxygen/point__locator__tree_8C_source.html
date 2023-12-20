@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/src/utils/point_locator_tree.C 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_6c0ca45eb2c1f3d268151e81241ae7ef.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">point_locator_tree.C</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="point__locator__tree_8C.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Local Includes</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;libmesh/elem.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_logging.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;libmesh/mesh_base.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;libmesh/mesh_tools.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;libmesh/point_locator_tree.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;libmesh/tree.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// PointLocator methods</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#a5aa42d9f304897ec1e8b7dc2a77e8b81">   37</a></span>&#160;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5aa42d9f304897ec1e8b7dc2a77e8b81">PointLocatorTree::PointLocatorTree</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1PointLocatorBase.html">PointLocatorBase</a> * master) :</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classlibMesh_1_1PointLocatorBase.html">PointLocatorBase</a> (mesh,master),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  _tree            (nullptr),</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  _element         (nullptr),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  _out_of_mesh_mode(false),</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  _target_bin_size (200),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  _build_type(Trees::<a class="code" href="namespacelibMesh_1_1Trees.html#ac956f3a470953e2d0ddce171871efa39a99710d266ed849862503d6da40f75565">NODES</a>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#aff604d653d526f7a2d4cc32dc8c5b55a">init</a>(<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#a4ca80afdc6166e559c7e19288b9b3b08">   51</a></span>&#160;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5aa42d9f304897ec1e8b7dc2a77e8b81">PointLocatorTree::PointLocatorTree</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="namespacelibMesh_1_1Trees.html#ac956f3a470953e2d0ddce171871efa39">Trees::BuildType</a> build_type,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1PointLocatorBase.html">PointLocatorBase</a> * master) :</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classlibMesh_1_1PointLocatorBase.html">PointLocatorBase</a> (mesh,master),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  _tree            (nullptr),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  _element         (nullptr),</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  _out_of_mesh_mode(false),</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  _target_bin_size (200),</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  _build_type(build_type)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#aff604d653d526f7a2d4cc32dc8c5b55a">init</a>(<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a2965a21b0b32ac32a038f66921491cfb">PointLocatorTree::~PointLocatorTree</a> () = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#ad9727403750a637603a0ef59e9e36f8d">   70</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorTree.html#ad9727403750a637603a0ef59e9e36f8d">PointLocatorTree::clear</a> ()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#a84e5ced6bd58643678b0faed4a7ba799">_initialized</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// reset() actually frees the memory if we are master, otherwise it</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// just reduces the ref. count.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a>.reset();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#aff604d653d526f7a2d4cc32dc8c5b55a">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorTree.html#aff604d653d526f7a2d4cc32dc8c5b55a">PointLocatorTree::init</a>()</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#aff604d653d526f7a2d4cc32dc8c5b55a">init</a>(<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#aa1b1e4c33c7fc852b2f539dee0ced137">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorTree.html#aff604d653d526f7a2d4cc32dc8c5b55a">PointLocatorTree::init</a> (<a class="code" href="namespacelibMesh_1_1Trees.html#ac956f3a470953e2d0ddce171871efa39">Trees::BuildType</a> build_type)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (!this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#a84e5ced6bd58643678b0faed4a7ba799">_initialized</a>)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="comment">// Warn that we are already initialized</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;Warning: PointLocatorTree already initialized!  Will ignore this call...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="comment">// Further warn if we try to init() again with a different build_type</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a> != build_type)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;Warning: PointLocatorTree is using build_type = &quot;</span> &lt;&lt; <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a> &lt;&lt; <span class="stringliteral">&quot;.\n&quot;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                       &lt;&lt; <span class="stringliteral">&quot;Your requested build_type, &quot;</span> &lt;&lt; build_type &lt;&lt; <span class="stringliteral">&quot; will not be used!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="comment">// Let the requested build_type override the _build_type we were</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="comment">// constructed with.  This is no big deal since we have not been</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="comment">// initialized before.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a> = build_type;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#afa51ddd6562a250bf23df16ade843f17">_master</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          LOG_SCOPE(<span class="stringliteral">&quot;init(no master)&quot;</span>, <span class="stringliteral">&quot;PointLocatorTree&quot;</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          <span class="keywordflow">if</span> (LIBMESH_DIM == 1)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a> = std::make_shared&lt;Trees::BinaryTree&gt;(this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#ad9b6557329fc2c75f97a489e749dfdd8">_mesh</a>, <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a2a2fa7399e7ad10c534bc84052a32fb3">get_target_bin_size</a>(), <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (LIBMESH_DIM == 2)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a> = std::make_shared&lt;Trees::QuadTree&gt;(this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#ad9b6557329fc2c75f97a489e749dfdd8">_mesh</a>, <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a2a2fa7399e7ad10c534bc84052a32fb3">get_target_bin_size</a>(), <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (this-&gt;_mesh.mesh_dimension() == 3) <span class="comment">// &amp;&amp; LIBMESH_DIM==3</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a> = std::make_shared&lt;Trees::OctTree&gt;(this-&gt;_mesh, <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a2a2fa7399e7ad10c534bc84052a32fb3">get_target_bin_size</a>(), <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;              <span class="comment">// LIBMESH_DIM==3 but we have a mesh with only 1D/2D</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;              <span class="comment">// elements, which needs special consideration.  If the</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;              <span class="comment">// mesh is planar XY, we want to build a QuadTree to</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;              <span class="comment">// search efficiently.  If the mesh is truly a manifold,</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;              <span class="comment">// then we need an octree</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;              <span class="keywordtype">bool</span> is_planar_xy = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;              <span class="comment">// Build the bounding box for the mesh.  If the delta-z bound is</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;              <span class="comment">// negligibly small then we can use a quadtree.</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;              <a class="code" href="classlibMesh_1_1BoundingBox.html">BoundingBox</a> bbox = <a class="code" href="namespacelibMesh_1_1MeshTools.html#a2793e67a6d7e4c5e59692a4acfbcd425">MeshTools::create_bounding_box</a>(this-&gt;_mesh);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;              <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                Dx = bbox.second(0) - bbox.first(0),</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                Dz = bbox.second(2) - bbox.first(2);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;              <span class="comment">// In order to satisfy is_planar_xy the mesh should be planar and should</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;              <span class="comment">// also be in the z=0 plane, since otherwise it is incorrect to use a</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;              <span class="comment">// QuadTree since QuadTrees assume z=0.</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;              <span class="keywordflow">if</span> ( (<a class="code" href="namespacestd.html#aea71d536ca6ae5ef192477c8e9c9b197">std::abs</a>(Dz/(Dx + 1.e-20)) &lt; 1e-10) &amp;&amp; (<a class="code" href="namespacestd.html#aea71d536ca6ae5ef192477c8e9c9b197">std::abs</a>(bbox.second(2)) &lt; 1.e-10) )</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                is_planar_xy = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;              <span class="keywordflow">if</span> (is_planar_xy)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a> = std::make_shared&lt;Trees::QuadTree&gt;(this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#ad9b6557329fc2c75f97a489e749dfdd8">_mesh</a>, <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a2a2fa7399e7ad10c534bc84052a32fb3">get_target_bin_size</a>(), <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a> = std::make_shared&lt;Trees::OctTree&gt;(this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#ad9b6557329fc2c75f97a489e749dfdd8">_mesh</a>, <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a2a2fa7399e7ad10c534bc84052a32fb3">get_target_bin_size</a>(), <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;          <span class="comment">// We are _not_ the master.  Let our Tree point to</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;          <span class="comment">// the master&#39;s tree.  But for this we first transform</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;          <span class="comment">// the master in a state for which we are friends.</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          <span class="comment">// And make sure the master has a tree!</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1PointLocatorTree.html">PointLocatorTree</a> * my_master =</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            cast_ptr&lt;const PointLocatorTree *&gt;(this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#afa51ddd6562a250bf23df16ade843f17">_master</a>);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          <span class="keywordflow">if</span> (my_master-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#a7cf6fe451ab3467605911798f7b0e39d">initialized</a>())</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a> = my_master-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            libmesh_error_msg(<span class="stringliteral">&quot;ERROR: Initialize master first, then servants!&quot;</span>);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="comment">// Not all PointLocators may own a tree, but all of them</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <span class="comment">// use their own element pointer.  Let the element pointer</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="comment">// be unique for every interpolator.</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="comment">// Suppose the interpolators are used concurrently</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="comment">// at different locations in the mesh, then it makes quite</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="comment">// sense to have unique start elements.</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">// ready for take-off</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#a84e5ced6bd58643678b0faed4a7ba799">_initialized</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#ae523433c661b034e49417cc87c04a498">  180</a></span>&#160;<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> * <a class="code" href="classlibMesh_1_1PointLocatorTree.html#ae523433c661b034e49417cc87c04a498">PointLocatorTree::operator() </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                           <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; * allowed_subdomains)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#a84e5ced6bd58643678b0faed4a7ba799">_initialized</a>);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  LOG_SCOPE(<span class="stringliteral">&quot;operator()&quot;</span>, <span class="stringliteral">&quot;PointLocatorTree&quot;</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="comment">// If we&#39;re provided with an allowed_subdomains list and have a cached element, make sure it complies</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">if</span> (allowed_subdomains &amp;&amp; this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> &amp;&amp; !allowed_subdomains-&gt;count(this-&gt;_element-&gt;subdomain_id()))</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <span class="comment">// If the user specified a custom tolerance, we actually call</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <span class="comment">// Elem::close_to_point() instead, since Elem::contains_point()</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="comment">// warns about using non-default BoundingBox tolerances.</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1PointLocatorBase.html#a93e4427e69701dd94b6f3dd0c89c55b0">_use_contains_point_tol</a> &amp;&amp; !(this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a>-&gt;<a class="code" href="classlibMesh_1_1Elem.html#a46d1f06b0942f75e8d8801be44c60a06">close_to_point</a>(p, <a class="code" href="classlibMesh_1_1PointLocatorBase.html#a5d746d76b35d69734adc7d5836b45d7e">_contains_point_tol</a>)))</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <span class="comment">// Otherwise, just call contains_point(p) with default tolerances.</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!(this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a>-&gt;<a class="code" href="classlibMesh_1_1Elem.html#afd665f3e6d13b0aaaf4c4620067329bc">contains_point</a>(p)))</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="comment">// First check the element from last time before asking the tree</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a>==<span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <span class="comment">// ask the tree</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1PointLocatorBase.html#a93e4427e69701dd94b6f3dd0c89c55b0">_use_contains_point_tol</a>)</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> = this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a>-&gt;find_element(p, allowed_subdomains, <a class="code" href="classlibMesh_1_1PointLocatorBase.html#a5d746d76b35d69734adc7d5836b45d7e">_contains_point_tol</a>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> = this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a>-&gt;find_element(p, allowed_subdomains);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;          <span class="comment">// If we haven&#39;t found the element, we may want to do a linear</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;          <span class="comment">// search using a tolerance.</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1PointLocatorBase.html#a969d03878ccb92ef1c7542200a23161b">_use_close_to_point_tol</a>)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;              <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1PointLocatorBase.html#ad241a453271b4d34f643a683eadf0a50">_verbose</a>)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                  <a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a> &lt;&lt; <span class="stringliteral">&quot;Performing linear search using close-to-point tolerance &quot;</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                               &lt;&lt; <a class="code" href="classlibMesh_1_1PointLocatorBase.html#a441f908d5e18c934fc3814f6dc2cdc3e">_close_to_point_tol</a></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                               &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;              this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> =</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#acd313428c9a4551d7e1aaa141e7ae8e7">perform_linear_search</a>(p,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                            allowed_subdomains,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                                            <span class="comment">/*use_close_to_point*/</span> <span class="keyword">true</span>,</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                                            <a class="code" href="classlibMesh_1_1PointLocatorBase.html#a441f908d5e18c934fc3814f6dc2cdc3e">_close_to_point_tol</a>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;              <span class="keywordflow">return</span> this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;          <span class="comment">// No element seems to contain this point.  In theory, our</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;          <span class="comment">// tree now correctly handles curved elements.  In</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;          <span class="comment">// out-of-mesh mode this is sometimes expected, and we can</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;          <span class="comment">// just return nullptr without searching further.  Out of</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;          <span class="comment">// out-of-mesh mode, something must have gone wrong.</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;          libmesh_assert_equal_to (<a class="code" href="classlibMesh_1_1PointLocatorTree.html#aee3699bfb41bc30d34e8f7880a990340">_out_of_mesh_mode</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;          <span class="keywordflow">return</span> this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="comment">// If we found an element, it should be active</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (!this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> || this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a>-&gt;<a class="code" href="classlibMesh_1_1Elem.html#ab426ef9274eb93de879fef28b027d602">active</a>());</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="comment">// If we found an element and have a restriction list, they better match</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (!this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a> || !allowed_subdomains || allowed_subdomains-&gt;count(this-&gt;_element-&gt;subdomain_id()));</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="comment">// return the element</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordflow">return</span> this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">_element</a>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#a063799ecf642e38ca8f2b51481a83b95">  257</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorTree.html#ae523433c661b034e49417cc87c04a498">PointLocatorTree::operator() </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                   std::set&lt;const Elem *&gt; &amp; candidate_elements,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                   <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; * allowed_subdomains)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#a84e5ced6bd58643678b0faed4a7ba799">_initialized</a>);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  LOG_SCOPE(<span class="stringliteral">&quot;operator() - Version 2&quot;</span>, <span class="stringliteral">&quot;PointLocatorTree&quot;</span>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="comment">// ask the tree</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">_tree</a>-&gt;find_elements (p, candidate_elements, allowed_subdomains, <a class="code" href="classlibMesh_1_1PointLocatorBase.html#a441f908d5e18c934fc3814f6dc2cdc3e">_close_to_point_tol</a>);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#acd313428c9a4551d7e1aaa141e7ae8e7">  271</a></span>&#160;<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> * <a class="code" href="classlibMesh_1_1PointLocatorTree.html#acd313428c9a4551d7e1aaa141e7ae8e7">PointLocatorTree::perform_linear_search</a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                                     <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; * allowed_subdomains,</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                                     <span class="keywordtype">bool</span> use_close_to_point,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                                     <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> close_to_point_tolerance)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  LOG_SCOPE(<span class="stringliteral">&quot;perform_linear_search&quot;</span>, <span class="stringliteral">&quot;PointLocatorTree&quot;</span>);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="comment">// The type of iterator depends on the Trees::BuildType</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="comment">// used for this PointLocator.  If it&#39;s</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="comment">// TREE_LOCAL_ELEMENTS, we only want to double check</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="comment">// local elements during this linear search.</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <a class="code" href="classlibMesh_1_1SimpleRange.html">SimpleRange&lt;MeshBase::const_element_iterator&gt;</a> r =</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a> == <a class="code" href="namespacelibMesh_1_1Trees.html#ac956f3a470953e2d0ddce171871efa39a04e5399de3e08ad3c7c57691c5d2a055">Trees::LOCAL_ELEMENTS</a> ?</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#ad9b6557329fc2c75f97a489e749dfdd8">_mesh</a>.active_local_element_ptr_range() :</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#ad9b6557329fc2c75f97a489e749dfdd8">_mesh</a>.active_element_ptr_range();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; elem : r)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <span class="keywordflow">if</span> (!allowed_subdomains ||</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;          allowed_subdomains-&gt;count(elem-&gt;subdomain_id()))</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          <span class="keywordflow">if</span> (!use_close_to_point)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;              <span class="keywordflow">if</span> (elem-&gt;contains_point(p, <a class="code" href="classlibMesh_1_1PointLocatorBase.html#a5d746d76b35d69734adc7d5836b45d7e">_contains_point_tol</a>))</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                <span class="keywordflow">return</span> elem;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;              <span class="keywordflow">if</span> (elem-&gt;close_to_point(p, close_to_point_tolerance))</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                <span class="keywordflow">return</span> elem;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#a566234d3493ce58fc4a44541a53d8e0b">  309</a></span>&#160;std::set&lt;const Elem *&gt; <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a566234d3493ce58fc4a44541a53d8e0b">PointLocatorTree::perform_fuzzy_linear_search</a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                                                                     <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; * allowed_subdomains,</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                                                                     <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> close_to_point_tolerance)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  LOG_SCOPE(<span class="stringliteral">&quot;perform_fuzzy_linear_search&quot;</span>, <span class="stringliteral">&quot;PointLocatorTree&quot;</span>);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  std::set&lt;const Elem *&gt; candidate_elements;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="comment">// The type of iterator depends on the Trees::BuildType</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="comment">// used for this PointLocator.  If it&#39;s</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="comment">// TREE_LOCAL_ELEMENTS, we only want to double check</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="comment">// local elements during this linear search.</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <a class="code" href="classlibMesh_1_1SimpleRange.html">SimpleRange&lt;MeshBase::const_element_iterator&gt;</a> r =</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">_build_type</a> == <a class="code" href="namespacelibMesh_1_1Trees.html#ac956f3a470953e2d0ddce171871efa39a04e5399de3e08ad3c7c57691c5d2a055">Trees::LOCAL_ELEMENTS</a> ?</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#ad9b6557329fc2c75f97a489e749dfdd8">_mesh</a>.active_local_element_ptr_range() :</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1PointLocatorBase.html#ad9b6557329fc2c75f97a489e749dfdd8">_mesh</a>.active_element_ptr_range();</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; elem : r)</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">if</span> ((!allowed_subdomains || allowed_subdomains-&gt;count(elem-&gt;subdomain_id())) &amp;&amp; elem-&gt;close_to_point(p, close_to_point_tolerance))</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      candidate_elements.insert(elem);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordflow">return</span> candidate_elements;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;}</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#a4092e5839f92a3f219c8617112334f3d">  335</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a4092e5839f92a3f219c8617112334f3d">PointLocatorTree::enable_out_of_mesh_mode</a> ()</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;{</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  <span class="comment">// Out-of-mesh mode should now work properly even on meshes with</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="comment">// non-affine elements.</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <a class="code" href="classlibMesh_1_1PointLocatorTree.html#aee3699bfb41bc30d34e8f7880a990340">_out_of_mesh_mode</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#a2ed6185e9a27676ad0b9d4eb186d6140">  343</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a2ed6185e9a27676ad0b9d4eb186d6140">PointLocatorTree::disable_out_of_mesh_mode</a> ()</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;{</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <a class="code" href="classlibMesh_1_1PointLocatorTree.html#aee3699bfb41bc30d34e8f7880a990340">_out_of_mesh_mode</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#a71f2efd76dfbd7ca388cd5ee37914bbb">  349</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a71f2efd76dfbd7ca388cd5ee37914bbb">PointLocatorTree::set_target_bin_size</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> target_bin_size)</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;{</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a0d94cdce23b3d51485c177270e0f9ddd">_target_bin_size</a> = target_bin_size;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;}</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorTree.html#a2a2fa7399e7ad10c534bc84052a32fb3">  355</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a2a2fa7399e7ad10c534bc84052a32fb3">PointLocatorTree::get_target_bin_size</a> ()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1PointLocatorTree.html#a0d94cdce23b3d51485c177270e0f9ddd">_target_bin_size</a>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;}</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a2a2fa7399e7ad10c534bc84052a32fb3"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a2a2fa7399e7ad10c534bc84052a32fb3">libMesh::PointLocatorTree::get_target_bin_size</a></div><div class="ttdeci">unsigned int get_target_bin_size() const </div><div class="ttdoc">Get the target bin size. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8C_source.html#l00355">point_locator_tree.C:355</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a2965a21b0b32ac32a038f66921491cfb"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a2965a21b0b32ac32a038f66921491cfb">libMesh::PointLocatorTree::~PointLocatorTree</a></div><div class="ttdeci">~PointLocatorTree()</div><div class="ttdoc">Destructor. </div></div>
+<div class="ttc" id="classlibMesh_1_1SimpleRange_html"><div class="ttname"><a href="classlibMesh_1_1SimpleRange.html">libMesh::SimpleRange</a></div><div class="ttdoc">The SimpleRange templated class is intended to make it easy to construct ranges from pairs of iterato...</div><div class="ttdef"><b>Definition:</b> <a href="simple__range_8h_source.html#l00036">simple_range.h:36</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a2ed6185e9a27676ad0b9d4eb186d6140"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a2ed6185e9a27676ad0b9d4eb186d6140">libMesh::PointLocatorTree::disable_out_of_mesh_mode</a></div><div class="ttdeci">virtual void disable_out_of_mesh_mode() overridefinal</div><div class="ttdoc">Disables out-of-mesh mode (default). </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8C_source.html#l00343">point_locator_tree.C:343</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_ae523433c661b034e49417cc87c04a498"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#ae523433c661b034e49417cc87c04a498">libMesh::PointLocatorTree::operator()</a></div><div class="ttdeci">virtual const Elem * operator()(const Point &amp;p, const std::set&lt; subdomain_id_type &gt; *allowed_subdomains=nullptr) const overridefinal</div><div class="ttdoc">Locates the element in which the point with global coordinates p is located, optionally restricted to...</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8C_source.html#l00180">point_locator_tree.C:180</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1Trees_html_ac956f3a470953e2d0ddce171871efa39"><div class="ttname"><a href="namespacelibMesh_1_1Trees.html#ac956f3a470953e2d0ddce171871efa39">libMesh::Trees::BuildType</a></div><div class="ttdeci">BuildType</div><div class="ttdoc">enum defining how to build the tree. </div><div class="ttdef"><b>Definition:</b> <a href="tree__base_8h_source.html#l00058">tree_base.h:58</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_ab426ef9274eb93de879fef28b027d602"><div class="ttname"><a href="classlibMesh_1_1Elem.html#ab426ef9274eb93de879fef28b027d602">libMesh::Elem::active</a></div><div class="ttdeci">bool active() const </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l02754">elem.h:2754</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1Trees_html_ac956f3a470953e2d0ddce171871efa39a04e5399de3e08ad3c7c57691c5d2a055"><div class="ttname"><a href="namespacelibMesh_1_1Trees.html#ac956f3a470953e2d0ddce171871efa39a04e5399de3e08ad3c7c57691c5d2a055">libMesh::Trees::LOCAL_ELEMENTS</a></div><div class="ttdef"><b>Definition:</b> <a href="tree__base_8h_source.html#l00060">tree_base.h:60</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_a46d1f06b0942f75e8d8801be44c60a06"><div class="ttname"><a href="classlibMesh_1_1Elem.html#a46d1f06b0942f75e8d8801be44c60a06">libMesh::Elem::close_to_point</a></div><div class="ttdeci">virtual bool close_to_point(const Point &amp;p, Real tol) const </div><div class="ttdef"><b>Definition:</b> <a href="elem_8C_source.html#l02398">elem.C:2398</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html">libMesh::PointLocatorTree</a></div><div class="ttdoc">This is a point locator. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8h_source.html#l00049">point_locator_tree.h:49</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html_a969d03878ccb92ef1c7542200a23161b"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html#a969d03878ccb92ef1c7542200a23161b">libMesh::PointLocatorBase::_use_close_to_point_tol</a></div><div class="ttdeci">bool _use_close_to_point_tol</div><div class="ttdoc">true if we will use a user-specified tolerance for locating the element in an exhaustive search...</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8h_source.html#l00225">point_locator_base.h:225</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1MeshTools_html_a2793e67a6d7e4c5e59692a4acfbcd425"><div class="ttname"><a href="namespacelibMesh_1_1MeshTools.html#a2793e67a6d7e4c5e59692a4acfbcd425">libMesh::MeshTools::create_bounding_box</a></div><div class="ttdeci">libMesh::BoundingBox create_bounding_box(const MeshBase &amp;mesh)</div><div class="ttdef"><b>Definition:</b> <a href="mesh__tools_8C_source.html#l00558">mesh_tools.C:558</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html_a441f908d5e18c934fc3814f6dc2cdc3e"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html#a441f908d5e18c934fc3814f6dc2cdc3e">libMesh::PointLocatorBase::_close_to_point_tol</a></div><div class="ttdeci">Real _close_to_point_tol</div><div class="ttdoc">The tolerance to use. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8h_source.html#l00230">point_locator_base.h:230</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a842e8261d7412ed88ca07139883e955a"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a842e8261d7412ed88ca07139883e955a">libMesh::PointLocatorTree::_tree</a></div><div class="ttdeci">std::shared_ptr&lt; TreeBase &gt; _tree</div><div class="ttdoc">Pointer to our tree. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8h_source.html#l00172">point_locator_tree.h:172</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a566234d3493ce58fc4a44541a53d8e0b"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a566234d3493ce58fc4a44541a53d8e0b">libMesh::PointLocatorTree::perform_fuzzy_linear_search</a></div><div class="ttdeci">std::set&lt; const Elem * &gt; perform_fuzzy_linear_search(const Point &amp;p, const std::set&lt; subdomain_id_type &gt; *allowed_subdomains, Real close_to_point_tolerance=TOLERANCE) const </div><div class="ttdoc">A method to check if &amp;quot;fat&amp;quot; point p is in multiple elements. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8C_source.html#l00309">point_locator_tree.C:309</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html"><div class="ttname"><a href="classlibMesh_1_1Elem.html">libMesh::Elem</a></div><div class="ttdoc">This is the base class from which all geometric element types are derived. </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l00094">elem.h:94</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html_a84e5ced6bd58643678b0faed4a7ba799"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html#a84e5ced6bd58643678b0faed4a7ba799">libMesh::PointLocatorBase::_initialized</a></div><div class="ttdeci">bool _initialized</div><div class="ttdoc">true when properly initialized, false otherwise. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8h_source.html#l00219">point_locator_base.h:219</a></div></div>
+<div class="ttc" id="mesh__communication_8C_html_afaa03b874c297f4693d9cdef7f50f3c6"><div class="ttname"><a href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__communication_8C_source.html#l01308">mesh_communication.C:1308</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a4d6a0fd94a8482aebb5024faea8f9407"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a4d6a0fd94a8482aebb5024faea8f9407">libMesh::PointLocatorTree::_element</a></div><div class="ttdeci">const Elem * _element</div><div class="ttdoc">Pointer to the last element that was found by the tree. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8h_source.html#l00179">point_locator_tree.h:179</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html">libMesh::MeshBase</a></div><div class="ttdoc">This is the MeshBase class. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00070">mesh_base.h:70</a></div></div>
+<div class="ttc" id="namespacestd_html_aea71d536ca6ae5ef192477c8e9c9b197"><div class="ttname"><a href="namespacestd.html#aea71d536ca6ae5ef192477c8e9c9b197">std::abs</a></div><div class="ttdeci">ADRealEigenVector&lt; T, D, asd &gt; abs(const ADRealEigenVector&lt; T, D, asd &gt; &amp;)</div><div class="ttdoc">计算自动微分实数向量的绝对值。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l00112">type_vector.h:112</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a5aa42d9f304897ec1e8b7dc2a77e8b81"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a5aa42d9f304897ec1e8b7dc2a77e8b81">libMesh::PointLocatorTree::PointLocatorTree</a></div><div class="ttdeci">PointLocatorTree(const MeshBase &amp;mesh, const PointLocatorBase *master=nullptr)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8C_source.html#l00037">point_locator_tree.C:37</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html_ad9b6557329fc2c75f97a489e749dfdd8"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html#ad9b6557329fc2c75f97a489e749dfdd8">libMesh::PointLocatorBase::_mesh</a></div><div class="ttdeci">const MeshBase &amp; _mesh</div><div class="ttdoc">constant reference to the mesh in which the point is looked for. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8h_source.html#l00214">point_locator_base.h:214</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_aff604d653d526f7a2d4cc32dc8c5b55a"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#aff604d653d526f7a2d4cc32dc8c5b55a">libMesh::PointLocatorTree::init</a></div><div class="ttdeci">virtual void init() overridefinal</div><div class="ttdoc">Initializes the locator, so that the operator() methods can be used. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8C_source.html#l00081">point_locator_tree.C:81</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_ad9727403750a637603a0ef59e9e36f8d"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#ad9727403750a637603a0ef59e9e36f8d">libMesh::PointLocatorTree::clear</a></div><div class="ttdeci">virtual void clear() overridefinal</div><div class="ttdoc">Clears the locator. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8C_source.html#l00070">point_locator_tree.C:70</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a74e5bc8a72d210b3d87b0221b1f69db1"><div class="ttname"><a href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a></div><div class="ttdeci">OStreamProxy err(std::cerr)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00101">libmesh_common.h:101</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html">libMesh::PointLocatorBase</a></div><div class="ttdoc">This is the base class for point locators. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8h_source.html#l00054">point_locator_base.h:54</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a5a76292f3c4a6da412e548e47894ed59"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a5a76292f3c4a6da412e548e47894ed59">libMesh::PointLocatorTree::_build_type</a></div><div class="ttdeci">Trees::BuildType _build_type</div><div class="ttdoc">How the underlying tree is built. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8h_source.html#l00195">point_locator_tree.h:195</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a0d94cdce23b3d51485c177270e0f9ddd"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a0d94cdce23b3d51485c177270e0f9ddd">libMesh::PointLocatorTree::_target_bin_size</a></div><div class="ttdeci">unsigned int _target_bin_size</div><div class="ttdoc">Target bin size, which gets passed to the constructor of _tree. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8h_source.html#l00190">point_locator_tree.h:190</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a4092e5839f92a3f219c8617112334f3d"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a4092e5839f92a3f219c8617112334f3d">libMesh::PointLocatorTree::enable_out_of_mesh_mode</a></div><div class="ttdeci">virtual void enable_out_of_mesh_mode() overridefinal</div><div class="ttdoc">Enables out-of-mesh mode. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8C_source.html#l00335">point_locator_tree.C:335</a></div></div>
+<div class="ttc" id="classlibMesh_1_1BoundingBox_html"><div class="ttname"><a href="classlibMesh_1_1BoundingBox.html">libMesh::BoundingBox</a></div><div class="ttdoc">Defines a Cartesian bounding box by the two corner extremum. </div><div class="ttdef"><b>Definition:</b> <a href="bounding__box_8h_source.html#l00040">bounding_box.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html_a7cf6fe451ab3467605911798f7b0e39d"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html#a7cf6fe451ab3467605911798f7b0e39d">libMesh::PointLocatorBase::initialized</a></div><div class="ttdeci">bool initialized() const </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8C_source.html#l00060">point_locator_base.C:60</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_aee3699bfb41bc30d34e8f7880a990340"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#aee3699bfb41bc30d34e8f7880a990340">libMesh::PointLocatorTree::_out_of_mesh_mode</a></div><div class="ttdeci">bool _out_of_mesh_mode</div><div class="ttdoc">true if out-of-mesh mode is enabled. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8h_source.html#l00185">point_locator_tree.h:185</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html_ad241a453271b4d34f643a683eadf0a50"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html#ad241a453271b4d34f643a683eadf0a50">libMesh::PointLocatorBase::_verbose</a></div><div class="ttdeci">bool _verbose</div><div class="ttdoc">Boolean flag to indicate whether to print out extra info. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8h_source.html#l00201">point_locator_base.h:201</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_acd313428c9a4551d7e1aaa141e7ae8e7"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#acd313428c9a4551d7e1aaa141e7ae8e7">libMesh::PointLocatorTree::perform_linear_search</a></div><div class="ttdeci">const Elem * perform_linear_search(const Point &amp;p, const std::set&lt; subdomain_id_type &gt; *allowed_subdomains, bool use_close_to_point, Real close_to_point_tolerance=TOLERANCE) const </div><div class="ttdoc">As a fallback option, it&amp;#39;s helpful to be able to do a linear search over the entire mesh...</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8C_source.html#l00271">point_locator_tree.C:271</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html_afa51ddd6562a250bf23df16ade843f17"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html#afa51ddd6562a250bf23df16ade843f17">libMesh::PointLocatorBase::_master</a></div><div class="ttdeci">const PointLocatorBase * _master</div><div class="ttdoc">Const pointer to our master, initialized to nullptr if none given. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8h_source.html#l00209">point_locator_base.h:209</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorTree_html_a71f2efd76dfbd7ca388cd5ee37914bbb"><div class="ttname"><a href="classlibMesh_1_1PointLocatorTree.html#a71f2efd76dfbd7ca388cd5ee37914bbb">libMesh::PointLocatorTree::set_target_bin_size</a></div><div class="ttdeci">void set_target_bin_size(unsigned int target)</div><div class="ttdoc">Set the target bin size. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__tree_8C_source.html#l00349">point_locator_tree.C:349</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a63e3c3158308e2184c12b55ab9ea9a35"><div class="ttname"><a href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></div><div class="ttdeci">OStreamProxy out(std::cout)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00100">libmesh_common.h:100</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Point_html"><div class="ttname"><a href="classlibMesh_1_1Point.html">libMesh::Point</a></div><div class="ttdoc">A Point defines a location in LIBMESH_DIM dimensional Real space. </div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00039">point.h:39</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html_a93e4427e69701dd94b6f3dd0c89c55b0"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html#a93e4427e69701dd94b6f3dd0c89c55b0">libMesh::PointLocatorBase::_use_contains_point_tol</a></div><div class="ttdeci">bool _use_contains_point_tol</div><div class="ttdoc">true if we will use a user-specified tolerance for locating the element. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8h_source.html#l00236">point_locator_base.h:236</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1Trees_html_ac956f3a470953e2d0ddce171871efa39a99710d266ed849862503d6da40f75565"><div class="ttname"><a href="namespacelibMesh_1_1Trees.html#ac956f3a470953e2d0ddce171871efa39a99710d266ed849862503d6da40f75565">libMesh::Trees::NODES</a></div><div class="ttdef"><b>Definition:</b> <a href="tree__base_8h_source.html#l00058">tree_base.h:58</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_afd665f3e6d13b0aaaf4c4620067329bc"><div class="ttname"><a href="classlibMesh_1_1Elem.html#afd665f3e6d13b0aaaf4c4620067329bc">libMesh::Elem::contains_point</a></div><div class="ttdeci">virtual bool contains_point(const Point &amp;p, Real tol=TOLERANCE) const </div><div class="ttdef"><b>Definition:</b> <a href="elem_8C_source.html#l02373">elem.C:2373</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html_a5d746d76b35d69734adc7d5836b45d7e"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html#a5d746d76b35d69734adc7d5836b45d7e">libMesh::PointLocatorBase::_contains_point_tol</a></div><div class="ttdeci">Real _contains_point_tol</div><div class="ttdoc">The tolerance to use when locating an element in the tree. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8h_source.html#l00241">point_locator_base.h:241</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:06 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

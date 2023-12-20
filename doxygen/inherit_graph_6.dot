@@ -1,0 +1,26 @@
+digraph "类继承关系图"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="map",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="libMesh::AdjointDofConstraint\lValues",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1AdjointDofConstraintValues.html",tooltip="Storage for DofConstraint right hand sides for all adjoint problems. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="libMesh::chunked_mapvector\l\< Val, index_t, N \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1chunked__mapvector.html",tooltip="This chunked_mapvector templated class is intended to provide the asymptotic performance characterist..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="libMesh::DofConstraints",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DofConstraints.html",tooltip="The constraint matrix storage format. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="libMesh::DofConstraintValueMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DofConstraintValueMap.html",tooltip="Storage for DofConstraint right hand sides for a particular problem. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="libMesh::mapvector\l\< Val, index_t \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1mapvector.html",tooltip="This mapvector templated class is intended to provide the performance characteristics of a std::map w..."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="libMesh::NodeConstraints",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1NodeConstraints.html",tooltip="The Node constraint storage format. "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="libMesh::PeriodicBoundaries",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1PeriodicBoundaries.html",tooltip="We&#39;re using a class instead of a typedef to allow forward declarations and future flexibility..."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="libMesh::SparsityPattern\l::NonlocalGraph",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1SparsityPattern_1_1NonlocalGraph.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="libMesh::mapvector\l\< libMesh::Elem \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1mapvector.html"];
+}

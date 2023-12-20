@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/reduced_basis/rb_data_deserialization.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_83822dcf4f1c69c9ebf37d98e6e1ad22.html">reduced_basis</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">rb_data_deserialization.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="rb__data__deserialization_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// rbOOmit: An implementation of the Certified Reduced Basis method.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2009, 2010, 2015 David J. Knezevic</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This file is part of rbOOmit.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// rbOOmit is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// rbOOmit is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef RB_DATA_DESERIALIZATION_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RB_DATA_DESERIALIZATION_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// This class is only available if we have Cap&#39;n Proto</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_config.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if defined(LIBMESH_HAVE_CAPNPROTO)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// libMesh/reduced_basis includes</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;libmesh/rb_data.capnp.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Cap&#39;n&#39;Proto includes</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;capnp/message.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// Forward declarations</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>RBEvaluation;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>TransientRBEvaluation;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>RBEIMEvaluation;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">class </span>RBSCMEvaluation;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">class </span>RBParametrized;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span>ReplicatedMesh;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">class </span>Elem;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">class </span>Point;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacelibMesh_1_1RBDataDeserialization.html">   49</a></span>&#160;<span class="keyword">namespace </span>RBDataDeserialization</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html">RBEvaluationDeserialization</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#ade84721f6246b30dbb8432d4d4edf009">RBEvaluationDeserialization</a>(<a class="code" href="classlibMesh_1_1RBEvaluation.html">RBEvaluation</a> &amp; rb_eval);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#ade84721f6246b30dbb8432d4d4edf009">RBEvaluationDeserialization</a> (<a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html">RBEvaluationDeserialization</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#ade84721f6246b30dbb8432d4d4edf009">RBEvaluationDeserialization</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html">RBEvaluationDeserialization</a> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html">RBEvaluationDeserialization</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#a00c867de9f6d0e3525c20a9cbe634c68">operator= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html">RBEvaluationDeserialization</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html">RBEvaluationDeserialization</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#a00c867de9f6d0e3525c20a9cbe634c68">operator= </a>(<a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html">RBEvaluationDeserialization</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#a22d3d49fc93e76709794a76d9412a216">~RBEvaluationDeserialization</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#a9a027ecccf2f6a87d3d45ed9d79045e1">read_from_file</a>(<span class="keyword">const</span> std::string &amp; path, <span class="keywordtype">bool</span> read_error_bound_data);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#a8354b6af852ee2a1915b70562ac1b8e7">   92</a></span>&#160;  <a class="code" href="classlibMesh_1_1RBEvaluation.html">RBEvaluation</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#a8354b6af852ee2a1915b70562ac1b8e7">_rb_eval</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html">  101</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html">TransientRBEvaluationDeserialization</a></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#ac6f141d41befc57dc78c50c6e1e93f4c">TransientRBEvaluationDeserialization</a>(<a class="code" href="classlibMesh_1_1TransientRBEvaluation.html">TransientRBEvaluation</a> &amp; trans_rb_eval);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#ac6f141d41befc57dc78c50c6e1e93f4c">TransientRBEvaluationDeserialization</a> (<a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html">TransientRBEvaluationDeserialization</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#ac6f141d41befc57dc78c50c6e1e93f4c">TransientRBEvaluationDeserialization</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html">TransientRBEvaluationDeserialization</a> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html">TransientRBEvaluationDeserialization</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#a1641a61e73603ec1c70e1408a306fcb6">operator= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html">TransientRBEvaluationDeserialization</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html">TransientRBEvaluationDeserialization</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#a1641a61e73603ec1c70e1408a306fcb6">operator= </a>(<a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html">TransientRBEvaluationDeserialization</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#a7810e09e5172869a7dfd775741d674dc">~TransientRBEvaluationDeserialization</a>();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#afd0e1ead76bb819fa9ed5d0e619e777e">read_from_file</a>(<span class="keyword">const</span> std::string &amp; path, <span class="keywordtype">bool</span> read_error_bound_data);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#a2499894331c8eca96e3b5a040db2446c">  133</a></span>&#160;  <a class="code" href="classlibMesh_1_1TransientRBEvaluation.html">TransientRBEvaluation</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#a2499894331c8eca96e3b5a040db2446c">_trans_rb_eval</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html">  142</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html">RBEIMEvaluationDeserialization</a></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a90ced383e713ae16bf6060cd18b175f2">RBEIMEvaluationDeserialization</a>(<a class="code" href="classlibMesh_1_1RBEIMEvaluation.html">RBEIMEvaluation</a> &amp; trans_rb_eval);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a90ced383e713ae16bf6060cd18b175f2">RBEIMEvaluationDeserialization</a> (<a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html">RBEIMEvaluationDeserialization</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a90ced383e713ae16bf6060cd18b175f2">RBEIMEvaluationDeserialization</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html">RBEIMEvaluationDeserialization</a> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html">RBEIMEvaluationDeserialization</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a0a7982eb21318ab15b1b1700ee45b4e5">operator= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html">RBEIMEvaluationDeserialization</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html">RBEIMEvaluationDeserialization</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a0a7982eb21318ab15b1b1700ee45b4e5">operator= </a>(<a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html">RBEIMEvaluationDeserialization</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a5fc1e385f959647ac4fb99fe6189bffc">~RBEIMEvaluationDeserialization</a>();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#ab5e43f28dec05dbe936be0c390e77477">read_from_file</a>(<span class="keyword">const</span> std::string &amp; path);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a25250352d3ba871620cb82e0bcd5eefc">  174</a></span>&#160;  <a class="code" href="classlibMesh_1_1RBEIMEvaluation.html">RBEIMEvaluation</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a25250352d3ba871620cb82e0bcd5eefc">_rb_eim_eval</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;};</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">// RBSCMEvaluation should only be available</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">// if SLEPc and GLPK support is enabled.</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#if defined(LIBMESH_HAVE_SLEPC) &amp;&amp; (LIBMESH_HAVE_GLPK)</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html">  187</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html">RBSCMEvaluationDeserialization</a></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#acc191b4149d7bcf2e24157aa165496db">RBSCMEvaluationDeserialization</a>(<a class="code" href="classlibMesh_1_1RBSCMEvaluation.html">RBSCMEvaluation</a> &amp; trans_rb_eval);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#acc191b4149d7bcf2e24157aa165496db">RBSCMEvaluationDeserialization</a> (<a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html">RBSCMEvaluationDeserialization</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#acc191b4149d7bcf2e24157aa165496db">RBSCMEvaluationDeserialization</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html">RBSCMEvaluationDeserialization</a> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html">RBSCMEvaluationDeserialization</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#a898f459255f951b7c9604ed4b28ad321">operator= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html">RBSCMEvaluationDeserialization</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html">RBSCMEvaluationDeserialization</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#a898f459255f951b7c9604ed4b28ad321">operator= </a>(<a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html">RBSCMEvaluationDeserialization</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#aba569c87d83687fbf5bc65f07ed8845a">~RBSCMEvaluationDeserialization</a>();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#af3ac0e0442f0ce51d9cf10531863f4b8">read_from_file</a>(<span class="keyword">const</span> std::string &amp; path);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#a3b50bc078fbfc19eba40c0bee226ba04">  219</a></span>&#160;  <a class="code" href="classlibMesh_1_1RBSCMEvaluation.html">RBSCMEvaluation</a> &amp; <a class="code" href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#a3b50bc078fbfc19eba40c0bee226ba04">_rb_scm_eval</a>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;};</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#endif // LIBMESH_HAVE_SLEPC &amp;&amp; LIBMESH_HAVE_GLPK</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelibMesh_1_1RBDataDeserialization.html#ac0d03e4732082fecc5a11d081ab6ea8a">load_parameter_ranges</a>(<a class="code" href="classlibMesh_1_1RBParametrized.html">RBParametrized</a> &amp; rb_evaluation,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                           RBData::ParameterRanges::Reader &amp; parameter_ranges,</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                           RBData::DiscreteParameterList::Reader &amp; discrete_parameters_list);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RBEvaluationReaderNumber&gt;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelibMesh_1_1RBDataDeserialization.html#a3140df072b21c6e47371e691a982ccc1">load_rb_evaluation_data</a>(<a class="code" href="classlibMesh_1_1RBEvaluation.html">RBEvaluation</a> &amp; rb_evaluation,</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                             RBEvaluationReaderNumber &amp; rb_evaluation_reader,</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                             <span class="keywordtype">bool</span> read_error_bound_data);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RBEvaluationReaderNumber, <span class="keyword">typename</span> TransRBEvaluationReaderNumber&gt;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelibMesh_1_1RBDataDeserialization.html#a292135996417f9afc897dcf3b3a17c6c">load_transient_rb_evaluation_data</a>(<a class="code" href="classlibMesh_1_1TransientRBEvaluation.html">TransientRBEvaluation</a> &amp; trans_rb_eval,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                       RBEvaluationReaderNumber &amp; rb_evaluation_reader,</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                                       TransRBEvaluationReaderNumber &amp; trans_rb_eval_reader,</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                       <span class="keywordtype">bool</span> read_error_bound_data);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RBEIMEvaluationReaderNumber&gt;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelibMesh_1_1RBDataDeserialization.html#a65165918bc36e428a8a3069df8f2967e">load_rb_eim_evaluation_data</a>(<a class="code" href="classlibMesh_1_1RBEIMEvaluation.html">RBEIMEvaluation</a> &amp; rb_eim_eval,</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                                 RBEIMEvaluationReaderNumber &amp; rb_eim_eval_reader);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#if defined(LIBMESH_HAVE_SLEPC) &amp;&amp; (LIBMESH_HAVE_GLPK)</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelibMesh_1_1RBDataDeserialization.html#a647ebbb42319077cdb3661d90de63c35">load_rb_scm_evaluation_data</a>(<a class="code" href="classlibMesh_1_1RBSCMEvaluation.html">RBSCMEvaluation</a> &amp; rb_scm_eval,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                 RBData::RBSCMEvaluation::Reader &amp; rb_scm_eval_reader);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#endif // LIBMESH_HAVE_SLEPC &amp;&amp; LIBMESH_HAVE_GLPK</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelibMesh_1_1RBDataDeserialization.html#a274758374473dca17177375f3a00efbc">load_point</a>(RBData::Point3D::Reader point_reader, <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; point);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;} <span class="comment">// namespace RBDataDeserialization</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor">#endif // #if defined(LIBMESH_HAVE_CAPNPROTO)</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#endif // RB_COMPONENT_DATA_DESERIALIZATION_H</span></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization_html_a3b50bc078fbfc19eba40c0bee226ba04"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#a3b50bc078fbfc19eba40c0bee226ba04">libMesh::RBDataDeserialization::RBSCMEvaluationDeserialization::_rb_scm_eval</a></div><div class="ttdeci">RBSCMEvaluation &amp; _rb_scm_eval</div><div class="ttdoc">The RBSCMEvaluation object we will read into. </div><div class="ttdef"><b>Definition:</b> <a href="rb__data__deserialization_8h_source.html#l00219">rb_data_deserialization.h:219</a></div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization_html"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html">libMesh::RBDataDeserialization::TransientRBEvaluationDeserialization</a></div><div class="ttdoc">This class de-serializes a TransientRBEvaluation object using the Cap&amp;#39;n Proto library. </div><div class="ttdef"><b>Definition:</b> <a href="rb__data__deserialization_8h_source.html#l00101">rb_data_deserialization.h:101</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1RBDataDeserialization_html_a3140df072b21c6e47371e691a982ccc1"><div class="ttname"><a href="namespacelibMesh_1_1RBDataDeserialization.html#a3140df072b21c6e47371e691a982ccc1">libMesh::RBDataDeserialization::load_rb_evaluation_data</a></div><div class="ttdeci">void load_rb_evaluation_data(RBEvaluation &amp;rb_evaluation, RBEvaluationReaderNumber &amp;rb_evaluation_reader, bool read_error_bound_data)</div><div class="ttdoc">Load an RB evaluation from a corresponding reader structure in the buffer. </div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization_html_a898f459255f951b7c9604ed4b28ad321"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#a898f459255f951b7c9604ed4b28ad321">libMesh::RBDataDeserialization::RBSCMEvaluationDeserialization::operator=</a></div><div class="ttdeci">RBSCMEvaluationDeserialization &amp; operator=(const RBSCMEvaluationDeserialization &amp;)=delete</div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization_html_a1641a61e73603ec1c70e1408a306fcb6"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#a1641a61e73603ec1c70e1408a306fcb6">libMesh::RBDataDeserialization::TransientRBEvaluationDeserialization::operator=</a></div><div class="ttdeci">TransientRBEvaluationDeserialization &amp; operator=(const TransientRBEvaluationDeserialization &amp;)=delete</div></div>
+<div class="ttc" id="namespacelibMesh_1_1RBDataDeserialization_html_a647ebbb42319077cdb3661d90de63c35"><div class="ttname"><a href="namespacelibMesh_1_1RBDataDeserialization.html#a647ebbb42319077cdb3661d90de63c35">libMesh::RBDataDeserialization::load_rb_scm_evaluation_data</a></div><div class="ttdeci">void load_rb_scm_evaluation_data(RBSCMEvaluation &amp;rb_scm_eval, RBData::RBSCMEvaluation::Reader &amp;rb_scm_eval_reader)</div><div class="ttdoc">Load an SCM RB evaluation from a corresponding reader structure in the buffer. </div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization_html_a5fc1e385f959647ac4fb99fe6189bffc"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a5fc1e385f959647ac4fb99fe6189bffc">libMesh::RBDataDeserialization::RBEIMEvaluationDeserialization::~RBEIMEvaluationDeserialization</a></div><div class="ttdeci">virtual ~RBEIMEvaluationDeserialization()</div></div>
+<div class="ttc" id="classlibMesh_1_1TransientRBEvaluation_html"><div class="ttname"><a href="classlibMesh_1_1TransientRBEvaluation.html">libMesh::TransientRBEvaluation</a></div><div class="ttdoc">This class is part of the rbOOmit framework. </div><div class="ttdef"><b>Definition:</b> <a href="transient__rb__evaluation_8h_source.html#l00050">transient_rb_evaluation.h:50</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1RBDataDeserialization_html_a292135996417f9afc897dcf3b3a17c6c"><div class="ttname"><a href="namespacelibMesh_1_1RBDataDeserialization.html#a292135996417f9afc897dcf3b3a17c6c">libMesh::RBDataDeserialization::load_transient_rb_evaluation_data</a></div><div class="ttdeci">void load_transient_rb_evaluation_data(TransientRBEvaluation &amp;trans_rb_eval, RBEvaluationReaderNumber &amp;rb_evaluation_reader, TransRBEvaluationReaderNumber &amp;trans_rb_eval_reader, bool read_error_bound_data)</div><div class="ttdoc">Load an RB evaluation from a corresponding reader structure in the buffer. </div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization_html_a7810e09e5172869a7dfd775741d674dc"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#a7810e09e5172869a7dfd775741d674dc">libMesh::RBDataDeserialization::TransientRBEvaluationDeserialization::~TransientRBEvaluationDeserialization</a></div><div class="ttdeci">virtual ~TransientRBEvaluationDeserialization()</div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization_html_acc191b4149d7bcf2e24157aa165496db"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#acc191b4149d7bcf2e24157aa165496db">libMesh::RBDataDeserialization::RBSCMEvaluationDeserialization::RBSCMEvaluationDeserialization</a></div><div class="ttdeci">RBSCMEvaluationDeserialization(RBSCMEvaluation &amp;trans_rb_eval)</div><div class="ttdoc">Initialize a new buffer using the structure from the Cap&amp;#39;n&amp;#39;Proto schema described in rb_data...</div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization_html_ade84721f6246b30dbb8432d4d4edf009"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#ade84721f6246b30dbb8432d4d4edf009">libMesh::RBDataDeserialization::RBEvaluationDeserialization::RBEvaluationDeserialization</a></div><div class="ttdeci">RBEvaluationDeserialization(RBEvaluation &amp;rb_eval)</div><div class="ttdoc">Initialize a new buffer using the structure from the Cap&amp;#39;n&amp;#39;Proto schema described in rb_data...</div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization_html_a00c867de9f6d0e3525c20a9cbe634c68"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#a00c867de9f6d0e3525c20a9cbe634c68">libMesh::RBDataDeserialization::RBEvaluationDeserialization::operator=</a></div><div class="ttdeci">RBEvaluationDeserialization &amp; operator=(const RBEvaluationDeserialization &amp;)=delete</div></div>
+<div class="ttc" id="namespacelibMesh_1_1RBDataDeserialization_html_ac0d03e4732082fecc5a11d081ab6ea8a"><div class="ttname"><a href="namespacelibMesh_1_1RBDataDeserialization.html#ac0d03e4732082fecc5a11d081ab6ea8a">libMesh::RBDataDeserialization::load_parameter_ranges</a></div><div class="ttdeci">void load_parameter_ranges(RBParametrized &amp;rb_evaluation, RBData::ParameterRanges::Reader &amp;parameter_ranges, RBData::DiscreteParameterList::Reader &amp;discrete_parameters_list)</div><div class="ttdoc">Load parameter ranges and discrete parameter values into an RBEvaluation from the corresponding struc...</div></div>
+<div class="ttc" id="namespacelibMesh_1_1RBDataDeserialization_html_a65165918bc36e428a8a3069df8f2967e"><div class="ttname"><a href="namespacelibMesh_1_1RBDataDeserialization.html#a65165918bc36e428a8a3069df8f2967e">libMesh::RBDataDeserialization::load_rb_eim_evaluation_data</a></div><div class="ttdeci">void load_rb_eim_evaluation_data(RBEIMEvaluation &amp;rb_eim_eval, RBEIMEvaluationReaderNumber &amp;rb_eim_eval_reader)</div><div class="ttdoc">Load an EIM RB evaluation from a corresponding reader structure in the buffer. </div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization_html_a9a027ecccf2f6a87d3d45ed9d79045e1"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#a9a027ecccf2f6a87d3d45ed9d79045e1">libMesh::RBDataDeserialization::RBEvaluationDeserialization::read_from_file</a></div><div class="ttdeci">void read_from_file(const std::string &amp;path, bool read_error_bound_data)</div><div class="ttdoc">Write the Cap&amp;#39;n&amp;#39;Proto buffer to disk. </div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization_html_a25250352d3ba871620cb82e0bcd5eefc"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a25250352d3ba871620cb82e0bcd5eefc">libMesh::RBDataDeserialization::RBEIMEvaluationDeserialization::_rb_eim_eval</a></div><div class="ttdeci">RBEIMEvaluation &amp; _rb_eim_eval</div><div class="ttdoc">The RBEIMEvaluation object we will read into. </div><div class="ttdef"><b>Definition:</b> <a href="rb__data__deserialization_8h_source.html#l00174">rb_data_deserialization.h:174</a></div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization_html_ab5e43f28dec05dbe936be0c390e77477"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#ab5e43f28dec05dbe936be0c390e77477">libMesh::RBDataDeserialization::RBEIMEvaluationDeserialization::read_from_file</a></div><div class="ttdeci">void read_from_file(const std::string &amp;path)</div><div class="ttdoc">Write the Cap&amp;#39;n&amp;#39;Proto buffer to disk. </div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization_html"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html">libMesh::RBDataDeserialization::RBSCMEvaluationDeserialization</a></div><div class="ttdoc">This class de-serializes a RBSCMEvaluation object using the Cap&amp;#39;n Proto library. </div><div class="ttdef"><b>Definition:</b> <a href="rb__data__deserialization_8h_source.html#l00187">rb_data_deserialization.h:187</a></div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization_html_a90ced383e713ae16bf6060cd18b175f2"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a90ced383e713ae16bf6060cd18b175f2">libMesh::RBDataDeserialization::RBEIMEvaluationDeserialization::RBEIMEvaluationDeserialization</a></div><div class="ttdeci">RBEIMEvaluationDeserialization(RBEIMEvaluation &amp;trans_rb_eval)</div><div class="ttdoc">Initialize a new buffer using the structure from the Cap&amp;#39;n&amp;#39;Proto schema described in rb_data...</div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization_html_a22d3d49fc93e76709794a76d9412a216"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#a22d3d49fc93e76709794a76d9412a216">libMesh::RBDataDeserialization::RBEvaluationDeserialization::~RBEvaluationDeserialization</a></div><div class="ttdeci">virtual ~RBEvaluationDeserialization()</div></div>
+<div class="ttc" id="classlibMesh_1_1RBEvaluation_html"><div class="ttname"><a href="classlibMesh_1_1RBEvaluation.html">libMesh::RBEvaluation</a></div><div class="ttdoc">This class is part of the rbOOmit framework. </div><div class="ttdef"><b>Definition:</b> <a href="rb__evaluation_8h_source.html#l00050">rb_evaluation.h:50</a></div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization_html_a0a7982eb21318ab15b1b1700ee45b4e5"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html#a0a7982eb21318ab15b1b1700ee45b4e5">libMesh::RBDataDeserialization::RBEIMEvaluationDeserialization::operator=</a></div><div class="ttdeci">RBEIMEvaluationDeserialization &amp; operator=(const RBEIMEvaluationDeserialization &amp;)=delete</div></div>
+<div class="ttc" id="namespacelibMesh_1_1RBDataDeserialization_html_a274758374473dca17177375f3a00efbc"><div class="ttname"><a href="namespacelibMesh_1_1RBDataDeserialization.html#a274758374473dca17177375f3a00efbc">libMesh::RBDataDeserialization::load_point</a></div><div class="ttdeci">void load_point(RBData::Point3D::Reader point_reader, Point &amp;point)</div><div class="ttdoc">Helper function that loads point data. </div></div>
+<div class="ttc" id="classlibMesh_1_1RBParametrized_html"><div class="ttname"><a href="classlibMesh_1_1RBParametrized.html">libMesh::RBParametrized</a></div><div class="ttdoc">This class is part of the rbOOmit framework. </div><div class="ttdef"><b>Definition:</b> <a href="rb__parametrized_8h_source.html#l00044">rb_parametrized.h:44</a></div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization_html_afd0e1ead76bb819fa9ed5d0e619e777e"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#afd0e1ead76bb819fa9ed5d0e619e777e">libMesh::RBDataDeserialization::TransientRBEvaluationDeserialization::read_from_file</a></div><div class="ttdeci">void read_from_file(const std::string &amp;path, bool read_error_bound_data)</div><div class="ttdoc">Write the Cap&amp;#39;n&amp;#39;Proto buffer to disk. </div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization_html_a2499894331c8eca96e3b5a040db2446c"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#a2499894331c8eca96e3b5a040db2446c">libMesh::RBDataDeserialization::TransientRBEvaluationDeserialization::_trans_rb_eval</a></div><div class="ttdeci">TransientRBEvaluation &amp; _trans_rb_eval</div><div class="ttdoc">The TransientRBEvaluation object that we will read into. </div><div class="ttdef"><b>Definition:</b> <a href="rb__data__deserialization_8h_source.html#l00133">rb_data_deserialization.h:133</a></div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization_html_a8354b6af852ee2a1915b70562ac1b8e7"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html#a8354b6af852ee2a1915b70562ac1b8e7">libMesh::RBDataDeserialization::RBEvaluationDeserialization::_rb_eval</a></div><div class="ttdeci">RBEvaluation &amp; _rb_eval</div><div class="ttdoc">The RBEvaluation object that we will read into. </div><div class="ttdef"><b>Definition:</b> <a href="rb__data__deserialization_8h_source.html#l00092">rb_data_deserialization.h:92</a></div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization_html"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEvaluationDeserialization.html">libMesh::RBDataDeserialization::RBEvaluationDeserialization</a></div><div class="ttdoc">This class de-serializes an RBEvaluation object using the Cap&amp;#39;n Proto library. </div><div class="ttdef"><b>Definition:</b> <a href="rb__data__deserialization_8h_source.html#l00060">rb_data_deserialization.h:60</a></div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization_html_ac6f141d41befc57dc78c50c6e1e93f4c"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1TransientRBEvaluationDeserialization.html#ac6f141d41befc57dc78c50c6e1e93f4c">libMesh::RBDataDeserialization::TransientRBEvaluationDeserialization::TransientRBEvaluationDeserialization</a></div><div class="ttdeci">TransientRBEvaluationDeserialization(TransientRBEvaluation &amp;trans_rb_eval)</div><div class="ttdoc">Initialize a new buffer using the structure from the Cap&amp;#39;n&amp;#39;Proto schema described in rb_data...</div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization_html_aba569c87d83687fbf5bc65f07ed8845a"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#aba569c87d83687fbf5bc65f07ed8845a">libMesh::RBDataDeserialization::RBSCMEvaluationDeserialization::~RBSCMEvaluationDeserialization</a></div><div class="ttdeci">virtual ~RBSCMEvaluationDeserialization()</div></div>
+<div class="ttc" id="classlibMesh_1_1RBEIMEvaluation_html"><div class="ttname"><a href="classlibMesh_1_1RBEIMEvaluation.html">libMesh::RBEIMEvaluation</a></div><div class="ttdoc">This class enables evaluation of an Empirical Interpolation Method (EIM) approximation. </div><div class="ttdef"><b>Definition:</b> <a href="rb__eim__evaluation_8h_source.html#l00051">rb_eim_evaluation.h:51</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Point_html"><div class="ttname"><a href="classlibMesh_1_1Point.html">libMesh::Point</a></div><div class="ttdoc">A Point defines a location in LIBMESH_DIM dimensional Real space. </div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00039">point.h:39</a></div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization_html"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBEIMEvaluationDeserialization.html">libMesh::RBDataDeserialization::RBEIMEvaluationDeserialization</a></div><div class="ttdoc">This class de-serializes a RBEIMEvaluation object using the Cap&amp;#39;n Proto library. </div><div class="ttdef"><b>Definition:</b> <a href="rb__data__deserialization_8h_source.html#l00142">rb_data_deserialization.h:142</a></div></div>
+<div class="ttc" id="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization_html_af3ac0e0442f0ce51d9cf10531863f4b8"><div class="ttname"><a href="classlibMesh_1_1RBDataDeserialization_1_1RBSCMEvaluationDeserialization.html#af3ac0e0442f0ce51d9cf10531863f4b8">libMesh::RBDataDeserialization::RBSCMEvaluationDeserialization::read_from_file</a></div><div class="ttdeci">void read_from_file(const std::string &amp;path)</div><div class="ttdoc">Write the Cap&amp;#39;n&amp;#39;Proto buffer to disk. </div></div>
+<div class="ttc" id="classlibMesh_1_1RBSCMEvaluation_html"><div class="ttname"><a href="classlibMesh_1_1RBSCMEvaluation.html">libMesh::RBSCMEvaluation</a></div><div class="ttdoc">This class is part of the rbOOmit framework. </div><div class="ttdef"><b>Definition:</b> <a href="rb__scm__evaluation_8h_source.html#l00052">rb_scm_evaluation.h:52</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

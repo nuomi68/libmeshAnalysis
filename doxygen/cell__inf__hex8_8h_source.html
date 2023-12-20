@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/geom/cell_inf_hex8.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_7b25fee8b20e5ff305ecfa5c6e931be7.html">geom</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cell_inf_hex8.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cell__inf__hex8_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_CELL_INF_HEX8_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_CELL_INF_HEX8_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_config.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifdef LIBMESH_ENABLE_INFINITE_ELEMENTS</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;libmesh/cell_inf_hex.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1InfHex8.html">InfHex8</a> final : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1InfHex.html">InfHex</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">explicit</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a59acf4e9dc987940d8fc0d93f2094450">   63</a></span>&#160;  <a class="code" href="classlibMesh_1_1InfHex8.html#a59acf4e9dc987940d8fc0d93f2094450">InfHex8</a> (<a class="code" href="classlibMesh_1_1Elem.html">Elem</a> * p=<span class="keyword">nullptr</span>) :</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classlibMesh_1_1InfHex.html">InfHex</a>(<a class="code" href="classlibMesh_1_1InfHex8.html">InfHex8</a>::<a class="code" href="classlibMesh_1_1InfHex8.html#a63a7c12e3e5ee1f65844b6e861bd1320">n_nodes</a>(), p, <a class="code" href="classlibMesh_1_1InfHex8.html#a6d288186f7e476fb26817a3f2cc6110d">_nodelinks_data</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classlibMesh_1_1InfHex8.html#a59acf4e9dc987940d8fc0d93f2094450">InfHex8</a> (<a class="code" href="classlibMesh_1_1InfHex8.html">InfHex8</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classlibMesh_1_1InfHex8.html#a59acf4e9dc987940d8fc0d93f2094450">InfHex8</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1InfHex8.html">InfHex8</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classlibMesh_1_1InfHex8.html">InfHex8</a> &amp; <a class="code" href="classlibMesh_1_1InfHex8.html#a1ce409ac944a6f109451679ac8e2667f">operator= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1InfHex8.html">InfHex8</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classlibMesh_1_1InfHex8.html">InfHex8</a> &amp; <a class="code" href="classlibMesh_1_1InfHex8.html#a1ce409ac944a6f109451679ac8e2667f">operator= </a>(<a class="code" href="classlibMesh_1_1InfHex8.html">InfHex8</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1InfHex8.html#ac40e31720162c347fbbfa9e87b0e3796">~InfHex8</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a63a7c12e3e5ee1f65844b6e861bd1320">   76</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#a63a7c12e3e5ee1f65844b6e861bd1320">n_nodes</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1InfHex8.html#a6fd75b8623912d7790aaba6721111137">num_nodes</a>; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a459446945c2c8db59d95ff34bf6d825b">   81</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a> <a class="code" href="classlibMesh_1_1InfHex8.html#a459446945c2c8db59d95ff34bf6d825b">type</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967a121f88f5e989d3bbba3a482b132ca725">INFHEX8</a>; }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#accb7155a5e75e60b34726646ebbbff29">   86</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#accb7155a5e75e60b34726646ebbbff29">n_sub_elem</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> 1; }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1InfHex8.html#ad3231a71ad585626de8b377fe3c24e4b">is_node_on_side</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">virtual</span> std::vector&lt;unsigned int&gt; <a class="code" href="classlibMesh_1_1InfHex8.html#a470ee3426769c6b69e3b9872a6c369fe">nodes_on_side</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">virtual</span> std::vector&lt;unsigned int&gt; <a class="code" href="classlibMesh_1_1InfHex8.html#a11428326c35cdda81cb9bc16132904d4">nodes_on_edge</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> e) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1InfHex8.html#af1c1df7b8c42a00c8402cf12f1f9395e">is_node_on_edge</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> e) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a> <a class="code" href="classlibMesh_1_1InfHex8.html#a6baa39901d4ded19ccf360fc50e0faf1">default_order</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;Elem&gt; <a class="code" href="classlibMesh_1_1InfHex8.html#abe0f0a9ead28f3c25c75a555a703bed6">build_side_ptr</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                                <span class="keywordtype">bool</span> proxy=<span class="keyword">false</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1InfHex8.html#abe0f0a9ead28f3c25c75a555a703bed6">build_side_ptr</a> (std::unique_ptr&lt;Elem&gt; &amp; elem,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;Elem&gt; <a class="code" href="classlibMesh_1_1InfHex8.html#ace129177b8f7373c232b11b56f5d6558">build_edge_ptr</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1InfHex8.html#ace129177b8f7373c232b11b56f5d6558">build_edge_ptr</a> (std::unique_ptr&lt;Elem&gt; &amp; edge, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1InfHex8.html#a606958df766af20618d722d4ed836ddc">connectivity</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sc,</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                            <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a341c6dd5cee5367bd34657973bd490a6">IOPackage</a> iop,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                            std::vector&lt;dof_id_type&gt; &amp; conn) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a5632c0033f5de09b7f590d968c559b27">  145</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#a5632c0033f5de09b7f590d968c559b27">vtk_element_type</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">  </span>{ <span class="keywordflow">return</span> 12; }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a6fd75b8623912d7790aaba6721111137">  151</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#a6fd75b8623912d7790aaba6721111137">num_nodes</a> = 8;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a45ecb2d00844eb60b89a0cc54918896e">  152</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#a45ecb2d00844eb60b89a0cc54918896e">num_sides</a> = 5;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#afa22dfe45e9837f386a691362789c197">  153</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#afa22dfe45e9837f386a691362789c197">num_edges</a> = 8;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a0458f82fe8d1efef8666cf3c96aab43f">  154</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#a0458f82fe8d1efef8666cf3c96aab43f">num_children</a> = 4;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#ac368bf403a28b94df319ceeff1571050">  155</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#ac368bf403a28b94df319ceeff1571050">nodes_per_side</a> = 4;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#abf166d0f8b08cf1f7a059c58143c9f40">  156</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#abf166d0f8b08cf1f7a059c58143c9f40">nodes_per_edge</a> = 2;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#ab4248fc867bf224bdd0c94c7d3fbbd03">  162</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#ab4248fc867bf224bdd0c94c7d3fbbd03">side_nodes_map</a>[<a class="code" href="classlibMesh_1_1InfHex8.html#a45ecb2d00844eb60b89a0cc54918896e">num_sides</a>][<a class="code" href="classlibMesh_1_1InfHex8.html#ac368bf403a28b94df319ceeff1571050">nodes_per_side</a>];</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#aa88f53db446ef917a829ab4f7082b156">  168</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1InfHex8.html#aa88f53db446ef917a829ab4f7082b156">edge_nodes_map</a>[<a class="code" href="classlibMesh_1_1InfHex8.html#afa22dfe45e9837f386a691362789c197">num_edges</a>][<a class="code" href="classlibMesh_1_1InfHex8.html#abf166d0f8b08cf1f7a059c58143c9f40">nodes_per_edge</a>];</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1InfHex8.html#ac31da7c1368eaee1033544b8d269e8fd">permute</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> perm_num) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1InfHex8.html#a7c88f396677665d3a311a3523c99d8cc">flip</a>(<a class="code" href="classlibMesh_1_1BoundaryInfo.html">BoundaryInfo</a> *) override final;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a> <a class="code" href="classlibMesh_1_1InfHex8.html#aa713622ce9950413a2e905acfec54a53">side_type</a> (const <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s) const override final;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;protected:</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a6d288186f7e476fb26817a3f2cc6110d">  181</a></span>&#160;  <a class="code" href="classlibMesh_1_1Node.html">Node</a> * <a class="code" href="classlibMesh_1_1InfHex8.html#a6d288186f7e476fb26817a3f2cc6110d">_nodelinks_data</a>[<a class="code" href="classlibMesh_1_1InfHex8.html#a6fd75b8623912d7790aaba6721111137">num_nodes</a>];</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#ifdef LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a439f3c8496adb0173bfb783d6ff543b3">  190</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1InfHex8.html#a439f3c8496adb0173bfb783d6ff543b3">embedding_matrix</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="keyword">  </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1InfHex8.html#a36dac25479e2056b8b4380f4069e5612">_embedding_matrix</a>[i][j][k]; }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a36dac25479e2056b8b4380f4069e5612">  199</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1InfHex8.html#a36dac25479e2056b8b4380f4069e5612">_embedding_matrix</a>[<a class="code" href="classlibMesh_1_1InfHex8.html#a0458f82fe8d1efef8666cf3c96aab43f">num_children</a>][<a class="code" href="classlibMesh_1_1InfHex8.html#a6fd75b8623912d7790aaba6721111137">num_nodes</a>][<a class="code" href="classlibMesh_1_1InfHex8.html#a6fd75b8623912d7790aaba6721111137">num_nodes</a>];</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="classlibMesh_1_1InfHex8.html#a15e97651bbfb7f882e0d6e077711a9f6">  201</a></span>&#160;  <a class="code" href="classlibMesh_1_1InfHex8.html#a15e97651bbfb7f882e0d6e077711a9f6">LIBMESH_ENABLE_TOPOLOGY_CACHES</a>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif // LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;};</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#endif  // ifdef LIBMESH_ENABLE_INFINITE_ELEMENTS</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">#endif // LIBMESH_CELL_INF_HEX8_H</span></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a36dac25479e2056b8b4380f4069e5612"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a36dac25479e2056b8b4380f4069e5612">libMesh::InfHex8::_embedding_matrix</a></div><div class="ttdeci">static const Real _embedding_matrix[num_children][num_nodes][num_nodes]</div><div class="ttdoc">Matrix that computes new nodal locations/solution values from current nodes/solution. </div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00199">cell_inf_hex8.h:199</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a59acf4e9dc987940d8fc0d93f2094450"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a59acf4e9dc987940d8fc0d93f2094450">libMesh::InfHex8::InfHex8</a></div><div class="ttdeci">InfHex8(Elem *p=nullptr)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00063">cell_inf_hex8.h:63</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a3f482b3acb4beb528f0ce89f161ff967"><div class="ttname"><a href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">libMesh::ElemType</a></div><div class="ttdeci">ElemType</div><div class="ttdoc">Defines an enum for geometric element types. </div><div class="ttdef"><b>Definition:</b> <a href="enum__elem__type_8h_source.html#l00033">enum_elem_type.h:33</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_af1c1df7b8c42a00c8402cf12f1f9395e"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#af1c1df7b8c42a00c8402cf12f1f9395e">libMesh::InfHex8::is_node_on_edge</a></div><div class="ttdeci">virtual bool is_node_on_edge(const unsigned int n, const unsigned int e) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00093">cell_inf_hex8.C:93</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html">libMesh::InfHex8</a></div><div class="ttdoc">The InfHex8 is an infinite element in 3D composed of 8 nodes. </div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00055">cell_inf_hex8.h:55</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af3eb3e8751995b944fc135ea53b09da2"><div class="ttname"><a href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">libMesh::Order</a></div><div class="ttdeci">Order</div><div class="ttdoc">defines an enum for polynomial orders. </div><div class="ttdef"><b>Definition:</b> <a href="enum__order_8h_source.html#l00040">enum_order.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a63a7c12e3e5ee1f65844b6e861bd1320"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a63a7c12e3e5ee1f65844b6e861bd1320">libMesh::InfHex8::n_nodes</a></div><div class="ttdeci">virtual unsigned int n_nodes() const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00076">cell_inf_hex8.h:76</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Node_html"><div class="ttname"><a href="classlibMesh_1_1Node.html">libMesh::Node</a></div><div class="ttdoc">A Node is like a Point, but with more information. </div><div class="ttdef"><b>Definition:</b> <a href="node_8h_source.html#l00052">node.h:52</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a3f482b3acb4beb528f0ce89f161ff967a121f88f5e989d3bbba3a482b132ca725"><div class="ttname"><a href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967a121f88f5e989d3bbba3a482b132ca725">libMesh::INFHEX8</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__elem__type_8h_source.html#l00060">enum_elem_type.h:60</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_accb7155a5e75e60b34726646ebbbff29"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#accb7155a5e75e60b34726646ebbbff29">libMesh::InfHex8::n_sub_elem</a></div><div class="ttdeci">virtual unsigned int n_sub_elem() const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00086">cell_inf_hex8.h:86</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a341c6dd5cee5367bd34657973bd490a6"><div class="ttname"><a href="namespacelibMesh.html#a341c6dd5cee5367bd34657973bd490a6">libMesh::IOPackage</a></div><div class="ttdeci">IOPackage</div><div class="ttdoc">libMesh interfaces with several different software packages for the purposes of creating, reading, and writing mesh files. </div><div class="ttdef"><b>Definition:</b> <a href="enum__io__package_8h_source.html#l00037">enum_io_package.h:37</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html"><div class="ttname"><a href="classlibMesh_1_1Elem.html">libMesh::Elem</a></div><div class="ttdoc">This is the base class from which all geometric element types are derived. </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l00094">elem.h:94</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a459446945c2c8db59d95ff34bf6d825b"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a459446945c2c8db59d95ff34bf6d825b">libMesh::InfHex8::type</a></div><div class="ttdeci">virtual ElemType type() const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00081">cell_inf_hex8.h:81</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a15e97651bbfb7f882e0d6e077711a9f6"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a15e97651bbfb7f882e0d6e077711a9f6">libMesh::InfHex8::LIBMESH_ENABLE_TOPOLOGY_CACHES</a></div><div class="ttdeci">LIBMESH_ENABLE_TOPOLOGY_CACHES</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00201">cell_inf_hex8.h:201</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_ac368bf403a28b94df319ceeff1571050"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#ac368bf403a28b94df319ceeff1571050">libMesh::InfHex8::nodes_per_side</a></div><div class="ttdeci">static const int nodes_per_side</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00155">cell_inf_hex8.h:155</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_ace129177b8f7373c232b11b56f5d6558"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#ace129177b8f7373c232b11b56f5d6558">libMesh::InfHex8::build_edge_ptr</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Elem &gt; build_edge_ptr(const unsigned int i) override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00201">cell_inf_hex8.C:201</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a1ce409ac944a6f109451679ac8e2667f"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a1ce409ac944a6f109451679ac8e2667f">libMesh::InfHex8::operator=</a></div><div class="ttdeci">InfHex8 &amp; operator=(const InfHex8 &amp;)=delete</div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a5632c0033f5de09b7f590d968c559b27"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a5632c0033f5de09b7f590d968c559b27">libMesh::InfHex8::vtk_element_type</a></div><div class="ttdeci">unsigned int vtk_element_type(const unsigned int) const </div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00145">cell_inf_hex8.h:145</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a6baa39901d4ded19ccf360fc50e0faf1"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a6baa39901d4ded19ccf360fc50e0faf1">libMesh::InfHex8::default_order</a></div><div class="ttdeci">virtual Order default_order() const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00104">cell_inf_hex8.C:104</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_ac31da7c1368eaee1033544b8d269e8fd"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#ac31da7c1368eaee1033544b8d269e8fd">libMesh::InfHex8::permute</a></div><div class="ttdeci">virtual void permute(unsigned int perm_num) overridefinal</div><div class="ttdoc">Permutes the element (by swapping node and neighbor pointers) according to the specified index...</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00357">cell_inf_hex8.C:357</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a606958df766af20618d722d4ed836ddc"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a606958df766af20618d722d4ed836ddc">libMesh::InfHex8::connectivity</a></div><div class="ttdeci">virtual void connectivity(const unsigned int sc, const IOPackage iop, std::vector&lt; dof_id_type &gt; &amp;conn) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00264">cell_inf_hex8.C:264</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex_html"><div class="ttname"><a href="classlibMesh_1_1InfHex.html">libMesh::InfHex</a></div><div class="ttdoc">The InfHex is an element in 3D with 5 sides. </div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex_8h_source.html#l00046">cell_inf_hex.h:46</a></div></div>
+<div class="ttc" id="classlibMesh_1_1BoundaryInfo_html"><div class="ttname"><a href="classlibMesh_1_1BoundaryInfo.html">libMesh::BoundaryInfo</a></div><div class="ttdoc">The BoundaryInfo class contains information relevant to boundary conditions including storing faces...</div><div class="ttdef"><b>Definition:</b> <a href="boundary__info_8h_source.html#l00057">boundary_info.h:57</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a11428326c35cdda81cb9bc16132904d4"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a11428326c35cdda81cb9bc16132904d4">libMesh::InfHex8::nodes_on_edge</a></div><div class="ttdeci">virtual std::vector&lt; unsigned int &gt; nodes_on_edge(const unsigned int e) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00087">cell_inf_hex8.C:87</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_ac40e31720162c347fbbfa9e87b0e3796"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#ac40e31720162c347fbbfa9e87b0e3796">libMesh::InfHex8::~InfHex8</a></div><div class="ttdeci">virtual ~InfHex8()=default</div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a439f3c8496adb0173bfb783d6ff543b3"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a439f3c8496adb0173bfb783d6ff543b3">libMesh::InfHex8::embedding_matrix</a></div><div class="ttdeci">virtual Real embedding_matrix(const unsigned int i, const unsigned int j, const unsigned int k) const override</div><div class="ttdoc">Matrix used to create the elements children. </div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00190">cell_inf_hex8.h:190</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a0458f82fe8d1efef8666cf3c96aab43f"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a0458f82fe8d1efef8666cf3c96aab43f">libMesh::InfHex8::num_children</a></div><div class="ttdeci">static const int num_children</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00154">cell_inf_hex8.h:154</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a470ee3426769c6b69e3b9872a6c369fe"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a470ee3426769c6b69e3b9872a6c369fe">libMesh::InfHex8::nodes_on_side</a></div><div class="ttdeci">virtual std::vector&lt; unsigned int &gt; nodes_on_side(const unsigned int s) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00080">cell_inf_hex8.C:80</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_ab4248fc867bf224bdd0c94c7d3fbbd03"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#ab4248fc867bf224bdd0c94c7d3fbbd03">libMesh::InfHex8::side_nodes_map</a></div><div class="ttdeci">static const unsigned int side_nodes_map[num_sides][nodes_per_side]</div><div class="ttdoc">This maps the  node of the  side to element node numbers. </div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00162">cell_inf_hex8.h:162</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a45ecb2d00844eb60b89a0cc54918896e"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a45ecb2d00844eb60b89a0cc54918896e">libMesh::InfHex8::num_sides</a></div><div class="ttdeci">static const int num_sides</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00152">cell_inf_hex8.h:152</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_aa713622ce9950413a2e905acfec54a53"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#aa713622ce9950413a2e905acfec54a53">libMesh::InfHex8::side_type</a></div><div class="ttdeci">ElemType side_type(const unsigned int s) const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00386">cell_inf_hex8.C:386</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_aa88f53db446ef917a829ab4f7082b156"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#aa88f53db446ef917a829ab4f7082b156">libMesh::InfHex8::edge_nodes_map</a></div><div class="ttdeci">static const unsigned int edge_nodes_map[num_edges][nodes_per_edge]</div><div class="ttdoc">This maps the  node of the  side to element node numbers. </div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00168">cell_inf_hex8.h:168</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_afa22dfe45e9837f386a691362789c197"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#afa22dfe45e9837f386a691362789c197">libMesh::InfHex8::num_edges</a></div><div class="ttdeci">static const int num_edges</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00153">cell_inf_hex8.h:153</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_abe0f0a9ead28f3c25c75a555a703bed6"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#abe0f0a9ead28f3c25c75a555a703bed6">libMesh::InfHex8::build_side_ptr</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Elem &gt; build_side_ptr(const unsigned int i, bool proxy=false) override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00111">cell_inf_hex8.C:111</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a6fd75b8623912d7790aaba6721111137"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a6fd75b8623912d7790aaba6721111137">libMesh::InfHex8::num_nodes</a></div><div class="ttdeci">static const int num_nodes</div><div class="ttdoc">Geometric constants for InfHex8. </div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00151">cell_inf_hex8.h:151</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_abf166d0f8b08cf1f7a059c58143c9f40"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#abf166d0f8b08cf1f7a059c58143c9f40">libMesh::InfHex8::nodes_per_edge</a></div><div class="ttdeci">static const int nodes_per_edge</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00156">cell_inf_hex8.h:156</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a7c88f396677665d3a311a3523c99d8cc"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a7c88f396677665d3a311a3523c99d8cc">libMesh::InfHex8::flip</a></div><div class="ttdeci">virtual void flip(BoundaryInfo *) overridefinal</div><div class="ttdoc">Flips the element (by swapping node and neighbor pointers) to have a mapping Jacobian of opposite sig...</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00371">cell_inf_hex8.C:371</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_ad3231a71ad585626de8b377fe3c24e4b"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#ad3231a71ad585626de8b377fe3c24e4b">libMesh::InfHex8::is_node_on_side</a></div><div class="ttdeci">virtual bool is_node_on_side(const unsigned int n, const unsigned int s) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8C_source.html#l00070">cell_inf_hex8.C:70</a></div></div>
+<div class="ttc" id="classlibMesh_1_1InfHex8_html_a6d288186f7e476fb26817a3f2cc6110d"><div class="ttname"><a href="classlibMesh_1_1InfHex8.html#a6d288186f7e476fb26817a3f2cc6110d">libMesh::InfHex8::_nodelinks_data</a></div><div class="ttdeci">Node * _nodelinks_data[num_nodes]</div><div class="ttdoc">Data for links to nodes. </div><div class="ttdef"><b>Definition:</b> <a href="cell__inf__hex8_8h_source.html#l00181">cell_inf_hex8.h:181</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:02 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,21 @@
+digraph "libMesh::EigenSystem"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="libMesh::EigenSystem",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="libMesh::System",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1System.html",tooltip="Manages consistently variables, degrees of freedom, and coefficient vectors. "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="libMesh::ReferenceCounted\lObject\< System \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1ReferenceCountedObject.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="libMesh::ReferenceCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1ReferenceCounter.html",tooltip="This is the base class for enabling reference counting. "];
+  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="libMesh::ParallelObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1ParallelObject.html",tooltip="An object whose state is distributed along a set of processors. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="libMesh::CondensedEigenSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1CondensedEigenSystem.html",tooltip="扩展EigenSystem，以在想要从系统中删除某些自由度的情况下简化（标准或广义）特征值问题的解法。 这在解具有Dirichlet边界条件的特征值问题的情况下非常有用。 ..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="libMesh::RBConstructionBase\l\< CondensedEigenSystem \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1RBConstructionBase.html"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="libMesh::RBSCMConstruction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1RBSCMConstruction.html",tooltip="This class is part of the rbOOmit framework. "];
+}

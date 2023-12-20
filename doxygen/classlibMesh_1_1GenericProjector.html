@@ -1,0 +1,921 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classlibMesh_1_1GenericProjector-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="classlibMesh_1_1GenericProjector.html" title="The GenericProjector class implements the core of other projection operations, using two input functo...">GenericProjector</a> class implements the core of other projection operations, using two input functors to read values to be projected and an output functor to set degrees of freedom in the result.  
+ <a href="classlibMesh_1_1GenericProjector.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="generic__projector_8h_source.html">generic_projector.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1ProjectEdges.html">ProjectEdges</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1ProjectInteriors.html">ProjectInteriors</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1ProjectSides.html">ProjectSides</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1ProjectVertices.html">ProjectVertices</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SortAndCopy.html">SortAndCopy</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html">SubFunctor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html">SubProjector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ac16cd62252da54e6b556c318d6428f68"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#ac16cd62252da54e6b556c318d6428f68">var_set</a></td></tr>
+<tr class="separator:ac16cd62252da54e6b556c318d6428f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959fc9d015df2409d09d855cef71113d"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; const <a class="el" href="classlibMesh_1_1Node.html">Node</a> <br class="typebreak"/>
+*, std::tuple&lt; const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> <br class="typebreak"/>
+*, unsigned short, <a class="el" href="classlibMesh_1_1GenericProjector.html#ac16cd62252da54e6b556c318d6428f68">var_set</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a959fc9d015df2409d09d855cef71113d">node_projection</a></td></tr>
+<tr class="separator:a959fc9d015df2409d09d855cef71113d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7813e22d0aa05e1f50b7b8e961c2e6f8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classlibMesh_1_1StoredRange.html">StoredRange</a><br class="typebreak"/>
+&lt; std::vector&lt; <a class="el" href="classlibMesh_1_1GenericProjector.html#a959fc9d015df2409d09d855cef71113d">node_projection</a> &gt;<br class="typebreak"/>
+::const_iterator, <br class="typebreak"/>
+<a class="el" href="classlibMesh_1_1GenericProjector.html#a959fc9d015df2409d09d855cef71113d">node_projection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a7813e22d0aa05e1f50b7b8e961c2e6f8">node_range</a></td></tr>
+<tr class="separator:a7813e22d0aa05e1f50b7b8e961c2e6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70729830abd964bae8bfd45a46ed7294"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classlibMesh_1_1StoredRange.html">StoredRange</a><br class="typebreak"/>
+&lt; std::vector&lt; const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> * &gt;<br class="typebreak"/>
+::const_iterator, const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a70729830abd964bae8bfd45a46ed7294">interior_range</a></td></tr>
+<tr class="separator:a70729830abd964bae8bfd45a46ed7294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa25fc421df11f517dc0f7b5d96857ad5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#aa25fc421df11f517dc0f7b5d96857ad5">GenericProjector</a> (const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;system_in, FFunctor &amp;f_in, GFunctor *g_in, ProjectionAction &amp;act_in, const std::vector&lt; unsigned int &gt; &amp;variables_in, std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt;&gt; *nodes_to_elem_in=nullptr)</td></tr>
+<tr class="separator:aa25fc421df11f517dc0f7b5d96857ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ddfe9639ae44a9f67b074d05aebc39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a19ddfe9639ae44a9f67b074d05aebc39">GenericProjector</a> (const <a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a> &amp;in)</td></tr>
+<tr class="separator:a19ddfe9639ae44a9f67b074d05aebc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9258ad5effb215f8d51e41962683b455"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a9258ad5effb215f8d51e41962683b455">~GenericProjector</a> ()</td></tr>
+<tr class="separator:a9258ad5effb215f8d51e41962683b455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe0fa6f5e415e6c5ca27955415e178a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#adfe0fa6f5e415e6c5ca27955415e178a">project</a> (const <a class="el" href="namespacelibMesh.html#a2c62e678c8ac27e51286fa5c38b0f3c9">ConstElemRange</a> &amp;range)</td></tr>
+<tr class="memdesc:adfe0fa6f5e415e6c5ca27955415e178a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function definitions.  <a href="#adfe0fa6f5e415e6c5ca27955415e178a">更多...</a><br/></td></tr>
+<tr class="separator:adfe0fa6f5e415e6c5ca27955415e178a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60fadcc79890a883bec76a8c65f7208e"><td class="memTemplParams" colspan="2">template&lt;typename Value &gt; </td></tr>
+<tr class="memitem:a60fadcc79890a883bec76a8c65f7208e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a60fadcc79890a883bec76a8c65f7208e">send_and_insert_dof_values</a> (std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::pair&lt; Value, <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> &gt;&gt; &amp;ids_to_push, ProjectionAction &amp;action) const </td></tr>
+<tr class="separator:a60fadcc79890a883bec76a8c65f7208e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4c1abd47ae1abbc7d6510300edce965e"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, typename <br class="typebreak"/>
+FFunctor::ValuePushType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a4c1abd47ae1abbc7d6510300edce965e">ids_to_save</a></td></tr>
+<tr class="separator:a4c1abd47ae1abbc7d6510300edce965e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a9f14915fcf180813ee72885b6a840fe1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">system</a></td></tr>
+<tr class="separator:a9f14915fcf180813ee72885b6a840fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8824a3930e3de9290aba4274c90b06cc"><td class="memItemLeft" align="right" valign="top">FFunctor &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a8824a3930e3de9290aba4274c90b06cc">master_f</a></td></tr>
+<tr class="separator:a8824a3930e3de9290aba4274c90b06cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5076baeed3dd09a4cef63d98d3dade5"><td class="memItemLeft" align="right" valign="top">GFunctor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#ac5076baeed3dd09a4cef63d98d3dade5">master_g</a></td></tr>
+<tr class="separator:ac5076baeed3dd09a4cef63d98d3dade5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11690b417fab11f6c0d1eda46770617"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#ab11690b417fab11f6c0d1eda46770617">g_was_copied</a></td></tr>
+<tr class="separator:ab11690b417fab11f6c0d1eda46770617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad135d2c811ad2ceea99722dd58f764e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#ad135d2c811ad2ceea99722dd58f764e1">map_was_created</a></td></tr>
+<tr class="separator:ad135d2c811ad2ceea99722dd58f764e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf9309ccc3ed2dc611ba512e33a23a7"><td class="memItemLeft" align="right" valign="top">ProjectionAction &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a6cf9309ccc3ed2dc611ba512e33a23a7">master_action</a></td></tr>
+<tr class="separator:a6cf9309ccc3ed2dc611ba512e33a23a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275e255b09d41a252e95e618371911f2"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; unsigned int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a275e255b09d41a252e95e618371911f2">variables</a></td></tr>
+<tr class="separator:a275e255b09d41a252e95e618371911f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e703655894221d9fb0d19b387866dd"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">nodes_to_elem</a></td></tr>
+<tr class="separator:a26e703655894221d9fb0d19b387866dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5eb97cbd5c86b6ae5ba9aa524b0d999"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1GenericProjector.html#aa5eb97cbd5c86b6ae5ba9aa524b0d999">done_saving_ids</a></td></tr>
+<tr class="separator:aa5eb97cbd5c86b6ae5ba9aa524b0d999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename FFunctor, typename GFunctor, typename FValue, typename ProjectionAction&gt;<br/>
+class libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;</h3>
+
+<p>The <a class="el" href="classlibMesh_1_1GenericProjector.html" title="The GenericProjector class implements the core of other projection operations, using two input functo...">GenericProjector</a> class implements the core of other projection operations, using two input functors to read values to be projected and an output functor to set degrees of freedom in the result. </p>
+<p>This may be executed in parallel on multiple threads.</p>
+<dl class="section author"><dt>作者</dt><dd>Roy H. Stogner </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2016 </dd></dl>
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00083">83</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="a70729830abd964bae8bfd45a46ed7294"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classlibMesh_1_1StoredRange.html">StoredRange</a>&lt;std::vector&lt;const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> *&gt;::const_iterator, const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> *&gt; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::<a class="el" href="classlibMesh_1_1GenericProjector.html#a70729830abd964bae8bfd45a46ed7294">interior_range</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00354">354</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a959fc9d015df2409d09d855cef71113d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::pair&lt;const <a class="el" href="classlibMesh_1_1Node.html">Node</a> *, std::tuple&lt;const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> *, unsigned short, <a class="el" href="classlibMesh_1_1GenericProjector.html#ac16cd62252da54e6b556c318d6428f68">var_set</a>&gt; &gt; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::<a class="el" href="classlibMesh_1_1GenericProjector.html#a959fc9d015df2409d09d855cef71113d">node_projection</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00234">234</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7813e22d0aa05e1f50b7b8e961c2e6f8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classlibMesh_1_1StoredRange.html">StoredRange</a>&lt;std::vector&lt;<a class="el" href="classlibMesh_1_1GenericProjector.html#a959fc9d015df2409d09d855cef71113d">node_projection</a>&gt;::const_iterator, <a class="el" href="classlibMesh_1_1GenericProjector.html#a959fc9d015df2409d09d855cef71113d">node_projection</a>&gt; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::<a class="el" href="classlibMesh_1_1GenericProjector.html#a7813e22d0aa05e1f50b7b8e961c2e6f8">node_range</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00237">237</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac16cd62252da54e6b556c318d6428f68"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::set&lt;unsigned int&gt; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::<a class="el" href="classlibMesh_1_1GenericProjector.html#ac16cd62252da54e6b556c318d6428f68">var_set</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00152">152</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aa25fc421df11f517dc0f7b5d96857ad5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::<a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>system_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FFunctor &amp;&#160;</td>
+          <td class="paramname"><em>f_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GFunctor *&#160;</td>
+          <td class="paramname"><em>g_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ProjectionAction &amp;&#160;</td>
+          <td class="paramname"><em>act_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>variables_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>nodes_to_elem_in</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00099">99</a> 行定义.</p>
+
+<p>参考 <a class="el" href="mesh__tools_8C_source.html#l00448">libMesh::MeshTools::build_nodes_to_elem_map()</a>, <a class="el" href="system_8h_source.html#l02277">libMesh::System::get_mesh()</a>, <a class="el" href="generic__projector_8h_source.html#l00092">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::map_was_created</a>, <a class="el" href="generic__projector_8h_source.html#l00095">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::nodes_to_elem</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l00086">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::system</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                                  :</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">system</a>(system_in),</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#a8824a3930e3de9290aba4274c90b06cc">master_f</a>(f_in),</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#ac5076baeed3dd09a4cef63d98d3dade5">master_g</a>(g_in),</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#ab11690b417fab11f6c0d1eda46770617">g_was_copied</a>(<span class="keyword">false</span>),</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#ad135d2c811ad2ceea99722dd58f764e1">map_was_created</a>(!nodes_to_elem_in),</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#a6cf9309ccc3ed2dc611ba512e33a23a7">master_action</a>(act_in),</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#a275e255b09d41a252e95e618371911f2">variables</a>(variables_in),</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">nodes_to_elem</a>(nodes_to_elem_in)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1GenericProjector.html#ad135d2c811ad2ceea99722dd58f764e1">map_was_created</a>) <span class="comment">// past tense misnomer here</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">nodes_to_elem</a> = <span class="keyword">new</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          std::unordered_map&lt;dof_id_type, std::vector&lt;dof_id_type&gt;&gt;;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="namespacelibMesh_1_1MeshTools.html#a5aad7309726b936905141d30578ccd7b">MeshTools::build_nodes_to_elem_map</a> (<a class="code" href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">system</a>.<a class="code" href="classlibMesh_1_1System.html#a39141a08afe4e0334c21035de6f0b7a3">get_mesh</a>(), *<a class="code" href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">nodes_to_elem</a>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a6cf9309ccc3ed2dc611ba512e33a23a7"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a6cf9309ccc3ed2dc611ba512e33a23a7">libMesh::GenericProjector::master_action</a></div><div class="ttdeci">ProjectionAction &amp; master_action</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00093">generic_projector.h:93</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1MeshTools_html_a5aad7309726b936905141d30578ccd7b"><div class="ttname"><a href="namespacelibMesh_1_1MeshTools.html#a5aad7309726b936905141d30578ccd7b">libMesh::MeshTools::build_nodes_to_elem_map</a></div><div class="ttdeci">void build_nodes_to_elem_map(const MeshBase &amp;mesh, std::vector&lt; std::vector&lt; dof_id_type &gt;&gt; &amp;nodes_to_elem_map)</div><div class="ttdoc">After calling this function the input vector nodes_to_elem_map will contain the node to element conne...</div><div class="ttdef"><b>Definition:</b> <a href="mesh__tools_8C_source.html#l00448">mesh_tools.C:448</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_ac5076baeed3dd09a4cef63d98d3dade5"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#ac5076baeed3dd09a4cef63d98d3dade5">libMesh::GenericProjector::master_g</a></div><div class="ttdeci">GFunctor * master_g</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00091">generic_projector.h:91</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a39141a08afe4e0334c21035de6f0b7a3"><div class="ttname"><a href="classlibMesh_1_1System.html#a39141a08afe4e0334c21035de6f0b7a3">libMesh::System::get_mesh</a></div><div class="ttdeci">const MeshBase &amp; get_mesh() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02277">system.h:2277</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a275e255b09d41a252e95e618371911f2"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a275e255b09d41a252e95e618371911f2">libMesh::GenericProjector::variables</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; &amp; variables</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00094">generic_projector.h:94</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a9f14915fcf180813ee72885b6a840fe1"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">libMesh::GenericProjector::system</a></div><div class="ttdeci">const System &amp; system</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00086">generic_projector.h:86</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a8824a3930e3de9290aba4274c90b06cc"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a8824a3930e3de9290aba4274c90b06cc">libMesh::GenericProjector::master_f</a></div><div class="ttdeci">FFunctor &amp; master_f</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00090">generic_projector.h:90</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a26e703655894221d9fb0d19b387866dd"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">libMesh::GenericProjector::nodes_to_elem</a></div><div class="ttdeci">std::unordered_map&lt; dof_id_type, std::vector&lt; dof_id_type &gt; &gt; * nodes_to_elem</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00095">generic_projector.h:95</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_ad135d2c811ad2ceea99722dd58f764e1"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#ad135d2c811ad2ceea99722dd58f764e1">libMesh::GenericProjector::map_was_created</a></div><div class="ttdeci">bool map_was_created</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00092">generic_projector.h:92</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_ab11690b417fab11f6c0d1eda46770617"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#ab11690b417fab11f6c0d1eda46770617">libMesh::GenericProjector::g_was_copied</a></div><div class="ttdeci">bool g_was_copied</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00092">generic_projector.h:92</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a19ddfe9639ae44a9f67b074d05aebc39"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::<a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00123">123</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                                 :</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">system</a>(in.system),</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#a8824a3930e3de9290aba4274c90b06cc">master_f</a>(in.master_f),</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#ac5076baeed3dd09a4cef63d98d3dade5">master_g</a>(in.master_g ? <span class="keyword">new</span> GFunctor(*in.master_g) : <span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#ab11690b417fab11f6c0d1eda46770617">g_was_copied</a>(in.master_g),</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#a6cf9309ccc3ed2dc611ba512e33a23a7">master_action</a>(in.master_action),</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#a275e255b09d41a252e95e618371911f2">variables</a>(in.variables),</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">nodes_to_elem</a>(in.nodes_to_elem)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  {}</div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a6cf9309ccc3ed2dc611ba512e33a23a7"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a6cf9309ccc3ed2dc611ba512e33a23a7">libMesh::GenericProjector::master_action</a></div><div class="ttdeci">ProjectionAction &amp; master_action</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00093">generic_projector.h:93</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_ac5076baeed3dd09a4cef63d98d3dade5"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#ac5076baeed3dd09a4cef63d98d3dade5">libMesh::GenericProjector::master_g</a></div><div class="ttdeci">GFunctor * master_g</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00091">generic_projector.h:91</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a275e255b09d41a252e95e618371911f2"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a275e255b09d41a252e95e618371911f2">libMesh::GenericProjector::variables</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; &amp; variables</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00094">generic_projector.h:94</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a9f14915fcf180813ee72885b6a840fe1"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">libMesh::GenericProjector::system</a></div><div class="ttdeci">const System &amp; system</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00086">generic_projector.h:86</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a8824a3930e3de9290aba4274c90b06cc"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a8824a3930e3de9290aba4274c90b06cc">libMesh::GenericProjector::master_f</a></div><div class="ttdeci">FFunctor &amp; master_f</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00090">generic_projector.h:90</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a26e703655894221d9fb0d19b387866dd"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">libMesh::GenericProjector::nodes_to_elem</a></div><div class="ttdeci">std::unordered_map&lt; dof_id_type, std::vector&lt; dof_id_type &gt; &gt; * nodes_to_elem</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00095">generic_projector.h:95</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_ab11690b417fab11f6c0d1eda46770617"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#ab11690b417fab11f6c0d1eda46770617">libMesh::GenericProjector::g_was_copied</a></div><div class="ttdeci">bool g_was_copied</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00092">generic_projector.h:92</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9258ad5effb215f8d51e41962683b455"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::~<a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00133">133</a> 行定义.</p>
+
+<p>参考 <a class="el" href="generic__projector_8h_source.html#l00092">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::g_was_copied</a>, <a class="el" href="generic__projector_8h_source.html#l00092">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::map_was_created</a>, <a class="el" href="generic__projector_8h_source.html#l00091">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::master_g</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l00095">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::nodes_to_elem</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1GenericProjector.html#ab11690b417fab11f6c0d1eda46770617">g_was_copied</a>)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <span class="keyword">delete</span> <a class="code" href="classlibMesh_1_1GenericProjector.html#ac5076baeed3dd09a4cef63d98d3dade5">master_g</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1GenericProjector.html#ad135d2c811ad2ceea99722dd58f764e1">map_was_created</a>)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <span class="keyword">delete</span> <a class="code" href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">nodes_to_elem</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_ac5076baeed3dd09a4cef63d98d3dade5"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#ac5076baeed3dd09a4cef63d98d3dade5">libMesh::GenericProjector::master_g</a></div><div class="ttdeci">GFunctor * master_g</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00091">generic_projector.h:91</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a26e703655894221d9fb0d19b387866dd"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">libMesh::GenericProjector::nodes_to_elem</a></div><div class="ttdeci">std::unordered_map&lt; dof_id_type, std::vector&lt; dof_id_type &gt; &gt; * nodes_to_elem</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00095">generic_projector.h:95</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_ad135d2c811ad2ceea99722dd58f764e1"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#ad135d2c811ad2ceea99722dd58f764e1">libMesh::GenericProjector::map_was_created</a></div><div class="ttdeci">bool map_was_created</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00092">generic_projector.h:92</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_ab11690b417fab11f6c0d1eda46770617"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#ab11690b417fab11f6c0d1eda46770617">libMesh::GenericProjector::g_was_copied</a></div><div class="ttdeci">bool g_was_copied</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00092">generic_projector.h:92</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="adfe0fa6f5e415e6c5ca27955415e178a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::project </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a2c62e678c8ac27e51286fa5c38b0f3c9">ConstElemRange</a> &amp;&#160;</td>
+          <td class="paramname"><em>range</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function definitions. </p>
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l01201">1201</a> 行定义.</p>
+
+<p>参考 <a class="el" href="generic__projector_8h_source.html#l00289">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SortAndCopy::edges</a>, <a class="el" href="generic__projector_8h_source.html#l00290">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SortAndCopy::interiors</a>, <a class="el" href="libmesh__common_8h_source.html#l00524">libMesh::libmesh_merge_move()</a>, <a class="el" href="generic__projector_8h_source.html#l00170">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::new_ids_to_push</a>, <a class="el" href="generic__projector_8h_source.html#l00174">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::new_ids_to_save</a>, <a class="el" href="threads__none_8h_source.html#l00101">libMesh::Threads::parallel_reduce()</a>, <a class="el" href="generic__projector_8h_source.html#l00289">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SortAndCopy::sides</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l00289">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SortAndCopy::vertices</a>.</p>
+<div class="fragment"><div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;{</div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;  LOG_SCOPE (<span class="stringliteral">&quot;project&quot;</span>, <span class="stringliteral">&quot;GenericProjector&quot;</span>);</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;  <span class="comment">// Unless we split sort and copy into two passes we can&#39;t know for</span></div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;  <span class="comment">// sure ahead of time whether we need to save the copied ids</span></div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;  <a class="code" href="classlibMesh_1_1GenericProjector.html#aa5eb97cbd5c86b6ae5ba9aa524b0d999">done_saving_ids</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;  SortAndCopy sort_work(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;  <a class="code" href="namespacelibMesh_1_1Threads.html#a8295c6919b44a664d2fe13288cd334e5">Threads::parallel_reduce</a> (range, sort_work);</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;  ProjectionAction action(<a class="code" href="classlibMesh_1_1GenericProjector.html#a6cf9309ccc3ed2dc611ba512e33a23a7">master_action</a>);</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;  <span class="comment">// Keep track of dof ids and values to send to other ranks</span></div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;  std::unordered_map&lt;dof_id_type, std::pair&lt;typename FFunctor::ValuePushType, processor_id_type&gt;&gt;</div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;      ids_to_push;</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;</div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;  ids_to_push.insert(sort_work.new_ids_to_push.begin(),</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;                     sort_work.new_ids_to_push.end());</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;  <a class="code" href="classlibMesh_1_1GenericProjector.html#a4c1abd47ae1abbc7d6510300edce965e">ids_to_save</a>.insert(sort_work.new_ids_to_save.begin(),</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;                     sort_work.new_ids_to_save.end());</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;  std::vector&lt;node_projection&gt; vertices(sort_work.vertices.begin(),</div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;                                        sort_work.vertices.end());</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;  <a class="code" href="classlibMesh_1_1GenericProjector.html#aa5eb97cbd5c86b6ae5ba9aa524b0d999">done_saving_ids</a> = sort_work.edges.empty() &amp;&amp;</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;    sort_work.sides.empty() &amp;&amp; sort_work.interiors.empty();</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;  {</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    ProjectVertices project_vertices(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    <a class="code" href="namespacelibMesh_1_1Threads.html#a8295c6919b44a664d2fe13288cd334e5">Threads::parallel_reduce</a> (<a class="code" href="classlibMesh_1_1GenericProjector.html#a7813e22d0aa05e1f50b7b8e961c2e6f8">node_range</a>(&amp;vertices), project_vertices);</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;    <a class="code" href="namespacelibMesh.html#aaba3bb91c7213e7e3f0e8edc1eb7de86">libmesh_merge_move</a>(ids_to_push, project_vertices.new_ids_to_push);</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    <a class="code" href="namespacelibMesh.html#aaba3bb91c7213e7e3f0e8edc1eb7de86">libmesh_merge_move</a>(<a class="code" href="classlibMesh_1_1GenericProjector.html#a4c1abd47ae1abbc7d6510300edce965e">ids_to_save</a>, project_vertices.new_ids_to_save);</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;  }</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;  done_saving_ids = sort_work.sides.empty() &amp;&amp; sort_work.interiors.empty();</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1GenericProjector.html#a60fadcc79890a883bec76a8c65f7208e">send_and_insert_dof_values</a>(ids_to_push, action);</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;  {</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;    std::vector&lt;node_projection&gt; edges(sort_work.edges.begin(), sort_work.edges.end());</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    ProjectEdges project_edges(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    <a class="code" href="namespacelibMesh_1_1Threads.html#a8295c6919b44a664d2fe13288cd334e5">Threads::parallel_reduce</a> (<a class="code" href="classlibMesh_1_1GenericProjector.html#a7813e22d0aa05e1f50b7b8e961c2e6f8">node_range</a>(&amp;edges), project_edges);</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;    <a class="code" href="namespacelibMesh.html#aaba3bb91c7213e7e3f0e8edc1eb7de86">libmesh_merge_move</a>(ids_to_push, project_edges.new_ids_to_push);</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    <a class="code" href="namespacelibMesh.html#aaba3bb91c7213e7e3f0e8edc1eb7de86">libmesh_merge_move</a>(<a class="code" href="classlibMesh_1_1GenericProjector.html#a4c1abd47ae1abbc7d6510300edce965e">ids_to_save</a>, project_edges.new_ids_to_save);</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;  }</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;  done_saving_ids = sort_work.interiors.empty();</div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1GenericProjector.html#a60fadcc79890a883bec76a8c65f7208e">send_and_insert_dof_values</a>(ids_to_push, action);</div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;  {</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;    std::vector&lt;node_projection&gt; sides(sort_work.sides.begin(), sort_work.sides.end());</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    ProjectSides project_sides(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;    <a class="code" href="namespacelibMesh_1_1Threads.html#a8295c6919b44a664d2fe13288cd334e5">Threads::parallel_reduce</a> (<a class="code" href="classlibMesh_1_1GenericProjector.html#a7813e22d0aa05e1f50b7b8e961c2e6f8">node_range</a>(&amp;sides), project_sides);</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;    <a class="code" href="namespacelibMesh.html#aaba3bb91c7213e7e3f0e8edc1eb7de86">libmesh_merge_move</a>(ids_to_push, project_sides.new_ids_to_push);</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;    <a class="code" href="namespacelibMesh.html#aaba3bb91c7213e7e3f0e8edc1eb7de86">libmesh_merge_move</a>(<a class="code" href="classlibMesh_1_1GenericProjector.html#a4c1abd47ae1abbc7d6510300edce965e">ids_to_save</a>, project_sides.new_ids_to_save);</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;  }</div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;  done_saving_ids = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1GenericProjector.html#a60fadcc79890a883bec76a8c65f7208e">send_and_insert_dof_values</a>(ids_to_push, action);</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;  <span class="comment">// No ids to save or push this time, but we still use a reduce since</span></div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;  <span class="comment">// nominally ProjectInteriors still has non-const operator()</span></div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;  ProjectInteriors project_interiors(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;  <a class="code" href="namespacelibMesh_1_1Threads.html#a8295c6919b44a664d2fe13288cd334e5">Threads::parallel_reduce</a> (<a class="code" href="classlibMesh_1_1GenericProjector.html#a70729830abd964bae8bfd45a46ed7294">interior_range</a>(&amp;sort_work.interiors),</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;                            project_interiors);</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_aa5eb97cbd5c86b6ae5ba9aa524b0d999"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#aa5eb97cbd5c86b6ae5ba9aa524b0d999">libMesh::GenericProjector::done_saving_ids</a></div><div class="ttdeci">bool done_saving_ids</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00096">generic_projector.h:96</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aaba3bb91c7213e7e3f0e8edc1eb7de86"><div class="ttname"><a href="namespacelibMesh.html#aaba3bb91c7213e7e3f0e8edc1eb7de86">libMesh::libmesh_merge_move</a></div><div class="ttdeci">void libmesh_merge_move(T &amp;target, T &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00524">libmesh_common.h:524</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a6cf9309ccc3ed2dc611ba512e33a23a7"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a6cf9309ccc3ed2dc611ba512e33a23a7">libMesh::GenericProjector::master_action</a></div><div class="ttdeci">ProjectionAction &amp; master_action</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00093">generic_projector.h:93</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a4c1abd47ae1abbc7d6510300edce965e"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a4c1abd47ae1abbc7d6510300edce965e">libMesh::GenericProjector::ids_to_save</a></div><div class="ttdeci">std::unordered_map&lt; dof_id_type, typename FFunctor::ValuePushType &gt; ids_to_save</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00148">generic_projector.h:148</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a60fadcc79890a883bec76a8c65f7208e"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a60fadcc79890a883bec76a8c65f7208e">libMesh::GenericProjector::send_and_insert_dof_values</a></div><div class="ttdeci">void send_and_insert_dof_values(std::unordered_map&lt; dof_id_type, std::pair&lt; Value, processor_id_type &gt;&gt; &amp;ids_to_push, ProjectionAction &amp;action) const </div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l02890">generic_projector.h:2890</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a7813e22d0aa05e1f50b7b8e961c2e6f8"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a7813e22d0aa05e1f50b7b8e961c2e6f8">libMesh::GenericProjector::node_range</a></div><div class="ttdeci">StoredRange&lt; std::vector&lt; node_projection &gt;::const_iterator, node_projection &gt; node_range</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00237">generic_projector.h:237</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1Threads_html_a8295c6919b44a664d2fe13288cd334e5"><div class="ttname"><a href="namespacelibMesh_1_1Threads.html#a8295c6919b44a664d2fe13288cd334e5">libMesh::Threads::parallel_reduce</a></div><div class="ttdeci">void parallel_reduce(const Range &amp;range, Body &amp;body)</div><div class="ttdoc">Execute the provided reduction operation in parallel on the specified range. </div><div class="ttdef"><b>Definition:</b> <a href="threads__none_8h_source.html#l00101">threads_none.h:101</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a70729830abd964bae8bfd45a46ed7294"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a70729830abd964bae8bfd45a46ed7294">libMesh::GenericProjector::interior_range</a></div><div class="ttdeci">StoredRange&lt; std::vector&lt; const Elem * &gt;::const_iterator, const Elem * &gt; interior_range</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00354">generic_projector.h:354</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a60fadcc79890a883bec76a8c65f7208e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<div class="memtemplate">
+template&lt;typename Value &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::send_and_insert_dof_values </td>
+          <td>(</td>
+          <td class="paramtype">std::unordered_map&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::pair&lt; Value, <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>ids_to_push</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ProjectionAction &amp;&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l02890">2890</a> 行定义.</p>
+
+<p>参考 <a class="el" href="parallel__object_8h_source.html#l00097">libMesh::ParallelObject::comm()</a>, <a class="el" href="system__projection_8C_source.html#l00083">libMesh::convert_from_receive()</a>, <a class="el" href="system__projection_8C_source.html#l00069">libMesh::convert_to_send()</a>, <a class="el" href="dof__object_8h_source.html#l00488">libMesh::DofObject::invalid_processor_id</a>, <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l00086">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::system</a>.</p>
+<div class="fragment"><div class="line"><a name="l02892"></a><span class="lineno"> 2892</span>&#160;{</div>
+<div class="line"><a name="l02893"></a><span class="lineno"> 2893</span>&#160;  LOG_SCOPE (<span class="stringliteral">&quot;send_and_insert_dof_values&quot;</span>, <span class="stringliteral">&quot;GenericProjector&quot;</span>);</div>
+<div class="line"><a name="l02894"></a><span class="lineno"> 2894</span>&#160;</div>
+<div class="line"><a name="l02895"></a><span class="lineno"> 2895</span>&#160;  <span class="comment">// See if we calculated any ids that need to be pushed; get them</span></div>
+<div class="line"><a name="l02896"></a><span class="lineno"> 2896</span>&#160;  <span class="comment">// ready to push.</span></div>
+<div class="line"><a name="l02897"></a><span class="lineno"> 2897</span>&#160;  std::unordered_map&lt;processor_id_type, std::vector&lt;dof_id_type&gt;&gt;</div>
+<div class="line"><a name="l02898"></a><span class="lineno"> 2898</span>&#160;    pushed_dof_ids, received_dof_ids;</div>
+<div class="line"><a name="l02899"></a><span class="lineno"> 2899</span>&#160;  std::unordered_map&lt;processor_id_type, std::vector&lt;typename TypeToSend&lt;Value&gt;::type&gt;&gt;</div>
+<div class="line"><a name="l02900"></a><span class="lineno"> 2900</span>&#160;    pushed_dof_values, received_dof_values;</div>
+<div class="line"><a name="l02901"></a><span class="lineno"> 2901</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; id_val_pid : ids_to_push)</div>
+<div class="line"><a name="l02902"></a><span class="lineno"> 2902</span>&#160;    {</div>
+<div class="line"><a name="l02903"></a><span class="lineno"> 2903</span>&#160;      <a class="code" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> pid = id_val_pid.second.second;</div>
+<div class="line"><a name="l02904"></a><span class="lineno"> 2904</span>&#160;      <span class="keywordflow">if</span> (pid != <a class="code" href="classlibMesh_1_1DofObject.html#aa65deab833c8b1802790cd43ab1b6ee4">DofObject::invalid_processor_id</a>)</div>
+<div class="line"><a name="l02905"></a><span class="lineno"> 2905</span>&#160;        {</div>
+<div class="line"><a name="l02906"></a><span class="lineno"> 2906</span>&#160;          pushed_dof_ids[pid].push_back(id_val_pid.first);</div>
+<div class="line"><a name="l02907"></a><span class="lineno"> 2907</span>&#160;          pushed_dof_values[pid].push_back(<a class="code" href="namespacelibMesh.html#a39d63eff01d65e13b52cb10fadbd2916">convert_to_send</a>(id_val_pid.second.first));</div>
+<div class="line"><a name="l02908"></a><span class="lineno"> 2908</span>&#160;        }</div>
+<div class="line"><a name="l02909"></a><span class="lineno"> 2909</span>&#160;    }</div>
+<div class="line"><a name="l02910"></a><span class="lineno"> 2910</span>&#160;</div>
+<div class="line"><a name="l02911"></a><span class="lineno"> 2911</span>&#160;  <span class="comment">// If and when we get ids pushed to us, act on them if we have</span></div>
+<div class="line"><a name="l02912"></a><span class="lineno"> 2912</span>&#160;  <span class="comment">// corresponding values or save them if not</span></div>
+<div class="line"><a name="l02913"></a><span class="lineno"> 2913</span>&#160;  <span class="keyword">auto</span> ids_action_functor =</div>
+<div class="line"><a name="l02914"></a><span class="lineno"> 2914</span>&#160;    [&amp;action, &amp;received_dof_ids, &amp;received_dof_values]</div>
+<div class="line"><a name="l02915"></a><span class="lineno"> 2915</span>&#160;    (<a class="code" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> pid,</div>
+<div class="line"><a name="l02916"></a><span class="lineno"> 2916</span>&#160;     <span class="keyword">const</span> std::vector&lt;dof_id_type&gt; &amp; data)</div>
+<div class="line"><a name="l02917"></a><span class="lineno"> 2917</span>&#160;    {</div>
+<div class="line"><a name="l02918"></a><span class="lineno"> 2918</span>&#160;      <span class="keyword">auto</span> iter = received_dof_values.find(pid);</div>
+<div class="line"><a name="l02919"></a><span class="lineno"> 2919</span>&#160;      <span class="keywordflow">if</span> (iter == received_dof_values.end())</div>
+<div class="line"><a name="l02920"></a><span class="lineno"> 2920</span>&#160;        {</div>
+<div class="line"><a name="l02921"></a><span class="lineno"> 2921</span>&#160;          <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(received_dof_ids.find(pid) ==</div>
+<div class="line"><a name="l02922"></a><span class="lineno"> 2922</span>&#160;                         received_dof_ids.end());</div>
+<div class="line"><a name="l02923"></a><span class="lineno"> 2923</span>&#160;          received_dof_ids[pid] = data;</div>
+<div class="line"><a name="l02924"></a><span class="lineno"> 2924</span>&#160;        }</div>
+<div class="line"><a name="l02925"></a><span class="lineno"> 2925</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l02926"></a><span class="lineno"> 2926</span>&#160;        {</div>
+<div class="line"><a name="l02927"></a><span class="lineno"> 2927</span>&#160;          <span class="keyword">auto</span> &amp; vals = iter-&gt;second;</div>
+<div class="line"><a name="l02928"></a><span class="lineno"> 2928</span>&#160;          std::size_t vals_size = vals.size();</div>
+<div class="line"><a name="l02929"></a><span class="lineno"> 2929</span>&#160;          libmesh_assert_equal_to(vals_size, data.size());</div>
+<div class="line"><a name="l02930"></a><span class="lineno"> 2930</span>&#160;          <span class="keywordflow">for</span> (std::size_t i=0; i != vals_size; ++i)</div>
+<div class="line"><a name="l02931"></a><span class="lineno"> 2931</span>&#160;            {</div>
+<div class="line"><a name="l02932"></a><span class="lineno"> 2932</span>&#160;              Value val;</div>
+<div class="line"><a name="l02933"></a><span class="lineno"> 2933</span>&#160;              <a class="code" href="namespacelibMesh.html#a818fa2a6212236b5a0fa72911779b1f4">convert_from_receive</a>(vals[i], val);</div>
+<div class="line"><a name="l02934"></a><span class="lineno"> 2934</span>&#160;              action.insert(data[i], val);</div>
+<div class="line"><a name="l02935"></a><span class="lineno"> 2935</span>&#160;            }</div>
+<div class="line"><a name="l02936"></a><span class="lineno"> 2936</span>&#160;          received_dof_values.erase(iter);</div>
+<div class="line"><a name="l02937"></a><span class="lineno"> 2937</span>&#160;        }</div>
+<div class="line"><a name="l02938"></a><span class="lineno"> 2938</span>&#160;    };</div>
+<div class="line"><a name="l02939"></a><span class="lineno"> 2939</span>&#160;</div>
+<div class="line"><a name="l02940"></a><span class="lineno"> 2940</span>&#160;  <span class="comment">// If and when we get values pushed to us, act on them if we have</span></div>
+<div class="line"><a name="l02941"></a><span class="lineno"> 2941</span>&#160;  <span class="comment">// corresponding ids or save them if not</span></div>
+<div class="line"><a name="l02942"></a><span class="lineno"> 2942</span>&#160;  <span class="keyword">auto</span> values_action_functor =</div>
+<div class="line"><a name="l02943"></a><span class="lineno"> 2943</span>&#160;    [&amp;action, &amp;received_dof_ids, &amp;received_dof_values]</div>
+<div class="line"><a name="l02944"></a><span class="lineno"> 2944</span>&#160;    (<a class="code" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> pid,</div>
+<div class="line"><a name="l02945"></a><span class="lineno"> 2945</span>&#160;     <span class="keyword">const</span> std::vector&lt;typename TypeToSend&lt;Value&gt;::type&gt; &amp; data)</div>
+<div class="line"><a name="l02946"></a><span class="lineno"> 2946</span>&#160;    {</div>
+<div class="line"><a name="l02947"></a><span class="lineno"> 2947</span>&#160;      <span class="keyword">auto</span> iter = received_dof_ids.find(pid);</div>
+<div class="line"><a name="l02948"></a><span class="lineno"> 2948</span>&#160;      <span class="keywordflow">if</span> (iter == received_dof_ids.end())</div>
+<div class="line"><a name="l02949"></a><span class="lineno"> 2949</span>&#160;        {</div>
+<div class="line"><a name="l02950"></a><span class="lineno"> 2950</span>&#160;          <span class="comment">// We get no more than 1 values vector from anywhere</span></div>
+<div class="line"><a name="l02951"></a><span class="lineno"> 2951</span>&#160;          <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(received_dof_values.find(pid) ==</div>
+<div class="line"><a name="l02952"></a><span class="lineno"> 2952</span>&#160;                         received_dof_values.end());</div>
+<div class="line"><a name="l02953"></a><span class="lineno"> 2953</span>&#160;          received_dof_values[pid] = data;</div>
+<div class="line"><a name="l02954"></a><span class="lineno"> 2954</span>&#160;        }</div>
+<div class="line"><a name="l02955"></a><span class="lineno"> 2955</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l02956"></a><span class="lineno"> 2956</span>&#160;        {</div>
+<div class="line"><a name="l02957"></a><span class="lineno"> 2957</span>&#160;          <span class="keyword">auto</span> &amp; ids = iter-&gt;second;</div>
+<div class="line"><a name="l02958"></a><span class="lineno"> 2958</span>&#160;          std::size_t ids_size = ids.size();</div>
+<div class="line"><a name="l02959"></a><span class="lineno"> 2959</span>&#160;          libmesh_assert_equal_to(ids_size, data.size());</div>
+<div class="line"><a name="l02960"></a><span class="lineno"> 2960</span>&#160;          <span class="keywordflow">for</span> (std::size_t i=0; i != ids_size; ++i)</div>
+<div class="line"><a name="l02961"></a><span class="lineno"> 2961</span>&#160;            {</div>
+<div class="line"><a name="l02962"></a><span class="lineno"> 2962</span>&#160;              Value val;</div>
+<div class="line"><a name="l02963"></a><span class="lineno"> 2963</span>&#160;              <a class="code" href="namespacelibMesh.html#a818fa2a6212236b5a0fa72911779b1f4">convert_from_receive</a>(data[i], val);</div>
+<div class="line"><a name="l02964"></a><span class="lineno"> 2964</span>&#160;              action.insert(ids[i], val);</div>
+<div class="line"><a name="l02965"></a><span class="lineno"> 2965</span>&#160;            }</div>
+<div class="line"><a name="l02966"></a><span class="lineno"> 2966</span>&#160;          received_dof_ids.erase(iter);</div>
+<div class="line"><a name="l02967"></a><span class="lineno"> 2967</span>&#160;        }</div>
+<div class="line"><a name="l02968"></a><span class="lineno"> 2968</span>&#160;    };</div>
+<div class="line"><a name="l02969"></a><span class="lineno"> 2969</span>&#160;</div>
+<div class="line"><a name="l02970"></a><span class="lineno"> 2970</span>&#160;  Parallel::push_parallel_vector_data</div>
+<div class="line"><a name="l02971"></a><span class="lineno"> 2971</span>&#160;    (<a class="code" href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">system</a>.<a class="code" href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">comm</a>(), pushed_dof_ids, ids_action_functor);</div>
+<div class="line"><a name="l02972"></a><span class="lineno"> 2972</span>&#160;</div>
+<div class="line"><a name="l02973"></a><span class="lineno"> 2973</span>&#160;  Parallel::push_parallel_vector_data</div>
+<div class="line"><a name="l02974"></a><span class="lineno"> 2974</span>&#160;    (<a class="code" href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">system</a>.<a class="code" href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">comm</a>(), pushed_dof_values, values_action_functor);</div>
+<div class="line"><a name="l02975"></a><span class="lineno"> 2975</span>&#160;</div>
+<div class="line"><a name="l02976"></a><span class="lineno"> 2976</span>&#160;  <span class="comment">// At this point we shouldn&#39;t have any unprocessed data left</span></div>
+<div class="line"><a name="l02977"></a><span class="lineno"> 2977</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(received_dof_ids.empty());</div>
+<div class="line"><a name="l02978"></a><span class="lineno"> 2978</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(received_dof_values.empty());</div>
+<div class="line"><a name="l02979"></a><span class="lineno"> 2979</span>&#160;</div>
+<div class="line"><a name="l02980"></a><span class="lineno"> 2980</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_html_a39d63eff01d65e13b52cb10fadbd2916"><div class="ttname"><a href="namespacelibMesh.html#a39d63eff01d65e13b52cb10fadbd2916">libMesh::convert_to_send</a></div><div class="ttdeci">const std::vector&lt; std::pair&lt; IndexType, T &gt; &gt; convert_to_send(MetaPhysicL::DynamicSparseNumberArray&lt; T, IndexType &gt; &amp;in)</div><div class="ttdef"><b>Definition:</b> <a href="system__projection_8C_source.html#l00069">system_projection.C:69</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af18245d4f872c36a41fc74086bda3e80"><div class="ttname"><a href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">libMesh::processor_id_type</a></div><div class="ttdeci">uint8_t processor_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00104">id_types.h:104</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofObject_html_aa65deab833c8b1802790cd43ab1b6ee4"><div class="ttname"><a href="classlibMesh_1_1DofObject.html#aa65deab833c8b1802790cd43ab1b6ee4">libMesh::DofObject::invalid_processor_id</a></div><div class="ttdeci">static const processor_id_type invalid_processor_id</div><div class="ttdoc">An invalid processor_id to distinguish DoFs that have not been assigned to a processor. </div><div class="ttdef"><b>Definition:</b> <a href="dof__object_8h_source.html#l00488">dof_object.h:488</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a9f14915fcf180813ee72885b6a840fe1"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">libMesh::GenericProjector::system</a></div><div class="ttdeci">const System &amp; system</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00086">generic_projector.h:86</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a818fa2a6212236b5a0fa72911779b1f4"><div class="ttname"><a href="namespacelibMesh.html#a818fa2a6212236b5a0fa72911779b1f4">libMesh::convert_from_receive</a></div><div class="ttdeci">void convert_from_receive(SendT &amp;received, MetaPhysicL::DynamicSparseNumberArray&lt; T, IndexType &gt; &amp;converted)</div><div class="ttdef"><b>Definition:</b> <a href="system__projection_8C_source.html#l00083">system_projection.C:83</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ParallelObject_html_a20de1180df21bdc9e6ca6151ed4ffda9"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">libMesh::ParallelObject::comm</a></div><div class="ttdeci">const Parallel::Communicator &amp; comm() const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00097">parallel_object.h:97</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="aa5eb97cbd5c86b6ae5ba9aa524b0d999"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::done_saving_ids</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab11690b417fab11f6c0d1eda46770617"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::g_was_copied</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00092">92</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generic__projector_8h_source.html#l00133">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::~GenericProjector()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c1abd47ae1abbc7d6510300edce965e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, typename FFunctor::ValuePushType&gt; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ids_to_save</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00148">148</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generic__projector_8h_source.html#l02988">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubProjector::construct_projection()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad135d2c811ad2ceea99722dd58f764e1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::map_was_created</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00092">92</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generic__projector_8h_source.html#l00099">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::GenericProjector()</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l00133">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::~GenericProjector()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6cf9309ccc3ed2dc611ba512e33a23a7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProjectionAction&amp; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::master_action</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00093">93</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8824a3930e3de9290aba4274c90b06cc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FFunctor&amp; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::master_f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5076baeed3dd09a4cef63d98d3dade5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFunctor* <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::master_g</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00091">91</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generic__projector_8h_source.html#l01344">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubProjector::SubProjector()</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l00133">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::~GenericProjector()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a26e703655894221d9fb0d19b387866dd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&gt; &gt;* <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::nodes_to_elem</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00095">95</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generic__projector_8h_source.html#l00099">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::GenericProjector()</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l00133">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::~GenericProjector()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f14915fcf180813ee72885b6a840fe1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classlibMesh_1_1System.html">System</a>&amp; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::system</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00086">86</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generic__projector_8h_source.html#l02988">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubProjector::construct_projection()</a>, <a class="el" href="generic__projector_8h_source.html#l02829">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::find_dofs_to_send()</a>, <a class="el" href="generic__projector_8h_source.html#l00099">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::GenericProjector()</a>, <a class="el" href="generic__projector_8h_source.html#l01468">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SortAndCopy::operator()()</a>, <a class="el" href="generic__projector_8h_source.html#l02002">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectVertices::operator()()</a>, <a class="el" href="generic__projector_8h_source.html#l02326">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectEdges::operator()()</a>, <a class="el" href="generic__projector_8h_source.html#l02493">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectSides::operator()()</a>, <a class="el" href="generic__projector_8h_source.html#l02682">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectInteriors::operator()()</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l02890">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::send_and_insert_dof_values()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a275e255b09d41a252e95e618371911f2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;unsigned int&gt;&amp; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::variables</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/systems/<a class="el" href="generic__projector_8h_source.html">generic_projector.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:44 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

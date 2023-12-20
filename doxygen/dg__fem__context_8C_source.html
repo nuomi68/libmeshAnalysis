@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/src/systems/dg_fem_context.C 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6bace0902b265ead1acaf9e32c7352.html">systems</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">dg_fem_context.C</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dg__fem__context_8C.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;libmesh/dg_fem_context.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;libmesh/dof_map.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;libmesh/elem.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;libmesh/fe_base.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;libmesh/fe_interface.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;libmesh/quadrature.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/system.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DGFEMContext.html#a774d698c4a48627fa74c0fb3cc57c515">   29</a></span>&#160;<a class="code" href="classlibMesh_1_1DGFEMContext.html#a774d698c4a48627fa74c0fb3cc57c515">DGFEMContext::DGFEMContext</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1System.html">System</a> &amp; sys)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  : <a class="code" href="classlibMesh_1_1FEMContext.html">FEMContext</a>(sys),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    _neighbor(nullptr),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    _neighbor_dof_indices_var(sys.<a class="code" href="tecplot__io_8C.html#ac001e4247887b98c2aa5b8ec5107ca0d">n_vars</a>()),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    _dg_terms_active(false)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nv = sys.<a class="code" href="classlibMesh_1_1System.html#a4cf032eda109fe32a7fcde672ef5726e">n_vars</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (nv);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>.reserve(nv);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a2506a32516f6da54ca184728405c907c">_elem_elem_subjacobians</a>.resize(nv);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a359bfb09b201100002df0e4a8be40238">_elem_neighbor_subjacobians</a>.resize(nv);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a9f9fb353c7698263a72b101f17dd9354">_neighbor_elem_subjacobians</a>.resize(nv);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a51867229669502b5fc786d61bf177fe7">_neighbor_neighbor_subjacobians</a>.resize(nv);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i != nv; ++i)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>.emplace_back(std::make_unique&lt;<a class="code" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector&lt;Number&gt;</a>&gt;(<a class="code" href="classlibMesh_1_1DGFEMContext.html#a3f8a8f0323f4b064fc2cf3f7e742dfed">_neighbor_residual</a>));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="classlibMesh_1_1DGFEMContext.html#a2506a32516f6da54ca184728405c907c">_elem_elem_subjacobians</a>[i].reserve(nv);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="classlibMesh_1_1DGFEMContext.html#a359bfb09b201100002df0e4a8be40238">_elem_neighbor_subjacobians</a>[i].reserve(nv);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <a class="code" href="classlibMesh_1_1DGFEMContext.html#a9f9fb353c7698263a72b101f17dd9354">_neighbor_elem_subjacobians</a>[i].reserve(nv);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="classlibMesh_1_1DGFEMContext.html#a51867229669502b5fc786d61bf177fe7">_neighbor_neighbor_subjacobians</a>[i].reserve(nv);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j=0; j != nv; ++j)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          <a class="code" href="classlibMesh_1_1DGFEMContext.html#a2506a32516f6da54ca184728405c907c">_elem_elem_subjacobians</a>[i].emplace_back(std::make_unique&lt;<a class="code" href="classlibMesh_1_1DenseSubMatrix.html">DenseSubMatrix&lt;Number&gt;</a>&gt;(<a class="code" href="classlibMesh_1_1DGFEMContext.html#a28becf0b0c7854f47bf44e742e6190f1">_elem_elem_jacobian</a>));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          <a class="code" href="classlibMesh_1_1DGFEMContext.html#a359bfb09b201100002df0e4a8be40238">_elem_neighbor_subjacobians</a>[i].emplace_back(std::make_unique&lt;<a class="code" href="classlibMesh_1_1DenseSubMatrix.html">DenseSubMatrix&lt;Number&gt;</a>&gt;(<a class="code" href="classlibMesh_1_1DGFEMContext.html#aad6d845df73d4c54480e12c3225c003a">_elem_neighbor_jacobian</a>));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          <a class="code" href="classlibMesh_1_1DGFEMContext.html#a9f9fb353c7698263a72b101f17dd9354">_neighbor_elem_subjacobians</a>[i].emplace_back(std::make_unique&lt;<a class="code" href="classlibMesh_1_1DenseSubMatrix.html">DenseSubMatrix&lt;Number&gt;</a>&gt;(<a class="code" href="classlibMesh_1_1DGFEMContext.html#a920fe110bb2fbf0ac0837871520bd0e9">_neighbor_elem_jacobian</a>));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          <a class="code" href="classlibMesh_1_1DGFEMContext.html#a51867229669502b5fc786d61bf177fe7">_neighbor_neighbor_subjacobians</a>[i].emplace_back(std::make_unique&lt;<a class="code" href="classlibMesh_1_1DenseSubMatrix.html">DenseSubMatrix&lt;Number&gt;</a>&gt;(<a class="code" href="classlibMesh_1_1DGFEMContext.html#a378811d4cdfd7e06280511df4fa5144a">_neighbor_neighbor_jacobian</a>));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#aefbc7f090cda3a429a3fd296ada4ddc3">_neighbor_side_fe_var</a>.resize(nv);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i != nv; ++i)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <a class="code" href="classlibMesh_1_1FEType.html">FEType</a> fe_type = sys.<a class="code" href="classlibMesh_1_1System.html#ab321ab954fa1284069a647b311ff6d17">variable_type</a>(i);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1DGFEMContext.html#a48e184bdf9665cc7ba380947b971ef89">_neighbor_side_fe</a>[fe_type] == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="classlibMesh_1_1DGFEMContext.html#a48e184bdf9665cc7ba380947b971ef89">_neighbor_side_fe</a>[fe_type] = <a class="code" href="classlibMesh_1_1FEAbstract.html#ad14dee2850b7fe3d63d8c69d4df018a4">FEAbstract::build</a>(this-&gt;<a class="code" href="classlibMesh_1_1FEMContext.html#ae0addc7232bfe20e275c8864aeaaf8b1">_dim</a>, fe_type);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <a class="code" href="classlibMesh_1_1DGFEMContext.html#aefbc7f090cda3a429a3fd296ada4ddc3">_neighbor_side_fe_var</a>[i] = <a class="code" href="classlibMesh_1_1DGFEMContext.html#a48e184bdf9665cc7ba380947b971ef89">_neighbor_side_fe</a>[fe_type].get();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="classlibMesh_1_1DGFEMContext.html#a3cb94910993c0b6ad36e977935de5ec8">DGFEMContext::~DGFEMContext</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DGFEMContext.html#a3b29f368ad2b382d8e722fef4b98a4d3">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DGFEMContext.html#a3b29f368ad2b382d8e722fef4b98a4d3">DGFEMContext::side_fe_reinit</a>()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classlibMesh_1_1FEMContext.html#a0f7f6e01f78a5dbf532901b5198878fc">FEMContext::side_fe_reinit</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">// By default we assume that the DG terms are inactive</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">// They are only active if neighbor_side_fe_reinit is called</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a336855e28706ec56e4141d0499b05fcd">_dg_terms_active</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DGFEMContext.html#a9765c952c6920d8bfae6376f91ca9167">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DGFEMContext.html#a9765c952c6920d8bfae6376f91ca9167">DGFEMContext::neighbor_side_fe_reinit</a> ()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="comment">// Call this *after* side_fe_reinit</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">// Initialize all the neighbor side FE objects based on inverse mapping</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// the quadrature points on the current side</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  std::vector&lt;Point&gt; qface_side_points;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  std::vector&lt;Point&gt; qface_neighbor_points;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; [neighbor_side_fe_type, fe] : <a class="code" href="classlibMesh_1_1DGFEMContext.html#a48e184bdf9665cc7ba380947b971ef89">_neighbor_side_fe</a>)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="classlibMesh_1_1FEAbstract.html">FEAbstract</a> * side_fe = <a class="code" href="classlibMesh_1_1FEMContext.html#acd61c20624659fa4ca5db93b5618141d">_side_fe</a>[this-&gt;<a class="code" href="classlibMesh_1_1FEMContext.html#a8c1015dcf645e4246a905c9c00753d01">get_dim</a>()][neighbor_side_fe_type].get();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      qface_side_points = side_fe-&gt;<a class="code" href="classlibMesh_1_1FEAbstract.html#a52785c989f4b4cb34a91c47d96578ce7">get_xyz</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <a class="code" href="classlibMesh_1_1FEMap.html#ab1c33e2c2078d7b474470fed4a58d0af">FEMap::inverse_map</a> (this-&gt;<a class="code" href="classlibMesh_1_1FEMContext.html#a8c1015dcf645e4246a905c9c00753d01">get_dim</a>(), &amp;<a class="code" href="classlibMesh_1_1DGFEMContext.html#a00c5493a76e240f157a890938d61210b">get_neighbor</a>(),</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                          qface_side_points, qface_neighbor_points);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      fe-&gt;reinit(&amp;<a class="code" href="classlibMesh_1_1DGFEMContext.html#a00c5493a76e240f157a890938d61210b">get_neighbor</a>(), &amp;qface_neighbor_points);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">// Set boolean flag to indicate that the DG terms are active on this element</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a336855e28706ec56e4141d0499b05fcd">_dg_terms_active</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">// Also, initialize data required for DG assembly on the current side,</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">// analogously to FEMContext::pre_fe_reinit</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">// Initialize the per-element data for elem.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="classlibMesh_1_1DiffContext.html#aaad90af303f636b0e0325847b734e67b">get_system</a>().<a class="code" href="classlibMesh_1_1System.html#a3b392c8791f781092d6326e51856f553">get_dof_map</a>().<a class="code" href="classlibMesh_1_1DofMap.html#a0d323b6fcb736454a9f6074ebda9ec28">dof_indices</a> (&amp;<a class="code" href="classlibMesh_1_1DGFEMContext.html#a00c5493a76e240f157a890938d61210b">get_neighbor</a>(), <a class="code" href="classlibMesh_1_1DGFEMContext.html#a49cc20bf4980c5bc4e78bebc90608b07">_neighbor_dof_indices</a>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_dofs = cast_int&lt;unsigned int&gt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    (this-&gt;<a class="code" href="classlibMesh_1_1DiffContext.html#a505f5de95b7a4dd1e5bde01079bb9a75">get_dof_indices</a>().size());</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_neighbor_dofs = cast_int&lt;unsigned int&gt;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    (<a class="code" href="classlibMesh_1_1DGFEMContext.html#a49cc20bf4980c5bc4e78bebc90608b07">_neighbor_dof_indices</a>.size());</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">// These resize calls also zero out the residual and jacobian</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a3f8a8f0323f4b064fc2cf3f7e742dfed">_neighbor_residual</a>.<a class="code" href="classlibMesh_1_1DenseVector.html#a08430ae781094632e8272cbb825d4f44">resize</a>(n_neighbor_dofs);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a28becf0b0c7854f47bf44e742e6190f1">_elem_elem_jacobian</a>.<a class="code" href="classlibMesh_1_1DenseMatrix.html#a83503e0038a23688676a69008aaabf5c">resize</a>(n_dofs, n_dofs);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#aad6d845df73d4c54480e12c3225c003a">_elem_neighbor_jacobian</a>.<a class="code" href="classlibMesh_1_1DenseMatrix.html#a83503e0038a23688676a69008aaabf5c">resize</a>(n_dofs, n_neighbor_dofs);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a920fe110bb2fbf0ac0837871520bd0e9">_neighbor_elem_jacobian</a>.<a class="code" href="classlibMesh_1_1DenseMatrix.html#a83503e0038a23688676a69008aaabf5c">resize</a>(n_neighbor_dofs, n_dofs);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="classlibMesh_1_1DGFEMContext.html#a378811d4cdfd7e06280511df4fa5144a">_neighbor_neighbor_jacobian</a>.<a class="code" href="classlibMesh_1_1DenseMatrix.html#a83503e0038a23688676a69008aaabf5c">resize</a>(n_neighbor_dofs, n_neighbor_dofs);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="comment">// Initialize the per-variable data for elem.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sub_dofs = 0;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(<a class="code" href="classlibMesh_1_1DiffContext.html#aaad90af303f636b0e0325847b734e67b">get_system</a>().<a class="code" href="classlibMesh_1_1DiffContext.html#a3808511b30f01331b0d05b8e5172c205">n_vars</a>()))</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="classlibMesh_1_1DiffContext.html#aaad90af303f636b0e0325847b734e67b">get_system</a>().<a class="code" href="classlibMesh_1_1System.html#a3b392c8791f781092d6326e51856f553">get_dof_map</a>().<a class="code" href="classlibMesh_1_1DofMap.html#a0d323b6fcb736454a9f6074ebda9ec28">dof_indices</a> (&amp;<a class="code" href="classlibMesh_1_1DGFEMContext.html#a00c5493a76e240f157a890938d61210b">get_neighbor</a>(), <a class="code" href="classlibMesh_1_1DGFEMContext.html#a2e6d2ddd8d9c4168968347964669788a">_neighbor_dof_indices_var</a>[i], i);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_dofs_var = cast_int&lt;unsigned int&gt;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;          (<a class="code" href="classlibMesh_1_1DGFEMContext.html#a2e6d2ddd8d9c4168968347964669788a">_neighbor_dof_indices_var</a>[i].size());</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>[i]-&gt;reposition</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;          (sub_dofs, n_dofs_var);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j=0; j != i; ++j)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;          {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_dofs_var_j =</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;              cast_int&lt;unsigned int&gt;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;              (this-&gt;<a class="code" href="classlibMesh_1_1DiffContext.html#a505f5de95b7a4dd1e5bde01079bb9a75">get_dof_indices</a>(j).size());</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <a class="code" href="classlibMesh_1_1DGFEMContext.html#a2506a32516f6da54ca184728405c907c">_elem_elem_subjacobians</a>[i][j]-&gt;reposition</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;              (sub_dofs, <a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>[j]-&gt;i_off(),</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;               n_dofs_var, n_dofs_var_j);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="classlibMesh_1_1DGFEMContext.html#a2506a32516f6da54ca184728405c907c">_elem_elem_subjacobians</a>[j][i]-&gt;reposition</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;              (<a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>[j]-&gt;i_off(), sub_dofs,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;               n_dofs_var_j, n_dofs_var);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="classlibMesh_1_1DGFEMContext.html#a359bfb09b201100002df0e4a8be40238">_elem_neighbor_subjacobians</a>[i][j]-&gt;reposition</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;              (sub_dofs, <a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>[j]-&gt;i_off(),</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;               n_dofs_var, n_dofs_var_j);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <a class="code" href="classlibMesh_1_1DGFEMContext.html#a359bfb09b201100002df0e4a8be40238">_elem_neighbor_subjacobians</a>[j][i]-&gt;reposition</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;              (<a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>[j]-&gt;i_off(), sub_dofs,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;               n_dofs_var_j, n_dofs_var);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="code" href="classlibMesh_1_1DGFEMContext.html#a9f9fb353c7698263a72b101f17dd9354">_neighbor_elem_subjacobians</a>[i][j]-&gt;reposition</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;              (sub_dofs, <a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>[j]-&gt;i_off(),</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;               n_dofs_var, n_dofs_var_j);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <a class="code" href="classlibMesh_1_1DGFEMContext.html#a9f9fb353c7698263a72b101f17dd9354">_neighbor_elem_subjacobians</a>[j][i]-&gt;reposition</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;              (<a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>[j]-&gt;i_off(), sub_dofs,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;               n_dofs_var_j, n_dofs_var);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <a class="code" href="classlibMesh_1_1DGFEMContext.html#a51867229669502b5fc786d61bf177fe7">_neighbor_neighbor_subjacobians</a>[i][j]-&gt;reposition</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;              (sub_dofs, <a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>[j]-&gt;i_off(),</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;               n_dofs_var, n_dofs_var_j);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <a class="code" href="classlibMesh_1_1DGFEMContext.html#a51867229669502b5fc786d61bf177fe7">_neighbor_neighbor_subjacobians</a>[j][i]-&gt;reposition</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;              (<a class="code" href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">_neighbor_subresiduals</a>[j]-&gt;i_off(), sub_dofs,</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;               n_dofs_var_j, n_dofs_var);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="classlibMesh_1_1DGFEMContext.html#a2506a32516f6da54ca184728405c907c">_elem_elem_subjacobians</a>[i][i]-&gt;reposition</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;          (sub_dofs, sub_dofs,</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;           n_dofs_var,</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;           n_dofs_var);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="classlibMesh_1_1DGFEMContext.html#a359bfb09b201100002df0e4a8be40238">_elem_neighbor_subjacobians</a>[i][i]-&gt;reposition</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;          (sub_dofs, sub_dofs,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;           n_dofs_var,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;           n_dofs_var);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="classlibMesh_1_1DGFEMContext.html#a9f9fb353c7698263a72b101f17dd9354">_neighbor_elem_subjacobians</a>[i][i]-&gt;reposition</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;          (sub_dofs, sub_dofs,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;           n_dofs_var,</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;           n_dofs_var);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="classlibMesh_1_1DGFEMContext.html#a51867229669502b5fc786d61bf177fe7">_neighbor_neighbor_subjacobians</a>[i][i]-&gt;reposition</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;          (sub_dofs, sub_dofs,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;           n_dofs_var,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;           n_dofs_var);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        sub_dofs += n_dofs_var;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    libmesh_assert_equal_to (sub_dofs, n_dofs);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1FEType_html"><div class="ttname"><a href="classlibMesh_1_1FEType.html">libMesh::FEType</a></div><div class="ttdoc">class FEType hides (possibly multiple) FEFamily and approximation orders, thereby enabling specialize...</div><div class="ttdef"><b>Definition:</b> <a href="fe__type_8h_source.html#l00182">fe_type.h:182</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a49cc20bf4980c5bc4e78bebc90608b07"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a49cc20bf4980c5bc4e78bebc90608b07">libMesh::DGFEMContext::_neighbor_dof_indices</a></div><div class="ttdeci">std::vector&lt; dof_id_type &gt; _neighbor_dof_indices</div><div class="ttdoc">邻居元素的全局自由度索引列表。 </div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00254">dg_fem_context.h:254</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a3f8a8f0323f4b064fc2cf3f7e742dfed"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a3f8a8f0323f4b064fc2cf3f7e742dfed">libMesh::DGFEMContext::_neighbor_residual</a></div><div class="ttdeci">DenseVector&lt; Number &gt; _neighbor_residual</div><div class="ttdoc">邻居分量的残差向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00232">dg_fem_context.h:232</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a28becf0b0c7854f47bf44e742e6190f1"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a28becf0b0c7854f47bf44e742e6190f1">libMesh::DGFEMContext::_elem_elem_jacobian</a></div><div class="ttdeci">DenseMatrix&lt; Number &gt; _elem_elem_jacobian</div><div class="ttdoc">DG雅各比项。试验和测试函数来自元素或邻居。 </div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00237">dg_fem_context.h:237</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a9765c952c6920d8bfae6376f91ca9167"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a9765c952c6920d8bfae6376f91ca9167">libMesh::DGFEMContext::neighbor_side_fe_reinit</a></div><div class="ttdeci">void neighbor_side_fe_reinit()</div><div class="ttdoc">初始化组装DG项所需的邻居边数据。 邻居元素由当前get_neighbor()值确定。 </div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8C_source.html#l00084">dg_fem_context.C:84</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a2506a32516f6da54ca184728405c907c"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a2506a32516f6da54ca184728405c907c">libMesh::DGFEMContext::_elem_elem_subjacobians</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::unique_ptr&lt; DenseSubMatrix&lt; Number &gt; &gt; &gt; &gt; _elem_elem_subjacobians</div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00246">dg_fem_context.h:246</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEMap_html_ab1c33e2c2078d7b474470fed4a58d0af"><div class="ttname"><a href="classlibMesh_1_1FEMap.html#ab1c33e2c2078d7b474470fed4a58d0af">libMesh::FEMap::inverse_map</a></div><div class="ttdeci">static Point inverse_map(const unsigned int dim, const Elem *elem, const Point &amp;p, const Real tolerance=TOLERANCE, const bool secure=true, const bool extra_checks=true)</div><div class="ttdoc">返回位于物理空间中的点 p 在参考单元上的位置。 </div><div class="ttdef"><b>Definition:</b> <a href="fe__map_8C_source.html#l01626">fe_map.C:1626</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a3b29f368ad2b382d8e722fef4b98a4d3"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a3b29f368ad2b382d8e722fef4b98a4d3">libMesh::DGFEMContext::side_fe_reinit</a></div><div class="ttdeci">virtual void side_fe_reinit() override</div><div class="ttdoc">覆盖side_fe_reinit以设置一个布尔标志，以便默认情况下假定DG项为非活动状态。 只有在调用neighbor_side_fe_reinit时，DG项才是活动的。 DG项仅在需要在网格上建立插值...</div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8C_source.html#l00075">dg_fem_context.C:75</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseVector_html_a08430ae781094632e8272cbb825d4f44"><div class="ttname"><a href="classlibMesh_1_1DenseVector.html#a08430ae781094632e8272cbb825d4f44">libMesh::DenseVector::resize</a></div><div class="ttdeci">void resize(const unsigned int n)</div><div class="ttdoc">调整向量的大小。将所有元素设置为0。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__vector_8h_source.html#l00404">dense_vector.h:404</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a2e6d2ddd8d9c4168968347964669788a"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a2e6d2ddd8d9c4168968347964669788a">libMesh::DGFEMContext::_neighbor_dof_indices_var</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; dof_id_type &gt; &gt; _neighbor_dof_indices_var</div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00255">dg_fem_context.h:255</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_a505f5de95b7a4dd1e5bde01079bb9a75"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#a505f5de95b7a4dd1e5bde01079bb9a75">libMesh::DiffContext::get_dof_indices</a></div><div class="ttdeci">const std::vector&lt; dof_id_type &gt; &amp; get_dof_indices() const </div><div class="ttdoc">获取元素自由度（Degree of Freedom，简称dof）索引的访问器。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00336">diff_context.h:336</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_aefbc7f090cda3a429a3fd296ada4ddc3"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#aefbc7f090cda3a429a3fd296ada4ddc3">libMesh::DGFEMContext::_neighbor_side_fe_var</a></div><div class="ttdeci">std::vector&lt; FEAbstract * &gt; _neighbor_side_fe_var</div><div class="ttdoc">在相邻元素上的相同有限元对象的指针，但由变量编号索引。 </div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00266">dg_fem_context.h:266</a></div></div>
+<div class="ttc" id="tecplot__io_8C_html_ac001e4247887b98c2aa5b8ec5107ca0d"><div class="ttname"><a href="tecplot__io_8C.html#ac001e4247887b98c2aa5b8ec5107ca0d">n_vars</a></div><div class="ttdeci">const unsigned int n_vars</div><div class="ttdef"><b>Definition:</b> <a href="tecplot__io_8C_source.html#l00068">tecplot_io.C:68</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_ab321ab954fa1284069a647b311ff6d17"><div class="ttname"><a href="classlibMesh_1_1System.html#ab321ab954fa1284069a647b311ff6d17">libMesh::System::variable_type</a></div><div class="ttdeci">const FEType &amp; variable_type(const unsigned int i) const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02427">system.h:2427</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a00c5493a76e240f157a890938d61210b"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a00c5493a76e240f157a890938d61210b">libMesh::DGFEMContext::get_neighbor</a></div><div class="ttdeci">const Elem &amp; get_neighbor() const </div><div class="ttdoc">获取用于组装DG项的当前邻居Elem对象的访问器。 </div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00208">dg_fem_context.h:208</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a></div><div class="ttdoc">定义了一个用于有限元计算的稠密子向量。 在将元素载荷向量累加到全局向量之前存储这些载荷向量时特别有用，尤其是在存在方程组的情况下。 所有重写的虚拟函数在 dense_vector_base.h 中有文档说明。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00042">dense_subvector.h:42</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html_a8c1015dcf645e4246a905c9c00753d01"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html#a8c1015dcf645e4246a905c9c00753d01">libMesh::FEMContext::get_dim</a></div><div class="ttdeci">unsigned char get_dim() const </div><div class="ttdoc">Accessor for cached mesh dimension. </div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8h_source.html#l00936">fem_context.h:936</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a3b392c8791f781092d6326e51856f553"><div class="ttname"><a href="classlibMesh_1_1System.html#a3b392c8791f781092d6326e51856f553">libMesh::System::get_dof_map</a></div><div class="ttdeci">const DofMap &amp; get_dof_map() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02293">system.h:2293</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html_a0f7f6e01f78a5dbf532901b5198878fc"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html#a0f7f6e01f78a5dbf532901b5198878fc">libMesh::FEMContext::side_fe_reinit</a></div><div class="ttdeci">virtual void side_fe_reinit()</div><div class="ttdoc">Reinitializes side FE objects on the current geometric element. </div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8C_source.html#l01490">fem_context.C:1490</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html"><div class="ttname"><a href="classlibMesh_1_1System.html">libMesh::System</a></div><div class="ttdoc">Manages consistently variables, degrees of freedom, and coefficient vectors. </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00096">system.h:96</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubMatrix_html"><div class="ttname"><a href="classlibMesh_1_1DenseSubMatrix.html">libMesh::DenseSubMatrix</a></div><div class="ttdoc">为有限元类型的计算定义密集子矩阵。 在将元素刚度矩阵相加到全局矩阵之前存储非常有用，特别是在存在方程组时。 所有重写的虚拟函数在 dense_matrix_base.h 中有文档。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__submatrix_8h_source.html#l00043">dense_submatrix.h:43</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a920fe110bb2fbf0ac0837871520bd0e9"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a920fe110bb2fbf0ac0837871520bd0e9">libMesh::DGFEMContext::_neighbor_elem_jacobian</a></div><div class="ttdeci">DenseMatrix&lt; Number &gt; _neighbor_elem_jacobian</div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00239">dg_fem_context.h:239</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html">libMesh::FEMContext</a></div><div class="ttdoc">This class provides all data required for a physics package (e.g. </div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8h_source.html#l00062">fem_context.h:62</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_aad6d845df73d4c54480e12c3225c003a"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#aad6d845df73d4c54480e12c3225c003a">libMesh::DGFEMContext::_elem_neighbor_jacobian</a></div><div class="ttdeci">DenseMatrix&lt; Number &gt; _elem_neighbor_jacobian</div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00238">dg_fem_context.h:238</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_aaad90af303f636b0e0325847b734e67b"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#aaad90af303f636b0e0325847b734e67b">libMesh::DiffContext::get_system</a></div><div class="ttdeci">const System &amp; get_system() const </div><div class="ttdoc">关联系统的访问器。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00096">diff_context.h:96</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a359bfb09b201100002df0e4a8be40238"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a359bfb09b201100002df0e4a8be40238">libMesh::DGFEMContext::_elem_neighbor_subjacobians</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::unique_ptr&lt; DenseSubMatrix&lt; Number &gt; &gt; &gt; &gt; _elem_neighbor_subjacobians</div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00247">dg_fem_context.h:247</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a336855e28706ec56e4141d0499b05fcd"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a336855e28706ec56e4141d0499b05fcd">libMesh::DGFEMContext::_dg_terms_active</a></div><div class="ttdeci">bool _dg_terms_active</div><div class="ttdoc">一个布尔标志，指示DG项是否已组装并且应在全局矩阵组装中使用。 </div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00271">dg_fem_context.h:271</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html_ae0addc7232bfe20e275c8864aeaaf8b1"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html#ae0addc7232bfe20e275c8864aeaaf8b1">libMesh::FEMContext::_dim</a></div><div class="ttdeci">unsigned char _dim</div><div class="ttdoc">Cached dimension of largest dimension element in this mesh. </div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8h_source.html#l01197">fem_context.h:1197</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html_acd61c20624659fa4ca5db93b5618141d"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html#acd61c20624659fa4ca5db93b5618141d">libMesh::FEMContext::_side_fe</a></div><div class="ttdeci">std::vector&lt; std::map&lt; FEType, std::unique_ptr&lt; FEAbstract &gt; &gt; &gt; _side_fe</div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8h_source.html#l01169">fem_context.h:1169</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a9f9fb353c7698263a72b101f17dd9354"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a9f9fb353c7698263a72b101f17dd9354">libMesh::DGFEMContext::_neighbor_elem_subjacobians</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::unique_ptr&lt; DenseSubMatrix&lt; Number &gt; &gt; &gt; &gt; _neighbor_elem_subjacobians</div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00248">dg_fem_context.h:248</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEAbstract_html_a52785c989f4b4cb34a91c47d96578ce7"><div class="ttname"><a href="classlibMesh_1_1FEAbstract.html#a52785c989f4b4cb34a91c47d96578ce7">libMesh::FEAbstract::get_xyz</a></div><div class="ttdeci">virtual_for_inffe const std::vector&lt; Point &gt; &amp; get_xyz() const </div><div class="ttdef"><b>Definition:</b> <a href="fe__abstract_8h_source.html#l00272">fe_abstract.h:272</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a774d698c4a48627fa74c0fb3cc57c515"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a774d698c4a48627fa74c0fb3cc57c515">libMesh::DGFEMContext::DGFEMContext</a></div><div class="ttdeci">DGFEMContext(const System &amp;sys)</div><div class="ttdoc">构造函数。分配一些内存，但不填充任何数据结构。 </div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8C_source.html#l00029">dg_fem_context.C:29</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEAbstract_html_ad14dee2850b7fe3d63d8c69d4df018a4"><div class="ttname"><a href="classlibMesh_1_1FEAbstract.html#ad14dee2850b7fe3d63d8c69d4df018a4">libMesh::FEAbstract::build</a></div><div class="ttdeci">static std::unique_ptr&lt; FEAbstract &gt; build(const unsigned int dim, const FEType &amp;type)</div><div class="ttdoc">Builds a specific finite element type. </div><div class="ttdef"><b>Definition:</b> <a href="fe__abstract_8C_source.html#l00077">fe_abstract.C:77</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a378811d4cdfd7e06280511df4fa5144a"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a378811d4cdfd7e06280511df4fa5144a">libMesh::DGFEMContext::_neighbor_neighbor_jacobian</a></div><div class="ttdeci">DenseMatrix&lt; Number &gt; _neighbor_neighbor_jacobian</div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00240">dg_fem_context.h:240</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrix_html_a83503e0038a23688676a69008aaabf5c"><div class="ttname"><a href="classlibMesh_1_1DenseMatrix.html#a83503e0038a23688676a69008aaabf5c">libMesh::DenseMatrix::resize</a></div><div class="ttdeci">void resize(const unsigned int new_m, const unsigned int new_n)</div><div class="ttdoc">调整矩阵的大小，并调用 zero() 方法。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix_8h_source.html#l01012">dense_matrix.h:1012</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a4cf032eda109fe32a7fcde672ef5726e"><div class="ttname"><a href="classlibMesh_1_1System.html#a4cf032eda109fe32a7fcde672ef5726e">libMesh::System::n_vars</a></div><div class="ttdeci">unsigned int n_vars() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02349">system.h:2349</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a8be9fcdd6f2b2a259ad1045256e31ced"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a8be9fcdd6f2b2a259ad1045256e31ced">libMesh::DGFEMContext::_neighbor_subresiduals</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; DenseSubVector&lt; Number &gt; &gt; &gt; _neighbor_subresiduals</div><div class="ttdoc">元素残差子向量和雅各比子矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00245">dg_fem_context.h:245</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a3cb94910993c0b6ad36e977935de5ec8"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a3cb94910993c0b6ad36e977935de5ec8">libMesh::DGFEMContext::~DGFEMContext</a></div><div class="ttdeci">virtual ~DGFEMContext()</div><div class="ttdoc">析构函数。 </div></div>
+<div class="ttc" id="classlibMesh_1_1FEAbstract_html"><div class="ttname"><a href="classlibMesh_1_1FEAbstract.html">libMesh::FEAbstract</a></div><div class="ttdoc">This class forms the foundation from which generic finite elements may be derived. </div><div class="ttdef"><b>Definition:</b> <a href="fe__abstract_8h_source.html#l00099">fe_abstract.h:99</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a48e184bdf9665cc7ba380947b971ef89"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a48e184bdf9665cc7ba380947b971ef89">libMesh::DGFEMContext::_neighbor_side_fe</a></div><div class="ttdeci">std::map&lt; FEType, std::unique_ptr&lt; FEAbstract &gt; &gt; _neighbor_side_fe</div><div class="ttdoc">每个变量的有限元对象的邻居元素的边。 因为只需要在这里处理DG接口项，所以不需要邻居元素内部的FE对象，。 </div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00261">dg_fem_context.h:261</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DGFEMContext_html_a51867229669502b5fc786d61bf177fe7"><div class="ttname"><a href="classlibMesh_1_1DGFEMContext.html#a51867229669502b5fc786d61bf177fe7">libMesh::DGFEMContext::_neighbor_neighbor_subjacobians</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::unique_ptr&lt; DenseSubMatrix&lt; Number &gt; &gt; &gt; &gt; _neighbor_neighbor_subjacobians</div><div class="ttdef"><b>Definition:</b> <a href="dg__fem__context_8h_source.html#l00249">dg_fem_context.h:249</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_a3808511b30f01331b0d05b8e5172c205"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#a3808511b30f01331b0d05b8e5172c205">libMesh::DiffContext::n_vars</a></div><div class="ttdeci">unsigned int n_vars() const </div><div class="ttdoc">解决方案中的变量数。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00090">diff_context.h:90</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html_a0d323b6fcb736454a9f6074ebda9ec28"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a0d323b6fcb736454a9f6074ebda9ec28">libMesh::DofMap::dof_indices</a></div><div class="ttdeci">void dof_indices(const Elem *const elem, std::vector&lt; dof_id_type &gt; &amp;di) const </div><div class="ttdoc">Fills the vector di with the global degree of freedom indices for the element. </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8C_source.html#l01992">dof_map.C:1992</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:06 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,16 @@
+digraph "类继承关系图"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="libMesh::DenseVectorBase\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseVectorBase.html",tooltip="定义用于有限元计算的抽象稠密向量基类。 可以从这个类派生出特定的稠密向量，例如 DenseSubVectors。 "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="libMesh::DenseVector\l\< Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseVector.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="libMesh::DenseVector\l\< Output \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseVector.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="libMesh::DenseSubVector\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseSubVector.html",tooltip="定义了一个用于有限元计算的稠密子向量。 在将元素载荷向量累加到全局向量之前存储这些载荷向量时特别有用，尤其是在存在方程组的情况下。 所有重写的虚拟函数在 dense_vector_base.h 中有文档说明。 "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="libMesh::DenseVector\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseVector.html",tooltip="定义用于有限元计算的稠密向量类。该类基本上是为了补充 DenseMatrix 类而设计的。 它相对于 std::vector 具有额外的功能，使其在有限元中特别有用，特别是对于方程组。 所有重写的虚拟函..."];
+}

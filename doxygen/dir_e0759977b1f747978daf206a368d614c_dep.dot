@@ -1,0 +1,9 @@
+digraph "/home/lwz/libmesh/include/ghosting" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e7fee3c13989f8a9ad582fb61a959d2f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_e7fee3c13989f8a9ad582fb61a959d2f.html"]
+  dir_e0759977b1f747978daf206a368d614c [shape=box, label="ghosting", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_e0759977b1f747978daf206a368d614c.html"];
+  }
+}

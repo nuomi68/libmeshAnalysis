@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::MeshSmoother类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1MeshSmoother.html">MeshSmoother</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classlibMesh_1_1MeshSmoother-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::MeshSmoother类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class provides the necessary interface for mesh smoothing.  
+ <a href="classlibMesh_1_1MeshSmoother.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mesh__smoother_8h_source.html">mesh_smoother.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::MeshSmoother 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5fb7ab286514c6eaef30f39db52cb50a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1MeshSmoother.html#a5fb7ab286514c6eaef30f39db52cb50a">MeshSmoother</a> (<a class="el" href="classlibMesh_1_1UnstructuredMesh.html">UnstructuredMesh</a> &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>)</td></tr>
+<tr class="memdesc:a5fb7ab286514c6eaef30f39db52cb50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a5fb7ab286514c6eaef30f39db52cb50a">更多...</a><br/></td></tr>
+<tr class="separator:a5fb7ab286514c6eaef30f39db52cb50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964cb2012a32247128625af2181d64ef"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1MeshSmoother.html#a964cb2012a32247128625af2181d64ef">~MeshSmoother</a> ()=default</td></tr>
+<tr class="memdesc:a964cb2012a32247128625af2181d64ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a964cb2012a32247128625af2181d64ef">更多...</a><br/></td></tr>
+<tr class="separator:a964cb2012a32247128625af2181d64ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40efe20a344e22f9de4afb258e8b721"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1MeshSmoother.html#ac40efe20a344e22f9de4afb258e8b721">smooth</a> ()=0</td></tr>
+<tr class="memdesc:ac40efe20a344e22f9de4afb258e8b721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function which actually performs the smoothing operations.  <a href="#ac40efe20a344e22f9de4afb258e8b721">更多...</a><br/></td></tr>
+<tr class="separator:ac40efe20a344e22f9de4afb258e8b721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a23c08282a0f3088def89cd9c1c17fc4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1UnstructuredMesh.html">UnstructuredMesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1MeshSmoother.html#a23c08282a0f3088def89cd9c1c17fc4a">_mesh</a></td></tr>
+<tr class="separator:a23c08282a0f3088def89cd9c1c17fc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This class provides the necessary interface for mesh smoothing. </p>
+<p>Concrete mesh smoothers will be derived from this abstract base class.</p>
+<dl class="section author"><dt>作者</dt><dd>John W. Peterson </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2002-2007 </dd></dl>
+
+<p>在文件 <a class="el" href="mesh__smoother_8h_source.html">mesh_smoother.h</a> 第 <a class="el" href="mesh__smoother_8h_source.html#l00038">38</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a5fb7ab286514c6eaef30f39db52cb50a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::MeshSmoother::MeshSmoother </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1UnstructuredMesh.html">UnstructuredMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>Sets the mesh reference in the protected data section of the class. </p>
+
+<p>在文件 <a class="el" href="mesh__smoother_8h_source.html">mesh_smoother.h</a> 第 <a class="el" href="mesh__smoother_8h_source.html#l00046">46</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;: <a class="code" href="classlibMesh_1_1MeshSmoother.html#a23c08282a0f3088def89cd9c1c17fc4a">_mesh</a>(<a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>) {}</div>
+<div class="ttc" id="mesh__communication_8C_html_afaa03b874c297f4693d9cdef7f50f3c6"><div class="ttname"><a href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__communication_8C_source.html#l01308">mesh_communication.C:1308</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshSmoother_html_a23c08282a0f3088def89cd9c1c17fc4a"><div class="ttname"><a href="classlibMesh_1_1MeshSmoother.html#a23c08282a0f3088def89cd9c1c17fc4a">libMesh::MeshSmoother::_mesh</a></div><div class="ttdeci">UnstructuredMesh &amp; _mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__smoother_8h_source.html#l00061">mesh_smoother.h:61</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a964cb2012a32247128625af2181d64ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual libMesh::MeshSmoother::~MeshSmoother </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ac40efe20a344e22f9de4afb258e8b721"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::MeshSmoother::smooth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function which actually performs the smoothing operations. </p>
+<p>In this abstract base class, this function does nothing. </p>
+
+<p>在 <a class="el" href="classlibMesh_1_1VariationalMeshSmoother.html#ad320f7675032487559a1d92ef58949ab">libMesh::VariationalMeshSmoother</a> , 以及 <a class="el" href="classlibMesh_1_1LaplaceMeshSmoother.html#a76d15e48aeb03f4997c93ec4cef64276">libMesh::LaplaceMeshSmoother</a> 内被实现.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a23c08282a0f3088def89cd9c1c17fc4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1UnstructuredMesh.html">UnstructuredMesh</a>&amp; libMesh::MeshSmoother::_mesh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="mesh__smoother_8h_source.html">mesh_smoother.h</a> 第 <a class="el" href="mesh__smoother_8h_source.html#l00061">61</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="mesh__smoother__vsmoother_8C_source.html#l00531">libMesh::VariationalMeshSmoother::adjust_adapt_data()</a>, <a class="el" href="mesh__smoother__laplace_8C_source.html#l00289">libMesh::LaplaceMeshSmoother::allgather_graph()</a>, <a class="el" href="mesh__smoother__laplace_8C_source.html#l00159">libMesh::LaplaceMeshSmoother::init()</a>, <a class="el" href="mesh__smoother__vsmoother_8C_source.html#l03994">libMesh::VariationalMeshSmoother::metr_data_gen()</a>, <a class="el" href="mesh__smoother__vsmoother_8C_source.html#l00269">libMesh::VariationalMeshSmoother::readgr()</a>, <a class="el" href="mesh__smoother__laplace_8C_source.html#l00046">libMesh::LaplaceMeshSmoother::smooth()</a>, <a class="el" href="mesh__smoother__vsmoother_8C_source.html#l00126">libMesh::VariationalMeshSmoother::smooth()</a> , 以及 <a class="el" href="mesh__smoother__vsmoother_8C_source.html#l00223">libMesh::VariationalMeshSmoother::writegr()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/mesh/<a class="el" href="mesh__smoother_8h_source.html">mesh_smoother.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:34 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

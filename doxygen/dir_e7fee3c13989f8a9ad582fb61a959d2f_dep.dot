@@ -1,0 +1,30 @@
+digraph "/home/lwz/libmesh/include" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_8cd6e838402b13ab6ef6597d22f852f8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="libmesh" fontname="Helvetica", fontsize="10", URL="dir_8cd6e838402b13ab6ef6597d22f852f8.html"]
+  subgraph clusterdir_e7fee3c13989f8a9ad582fb61a959d2f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e7fee3c13989f8a9ad582fb61a959d2f.html"];
+    dir_e7fee3c13989f8a9ad582fb61a959d2f [shape=plaintext label="include"];
+    dir_1ae07b608d825b42a1c0038f6919e609 [shape=box label="base" color="black" fillcolor="white" style="filled" URL="dir_1ae07b608d825b42a1c0038f6919e609.html"];
+    dir_34eace15298ed33bedee5149a2b898f4 [shape=box label="enums" color="black" fillcolor="white" style="filled" URL="dir_34eace15298ed33bedee5149a2b898f4.html"];
+    dir_26308611f6674542fec5714ccc091e4c [shape=box label="error_estimation" color="black" fillcolor="white" style="filled" URL="dir_26308611f6674542fec5714ccc091e4c.html"];
+    dir_58da79ef8a9e79550905c1d069c57b3e [shape=box label="fe" color="black" fillcolor="white" style="filled" URL="dir_58da79ef8a9e79550905c1d069c57b3e.html"];
+    dir_7b25fee8b20e5ff305ecfa5c6e931be7 [shape=box label="geom" color="black" fillcolor="white" style="filled" URL="dir_7b25fee8b20e5ff305ecfa5c6e931be7.html"];
+    dir_e0759977b1f747978daf206a368d614c [shape=box label="ghosting" color="black" fillcolor="white" style="filled" URL="dir_e0759977b1f747978daf206a368d614c.html"];
+    dir_f8c4e882537aef67e047d37e5f9a7fb2 [shape=box label="mesh" color="black" fillcolor="white" style="filled" URL="dir_f8c4e882537aef67e047d37e5f9a7fb2.html"];
+    dir_357a67fc9dc4db1f32b86febdbc96de7 [shape=box label="numerics" color="black" fillcolor="white" style="filled" URL="dir_357a67fc9dc4db1f32b86febdbc96de7.html"];
+    dir_5f8d9802b4663096de23d3157005eba8 [shape=box label="parallel" color="black" fillcolor="white" style="filled" URL="dir_5f8d9802b4663096de23d3157005eba8.html"];
+    dir_3412dde752b3888204038c627a05fb4e [shape=box label="partitioning" color="black" fillcolor="white" style="filled" URL="dir_3412dde752b3888204038c627a05fb4e.html"];
+    dir_8e2e0ba114d4268a3fa5c5bb6b7bf5ea [shape=box label="physics" color="black" fillcolor="white" style="filled" URL="dir_8e2e0ba114d4268a3fa5c5bb6b7bf5ea.html"];
+    dir_35689ca527035c8cc4325f4f3e1225b1 [shape=box label="quadrature" color="black" fillcolor="white" style="filled" URL="dir_35689ca527035c8cc4325f4f3e1225b1.html"];
+    dir_83822dcf4f1c69c9ebf37d98e6e1ad22 [shape=box label="reduced_basis" color="black" fillcolor="white" style="filled" URL="dir_83822dcf4f1c69c9ebf37d98e6e1ad22.html"];
+    dir_f446c2e574d7c8325236a8ce28189db0 [shape=box label="solution_transfer" color="black" fillcolor="white" style="filled" URL="dir_f446c2e574d7c8325236a8ce28189db0.html"];
+    dir_d45ce12a4fd6845d30540ba69d2ec3cd [shape=box label="solvers" color="black" fillcolor="white" style="filled" URL="dir_d45ce12a4fd6845d30540ba69d2ec3cd.html"];
+    dir_db5ab631c76ff4a7c063bc29cb45bd0f [shape=box label="systems" color="black" fillcolor="white" style="filled" URL="dir_db5ab631c76ff4a7c063bc29cb45bd0f.html"];
+    dir_1afa64be18362610aaecbaacf45d8a5e [shape=box label="timpi_shims" color="black" fillcolor="white" style="filled" URL="dir_1afa64be18362610aaecbaacf45d8a5e.html"];
+    dir_50dcd1e72a70d5a99d79ef31f30e9fad [shape=box label="utils" color="black" fillcolor="white" style="filled" URL="dir_50dcd1e72a70d5a99d79ef31f30e9fad.html"];
+  }
+  }
+}

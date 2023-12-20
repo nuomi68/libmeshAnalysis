@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/solvers/solution_history.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_d45ce12a4fd6845d30540ba69d2ec3cd.html">solvers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">solution_history.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="solution__history_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef LIBMESH_SOLUTION_HISTORY_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_SOLUTION_HISTORY_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// Local Includes</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;libmesh/system.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;libmesh/history_data.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SolutionHistory.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1SolutionHistory.html">SolutionHistory</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SolutionHistory.html#ab9e69d128b69cd8b851da5052df19d54">   47</a></span>&#160;  <a class="code" href="classlibMesh_1_1SolutionHistory.html#ab9e69d128b69cd8b851da5052df19d54">SolutionHistory</a>() : <a class="code" href="classlibMesh_1_1SolutionHistory.html#abfeb351c874dbbbfaeccfa61f020da31">overwrite_previously_stored</a>(false),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;   <a class="code" href="classlibMesh_1_1SolutionHistory.html#aed9dbdb19450c0dbd427e3b268676c6b">stored_datum</a>(<a class="code" href="classlibMesh_1_1SolutionHistory.html#a2894ab12c77ea48138f95e700d81b365">stored_data</a>.end()) {}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SolutionHistory.html#af65799662c37a7b119d88558992b67e2">   53</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1SolutionHistory.html#af65799662c37a7b119d88558992b67e2">~SolutionHistory</a> () {}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1SolutionHistory.html#a735d2991377eecd4dd435df6fb8a77e5">store</a>(<span class="keywordtype">bool</span> is_adjoint_solve, <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time) = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1SolutionHistory.html#ae633611933f0e88dccae0f2237718009">retrieve</a>(<span class="keywordtype">bool</span> is_adjoint_solve, <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time) = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1SolutionHistory.html#aa4df24de0661530934d73e7f259179de">erase</a>(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;SolutionHistory &gt; <a class="code" href="classlibMesh_1_1SolutionHistory.html#a56c2b2b68df7379081d634855286389f">clone</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SolutionHistory.html#a3f02de6d5002d58f035a02e2d80e4724">   80</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1SolutionHistory.html#a3f02de6d5002d58f035a02e2d80e4724">set_overwrite_previously_stored</a> (<span class="keywordtype">bool</span> val)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  { <a class="code" href="classlibMesh_1_1SolutionHistory.html#abfeb351c874dbbbfaeccfa61f020da31">overwrite_previously_stored</a> = val; }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">// Flag to specify whether we want to overwrite previously stored</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="comment">// vectors at a given time or not</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SolutionHistory.html#abfeb351c874dbbbfaeccfa61f020da31">   87</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1SolutionHistory.html#abfeb351c874dbbbfaeccfa61f020da31">overwrite_previously_stored</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// The abstract data structure that indexes and stores history data</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="comment">// Any type of history, solution, mesh or any future type will use</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">// a realization of this map to store history information. This way,</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// we avoid multiple histories scatterred across the code.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SolutionHistory.html#ad62c111db39263076521e1542c2670be">   93</a></span>&#160;  <span class="keyword">typedef</span> std::map&lt;Real, std::unique_ptr&lt;HistoryData&gt;&gt; <a class="code" href="classlibMesh_1_1SolutionHistory.html#ad62c111db39263076521e1542c2670be">map_type</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SolutionHistory.html#a2894ab12c77ea48138f95e700d81b365">   94</a></span>&#160;  <a class="code" href="classlibMesh_1_1SolutionHistory.html#ad62c111db39263076521e1542c2670be">map_type</a> <a class="code" href="classlibMesh_1_1SolutionHistory.html#a2894ab12c77ea48138f95e700d81b365">stored_data</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SolutionHistory.html#a823cca663448ecc82f2a47546b973652">   95</a></span>&#160;  <span class="keyword">typedef</span> map_type::iterator <a class="code" href="classlibMesh_1_1SolutionHistory.html#a823cca663448ecc82f2a47546b973652">stored_data_iterator</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SolutionHistory.html#aed9dbdb19450c0dbd427e3b268676c6b">   96</a></span>&#160;  <a class="code" href="classlibMesh_1_1SolutionHistory.html#a823cca663448ecc82f2a47546b973652">stored_data_iterator</a> <a class="code" href="classlibMesh_1_1SolutionHistory.html#aed9dbdb19450c0dbd427e3b268676c6b">stored_datum</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// Function to locate entries at a given time</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// Behaviour depends on whether we are calling this function</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// while storing or retrieving/erasing entries.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// While storing, if no entry in our map matches our time key,</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// we will create a new entry in the map. If we are not storing,</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">// not matching a given time key implies an error.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1SolutionHistory.html#a0a3f33b7c84c0f8e11a1003ad26bae9a">find_stored_entry</a>(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time, <span class="keywordtype">bool</span> storing = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} <span class="comment">// end namespace libMesh</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif // LIBMESH_SOLUTION_HISTORY_H</span></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_a3f02de6d5002d58f035a02e2d80e4724"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#a3f02de6d5002d58f035a02e2d80e4724">libMesh::SolutionHistory::set_overwrite_previously_stored</a></div><div class="ttdeci">void set_overwrite_previously_stored(bool val)</div><div class="ttdoc">Turn on overwrite_previously_stored to overwrite any already-saved data encountered during subsequent...</div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8h_source.html#l00080">solution_history.h:80</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_ab9e69d128b69cd8b851da5052df19d54"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#ab9e69d128b69cd8b851da5052df19d54">libMesh::SolutionHistory::SolutionHistory</a></div><div class="ttdeci">SolutionHistory()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8h_source.html#l00047">solution_history.h:47</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_ae633611933f0e88dccae0f2237718009"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#ae633611933f0e88dccae0f2237718009">libMesh::SolutionHistory::retrieve</a></div><div class="ttdeci">virtual void retrieve(bool is_adjoint_solve, Real time)=0</div><div class="ttdoc">Function to retrieve a solution, pure virtual. </div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_af65799662c37a7b119d88558992b67e2"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#af65799662c37a7b119d88558992b67e2">libMesh::SolutionHistory::~SolutionHistory</a></div><div class="ttdeci">virtual ~SolutionHistory()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8h_source.html#l00053">solution_history.h:53</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_a56c2b2b68df7379081d634855286389f"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#a56c2b2b68df7379081d634855286389f">libMesh::SolutionHistory::clone</a></div><div class="ttdeci">virtual std::unique_ptr&lt; SolutionHistory &gt; clone() const =0</div><div class="ttdoc">Cloning function for a std::unique_ptr, pure virtual, used in the setter function in time_solver...</div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html">libMesh::SolutionHistory</a></div><div class="ttdoc">A SolutionHistory class that enables the storage and retrieval of timesteps and (in the future) adapt...</div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8h_source.html#l00040">solution_history.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_aa4df24de0661530934d73e7f259179de"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#aa4df24de0661530934d73e7f259179de">libMesh::SolutionHistory::erase</a></div><div class="ttdeci">void erase(Real time)</div><div class="ttdoc">Erase stored_data entry at time. </div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8C_source.html#l00095">solution_history.C:95</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_a2894ab12c77ea48138f95e700d81b365"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#a2894ab12c77ea48138f95e700d81b365">libMesh::SolutionHistory::stored_data</a></div><div class="ttdeci">map_type stored_data</div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8h_source.html#l00094">solution_history.h:94</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_a823cca663448ecc82f2a47546b973652"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#a823cca663448ecc82f2a47546b973652">libMesh::SolutionHistory::stored_data_iterator</a></div><div class="ttdeci">map_type::iterator stored_data_iterator</div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8h_source.html#l00095">solution_history.h:95</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_aed9dbdb19450c0dbd427e3b268676c6b"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#aed9dbdb19450c0dbd427e3b268676c6b">libMesh::SolutionHistory::stored_datum</a></div><div class="ttdeci">stored_data_iterator stored_datum</div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8h_source.html#l00096">solution_history.h:96</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_abfeb351c874dbbbfaeccfa61f020da31"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#abfeb351c874dbbbfaeccfa61f020da31">libMesh::SolutionHistory::overwrite_previously_stored</a></div><div class="ttdeci">bool overwrite_previously_stored</div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8h_source.html#l00087">solution_history.h:87</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_ad62c111db39263076521e1542c2670be"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#ad62c111db39263076521e1542c2670be">libMesh::SolutionHistory::map_type</a></div><div class="ttdeci">std::map&lt; Real, std::unique_ptr&lt; HistoryData &gt; &gt; map_type</div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8h_source.html#l00093">solution_history.h:93</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_a735d2991377eecd4dd435df6fb8a77e5"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#a735d2991377eecd4dd435df6fb8a77e5">libMesh::SolutionHistory::store</a></div><div class="ttdeci">virtual void store(bool is_adjoint_solve, Real time)=0</div><div class="ttdoc">Function to store a solution, pure virtual. </div></div>
+<div class="ttc" id="classlibMesh_1_1SolutionHistory_html_a0a3f33b7c84c0f8e11a1003ad26bae9a"><div class="ttname"><a href="classlibMesh_1_1SolutionHistory.html#a0a3f33b7c84c0f8e11a1003ad26bae9a">libMesh::SolutionHistory::find_stored_entry</a></div><div class="ttdeci">void find_stored_entry(Real time, bool storing=false)</div><div class="ttdef"><b>Definition:</b> <a href="solution__history_8C_source.html#l00027">solution_history.C:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

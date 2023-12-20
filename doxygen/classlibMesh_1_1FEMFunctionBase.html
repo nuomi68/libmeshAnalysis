@@ -1,0 +1,652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::FEMFunctionBase&lt; Output &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classlibMesh_1_1FEMFunctionBase-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::FEMFunctionBase&lt; Output &gt; 模板类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>FEMFunctionBase是一个基类，用户可以从中派生出“函数样式”的对象，以在FEMSystem中使用。  
+ <a href="classlibMesh_1_1FEMFunctionBase.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::FEMFunctionBase&lt; Output &gt; 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a135882c955413b62d3634ca95ef8db3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#a135882c955413b62d3634ca95ef8db3a">FEMFunctionBase</a> (<a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:a135882c955413b62d3634ca95ef8db3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">这5个特殊函数可以为这个类设置默认值。  <a href="#a135882c955413b62d3634ca95ef8db3a">更多...</a><br/></td></tr>
+<tr class="separator:a135882c955413b62d3634ca95ef8db3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297e6e1563b8d98c23162931b064fd6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#a297e6e1563b8d98c23162931b064fd6c">FEMFunctionBase</a> (const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a> &amp;)=default</td></tr>
+<tr class="separator:a297e6e1563b8d98c23162931b064fd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e7c286274a11e324b9c40110e57a7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#a73e7c286274a11e324b9c40110e57a7f">operator=</a> (const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a> &amp;)=default</td></tr>
+<tr class="separator:a73e7c286274a11e324b9c40110e57a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07923665c6a7e1180e4bcc4f2bc1da49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#a07923665c6a7e1180e4bcc4f2bc1da49">operator=</a> (<a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a07923665c6a7e1180e4bcc4f2bc1da49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0acbd332d665a4166517f882d64a97"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#a9f0acbd332d665a4166517f882d64a97">~FEMFunctionBase</a> ()=default</td></tr>
+<tr class="separator:a9f0acbd332d665a4166517f882d64a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755ede0c73871ab3082697220f06a9ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#a755ede0c73871ab3082697220f06a9ad">init_context</a> (const <a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp;)</td></tr>
+<tr class="memdesc:a755ede0c73871ab3082697220f06a9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">准备上下文对象以供使用。  <a href="#a755ede0c73871ab3082697220f06a9ad">更多...</a><br/></td></tr>
+<tr class="separator:a755ede0c73871ab3082697220f06a9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c126c89459dd3bc502b22a24164b4e5"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; Output &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#a6c126c89459dd3bc502b22a24164b4e5">clone</a> () const =0</td></tr>
+<tr class="memdesc:a6c126c89459dd3bc502b22a24164b4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建并返回函数的新副本。  <a href="#a6c126c89459dd3bc502b22a24164b4e5">更多...</a><br/></td></tr>
+<tr class="separator:a6c126c89459dd3bc502b22a24164b4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8af02df444c85ebc35f14b0e48a9881"><td class="memItemLeft" align="right" valign="top">virtual Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#aa8af02df444c85ebc35f14b0e48a9881">operator()</a> (const <a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp;, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time=0.)=0</td></tr>
+<tr class="memdesc:aa8af02df444c85ebc35f14b0e48a9881"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算坐标p和时间time（默认为0）处的标量函数值。  <a href="#aa8af02df444c85ebc35f14b0e48a9881">更多...</a><br/></td></tr>
+<tr class="separator:aa8af02df444c85ebc35f14b0e48a9881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac727c4877388a4dde3a8afb7ec277ed7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#ac727c4877388a4dde3a8afb7ec277ed7">operator()</a> (const <a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp;, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p, <a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; Output &gt; &amp;output)</td></tr>
+<tr class="memdesc:ac727c4877388a4dde3a8afb7ec277ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算时间无关的向量值函数的评估函数。将输出值设置在传入的output DenseVector中。  <a href="#ac727c4877388a4dde3a8afb7ec277ed7">更多...</a><br/></td></tr>
+<tr class="separator:ac727c4877388a4dde3a8afb7ec277ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f447139d476bca461b64feebc3b695"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#ab7f447139d476bca461b64feebc3b695">operator()</a> (const <a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp;, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time, <a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; Output &gt; &amp;output)=0</td></tr>
+<tr class="memdesc:ab7f447139d476bca461b64feebc3b695"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算时间相关的向量值函数的评估函数。将输出值设置在传入的output DenseVector中。  <a href="#ab7f447139d476bca461b64feebc3b695">更多...</a><br/></td></tr>
+<tr class="separator:ab7f447139d476bca461b64feebc3b695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade48b862ec4bc7a787824598205f0ef3"><td class="memItemLeft" align="right" valign="top">virtual Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#ade48b862ec4bc7a787824598205f0ef3">component</a> (const <a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp;, unsigned int i, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time=0.)</td></tr>
+<tr class="memdesc:ade48b862ec4bc7a787824598205f0ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回坐标p和时间time的向量分量i。  <a href="#ade48b862ec4bc7a787824598205f0ef3">更多...</a><br/></td></tr>
+<tr class="separator:ade48b862ec4bc7a787824598205f0ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a7749905d890d5e6e16a26805969b398c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html#a7749905d890d5e6e16a26805969b398c">FEMFunctionBase</a> ()=default</td></tr>
+<tr class="memdesc:a7749905d890d5e6e16a26805969b398c"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数。  <a href="#a7749905d890d5e6e16a26805969b398c">更多...</a><br/></td></tr>
+<tr class="separator:a7749905d890d5e6e16a26805969b398c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename Output&gt;<br/>
+class libMesh::FEMFunctionBase&lt; Output &gt;</h3>
+
+<p>FEMFunctionBase是一个基类，用户可以从中派生出“函数样式”的对象，以在FEMSystem中使用。 </p>
+<dl class="section author"><dt>作者</dt><dd>Roy Stogner </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2012</dd></dl>
+<p>FEMFunctionBase类用于定义可以在FEMSystem中使用的“函数样式”对象。它提供了用于计算标量和向量值函数的接口。 </p>
+
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00043">43</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a7749905d890d5e6e16a26805969b398c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::<a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>默认构造函数。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a135882c955413b62d3634ca95ef8db3a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::<a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; Output &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这5个特殊函数可以为这个类设置默认值。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a297e6e1563b8d98c23162931b064fd6c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::<a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; Output &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9f0acbd332d665a4166517f882d64a97"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::~<a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a6c126c89459dd3bc502b22a24164b4e5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt;Output&gt; &gt; <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建并返回函数的新副本。 </p>
+<p>新副本应该足够“深”，以允许在不同线程中独立销毁和同时评估副本。</p>
+<dl class="section return"><dt>返回</dt><dd>返回函数的新副本。 </dd></dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1CompositeFEMFunction.html#aa4affb0cf14fcc0c5ae9d2b28de6136b">libMesh::CompositeFEMFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a7608b5784c00d0951b8dcbf74ab1d9e6">libMesh::ParsedFEMFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a7608b5784c00d0951b8dcbf74ab1d9e6">libMesh::ParsedFEMFunction&lt; T &gt;</a>, <a class="el" href="classlibMesh_1_1WrappedFunctor.html#ad68832ec39e74bff3e8b5a6d41364e2c">libMesh::WrappedFunctor&lt; Output &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1ConstFEMFunction.html#a3ad088b31db3f87e608d4fa7075b94fb">libMesh::ConstFEMFunction&lt; Output &gt;</a> 内被实现.</p>
+
+<p>参考自 <a class="el" href="composite__fem__function_8h_source.html#l00077">libMesh::CompositeFEMFunction&lt; Output &gt;::attach_subfunction()</a> , 以及 <a class="el" href="dirichlet__boundary_8C_source.html#l00127">libMesh::DirichletBoundary::DirichletBoundary()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade48b862ec4bc7a787824598205f0ef3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Output <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::component </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>time</em> = <code>0.</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回坐标p和时间time的向量分量i。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>FEM上下文对象。 </td></tr>
+    <tr><td class="paramname">i</td><td>向量的分量索引。 </td></tr>
+    <tr><td class="paramname">p</td><td>坐标点。 </td></tr>
+    <tr><td class="paramname">time</td><td>时间。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回向量的指定分量值。</dd></dl>
+<p>注意：子类不需要重写此函数，因为默认实现基于完整向量评估，通常是正确的。 注意：建议子类重写此函数，因为默认实现基于向量评估，通常是不必要的低效的。 </p>
+
+<p>被 <a class="el" href="classlibMesh_1_1CompositeFEMFunction.html#af2a0f15b3d871eadb531bdb37ca4a19d">libMesh::CompositeFEMFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#ac3a8152002e712b28362f9f6edbb1d3d">libMesh::ParsedFEMFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#ac3a8152002e712b28362f9f6edbb1d3d">libMesh::ParsedFEMFunction&lt; T &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1WrappedFunctor.html#a66978e55021518049466e5bb48112f4c">libMesh::WrappedFunctor&lt; Output &gt;</a> 重载.</p>
+
+<p>在文件 <a class="el" href="fem__function__base_8h_source.html">fem_function_base.h</a> 第 <a class="el" href="fem__function__base_8h_source.html#l00141">141</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="system__projection_8C_source.html#l01099">libMesh::System::project_vector()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  DenseVector&lt;Output&gt; outvec(i+1);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  (*this)(context, p, time, outvec);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">return</span> outvec(i);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a755ede0c73871ab3082697220f06a9ad"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::init_context </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>准备上下文对象以供使用。 </p>
+<p>大多数问题将希望出于效率的考虑重新实现此函数，以便根据其特定的函数要求调用FE::get_*()。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>FEM上下文对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>被 <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a9a260f7b7b5591492e2d8bb161a11dbd">libMesh::ParsedFEMFunction&lt; Output &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a9a260f7b7b5591492e2d8bb161a11dbd">libMesh::ParsedFEMFunction&lt; T &gt;</a> 重载.</p>
+
+<p>在文件 <a class="el" href="fem__function__base_8h_source.html">fem_function_base.h</a> 第 <a class="el" href="fem__function__base_8h_source.html#l00070">70</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa8af02df444c85ebc35f14b0e48a9881"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Output <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>time</em> = <code>0.</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算坐标p和时间time（默认为0）处的标量函数值。 </p>
+<p>这是一个纯虚函数，因此您必须重写它。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>FEM上下文对象。 </td></tr>
+    <tr><td class="paramname">p</td><td>坐标点。 </td></tr>
+    <tr><td class="paramname">time</td><td>时间。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回计算结果的标量值。 </dd></dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a1a0aa4f642f1b479f91408cbed7dafad">libMesh::ParsedFEMFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a1a0aa4f642f1b479f91408cbed7dafad">libMesh::ParsedFEMFunction&lt; T &gt;</a>, <a class="el" href="classlibMesh_1_1CompositeFEMFunction.html#a245a302a5efcd567f3a67a217cf835a9">libMesh::CompositeFEMFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1WrappedFunctor.html#aa993794bc72478f1e92e973bfb1a3671">libMesh::WrappedFunctor&lt; Output &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1ConstFEMFunction.html#a1320ba65963f2b16340dafbb0b2d47f5">libMesh::ConstFEMFunction&lt; Output &gt;</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac727c4877388a4dde3a8afb7ec277ed7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; Output &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算时间无关的向量值函数的评估函数。将输出值设置在传入的output DenseVector中。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>FEM上下文对象。 </td></tr>
+    <tr><td class="paramname">p</td><td>坐标点。 </td></tr>
+    <tr><td class="paramname">output</td><td>输出的向量。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="fem__function__base_8h_source.html">fem_function_base.h</a> 第 <a class="el" href="fem__function__base_8h_source.html#l00153">153</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="comment">// 调用时间相关的函数，t=0。</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1FEMFunctionBase.html#aa8af02df444c85ebc35f14b0e48a9881">operator()</a>(context, p, 0., output);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1FEMFunctionBase_html_aa8af02df444c85ebc35f14b0e48a9881"><div class="ttname"><a href="classlibMesh_1_1FEMFunctionBase.html#aa8af02df444c85ebc35f14b0e48a9881">libMesh::FEMFunctionBase::operator()</a></div><div class="ttdeci">virtual Output operator()(const FEMContext &amp;, const Point &amp;p, const Real time=0.)=0</div><div class="ttdoc">计算坐标p和时间time（默认为0）处的标量函数值。 </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab7f447139d476bca461b64feebc3b695"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; Output &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算时间相关的向量值函数的评估函数。将输出值设置在传入的output DenseVector中。 </p>
+<p>这是一个纯虚函数，因此您必须重写它。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>FEM上下文对象。 </td></tr>
+    <tr><td class="paramname">p</td><td>坐标点。 </td></tr>
+    <tr><td class="paramname">time</td><td>时间。 </td></tr>
+    <tr><td class="paramname">output</td><td>输出的向量。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a79642b61c59b38724c5804c1df91eea0">libMesh::ParsedFEMFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1CompositeFEMFunction.html#ae28cf5a7c69a06c8f1ba6e16df90a46c">libMesh::CompositeFEMFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1WrappedFunctor.html#ab8a788f4feb4e5e9def10689ab4c24b5">libMesh::WrappedFunctor&lt; Output &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1ConstFEMFunction.html#a62121e961b2847cb3f6ce6e76289bb3f">libMesh::ConstFEMFunction&lt; Output &gt;</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a73e7c286274a11e324b9c40110e57a7f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&amp; <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; Output &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a07923665c6a7e1180e4bcc4f2bc1da49"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Output&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&amp; <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">libMesh::FEMFunctionBase</a>&lt; Output &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; Output &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/base/<a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a></li>
+<li>/home/lwz/libmesh/include/numerics/<a class="el" href="fem__function__base_8h_source.html">fem_function_base.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:07 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

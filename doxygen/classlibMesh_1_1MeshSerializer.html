@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::MeshSerializer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1MeshSerializer.html">MeshSerializer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classlibMesh_1_1MeshSerializer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::MeshSerializer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Temporarily serialize a <a class="el" href="classlibMesh_1_1DistributedMesh.html" title="The DistributedMesh class is derived from the MeshBase class, and is intended to provide identical fu...">DistributedMesh</a> for non-distributed-mesh capable code paths.  
+ <a href="classlibMesh_1_1MeshSerializer.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mesh__serializer_8h_source.html">mesh_serializer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a387e76e27a43e7186e5f9a5b8e16907e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1MeshSerializer.html#a387e76e27a43e7186e5f9a5b8e16907e">MeshSerializer</a> (<a class="el" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp;<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>, bool need_serial=true, bool serial_only_needed_on_proc_0=false)</td></tr>
+<tr class="separator:a387e76e27a43e7186e5f9a5b8e16907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc18706a7eceffc385c402ce93e6fe5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1MeshSerializer.html#aafc18706a7eceffc385c402ce93e6fe5">~MeshSerializer</a> ()</td></tr>
+<tr class="separator:aafc18706a7eceffc385c402ce93e6fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a506c571aa9c1c7b98ebfe8d05bbe5683"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">_mesh</a></td></tr>
+<tr class="separator:a506c571aa9c1c7b98ebfe8d05bbe5683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9227d94b75787bbedfa838b2efc73ff7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1MeshSerializer.html#a9227d94b75787bbedfa838b2efc73ff7">reparallelize</a></td></tr>
+<tr class="separator:a9227d94b75787bbedfa838b2efc73ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423483bcb5c316b1bc858868bc7376ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1MeshSerializer.html#a423483bcb5c316b1bc858868bc7376ac">resume_allow_remote_element_removal</a></td></tr>
+<tr class="separator:a423483bcb5c316b1bc858868bc7376ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Temporarily serialize a <a class="el" href="classlibMesh_1_1DistributedMesh.html" title="The DistributedMesh class is derived from the MeshBase class, and is intended to provide identical fu...">DistributedMesh</a> for non-distributed-mesh capable code paths. </p>
+<p>A distributed mesh is allgathered by the <a class="el" href="classlibMesh_1_1MeshSerializer.html" title="Temporarily serialize a DistributedMesh for non-distributed-mesh capable code paths. ">MeshSerializer</a> constructor if need_serial is true, in which case remote elements are deleted again by the destructor.</p>
+<p>Serialization to processor 0 alone (e.g. for serial output from that processor) can be selected in the constructor.</p>
+<p>If allow_remote_element_removal() is set to true, that will also be temporarily disabled by the serializer, to be reenabled after serializer destruction if so; this allows prepare_for_use() to be called safely from within serialized code.</p>
+<p>If a mesh is explicitly distributed by a <code>delete_remote_elements()</code> call within serialized code, or if allow_remote_element_removal() is explicitly set to true within serialized code, the behavior is undefined.</p>
+<dl class="section author"><dt>作者</dt><dd>Roy Stogner </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2011-2022 Temporarily serializes a <a class="el" href="classlibMesh_1_1DistributedMesh.html" title="The DistributedMesh class is derived from the MeshBase class, and is intended to provide identical fu...">DistributedMesh</a> for output. </dd></dl>
+
+<p>在文件 <a class="el" href="mesh__serializer_8h_source.html">mesh_serializer.h</a> 第 <a class="el" href="mesh__serializer_8h_source.html#l00055">55</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a387e76e27a43e7186e5f9a5b8e16907e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::MeshSerializer::MeshSerializer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>need_serial</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>serial_only_needed_on_proc_0</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="mesh__serializer_8C_source.html">mesh_serializer.C</a> 第 <a class="el" href="mesh__serializer_8C_source.html#l00027">27</a> 行定义.</p>
+
+<p>参考 <a class="el" href="mesh__serializer_8h_source.html#l00067">_mesh</a>, <a class="el" href="mesh__base_8h_source.html#l00230">libMesh::MeshBase::allgather()</a>, <a class="el" href="mesh__base_8h_source.html#l01185">libMesh::MeshBase::allow_remote_element_removal()</a>, <a class="el" href="parallel__object_8h_source.html#l00097">libMesh::ParallelObject::comm()</a>, <a class="el" href="mesh__base_8h_source.html#l00236">libMesh::MeshBase::gather_to_zero()</a>, <a class="el" href="mesh__base_8h_source.html#l00201">libMesh::MeshBase::is_serial()</a>, <a class="el" href="mesh__serializer_8h_source.html#l00073">reparallelize</a> , 以及 <a class="el" href="mesh__serializer_8h_source.html#l00080">resume_allow_remote_element_removal</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                                                                   :</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">_mesh</a>(<a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="classlibMesh_1_1MeshSerializer.html#a9227d94b75787bbedfa838b2efc73ff7">reparallelize</a>(<span class="keyword">false</span>),</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="classlibMesh_1_1MeshSerializer.html#a423483bcb5c316b1bc858868bc7376ac">resume_allow_remote_element_removal</a>(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  libmesh_parallel_only(<a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>.comm());</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordflow">if</span> (need_serial &amp;&amp; !<a class="code" href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">_mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a3c7d22fed3feea4c9ebd1fb41e7dbb4f">is_serial</a>() &amp;&amp; !serial_only_needed_on_proc_0) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classlibMesh_1_1MeshSerializer.html#a9227d94b75787bbedfa838b2efc73ff7">reparallelize</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">_mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a880cd0ce25794e2b0b200b1d6f6086be">allgather</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (need_serial &amp;&amp; !<a class="code" href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">_mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a3c7d22fed3feea4c9ebd1fb41e7dbb4f">is_serial</a>() &amp;&amp; serial_only_needed_on_proc_0) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Note: NOT reparallelizing on purpose.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// Just waste a bit of space on processor 0 to speed things up</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">_mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#acce66a386f830fd0209cb4784e89c61e">gather_to_zero</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">_mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a005d60012e980f1e3c983d13fcc288bd">allow_remote_element_removal</a>())</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="classlibMesh_1_1MeshSerializer.html#a423483bcb5c316b1bc858868bc7376ac">resume_allow_remote_element_removal</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <a class="code" href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">_mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a005d60012e980f1e3c983d13fcc288bd">allow_remote_element_removal</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_a3c7d22fed3feea4c9ebd1fb41e7dbb4f"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#a3c7d22fed3feea4c9ebd1fb41e7dbb4f">libMesh::MeshBase::is_serial</a></div><div class="ttdeci">virtual bool is_serial() const </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00201">mesh_base.h:201</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_a880cd0ce25794e2b0b200b1d6f6086be"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#a880cd0ce25794e2b0b200b1d6f6086be">libMesh::MeshBase::allgather</a></div><div class="ttdeci">virtual void allgather()</div><div class="ttdoc">Gathers all elements and nodes of the mesh onto every processor. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00230">mesh_base.h:230</a></div></div>
+<div class="ttc" id="mesh__communication_8C_html_afaa03b874c297f4693d9cdef7f50f3c6"><div class="ttname"><a href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__communication_8C_source.html#l01308">mesh_communication.C:1308</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_acce66a386f830fd0209cb4784e89c61e"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#acce66a386f830fd0209cb4784e89c61e">libMesh::MeshBase::gather_to_zero</a></div><div class="ttdeci">virtual void gather_to_zero()</div><div class="ttdoc">Gathers all elements and nodes of the mesh onto processor zero. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00236">mesh_base.h:236</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshSerializer_html_a506c571aa9c1c7b98ebfe8d05bbe5683"><div class="ttname"><a href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">libMesh::MeshSerializer::_mesh</a></div><div class="ttdeci">MeshBase &amp; _mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__serializer_8h_source.html#l00067">mesh_serializer.h:67</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshSerializer_html_a9227d94b75787bbedfa838b2efc73ff7"><div class="ttname"><a href="classlibMesh_1_1MeshSerializer.html#a9227d94b75787bbedfa838b2efc73ff7">libMesh::MeshSerializer::reparallelize</a></div><div class="ttdeci">bool reparallelize</div><div class="ttdef"><b>Definition:</b> <a href="mesh__serializer_8h_source.html#l00073">mesh_serializer.h:73</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_a005d60012e980f1e3c983d13fcc288bd"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#a005d60012e980f1e3c983d13fcc288bd">libMesh::MeshBase::allow_remote_element_removal</a></div><div class="ttdeci">void allow_remote_element_removal(bool allow)</div><div class="ttdoc">If false is passed in then this mesh will no longer have remote elements deleted when being prepared ...</div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l01185">mesh_base.h:1185</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshSerializer_html_a423483bcb5c316b1bc858868bc7376ac"><div class="ttname"><a href="classlibMesh_1_1MeshSerializer.html#a423483bcb5c316b1bc858868bc7376ac">libMesh::MeshSerializer::resume_allow_remote_element_removal</a></div><div class="ttdeci">bool resume_allow_remote_element_removal</div><div class="ttdef"><b>Definition:</b> <a href="mesh__serializer_8h_source.html#l00080">mesh_serializer.h:80</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aafc18706a7eceffc385c402ce93e6fe5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::MeshSerializer::~MeshSerializer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="mesh__serializer_8C_source.html">mesh_serializer.C</a> 第 <a class="el" href="mesh__serializer_8C_source.html#l00052">52</a> 行定义.</p>
+
+<p>参考 <a class="el" href="mesh__serializer_8h_source.html#l00067">_mesh</a>, <a class="el" href="mesh__base_8h_source.html#l01185">libMesh::MeshBase::allow_remote_element_removal()</a>, <a class="el" href="mesh__base_8h_source.html#l00243">libMesh::MeshBase::delete_remote_elements()</a>, <a class="el" href="mesh__serializer_8h_source.html#l00073">reparallelize</a> , 以及 <a class="el" href="mesh__serializer_8h_source.html#l00080">resume_allow_remote_element_removal</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1MeshSerializer.html#a9227d94b75787bbedfa838b2efc73ff7">reparallelize</a>)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">_mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a8d57ce79036999648936424bfbab715e">delete_remote_elements</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1MeshSerializer.html#a423483bcb5c316b1bc858868bc7376ac">resume_allow_remote_element_removal</a>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">_mesh</a>.<a class="code" href="classlibMesh_1_1MeshBase.html#a005d60012e980f1e3c983d13fcc288bd">allow_remote_element_removal</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1MeshSerializer_html_a506c571aa9c1c7b98ebfe8d05bbe5683"><div class="ttname"><a href="classlibMesh_1_1MeshSerializer.html#a506c571aa9c1c7b98ebfe8d05bbe5683">libMesh::MeshSerializer::_mesh</a></div><div class="ttdeci">MeshBase &amp; _mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__serializer_8h_source.html#l00067">mesh_serializer.h:67</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshSerializer_html_a9227d94b75787bbedfa838b2efc73ff7"><div class="ttname"><a href="classlibMesh_1_1MeshSerializer.html#a9227d94b75787bbedfa838b2efc73ff7">libMesh::MeshSerializer::reparallelize</a></div><div class="ttdeci">bool reparallelize</div><div class="ttdef"><b>Definition:</b> <a href="mesh__serializer_8h_source.html#l00073">mesh_serializer.h:73</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_a005d60012e980f1e3c983d13fcc288bd"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#a005d60012e980f1e3c983d13fcc288bd">libMesh::MeshBase::allow_remote_element_removal</a></div><div class="ttdeci">void allow_remote_element_removal(bool allow)</div><div class="ttdoc">If false is passed in then this mesh will no longer have remote elements deleted when being prepared ...</div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l01185">mesh_base.h:1185</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshSerializer_html_a423483bcb5c316b1bc858868bc7376ac"><div class="ttname"><a href="classlibMesh_1_1MeshSerializer.html#a423483bcb5c316b1bc858868bc7376ac">libMesh::MeshSerializer::resume_allow_remote_element_removal</a></div><div class="ttdeci">bool resume_allow_remote_element_removal</div><div class="ttdef"><b>Definition:</b> <a href="mesh__serializer_8h_source.html#l00080">mesh_serializer.h:80</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_a8d57ce79036999648936424bfbab715e"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#a8d57ce79036999648936424bfbab715e">libMesh::MeshBase::delete_remote_elements</a></div><div class="ttdeci">virtual void delete_remote_elements()</div><div class="ttdoc">When supported, deletes all nonlocal elements of the mesh except for &amp;quot;ghosts&amp;quot; which touch a local ele...</div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00243">mesh_base.h:243</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a506c571aa9c1c7b98ebfe8d05bbe5683"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1MeshBase.html">MeshBase</a>&amp; libMesh::MeshSerializer::_mesh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="mesh__serializer_8h_source.html">mesh_serializer.h</a> 第 <a class="el" href="mesh__serializer_8h_source.html#l00067">67</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="mesh__serializer_8C_source.html#l00027">MeshSerializer()</a> , 以及 <a class="el" href="mesh__serializer_8C_source.html#l00052">~MeshSerializer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9227d94b75787bbedfa838b2efc73ff7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::MeshSerializer::reparallelize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="mesh__serializer_8h_source.html">mesh_serializer.h</a> 第 <a class="el" href="mesh__serializer_8h_source.html#l00073">73</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="mesh__serializer_8C_source.html#l00027">MeshSerializer()</a> , 以及 <a class="el" href="mesh__serializer_8C_source.html#l00052">~MeshSerializer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a423483bcb5c316b1bc858868bc7376ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::MeshSerializer::resume_allow_remote_element_removal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="mesh__serializer_8h_source.html">mesh_serializer.h</a> 第 <a class="el" href="mesh__serializer_8h_source.html#l00080">80</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="mesh__serializer_8C_source.html#l00027">MeshSerializer()</a> , 以及 <a class="el" href="mesh__serializer_8C_source.html#l00052">~MeshSerializer()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/mesh/<a class="el" href="mesh__serializer_8h_source.html">mesh_serializer.h</a></li>
+<li>/home/lwz/libmesh/src/mesh/<a class="el" href="mesh__serializer_8C_source.html">mesh_serializer.C</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:34 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

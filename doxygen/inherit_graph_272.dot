@@ -1,0 +1,8 @@
+digraph "类继承关系图"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="libMesh::TensorTools\l::TensorTraits\< T, typename\l std::enable_if\< ScalarTraits\l\< T \>::value \>::type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlibMesh_1_1TensorTools_1_1TensorTraits_3_01T_00_01typename_01std_1_1enable__if_3_01ScalarT36143a26ed3e120e89a9b16f9793e4b0.html",tooltip="此模板特化表示对于标量类型，张量秩为0。 "];
+}

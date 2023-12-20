@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/utils/error_vector.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_50dcd1e72a70d5a99d79ef31f30e9fad.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">error_vector.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="error__vector_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_ERROR_VECTOR_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_ERROR_VECTOR_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Local Includes</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/statistics.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// Forward Declarations</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>MeshBase;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>Mesh;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classlibMesh_1_1ErrorVector.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1ErrorVector.html">ErrorVector</a> : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1StatisticsVector.html">StatisticsVector</a>&lt;ErrorVectorReal&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classlibMesh_1_1ErrorVector.html#a5d81d29787a1037ad542697aeb9f7ed2">   62</a></span>&#160;  <a class="code" href="classlibMesh_1_1ErrorVector.html#a5d81d29787a1037ad542697aeb9f7ed2">ErrorVector</a>(<a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> i=0, <a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> * <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a> = <span class="keyword">nullptr</span>) :</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classlibMesh_1_1StatisticsVector.html">StatisticsVector</a>&lt;<a class="code" href="namespacelibMesh.html#a26acf05f075521cbfb223db57e63d6d0">ErrorVectorReal</a>&gt; (i),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classlibMesh_1_1ErrorVector.html#a7471cc33c975107bda15c785bfc9c701">_mesh</a>(<a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classlibMesh_1_1ErrorVector.html#a7ca3abef36a063806c64ffda10ebe038">   75</a></span>&#160;  <a class="code" href="classlibMesh_1_1ErrorVector.html#a7ca3abef36a063806c64ffda10ebe038">ErrorVector</a>(<a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> i, <a class="code" href="namespacelibMesh.html#a26acf05f075521cbfb223db57e63d6d0">ErrorVectorReal</a> val) :</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classlibMesh_1_1StatisticsVector.html">StatisticsVector</a>&lt;<a class="code" href="namespacelibMesh.html#a26acf05f075521cbfb223db57e63d6d0">ErrorVectorReal</a>&gt; (i,val) {}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#a26acf05f075521cbfb223db57e63d6d0">ErrorVectorReal</a> <a class="code" href="classlibMesh_1_1ErrorVector.html#a34fceb45449626c88a7a03459874c875">minimum</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1ErrorVector.html#a2704a7cac5d29807d13b8886baefba58">mean</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1ErrorVector.html#a96f5c0db67c08e8659fa4e984f8f546b">median</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1ErrorVector.html#a96f5c0db67c08e8659fa4e984f8f546b">median</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classlibMesh_1_1ErrorVector.html#a0987e972302a29b9546c80dbb1e9ef2f">  115</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1ErrorVector.html#a0987e972302a29b9546c80dbb1e9ef2f">variance</a>()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">  </span>{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="classlibMesh_1_1ErrorVector.html#a0987e972302a29b9546c80dbb1e9ef2f">variance</a>(this-&gt;<a class="code" href="classlibMesh_1_1ErrorVector.html#a2704a7cac5d29807d13b8886baefba58">mean</a>()); }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1ErrorVector.html#a0987e972302a29b9546c80dbb1e9ef2f">variance</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1ErrorVector.html#a2704a7cac5d29807d13b8886baefba58">mean</a>) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keyword">virtual</span> std::vector&lt;dof_id_type&gt; <a class="code" href="classlibMesh_1_1ErrorVector.html#a6f6e2fd73f696e676498a3f1cd4fd7bc">cut_below</a>(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> cut) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keyword">virtual</span> std::vector&lt;dof_id_type&gt; <a class="code" href="classlibMesh_1_1ErrorVector.html#a345e1e0ede927470d2334b9ccd81d2db">cut_above</a>(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> cut) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1ErrorVector.html#af42a70293b724817dd9c282642eb354c">plot_error</a>(<span class="keyword">const</span> std::string &amp; filename,</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1ErrorVector.html#af962c71abab0067e8c04e92401e5f9dd">is_active_elem</a> (<a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classlibMesh_1_1ErrorVector.html#a7471cc33c975107bda15c785bfc9c701">  163</a></span>&#160;  <a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> * <a class="code" href="classlibMesh_1_1ErrorVector.html#a7471cc33c975107bda15c785bfc9c701">_mesh</a>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;};</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#endif // LIBMESH_ERROR_VECTOR_H</span></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_a7471cc33c975107bda15c785bfc9c701"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#a7471cc33c975107bda15c785bfc9c701">libMesh::ErrorVector::_mesh</a></div><div class="ttdeci">MeshBase * _mesh</div><div class="ttdoc">Pointer to the mesh, which may be used to decide which elements are active. </div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8h_source.html#l00163">error_vector.h:163</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html">libMesh::ErrorVector</a></div><div class="ttdoc">The ErrorVector is a specialization of the StatisticsVector for error data computed on a finite eleme...</div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8h_source.html#l00050">error_vector.h:50</a></div></div>
+<div class="ttc" id="mesh__communication_8C_html_afaa03b874c297f4693d9cdef7f50f3c6"><div class="ttname"><a href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__communication_8C_source.html#l01308">mesh_communication.C:1308</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_a0987e972302a29b9546c80dbb1e9ef2f"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#a0987e972302a29b9546c80dbb1e9ef2f">libMesh::ErrorVector::variance</a></div><div class="ttdeci">virtual Real variance() const override</div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8h_source.html#l00115">error_vector.h:115</a></div></div>
+<div class="ttc" id="classlibMesh_1_1StatisticsVector_html"><div class="ttname"><a href="classlibMesh_1_1StatisticsVector.html">libMesh::StatisticsVector</a></div><div class="ttdoc">The StatisticsVector class is derived from the std::vector&amp;lt;&amp;gt; and therefore has all of its useful feat...</div><div class="ttdef"><b>Definition:</b> <a href="statistics_8h_source.html#l00067">statistics.h:67</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a26acf05f075521cbfb223db57e63d6d0"><div class="ttname"><a href="namespacelibMesh.html#a26acf05f075521cbfb223db57e63d6d0">libMesh::ErrorVectorReal</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef float ErrorVectorReal</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00225">libmesh_common.h:225</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_a345e1e0ede927470d2334b9ccd81d2db"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#a345e1e0ede927470d2334b9ccd81d2db">libMesh::ErrorVector::cut_above</a></div><div class="ttdeci">virtual std::vector&lt; dof_id_type &gt; cut_above(Real cut) const override</div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8C_source.html#l00174">error_vector.C:174</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html">libMesh::MeshBase</a></div><div class="ttdoc">This is the MeshBase class. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00070">mesh_base.h:70</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_a96f5c0db67c08e8659fa4e984f8f546b"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#a96f5c0db67c08e8659fa4e984f8f546b">libMesh::ErrorVector::median</a></div><div class="ttdeci">virtual Real median() override</div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8C_source.html#l00092">error_vector.C:92</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_af42a70293b724817dd9c282642eb354c"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#af42a70293b724817dd9c282642eb354c">libMesh::ErrorVector::plot_error</a></div><div class="ttdeci">void plot_error(const std::string &amp;filename, const MeshBase &amp;mesh) const </div><div class="ttdoc">Plots a data file, of a type determined by looking at the file extension in filename, of the error values on the active elements of mesh. </div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8C_source.html#l00210">error_vector.C:210</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_a6f6e2fd73f696e676498a3f1cd4fd7bc"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#a6f6e2fd73f696e676498a3f1cd4fd7bc">libMesh::ErrorVector::cut_below</a></div><div class="ttdeci">virtual std::vector&lt; dof_id_type &gt; cut_below(Real cut) const override</div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8C_source.html#l00150">error_vector.C:150</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_a34fceb45449626c88a7a03459874c875"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#a34fceb45449626c88a7a03459874c875">libMesh::ErrorVector::minimum</a></div><div class="ttdeci">virtual ErrorVectorReal minimum() const override</div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8C_source.html#l00046">error_vector.C:46</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_af962c71abab0067e8c04e92401e5f9dd"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#af962c71abab0067e8c04e92401e5f9dd">libMesh::ErrorVector::is_active_elem</a></div><div class="ttdeci">bool is_active_elem(dof_id_type i) const </div><div class="ttdoc">Utility function to decide whether element i is active. </div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8C_source.html#l00197">error_vector.C:197</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_a5d81d29787a1037ad542697aeb9f7ed2"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#a5d81d29787a1037ad542697aeb9f7ed2">libMesh::ErrorVector::ErrorVector</a></div><div class="ttdeci">ErrorVector(dof_id_type i=0, MeshBase *mesh=nullptr)</div><div class="ttdoc">ErrorVector constructor; sets initial length to i. </div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8h_source.html#l00062">error_vector.h:62</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_a7ca3abef36a063806c64ffda10ebe038"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#a7ca3abef36a063806c64ffda10ebe038">libMesh::ErrorVector::ErrorVector</a></div><div class="ttdeci">ErrorVector(dof_id_type i, ErrorVectorReal val)</div><div class="ttdoc">ErrorVector constructor; sets initial length to i and initial values to val. </div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8h_source.html#l00075">error_vector.h:75</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ab4541d74809228310a715b11c40587fc"><div class="ttname"><a href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">libMesh::dof_id_type</a></div><div class="ttdeci">uint8_t dof_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00067">id_types.h:67</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorVector_html_a2704a7cac5d29807d13b8886baefba58"><div class="ttname"><a href="classlibMesh_1_1ErrorVector.html#a2704a7cac5d29807d13b8886baefba58">libMesh::ErrorVector::mean</a></div><div class="ttdeci">virtual Real mean() const override</div><div class="ttdef"><b>Definition:</b> <a href="error__vector_8C_source.html#l00069">error_vector.C:69</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

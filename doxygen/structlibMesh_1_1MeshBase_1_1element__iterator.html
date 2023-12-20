@@ -1,0 +1,692 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::MeshBase::element_iterator结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1MeshBase.html">MeshBase</a></li><li class="navelem"><a class="el" href="structlibMesh_1_1MeshBase_1_1element__iterator.html">element_iterator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structlibMesh_1_1MeshBase_1_1element__iterator-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::MeshBase::element_iterator结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The definition of the <a class="el" href="structlibMesh_1_1MeshBase_1_1element__iterator.html" title="The definition of the element_iterator struct. ">element_iterator</a> struct.  
+ <a href="structlibMesh_1_1MeshBase_1_1element__iterator.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mesh__base_8h_source.html">mesh_base.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::MeshBase::element_iterator 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aa3b35d0115662b7426f2a52769e9aede"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#aa3b35d0115662b7426f2a52769e9aede">iterator_category</a> = std::forward_iterator_tag</td></tr>
+<tr class="separator:aa3b35d0115662b7426f2a52769e9aede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24fbe681ba6cfefff5635a29067fc30c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a24fbe681ba6cfefff5635a29067fc30c">value_type</a> = Type</td></tr>
+<tr class="separator:a24fbe681ba6cfefff5635a29067fc30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad434f2f2eca08463e7b3862454d8815c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#ad434f2f2eca08463e7b3862454d8815c">difference_type</a> = std::ptrdiff_t</td></tr>
+<tr class="separator:ad434f2f2eca08463e7b3862454d8815c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7474e2260d6b1bd7599b6988c75987a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a7474e2260d6b1bd7599b6988c75987a3">pointer</a> = PointerType</td></tr>
+<tr class="separator:a7474e2260d6b1bd7599b6988c75987a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91af1087a1935db1c8402fefce96e33f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a91af1087a1935db1c8402fefce96e33f">reference</a> = ReferenceType</td></tr>
+<tr class="separator:a91af1087a1935db1c8402fefce96e33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018bfabf7987ba7dbc4e1181054d4143"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a><br class="typebreak"/>
+&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, <br class="typebreak"/>
+ReferenceType, PointerType, <br class="typebreak"/>
+ConstType, ConstReferenceType, <br class="typebreak"/>
+ConstPointerType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a></td></tr>
+<tr class="memdesc:a018bfabf7987ba7dbc4e1181054d4143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut name for the fully-qualified typename.  <a href="#a018bfabf7987ba7dbc4e1181054d4143">更多...</a><br/></td></tr>
+<tr class="separator:a018bfabf7987ba7dbc4e1181054d4143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a51ec1f2ef5b26137ea9bd44d5c749ba0"><td class="memTemplParams" colspan="2">template&lt;typename PredType , typename IterType &gt; </td></tr>
+<tr class="memitem:a51ec1f2ef5b26137ea9bd44d5c749ba0"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1MeshBase_1_1element__iterator.html#a51ec1f2ef5b26137ea9bd44d5c749ba0">element_iterator</a> (const IterType &amp;d, const IterType &amp;e, const PredType &amp;p)</td></tr>
+<tr class="separator:a51ec1f2ef5b26137ea9bd44d5c749ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc29c68e89c68028547d98ad79313c5"><td class="memItemLeft" align="right" valign="top">ReferenceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a6bc29c68e89c68028547d98ad79313c5">operator*</a> () const </td></tr>
+<tr class="memdesc:a6bc29c68e89c68028547d98ad79313c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">unary op*() forwards on to <code>Iter::op*</code>()  <a href="#a6bc29c68e89c68028547d98ad79313c5">更多...</a><br/></td></tr>
+<tr class="separator:a6bc29c68e89c68028547d98ad79313c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ffd9da1e9051fa307f610e8dc2c619"><td class="memItemLeft" align="right" valign="top">PointerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#ae5ffd9da1e9051fa307f610e8dc2c619">operator-&gt;</a> () const </td></tr>
+<tr class="memdesc:ae5ffd9da1e9051fa307f610e8dc2c619"><td class="mdescLeft">&#160;</td><td class="mdescRight">op-&gt;()  <a href="#ae5ffd9da1e9051fa307f610e8dc2c619">更多...</a><br/></td></tr>
+<tr class="separator:ae5ffd9da1e9051fa307f610e8dc2c619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056f3a36c493259eb53157634df48539"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a056f3a36c493259eb53157634df48539">operator++</a> ()</td></tr>
+<tr class="memdesc:a056f3a36c493259eb53157634df48539"><td class="mdescLeft">&#160;</td><td class="mdescRight">op++() forwards on to <code>Iter::op++</code>()  <a href="#a056f3a36c493259eb53157634df48539">更多...</a><br/></td></tr>
+<tr class="separator:a056f3a36c493259eb53157634df48539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ed4c46cd671245db0fd0cd7d04ab33"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a00ed4c46cd671245db0fd0cd7d04ab33">operator++</a> (int)</td></tr>
+<tr class="memdesc:a00ed4c46cd671245db0fd0cd7d04ab33"><td class="mdescLeft">&#160;</td><td class="mdescRight">postfix op++(), creates a temporary!  <a href="#a00ed4c46cd671245db0fd0cd7d04ab33">更多...</a><br/></td></tr>
+<tr class="separator:a00ed4c46cd671245db0fd0cd7d04ab33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa28ea02adc975493be4d709ae20687"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#acaa28ea02adc975493be4d709ae20687">equal</a> (const <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a> &amp;other) const </td></tr>
+<tr class="memdesc:acaa28ea02adc975493be4d709ae20687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards to the <code><a class="el" href="classvariant__filter__iterator.html#acaa28ea02adc975493be4d709ae20687" title="Forwards to the equal() function defined for the IterBase pointer. ">equal()</a></code> function defined for the <a class="el" href="structvariant__filter__iterator_1_1IterBase.html" title="Abstract base class for the iterator type. ">IterBase</a> pointer.  <a href="#acaa28ea02adc975493be4d709ae20687">更多...</a><br/></td></tr>
+<tr class="separator:acaa28ea02adc975493be4d709ae20687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8361f656fdabad70db4f11da91ccd798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a8361f656fdabad70db4f11da91ccd798">swap</a> (<a class="el" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a> &amp;lhs, <a class="el" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a8361f656fdabad70db4f11da91ccd798"><td class="mdescLeft">&#160;</td><td class="mdescRight">swap, used to implement op=  <a href="#a8361f656fdabad70db4f11da91ccd798">更多...</a><br/></td></tr>
+<tr class="separator:a8361f656fdabad70db4f11da91ccd798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a91c8a1a81300340c9e1e78aeb3b73985"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structvariant__filter__iterator_1_1IterBase.html">IterBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985">data</a></td></tr>
+<tr class="memdesc:a91c8a1a81300340c9e1e78aeb3b73985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ideally this private member data should have protected access.  <a href="#a91c8a1a81300340c9e1e78aeb3b73985">更多...</a><br/></td></tr>
+<tr class="separator:a91c8a1a81300340c9e1e78aeb3b73985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d341133a8cad7265c46f8c7684d5656"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structvariant__filter__iterator_1_1IterBase.html">IterBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a5d341133a8cad7265c46f8c7684d5656">end</a></td></tr>
+<tr class="memdesc:a5d341133a8cad7265c46f8c7684d5656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Also have a polymorphic pointer to the end object, this prevents iterating past the end.  <a href="#a5d341133a8cad7265c46f8c7684d5656">更多...</a><br/></td></tr>
+<tr class="separator:a5d341133a8cad7265c46f8c7684d5656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5c5021c2da41cfc60ecff981bb0010"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structvariant__filter__iterator_1_1PredBase.html">PredBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvariant__filter__iterator.html#a7f5c5021c2da41cfc60ecff981bb0010">pred</a></td></tr>
+<tr class="memdesc:a7f5c5021c2da41cfc60ecff981bb0010"><td class="mdescLeft">&#160;</td><td class="mdescRight">The predicate object.  <a href="#a7f5c5021c2da41cfc60ecff981bb0010">更多...</a><br/></td></tr>
+<tr class="separator:a7f5c5021c2da41cfc60ecff981bb0010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The definition of the <a class="el" href="structlibMesh_1_1MeshBase_1_1element__iterator.html" title="The definition of the element_iterator struct. ">element_iterator</a> struct. </p>
+
+<p>在文件 <a class="el" href="mesh__base_8h_source.html">mesh_base.h</a> 第 <a class="el" href="mesh__base_8h_source.html#l02068">2068</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="ad434f2f2eca08463e7b3862454d8815c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::<a class="el" href="classvariant__filter__iterator.html#ad434f2f2eca08463e7b3862454d8815c">difference_type</a> =  std::ptrdiff_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a018bfabf7987ba7dbc4e1181054d4143"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt;<a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType&gt; <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::<a class="el" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shortcut name for the fully-qualified typename. </p>
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3b35d0115662b7426f2a52769e9aede"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::<a class="el" href="classvariant__filter__iterator.html#aa3b35d0115662b7426f2a52769e9aede">iterator_category</a> =  std::forward_iterator_tag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7474e2260d6b1bd7599b6988c75987a3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::<a class="el" href="classvariant__filter__iterator.html#a7474e2260d6b1bd7599b6988c75987a3">pointer</a> =  PointerType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91af1087a1935db1c8402fefce96e33f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::<a class="el" href="classvariant__filter__iterator.html#a91af1087a1935db1c8402fefce96e33f">reference</a> =  ReferenceType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00059">59</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24fbe681ba6cfefff5635a29067fc30c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::<a class="el" href="classvariant__filter__iterator.html#a24fbe681ba6cfefff5635a29067fc30c">value_type</a> =  Type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a51ec1f2ef5b26137ea9bd44d5c749ba0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PredType , typename IterType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::MeshBase::element_iterator::element_iterator </td>
+          <td>(</td>
+          <td class="paramtype">const IterType &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IterType &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PredType &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="mesh__base_8h_source.html">mesh_base.h</a> 第 <a class="el" href="mesh__base_8h_source.html#l02073">2073</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;                                         :</div>
+<div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;    <a class="code" href="classlibMesh_1_1MeshBase.html#adf1b27cd506c6c5b3c66e52b576c98de">elem_filter_iter</a>(d,e,p) {}</div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_adf1b27cd506c6c5b3c66e52b576c98de"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#adf1b27cd506c6c5b3c66e52b576c98de">libMesh::MeshBase::elem_filter_iter</a></div><div class="ttdeci">variant_filter_iterator&lt; MeshBase::Predicate, Elem * &gt; elem_filter_iter</div><div class="ttdoc">The original iterator classes weren&amp;#39;t properly const-safe; relying on their const-incorrectness is no...</div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l02012">mesh_base.h:2012</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="acaa28ea02adc975493be4d709ae20687"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::equal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; Predicate, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Forwards to the <code><a class="el" href="classvariant__filter__iterator.html#acaa28ea02adc975493be4d709ae20687" title="Forwards to the equal() function defined for the IterBase pointer. ">equal()</a></code> function defined for the <a class="el" href="structvariant__filter__iterator_1_1IterBase.html" title="Abstract base class for the iterator type. ">IterBase</a> pointer. </p>
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00416">416</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985">data</a>-&gt;equal(other.<a class="code" href="classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985">data</a>);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  }</div>
+<div class="ttc" id="classvariant__filter__iterator_html_a91c8a1a81300340c9e1e78aeb3b73985"><div class="ttname"><a href="classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985">variant_filter_iterator::data</a></div><div class="ttdeci">std::unique_ptr&lt; IterBase &gt; data</div><div class="ttdoc">Ideally this private member data should have protected access. </div><div class="ttdef"><b>Definition:</b> <a href="variant__filter__iterator_8h_source.html#l00301">variant_filter_iterator.h:301</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6bc29c68e89c68028547d98ad79313c5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReferenceType <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>unary op*() forwards on to <code>Iter::op*</code>() </p>
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00378">378</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">return</span> **<a class="code" href="classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985">data</a>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  }</div>
+<div class="ttc" id="classvariant__filter__iterator_html_a91c8a1a81300340c9e1e78aeb3b73985"><div class="ttname"><a href="classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985">variant_filter_iterator::data</a></div><div class="ttdeci">std::unique_ptr&lt; IterBase &gt; data</div><div class="ttdoc">Ideally this private member data should have protected access. </div><div class="ttdef"><b>Definition:</b> <a href="variant__filter__iterator_8h_source.html#l00301">variant_filter_iterator.h:301</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a056f3a36c493259eb53157634df48539"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a>&amp; <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>op++() forwards on to <code>Iter::op++</code>() </p>
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00394">394</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    ++*<a class="code" href="classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985">data</a>;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    this-&gt;<a class="code" href="classvariant__filter__iterator.html#a6d9d351bb9cf99419d0301d109543dd8">satisfy_predicate</a>();</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  }</div>
+<div class="ttc" id="classvariant__filter__iterator_html_a6d9d351bb9cf99419d0301d109543dd8"><div class="ttname"><a href="classvariant__filter__iterator.html#a6d9d351bb9cf99419d0301d109543dd8">variant_filter_iterator::satisfy_predicate</a></div><div class="ttdeci">void satisfy_predicate()</div><div class="ttdoc">Advances the data pointer until it reaches the end or the predicate is satisfied. ...</div><div class="ttdef"><b>Definition:</b> <a href="variant__filter__iterator_8h_source.html#l00454">variant_filter_iterator.h:454</a></div></div>
+<div class="ttc" id="classvariant__filter__iterator_html_a91c8a1a81300340c9e1e78aeb3b73985"><div class="ttname"><a href="classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985">variant_filter_iterator::data</a></div><div class="ttdeci">std::unique_ptr&lt; IterBase &gt; data</div><div class="ttdoc">Ideally this private member data should have protected access. </div><div class="ttdef"><b>Definition:</b> <a href="variant__filter__iterator_8h_source.html#l00301">variant_filter_iterator.h:301</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a00ed4c46cd671245db0fd0cd7d04ab33"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a> <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>postfix op++(), creates a temporary! </p>
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00404">404</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <a class="code" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a> oldValue(*<span class="keyword">this</span>); <span class="comment">// standard is to return old value</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    ++*<a class="code" href="classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985">data</a>;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    this-&gt;<a class="code" href="classvariant__filter__iterator.html#a6d9d351bb9cf99419d0301d109543dd8">satisfy_predicate</a>();</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">return</span> oldValue;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  }</div>
+<div class="ttc" id="classvariant__filter__iterator_html_a6d9d351bb9cf99419d0301d109543dd8"><div class="ttname"><a href="classvariant__filter__iterator.html#a6d9d351bb9cf99419d0301d109543dd8">variant_filter_iterator::satisfy_predicate</a></div><div class="ttdeci">void satisfy_predicate()</div><div class="ttdoc">Advances the data pointer until it reaches the end or the predicate is satisfied. ...</div><div class="ttdef"><b>Definition:</b> <a href="variant__filter__iterator_8h_source.html#l00454">variant_filter_iterator.h:454</a></div></div>
+<div class="ttc" id="classvariant__filter__iterator_html_a91c8a1a81300340c9e1e78aeb3b73985"><div class="ttname"><a href="classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985">variant_filter_iterator::data</a></div><div class="ttdeci">std::unique_ptr&lt; IterBase &gt; data</div><div class="ttdoc">Ideally this private member data should have protected access. </div><div class="ttdef"><b>Definition:</b> <a href="variant__filter__iterator_8h_source.html#l00301">variant_filter_iterator.h:301</a></div></div>
+<div class="ttc" id="classvariant__filter__iterator_html_a018bfabf7987ba7dbc4e1181054d4143"><div class="ttname"><a href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">variant_filter_iterator::Iterator</a></div><div class="ttdeci">variant_filter_iterator&lt; Predicate, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt; Iterator</div><div class="ttdoc">Shortcut name for the fully-qualified typename. </div><div class="ttdef"><b>Definition:</b> <a href="variant__filter__iterator_8h_source.html#l00065">variant_filter_iterator.h:65</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae5ffd9da1e9051fa307f610e8dc2c619"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PointerType <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>op-&gt;() </p>
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00386">386</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  {</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">return</span> &amp;**<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8361f656fdabad70db4f11da91ccd798"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvariant__filter__iterator.html#a018bfabf7987ba7dbc4e1181054d4143">Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>swap, used to implement op= </p>
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00424">424</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="variant__filter__iterator_8h_source.html#l00439">variant_filter_iterator&lt; Elem::Predicate, Elem * &gt;::operator=()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  {</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="comment">// Swap the data pointers</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    std::swap (lhs.data, rhs.data);</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="comment">// Swap the end pointers</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    std::swap (lhs.end, rhs.end);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="comment">// Also swap the predicate objects.</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    std::swap (lhs.pred, rhs.pred);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a91c8a1a81300340c9e1e78aeb3b73985"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structvariant__filter__iterator_1_1IterBase.html">IterBase</a>&gt; <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ideally this private member data should have protected access. </p>
+<p>However, if we want a const_iterator to be constructable from an non-const one, templated versions of the same class (not related by inheritance) will need to know about these private members. Thus, they have public access.</p>
+<p>Polymorphic pointer to the object. Don't confuse with the data pointer located in the <code>Iter!</code> </p>
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00301">301</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="variant__filter__iterator_8h_source.html#l00416">variant_filter_iterator&lt; Elem::Predicate, Elem * &gt;::equal()</a>, <a class="el" href="variant__filter__iterator_8h_source.html#l00378">variant_filter_iterator&lt; Elem::Predicate, Elem * &gt;::operator*()</a>, <a class="el" href="variant__filter__iterator_8h_source.html#l00394">variant_filter_iterator&lt; Elem::Predicate, Elem * &gt;::operator++()</a>, <a class="el" href="variant__filter__iterator_8h_source.html#l00454">variant_filter_iterator&lt; Elem::Predicate, Elem * &gt;::satisfy_predicate()</a> , 以及 <a class="el" href="variant__filter__iterator_8h_source.html#l00424">variant_filter_iterator&lt; Elem::Predicate, Elem * &gt;::swap()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d341133a8cad7265c46f8c7684d5656"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structvariant__filter__iterator_1_1IterBase.html">IterBase</a>&gt; <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::end</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Also have a polymorphic pointer to the end object, this prevents iterating past the end. </p>
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00307">307</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="variant__filter__iterator_8h_source.html#l00454">variant_filter_iterator&lt; Elem::Predicate, Elem * &gt;::satisfy_predicate()</a> , 以及 <a class="el" href="variant__filter__iterator_8h_source.html#l00424">variant_filter_iterator&lt; Elem::Predicate, Elem * &gt;::swap()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f5c5021c2da41cfc60ecff981bb0010"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate, class Type, class ReferenceType = Type &amp;, class PointerType = Type *, class ConstType = const Type, class ConstReferenceType = const Type &amp;, class ConstPointerType = const Type *&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structvariant__filter__iterator_1_1PredBase.html">PredBase</a>&gt; <a class="el" href="classvariant__filter__iterator.html">variant_filter_iterator</a>&lt; <a class="el" href="classlibMesh_1_1MeshBase.html#ada7b0f8aa5240ff784d30be4eecaceaf">Predicate</a>, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;::pred</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The predicate object. </p>
+<p>Must have op() capable of operating on <a class="el" href="structvariant__filter__iterator_1_1IterBase.html" title="Abstract base class for the iterator type. ">IterBase</a> * pointers. Therefore it has to follow the same paradigm as <code><a class="el" href="structvariant__filter__iterator_1_1IterBase.html" title="Abstract base class for the iterator type. ">IterBase</a></code>. </p>
+
+<p>在文件 <a class="el" href="variant__filter__iterator_8h_source.html">variant_filter_iterator.h</a> 第 <a class="el" href="variant__filter__iterator_8h_source.html#l00314">314</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="variant__filter__iterator_8h_source.html#l00424">variant_filter_iterator&lt; Elem::Predicate, Elem * &gt;::swap()</a>.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/mesh/<a class="el" href="mesh__base_8h_source.html">mesh_base.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:34 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/solvers/newmark_solver.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_d45ce12a4fd6845d30540ba69d2ec3cd.html">solvers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">newmark_solver.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="newmark__solver_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_NEWMARK_SOLVER_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_NEWMARK_SOLVER_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/second_order_unsteady_solver.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NewmarkSolver.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1NewmarkSolver.html">NewmarkSolver</a> : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1SecondOrderUnsteadySolver.html">SecondOrderUnsteadySolver</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NewmarkSolver.html#a457970757759050dc1974da11d280074">   52</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classlibMesh_1_1UnsteadySolver.html">UnsteadySolver</a> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a457970757759050dc1974da11d280074">Parent</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">explicit</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a9ae580a203a0ccb0cfbb3870a53c4744">NewmarkSolver</a> (<a class="code" href="classlibMesh_1_1DifferentiableSystem.html">sys_type</a> &amp; s);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a541b15d81cf51077f922bbcc593d8106">~NewmarkSolver</a> ();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#ac5e75b45a0a3eb23f59d9592ce149c33">advance_timestep</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a06089825221bd61b8e9499108ba69753">adjoint_advance_timestep</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a99654f35619b2f7a8697bf3a4d1648c7">compute_initial_accel</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a6e0d4f7593bd7d9e92122cd358b4a6d6">project_initial_accel</a> (<a class="code" href="classlibMesh_1_1FunctionBase.html">FunctionBase&lt;Number&gt;</a> * f,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                              <a class="code" href="classlibMesh_1_1FunctionBase.html">FunctionBase&lt;Gradient&gt;</a> * g = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#ae0793cd166761b6144896f4e36229dd1">set_initial_accel_avail</a> (<span class="keywordtype">bool</span> initial_accel_set);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#adc4dd44a7499b85234006820cf2989e5">error_order</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a7eded5013c5154c696229e290af9f6ac">solve</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#aea263ce474f4c0edd4a3ad25a310e77d">element_residual</a> (<span class="keywordtype">bool</span> request_jacobian,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                 <a class="code" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a60208a1e74de4f55e470b1b44ad52b6b">side_residual</a> (<span class="keywordtype">bool</span> request_jacobian,</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                              <a class="code" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a6095076129fb2e3806484e4d77b7fef1">nonlocal_residual</a> (<span class="keywordtype">bool</span> request_jacobian,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                  <a class="code" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NewmarkSolver.html#a9bc7215c1a0d9270ec515dbd45a7af26">  149</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a9bc7215c1a0d9270ec515dbd45a7af26">set_beta</a> ( <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> beta )</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  { <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a7c4d13fdf9ee13220ab6b9b43f923457">_beta</a> = beta; }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NewmarkSolver.html#a758be68f024c4ebba8b1f4ead5e63c9a">  157</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a758be68f024c4ebba8b1f4ead5e63c9a">set_gamma</a> ( <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> gamma )</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  { <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a79561e8f8bfc5d1fde5e26d4379b2773">_gamma</a> = gamma; }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NewmarkSolver.html#a7c4d13fdf9ee13220ab6b9b43f923457">  167</a></span>&#160;  <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a7c4d13fdf9ee13220ab6b9b43f923457">_beta</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NewmarkSolver.html#a79561e8f8bfc5d1fde5e26d4379b2773">  173</a></span>&#160;  <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a79561e8f8bfc5d1fde5e26d4379b2773">_gamma</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NewmarkSolver.html#a535d0d2707469380938daf73a3c4e95a">  179</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a535d0d2707469380938daf73a3c4e95a">_is_accel_solve</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NewmarkSolver.html#a86b03dfa057ec6a5928e6b91f97c8ac9">  187</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#a86b03dfa057ec6a5928e6b91f97c8ac9">_initial_accel_set</a>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1NewmarkSolver.html#aa544b9d6ea20dbb8dbf896aca18bf30e">_general_residual</a> (<span class="keywordtype">bool</span> request_jacobian,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                                  <a class="code" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                  <a class="code" href="classlibMesh_1_1TimeSolver.html#a2bef2e6f4f3010907ca9a6c9183d475a">ResFuncType</a> mass,</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                  <a class="code" href="classlibMesh_1_1TimeSolver.html#a2bef2e6f4f3010907ca9a6c9183d475a">ResFuncType</a> damping,</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                  <a class="code" href="classlibMesh_1_1TimeSolver.html#a2bef2e6f4f3010907ca9a6c9183d475a">ResFuncType</a> time_deriv,</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                                  <a class="code" href="classlibMesh_1_1TimeSolver.html#a2bef2e6f4f3010907ca9a6c9183d475a">ResFuncType</a> constraint,</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                                  <a class="code" href="classlibMesh_1_1TimeSolver.html#aede0ea91f377e087b0f3a5d8f12a0643">ReinitFuncType</a> <a class="code" href="classlibMesh_1_1SecondOrderUnsteadySolver.html#a28a6b8dd01438622ed8e7975b0ecbff3">reinit</a>);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;};</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#endif // LIBMESH_NEWMARK_SOLVER_H</span></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_aea263ce474f4c0edd4a3ad25a310e77d"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#aea263ce474f4c0edd4a3ad25a310e77d">libMesh::NewmarkSolver::element_residual</a></div><div class="ttdeci">virtual bool element_residual(bool request_jacobian, DiffContext &amp;) override</div><div class="ttdoc">This method uses the DifferentiablePhysics&amp;#39; element_time_derivative() and element_constraint() to bui...</div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00161">newmark_solver.C:161</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a79561e8f8bfc5d1fde5e26d4379b2773"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a79561e8f8bfc5d1fde5e26d4379b2773">libMesh::NewmarkSolver::_gamma</a></div><div class="ttdeci">Real _gamma</div><div class="ttdoc">The value for  to employ. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8h_source.html#l00173">newmark_solver.h:173</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html">libMesh::DiffContext</a></div><div class="ttdoc">该类提供了执行本地单元残差和雅可比积分所需的所有数据，用于物理包（例如 DifferentiableSystem 子类）。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00051">diff_context.h:51</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a86b03dfa057ec6a5928e6b91f97c8ac9"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a86b03dfa057ec6a5928e6b91f97c8ac9">libMesh::NewmarkSolver::_initial_accel_set</a></div><div class="ttdeci">bool _initial_accel_set</div><div class="ttdoc">This method requires an initial acceleration. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8h_source.html#l00187">newmark_solver.h:187</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a758be68f024c4ebba8b1f4ead5e63c9a"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a758be68f024c4ebba8b1f4ead5e63c9a">libMesh::NewmarkSolver::set_gamma</a></div><div class="ttdeci">void set_gamma(Real gamma)</div><div class="ttdoc">Setter for . </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8h_source.html#l00157">newmark_solver.h:157</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TimeSolver_html_a2bef2e6f4f3010907ca9a6c9183d475a"><div class="ttname"><a href="classlibMesh_1_1TimeSolver.html#a2bef2e6f4f3010907ca9a6c9183d475a">libMesh::TimeSolver::ResFuncType</a></div><div class="ttdeci">bool(DifferentiablePhysics::* ResFuncType)(bool, DiffContext &amp;)</div><div class="ttdoc">Definitions of argument types for use in refactoring subclasses. </div><div class="ttdef"><b>Definition:</b> <a href="time__solver_8h_source.html#l00325">time_solver.h:325</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a60208a1e74de4f55e470b1b44ad52b6b"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a60208a1e74de4f55e470b1b44ad52b6b">libMesh::NewmarkSolver::side_residual</a></div><div class="ttdeci">virtual bool side_residual(bool request_jacobian, DiffContext &amp;) override</div><div class="ttdoc">This method uses the DifferentiablePhysics&amp;#39; side_time_derivative() and side_constraint() to build a f...</div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00175">newmark_solver.C:175</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html">libMesh::NewmarkSolver</a></div><div class="ttdoc">This class defines a Newmark time integrator for second order (in time) DifferentiableSystems. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8h_source.html#l00046">newmark_solver.h:46</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TimeSolver_html_aede0ea91f377e087b0f3a5d8f12a0643"><div class="ttname"><a href="classlibMesh_1_1TimeSolver.html#aede0ea91f377e087b0f3a5d8f12a0643">libMesh::TimeSolver::ReinitFuncType</a></div><div class="ttdeci">void(DiffContext::* ReinitFuncType)(Real)</div><div class="ttdef"><b>Definition:</b> <a href="time__solver_8h_source.html#l00327">time_solver.h:327</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a99654f35619b2f7a8697bf3a4d1648c7"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a99654f35619b2f7a8697bf3a4d1648c7">libMesh::NewmarkSolver::compute_initial_accel</a></div><div class="ttdeci">virtual void compute_initial_accel()</div><div class="ttdoc">This method uses the specified initial displacement and velocity to compute the initial acceleration ...</div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00107">newmark_solver.C:107</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a541b15d81cf51077f922bbcc593d8106"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a541b15d81cf51077f922bbcc593d8106">libMesh::NewmarkSolver::~NewmarkSolver</a></div><div class="ttdeci">virtual ~NewmarkSolver()</div><div class="ttdoc">Destructor. </div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a9ae580a203a0ccb0cfbb3870a53c4744"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a9ae580a203a0ccb0cfbb3870a53c4744">libMesh::NewmarkSolver::NewmarkSolver</a></div><div class="ttdeci">NewmarkSolver(sys_type &amp;s)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00027">newmark_solver.C:27</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DifferentiableSystem_html"><div class="ttname"><a href="classlibMesh_1_1DifferentiableSystem.html">libMesh::DifferentiableSystem</a></div><div class="ttdoc">该类提供了一个特定的系统类。它旨在泛化任何系统，线性或非线性，提供残差和雅可比矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__system_8h_source.html#l00050">diff_system.h:50</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_aa544b9d6ea20dbb8dbf896aca18bf30e"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#aa544b9d6ea20dbb8dbf896aca18bf30e">libMesh::NewmarkSolver::_general_residual</a></div><div class="ttdeci">virtual bool _general_residual(bool request_jacobian, DiffContext &amp;, ResFuncType mass, ResFuncType damping, ResFuncType time_deriv, ResFuncType constraint, ReinitFuncType reinit)</div><div class="ttdoc">This method is the underlying implementation of the public residual methods. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00203">newmark_solver.C:203</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SecondOrderUnsteadySolver_html_a28a6b8dd01438622ed8e7975b0ecbff3"><div class="ttname"><a href="classlibMesh_1_1SecondOrderUnsteadySolver.html#a28a6b8dd01438622ed8e7975b0ecbff3">libMesh::SecondOrderUnsteadySolver::reinit</a></div><div class="ttdeci">virtual void reinit() override</div><div class="ttdoc">The reinitialization function. </div><div class="ttdef"><b>Definition:</b> <a href="second__order__unsteady__solver_8C_source.html#l00060">second_order_unsteady_solver.C:60</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_ae0793cd166761b6144896f4e36229dd1"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#ae0793cd166761b6144896f4e36229dd1">libMesh::NewmarkSolver::set_initial_accel_avail</a></div><div class="ttdeci">void set_initial_accel_avail(bool initial_accel_set)</div><div class="ttdoc">Allow the user to (re)set whether the initial acceleration is available. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00144">newmark_solver.C:144</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_ac5e75b45a0a3eb23f59d9592ce149c33"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#ac5e75b45a0a3eb23f59d9592ce149c33">libMesh::NewmarkSolver::advance_timestep</a></div><div class="ttdeci">virtual void advance_timestep() override</div><div class="ttdoc">This method advances the solution to the next timestep, after a solve() has been performed. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00044">newmark_solver.C:44</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a6095076129fb2e3806484e4d77b7fef1"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a6095076129fb2e3806484e4d77b7fef1">libMesh::NewmarkSolver::nonlocal_residual</a></div><div class="ttdeci">virtual bool nonlocal_residual(bool request_jacobian, DiffContext &amp;) override</div><div class="ttdoc">This method uses the DifferentiablePhysics&amp;#39; nonlocal_time_derivative() and nonlocal_constraint() to b...</div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00189">newmark_solver.C:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SecondOrderUnsteadySolver_html"><div class="ttname"><a href="classlibMesh_1_1SecondOrderUnsteadySolver.html">libMesh::SecondOrderUnsteadySolver</a></div><div class="ttdoc">Generic class from which second order UnsteadySolvers should subclass. </div><div class="ttdef"><b>Definition:</b> <a href="second__order__unsteady__solver_8h_source.html#l00045">second_order_unsteady_solver.h:45</a></div></div>
+<div class="ttc" id="classlibMesh_1_1UnsteadySolver_html"><div class="ttname"><a href="classlibMesh_1_1UnsteadySolver.html">libMesh::UnsteadySolver</a></div><div class="ttdoc">This is a generic class that defines a solver to handle time integration of DifferentiableSystems. </div><div class="ttdef"><b>Definition:</b> <a href="unsteady__solver_8h_source.html#l00050">unsteady_solver.h:50</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a9bc7215c1a0d9270ec515dbd45a7af26"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a9bc7215c1a0d9270ec515dbd45a7af26">libMesh::NewmarkSolver::set_beta</a></div><div class="ttdeci">void set_beta(Real beta)</div><div class="ttdoc">Setter for . </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8h_source.html#l00149">newmark_solver.h:149</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_adc4dd44a7499b85234006820cf2989e5"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#adc4dd44a7499b85234006820cf2989e5">libMesh::NewmarkSolver::error_order</a></div><div class="ttdeci">virtual Real error_order() const override</div><div class="ttdoc">Error convergence order: 2 for , 1 otherwise. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00037">newmark_solver.C:37</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a535d0d2707469380938daf73a3c4e95a"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a535d0d2707469380938daf73a3c4e95a">libMesh::NewmarkSolver::_is_accel_solve</a></div><div class="ttdeci">bool _is_accel_solve</div><div class="ttdoc">Need to be able to indicate to _general_residual if we are doing an acceleration solve or not...</div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8h_source.html#l00179">newmark_solver.h:179</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a7eded5013c5154c696229e290af9f6ac"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a7eded5013c5154c696229e290af9f6ac">libMesh::NewmarkSolver::solve</a></div><div class="ttdeci">virtual void solve() override</div><div class="ttdoc">This method solves for the solution at the next timestep. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00149">newmark_solver.C:149</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FunctionBase_html"><div class="ttname"><a href="classlibMesh_1_1FunctionBase.html">libMesh::FunctionBase&lt; Number &gt;</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a457970757759050dc1974da11d280074"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a457970757759050dc1974da11d280074">libMesh::NewmarkSolver::Parent</a></div><div class="ttdeci">UnsteadySolver Parent</div><div class="ttdoc">The parent class. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8h_source.html#l00052">newmark_solver.h:52</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a06089825221bd61b8e9499108ba69753"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a06089825221bd61b8e9499108ba69753">libMesh::NewmarkSolver::adjoint_advance_timestep</a></div><div class="ttdeci">virtual void adjoint_advance_timestep() override</div><div class="ttdoc">This method advances the adjoint solution to the previous timestep, after an adjoint_solve() has been...</div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00102">newmark_solver.C:102</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a6e0d4f7593bd7d9e92122cd358b4a6d6"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a6e0d4f7593bd7d9e92122cd358b4a6d6">libMesh::NewmarkSolver::project_initial_accel</a></div><div class="ttdeci">void project_initial_accel(FunctionBase&lt; Number &gt; *f, FunctionBase&lt; Gradient &gt; *g=nullptr)</div><div class="ttdoc">Specify non-zero initial acceleration. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8C_source.html#l00133">newmark_solver.C:133</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NewmarkSolver_html_a7c4d13fdf9ee13220ab6b9b43f923457"><div class="ttname"><a href="classlibMesh_1_1NewmarkSolver.html#a7c4d13fdf9ee13220ab6b9b43f923457">libMesh::NewmarkSolver::_beta</a></div><div class="ttdeci">Real _beta</div><div class="ttdoc">The value for the  to employ. </div><div class="ttdef"><b>Definition:</b> <a href="newmark__solver_8h_source.html#l00167">newmark_solver.h:167</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

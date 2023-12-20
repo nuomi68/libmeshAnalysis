@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::RBTemporalDiscretization类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classlibMesh_1_1RBTemporalDiscretization-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::RBTemporalDiscretization类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Define a class that encapsulates the details of a "generalized Euler" temporal discretization to be used in the rbOOmit framework.  
+ <a href="classlibMesh_1_1RBTemporalDiscretization.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="rb__temporal__discretization_8h_source.html">rb_temporal_discretization.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::RBTemporalDiscretization 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2a438f4c507a33b924d2e1fc38f23df9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a2a438f4c507a33b924d2e1fc38f23df9">RBTemporalDiscretization</a> ()</td></tr>
+<tr class="memdesc:a2a438f4c507a33b924d2e1fc38f23df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a2a438f4c507a33b924d2e1fc38f23df9">更多...</a><br/></td></tr>
+<tr class="separator:a2a438f4c507a33b924d2e1fc38f23df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefde421c2a67a1e351870322005fdfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#acefde421c2a67a1e351870322005fdfb">RBTemporalDiscretization</a> (<a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:acefde421c2a67a1e351870322005fdfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special functions can all be defaulted for this simple class.  <a href="#acefde421c2a67a1e351870322005fdfb">更多...</a><br/></td></tr>
+<tr class="separator:acefde421c2a67a1e351870322005fdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ebcab84377520a69dad8772309120a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a82ebcab84377520a69dad8772309120a">RBTemporalDiscretization</a> (const <a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;)=default</td></tr>
+<tr class="separator:a82ebcab84377520a69dad8772309120a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b955922946dfe8f238aa1fd3c989a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a43b955922946dfe8f238aa1fd3c989a8">operator=</a> (const <a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;)=default</td></tr>
+<tr class="separator:a43b955922946dfe8f238aa1fd3c989a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecfa426dda4fc687318253ee1b6ddca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a9ecfa426dda4fc687318253ee1b6ddca">operator=</a> (<a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a9ecfa426dda4fc687318253ee1b6ddca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e3915c5cdefa0cb3b3a9f9fe981af4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a47e3915c5cdefa0cb3b3a9f9fe981af4">~RBTemporalDiscretization</a> ()=default</td></tr>
+<tr class="separator:a47e3915c5cdefa0cb3b3a9f9fe981af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0336853c0fc7bb67c4449ba49a4948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a0a0336853c0fc7bb67c4449ba49a4948">get_delta_t</a> () const </td></tr>
+<tr class="memdesc:a0a0336853c0fc7bb67c4449ba49a4948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/set delta_t, the time-step size.  <a href="#a0a0336853c0fc7bb67c4449ba49a4948">更多...</a><br/></td></tr>
+<tr class="separator:a0a0336853c0fc7bb67c4449ba49a4948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f52e0de3ce2c4f30c68511061d0f533"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a4f52e0de3ce2c4f30c68511061d0f533">set_delta_t</a> (const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> delta_t_in)</td></tr>
+<tr class="separator:a4f52e0de3ce2c4f30c68511061d0f533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5f30b3f4b02301c65feb28a94aec6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a9a5f30b3f4b02301c65feb28a94aec6e">get_euler_theta</a> () const </td></tr>
+<tr class="memdesc:a9a5f30b3f4b02301c65feb28a94aec6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/set euler_theta, parameter that determines the temporal discretization.  <a href="#a9a5f30b3f4b02301c65feb28a94aec6e">更多...</a><br/></td></tr>
+<tr class="separator:a9a5f30b3f4b02301c65feb28a94aec6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9276396cbbef31fb0e1a49abea5242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a5f9276396cbbef31fb0e1a49abea5242">set_euler_theta</a> (const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> euler_theta_in)</td></tr>
+<tr class="separator:a5f9276396cbbef31fb0e1a49abea5242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67852660f835433f0fc6403c460dcb99"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a67852660f835433f0fc6403c460dcb99">get_time_step</a> () const </td></tr>
+<tr class="memdesc:a67852660f835433f0fc6403c460dcb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/set the current time-step.  <a href="#a67852660f835433f0fc6403c460dcb99">更多...</a><br/></td></tr>
+<tr class="separator:a67852660f835433f0fc6403c460dcb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacec3d28f2f87038820d04ea23d789d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#aacec3d28f2f87038820d04ea23d789d2">set_time_step</a> (const unsigned int k)</td></tr>
+<tr class="separator:aacec3d28f2f87038820d04ea23d789d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7742494d80cc48abe4f5869295578070"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a7742494d80cc48abe4f5869295578070">get_n_time_steps</a> () const </td></tr>
+<tr class="memdesc:a7742494d80cc48abe4f5869295578070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/set the total number of time-steps.  <a href="#a7742494d80cc48abe4f5869295578070">更多...</a><br/></td></tr>
+<tr class="separator:a7742494d80cc48abe4f5869295578070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a626e8505f2d783387bff6165f2b10c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a9a626e8505f2d783387bff6165f2b10c">set_n_time_steps</a> (const unsigned int K)</td></tr>
+<tr class="separator:a9a626e8505f2d783387bff6165f2b10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c39603630dd13e5ed7aa78545803110"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a3c39603630dd13e5ed7aa78545803110">get_control</a> (const unsigned int k) const </td></tr>
+<tr class="memdesc:a3c39603630dd13e5ed7aa78545803110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/set the RHS control.  <a href="#a3c39603630dd13e5ed7aa78545803110">更多...</a><br/></td></tr>
+<tr class="separator:a3c39603630dd13e5ed7aa78545803110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028cf87c08d0917f4c267ee5dabcf03c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a028cf87c08d0917f4c267ee5dabcf03c">set_control</a> (const std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;control)</td></tr>
+<tr class="separator:a028cf87c08d0917f4c267ee5dabcf03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac23ba049995208cc23834221eef0a98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#aac23ba049995208cc23834221eef0a98">process_temporal_parameters_file</a> (const std::string &amp;parameters_filename)</td></tr>
+<tr class="memdesc:aac23ba049995208cc23834221eef0a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in and initialize parameters from <code>parameters_filename</code>.  <a href="#aac23ba049995208cc23834221eef0a98">更多...</a><br/></td></tr>
+<tr class="separator:aac23ba049995208cc23834221eef0a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73683d4f28dfb670f7b4dcb1d8eb432c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a73683d4f28dfb670f7b4dcb1d8eb432c">pull_temporal_discretization_data</a> (<a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;other)</td></tr>
+<tr class="memdesc:a73683d4f28dfb670f7b4dcb1d8eb432c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull the temporal discretization data from <code>other</code>.  <a href="#a73683d4f28dfb670f7b4dcb1d8eb432c">更多...</a><br/></td></tr>
+<tr class="separator:a73683d4f28dfb670f7b4dcb1d8eb432c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a5c375c99d4f6e6092b4bc61f6e369081"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a5c375c99d4f6e6092b4bc61f6e369081">_delta_t</a></td></tr>
+<tr class="memdesc:a5c375c99d4f6e6092b4bc61f6e369081"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time-step size.  <a href="#a5c375c99d4f6e6092b4bc61f6e369081">更多...</a><br/></td></tr>
+<tr class="separator:a5c375c99d4f6e6092b4bc61f6e369081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9222f2f881c4d399619a105f6641562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#af9222f2f881c4d399619a105f6641562">_euler_theta</a></td></tr>
+<tr class="memdesc:af9222f2f881c4d399619a105f6641562"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter that determines the generalized Euler scheme discretization that we employ.  <a href="#af9222f2f881c4d399619a105f6641562">更多...</a><br/></td></tr>
+<tr class="separator:af9222f2f881c4d399619a105f6641562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5df427ca1f70cbf74fc223f1892e0de"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#ab5df427ca1f70cbf74fc223f1892e0de">_current_time_step</a></td></tr>
+<tr class="memdesc:ab5df427ca1f70cbf74fc223f1892e0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current time-step.  <a href="#ab5df427ca1f70cbf74fc223f1892e0de">更多...</a><br/></td></tr>
+<tr class="separator:ab5df427ca1f70cbf74fc223f1892e0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f78ff987d9d0b1bd42291dab49983f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a40f78ff987d9d0b1bd42291dab49983f">_n_time_steps</a></td></tr>
+<tr class="memdesc:a40f78ff987d9d0b1bd42291dab49983f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of time-steps.  <a href="#a40f78ff987d9d0b1bd42291dab49983f">更多...</a><br/></td></tr>
+<tr class="separator:a40f78ff987d9d0b1bd42291dab49983f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7462c74b652db55b831850c6139201b0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html#a7462c74b652db55b831850c6139201b0">_control</a></td></tr>
+<tr class="memdesc:a7462c74b652db55b831850c6139201b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The RHS control (scalar function of time).  <a href="#a7462c74b652db55b831850c6139201b0">更多...</a><br/></td></tr>
+<tr class="separator:a7462c74b652db55b831850c6139201b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Define a class that encapsulates the details of a "generalized Euler" temporal discretization to be used in the rbOOmit framework. </p>
+<dl class="section author"><dt>作者</dt><dd>David Knezevic </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2012 Encapsulates the details of the generalized Euler discretization. </dd></dl>
+
+<p>在文件 <a class="el" href="rb__temporal__discretization_8h_source.html">rb_temporal_discretization.h</a> 第 <a class="el" href="rb__temporal__discretization_8h_source.html#l00040">40</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a2a438f4c507a33b924d2e1fc38f23df9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBTemporalDiscretization::RBTemporalDiscretization </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="acefde421c2a67a1e351870322005fdfb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBTemporalDiscretization::RBTemporalDiscretization </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Special functions can all be defaulted for this simple class. </p>
+
+</div>
+</div>
+<a class="anchor" id="a82ebcab84377520a69dad8772309120a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::RBTemporalDiscretization::RBTemporalDiscretization </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47e3915c5cdefa0cb3b3a9f9fe981af4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual libMesh::RBTemporalDiscretization::~RBTemporalDiscretization </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a3c39603630dd13e5ed7aa78545803110"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBTemporalDiscretization::get_control </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get/set the RHS control. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0a0336853c0fc7bb67c4449ba49a4948"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBTemporalDiscretization::get_delta_t </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get/set delta_t, the time-step size. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a5f30b3f4b02301c65feb28a94aec6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBTemporalDiscretization::get_euler_theta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get/set euler_theta, parameter that determines the temporal discretization. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7742494d80cc48abe4f5869295578070"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::RBTemporalDiscretization::get_n_time_steps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get/set the total number of time-steps. </p>
+
+</div>
+</div>
+<a class="anchor" id="a67852660f835433f0fc6403c460dcb99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::RBTemporalDiscretization::get_time_step </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get/set the current time-step. </p>
+
+</div>
+</div>
+<a class="anchor" id="a43b955922946dfe8f238aa1fd3c989a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a>&amp; libMesh::RBTemporalDiscretization::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ecfa426dda4fc687318253ee1b6ddca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a>&amp; libMesh::RBTemporalDiscretization::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac23ba049995208cc23834221eef0a98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBTemporalDiscretization::process_temporal_parameters_file </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>parameters_filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read in and initialize parameters from <code>parameters_filename</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a73683d4f28dfb670f7b4dcb1d8eb432c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBTemporalDiscretization::pull_temporal_discretization_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1RBTemporalDiscretization.html">RBTemporalDiscretization</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pull the temporal discretization data from <code>other</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a028cf87c08d0917f4c267ee5dabcf03c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBTemporalDiscretization::set_control </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>control</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4f52e0de3ce2c4f30c68511061d0f533"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBTemporalDiscretization::set_delta_t </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>delta_t_in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f9276396cbbef31fb0e1a49abea5242"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBTemporalDiscretization::set_euler_theta </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>euler_theta_in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a626e8505f2d783387bff6165f2b10c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBTemporalDiscretization::set_n_time_steps </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>K</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aacec3d28f2f87038820d04ea23d789d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::RBTemporalDiscretization::set_time_step </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a7462c74b652db55b831850c6139201b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&gt; libMesh::RBTemporalDiscretization::_control</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The RHS control (scalar function of time). </p>
+<p>A function h(t) that is used in the RHS as h(t)*f(x, <img class="formulaInl" alt="$ \mu $" src="form_139.png"/>). See Martin Grepl's thesis </p>
+
+<p>在文件 <a class="el" href="rb__temporal__discretization_8h_source.html">rb_temporal_discretization.h</a> 第 <a class="el" href="rb__temporal__discretization_8h_source.html#l00130">130</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5df427ca1f70cbf74fc223f1892e0de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::RBTemporalDiscretization::_current_time_step</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current time-step. </p>
+
+<p>在文件 <a class="el" href="rb__temporal__discretization_8h_source.html">rb_temporal_discretization.h</a> 第 <a class="el" href="rb__temporal__discretization_8h_source.html#l00118">118</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c375c99d4f6e6092b4bc61f6e369081"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBTemporalDiscretization::_delta_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The time-step size. </p>
+
+<p>在文件 <a class="el" href="rb__temporal__discretization_8h_source.html">rb_temporal_discretization.h</a> 第 <a class="el" href="rb__temporal__discretization_8h_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9222f2f881c4d399619a105f6641562"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::RBTemporalDiscretization::_euler_theta</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The parameter that determines the generalized Euler scheme discretization that we employ. </p>
+<p>euler_theta = 0 &mdash;&gt; Forward Euler euler_theta = 0.5 &mdash;&gt; Crank-Nicolson euler_theta = 1 &mdash;&gt; Backward Euler </p>
+
+<p>在文件 <a class="el" href="rb__temporal__discretization_8h_source.html">rb_temporal_discretization.h</a> 第 <a class="el" href="rb__temporal__discretization_8h_source.html#l00113">113</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a40f78ff987d9d0b1bd42291dab49983f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::RBTemporalDiscretization::_n_time_steps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of time-steps. </p>
+
+<p>在文件 <a class="el" href="rb__temporal__discretization_8h_source.html">rb_temporal_discretization.h</a> 第 <a class="el" href="rb__temporal__discretization_8h_source.html#l00123">123</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/reduced_basis/<a class="el" href="rb__temporal__discretization_8h_source.html">rb_temporal_discretization.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:40 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

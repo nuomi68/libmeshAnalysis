@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::Surface类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1Surface.html">Surface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classlibMesh_1_1Surface-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::Surface类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The base class for all "surface" related geometric objects.  
+ <a href="classlibMesh_1_1Surface.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="surface_8h_source.html">surface.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::Surface 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0edd05c2937f905bacb10a37792af13d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#a0edd05c2937f905bacb10a37792af13d">Surface</a> ()=default</td></tr>
+<tr class="memdesc:a0edd05c2937f905bacb10a37792af13d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a0edd05c2937f905bacb10a37792af13d">更多...</a><br/></td></tr>
+<tr class="separator:a0edd05c2937f905bacb10a37792af13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0d2bb0b6eaa28c369112f97f40ce1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#aef0d2bb0b6eaa28c369112f97f40ce1e">Surface</a> (const <a class="el" href="classlibMesh_1_1Surface.html">Surface</a> &amp;)=default</td></tr>
+<tr class="memdesc:aef0d2bb0b6eaa28c369112f97f40ce1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-constructor.  <a href="#aef0d2bb0b6eaa28c369112f97f40ce1e">更多...</a><br/></td></tr>
+<tr class="separator:aef0d2bb0b6eaa28c369112f97f40ce1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e0551bc52297d73db0649813b56cc9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#aa1e0551bc52297d73db0649813b56cc9">~Surface</a> ()=default</td></tr>
+<tr class="memdesc:aa1e0551bc52297d73db0649813b56cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aa1e0551bc52297d73db0649813b56cc9">更多...</a><br/></td></tr>
+<tr class="separator:aa1e0551bc52297d73db0649813b56cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcf5b567bb5ef2f2fd2410599b853c5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#affcf5b567bb5ef2f2fd2410599b853c5">above_surface</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p) const =0</td></tr>
+<tr class="separator:affcf5b567bb5ef2f2fd2410599b853c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7e3d0e7a9528c19e087d996560e100"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#a0f7e3d0e7a9528c19e087d996560e100">below_surface</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p) const =0</td></tr>
+<tr class="separator:a0f7e3d0e7a9528c19e087d996560e100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41be0551ded958bab175046a4a259321"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#a41be0551ded958bab175046a4a259321">on_surface</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p) const =0</td></tr>
+<tr class="separator:a41be0551ded958bab175046a4a259321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524c8adf956705862a28259670674be0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#a524c8adf956705862a28259670674be0">closest_point</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p) const =0</td></tr>
+<tr class="separator:a524c8adf956705862a28259670674be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a53c9e7f08045b627efb3375112c24"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#a38a53c9e7f08045b627efb3375112c24">unit_normal</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p) const =0</td></tr>
+<tr class="separator:a38a53c9e7f08045b627efb3375112c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a4fa957c682bf31f2a85c759c3ee0d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#a88a4fa957c682bf31f2a85c759c3ee0d">surface_coords</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;<a class="el" href="classlibMesh_1_1Surface.html#a8895a938edbc3cc8f5a71f2d2acd0059">world_coords</a>) const </td></tr>
+<tr class="separator:a88a4fa957c682bf31f2a85c759c3ee0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8895a938edbc3cc8f5a71f2d2acd0059"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#a8895a938edbc3cc8f5a71f2d2acd0059">world_coords</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;surf_coords) const </td></tr>
+<tr class="separator:a8895a938edbc3cc8f5a71f2d2acd0059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The base class for all "surface" related geometric objects. </p>
+<p>A <a class="el" href="classlibMesh_1_1Surface.html" title="The base class for all &quot;surface&quot; related geometric objects. ">Surface</a> is a two-dimensional object living in three-dimensional space. Examples of Surfaces are planes, hollow spheres, hollow cylinders, etc... This is a generic base class that describes the useful functionality a surface will provide. Specific derived classes actually implement the functionality, so this class has pure virtual members.</p>
+<dl class="section author"><dt>作者</dt><dd>Benjamin S. Kirk </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2002 Base class for <a class="el" href="classlibMesh_1_1Plane.html" title="This class defines a plane. ">Plane</a> and <a class="el" href="classlibMesh_1_1Sphere.html" title="This class defines a sphere. ">Sphere</a> classes. </dd></dl>
+
+<p>在文件 <a class="el" href="surface_8h_source.html">surface.h</a> 第 <a class="el" href="surface_8h_source.html#l00042">42</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a0edd05c2937f905bacb10a37792af13d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Surface::Surface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>Does nothing at the moment. </p>
+
+</div>
+</div>
+<a class="anchor" id="aef0d2bb0b6eaa28c369112f97f40ce1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Surface::Surface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Surface.html">Surface</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy-constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa1e0551bc52297d73db0649813b56cc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual libMesh::Surface::~Surface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="affcf5b567bb5ef2f2fd2410599b853c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::Surface::above_surface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if the point p is above the surface, false otherwise. </dd></dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1Sphere.html#ab9448632f71f7ebd9a32be1838ac0070">libMesh::Sphere</a> , 以及 <a class="el" href="classlibMesh_1_1Plane.html#a9efae48cd902b545eb7893de411f2218">libMesh::Plane</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f7e3d0e7a9528c19e087d996560e100"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::Surface::below_surface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if the point p is below the surface, false otherwise. </dd></dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1Sphere.html#a4ebef0b9ab8f82a64c2917b39e41349d">libMesh::Sphere</a> , 以及 <a class="el" href="classlibMesh_1_1Plane.html#ac11042ec8ee9a8da1616b149bc9b6f21">libMesh::Plane</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a524c8adf956705862a28259670674be0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a> libMesh::Surface::closest_point </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The closest point on the surface to point p. </dd></dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1Sphere.html#a106be8393f176b6d4fefa0c5576a8fdc">libMesh::Sphere</a> , 以及 <a class="el" href="classlibMesh_1_1Plane.html#aa4943c70cf005f1a72236a7732413caa">libMesh::Plane</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41be0551ded958bab175046a4a259321"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::Surface::on_surface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if the point p is on the surface, false otherwise.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>The definition of "on the surface" really means "very
+close" to account for roundoff error. </dd></dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1Sphere.html#a5a7f9f412b1d2e049259e6cfafe3c817">libMesh::Sphere</a> , 以及 <a class="el" href="classlibMesh_1_1Plane.html#a917e4807692a406a512f5fe1d230d9be">libMesh::Plane</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88a4fa957c682bf31f2a85c759c3ee0d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a> libMesh::Surface::surface_coords </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>world_coords</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The <code><a class="el" href="classlibMesh_1_1Point.html" title="A Point defines a location in LIBMESH_DIM dimensional Real space. ">Point</a></code> <code>world_coords</code> in the surface's coordinate system. <code>world_coords</code> is in the world coordinate system. This method is not purely virtual, because there may be surfaces that do not have their own coordinate system. These simply do not have to override this method. </dd></dl>
+
+<p>被 <a class="el" href="classlibMesh_1_1Sphere.html#a7ece64e9defc7d5292b6599ab91d47ee">libMesh::Sphere</a> 重载.</p>
+
+<p>在文件 <a class="el" href="surface_8h_source.html">surface.h</a> 第 <a class="el" href="surface_8h_source.html#l00101">101</a> 行定义.</p>
+
+<p>参考 <a class="el" href="surface_8h_source.html#l00110">world_coords()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Surface.html#a8895a938edbc3cc8f5a71f2d2acd0059">world_coords</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1Surface_html_a8895a938edbc3cc8f5a71f2d2acd0059"><div class="ttname"><a href="classlibMesh_1_1Surface.html#a8895a938edbc3cc8f5a71f2d2acd0059">libMesh::Surface::world_coords</a></div><div class="ttdeci">virtual Point world_coords(const Point &amp;surf_coords) const </div><div class="ttdef"><b>Definition:</b> <a href="surface_8h_source.html#l00110">surface.h:110</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a38a53c9e7f08045b627efb3375112c24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a> libMesh::Surface::unit_normal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>A unit vector normal to the surface at point p. </dd></dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1Sphere.html#acba29d1ea9275a4274ec162862f2f92d">libMesh::Sphere</a> , 以及 <a class="el" href="classlibMesh_1_1Plane.html#a48817e4ff760b94461034a99b305eb4c">libMesh::Plane</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8895a938edbc3cc8f5a71f2d2acd0059"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a> libMesh::Surface::world_coords </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>surf_coords</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The world (cartesian) coordinates for the surface coordinates <code>surf_coords</code>. This method is not purely virtual, because there may be surfaces that do not have an own coordinate system. These simply do not have to override this method. </dd></dl>
+
+<p>被 <a class="el" href="classlibMesh_1_1Sphere.html#a2ea436433bfd4e75358ad782a17eae91">libMesh::Sphere</a> 重载.</p>
+
+<p>在文件 <a class="el" href="surface_8h_source.html">surface.h</a> 第 <a class="el" href="surface_8h_source.html#l00110">110</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="surface_8h_source.html#l00101">surface_coords()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{ <span class="keywordflow">return</span> surf_coords; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/geom/<a class="el" href="surface_8h_source.html">surface.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:32 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

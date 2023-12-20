@@ -1,0 +1,8 @@
+digraph "类继承关系图"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="boost::multiprecision\l::detail::is_lossy_conversion\l\< libMesh::NumericVector\<\l T \>, To \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structboost_1_1multiprecision_1_1detail_1_1is__lossy__conversion_3_01libMesh_1_1NumericVector_3_01T_01_4_00_01To_01_4.html"];
+}

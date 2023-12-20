@@ -1,0 +1,8 @@
+digraph "类继承关系图"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="libMesh::TensorTools\l::MakeBaseNumber\< T,\l enable \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlibMesh_1_1TensorTools_1_1MakeBaseNumber.html",tooltip="此模板结构用于创建基础数值类型，支持标量类型。 如果模板类型不是标量类型，则不会创建基础数值类型。 "];
+}

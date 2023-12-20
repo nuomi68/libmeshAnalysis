@@ -1,0 +1,30 @@
+digraph "libMesh::ReferenceCountedObject&lt; T &gt;"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="libMesh::ReferenceCounted\lObject\< T \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="libMesh::ReferenceCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1ReferenceCounter.html",tooltip="This is the base class for enabling reference counting. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LinearSolver\< Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1LinearSolver.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NonlinearSolver\< Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1NonlinearSolver.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="libMesh::NoxNonlinearSolver\l\< Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1NoxNonlinearSolver.html"];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="libMesh::PetscNonlinearSolver\l\< Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1PetscNonlinearSolver.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="NumericVector\< Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1NumericVector.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="NumericVector\< Val \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1NumericVector.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Preconditioner\< Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1Preconditioner.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="ShellMatrix\< Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1ShellMatrix.html"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="SparseMatrix\< Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1SparseMatrix.html"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="SparseMatrix\< ValOut \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1SparseMatrix.html"];
+}

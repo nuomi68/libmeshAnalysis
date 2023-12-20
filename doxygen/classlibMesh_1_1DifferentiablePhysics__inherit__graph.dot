@@ -1,0 +1,16 @@
+digraph "libMesh::DifferentiablePhysics"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="libMesh::DifferentiablePhysics",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="libMesh::DifferentiableSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DifferentiableSystem.html",tooltip="该类提供了一个特定的系统类。它旨在泛化任何系统，线性或非线性，提供残差和雅可比矩阵。 "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="libMesh::FEMSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1FEMSystem.html",tooltip="This class provides a specific system class. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="libMesh::ContinuationSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1ContinuationSystem.html",tooltip="该类继承自FEMSystem。它可以用于弧长延拓。这里的大多数思想和符号都来自HB Keller的1977年论文： "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="libMesh::FEMPhysics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1FEMPhysics.html",tooltip="This class provides a specific system class. "];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

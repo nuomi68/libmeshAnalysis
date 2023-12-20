@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::ErrorEstimator类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classlibMesh_1_1ErrorEstimator-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::ErrorEstimator类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class holds functions that will estimate the error in a finite element solution on a given mesh.  
+ <a href="classlibMesh_1_1ErrorEstimator.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="error__estimator_8h_source.html">error_estimator.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::ErrorEstimator 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ab37d862060bbddf77099b6e34c62ef71"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::pair<br class="typebreak"/>
+&lt; const <a class="el" href="classlibMesh_1_1System.html">System</a> *, unsigned int &gt;<br class="typebreak"/>
+, std::unique_ptr&lt; <a class="el" href="classlibMesh_1_1ErrorVector.html">ErrorVector</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#ab37d862060bbddf77099b6e34c62ef71">ErrorMap</a></td></tr>
+<tr class="memdesc:ab37d862060bbddf77099b6e34c62ef71"><td class="mdescLeft">&#160;</td><td class="mdescRight">When calculating many error vectors at once, we need a data structure to hold them all.  <a href="#ab37d862060bbddf77099b6e34c62ef71">更多...</a><br/></td></tr>
+<tr class="separator:ab37d862060bbddf77099b6e34c62ef71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abd4e67c1f8f49543f64859513208faa4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#abd4e67c1f8f49543f64859513208faa4">ErrorEstimator</a> ()=default</td></tr>
+<tr class="memdesc:abd4e67c1f8f49543f64859513208faa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#abd4e67c1f8f49543f64859513208faa4">更多...</a><br/></td></tr>
+<tr class="separator:abd4e67c1f8f49543f64859513208faa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763ee83b5f9b0342ce40643b49688af6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#a763ee83b5f9b0342ce40643b49688af6">ErrorEstimator</a> (const <a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a> &amp;)=default</td></tr>
+<tr class="memdesc:a763ee83b5f9b0342ce40643b49688af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy/move ctor, copy/move assignment operator, and destructor are all explicitly defaulted for this simple class.  <a href="#a763ee83b5f9b0342ce40643b49688af6">更多...</a><br/></td></tr>
+<tr class="separator:a763ee83b5f9b0342ce40643b49688af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac030d61093656f3b63ae62e72db53b26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#ac030d61093656f3b63ae62e72db53b26">ErrorEstimator</a> (<a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:ac030d61093656f3b63ae62e72db53b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00fcdf49dfe3c493030b811d9738af71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#a00fcdf49dfe3c493030b811d9738af71">operator=</a> (const <a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a> &amp;)=default</td></tr>
+<tr class="separator:a00fcdf49dfe3c493030b811d9738af71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac157229c7e7ddb69e7cd5957344715e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#ac157229c7e7ddb69e7cd5957344715e1">operator=</a> (<a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:ac157229c7e7ddb69e7cd5957344715e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec554f157a31570153d4b92a2cc533e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#a3ec554f157a31570153d4b92a2cc533e">~ErrorEstimator</a> ()=default</td></tr>
+<tr class="separator:a3ec554f157a31570153d4b92a2cc533e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ee8217ac35baaa00cc3b72e9815d93"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#ab5ee8217ac35baaa00cc3b72e9815d93">estimate_error</a> (const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;system, <a class="el" href="classlibMesh_1_1ErrorVector.html">ErrorVector</a> &amp;error_per_cell, const <a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; *solution_vector=nullptr, bool estimate_parent_error=false)=0</td></tr>
+<tr class="memdesc:ab5ee8217ac35baaa00cc3b72e9815d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">This pure virtual function must be redefined in derived classes to compute the error for each active element and place it in the "error_per_cell" vector.  <a href="#ab5ee8217ac35baaa00cc3b72e9815d93">更多...</a><br/></td></tr>
+<tr class="separator:ab5ee8217ac35baaa00cc3b72e9815d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad575aa2606bb47551e562a290499df0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#aad575aa2606bb47551e562a290499df0">estimate_errors</a> (const <a class="el" href="classlibMesh_1_1EquationSystems.html">EquationSystems</a> &amp;equation_systems, <a class="el" href="classlibMesh_1_1ErrorVector.html">ErrorVector</a> &amp;error_per_cell, const std::map&lt; const <a class="el" href="classlibMesh_1_1System.html">System</a> *, <a class="el" href="classlibMesh_1_1SystemNorm.html">SystemNorm</a> &gt; &amp;error_norms, const std::map&lt; const <a class="el" href="classlibMesh_1_1System.html">System</a> *, const <a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; * &gt; *solution_vectors=nullptr, bool estimate_parent_error=false)</td></tr>
+<tr class="memdesc:aad575aa2606bb47551e562a290499df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This virtual function can be redefined in derived classes, but by default computes the sum of the error_per_cell for each system in the equation_systems.  <a href="#aad575aa2606bb47551e562a290499df0">更多...</a><br/></td></tr>
+<tr class="separator:aad575aa2606bb47551e562a290499df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf8e0fb666d439804046465cf443867"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#a6bf8e0fb666d439804046465cf443867">estimate_errors</a> (const <a class="el" href="classlibMesh_1_1EquationSystems.html">EquationSystems</a> &amp;equation_systems, <a class="el" href="classlibMesh_1_1ErrorEstimator.html#ab37d862060bbddf77099b6e34c62ef71">ErrorMap</a> &amp;errors_per_cell, const std::map&lt; const <a class="el" href="classlibMesh_1_1System.html">System</a> *, const <a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; * &gt; *solution_vectors=nullptr, bool estimate_parent_error=false)</td></tr>
+<tr class="memdesc:a6bf8e0fb666d439804046465cf443867"><td class="mdescLeft">&#160;</td><td class="mdescRight">This virtual function can be redefined in derived classes, but by default it calls estimate_error repeatedly to calculate the requested error vectors.  <a href="#a6bf8e0fb666d439804046465cf443867">更多...</a><br/></td></tr>
+<tr class="separator:a6bf8e0fb666d439804046465cf443867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3162f59ee5f231d73ab54252cfa8f1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a370493a82a7f09613a0fdc56fc7912b7">ErrorEstimatorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#a8a3162f59ee5f231d73ab54252cfa8f1">type</a> () const =0</td></tr>
+<tr class="separator:a8a3162f59ee5f231d73ab54252cfa8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9d626496b0b6f99f679c4ef4f0a5e46e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1SystemNorm.html">SystemNorm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#a9d626496b0b6f99f679c4ef4f0a5e46e">error_norm</a></td></tr>
+<tr class="memdesc:a9d626496b0b6f99f679c4ef4f0a5e46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">When estimating the error in a single system, the <code>error_norm</code> is used to control the scaling and norm choice for each variable.  <a href="#a9d626496b0b6f99f679c4ef4f0a5e46e">更多...</a><br/></td></tr>
+<tr class="separator:a9d626496b0b6f99f679c4ef4f0a5e46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ac29685e2e9f05123fd4d6db97326a2a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#ac29685e2e9f05123fd4d6db97326a2a9">reduce_error</a> (std::vector&lt; <a class="el" href="namespacelibMesh.html#a26acf05f075521cbfb223db57e63d6d0">ErrorVectorReal</a> &gt; &amp;error_per_cell, const Parallel::Communicator &amp;comm) const </td></tr>
+<tr class="memdesc:ac29685e2e9f05123fd4d6db97326a2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method takes the local error contributions in <code>error_per_cell</code> from each processor and combines them to get the global error vector.  <a href="#ac29685e2e9f05123fd4d6db97326a2a9">更多...</a><br/></td></tr>
+<tr class="separator:ac29685e2e9f05123fd4d6db97326a2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This class holds functions that will estimate the error in a finite element solution on a given mesh. </p>
+<p>These error estimates can be useful in their own right, or may be used to guide adaptive mesh refinement.</p>
+<dl class="section note"><dt>注解</dt><dd>The computed errors are stored as floats rather than doubles since the required precision is low.</dd></dl>
+<dl class="section author"><dt>作者</dt><dd>Benjamin S. Kirk </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2003 </dd></dl>
+
+<p>在文件 <a class="el" href="error__estimator_8h_source.html">error_estimator.h</a> 第 <a class="el" href="error__estimator_8h_source.html#l00061">61</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="ab37d862060bbddf77099b6e34c62ef71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::pair&lt;const <a class="el" href="classlibMesh_1_1System.html">System</a> *, unsigned int&gt;, std::unique_ptr&lt;<a class="el" href="classlibMesh_1_1ErrorVector.html">ErrorVector</a>&gt; &gt; <a class="el" href="classlibMesh_1_1ErrorEstimator.html#ab37d862060bbddf77099b6e34c62ef71">libMesh::ErrorEstimator::ErrorMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When calculating many error vectors at once, we need a data structure to hold them all. </p>
+
+<p>在文件 <a class="el" href="error__estimator_8h_source.html">error_estimator.h</a> 第 <a class="el" href="error__estimator_8h_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="abd4e67c1f8f49543f64859513208faa4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ErrorEstimator::ErrorEstimator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>Empty. Derived classes should reset error_norm as appropriate. </p>
+
+</div>
+</div>
+<a class="anchor" id="a763ee83b5f9b0342ce40643b49688af6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ErrorEstimator::ErrorEstimator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy/move ctor, copy/move assignment operator, and destructor are all explicitly defaulted for this simple class. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac030d61093656f3b63ae62e72db53b26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ErrorEstimator::ErrorEstimator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ec554f157a31570153d4b92a2cc533e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual libMesh::ErrorEstimator::~ErrorEstimator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ab5ee8217ac35baaa00cc3b72e9815d93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::ErrorEstimator::estimate_error </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>system</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1ErrorVector.html">ErrorVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>error_per_cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; *&#160;</td>
+          <td class="paramname"><em>solution_vector</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>estimate_parent_error</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This pure virtual function must be redefined in derived classes to compute the error for each active element and place it in the "error_per_cell" vector. </p>
+<p>If solution_vector is not nullptr, the estimator will (if able) attempt to estimate an error in that field instead of in system.solution.</p>
+<p>If estimate_parent_error is not false, the estimator will (if able) attempt to give a consistent estimate of errors in parent elements that would be generated by coarsening. </p>
+
+<p>在 <a class="el" href="classlibMesh_1_1ExactErrorEstimator.html#a2db7f9ff5c8553db442451b586d4bdd2">libMesh::ExactErrorEstimator</a>, <a class="el" href="classlibMesh_1_1AdjointResidualErrorEstimator.html#aabb44aeaa53dd5cfdb1f78794f971815">libMesh::AdjointResidualErrorEstimator</a>, <a class="el" href="classlibMesh_1_1AdjointRefinementEstimator.html#af99004a29eeb5644df69adeca099242d">libMesh::AdjointRefinementEstimator</a>, <a class="el" href="classlibMesh_1_1JumpErrorEstimator.html#ae8f1c906c185d73857e7a86bd47fad70">libMesh::JumpErrorEstimator</a>, <a class="el" href="classlibMesh_1_1UniformRefinementEstimator.html#af4b4d100efdd6e093b90e0ea3951f67d">libMesh::UniformRefinementEstimator</a>, <a class="el" href="classlibMesh_1_1PatchRecoveryErrorEstimator.html#a0e416a3b1cdfe72b45ed81588d98dc81">libMesh::PatchRecoveryErrorEstimator</a> , 以及 <a class="el" href="classlibMesh_1_1WeightedPatchRecoveryErrorEstimator.html#ada5156450bd1579d7396323c95ad03a3">libMesh::WeightedPatchRecoveryErrorEstimator</a> 内被实现.</p>
+
+<p>参考自 <a class="el" href="error__estimator_8C_source.html#l00047">estimate_errors()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad575aa2606bb47551e562a290499df0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::ErrorEstimator::estimate_errors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1EquationSystems.html">EquationSystems</a> &amp;&#160;</td>
+          <td class="paramname"><em>equation_systems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1ErrorVector.html">ErrorVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>error_per_cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; const <a class="el" href="classlibMesh_1_1System.html">System</a> *, <a class="el" href="classlibMesh_1_1SystemNorm.html">SystemNorm</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>error_norms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; const <a class="el" href="classlibMesh_1_1System.html">System</a> *, const <a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; * &gt; *&#160;</td>
+          <td class="paramname"><em>solution_vectors</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>estimate_parent_error</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This virtual function can be redefined in derived classes, but by default computes the sum of the error_per_cell for each system in the equation_systems. </p>
+<p>Currently this function ignores the error_norm member variable, and uses the function argument error_norms instead.</p>
+<p>This function is named estimate_errors instead of estimate_error because otherwise C++ can get confused. </p>
+
+<p>被 <a class="el" href="classlibMesh_1_1UniformRefinementEstimator.html#a41eeb5e8506a3489f913e1d3ec9c30b0">libMesh::UniformRefinementEstimator</a> 重载.</p>
+
+<p>在文件 <a class="el" href="error__estimator_8C_source.html">error_estimator.C</a> 第 <a class="el" href="error__estimator_8C_source.html#l00047">47</a> 行定义.</p>
+
+<p>参考 <a class="el" href="error__estimator_8h_source.html#l00158">error_norm</a>, <a class="el" href="classlibMesh_1_1ErrorEstimator.html#ab5ee8217ac35baaa00cc3b72e9815d93">estimate_error()</a>, <a class="el" href="equation__systems_8h_source.html#l00745">libMesh::EquationSystems::get_system()</a>, <a class="el" href="int__range_8h_source.html#l00111">libMesh::index_range()</a>, <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a> , 以及 <a class="el" href="equation__systems_8h_source.html#l00649">libMesh::EquationSystems::n_systems()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  SystemNorm old_error_norm = this-&gt;<a class="code" href="classlibMesh_1_1ErrorEstimator.html#a9d626496b0b6f99f679c4ef4f0a5e46e">error_norm</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Sum the error values from each system</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> s : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(equation_systems.n_systems()))</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      ErrorVector system_error_per_cell;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">const</span> System &amp; sys = equation_systems.get_system(s);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">if</span> (error_norms.find(&amp;sys) == error_norms.end())</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        this-&gt;<a class="code" href="classlibMesh_1_1ErrorEstimator.html#a9d626496b0b6f99f679c4ef4f0a5e46e">error_norm</a> = old_error_norm;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        this-&gt;<a class="code" href="classlibMesh_1_1ErrorEstimator.html#a9d626496b0b6f99f679c4ef4f0a5e46e">error_norm</a> = error_norms.find(&amp;sys)-&gt;second;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af63481288585b5ba172278c33c726667">NumericVector&lt;Number&gt;</a> * solution_vector = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span> (solution_vectors &amp;&amp;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;          solution_vectors-&gt;find(&amp;sys) != solution_vectors-&gt;end())</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        solution_vector = solution_vectors-&gt;find(&amp;sys)-&gt;second;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      this-&gt;<a class="code" href="classlibMesh_1_1ErrorEstimator.html#ab5ee8217ac35baaa00cc3b72e9815d93">estimate_error</a>(sys, system_error_per_cell,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                           solution_vector, estimate_parent_error);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">if</span> (s)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          libmesh_assert_equal_to (error_per_cell.size(), system_error_per_cell.size());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(error_per_cell))</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            error_per_cell[i] += system_error_per_cell[i];</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        error_per_cell = system_error_per_cell;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Restore our old state before returning</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1ErrorEstimator.html#a9d626496b0b6f99f679c4ef4f0a5e46e">error_norm</a> = old_error_norm;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1ErrorEstimator_html_a9d626496b0b6f99f679c4ef4f0a5e46e"><div class="ttname"><a href="classlibMesh_1_1ErrorEstimator.html#a9d626496b0b6f99f679c4ef4f0a5e46e">libMesh::ErrorEstimator::error_norm</a></div><div class="ttdeci">SystemNorm error_norm</div><div class="ttdoc">When estimating the error in a single system, the error_norm is used to control the scaling and norm ...</div><div class="ttdef"><b>Definition:</b> <a href="error__estimator_8h_source.html#l00158">error_estimator.h:158</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorEstimator_html_ab5ee8217ac35baaa00cc3b72e9815d93"><div class="ttname"><a href="classlibMesh_1_1ErrorEstimator.html#ab5ee8217ac35baaa00cc3b72e9815d93">libMesh::ErrorEstimator::estimate_error</a></div><div class="ttdeci">virtual void estimate_error(const System &amp;system, ErrorVector &amp;error_per_cell, const NumericVector&lt; Number &gt; *solution_vector=nullptr, bool estimate_parent_error=false)=0</div><div class="ttdoc">This pure virtual function must be redefined in derived classes to compute the error for each active ...</div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af63481288585b5ba172278c33c726667"><div class="ttname"><a href="namespacelibMesh.html#af63481288585b5ba172278c33c726667">libMesh::NumericVector&lt; Number &gt;</a></div><div class="ttdeci">template class LIBMESH_EXPORT NumericVector&lt; Number &gt;</div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8C_source.html#l00436">numeric_vector.C:436</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a26e38c0dc87c05a5e8df7e26bfed543b"><div class="ttname"><a href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">libMesh::index_range</a></div><div class="ttdeci">auto index_range(const T &amp;sizable)</div><div class="ttdoc">Helper function that returns an IntRange&amp;lt;std::size_t&amp;gt; representing all the indices of the passed-in v...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00111">int_range.h:111</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6bf8e0fb666d439804046465cf443867"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::ErrorEstimator::estimate_errors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1EquationSystems.html">EquationSystems</a> &amp;&#160;</td>
+          <td class="paramname"><em>equation_systems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1ErrorEstimator.html#ab37d862060bbddf77099b6e34c62ef71">ErrorMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>errors_per_cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; const <a class="el" href="classlibMesh_1_1System.html">System</a> *, const <a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; * &gt; *&#160;</td>
+          <td class="paramname"><em>solution_vectors</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>estimate_parent_error</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This virtual function can be redefined in derived classes, but by default it calls estimate_error repeatedly to calculate the requested error vectors. </p>
+<p>FIXME: This is a default implementation - derived classes should reimplement it for efficiency.</p>
+<p>Currently this function ignores the <a class="el" href="namespacelibMesh_1_1MeshTools.html#a0701de7f01fd5eced3da4a332ff5ae51">error_norm.weight()</a> values because it calculates each variable's error individually, unscaled.</p>
+<p>The user selects which errors get computed by filling a map with error vectors: If errors_per_cell[&amp;system][v] exists, it will be filled with the error values in variable <code>v</code> of <code>system</code> </p>
+
+<p>被 <a class="el" href="classlibMesh_1_1UniformRefinementEstimator.html#a676215e74e7c4517162b4431835453a4">libMesh::UniformRefinementEstimator</a> 重载.</p>
+
+<p>在文件 <a class="el" href="error__estimator_8C_source.html">error_estimator.C</a> 第 <a class="el" href="error__estimator_8C_source.html#l00093">93</a> 行定义.</p>
+
+<p>参考 <a class="el" href="error__estimator_8h_source.html#l00158">error_norm</a>, <a class="el" href="classlibMesh_1_1ErrorEstimator.html#ab5ee8217ac35baaa00cc3b72e9815d93">estimate_error()</a>, <a class="el" href="equation__systems_8h_source.html#l00745">libMesh::EquationSystems::get_system()</a>, <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a>, <a class="el" href="equation__systems_8h_source.html#l00649">libMesh::EquationSystems::n_systems()</a>, <a class="el" href="tecplot__io_8C_source.html#l00068">n_vars</a>, <a class="el" href="system_8h_source.html#l02349">libMesh::System::n_vars()</a> , 以及 <a class="el" href="system__norm_8C_source.html#l00112">libMesh::SystemNorm::type()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  SystemNorm old_error_norm = this-&gt;<a class="code" href="classlibMesh_1_1ErrorEstimator.html#a9d626496b0b6f99f679c4ef4f0a5e46e">error_norm</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// Find the requested error values from each system</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> s : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(equation_systems.n_systems()))</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keyword">const</span> System &amp; sys = equation_systems.get_system(s);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="tecplot__io_8C.html#ac001e4247887b98c2aa5b8ec5107ca0d">n_vars</a> = sys.n_vars();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v = 0; v != <a class="code" href="tecplot__io_8C.html#ac001e4247887b98c2aa5b8ec5107ca0d">n_vars</a>; ++v)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;          <span class="comment">// Only fill in ErrorVectors the user asks for</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;          <span class="keywordflow">if</span> (!errors_per_cell.count(std::make_pair(&amp;sys, v)))</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          <span class="comment">// Calculate error in only one variable</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          std::vector&lt;Real&gt; weights(n_vars, 0.0);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;          weights[v] = 1.0;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          this-&gt;<a class="code" href="classlibMesh_1_1ErrorEstimator.html#a9d626496b0b6f99f679c4ef4f0a5e46e">error_norm</a> =</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            SystemNorm(std::vector&lt;FEMNormType&gt;(n_vars, old_error_norm.type(v)),</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                       weights);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af63481288585b5ba172278c33c726667">NumericVector&lt;Number&gt;</a> * solution_vector = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;          <span class="keywordflow">if</span> (solution_vectors &amp;&amp;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;              solution_vectors-&gt;find(&amp;sys) != solution_vectors-&gt;end())</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            solution_vector = solution_vectors-&gt;find(&amp;sys)-&gt;second;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;          this-&gt;<a class="code" href="classlibMesh_1_1ErrorEstimator.html#ab5ee8217ac35baaa00cc3b72e9815d93">estimate_error</a></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            (sys, *errors_per_cell[std::make_pair(&amp;sys, v)],</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;             solution_vector, estimate_parent_error);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="comment">// Restore our old state before returning</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1ErrorEstimator.html#a9d626496b0b6f99f679c4ef4f0a5e46e">error_norm</a> = old_error_norm;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1ErrorEstimator_html_a9d626496b0b6f99f679c4ef4f0a5e46e"><div class="ttname"><a href="classlibMesh_1_1ErrorEstimator.html#a9d626496b0b6f99f679c4ef4f0a5e46e">libMesh::ErrorEstimator::error_norm</a></div><div class="ttdeci">SystemNorm error_norm</div><div class="ttdoc">When estimating the error in a single system, the error_norm is used to control the scaling and norm ...</div><div class="ttdef"><b>Definition:</b> <a href="error__estimator_8h_source.html#l00158">error_estimator.h:158</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ErrorEstimator_html_ab5ee8217ac35baaa00cc3b72e9815d93"><div class="ttname"><a href="classlibMesh_1_1ErrorEstimator.html#ab5ee8217ac35baaa00cc3b72e9815d93">libMesh::ErrorEstimator::estimate_error</a></div><div class="ttdeci">virtual void estimate_error(const System &amp;system, ErrorVector &amp;error_per_cell, const NumericVector&lt; Number &gt; *solution_vector=nullptr, bool estimate_parent_error=false)=0</div><div class="ttdoc">This pure virtual function must be redefined in derived classes to compute the error for each active ...</div></div>
+<div class="ttc" id="tecplot__io_8C_html_ac001e4247887b98c2aa5b8ec5107ca0d"><div class="ttname"><a href="tecplot__io_8C.html#ac001e4247887b98c2aa5b8ec5107ca0d">n_vars</a></div><div class="ttdeci">const unsigned int n_vars</div><div class="ttdef"><b>Definition:</b> <a href="tecplot__io_8C_source.html#l00068">tecplot_io.C:68</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af63481288585b5ba172278c33c726667"><div class="ttname"><a href="namespacelibMesh.html#af63481288585b5ba172278c33c726667">libMesh::NumericVector&lt; Number &gt;</a></div><div class="ttdeci">template class LIBMESH_EXPORT NumericVector&lt; Number &gt;</div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8C_source.html#l00436">numeric_vector.C:436</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a00fcdf49dfe3c493030b811d9738af71"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a>&amp; libMesh::ErrorEstimator::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac157229c7e7ddb69e7cd5957344715e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a>&amp; libMesh::ErrorEstimator::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1ErrorEstimator.html">ErrorEstimator</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac29685e2e9f05123fd4d6db97326a2a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::ErrorEstimator::reduce_error </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacelibMesh.html#a26acf05f075521cbfb223db57e63d6d0">ErrorVectorReal</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>error_per_cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Parallel::Communicator &amp;&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method takes the local error contributions in <code>error_per_cell</code> from each processor and combines them to get the global error vector. </p>
+
+<p>在文件 <a class="el" href="error__estimator_8C_source.html">error_estimator.C</a> 第 <a class="el" href="error__estimator_8C_source.html#l00032">32</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="uniform__refinement__estimator_8C_source.html#l00119">libMesh::UniformRefinementEstimator::_estimate_error()</a>, <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00154">libMesh::PatchRecoveryErrorEstimator::estimate_error()</a>, <a class="el" href="weighted__patch__recovery__error__estimator_8C_source.html#l00055">libMesh::WeightedPatchRecoveryErrorEstimator::estimate_error()</a>, <a class="el" href="jump__error__estimator_8C_source.html#l00056">libMesh::JumpErrorEstimator::estimate_error()</a>, <a class="el" href="adjoint__refinement__estimator_8C_source.html#l00091">libMesh::AdjointRefinementEstimator::estimate_error()</a> , 以及 <a class="el" href="exact__error__estimator_8C_source.html#l00188">libMesh::ExactErrorEstimator::estimate_error()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// This function must be run on all processors at once</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// parallel_object_only();</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// Each processor has now computed the error contributions</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// for its local elements.  We may need to sum the vector to</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// recover the error for each element.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  comm.sum(error_per_cell);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8a3162f59ee5f231d73ab54252cfa8f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacelibMesh.html#a370493a82a7f09613a0fdc56fc7912b7">ErrorEstimatorType</a> libMesh::ErrorEstimator::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The type for the <a class="el" href="classlibMesh_1_1ErrorEstimator.html" title="This class holds functions that will estimate the error in a finite element solution on a given mesh...">ErrorEstimator</a> subclass. </dd></dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1ExactErrorEstimator.html#a2dfc3dac4cbcda781e1a55d82c27a28d">libMesh::ExactErrorEstimator</a>, <a class="el" href="classlibMesh_1_1AdjointResidualErrorEstimator.html#a0605dad340ea999b5d7366326fd837a0">libMesh::AdjointResidualErrorEstimator</a>, <a class="el" href="classlibMesh_1_1UniformRefinementEstimator.html#a609d6a6006b38e8c2f841556b88344e4">libMesh::UniformRefinementEstimator</a>, <a class="el" href="classlibMesh_1_1AdjointRefinementEstimator.html#a3db466224010af9c371440ffa67c43c2">libMesh::AdjointRefinementEstimator</a>, <a class="el" href="classlibMesh_1_1PatchRecoveryErrorEstimator.html#ad570eaa3225515f9aad7efa83783a430">libMesh::PatchRecoveryErrorEstimator</a>, <a class="el" href="classlibMesh_1_1KellyErrorEstimator.html#a4dd2b48a088e7fd8111e962d52fd9bcc">libMesh::KellyErrorEstimator</a>, <a class="el" href="classlibMesh_1_1WeightedPatchRecoveryErrorEstimator.html#a576fa5c6b46e92acaaec5216e317e65f">libMesh::WeightedPatchRecoveryErrorEstimator</a>, <a class="el" href="classlibMesh_1_1DiscontinuityMeasure.html#a3e3d1fed40dc4dfdb1bcd873f8f69674">libMesh::DiscontinuityMeasure</a> , 以及 <a class="el" href="classlibMesh_1_1LaplacianErrorEstimator.html#a16198122cd058363dfa7758973fa1a32">libMesh::LaplacianErrorEstimator</a> 内被实现.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a9d626496b0b6f99f679c4ef4f0a5e46e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1SystemNorm.html">SystemNorm</a> libMesh::ErrorEstimator::error_norm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When estimating the error in a single system, the <code>error_norm</code> is used to control the scaling and norm choice for each variable. </p>
+<p>Not all estimators will support all norm choices. The default scaling is for all variables to be weighted equally. The default norm choice depends on the error estimator.</p>
+<p>Part of this functionality was supported via component_scale and sobolev_order in older <a class="el" href="namespacelibMesh.html" title="The libMesh namespace provides an interface to certain functionality in the library. ">libMesh</a> versions, and a small part was supported via component_mask in even older versions. Hopefully the encapsulation here will allow us to avoid changing this API again. </p>
+
+<p>在文件 <a class="el" href="error__estimator_8h_source.html">error_estimator.h</a> 第 <a class="el" href="error__estimator_8h_source.html#l00158">158</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="uniform__refinement__estimator_8C_source.html#l00119">libMesh::UniformRefinementEstimator::_estimate_error()</a>, <a class="el" href="adjoint__refinement__estimator_8C_source.html#l00073">libMesh::AdjointRefinementEstimator::AdjointRefinementEstimator()</a>, <a class="el" href="discontinuity__measure_8C_source.html#l00129">libMesh::DiscontinuityMeasure::boundary_side_integration()</a>, <a class="el" href="kelly__error__estimator_8C_source.html#l00135">libMesh::KellyErrorEstimator::boundary_side_integration()</a>, <a class="el" href="discontinuity__measure_8C_source.html#l00041">libMesh::DiscontinuityMeasure::DiscontinuityMeasure()</a>, <a class="el" href="jump__error__estimator_8C_source.html#l00056">libMesh::JumpErrorEstimator::estimate_error()</a>, <a class="el" href="adjoint__residual__error__estimator_8C_source.html#l00061">libMesh::AdjointResidualErrorEstimator::estimate_error()</a>, <a class="el" href="exact__error__estimator_8C_source.html#l00188">libMesh::ExactErrorEstimator::estimate_error()</a>, <a class="el" href="error__estimator_8C_source.html#l00047">estimate_errors()</a>, <a class="el" href="exact__error__estimator_8C_source.html#l00049">libMesh::ExactErrorEstimator::ExactErrorEstimator()</a>, <a class="el" href="exact__error__estimator_8C_source.html#l00402">libMesh::ExactErrorEstimator::find_squared_element_error()</a>, <a class="el" href="fourth__error__estimators_8C_source.html#l00063">libMesh::LaplacianErrorEstimator::init_context()</a>, <a class="el" href="discontinuity__measure_8C_source.html#l00059">libMesh::DiscontinuityMeasure::init_context()</a>, <a class="el" href="kelly__error__estimator_8C_source.html#l00059">libMesh::KellyErrorEstimator::init_context()</a>, <a class="el" href="fourth__error__estimators_8C_source.html#l00090">libMesh::LaplacianErrorEstimator::internal_side_integration()</a>, <a class="el" href="discontinuity__measure_8C_source.html#l00086">libMesh::DiscontinuityMeasure::internal_side_integration()</a>, <a class="el" href="kelly__error__estimator_8C_source.html#l00090">libMesh::KellyErrorEstimator::internal_side_integration()</a>, <a class="el" href="kelly__error__estimator_8C_source.html#l00041">libMesh::KellyErrorEstimator::KellyErrorEstimator()</a>, <a class="el" href="fourth__error__estimators_8C_source.html#l00046">libMesh::LaplacianErrorEstimator::LaplacianErrorEstimator()</a>, <a class="el" href="weighted__patch__recovery__error__estimator_8C_source.html#l00112">libMesh::WeightedPatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00211">libMesh::PatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00065">libMesh::PatchRecoveryErrorEstimator::PatchRecoveryErrorEstimator()</a>, <a class="el" href="jump__error__estimator_8C_source.html#l00450">libMesh::JumpErrorEstimator::reinit_sides()</a> , 以及 <a class="el" href="uniform__refinement__estimator_8C_source.html#l00054">libMesh::UniformRefinementEstimator::UniformRefinementEstimator()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/error_estimation/<a class="el" href="error__estimator_8h_source.html">error_estimator.h</a></li>
+<li>/home/lwz/libmesh/src/error_estimation/<a class="el" href="error__estimator_8C_source.html">error_estimator.C</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:08 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

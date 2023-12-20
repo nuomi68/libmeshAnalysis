@@ -1,0 +1,649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::Threads 命名空间参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="namespacemembers.html"><span>命名空间成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="namespacelibMesh_1_1Threads.html">Threads</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::Threads 命名空间参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="namespacelibMesh_1_1Threads.html" title="The Threads namespace is for wrapper functions for common general multithreading algorithms and tasks...">Threads</a> namespace is for wrapper functions for common general multithreading algorithms and tasks.  
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1BoolAcquire.html">BoolAcquire</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">We use a class to turn <a class="el" href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866" title="A boolean which is true iff we are in a Threads:: function It may be useful to assert(!Threadsin_thre...">Threads::in_threads</a> on and off, to be exception-safe.  <a href="classlibMesh_1_1Threads_1_1BoolAcquire.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1DisablePerfLogInScope.html">DisablePerfLogInScope</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">We use a class to turn perf logging off and on within threads, to be exception-safe and to avoid forcing indirect inclusion of <a class="el" href="libmesh__logging_8h.html">libmesh_logging.h</a> everywhere.  <a href="classlibMesh_1_1Threads_1_1DisablePerfLogInScope.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1NonConcurrentThread.html">NonConcurrentThread</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple compatibility class for std::thread 'concurrent' execution.  <a href="classlibMesh_1_1Threads_1_1NonConcurrentThread.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1BlockedRange.html">BlockedRange</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocked range which can be subdivided and executed in parallel.  <a href="classlibMesh_1_1Threads_1_1BlockedRange.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1scalable__allocator.html">scalable_allocator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalable allocator to be used in multithreaded code chunks which allocate a lot of dynamic memory.  <a href="classlibMesh_1_1Threads_1_1scalable__allocator.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1task__scheduler__init.html">task_scheduler_init</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler to manage threads.  <a href="classlibMesh_1_1Threads_1_1task__scheduler__init.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1split.html">split</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy "splitting object" used to distinguish splitting constructors from copy constructors.  <a href="classlibMesh_1_1Threads_1_1split.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1spin__mutex.html">spin_mutex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin mutex.  <a href="classlibMesh_1_1Threads_1_1spin__mutex.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1recursive__mutex.html">recursive_mutex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive mutex.  <a href="classlibMesh_1_1Threads_1_1recursive__mutex.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1atomic.html">atomic</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines atomic operations which can only be executed on a single thread at a time.  <a href="classlibMesh_1_1Threads_1_1atomic.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Threads_1_1RangeBody.html">RangeBody</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a0c1a1eb7550a96570666feacd91a76b8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classlibMesh_1_1Threads_1_1NonConcurrentThread.html">NonConcurrentThread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a0c1a1eb7550a96570666feacd91a76b8">Thread</a></td></tr>
+<tr class="memdesc:a0c1a1eb7550a96570666feacd91a76b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the non-concurrent placeholder.  <a href="#a0c1a1eb7550a96570666feacd91a76b8">更多...</a><br/></td></tr>
+<tr class="separator:a0c1a1eb7550a96570666feacd91a76b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2bb356ccf0cb75a2e2633803cb229cd"><td class="memItemLeft" align="right" valign="top">typedef tbb::task_scheduler_init&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#ad2bb356ccf0cb75a2e2633803cb229cd">task_scheduler_init</a></td></tr>
+<tr class="memdesc:ad2bb356ccf0cb75a2e2633803cb229cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler to manage threads.  <a href="#ad2bb356ccf0cb75a2e2633803cb229cd">更多...</a><br/></td></tr>
+<tr class="separator:ad2bb356ccf0cb75a2e2633803cb229cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ac7706cba4c670c5fe8e1654c9bbd9"><td class="memItemLeft" align="right" valign="top">typedef tbb::split&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a24ac7706cba4c670c5fe8e1654c9bbd9">split</a></td></tr>
+<tr class="memdesc:a24ac7706cba4c670c5fe8e1654c9bbd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy "splitting object" used to distinguish splitting constructors from copy constructors.  <a href="#a24ac7706cba4c670c5fe8e1654c9bbd9">更多...</a><br/></td></tr>
+<tr class="separator:a24ac7706cba4c670c5fe8e1654c9bbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e34d4e9e4f0c5da38e5c12d38e893bd"><td class="memItemLeft" align="right" valign="top">typedef tbb::spin_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a6e34d4e9e4f0c5da38e5c12d38e893bd">spin_mutex</a></td></tr>
+<tr class="memdesc:a6e34d4e9e4f0c5da38e5c12d38e893bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin mutex.  <a href="#a6e34d4e9e4f0c5da38e5c12d38e893bd">更多...</a><br/></td></tr>
+<tr class="separator:a6e34d4e9e4f0c5da38e5c12d38e893bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64122d1e50161e0a8be0fb802b7bb424"><td class="memItemLeft" align="right" valign="top">typedef tbb::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a64122d1e50161e0a8be0fb802b7bb424">recursive_mutex</a></td></tr>
+<tr class="memdesc:a64122d1e50161e0a8be0fb802b7bb424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive mutex.  <a href="#a64122d1e50161e0a8be0fb802b7bb424">更多...</a><br/></td></tr>
+<tr class="separator:a64122d1e50161e0a8be0fb802b7bb424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a4f395fd868b3dfca285f3b5613790f54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a4f395fd868b3dfca285f3b5613790f54">lock_singleton_spin_mutex</a> ()</td></tr>
+<tr class="separator:a4f395fd868b3dfca285f3b5613790f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ad775475fe89a4058844dc62b644cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a72ad775475fe89a4058844dc62b644cb">unlock_singleton_spin_mutex</a> ()</td></tr>
+<tr class="separator:a72ad775475fe89a4058844dc62b644cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97dcd01ff677ad850c3c9f6d8380dba2"><td class="memTemplParams" colspan="2">template&lt;typename Range , typename Body &gt; </td></tr>
+<tr class="memitem:a97dcd01ff677ad850c3c9f6d8380dba2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a97dcd01ff677ad850c3c9f6d8380dba2">parallel_for</a> (const Range &amp;range, const Body &amp;body)</td></tr>
+<tr class="memdesc:a97dcd01ff677ad850c3c9f6d8380dba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the provided function object in parallel on the specified range.  <a href="#a97dcd01ff677ad850c3c9f6d8380dba2">更多...</a><br/></td></tr>
+<tr class="separator:a97dcd01ff677ad850c3c9f6d8380dba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ee9aae1463d25358598e42ec7eac4e"><td class="memTemplParams" colspan="2">template&lt;typename Range , typename Body , typename Partitioner &gt; </td></tr>
+<tr class="memitem:ac9ee9aae1463d25358598e42ec7eac4e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#ac9ee9aae1463d25358598e42ec7eac4e">parallel_for</a> (const Range &amp;range, const Body &amp;body, const <a class="el" href="classlibMesh_1_1Partitioner.html">Partitioner</a> &amp;)</td></tr>
+<tr class="memdesc:ac9ee9aae1463d25358598e42ec7eac4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the provided function object in parallel on the specified range with the specified partitioner.  <a href="#ac9ee9aae1463d25358598e42ec7eac4e">更多...</a><br/></td></tr>
+<tr class="separator:ac9ee9aae1463d25358598e42ec7eac4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8295c6919b44a664d2fe13288cd334e5"><td class="memTemplParams" colspan="2">template&lt;typename Range , typename Body &gt; </td></tr>
+<tr class="memitem:a8295c6919b44a664d2fe13288cd334e5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a8295c6919b44a664d2fe13288cd334e5">parallel_reduce</a> (const Range &amp;range, Body &amp;body)</td></tr>
+<tr class="memdesc:a8295c6919b44a664d2fe13288cd334e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the provided reduction operation in parallel on the specified range.  <a href="#a8295c6919b44a664d2fe13288cd334e5">更多...</a><br/></td></tr>
+<tr class="separator:a8295c6919b44a664d2fe13288cd334e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5260d54ff49af87ef2c601adc4e06f"><td class="memTemplParams" colspan="2">template&lt;typename Range , typename Body , typename Partitioner &gt; </td></tr>
+<tr class="memitem:a9f5260d54ff49af87ef2c601adc4e06f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a9f5260d54ff49af87ef2c601adc4e06f">parallel_reduce</a> (const Range &amp;range, Body &amp;body, const <a class="el" href="classlibMesh_1_1Partitioner.html">Partitioner</a> &amp;)</td></tr>
+<tr class="memdesc:a9f5260d54ff49af87ef2c601adc4e06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the provided reduction operation in parallel on the specified range with the specified partitioner.  <a href="#a9f5260d54ff49af87ef2c601adc4e06f">更多...</a><br/></td></tr>
+<tr class="separator:a9f5260d54ff49af87ef2c601adc4e06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea3674d10e3dcadfd18b6657986ae42"><td class="memTemplParams" colspan="2">template&lt;typename Range &gt; </td></tr>
+<tr class="memitem:a7ea3674d10e3dcadfd18b6657986ae42"><td class="memTemplItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a7ea3674d10e3dcadfd18b6657986ae42">num_pthreads</a> (Range &amp;range)</td></tr>
+<tr class="separator:a7ea3674d10e3dcadfd18b6657986ae42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bd62ad8b7572d8a4c8d238e451c89fa"><td class="memTemplParams" colspan="2">template&lt;typename Range , typename Body &gt; </td></tr>
+<tr class="memitem:a7bd62ad8b7572d8a4c8d238e451c89fa"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a7bd62ad8b7572d8a4c8d238e451c89fa">run_body</a> (void *args)</td></tr>
+<tr class="separator:a7bd62ad8b7572d8a4c8d238e451c89fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a29932e1987dacf7e89b1b27bb49bf0c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Threads_1_1spin__mutex.html">spin_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a29932e1987dacf7e89b1b27bb49bf0c9">spin_mtx</a></td></tr>
+<tr class="memdesc:a29932e1987dacf7e89b1b27bb49bf0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenient spin mutex object which can be used for obtaining locks.  <a href="#a29932e1987dacf7e89b1b27bb49bf0c9">更多...</a><br/></td></tr>
+<tr class="separator:a29932e1987dacf7e89b1b27bb49bf0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b837ec1e7f5826d6e2223c66dbfb3f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Threads_1_1recursive__mutex.html">recursive_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a1b837ec1e7f5826d6e2223c66dbfb3f5">recursive_mtx</a></td></tr>
+<tr class="memdesc:a1b837ec1e7f5826d6e2223c66dbfb3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenient recursive mutex object which can be used for obtaining locks.  <a href="#a1b837ec1e7f5826d6e2223c66dbfb3f5">更多...</a><br/></td></tr>
+<tr class="separator:a1b837ec1e7f5826d6e2223c66dbfb3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130855799a58bba44e6ab25bd2a2a866"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866">in_threads</a> = false</td></tr>
+<tr class="memdesc:a130855799a58bba44e6ab25bd2a2a866"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean which is true iff we are in a <a class="el" href="namespacelibMesh_1_1Threads.html" title="The Threads namespace is for wrapper functions for common general multithreading algorithms and tasks...">Threads</a>:: function It may be useful to assert(!Threads<a class="el" href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866" title="A boolean which is true iff we are in a Threads:: function It may be useful to assert(!Threadsin_thre...">in_threads</a>) in any code which is known to not be thread-safe.  <a href="#a130855799a58bba44e6ab25bd2a2a866">更多...</a><br/></td></tr>
+<tr class="separator:a130855799a58bba44e6ab25bd2a2a866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The <a class="el" href="namespacelibMesh_1_1Threads.html" title="The Threads namespace is for wrapper functions for common general multithreading algorithms and tasks...">Threads</a> namespace is for wrapper functions for common general multithreading algorithms and tasks. </p>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a64122d1e50161e0a8be0fb802b7bb424"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef tbb::recursive_mutex <a class="el" href="classlibMesh_1_1Threads_1_1recursive__mutex.html">libMesh::Threads::recursive_mutex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recursive mutex. </p>
+<p>Implements mutual exclusion by busy-waiting in user space for the lock to be acquired. The same thread can acquire the same lock multiple times </p>
+
+<p>在文件 <a class="el" href="threads__tbb_8h_source.html">threads_tbb.h</a> 第 <a class="el" href="threads__tbb_8h_source.html#l00174">174</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e34d4e9e4f0c5da38e5c12d38e893bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef tbb::spin_mutex <a class="el" href="classlibMesh_1_1Threads_1_1spin__mutex.html">libMesh::Threads::spin_mutex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Spin mutex. </p>
+<p>Implements mutual exclusion by busy-waiting in user space for the lock to be acquired. </p>
+
+<p>在文件 <a class="el" href="threads__tbb_8h_source.html">threads_tbb.h</a> 第 <a class="el" href="threads__tbb_8h_source.html#l00167">167</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24ac7706cba4c670c5fe8e1654c9bbd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef tbb::split <a class="el" href="classlibMesh_1_1Threads_1_1split.html">libMesh::Threads::split</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dummy "splitting object" used to distinguish splitting constructors from copy constructors. </p>
+
+<p>在文件 <a class="el" href="threads__tbb_8h_source.html">threads_tbb.h</a> 第 <a class="el" href="threads__tbb_8h_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2bb356ccf0cb75a2e2633803cb229cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef tbb::task_scheduler_init <a class="el" href="classlibMesh_1_1Threads_1_1task__scheduler__init.html">libMesh::Threads::task_scheduler_init</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scheduler to manage threads. </p>
+
+<p>在文件 <a class="el" href="threads__tbb_8h_source.html">threads_tbb.h</a> 第 <a class="el" href="threads__tbb_8h_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c1a1eb7550a96570666feacd91a76b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef tbb::tbb_thread <a class="el" href="namespacelibMesh_1_1Threads.html#a0c1a1eb7550a96570666feacd91a76b8">libMesh::Threads::Thread</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use the non-concurrent placeholder. </p>
+<p>Thread object abstraction that provides a basic constructor and support for join().</p>
+<p>Use std::thread when available. </p>
+
+<p>在文件 <a class="el" href="threads__none_8h_source.html">threads_none.h</a> 第 <a class="el" href="threads__none_8h_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a4f395fd868b3dfca285f3b5613790f54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Threads::lock_singleton_spin_mutex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="threads_8C_source.html">threads.C</a> 第 <a class="el" href="threads_8C_source.html#l00034">34</a> 行定义.</p>
+
+<p>参考 <a class="el" href="threads__none_8h_source.html#l00131">libMesh::Threads::spin_mutex::lock()</a> , 以及 <a class="el" href="threads_8C_source.html#l00030">spin_mtx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{ <a class="code" href="namespacelibMesh_1_1Threads.html#a29932e1987dacf7e89b1b27bb49bf0c9">spin_mtx</a>.<a class="code" href="classlibMesh_1_1Threads_1_1spin__mutex.html#a6dca5aeef632a55700b0612707deefae">lock</a>(); }</div>
+<div class="ttc" id="classlibMesh_1_1Threads_1_1spin__mutex_html_a6dca5aeef632a55700b0612707deefae"><div class="ttname"><a href="classlibMesh_1_1Threads_1_1spin__mutex.html#a6dca5aeef632a55700b0612707deefae">libMesh::Threads::spin_mutex::lock</a></div><div class="ttdeci">void lock()</div><div class="ttdef"><b>Definition:</b> <a href="threads__none_8h_source.html#l00131">threads_none.h:131</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1Threads_html_a29932e1987dacf7e89b1b27bb49bf0c9"><div class="ttname"><a href="namespacelibMesh_1_1Threads.html#a29932e1987dacf7e89b1b27bb49bf0c9">libMesh::Threads::spin_mtx</a></div><div class="ttdeci">spin_mutex spin_mtx</div><div class="ttdoc">A convenient spin mutex object which can be used for obtaining locks. </div><div class="ttdef"><b>Definition:</b> <a href="threads_8C_source.html#l00030">threads.C:30</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7ea3674d10e3dcadfd18b6657986ae42"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Range &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::Threads::num_pthreads </td>
+          <td>(</td>
+          <td class="paramtype">Range &amp;&#160;</td>
+          <td class="paramname"><em>range</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="threads__pthread_8h_source.html">threads_pthread.h</a> 第 <a class="el" href="threads__pthread_8h_source.html#l00213">213</a> 行定义.</p>
+
+<p>参考 <a class="el" href="libmesh__base_8h_source.html#l00096">libMesh::n_threads()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;{</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  std::size_t min = std::min((std::size_t)<a class="code" href="namespacelibMesh.html#afde701cff110e1ff2b158298c06a7d1d">libMesh::n_threads</a>(), range.size());</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">return</span> min &gt; 0 ? cast_int&lt;unsigned int&gt;(min) : 1;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_html_afde701cff110e1ff2b158298c06a7d1d"><div class="ttname"><a href="namespacelibMesh.html#afde701cff110e1ff2b158298c06a7d1d">libMesh::n_threads</a></div><div class="ttdeci">unsigned int n_threads()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__base_8h_source.html#l00096">libmesh_base.h:96</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a97dcd01ff677ad850c3c9f6d8380dba2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Range , typename Body &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Threads::parallel_for </td>
+          <td>(</td>
+          <td class="paramtype">const Range &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Body &amp;&#160;</td>
+          <td class="paramname"><em>body</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Execute the provided function object in parallel on the specified range. </p>
+
+<p>在文件 <a class="el" href="threads__none_8h_source.html">threads_none.h</a> 第 <a class="el" href="threads__none_8h_source.html#l00073">73</a> 行定义.</p>
+
+<p>参考 <a class="el" href="threads_8C_source.html#l00032">in_threads</a>.</p>
+
+<p>参考自 <a class="el" href="fem__system_8C_source.html#l01179">libMesh::FEMSystem::assemble_qoi_derivative()</a>, <a class="el" href="fem__system_8C_source.html#l00880">libMesh::FEMSystem::assembly()</a>, <a class="el" href="mesh__communication__global__indices_8C_source.html#l00204">libMesh::MeshCommunication::assign_global_indices()</a>, <a class="el" href="system__projection_8C_source.html#l01280">libMesh::System::boundary_project_vector()</a>, <a class="el" href="mesh__communication__global__indices_8C_source.html#l00612">libMesh::MeshCommunication::check_for_duplicate_global_indices()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l01736">libMesh::DofMap::create_dof_constraints()</a>, <a class="el" href="weighted__patch__recovery__error__estimator_8C_source.html#l00055">libMesh::WeightedPatchRecoveryErrorEstimator::estimate_error()</a>, <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00154">libMesh::PatchRecoveryErrorEstimator::estimate_error()</a> , 以及 <a class="el" href="fem__system_8C_source.html#l01127">libMesh::FEMSystem::postprocess()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  BoolAcquire b(<a class="code" href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866">in_threads</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  body(range);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_1_1Threads_html_a130855799a58bba44e6ab25bd2a2a866"><div class="ttname"><a href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866">libMesh::Threads::in_threads</a></div><div class="ttdeci">bool in_threads</div><div class="ttdoc">A boolean which is true iff we are in a Threads:: function It may be useful to assert(!Threadsin_thre...</div><div class="ttdef"><b>Definition:</b> <a href="threads_8C_source.html#l00032">threads.C:32</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac9ee9aae1463d25358598e42ec7eac4e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Range , typename Body , typename Partitioner &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Threads::parallel_for </td>
+          <td>(</td>
+          <td class="paramtype">const Range &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Body &amp;&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Partitioner &amp;&#160;</td>
+          <td class="paramname"><em>partitioner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Execute the provided function object in parallel on the specified range with the specified partitioner. </p>
+
+<p>在文件 <a class="el" href="threads__none_8h_source.html">threads_none.h</a> 第 <a class="el" href="threads__none_8h_source.html#l00087">87</a> 行定义.</p>
+
+<p>参考 <a class="el" href="threads_8C_source.html#l00032">in_threads</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  BoolAcquire b(<a class="code" href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866">in_threads</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  body(range);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_1_1Threads_html_a130855799a58bba44e6ab25bd2a2a866"><div class="ttname"><a href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866">libMesh::Threads::in_threads</a></div><div class="ttdeci">bool in_threads</div><div class="ttdoc">A boolean which is true iff we are in a Threads:: function It may be useful to assert(!Threadsin_thre...</div><div class="ttdef"><b>Definition:</b> <a href="threads_8C_source.html#l00032">threads.C:32</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8295c6919b44a664d2fe13288cd334e5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Range , typename Body &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Threads::parallel_reduce </td>
+          <td>(</td>
+          <td class="paramtype">const Range &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Body &amp;&#160;</td>
+          <td class="paramname"><em>body</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Execute the provided reduction operation in parallel on the specified range. </p>
+
+<p>在文件 <a class="el" href="threads__none_8h_source.html">threads_none.h</a> 第 <a class="el" href="threads__none_8h_source.html#l00101">101</a> 行定义.</p>
+
+<p>参考 <a class="el" href="threads_8C_source.html#l00032">in_threads</a>.</p>
+
+<p>参考自 <a class="el" href="fem__system_8C_source.html#l01147">libMesh::FEMSystem::assemble_qoi()</a>, <a class="el" href="dof__map_8C_source.html#l00064">libMesh::DofMap::build_sparsity()</a>, <a class="el" href="mesh__tools_8C_source.html#l00558">libMesh::MeshTools::create_bounding_box()</a>, <a class="el" href="mesh__tools_8C_source.html#l00623">libMesh::MeshTools::create_local_bounding_box()</a>, <a class="el" href="mesh__tools_8C_source.html#l00583">libMesh::MeshTools::create_nodal_bounding_box()</a>, <a class="el" href="mesh__tools_8C_source.html#l00637">libMesh::MeshTools::create_processor_bounding_box()</a>, <a class="el" href="mesh__tools_8C_source.html#l00677">libMesh::MeshTools::create_subdomain_bounding_box()</a>, <a class="el" href="generic__projector_8h_source.html#l01201">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::project()</a>, <a class="el" href="system__projection_8C_source.html#l00265">libMesh::System::project_vector()</a>, <a class="el" href="mesh__tools_8C_source.html#l00413">libMesh::MeshTools::total_weight()</a> , 以及 <a class="el" href="mesh__tools_8C_source.html#l00436">libMesh::MeshTools::weight()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  BoolAcquire b(<a class="code" href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866">in_threads</a>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  body(range);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_1_1Threads_html_a130855799a58bba44e6ab25bd2a2a866"><div class="ttname"><a href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866">libMesh::Threads::in_threads</a></div><div class="ttdeci">bool in_threads</div><div class="ttdoc">A boolean which is true iff we are in a Threads:: function It may be useful to assert(!Threadsin_thre...</div><div class="ttdef"><b>Definition:</b> <a href="threads_8C_source.html#l00032">threads.C:32</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9f5260d54ff49af87ef2c601adc4e06f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Range , typename Body , typename Partitioner &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Threads::parallel_reduce </td>
+          <td>(</td>
+          <td class="paramtype">const Range &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Body &amp;&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Partitioner &amp;&#160;</td>
+          <td class="paramname"><em>partitioner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Execute the provided reduction operation in parallel on the specified range with the specified partitioner. </p>
+
+<p>在文件 <a class="el" href="threads__none_8h_source.html">threads_none.h</a> 第 <a class="el" href="threads__none_8h_source.html#l00115">115</a> 行定义.</p>
+
+<p>参考 <a class="el" href="threads_8C_source.html#l00032">in_threads</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  BoolAcquire b(<a class="code" href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866">in_threads</a>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  body(range);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_1_1Threads_html_a130855799a58bba44e6ab25bd2a2a866"><div class="ttname"><a href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866">libMesh::Threads::in_threads</a></div><div class="ttdeci">bool in_threads</div><div class="ttdoc">A boolean which is true iff we are in a Threads:: function It may be useful to assert(!Threadsin_thre...</div><div class="ttdef"><b>Definition:</b> <a href="threads_8C_source.html#l00032">threads.C:32</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7bd62ad8b7572d8a4c8d238e451c89fa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Range , typename Body &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void* libMesh::Threads::run_body </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="threads__pthread_8h_source.html">threads_pthread.h</a> 第 <a class="el" href="threads__pthread_8h_source.html#l00228">228</a> 行定义.</p>
+
+<p>参考 <a class="el" href="threads__pthread_8h_source.html#l00224">libMesh::Threads::RangeBody&lt; Range, Body &gt;::body</a> , 以及 <a class="el" href="threads__pthread_8h_source.html#l00223">libMesh::Threads::RangeBody&lt; Range, Body &gt;::range</a>.</p>
+<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;{</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  RangeBody&lt;Range, Body&gt; * range_body = (RangeBody&lt;Range, Body&gt; *)args;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  Body &amp; body = *range_body-&gt;body;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  Range &amp; range = *range_body-&gt;range;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  body(range);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a72ad775475fe89a4058844dc62b644cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Threads::unlock_singleton_spin_mutex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="threads_8C_source.html">threads.C</a> 第 <a class="el" href="threads_8C_source.html#l00035">35</a> 行定义.</p>
+
+<p>参考 <a class="el" href="threads_8C_source.html#l00030">spin_mtx</a> , 以及 <a class="el" href="threads__none_8h_source.html#l00132">libMesh::Threads::spin_mutex::unlock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{ <a class="code" href="namespacelibMesh_1_1Threads.html#a29932e1987dacf7e89b1b27bb49bf0c9">spin_mtx</a>.<a class="code" href="classlibMesh_1_1Threads_1_1spin__mutex.html#a95b584b8833b9e34921f32365f6b7322">unlock</a>(); }</div>
+<div class="ttc" id="classlibMesh_1_1Threads_1_1spin__mutex_html_a95b584b8833b9e34921f32365f6b7322"><div class="ttname"><a href="classlibMesh_1_1Threads_1_1spin__mutex.html#a95b584b8833b9e34921f32365f6b7322">libMesh::Threads::spin_mutex::unlock</a></div><div class="ttdeci">void unlock()</div><div class="ttdef"><b>Definition:</b> <a href="threads__none_8h_source.html#l00132">threads_none.h:132</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1Threads_html_a29932e1987dacf7e89b1b27bb49bf0c9"><div class="ttname"><a href="namespacelibMesh_1_1Threads.html#a29932e1987dacf7e89b1b27bb49bf0c9">libMesh::Threads::spin_mtx</a></div><div class="ttdeci">spin_mutex spin_mtx</div><div class="ttdoc">A convenient spin mutex object which can be used for obtaining locks. </div><div class="ttdef"><b>Definition:</b> <a href="threads_8C_source.html#l00030">threads.C:30</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a130855799a58bba44e6ab25bd2a2a866"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::Threads::in_threads = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean which is true iff we are in a <a class="el" href="namespacelibMesh_1_1Threads.html" title="The Threads namespace is for wrapper functions for common general multithreading algorithms and tasks...">Threads</a>:: function It may be useful to assert(!Threads<a class="el" href="namespacelibMesh_1_1Threads.html#a130855799a58bba44e6ab25bd2a2a866" title="A boolean which is true iff we are in a Threads:: function It may be useful to assert(!Threadsin_thre...">in_threads</a>) in any code which is known to not be thread-safe. </p>
+
+<p>在文件 <a class="el" href="threads_8C_source.html">threads.C</a> 第 <a class="el" href="threads_8C_source.html#l00032">32</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="threads__none_8h_source.html#l00073">parallel_for()</a>, <a class="el" href="threads__none_8h_source.html#l00101">parallel_reduce()</a> , 以及 <a class="el" href="mesh__base_8C_source.html#l01558">libMesh::MeshBase::sub_point_locator()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b837ec1e7f5826d6e2223c66dbfb3f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Threads_1_1recursive__mutex.html">recursive_mutex</a> libMesh::Threads::recursive_mtx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A convenient recursive mutex object which can be used for obtaining locks. </p>
+
+<p>在文件 <a class="el" href="threads_8C_source.html">threads.C</a> 第 <a class="el" href="threads_8C_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a29932e1987dacf7e89b1b27bb49bf0c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Threads_1_1spin__mutex.html">spin_mutex</a> libMesh::Threads::spin_mtx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A convenient spin mutex object which can be used for obtaining locks. </p>
+
+<p>在文件 <a class="el" href="threads_8C_source.html">threads.C</a> 第 <a class="el" href="threads_8C_source.html#l00030">30</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="fe__abstract_8C_source.html#l00809">libMesh::FEAbstract::compute_node_constraints()</a>, <a class="el" href="fe__base_8C_source.html#l01847">libMesh::FEGenericBase&lt; T &gt;::compute_periodic_constraints()</a>, <a class="el" href="fe__abstract_8C_source.html#l01001">libMesh::FEAbstract::compute_periodic_node_constraints()</a>, <a class="el" href="fe__base_8C_source.html#l01539">libMesh::FEGenericBase&lt; T &gt;::compute_proj_constraints()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l05391">libMesh::DofMap::constrain_p_dofs()</a>, <a class="el" href="reference__counter_8h_source.html#l00183">libMesh::ReferenceCounter::increment_constructor_count()</a>, <a class="el" href="reference__counter_8h_source.html#l00207">libMesh::ReferenceCounter::increment_destructor_count()</a>, <a class="el" href="inf__fe__static_8C_source.html#l01243">libMesh::InfFE&lt; friend_Dim, friend_T_radial, friend_T_map &gt;::inf_compute_constraints()</a>, <a class="el" href="generic__projector_8h_source.html#l00403">libMesh::VectorSetAction&lt; Val &gt;::insert()</a>, <a class="el" href="system__projection_8C_source.html#l00894">libMesh::MatrixFillAction&lt; ValIn, ValOut &gt;::insert()</a>, <a class="el" href="threads_8C_source.html#l00034">lock_singleton_spin_mutex()</a>, <a class="el" href="weighted__patch__recovery__error__estimator_8C_source.html#l00112">libMesh::WeightedPatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00211">libMesh::PatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="system__projection_8C_source.html#l01464">libMesh::BoundaryProjectSolution::operator()()</a> , 以及 <a class="el" href="threads_8C_source.html#l00035">unlock_singleton_spin_mutex()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:48 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

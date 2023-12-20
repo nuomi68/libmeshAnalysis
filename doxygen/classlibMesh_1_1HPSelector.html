@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::HPSelector类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classlibMesh_1_1HPSelector-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::HPSelector类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Subclasses of this abstract base class choose between h refining and p elevation.  
+ <a href="classlibMesh_1_1HPSelector.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="hp__selector_8h_source.html">hp_selector.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::HPSelector 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0e7862cec0861d41220076456837196f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HPSelector.html#a0e7862cec0861d41220076456837196f">HPSelector</a> ()=default</td></tr>
+<tr class="memdesc:a0e7862cec0861d41220076456837196f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a0e7862cec0861d41220076456837196f">更多...</a><br/></td></tr>
+<tr class="separator:a0e7862cec0861d41220076456837196f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f2d22a911600b2849e6fc10950e339"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HPSelector.html#aa6f2d22a911600b2849e6fc10950e339">HPSelector</a> (const <a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a> &amp;)=default</td></tr>
+<tr class="memdesc:aa6f2d22a911600b2849e6fc10950e339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy/move ctor, copy/move assignment operator, and destructor are all explicitly defaulted for this simple class.  <a href="#aa6f2d22a911600b2849e6fc10950e339">更多...</a><br/></td></tr>
+<tr class="separator:aa6f2d22a911600b2849e6fc10950e339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c2672c560c92f4a3330767434009c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HPSelector.html#ab2c2672c560c92f4a3330767434009c6">HPSelector</a> (<a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:ab2c2672c560c92f4a3330767434009c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7292120c9dc1016f53e5a79ce3e2fbe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HPSelector.html#a7292120c9dc1016f53e5a79ce3e2fbe7">operator=</a> (const <a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a> &amp;)=default</td></tr>
+<tr class="separator:a7292120c9dc1016f53e5a79ce3e2fbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615f3adc429c56d43f74b7f0195eb8dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HPSelector.html#a615f3adc429c56d43f74b7f0195eb8dd">operator=</a> (<a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a615f3adc429c56d43f74b7f0195eb8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7ba141fb21d3ca1cdabfb1a6fdabaf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HPSelector.html#aad7ba141fb21d3ca1cdabfb1a6fdabaf">~HPSelector</a> ()=default</td></tr>
+<tr class="separator:aad7ba141fb21d3ca1cdabfb1a6fdabaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15bc285f351d85076780356222523ee0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HPSelector.html#a15bc285f351d85076780356222523ee0">select_refinement</a> (<a class="el" href="classlibMesh_1_1System.html">System</a> &amp;system)=0</td></tr>
+<tr class="memdesc:a15bc285f351d85076780356222523ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This pure virtual function must be redefined in derived classes to take a mesh flagged for h refinement and potentially change the desired refinement type.  <a href="#a15bc285f351d85076780356222523ee0">更多...</a><br/></td></tr>
+<tr class="separator:a15bc285f351d85076780356222523ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9bf72419a2df43b5531edd05b5332377"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HPSelector.html#a9bf72419a2df43b5531edd05b5332377">component_scale</a></td></tr>
+<tr class="memdesc:a9bf72419a2df43b5531edd05b5332377"><td class="mdescLeft">&#160;</td><td class="mdescRight">This vector can be used to "scale" certain variables in a system.  <a href="#a9bf72419a2df43b5531edd05b5332377">更多...</a><br/></td></tr>
+<tr class="separator:a9bf72419a2df43b5531edd05b5332377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Subclasses of this abstract base class choose between h refining and p elevation. </p>
+<p>Currently we assume that a set of elements has already been flagged for h refinement, and we may want to change some of those elements to be flagged for p refinement.</p>
+<dl class="section author"><dt>作者</dt><dd>Roy H. Stogner </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2006 </dd></dl>
+
+<p>在文件 <a class="el" href="hp__selector_8h_source.html">hp_selector.h</a> 第 <a class="el" href="hp__selector_8h_source.html#l00048">48</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a0e7862cec0861d41220076456837196f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::HPSelector::HPSelector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa6f2d22a911600b2849e6fc10950e339"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::HPSelector::HPSelector </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy/move ctor, copy/move assignment operator, and destructor are all explicitly defaulted for this simple class. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab2c2672c560c92f4a3330767434009c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::HPSelector::HPSelector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad7ba141fb21d3ca1cdabfb1a6fdabaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual libMesh::HPSelector::~HPSelector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a7292120c9dc1016f53e5a79ce3e2fbe7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a>&amp; libMesh::HPSelector::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a615f3adc429c56d43f74b7f0195eb8dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a>&amp; libMesh::HPSelector::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1HPSelector.html">HPSelector</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a15bc285f351d85076780356222523ee0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::HPSelector::select_refinement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>system</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This pure virtual function must be redefined in derived classes to take a mesh flagged for h refinement and potentially change the desired refinement type. </p>
+
+<p>在 <a class="el" href="classlibMesh_1_1HPCoarsenTest.html#ab6c96db23114885174fd1f6e367025f0">libMesh::HPCoarsenTest</a> 内被实现.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a9bf72419a2df43b5531edd05b5332377"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; libMesh::HPSelector::component_scale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This vector can be used to "scale" certain variables in a system. </p>
+<p>If the mask is not empty, the consideration given to each component's h and p error estimates will be scaled by component_scale[c]. </p>
+
+<p>在文件 <a class="el" href="hp__selector_8h_source.html">hp_selector.h</a> 第 <a class="el" href="hp__selector_8h_source.html#l00082">82</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="hp__coarsentest_8C_source.html#l00137">libMesh::HPCoarsenTest::select_refinement()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/error_estimation/<a class="el" href="hp__selector_8h_source.html">hp_selector.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:08 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

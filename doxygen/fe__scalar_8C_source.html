@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/src/fe/fe_scalar.C 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_81a08f4cbe9eae1effb9c4a152dc4fa6.html">fe</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">fe_scalar.C</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fe__scalar_8C.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;libmesh/dof_map.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;libmesh/elem.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;libmesh/fe.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/fe_macro.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// ------------------------------------------------------------</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// SCALAR-specific implementations</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// Anonymous namespace for local helper functions</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> scalar_nodal_soln(<span class="keyword">const</span> Elem * elem,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                       <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a> order,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                       <span class="keyword">const</span> std::vector&lt;Number&gt; &amp; elem_soln,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                       std::vector&lt;Number&gt; &amp;       nodal_soln,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                       <span class="keyword">const</span> <span class="keywordtype">bool</span> <span class="comment">/*add_p_level*/</span>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="tecplot__io_8C.html#ae4aba5fa8c8579c6576b4f087aefb091">n_nodes</a> = elem-&gt;n_nodes();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  nodal_soln.resize(n_nodes);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// If the SCALAR order is CONSTANT, just set the nodal values</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">// to zero, otherwise, set to the value of the first SCALAR dof</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="tecplot__io_8C.html#ae4aba5fa8c8579c6576b4f087aefb091">n_nodes</a>; i++)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    nodal_soln[i] = (order == <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2a9322e35043d812ce264430319cd4fe87">CONSTANT</a>) ? 0. : elem_soln[0];</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// scalar_nodal_soln()</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// anonymous namespace</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// Instantiate (side_) nodal_soln() function for every dimension</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespacelibMesh.html#a126d784bd7587415c6245a482b6d781e">   54</a></span>&#160;<a class="code" href="namespacelibMesh.html#a18635d0118942be59346177f816b29a6">LIBMESH_FE_NODAL_SOLN</a>(<a class="code" href="namespacelibMesh.html#abcdbcd8364bf9fb7a67b3b4013031b2daefdbf95da65edcfa0cdb6c10eac5482c">SCALAR</a>, scalar_nodal_soln)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="namespacelibMesh.html#aec2db0ce4d6eb95f63eda6bdc43b3ffe">LIBMESH_FE_SIDE_NODAL_SOLN</a>(<a class="code" href="namespacelibMesh.html#abcdbcd8364bf9fb7a67b3b4013031b2daefdbf95da65edcfa0cdb6c10eac5482c">SCALAR</a>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// Full specialization of n_dofs() function for every dimension</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">// The Order indicates the number of SCALAR dofs</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;template &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html">FE</a>&lt;0,<a class="code" href="namespacelibMesh.html#abcdbcd8364bf9fb7a67b3b4013031b2daefdbf95da65edcfa0cdb6c10eac5482c">SCALAR</a>&gt;::n_dofs(const <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, const <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a> o) { <span class="keywordflow">return</span> o; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a006c3bd6d16adddbae22b7c7d48fb323">   61</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#a8859f16f7984a933ec23f7e30da179fe">FE&lt;1,SCALAR&gt;::n_dofs</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a> o) { <span class="keywordflow">return</span> o; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a8e5b0bd8bfe9f57942849866724f1ba8">   62</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#a8859f16f7984a933ec23f7e30da179fe">FE&lt;2,SCALAR&gt;::n_dofs</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a> o) { <span class="keywordflow">return</span> o; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a4cd0ccb83ac6f9459877ec030306a0e0">   63</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#a8859f16f7984a933ec23f7e30da179fe">FE&lt;3,SCALAR&gt;::n_dofs</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a> o) { <span class="keywordflow">return</span> o; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// Full specialization of n_dofs_at_node() function for every dimension.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">// SCALARs have no dofs at nodes</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#af7821e485aadb23ee27ed03675cb3a4d">   67</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#aaaed81590cc91849de18a9ead04dd1d9">FE&lt;0,SCALAR&gt;::n_dofs_at_node</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a>, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a60a8d431997479f8410d0cec7c1f77b3">   68</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#aaaed81590cc91849de18a9ead04dd1d9">FE&lt;1,SCALAR&gt;::n_dofs_at_node</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a>, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#ae2f3a57a3e3e49718a043c6aee229b1d">   69</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#aaaed81590cc91849de18a9ead04dd1d9">FE&lt;2,SCALAR&gt;::n_dofs_at_node</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a>, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a05b7b96b109330105f67f4724f978f45">   70</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#aaaed81590cc91849de18a9ead04dd1d9">FE&lt;3,SCALAR&gt;::n_dofs_at_node</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a>, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// Full specialization of n_dofs_per_elem() function for every dimension.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// SCALARs have no dofs per element</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a714bfb2db5407bea132a559e55a8087e">   74</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#a474486efcba0c6f850d7ef3876102596">FE&lt;0,SCALAR&gt;::n_dofs_per_elem</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a>) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a19e63a17d183f53320535ba4846e7b89">   75</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#a474486efcba0c6f850d7ef3876102596">FE&lt;1,SCALAR&gt;::n_dofs_per_elem</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a>) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#ad9af9467cfcc3c0e6e20f9a346958620">   76</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#a474486efcba0c6f850d7ef3876102596">FE&lt;2,SCALAR&gt;::n_dofs_per_elem</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a>) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#ac27db5ca6d0ee7e432eb29986a6ec835">   77</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1FE.html#a474486efcba0c6f850d7ef3876102596">FE&lt;3,SCALAR&gt;::n_dofs_per_elem</a>(<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a>) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">// Scalar FEMs are discontinuous</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#adde5a7505d29442a0d74c7d2748ef203">   80</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">FEContinuity</a> <a class="code" href="classlibMesh_1_1FE.html#a556d7e2064c1fa719a9c1c5e6cf4f213">FE&lt;0,SCALAR&gt;::get_continuity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97daefa1013fc8340a1ceff8bdcf6fb8ca81">DISCONTINUOUS</a>; }</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a663fe0dd75b8e1e1d05fa47b3b7760bf">   81</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">FEContinuity</a> <a class="code" href="classlibMesh_1_1FE.html#a556d7e2064c1fa719a9c1c5e6cf4f213">FE&lt;1,SCALAR&gt;::get_continuity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97daefa1013fc8340a1ceff8bdcf6fb8ca81">DISCONTINUOUS</a>; }</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#ad337d7082ed3a1d28d488adcf3fbf44a">   82</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">FEContinuity</a> <a class="code" href="classlibMesh_1_1FE.html#a556d7e2064c1fa719a9c1c5e6cf4f213">FE&lt;2,SCALAR&gt;::get_continuity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97daefa1013fc8340a1ceff8bdcf6fb8ca81">DISCONTINUOUS</a>; }</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a3c2f5244a77ed9edabf500ec57db0781">   83</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">FEContinuity</a> <a class="code" href="classlibMesh_1_1FE.html#a556d7e2064c1fa719a9c1c5e6cf4f213">FE&lt;3,SCALAR&gt;::get_continuity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97daefa1013fc8340a1ceff8bdcf6fb8ca81">DISCONTINUOUS</a>; }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">// Scalar FEMs are not hierarchic</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#acdf8d9453c961457143572c671f9d3d0">   86</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1FE.html#a1d5f7a7bf114d006dcd99feedf2fa8f9">FE&lt;0,SCALAR&gt;::is_hierarchic</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a6c86d3c8ed58fb1144d6aae20f9afe97">   87</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1FE.html#a1d5f7a7bf114d006dcd99feedf2fa8f9">FE&lt;1,SCALAR&gt;::is_hierarchic</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a0930ad8d01434f2669470ef6d0700153">   88</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1FE.html#a1d5f7a7bf114d006dcd99feedf2fa8f9">FE&lt;2,SCALAR&gt;::is_hierarchic</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a3067669ac162660c37083bdc50c81175">   89</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1FE.html#a1d5f7a7bf114d006dcd99feedf2fa8f9">FE&lt;3,SCALAR&gt;::is_hierarchic</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#ifdef LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span><span class="comment">// compute_constraints() just returns for SCALAR FEMs</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a12c524a30d758e9735f268ae76e79f09">   95</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1FE.html#a74d8c7f8c1f590279b5270d887d5e946">FE&lt;2,SCALAR&gt;::compute_constraints</a> (<a class="code" href="classlibMesh_1_1DofConstraints.html">DofConstraints</a> &amp;,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                        <a class="code" href="classlibMesh_1_1DofMap.html">DofMap</a> &amp;,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> *)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{ }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a3f1c680667922942edea895c5fd153bc">  102</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1FE.html#a74d8c7f8c1f590279b5270d887d5e946">FE&lt;3,SCALAR&gt;::compute_constraints</a> (<a class="code" href="classlibMesh_1_1DofConstraints.html">DofConstraints</a> &amp;,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                        <a class="code" href="classlibMesh_1_1DofMap.html">DofMap</a> &amp;,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> *)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{ }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // #ifdef LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">// Scalar FEM shapes do not need reinit</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a1221f8b52d86c8e2a4ef7d331765f6bb">  110</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1FE.html#af0f4b71ea23b72ff5888d790f1a2422e">FE&lt;0,SCALAR&gt;::shapes_need_reinit</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a4db1d511bd9782d22ab8fb3d2b74b2da">  111</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1FE.html#af0f4b71ea23b72ff5888d790f1a2422e">FE&lt;1,SCALAR&gt;::shapes_need_reinit</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a8d31e751a735053168b6cc0f393b2550">  112</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1FE.html#af0f4b71ea23b72ff5888d790f1a2422e">FE&lt;2,SCALAR&gt;::shapes_need_reinit</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FE.html#a31abf36602bb2277096c0cde12e55b54">  113</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1FE.html#af0f4b71ea23b72ff5888d790f1a2422e">FE&lt;3,SCALAR&gt;::shapes_need_reinit</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="ttc" id="classlibMesh_1_1FE_html_a8859f16f7984a933ec23f7e30da179fe"><div class="ttname"><a href="classlibMesh_1_1FE.html#a8859f16f7984a933ec23f7e30da179fe">libMesh::FE::n_dofs</a></div><div class="ttdeci">static unsigned int n_dofs(const ElemType t, const Order o)</div></div>
+<div class="ttc" id="namespacelibMesh_html_a3f482b3acb4beb528f0ce89f161ff967"><div class="ttname"><a href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">libMesh::ElemType</a></div><div class="ttdeci">ElemType</div><div class="ttdoc">Defines an enum for geometric element types. </div><div class="ttdef"><b>Definition:</b> <a href="enum__elem__type_8h_source.html#l00033">enum_elem_type.h:33</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af3eb3e8751995b944fc135ea53b09da2"><div class="ttname"><a href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">libMesh::Order</a></div><div class="ttdeci">Order</div><div class="ttdoc">defines an enum for polynomial orders. </div><div class="ttdef"><b>Definition:</b> <a href="enum__order_8h_source.html#l00040">enum_order.h:40</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_abcdbcd8364bf9fb7a67b3b4013031b2daefdbf95da65edcfa0cdb6c10eac5482c"><div class="ttname"><a href="namespacelibMesh.html#abcdbcd8364bf9fb7a67b3b4013031b2daefdbf95da65edcfa0cdb6c10eac5482c">libMesh::SCALAR</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00058">enum_fe_family.h:58</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aec2db0ce4d6eb95f63eda6bdc43b3ffe"><div class="ttname"><a href="namespacelibMesh.html#aec2db0ce4d6eb95f63eda6bdc43b3ffe">libMesh::LIBMESH_FE_SIDE_NODAL_SOLN</a></div><div class="ttdeci">LIBMESH_FE_SIDE_NODAL_SOLN(LAGRANGE_VEC)</div><div class="ttdef"><b>Definition:</b> <a href="fe__lagrange__vec_8C_source.html#l00664">fe_lagrange_vec.C:664</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html"><div class="ttname"><a href="classlibMesh_1_1Elem.html">libMesh::Elem</a></div><div class="ttdoc">This is the base class from which all geometric element types are derived. </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l00094">elem.h:94</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FE_html_aaaed81590cc91849de18a9ead04dd1d9"><div class="ttname"><a href="classlibMesh_1_1FE.html#aaaed81590cc91849de18a9ead04dd1d9">libMesh::FE::n_dofs_at_node</a></div><div class="ttdeci">static unsigned int n_dofs_at_node(const ElemType t, const Order o, const unsigned int n)</div></div>
+<div class="ttc" id="classlibMesh_1_1FE_html_af0f4b71ea23b72ff5888d790f1a2422e"><div class="ttname"><a href="classlibMesh_1_1FE.html#af0f4b71ea23b72ff5888d790f1a2422e">libMesh::FE::shapes_need_reinit</a></div><div class="ttdeci">virtual bool shapes_need_reinit() const override</div></div>
+<div class="ttc" id="namespacelibMesh_html_a09db0990f72f24f6b4f3f3a8df4dc97daefa1013fc8340a1ceff8bdcf6fb8ca81"><div class="ttname"><a href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97daefa1013fc8340a1ceff8bdcf6fb8ca81">libMesh::DISCONTINUOUS</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00082">enum_fe_family.h:82</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FE_html_a1d5f7a7bf114d006dcd99feedf2fa8f9"><div class="ttname"><a href="classlibMesh_1_1FE.html#a1d5f7a7bf114d006dcd99feedf2fa8f9">libMesh::FE::is_hierarchic</a></div><div class="ttdeci">virtual bool is_hierarchic() const override</div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html"><div class="ttname"><a href="classlibMesh_1_1DofMap.html">libMesh::DofMap</a></div><div class="ttdoc">This class handles the numbering of degrees of freedom on a mesh. </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00169">dof_map.h:169</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FE_html"><div class="ttname"><a href="classlibMesh_1_1FE.html">libMesh::FE</a></div><div class="ttdoc">A specific instantiation of the FEBase class. </div><div class="ttdef"><b>Definition:</b> <a href="fe_8h_source.html#l00109">fe.h:109</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18635d0118942be59346177f816b29a6"><div class="ttname"><a href="namespacelibMesh.html#a18635d0118942be59346177f816b29a6">libMesh::LIBMESH_FE_NODAL_SOLN</a></div><div class="ttdeci">LIBMESH_FE_NODAL_SOLN(BERNSTEIN, bernstein_nodal_soln)</div><div class="ttdef"><b>Definition:</b> <a href="fe__bernstein_8C_source.html#l00397">fe_bernstein.C:397</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af3eb3e8751995b944fc135ea53b09da2a9322e35043d812ce264430319cd4fe87"><div class="ttname"><a href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2a9322e35043d812ce264430319cd4fe87">libMesh::CONSTANT</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__order_8h_source.html#l00041">enum_order.h:41</a></div></div>
+<div class="ttc" id="tecplot__io_8C_html_ae4aba5fa8c8579c6576b4f087aefb091"><div class="ttname"><a href="tecplot__io_8C.html#ae4aba5fa8c8579c6576b4f087aefb091">n_nodes</a></div><div class="ttdeci">const dof_id_type n_nodes</div><div class="ttdef"><b>Definition:</b> <a href="tecplot__io_8C_source.html#l00067">tecplot_io.C:67</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FE_html_a474486efcba0c6f850d7ef3876102596"><div class="ttname"><a href="classlibMesh_1_1FE.html#a474486efcba0c6f850d7ef3876102596">libMesh::FE::n_dofs_per_elem</a></div><div class="ttdeci">static unsigned int n_dofs_per_elem(const ElemType t, const Order o)</div></div>
+<div class="ttc" id="classlibMesh_1_1FE_html_a556d7e2064c1fa719a9c1c5e6cf4f213"><div class="ttname"><a href="classlibMesh_1_1FE.html#a556d7e2064c1fa719a9c1c5e6cf4f213">libMesh::FE::get_continuity</a></div><div class="ttdeci">virtual FEContinuity get_continuity() const override</div></div>
+<div class="ttc" id="classlibMesh_1_1FE_html_a74d8c7f8c1f590279b5270d887d5e946"><div class="ttname"><a href="classlibMesh_1_1FE.html#a74d8c7f8c1f590279b5270d887d5e946">libMesh::FE::compute_constraints</a></div><div class="ttdeci">static void compute_constraints(DofConstraints &amp;constraints, DofMap &amp;dof_map, const unsigned int variable_number, const Elem *elem)</div><div class="ttdoc">Computes the constraint matrix contributions (for non-conforming adapted meshes) corresponding to var...</div></div>
+<div class="ttc" id="namespacelibMesh_html_a09db0990f72f24f6b4f3f3a8df4dc97d"><div class="ttname"><a href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">libMesh::FEContinuity</a></div><div class="ttdeci">FEContinuity</div><div class="ttdoc">defines an enum for finite element types to libmesh_assert a certain level (or type? Hcurl?) of continuity. </div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00081">enum_fe_family.h:81</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofConstraints_html"><div class="ttname"><a href="classlibMesh_1_1DofConstraints.html">libMesh::DofConstraints</a></div><div class="ttdoc">The constraint matrix storage format. </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00098">dof_map.h:98</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:04 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,1210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::DenseSubVector&lt; T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classlibMesh_1_1DenseSubVector-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::DenseSubVector&lt; T &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>定义了一个用于有限元计算的稠密子向量。 在将元素载荷向量累加到全局向量之前存储这些载荷向量时特别有用，尤其是在存在方程组的情况下。 所有重写的虚拟函数在 <a class="el" href="dense__vector__base_8h.html">dense_vector_base.h</a> 中有文档说明。  
+ <a href="classlibMesh_1_1DenseSubVector.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::DenseSubVector&lt; T &gt; 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a14ea5186984c0894e382278015281f24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a14ea5186984c0894e382278015281f24">DenseSubVector</a> (<a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; T &gt; &amp;new_parent, const unsigned int ioff=0, const unsigned int n=0)</td></tr>
+<tr class="memdesc:a14ea5186984c0894e382278015281f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数。创建一个向量 <code>parent</code> 的稠密子向量。 子向量的维度为 <img class="formulaInl" alt="$(m \times n)$" src="form_75.png"/>，并且子向量的 <img class="formulaInl" alt="$(0,0)$" src="form_76.png"/> 元素位于父向量的 <img class="formulaInl" alt="$(ioff,joff)$" src="form_77.png"/> 位置。  <a href="#a14ea5186984c0894e382278015281f24">更多...</a><br/></td></tr>
+<tr class="separator:a14ea5186984c0894e382278015281f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970cbc77fad769157a68d36de9684c78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a970cbc77fad769157a68d36de9684c78">DenseSubVector</a> (<a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:a970cbc77fad769157a68d36de9684c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">这五个特殊函数可以在该类中默认实现，因为它本身不管理任何内存。  <a href="#a970cbc77fad769157a68d36de9684c78">更多...</a><br/></td></tr>
+<tr class="separator:a970cbc77fad769157a68d36de9684c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed80b6860a67a4b9f5bf0f901085b820"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#aed80b6860a67a4b9f5bf0f901085b820">DenseSubVector</a> (const <a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a> &amp;)=default</td></tr>
+<tr class="separator:aed80b6860a67a4b9f5bf0f901085b820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea63c87b2caf7095a5eecdb0bd4e85fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#aea63c87b2caf7095a5eecdb0bd4e85fd">operator=</a> (const <a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a> &amp;)=default</td></tr>
+<tr class="separator:aea63c87b2caf7095a5eecdb0bd4e85fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20079450ab950cfd78f42ac21fa2272f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a20079450ab950cfd78f42ac21fa2272f">operator=</a> (<a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a20079450ab950cfd78f42ac21fa2272f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6159b1f182d5610c58223472b67ab8d3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a6159b1f182d5610c58223472b67ab8d3">~DenseSubVector</a> ()=default</td></tr>
+<tr class="separator:a6159b1f182d5610c58223472b67ab8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefc162b6329c1ae2eabefaff59ee0aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#aaefc162b6329c1ae2eabefaff59ee0aa">parent</a> ()</td></tr>
+<tr class="separator:aaefc162b6329c1ae2eabefaff59ee0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c03ef3e3b5d062d74a1943360421a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a61c03ef3e3b5d062d74a1943360421a0">zero</a> () overridefinal</td></tr>
+<tr class="memdesc:a61c03ef3e3b5d062d74a1943360421a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">重写基类的 zero 函数，将子向量中的所有元素置零。  <a href="#a61c03ef3e3b5d062d74a1943360421a0">更多...</a><br/></td></tr>
+<tr class="separator:a61c03ef3e3b5d062d74a1943360421a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f4be05cc410c87346a7a162865240c"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a73f4be05cc410c87346a7a162865240c">operator()</a> (const unsigned int i) const </td></tr>
+<tr class="separator:a73f4be05cc410c87346a7a162865240c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ec7cac407bb968371ad7b481db468b"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#ac5ec7cac407bb968371ad7b481db468b">operator()</a> (const unsigned int i)</td></tr>
+<tr class="separator:ac5ec7cac407bb968371ad7b481db468b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4599763c44feef11d2b27ee1ed1d1e96"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a4599763c44feef11d2b27ee1ed1d1e96">el</a> (const unsigned int i) const overridefinal</td></tr>
+<tr class="memdesc:a4599763c44feef11d2b27ee1ed1d1e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">重写基类函数，返回索引为 <code>i</code> 的元素的常量引用和可写引用。  <a href="#a4599763c44feef11d2b27ee1ed1d1e96">更多...</a><br/></td></tr>
+<tr class="separator:a4599763c44feef11d2b27ee1ed1d1e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42fd1afd0bcb5b20a674b4f8aa3f7369"><td class="memItemLeft" align="right" valign="top">virtual T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a42fd1afd0bcb5b20a674b4f8aa3f7369">el</a> (const unsigned int i) overridefinal</td></tr>
+<tr class="separator:a42fd1afd0bcb5b20a674b4f8aa3f7369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b449465f9d985687703d87c54960404"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">size</a> () const overridefinal</td></tr>
+<tr class="separator:a8b449465f9d985687703d87c54960404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0b07ac131c22e54c70d54760482fc9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a9e0b07ac131c22e54c70d54760482fc9">empty</a> () const overridefinal</td></tr>
+<tr class="separator:a9e0b07ac131c22e54c70d54760482fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8902725b4a9d9503ab416e2e27f565"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a> () const </td></tr>
+<tr class="separator:a6a8902725b4a9d9503ab416e2e27f565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6ab7c58acc52aa2f4e976489e8e43a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#aef6ab7c58acc52aa2f4e976489e8e43a">reposition</a> (const unsigned int ioff, const unsigned int n)</td></tr>
+<tr class="memdesc:aef6ab7c58acc52aa2f4e976489e8e43a"><td class="mdescLeft">&#160;</td><td class="mdescRight">更改子向量在父向量中的位置和长度。  <a href="#aef6ab7c58acc52aa2f4e976489e8e43a">更多...</a><br/></td></tr>
+<tr class="separator:aef6ab7c58acc52aa2f4e976489e8e43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2f8fae847514770d54e2ba69746045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a3d2f8fae847514770d54e2ba69746045">min</a> () const </td></tr>
+<tr class="separator:a3d2f8fae847514770d54e2ba69746045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee21a574d41a3994ced05b12cf886b0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#aee21a574d41a3994ced05b12cf886b0f">max</a> () const </td></tr>
+<tr class="separator:aee21a574d41a3994ced05b12cf886b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6032725f90276d97bf8fb83c6b16109a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a6032725f90276d97bf8fb83c6b16109a">l1_norm</a> () const </td></tr>
+<tr class="separator:a6032725f90276d97bf8fb83c6b16109a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4652865c494f63b0b22248fe54d55b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#aa4652865c494f63b0b22248fe54d55b5">l2_norm</a> () const </td></tr>
+<tr class="separator:aa4652865c494f63b0b22248fe54d55b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bec267cc334c7d4fc36580aa72601dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a4bec267cc334c7d4fc36580aa72601dc">linfty_norm</a> () const </td></tr>
+<tr class="separator:a4bec267cc334c7d4fc36580aa72601dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07cb4b111950ae35bb9365d9761f62d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseVectorBase.html#a07cb4b111950ae35bb9365d9761f62d7">print</a> (std::ostream &amp;os) const </td></tr>
+<tr class="memdesc:a07cb4b111950ae35bb9365d9761f62d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">将向量漂亮地打印到 <code>stdout。</code>  <a href="#a07cb4b111950ae35bb9365d9761f62d7">更多...</a><br/></td></tr>
+<tr class="separator:a07cb4b111950ae35bb9365d9761f62d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1dfaad44d2f829afe85ba97031518f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseVectorBase.html#a1e1dfaad44d2f829afe85ba97031518f">print_scientific</a> (std::ostream &amp;os, unsigned precision=8) const </td></tr>
+<tr class="memdesc:a1e1dfaad44d2f829afe85ba97031518f"><td class="mdescLeft">&#160;</td><td class="mdescRight">以科学计数法在额外的小数位数下打印向量的条目。  <a href="#a1e1dfaad44d2f829afe85ba97031518f">更多...</a><br/></td></tr>
+<tr class="separator:a1e1dfaad44d2f829afe85ba97031518f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:af6f861c83d49b81bf7ac0c9735687a0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a></td></tr>
+<tr class="memdesc:af6f861c83d49b81bf7ac0c9735687a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">包含该子向量的父向量。  <a href="#af6f861c83d49b81bf7ac0c9735687a0d">更多...</a><br/></td></tr>
+<tr class="separator:af6f861c83d49b81bf7ac0c9735687a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88fd654008c0e25c31d1c7437c267441"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a88fd654008c0e25c31d1c7437c267441">_n</a></td></tr>
+<tr class="memdesc:a88fd654008c0e25c31d1c7437c267441"><td class="mdescLeft">&#160;</td><td class="mdescRight">该子向量的长度。  <a href="#a88fd654008c0e25c31d1c7437c267441">更多...</a><br/></td></tr>
+<tr class="separator:a88fd654008c0e25c31d1c7437c267441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54769b30f7c28566077636f9fcc29e01"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseSubVector.html#a54769b30f7c28566077636f9fcc29e01">_i_off</a></td></tr>
+<tr class="memdesc:a54769b30f7c28566077636f9fcc29e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">在父向量中的偏移。  <a href="#a54769b30f7c28566077636f9fcc29e01">更多...</a><br/></td></tr>
+<tr class="separator:a54769b30f7c28566077636f9fcc29e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class libMesh::DenseSubVector&lt; T &gt;</h3>
+
+<p>定义了一个用于有限元计算的稠密子向量。 在将元素载荷向量累加到全局向量之前存储这些载荷向量时特别有用，尤其是在存在方程组的情况下。 所有重写的虚拟函数在 <a class="el" href="dense__vector__base_8h.html">dense_vector_base.h</a> 中有文档说明。 </p>
+<dl class="section author"><dt>作者</dt><dd>Benjamin S. Kirk </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2003 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00042">42</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a14ea5186984c0894e382278015281f24"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::<a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>new_parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>ioff</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>n</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数。创建一个向量 <code>parent</code> 的稠密子向量。 子向量的维度为 <img class="formulaInl" alt="$(m \times n)$" src="form_75.png"/>，并且子向量的 <img class="formulaInl" alt="$(0,0)$" src="form_76.png"/> 元素位于父向量的 <img class="formulaInl" alt="$(ioff,joff)$" src="form_77.png"/> 位置。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_parent</td><td>父向量。 </td></tr>
+    <tr><td class="paramname">ioff</td><td>子向量在父向量中的行偏移。 </td></tr>
+    <tr><td class="paramname">n</td><td>子向量的长度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00168">168</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dense__subvector_8h_source.html#l00180">libMesh::DenseSubVector&lt; T &gt;::reposition()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                                        :</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a>(new_parent)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <a class="code" href="classlibMesh_1_1DenseSubVector.html#aef6ab7c58acc52aa2f4e976489e8e43a">reposition</a> (ioff, n);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_aef6ab7c58acc52aa2f4e976489e8e43a"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#aef6ab7c58acc52aa2f4e976489e8e43a">libMesh::DenseSubVector::reposition</a></div><div class="ttdeci">void reposition(const unsigned int ioff, const unsigned int n)</div><div class="ttdoc">更改子向量在父向量中的位置和长度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00180">dense_subvector.h:180</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a970cbc77fad769157a68d36de9684c78"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::<a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这五个特殊函数可以在该类中默认实现，因为它本身不管理任何内存。 </p>
+
+</div>
+</div>
+<a class="anchor" id="aed80b6860a67a4b9f5bf0f901085b820"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::<a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6159b1f182d5610c58223472b67ab8d3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::~<a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a4599763c44feef11d2b27ee1ed1d1e96"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual T <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::el </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重写基类函数，返回索引为 <code>i</code> 的元素的常量引用和可写引用。 </p>
+
+<p>实现了 <a class="el" href="classlibMesh_1_1DenseVectorBase.html#a35567e09039c62b9914def1fd063a73c">libMesh::DenseVectorBase&lt; T &gt;</a>.</p>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00089">89</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  { <span class="keywordflow">return</span> (*<span class="keyword">this</span>)(i); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a42fd1afd0bcb5b20a674b4f8aa3f7369"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual T&amp; <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::el </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>向量的 <code></code>(i) 元素的可写引用。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>元素的索引。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classlibMesh_1_1DenseVectorBase.html#a7edb86bafa7e7839f4d0a75b2b981704">libMesh::DenseVectorBase&lt; T &gt;</a>.</p>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00092">92</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  { <span class="keywordflow">return</span> (*<span class="keyword">this</span>)(i); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9e0b07ac131c22e54c70d54760482fc9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>子向量是否为空。 </dd></dl>
+
+<p>重载 <a class="el" href="classlibMesh_1_1DenseVectorBase.html#a9391e2d4e4d4b1795dbe6b169b8caed2">libMesh::DenseVectorBase&lt; T &gt;</a> .</p>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00104">104</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dense__subvector_8h_source.html#l00155">libMesh::DenseSubVector&lt; T &gt;::_n</a>.</p>
+
+<p>参考自 <a class="el" href="numeric__vector_8h_source.html#l01089">libMesh::NumericVector&lt; T &gt;::insert()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  { <span class="keywordflow">return</span> (<a class="code" href="classlibMesh_1_1DenseSubVector.html#a88fd654008c0e25c31d1c7437c267441">_n</a> == 0); }</div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a88fd654008c0e25c31d1c7437c267441"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a88fd654008c0e25c31d1c7437c267441">libMesh::DenseSubVector::_n</a></div><div class="ttdeci">unsigned int _n</div><div class="ttdoc">该子向量的长度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00155">dense_subvector.h:155</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6a8902725b4a9d9503ab416e2e27f565"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::i_off </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>子向量在父向量中的行偏移。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00110">110</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dense__subvector_8h_source.html#l00160">libMesh::DenseSubVector&lt; T &gt;::_i_off</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DenseSubVector.html#a54769b30f7c28566077636f9fcc29e01">_i_off</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a54769b30f7c28566077636f9fcc29e01"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a54769b30f7c28566077636f9fcc29e01">libMesh::DenseSubVector::_i_off</a></div><div class="ttdeci">unsigned int _i_off</div><div class="ttdoc">在父向量中的偏移。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00160">dense_subvector.h:160</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6032725f90276d97bf8fb83c6b16109a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::l1_norm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>向量的 <img class="formulaInl" alt="$l_1$" src="form_78.png"/> 范数，即所有元素的绝对值之和。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00259">259</a> 行定义.</p>
+
+<p>参考 <a class="el" href="type__vector_8h_source.html#l00112">std::abs()</a>, <a class="el" href="int__range_8h_source.html#l00111">libMesh::index_range()</a> , 以及 <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a>.</p>
+<div class="fragment"><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;{</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> my_norm = 0.;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(*<span class="keyword">this</span>))</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      my_norm += <a class="code" href="namespacestd.html#aea71d536ca6ae5ef192477c8e9c9b197">std::abs</a>(<a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (i + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>()));</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordflow">return</span> my_norm;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
+<div class="ttc" id="namespacestd_html_aea71d536ca6ae5ef192477c8e9c9b197"><div class="ttname"><a href="namespacestd.html#aea71d536ca6ae5ef192477c8e9c9b197">std::abs</a></div><div class="ttdeci">ADRealEigenVector&lt; T, D, asd &gt; abs(const ADRealEigenVector&lt; T, D, asd &gt; &amp;)</div><div class="ttdoc">计算自动微分实数向量的绝对值。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l00112">type_vector.h:112</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a6a8902725b4a9d9503ab416e2e27f565"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">libMesh::DenseSubVector::i_off</a></div><div class="ttdeci">unsigned int i_off() const </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00110">dense_subvector.h:110</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a26e38c0dc87c05a5e8df7e26bfed543b"><div class="ttname"><a href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">libMesh::index_range</a></div><div class="ttdeci">auto index_range(const T &amp;sizable)</div><div class="ttdoc">Helper function that returns an IntRange&amp;lt;std::size_t&amp;gt; representing all the indices of the passed-in v...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00111">int_range.h:111</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa4652865c494f63b0b22248fe54d55b5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::l2_norm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>向量的 <img class="formulaInl" alt="$l_2$" src="form_79.png"/> 范数，即所有元素的平方和的平方根。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00273">273</a> 行定义.</p>
+
+<p>参考 <a class="el" href="int__range_8h_source.html#l00111">libMesh::index_range()</a>, <a class="el" href="tensor__tools_8h_source.html#l00074">libMesh::TensorTools::norm_sq()</a>, <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a> , 以及 <a class="el" href="type__vector_8h_source.html#l00088">std::sqrt()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> my_norm = 0.;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(*<span class="keyword">this</span>))</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      my_norm += <a class="code" href="namespacelibMesh_1_1TensorTools.html#aece0d041f4f91b393d2564f4a5e4b1ee">TensorTools::norm_sq</a>(<a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (i + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>()));</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacestd.html#a5e539986868ffa7c4c08ef163cae5266">sqrt</a>(my_norm);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
+<div class="ttc" id="namespacestd_html_a5e539986868ffa7c4c08ef163cae5266"><div class="ttname"><a href="namespacestd.html#a5e539986868ffa7c4c08ef163cae5266">std::sqrt</a></div><div class="ttdeci">ADRealEigenVector&lt; T, D, asd &gt; sqrt(const ADRealEigenVector&lt; T, D, asd &gt; &amp;)</div><div class="ttdoc">计算自动微分实数向量的平方根。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l00088">type_vector.h:88</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1TensorTools_html_aece0d041f4f91b393d2564f4a5e4b1ee"><div class="ttname"><a href="namespacelibMesh_1_1TensorTools.html#aece0d041f4f91b393d2564f4a5e4b1ee">libMesh::TensorTools::norm_sq</a></div><div class="ttdeci">T norm_sq(std::complex&lt; T &gt; a)</div><div class="ttdef"><b>Definition:</b> <a href="tensor__tools_8h_source.html#l00074">tensor_tools.h:74</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a6a8902725b4a9d9503ab416e2e27f565"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">libMesh::DenseSubVector::i_off</a></div><div class="ttdeci">unsigned int i_off() const </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00110">dense_subvector.h:110</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a26e38c0dc87c05a5e8df7e26bfed543b"><div class="ttname"><a href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">libMesh::index_range</a></div><div class="ttdeci">auto index_range(const T &amp;sizable)</div><div class="ttdoc">Helper function that returns an IntRange&amp;lt;std::size_t&amp;gt; representing all the indices of the passed-in v...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00111">int_range.h:111</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4bec267cc334c7d4fc36580aa72601dc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::linfty_norm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>向量的 <img class="formulaInl" alt="$l_\infty$" src="form_80.png"/> 范数，即所有元素的最大绝对值。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00287">287</a> 行定义.</p>
+
+<p>参考 <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a>, <a class="el" href="tensor__tools_8h_source.html#l00074">libMesh::TensorTools::norm_sq()</a>, <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a> , 以及 <a class="el" href="type__vector_8h_source.html#l00088">std::sqrt()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">size</a>())</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">return</span> 0.;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> my_norm = <a class="code" href="namespacelibMesh_1_1TensorTools.html#aece0d041f4f91b393d2564f4a5e4b1ee">TensorTools::norm_sq</a>(<a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>()));</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(1u, this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">size</a>()))</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> current = <a class="code" href="namespacelibMesh_1_1TensorTools.html#aece0d041f4f91b393d2564f4a5e4b1ee">TensorTools::norm_sq</a>(<a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (i + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>()));</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      my_norm = (my_norm &gt; current? my_norm : current);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacestd.html#a5e539986868ffa7c4c08ef163cae5266">sqrt</a>(my_norm);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
+<div class="ttc" id="namespacestd_html_a5e539986868ffa7c4c08ef163cae5266"><div class="ttname"><a href="namespacestd.html#a5e539986868ffa7c4c08ef163cae5266">std::sqrt</a></div><div class="ttdeci">ADRealEigenVector&lt; T, D, asd &gt; sqrt(const ADRealEigenVector&lt; T, D, asd &gt; &amp;)</div><div class="ttdoc">计算自动微分实数向量的平方根。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l00088">type_vector.h:88</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1TensorTools_html_aece0d041f4f91b393d2564f4a5e4b1ee"><div class="ttname"><a href="namespacelibMesh_1_1TensorTools.html#aece0d041f4f91b393d2564f4a5e4b1ee">libMesh::TensorTools::norm_sq</a></div><div class="ttdeci">T norm_sq(std::complex&lt; T &gt; a)</div><div class="ttdef"><b>Definition:</b> <a href="tensor__tools_8h_source.html#l00074">tensor_tools.h:74</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a6a8902725b4a9d9503ab416e2e27f565"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">libMesh::DenseSubVector::i_off</a></div><div class="ttdeci">unsigned int i_off() const </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00110">dense_subvector.h:110</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a8b449465f9d985687703d87c54960404"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">libMesh::DenseSubVector::size</a></div><div class="ttdeci">virtual unsigned int size() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00098">dense_subvector.h:98</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aee21a574d41a3994ced05b12cf886b0f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::max </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>向量的最大元素，或者在复数的情况下是实部的最大值。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00242">242</a> 行定义.</p>
+
+<p>参考 <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>, <a class="el" href="libmesh__common_8h_source.html#l00185">libMesh::libmesh_real()</a>, <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a> , 以及 <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a>.</p>
+<div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">size</a>());</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> my_max = <a class="code" href="namespacelibMesh.html#a4f64766e155cef44a8f66b8411b3725a">libmesh_real</a>(<a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>()));</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(1u, this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">size</a>()))</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> current = <a class="code" href="namespacelibMesh.html#a4f64766e155cef44a8f66b8411b3725a">libmesh_real</a>(<a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (i + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>()));</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      my_max = (my_max &gt; current? my_max : current);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keywordflow">return</span> my_max;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_html_a4f64766e155cef44a8f66b8411b3725a"><div class="ttname"><a href="namespacelibMesh.html#a4f64766e155cef44a8f66b8411b3725a">libMesh::libmesh_real</a></div><div class="ttdeci">T libmesh_real(T a)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00185">libmesh_common.h:185</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a6a8902725b4a9d9503ab416e2e27f565"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">libMesh::DenseSubVector::i_off</a></div><div class="ttdeci">unsigned int i_off() const </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00110">dense_subvector.h:110</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a8b449465f9d985687703d87c54960404"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">libMesh::DenseSubVector::size</a></div><div class="ttdeci">virtual unsigned int size() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00098">dense_subvector.h:98</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3d2f8fae847514770d54e2ba69746045"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::min </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>向量的最小元素，或者在复数的情况下是实部的最小值。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00225">225</a> 行定义.</p>
+
+<p>参考 <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>, <a class="el" href="libmesh__common_8h_source.html#l00185">libMesh::libmesh_real()</a>, <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a> , 以及 <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a>.</p>
+<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">size</a>());</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> my_min = <a class="code" href="namespacelibMesh.html#a4f64766e155cef44a8f66b8411b3725a">libmesh_real</a>(<a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>()));</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(1u, this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">size</a>()))</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> current = <a class="code" href="namespacelibMesh.html#a4f64766e155cef44a8f66b8411b3725a">libmesh_real</a>(<a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (i + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>()));</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      my_min = (my_min &lt; current? my_min : current);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">return</span> my_min;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_html_a4f64766e155cef44a8f66b8411b3725a"><div class="ttname"><a href="namespacelibMesh.html#a4f64766e155cef44a8f66b8411b3725a">libMesh::libmesh_real</a></div><div class="ttdeci">T libmesh_real(T a)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00185">libmesh_common.h:185</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a6a8902725b4a9d9503ab416e2e27f565"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">libMesh::DenseSubVector::i_off</a></div><div class="ttdeci">unsigned int i_off() const </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00110">dense_subvector.h:110</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a8b449465f9d985687703d87c54960404"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">libMesh::DenseSubVector::size</a></div><div class="ttdeci">virtual unsigned int size() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00098">dense_subvector.h:98</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a73f4be05cc410c87346a7a162865240c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T &amp; <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>子向量中索引为 <code>i</code> 的元素的常量引用。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00204">204</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;{</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  libmesh_assert_less (i, this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">size</a>());</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  libmesh_assert_less (i + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>(), <a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a>.size());</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (i + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>());</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a6a8902725b4a9d9503ab416e2e27f565"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">libMesh::DenseSubVector::i_off</a></div><div class="ttdeci">unsigned int i_off() const </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00110">dense_subvector.h:110</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a8b449465f9d985687703d87c54960404"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">libMesh::DenseSubVector::size</a></div><div class="ttdeci">virtual unsigned int size() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00098">dense_subvector.h:98</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac5ec7cac407bb968371ad7b481db468b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>子向量中索引为 <code>i</code> 的元素的可写引用。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00215">215</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;{</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  libmesh_assert_less (i, this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">size</a>());</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  libmesh_assert_less (i + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>(), <a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a>.size());</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (i + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>());</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a6a8902725b4a9d9503ab416e2e27f565"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">libMesh::DenseSubVector::i_off</a></div><div class="ttdeci">unsigned int i_off() const </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00110">dense_subvector.h:110</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a8b449465f9d985687703d87c54960404"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">libMesh::DenseSubVector::size</a></div><div class="ttdeci">virtual unsigned int size() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00098">dense_subvector.h:98</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aea63c87b2caf7095a5eecdb0bd4e85fd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a>&amp; <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a20079450ab950cfd78f42ac21fa2272f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a>&amp; <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaefc162b6329c1ae2eabefaff59ee0aa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt;T&gt;&amp; <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::parent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>对父向量的引用。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00069">69</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dense__subvector_8h_source.html#l00150">libMesh::DenseSubVector&lt; T &gt;::_parent_vector</a>.</p>
+
+<p>参考自 <a class="el" href="dense__submatrix_8h_source.html#l00176">libMesh::DenseSubMatrix&lt; T &gt;::condense()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a07cb4b111950ae35bb9365d9761f62d7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1DenseVectorBase.html">libMesh::DenseVectorBase</a>&lt; T &gt;::print </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将向量漂亮地打印到 <code>stdout。</code> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>输出流。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__vector__base_8C_source.html">dense_vector_base.C</a> 第 <a class="el" href="dense__vector__base_8C_source.html#l00051">51</a> 行定义.</p>
+
+<p>参考 <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1DenseVectorBase.html#a4ec1ad50c02f01beea21df4c29ed9736">size</a>()))</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    os &lt;&lt; std::setw(8)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;       &lt;&lt; this-&gt;<a class="code" href="classlibMesh_1_1DenseVectorBase.html#a35567e09039c62b9914def1fd063a73c">el</a>(i)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;       &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseVectorBase_html_a4ec1ad50c02f01beea21df4c29ed9736"><div class="ttname"><a href="classlibMesh_1_1DenseVectorBase.html#a4ec1ad50c02f01beea21df4c29ed9736">libMesh::DenseVectorBase::size</a></div><div class="ttdeci">virtual unsigned int size() const =0</div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseVectorBase_html_a35567e09039c62b9914def1fd063a73c"><div class="ttname"><a href="classlibMesh_1_1DenseVectorBase.html#a35567e09039c62b9914def1fd063a73c">libMesh::DenseVectorBase::el</a></div><div class="ttdeci">virtual T el(const unsigned int i) const =0</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1e1dfaad44d2f829afe85ba97031518f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1DenseVectorBase.html">libMesh::DenseVectorBase</a>&lt; T &gt;::print_scientific </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>precision</em> = <code>8</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>以科学计数法在额外的小数位数下打印向量的条目。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>输出流。 </td></tr>
+    <tr><td class="paramname">precision</td><td>小数点后的精度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__vector__base_8C_source.html">dense_vector_base.C</a> 第 <a class="el" href="dense__vector__base_8C_source.html#l00031">31</a> 行定义.</p>
+
+<p>参考 <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// save the initial format flags</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  std::ios_base::fmtflags os_flags = os.flags();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// Print the vector entries.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1DenseVectorBase.html#a4ec1ad50c02f01beea21df4c29ed9736">size</a>()))</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    os &lt;&lt; std::setw(10)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;       &lt;&lt; std::scientific</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;       &lt;&lt; std::setprecision(precision)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;       &lt;&lt; this-&gt;<a class="code" href="classlibMesh_1_1DenseVectorBase.html#a35567e09039c62b9914def1fd063a73c">el</a>(i)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;       &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// reset the original format flags</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  os.flags(os_flags);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseVectorBase_html_a4ec1ad50c02f01beea21df4c29ed9736"><div class="ttname"><a href="classlibMesh_1_1DenseVectorBase.html#a4ec1ad50c02f01beea21df4c29ed9736">libMesh::DenseVectorBase::size</a></div><div class="ttdeci">virtual unsigned int size() const =0</div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseVectorBase_html_a35567e09039c62b9914def1fd063a73c"><div class="ttname"><a href="classlibMesh_1_1DenseVectorBase.html#a35567e09039c62b9914def1fd063a73c">libMesh::DenseVectorBase::el</a></div><div class="ttdeci">virtual T el(const unsigned int i) const =0</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aef6ab7c58acc52aa2f4e976489e8e43a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::reposition </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>ioff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更改子向量在父向量中的位置和长度。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ioff</td><td>子向量在父向量中的新行偏移。 </td></tr>
+    <tr><td class="paramname">n</td><td>子向量的新长度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00180">180</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dense__subvector_8h_source.html#l00168">libMesh::DenseSubVector&lt; T &gt;::DenseSubVector()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <a class="code" href="classlibMesh_1_1DenseSubVector.html#a54769b30f7c28566077636f9fcc29e01">_i_off</a> = ioff;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="classlibMesh_1_1DenseSubVector.html#a88fd654008c0e25c31d1c7437c267441">_n</a> = n;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="comment">// Make sure we still fit in the parent vector.</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  libmesh_assert_less_equal ((this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>() + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">size</a>()), <a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a>.size());</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a88fd654008c0e25c31d1c7437c267441"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a88fd654008c0e25c31d1c7437c267441">libMesh::DenseSubVector::_n</a></div><div class="ttdeci">unsigned int _n</div><div class="ttdoc">该子向量的长度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00155">dense_subvector.h:155</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a6a8902725b4a9d9503ab416e2e27f565"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">libMesh::DenseSubVector::i_off</a></div><div class="ttdeci">unsigned int i_off() const </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00110">dense_subvector.h:110</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a8b449465f9d985687703d87c54960404"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">libMesh::DenseSubVector::size</a></div><div class="ttdeci">virtual unsigned int size() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00098">dense_subvector.h:98</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a54769b30f7c28566077636f9fcc29e01"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a54769b30f7c28566077636f9fcc29e01">libMesh::DenseSubVector::_i_off</a></div><div class="ttdeci">unsigned int _i_off</div><div class="ttdoc">在父向量中的偏移。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00160">dense_subvector.h:160</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8b449465f9d985687703d87c54960404"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned int <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>子向量的长度。 </dd></dl>
+
+<p>实现了 <a class="el" href="classlibMesh_1_1DenseVectorBase.html#a4ec1ad50c02f01beea21df4c29ed9736">libMesh::DenseVectorBase&lt; T &gt;</a>.</p>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00098">98</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dense__subvector_8h_source.html#l00155">libMesh::DenseSubVector&lt; T &gt;::_n</a>.</p>
+
+<p>参考自 <a class="el" href="numeric__vector_8h_source.html#l01089">libMesh::NumericVector&lt; T &gt;::insert()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DenseSubVector.html#a88fd654008c0e25c31d1c7437c267441">_n</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a88fd654008c0e25c31d1c7437c267441"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a88fd654008c0e25c31d1c7437c267441">libMesh::DenseSubVector::_n</a></div><div class="ttdeci">unsigned int _n</div><div class="ttdoc">该子向量的长度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00155">dense_subvector.h:155</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a61c03ef3e3b5d062d74a1943360421a0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::zero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重写基类的 zero 函数，将子向量中的所有元素置零。 </p>
+
+<p>实现了 <a class="el" href="classlibMesh_1_1DenseVectorBase.html#a0c6c65a9c9b15317741c781903f45f83">libMesh::DenseVectorBase&lt; T &gt;</a>.</p>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00194">194</a> 行定义.</p>
+
+<p>参考 <a class="el" href="int__range_8h_source.html#l00111">libMesh::index_range()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;{</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(*<span class="keyword">this</span>))</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">_parent_vector</a> (i + this-&gt;<a class="code" href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">i_off</a>()) = 0.;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_a6a8902725b4a9d9503ab416e2e27f565"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#a6a8902725b4a9d9503ab416e2e27f565">libMesh::DenseSubVector::i_off</a></div><div class="ttdeci">unsigned int i_off() const </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00110">dense_subvector.h:110</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html_af6f861c83d49b81bf7ac0c9735687a0d"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector::_parent_vector</a></div><div class="ttdeci">DenseVector&lt; T &gt; &amp; _parent_vector</div><div class="ttdoc">包含该子向量的父向量。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00150">dense_subvector.h:150</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a26e38c0dc87c05a5e8df7e26bfed543b"><div class="ttname"><a href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">libMesh::index_range</a></div><div class="ttdeci">auto index_range(const T &amp;sizable)</div><div class="ttdoc">Helper function that returns an IntRange&amp;lt;std::size_t&amp;gt; representing all the indices of the passed-in v...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00111">int_range.h:111</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a54769b30f7c28566077636f9fcc29e01"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::_i_off</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在父向量中的偏移。 </p>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00160">160</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dense__subvector_8h_source.html#l00110">libMesh::DenseSubVector&lt; T &gt;::i_off()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88fd654008c0e25c31d1c7437c267441"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::_n</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>该子向量的长度。 </p>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00155">155</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dense__subvector_8h_source.html#l00104">libMesh::DenseSubVector&lt; T &gt;::empty()</a> , 以及 <a class="el" href="dense__subvector_8h_source.html#l00098">libMesh::DenseSubVector&lt; T &gt;::size()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6f861c83d49b81bf7ac0c9735687a0d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt;T&gt;&amp; <a class="el" href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a>&lt; T &gt;::_parent_vector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>包含该子向量的父向量。 </p>
+
+<p>在文件 <a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a> 第 <a class="el" href="dense__subvector_8h_source.html#l00150">150</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dense__subvector_8h_source.html#l00069">libMesh::DenseSubVector&lt; T &gt;::parent()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/numerics/<a class="el" href="dense__subvector_8h_source.html">dense_subvector.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:36 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

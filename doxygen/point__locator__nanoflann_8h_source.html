@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/utils/point_locator_nanoflann.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_50dcd1e72a70d5a99d79ef31f30e9fad.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">point_locator_nanoflann.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="point__locator__nanoflann_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_POINT_LOCATOR_NANOFLANN_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_POINT_LOCATOR_NANOFLANN_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_config.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// This class is not defined unless libmesh is built with Nanoflann support</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifdef LIBMESH_HAVE_NANOFLANN</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// libmesh includes</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;libmesh/point_locator_base.h&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;libmesh/point.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;libmesh/bounding_box.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// contrib includes</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;libmesh/nanoflann.hpp&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// Forward Declarations</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">class </span>MeshBase;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span>Point;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">class </span>Elem;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html">   71</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html">PointLocatorNanoflann</a> : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1PointLocatorBase.html">PointLocatorBase</a></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a2ad9bce0479e8a9b779d51cdf640fce4">PointLocatorNanoflann</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                         <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1PointLocatorBase.html">PointLocatorBase</a> * master = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a82fbec65bfadf6d5b037aac91149245d">~PointLocatorNanoflann</a> ();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#adbb6dabe6ac30225e92e4395eca92d47">clear</a>() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a9f27703e9e8fbe2420fae3b76f9e8ae6">init</a>() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> * <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a6852cad93fe20b6f121b503fc553d617">operator() </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                   <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; * allowed_subdomains = <span class="keyword">nullptr</span>) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a6852cad93fe20b6f121b503fc553d617">operator() </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                           std::set&lt;const Elem *&gt; &amp; candidate_elements,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                           <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; * allowed_subdomains = <span class="keyword">nullptr</span>) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#ada04463c146228f797357e98910a9d7f">enable_out_of_mesh_mode</a> () <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a09406f08fe7204a91a4cc9d7bc9bb2d2">disable_out_of_mesh_mode</a> () <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  std::size_t <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a757f1e17e10bfd9603ee60406358a0ad">get_num_results</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#aaac66702dec8906034909ac34827da3e">set_num_results</a>(std::size_t val);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="comment">// Required Nanoflann typedefs and APIs</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#a321020a9bc77fb5fa9e12ea3e14e47df">  167</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a321020a9bc77fb5fa9e12ea3e14e47df">coord_t</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  std::size_t <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#adc6ab0944c7b6524310bf15c9dbf3ed5">kdtree_get_point_count</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a321020a9bc77fb5fa9e12ea3e14e47df">coord_t</a> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a81fa6dc9d77ee612a92b0540892b985a">kdtree_distance</a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a321020a9bc77fb5fa9e12ea3e14e47df">coord_t</a> * p1,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                          <span class="keyword">const</span> std::size_t idx_p2,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                          std::size_t size) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a321020a9bc77fb5fa9e12ea3e14e47df">coord_t</a> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a417ab23db4e5d55b33d06ecfb0f5d30e">kdtree_get_pt</a>(<span class="keyword">const</span> std::size_t <a class="code" href="namespacelibMesh_1_1MeshTools_1_1Generation_1_1Private.html#acd3e3226af58784e414a3c242a3ef740">idx</a>, <span class="keywordtype">int</span> dim) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> BBOX&gt;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#afafe9f6f4be97238fceaf15bdd56f05b">  196</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#afafe9f6f4be97238fceaf15bdd56f05b">kdtree_get_bbox</a>(BBOX &amp; <span class="comment">/*bb*/</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#a694fe4991082fa2b231ae409271a6a3f">  204</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a694fe4991082fa2b231ae409271a6a3f">_out_of_mesh_mode</a>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#a73dbb84a581feaa409226739f8bd4f6e">  210</a></span>&#160;  std::size_t <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a73dbb84a581feaa409226739f8bd4f6e">_num_results</a>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#acc1a7371406b0d640c8e0a6510f6eb8d">  222</a></span>&#160;  std::shared_ptr&lt;std::vector&lt;const Elem *&gt;&gt; <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#acc1a7371406b0d640c8e0a6510f6eb8d">_elems</a>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#ad0003bfea20a45d314d6356ebfc23798">  223</a></span>&#160;  std::shared_ptr&lt;std::vector&lt;Point&gt;&gt; <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#ad0003bfea20a45d314d6356ebfc23798">_point_cloud</a>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="comment">// kd_tree will be initialized during init() and then automatically</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="comment">// cleaned up by the destructor. We always create a LIBMESH_DIM</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="comment">// dimensional Nanoflann object.</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#aacea6840b1ee5689e7f9b0cd5c58be8e">  228</a></span>&#160;  <span class="keyword">typedef</span> nanoflann::L2_Simple_Adaptor&lt;Real, PointLocatorNanoflann&gt; <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#aacea6840b1ee5689e7f9b0cd5c58be8e">adapter_t</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#a7ea9bd7f92388327e30918bc63e0e667">  229</a></span>&#160;  <span class="keyword">typedef</span> nanoflann::KDTreeSingleIndexAdaptor&lt;adapter_t, PointLocatorNanoflann, LIBMESH_DIM&gt; <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a7ea9bd7f92388327e30918bc63e0e667">kd_tree_t</a>;</div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#af1ff72b2bb96fa6725eeb7f013b9366b">  230</a></span>&#160;  std::shared_ptr&lt;kd_tree_t&gt; <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#af1ff72b2bb96fa6725eeb7f013b9366b">_kd_tree</a>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#a9124879284dc383bdbbd4f02f6490dce">  237</a></span>&#160;  <span class="keyword">mutable</span> std::vector&lt;std::size_t&gt; <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a9124879284dc383bdbbd4f02f6490dce">_ret_index</a>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#a7ee50638b4be5f95cb7ad7f6acb8e893">  238</a></span>&#160;  <span class="keyword">mutable</span> std::vector&lt;Real&gt; <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a7ee50638b4be5f95cb7ad7f6acb8e893">_out_dist_sqr</a>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PointLocatorNanoflann.html#aa926c85799731b68ecfd02d2263a095a">  244</a></span>&#160;  <span class="keyword">mutable</span> std::vector&lt;std::size_t&gt; <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#aa926c85799731b68ecfd02d2263a095a">_b</a>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  nanoflann::KNNResultSet&lt;Real&gt;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <a class="code" href="classlibMesh_1_1PointLocatorNanoflann.html#a82eab169a19b726a12ef0a6203173c1b">kd_tree_find_neighbors</a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                         std::size_t num_results) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;};</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif // LIBMESH_HAVE_NANOFLANN</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // LIBMESH_POINT_LOCATOR_NANOFLANN_H</span></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a7ea9bd7f92388327e30918bc63e0e667"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a7ea9bd7f92388327e30918bc63e0e667">libMesh::PointLocatorNanoflann::kd_tree_t</a></div><div class="ttdeci">nanoflann::KDTreeSingleIndexAdaptor&lt; adapter_t, PointLocatorNanoflann, LIBMESH_DIM &gt; kd_tree_t</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00229">point_locator_nanoflann.h:229</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_adbb6dabe6ac30225e92e4395eca92d47"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#adbb6dabe6ac30225e92e4395eca92d47">libMesh::PointLocatorNanoflann::clear</a></div><div class="ttdeci">virtual void clear() overridefinal</div><div class="ttdoc">Restore to PointLocator to a just-constructed state. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00056">point_locator_nanoflann.C:56</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_aa926c85799731b68ecfd02d2263a095a"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#aa926c85799731b68ecfd02d2263a095a">libMesh::PointLocatorNanoflann::_b</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; _b</div><div class="ttdoc">Vector of indices used by indirect sort. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00244">point_locator_nanoflann.h:244</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a694fe4991082fa2b231ae409271a6a3f"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a694fe4991082fa2b231ae409271a6a3f">libMesh::PointLocatorNanoflann::_out_of_mesh_mode</a></div><div class="ttdeci">bool _out_of_mesh_mode</div><div class="ttdoc">true if out-of-mesh mode is enabled. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00204">point_locator_nanoflann.h:204</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html"><div class="ttname"><a href="classlibMesh_1_1Elem.html">libMesh::Elem</a></div><div class="ttdoc">This is the base class from which all geometric element types are derived. </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l00094">elem.h:94</a></div></div>
+<div class="ttc" id="mesh__communication_8C_html_afaa03b874c297f4693d9cdef7f50f3c6"><div class="ttname"><a href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__communication_8C_source.html#l01308">mesh_communication.C:1308</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a09406f08fe7204a91a4cc9d7bc9bb2d2"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a09406f08fe7204a91a4cc9d7bc9bb2d2">libMesh::PointLocatorNanoflann::disable_out_of_mesh_mode</a></div><div class="ttdeci">virtual void disable_out_of_mesh_mode() overridefinal</div><div class="ttdoc">Disables out-of-mesh mode (default). </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00377">point_locator_nanoflann.C:377</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_ada04463c146228f797357e98910a9d7f"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#ada04463c146228f797357e98910a9d7f">libMesh::PointLocatorNanoflann::enable_out_of_mesh_mode</a></div><div class="ttdeci">virtual void enable_out_of_mesh_mode() overridefinal</div><div class="ttdoc">Enables out-of-mesh mode. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00368">point_locator_nanoflann.C:368</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a417ab23db4e5d55b33d06ecfb0f5d30e"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a417ab23db4e5d55b33d06ecfb0f5d30e">libMesh::PointLocatorNanoflann::kdtree_get_pt</a></div><div class="ttdeci">coord_t kdtree_get_pt(const std::size_t idx, int dim) const </div><div class="ttdoc">Returns the dim&amp;#39;th component of the idx&amp;#39;th vertex average. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00432">point_locator_nanoflann.C:432</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html">libMesh::MeshBase</a></div><div class="ttdoc">This is the MeshBase class. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00070">mesh_base.h:70</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a73dbb84a581feaa409226739f8bd4f6e"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a73dbb84a581feaa409226739f8bd4f6e">libMesh::PointLocatorNanoflann::_num_results</a></div><div class="ttdeci">std::size_t _num_results</div><div class="ttdoc">The number of results returned by Nanoflann when operator() is called. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00210">point_locator_nanoflann.h:210</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a6852cad93fe20b6f121b503fc553d617"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a6852cad93fe20b6f121b503fc553d617">libMesh::PointLocatorNanoflann::operator()</a></div><div class="ttdeci">virtual const Elem * operator()(const Point &amp;p, const std::set&lt; subdomain_id_type &gt; *allowed_subdomains=nullptr) const overridefinal</div><div class="ttdoc">Locates the element in which the point with global coordinates p is located, optionally restricted to...</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00169">point_locator_nanoflann.C:169</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a7ee50638b4be5f95cb7ad7f6acb8e893"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a7ee50638b4be5f95cb7ad7f6acb8e893">libMesh::PointLocatorNanoflann::_out_dist_sqr</a></div><div class="ttdeci">std::vector&lt; Real &gt; _out_dist_sqr</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00238">point_locator_nanoflann.h:238</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a321020a9bc77fb5fa9e12ea3e14e47df"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a321020a9bc77fb5fa9e12ea3e14e47df">libMesh::PointLocatorNanoflann::coord_t</a></div><div class="ttdeci">Real coord_t</div><div class="ttdoc">Floating point type used for storing coordinates. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00167">point_locator_nanoflann.h:167</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a82fbec65bfadf6d5b037aac91149245d"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a82fbec65bfadf6d5b037aac91149245d">libMesh::PointLocatorNanoflann::~PointLocatorNanoflann</a></div><div class="ttdeci">virtual ~PointLocatorNanoflann()</div><div class="ttdoc">Destructor. </div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a81fa6dc9d77ee612a92b0540892b985a"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a81fa6dc9d77ee612a92b0540892b985a">libMesh::PointLocatorNanoflann::kdtree_distance</a></div><div class="ttdeci">coord_t kdtree_distance(const coord_t *p1, const std::size_t idx_p2, std::size_t size) const </div><div class="ttdoc">Returns the squared distance between the vector (p1[0], p1[1], p1[2]) and the vertex average of Elem ...</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00411">point_locator_nanoflann.C:411</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorBase_html"><div class="ttname"><a href="classlibMesh_1_1PointLocatorBase.html">libMesh::PointLocatorBase</a></div><div class="ttdoc">This is the base class for point locators. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__base_8h_source.html#l00054">point_locator_base.h:54</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a9124879284dc383bdbbd4f02f6490dce"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a9124879284dc383bdbbd4f02f6490dce">libMesh::PointLocatorNanoflann::_ret_index</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; _ret_index</div><div class="ttdoc">The operator() functions on PointLocator-derived classes are const, so to avoid re-allocating these r...</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00237">point_locator_nanoflann.h:237</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a9f27703e9e8fbe2420fae3b76f9e8ae6"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a9f27703e9e8fbe2420fae3b76f9e8ae6">libMesh::PointLocatorNanoflann::init</a></div><div class="ttdeci">virtual void init() overridefinal</div><div class="ttdoc">Initializes the locator, so that the operator() methods can be used. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00071">point_locator_nanoflann.C:71</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a2ad9bce0479e8a9b779d51cdf640fce4"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a2ad9bce0479e8a9b779d51cdf640fce4">libMesh::PointLocatorNanoflann::PointLocatorNanoflann</a></div><div class="ttdeci">PointLocatorNanoflann(const MeshBase &amp;mesh, const PointLocatorBase *master=nullptr)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00040">point_locator_nanoflann.C:40</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_afafe9f6f4be97238fceaf15bdd56f05b"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#afafe9f6f4be97238fceaf15bdd56f05b">libMesh::PointLocatorNanoflann::kdtree_get_bbox</a></div><div class="ttdeci">bool kdtree_get_bbox(BBOX &amp;) const </div><div class="ttdoc">Optional bounding-box computation: return false to default to a standard bbox computation loop...</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00196">point_locator_nanoflann.h:196</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a82eab169a19b726a12ef0a6203173c1b"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a82eab169a19b726a12ef0a6203173c1b">libMesh::PointLocatorNanoflann::kd_tree_find_neighbors</a></div><div class="ttdeci">nanoflann::KNNResultSet&lt; Real &gt; kd_tree_find_neighbors(const Point &amp;p, std::size_t num_results) const </div><div class="ttdoc">Helper function that wraps the call to the KDTree&amp;#39;s findNeighbors() routine. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00134">point_locator_nanoflann.C:134</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_af1ff72b2bb96fa6725eeb7f013b9366b"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#af1ff72b2bb96fa6725eeb7f013b9366b">libMesh::PointLocatorNanoflann::_kd_tree</a></div><div class="ttdeci">std::shared_ptr&lt; kd_tree_t &gt; _kd_tree</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00230">point_locator_nanoflann.h:230</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_aacea6840b1ee5689e7f9b0cd5c58be8e"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#aacea6840b1ee5689e7f9b0cd5c58be8e">libMesh::PointLocatorNanoflann::adapter_t</a></div><div class="ttdeci">nanoflann::L2_Simple_Adaptor&lt; Real, PointLocatorNanoflann &gt; adapter_t</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00228">point_locator_nanoflann.h:228</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_adc6ab0944c7b6524310bf15c9dbf3ed5"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#adc6ab0944c7b6524310bf15c9dbf3ed5">libMesh::PointLocatorNanoflann::kdtree_get_point_count</a></div><div class="ttdeci">std::size_t kdtree_get_point_count() const </div><div class="ttdoc">Must return the number of data points. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00403">point_locator_nanoflann.C:403</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_acc1a7371406b0d640c8e0a6510f6eb8d"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#acc1a7371406b0d640c8e0a6510f6eb8d">libMesh::PointLocatorNanoflann::_elems</a></div><div class="ttdeci">std::shared_ptr&lt; std::vector&lt; const Elem * &gt; &gt; _elems</div><div class="ttdoc">Lists of Points and ids which make up the &amp;quot;point cloud&amp;quot; that is to be searched via Nanoflann...</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00222">point_locator_nanoflann.h:222</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_a757f1e17e10bfd9603ee60406358a0ad"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#a757f1e17e10bfd9603ee60406358a0ad">libMesh::PointLocatorNanoflann::get_num_results</a></div><div class="ttdeci">std::size_t get_num_results() const </div><div class="ttdoc">Set/get the number of results returned by each Nanoflann findNeighbors() search. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00385">point_locator_nanoflann.C:385</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_aaac66702dec8906034909ac34827da3e"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#aaac66702dec8906034909ac34827da3e">libMesh::PointLocatorNanoflann::set_num_results</a></div><div class="ttdeci">void set_num_results(std::size_t val)</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8C_source.html#l00393">point_locator_nanoflann.C:393</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html_ad0003bfea20a45d314d6356ebfc23798"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html#ad0003bfea20a45d314d6356ebfc23798">libMesh::PointLocatorNanoflann::_point_cloud</a></div><div class="ttdeci">std::shared_ptr&lt; std::vector&lt; Point &gt; &gt; _point_cloud</div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00223">point_locator_nanoflann.h:223</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Point_html"><div class="ttname"><a href="classlibMesh_1_1Point.html">libMesh::Point</a></div><div class="ttdoc">A Point defines a location in LIBMESH_DIM dimensional Real space. </div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00039">point.h:39</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PointLocatorNanoflann_html"><div class="ttname"><a href="classlibMesh_1_1PointLocatorNanoflann.html">libMesh::PointLocatorNanoflann</a></div><div class="ttdoc">This is a PointLocator that uses Nanoflann for its implementation. </div><div class="ttdef"><b>Definition:</b> <a href="point__locator__nanoflann_8h_source.html#l00071">point_locator_nanoflann.h:71</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1MeshTools_1_1Generation_1_1Private_html_acd3e3226af58784e414a3c242a3ef740"><div class="ttname"><a href="namespacelibMesh_1_1MeshTools_1_1Generation_1_1Private.html#acd3e3226af58784e414a3c242a3ef740">libMesh::MeshTools::Generation::Private::idx</a></div><div class="ttdeci">unsigned int idx(const ElemType type, const unsigned int nx, const unsigned int i, const unsigned int j)</div><div class="ttdoc">A useful inline function which replaces the macros used previously. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__generation_8C_source.html#l00078">mesh_generation.C:78</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

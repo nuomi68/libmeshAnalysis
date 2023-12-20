@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/quadrature/quadrature_conical.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_35689ca527035c8cc4325f4f3e1225b1.html">quadrature</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">quadrature_conical.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="quadrature__conical_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef LIBMESH_QUADRATURE_CONICAL_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_QUADRATURE_CONICAL_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;libmesh/quadrature.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classlibMesh_1_1QConical.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1QConical.html">QConical</a> final : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1QBase.html">QBase</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classlibMesh_1_1QConical.html#a77e3aeb5b4c3e6bd1708c410b7c5298c">   50</a></span>&#160;  <a class="code" href="classlibMesh_1_1QConical.html#a77e3aeb5b4c3e6bd1708c410b7c5298c">QConical</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a> o=<a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2a9f3ee7f7f5b35b0ea06019fe3bceca21">INVALID_ORDER</a>) :</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classlibMesh_1_1QBase.html">QBase</a>(d,o)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classlibMesh_1_1QConical.html#a77e3aeb5b4c3e6bd1708c410b7c5298c">QConical</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1QConical.html">QConical</a> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classlibMesh_1_1QConical.html#a77e3aeb5b4c3e6bd1708c410b7c5298c">QConical</a> (<a class="code" href="classlibMesh_1_1QConical.html">QConical</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classlibMesh_1_1QConical.html">QConical</a> &amp; <a class="code" href="classlibMesh_1_1QConical.html#a35ed033077ebde2c590c6da2fb0fd5c1">operator= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1QConical.html">QConical</a> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classlibMesh_1_1QConical.html">QConical</a> &amp; <a class="code" href="classlibMesh_1_1QConical.html#a35ed033077ebde2c590c6da2fb0fd5c1">operator= </a>(<a class="code" href="classlibMesh_1_1QConical.html">QConical</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1QConical.html#a1134bd1197d16fadcd4857cf7897e900">~QConical</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#a9d84d2591104a6a952f572d911361eb2">QuadratureType</a> <a class="code" href="classlibMesh_1_1QConical.html#a71ce111f9cbc26820703d0e2e1d89d46">type</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;QBase&gt; <a class="code" href="classlibMesh_1_1QConical.html#aaa476f23f3abc9f8313b4c76631807b8">clone</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1QConical.html#aefaa4207085a34de99a6ddc50a57d9cb">init_1D</a> (<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1QConical.html#ae0004fbf58ee07e17ff56231ec4b939c">init_2D</a> (<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1QConical.html#a635657f4ba9e0185beb93ca655e97a8b">init_3D</a> (<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1QConical.html#a53d28015ad5bffd149c357be4d81db7e">conical_product_tri</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1QConical.html#a55285e4b0a3e8f6fcfe3ea5fb02ce1b6">conical_product_tet</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1QConical.html#a9da510632f66ad4ba709e5adfc26cf69">conical_product_pyramid</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif // LIBMESH_QUADRATURE_CONICAL_H</span></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_a53d28015ad5bffd149c357be4d81db7e"><div class="ttname"><a href="classlibMesh_1_1QConical.html#a53d28015ad5bffd149c357be4d81db7e">libMesh::QConical::conical_product_tri</a></div><div class="ttdeci">void conical_product_tri()</div><div class="ttdoc">Implementation of conical product rule for a Tri in 2D of order get_order(). </div><div class="ttdef"><b>Definition:</b> <a href="quadrature__conical_8C_source.html#l00057">quadrature_conical.C:57</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a3f482b3acb4beb528f0ce89f161ff967"><div class="ttname"><a href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">libMesh::ElemType</a></div><div class="ttdeci">ElemType</div><div class="ttdoc">Defines an enum for geometric element types. </div><div class="ttdef"><b>Definition:</b> <a href="enum__elem__type_8h_source.html#l00033">enum_elem_type.h:33</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af3eb3e8751995b944fc135ea53b09da2"><div class="ttname"><a href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">libMesh::Order</a></div><div class="ttdeci">Order</div><div class="ttdoc">defines an enum for polynomial orders. </div><div class="ttdef"><b>Definition:</b> <a href="enum__order_8h_source.html#l00040">enum_order.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_ae0004fbf58ee07e17ff56231ec4b939c"><div class="ttname"><a href="classlibMesh_1_1QConical.html#ae0004fbf58ee07e17ff56231ec4b939c">libMesh::QConical::init_2D</a></div><div class="ttdeci">virtual void init_2D(const ElemType, unsigned int) override</div><div class="ttdoc">Initializes the 2D quadrature rule by filling the points and weights vectors with the appropriate val...</div><div class="ttdef"><b>Definition:</b> <a href="quadrature__conical__2D_8C_source.html#l00028">quadrature_conical_2D.C:28</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a9d84d2591104a6a952f572d911361eb2"><div class="ttname"><a href="namespacelibMesh.html#a9d84d2591104a6a952f572d911361eb2">libMesh::QuadratureType</a></div><div class="ttdeci">QuadratureType</div><div class="ttdoc">Defines an enum for currently available quadrature rules. </div><div class="ttdef"><b>Definition:</b> <a href="enum__quadrature__type_8h_source.html#l00033">enum_quadrature_type.h:33</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_a77e3aeb5b4c3e6bd1708c410b7c5298c"><div class="ttname"><a href="classlibMesh_1_1QConical.html#a77e3aeb5b4c3e6bd1708c410b7c5298c">libMesh::QConical::QConical</a></div><div class="ttdeci">QConical(unsigned int d, Order o=INVALID_ORDER)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="quadrature__conical_8h_source.html#l00050">quadrature_conical.h:50</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_a55285e4b0a3e8f6fcfe3ea5fb02ce1b6"><div class="ttname"><a href="classlibMesh_1_1QConical.html#a55285e4b0a3e8f6fcfe3ea5fb02ce1b6">libMesh::QConical::conical_product_tet</a></div><div class="ttdeci">void conical_product_tet()</div><div class="ttdoc">Implementation of conical product rule for a Tet in 3D of order get_order(). </div><div class="ttdef"><b>Definition:</b> <a href="quadrature__conical_8C_source.html#l00108">quadrature_conical.C:108</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_a9da510632f66ad4ba709e5adfc26cf69"><div class="ttname"><a href="classlibMesh_1_1QConical.html#a9da510632f66ad4ba709e5adfc26cf69">libMesh::QConical::conical_product_pyramid</a></div><div class="ttdeci">void conical_product_pyramid()</div><div class="ttdoc">Implementation of conical product rule for a Pyramid in 3D of order get_order(). </div><div class="ttdef"><b>Definition:</b> <a href="quadrature__conical_8C_source.html#l00185">quadrature_conical.C:185</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_aaa476f23f3abc9f8313b4c76631807b8"><div class="ttname"><a href="classlibMesh_1_1QConical.html#aaa476f23f3abc9f8313b4c76631807b8">libMesh::QConical::clone</a></div><div class="ttdeci">virtual std::unique_ptr&lt; QBase &gt; clone() const override</div><div class="ttdef"><b>Definition:</b> <a href="quadrature__conical_8C_source.html#l00038">quadrature_conical.C:38</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html"><div class="ttname"><a href="classlibMesh_1_1QConical.html">libMesh::QConical</a></div><div class="ttdoc">This class implements the so-called conical product quadrature rules for Tri and Tet elements...</div><div class="ttdef"><b>Definition:</b> <a href="quadrature__conical_8h_source.html#l00043">quadrature_conical.h:43</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af3eb3e8751995b944fc135ea53b09da2a9f3ee7f7f5b35b0ea06019fe3bceca21"><div class="ttname"><a href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2a9f3ee7f7f5b35b0ea06019fe3bceca21">libMesh::INVALID_ORDER</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__order_8h_source.html#l00087">enum_order.h:87</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_aefaa4207085a34de99a6ddc50a57d9cb"><div class="ttname"><a href="classlibMesh_1_1QConical.html#aefaa4207085a34de99a6ddc50a57d9cb">libMesh::QConical::init_1D</a></div><div class="ttdeci">virtual void init_1D(const ElemType, unsigned int) override</div><div class="ttdoc">In 1D, use a Gauss rule. </div><div class="ttdef"><b>Definition:</b> <a href="quadrature__conical_8C_source.html#l00043">quadrature_conical.C:43</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_a71ce111f9cbc26820703d0e2e1d89d46"><div class="ttname"><a href="classlibMesh_1_1QConical.html#a71ce111f9cbc26820703d0e2e1d89d46">libMesh::QConical::type</a></div><div class="ttdeci">virtual QuadratureType type() const override</div><div class="ttdef"><b>Definition:</b> <a href="quadrature__conical_8C_source.html#l00033">quadrature_conical.C:33</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_a35ed033077ebde2c590c6da2fb0fd5c1"><div class="ttname"><a href="classlibMesh_1_1QConical.html#a35ed033077ebde2c590c6da2fb0fd5c1">libMesh::QConical::operator=</a></div><div class="ttdeci">QConical &amp; operator=(const QConical &amp;)=default</div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_a1134bd1197d16fadcd4857cf7897e900"><div class="ttname"><a href="classlibMesh_1_1QConical.html#a1134bd1197d16fadcd4857cf7897e900">libMesh::QConical::~QConical</a></div><div class="ttdeci">virtual ~QConical()=default</div></div>
+<div class="ttc" id="classlibMesh_1_1QConical_html_a635657f4ba9e0185beb93ca655e97a8b"><div class="ttname"><a href="classlibMesh_1_1QConical.html#a635657f4ba9e0185beb93ca655e97a8b">libMesh::QConical::init_3D</a></div><div class="ttdeci">virtual void init_3D(const ElemType, unsigned int) override</div><div class="ttdoc">Initializes the 3D quadrature rule by filling the points and weights vectors with the appropriate val...</div><div class="ttdef"><b>Definition:</b> <a href="quadrature__conical__3D_8C_source.html#l00026">quadrature_conical_3D.C:26</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QBase_html"><div class="ttname"><a href="classlibMesh_1_1QBase.html">libMesh::QBase</a></div><div class="ttdoc">The QBase class provides the basic functionality from which various quadrature rules can be derived...</div><div class="ttdef"><b>Definition:</b> <a href="quadrature_8h_source.html#l00053">quadrature.h:53</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

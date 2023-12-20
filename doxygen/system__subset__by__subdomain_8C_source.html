@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/src/systems/system_subset_by_subdomain.C 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_2e6bace0902b265ead1acaf9e32c7352.html">systems</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">system_subset_by_subdomain.C</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="system__subset__by__subdomain_8C.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/system_subset_by_subdomain.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;libmesh/system.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;libmesh/dof_map.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;libmesh/parallel.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;libmesh/elem.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// ------------------------------------------------------------</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// SubdomainSelection implementation</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelection.html#a9a3043696e4f092ded75198946834b1d">SystemSubsetBySubdomain::SubdomainSelection::SubdomainSelection</a> () = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelection.html#a500c7310a321a05b2c1e42908c5a0bb3">SystemSubsetBySubdomain::SubdomainSelection::~SubdomainSelection</a> () = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList.html#a3fa55a13ec89d506a7951c8fcdc66f97">SystemSubsetBySubdomain::SubdomainSelectionByList::</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList.html#a3fa55a13ec89d506a7951c8fcdc66f97">   38</a></span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList.html#a3fa55a13ec89d506a7951c8fcdc66f97">SubdomainSelectionByList</a> (<span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; &amp; list):</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  _list(list)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList.html#a40d9e75a2ecb8d7ab2817492447ca112">SystemSubsetBySubdomain::SubdomainSelectionByList::</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList.html#a40d9e75a2ecb8d7ab2817492447ca112">   45</a></span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList.html#a40d9e75a2ecb8d7ab2817492447ca112">operator()</a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1TestClass.html">subdomain_id_type</a> &amp; subdomain_id)<span class="keyword">const</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> _list.find(subdomain_id)!=_list.end();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// ------------------------------------------------------------</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// SystemSubsetBySubdomain implementation</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a93607e0c670474d382c81531f6004c73">SystemSubsetBySubdomain::</a></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a93607e0c670474d382c81531f6004c73">   54</a></span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a93607e0c670474d382c81531f6004c73">SystemSubsetBySubdomain</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1System.html">System</a> &amp; system,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                         <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelection.html">SubdomainSelection</a> &amp; subdomain_selection,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                         <span class="keyword">const</span> std::set&lt;unsigned int&gt; * <span class="keyword">const</span> var_nums):</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classlibMesh_1_1SystemSubset.html">SystemSubset</a>(system),</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classlibMesh_1_1ParallelObject.html">ParallelObject</a>(system),</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a71eb6bddbe22c08ed79347d35112aad7">_var_nums</a>(),</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>()</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a807bd90c3438ad3211d94bc367fb93a0">set_var_nums</a>(var_nums);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a9766bf4781bfdd35179f82f02dc1b8f8">init</a>(subdomain_selection);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a93607e0c670474d382c81531f6004c73">SystemSubsetBySubdomain::</a></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SystemSubsetBySubdomain.html#af0cc5887d2492b87b0d966051eb60556">   67</a></span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a93607e0c670474d382c81531f6004c73">SystemSubsetBySubdomain</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1System.html">System</a> &amp; system,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                         <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; &amp; subdomain_ids,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                         <span class="keyword">const</span> std::set&lt;unsigned int&gt; * <span class="keyword">const</span> var_nums):</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classlibMesh_1_1SystemSubset.html">SystemSubset</a>(system),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classlibMesh_1_1ParallelObject.html">ParallelObject</a>(system),</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  _var_nums(),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  _dof_ids()</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a807bd90c3438ad3211d94bc367fb93a0">set_var_nums</a>(var_nums);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a9766bf4781bfdd35179f82f02dc1b8f8">init</a>(subdomain_ids);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a8e3be7b89717b063348043416751b4cb">SystemSubsetBySubdomain::~SystemSubsetBySubdomain</a> () = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">const</span> std::vector&lt;unsigned int&gt; &amp;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a70b8dca00a04d73a3efba62036d691e7">   82</a></span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a70b8dca00a04d73a3efba62036d691e7">SystemSubsetBySubdomain::dof_ids</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a807bd90c3438ad3211d94bc367fb93a0">SystemSubsetBySubdomain::</a></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a807bd90c3438ad3211d94bc367fb93a0">   89</a></span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a807bd90c3438ad3211d94bc367fb93a0">set_var_nums</a> (<span class="keyword">const</span> std::set&lt;unsigned int&gt; * <span class="keyword">const</span> var_nums)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a71eb6bddbe22c08ed79347d35112aad7">_var_nums</a>.clear();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">if</span> (var_nums != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a71eb6bddbe22c08ed79347d35112aad7">_var_nums</a> = *var_nums;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(<a class="code" href="classlibMesh_1_1SystemSubset.html#ae774667e2b85554fd3f503f920e534db">_system</a>.<a class="code" href="classlibMesh_1_1System.html#a4cf032eda109fe32a7fcde672ef5726e">n_vars</a>()))</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a71eb6bddbe22c08ed79347d35112aad7">_var_nums</a>.insert(i);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a9766bf4781bfdd35179f82f02dc1b8f8">SystemSubsetBySubdomain::</a></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a9766bf4781bfdd35179f82f02dc1b8f8">  103</a></span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a9766bf4781bfdd35179f82f02dc1b8f8">init</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelection.html">SubdomainSelection</a> &amp; subdomain_selection)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>.clear();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  std::vector&lt;std::vector&lt;dof_id_type&gt;&gt; dof_ids_per_processor(this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#a50719f74165b613ab929afd29b6d5f4a">n_processors</a>());</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1DofMap.html">DofMap</a> &amp; dof_map = <a class="code" href="classlibMesh_1_1SystemSubset.html#ae774667e2b85554fd3f503f920e534db">_system</a>.<a class="code" href="classlibMesh_1_1System.html#a3b392c8791f781092d6326e51856f553">get_dof_map</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  std::vector&lt;dof_id_type&gt; dof_indices;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a> = <a class="code" href="classlibMesh_1_1SystemSubset.html#ae774667e2b85554fd3f503f920e534db">_system</a>.<a class="code" href="classlibMesh_1_1System.html#a39141a08afe4e0334c21035de6f0b7a3">get_mesh</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; elem : mesh.active_local_element_ptr_range())</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span> (subdomain_selection(elem-&gt;subdomain_id()))</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; var_num : <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a71eb6bddbe22c08ed79347d35112aad7">_var_nums</a>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            dof_map.<a class="code" href="classlibMesh_1_1DofMap.html#a0d323b6fcb736454a9f6074ebda9ec28">dof_indices</a> (elem, dof_indices, var_num);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; dof : dof_indices)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;              <span class="keywordflow">for</span> (<span class="keyword">auto</span> proc : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#a50719f74165b613ab929afd29b6d5f4a">n_processors</a>()))</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">if</span> ((dof&gt;=dof_map.<a class="code" href="classlibMesh_1_1DofMap.html#a2cc5678707a3bcb0f64b1cb5c73c813c">first_dof</a>(proc)) &amp;&amp; (dof&lt;dof_map.<a class="code" href="classlibMesh_1_1DofMap.html#a265de993749f5bab70c3f9c860defd49">end_dof</a>(proc)))</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                  dof_ids_per_processor[proc].push_back(dof);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;          }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="comment">/* Distribute information among processors.  */</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  std::vector&lt;Parallel::Request&gt; request_per_processor(this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#a50719f74165b613ab929afd29b6d5f4a">n_processors</a>());</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> proc : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#a50719f74165b613ab929afd29b6d5f4a">n_processors</a>()))</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span> (proc!=this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">processor_id</a>())</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">comm</a>().send(proc,dof_ids_per_processor[proc],request_per_processor[proc]);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> proc : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#a50719f74165b613ab929afd29b6d5f4a">n_processors</a>()))</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      std::vector&lt;dof_id_type&gt; received_dofs;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="keywordflow">if</span> (proc==this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">processor_id</a>())</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        received_dofs = dof_ids_per_processor[proc];</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">comm</a>().receive(proc,received_dofs);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>.insert(<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>.end(), received_dofs.begin(), received_dofs.end());</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="comment">/* Sort and unique the vector (using the same mechanism as in \p</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">     DofMap::prepare_send_list()).  */</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  std::sort(<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>.begin(), <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>.end());</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  std::vector&lt;unsigned int&gt;::iterator new_end = std::unique (<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>.begin(), <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>.end());</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  std::vector&lt;unsigned int&gt; (<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>.begin(), new_end).swap (<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">_dof_ids</a>);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="comment">/* Wait for sends to be complete.  */</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> proc : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#a50719f74165b613ab929afd29b6d5f4a">n_processors</a>()))</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordflow">if</span> (proc!=this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">processor_id</a>())</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          request_per_processor[proc].wait();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a9766bf4781bfdd35179f82f02dc1b8f8">SystemSubsetBySubdomain::</a></div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a74ef604ab922e444254f6128cdd8e6ab">  159</a></span>&#160;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a9766bf4781bfdd35179f82f02dc1b8f8">init</a> (<span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; &amp; subdomain_ids)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList.html">SubdomainSelectionByList</a> selection(subdomain_ids);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1SystemSubsetBySubdomain.html#a9766bf4781bfdd35179f82f02dc1b8f8">init</a>(selection);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_html_a9766bf4781bfdd35179f82f02dc1b8f8"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain.html#a9766bf4781bfdd35179f82f02dc1b8f8">libMesh::SystemSubsetBySubdomain::init</a></div><div class="ttdeci">void init(const SubdomainSelection &amp;subdomain_selection)</div><div class="ttdoc">Initializes the class. </div><div class="ttdef"><b>Definition:</b> <a href="system__subset__by__subdomain_8C_source.html#l00103">system_subset_by_subdomain.C:103</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_html_a8e3be7b89717b063348043416751b4cb"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain.html#a8e3be7b89717b063348043416751b4cb">libMesh::SystemSubsetBySubdomain::~SystemSubsetBySubdomain</a></div><div class="ttdeci">virtual ~SystemSubsetBySubdomain()</div><div class="ttdoc">Destructor. </div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_html_a807bd90c3438ad3211d94bc367fb93a0"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain.html#a807bd90c3438ad3211d94bc367fb93a0">libMesh::SystemSubsetBySubdomain::set_var_nums</a></div><div class="ttdeci">void set_var_nums(const std::set&lt; unsigned int &gt; *const var_nums)</div><div class="ttdoc">Sets _var_nums to either a copy of var_nums or, if that is nullptr, a set of all variable numbers tha...</div><div class="ttdef"><b>Definition:</b> <a href="system__subset__by__subdomain_8C_source.html#l00089">system_subset_by_subdomain.C:89</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList_html_a40d9e75a2ecb8d7ab2817492447ca112"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList.html#a40d9e75a2ecb8d7ab2817492447ca112">libMesh::SystemSubsetBySubdomain::SubdomainSelectionByList::operator()</a></div><div class="ttdeci">virtual bool operator()(const subdomain_id_type &amp;subdomain_id) const override</div><div class="ttdoc">Method that decides whether a given subdomain id is included in the subset or nor. </div><div class="ttdef"><b>Definition:</b> <a href="system__subset__by__subdomain_8C_source.html#l00045">system_subset_by_subdomain.C:45</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TestClass_html"><div class="ttname"><a href="classlibMesh_1_1TestClass.html">libMesh::TestClass</a></div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00033">id_types.h:33</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ParallelObject_html_a50719f74165b613ab929afd29b6d5f4a"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#a50719f74165b613ab929afd29b6d5f4a">libMesh::ParallelObject::n_processors</a></div><div class="ttdeci">processor_id_type n_processors() const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00103">parallel_object.h:103</a></div></div>
+<div class="ttc" id="mesh__communication_8C_html_afaa03b874c297f4693d9cdef7f50f3c6"><div class="ttname"><a href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__communication_8C_source.html#l01308">mesh_communication.C:1308</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubset_html_ae774667e2b85554fd3f503f920e534db"><div class="ttname"><a href="classlibMesh_1_1SystemSubset.html#ae774667e2b85554fd3f503f920e534db">libMesh::SystemSubset::_system</a></div><div class="ttdeci">const System &amp; _system</div><div class="ttdoc">A reference to the System we belong to. </div><div class="ttdef"><b>Definition:</b> <a href="system__subset_8h_source.html#l00075">system_subset.h:75</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelection_html_a500c7310a321a05b2c1e42908c5a0bb3"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelection.html#a500c7310a321a05b2c1e42908c5a0bb3">libMesh::SystemSubsetBySubdomain::SubdomainSelection::~SubdomainSelection</a></div><div class="ttdeci">virtual ~SubdomainSelection()</div><div class="ttdoc">Destructor. </div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html">libMesh::MeshBase</a></div><div class="ttdoc">This is the MeshBase class. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00070">mesh_base.h:70</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html"><div class="ttname"><a href="classlibMesh_1_1DofMap.html">libMesh::DofMap</a></div><div class="ttdoc">This class handles the numbering of degrees of freedom on a mesh. </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00169">dof_map.h:169</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html_a2cc5678707a3bcb0f64b1cb5c73c813c"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a2cc5678707a3bcb0f64b1cb5c73c813c">libMesh::DofMap::first_dof</a></div><div class="ttdeci">dof_id_type first_dof(const processor_id_type proc) const </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00684">dof_map.h:684</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html_a265de993749f5bab70c3f9c860defd49"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a265de993749f5bab70c3f9c860defd49">libMesh::DofMap::end_dof</a></div><div class="ttdeci">dof_id_type end_dof(const processor_id_type proc) const </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00708">dof_map.h:708</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a39141a08afe4e0334c21035de6f0b7a3"><div class="ttname"><a href="classlibMesh_1_1System.html#a39141a08afe4e0334c21035de6f0b7a3">libMesh::System::get_mesh</a></div><div class="ttdeci">const MeshBase &amp; get_mesh() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02277">system.h:2277</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a3b392c8791f781092d6326e51856f553"><div class="ttname"><a href="classlibMesh_1_1System.html#a3b392c8791f781092d6326e51856f553">libMesh::System::get_dof_map</a></div><div class="ttdeci">const DofMap &amp; get_dof_map() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02293">system.h:2293</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubset_html"><div class="ttname"><a href="classlibMesh_1_1SystemSubset.html">libMesh::SystemSubset</a></div><div class="ttdoc">This is a base class for classes which represent subsets of the dofs of a System. ...</div><div class="ttdef"><b>Definition:</b> <a href="system__subset_8h_source.html#l00042">system_subset.h:42</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html"><div class="ttname"><a href="classlibMesh_1_1System.html">libMesh::System</a></div><div class="ttdoc">Manages consistently variables, degrees of freedom, and coefficient vectors. </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00096">system.h:96</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_html_a70b8dca00a04d73a3efba62036d691e7"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain.html#a70b8dca00a04d73a3efba62036d691e7">libMesh::SystemSubsetBySubdomain::dof_ids</a></div><div class="ttdeci">virtual const std::vector&lt; unsigned int &gt; &amp; dof_ids() const override</div><div class="ttdef"><b>Definition:</b> <a href="system__subset__by__subdomain_8C_source.html#l00082">system_subset_by_subdomain.C:82</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelection_html_a9a3043696e4f092ded75198946834b1d"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelection.html#a9a3043696e4f092ded75198946834b1d">libMesh::SystemSubsetBySubdomain::SubdomainSelection::SubdomainSelection</a></div><div class="ttdeci">SubdomainSelection()</div><div class="ttdoc">Constructor. </div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList_html"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList.html">libMesh::SystemSubsetBySubdomain::SubdomainSelectionByList</a></div><div class="ttdoc">Selection of subdomain ids by a list. </div><div class="ttdef"><b>Definition:</b> <a href="system__subset__by__subdomain_8h_source.html#l00097">system_subset_by_subdomain.h:97</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelection_html"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelection.html">libMesh::SystemSubsetBySubdomain::SubdomainSelection</a></div><div class="ttdoc">Subclass for user-specified selection of subdomain ids to be included in a SystemSubset. </div><div class="ttdef"><b>Definition:</b> <a href="system__subset__by__subdomain_8h_source.html#l00054">system_subset_by_subdomain.h:54</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ParallelObject_html"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html">libMesh::ParallelObject</a></div><div class="ttdoc">An object whose state is distributed along a set of processors. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00058">parallel_object.h:58</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_html_a71eb6bddbe22c08ed79347d35112aad7"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain.html#a71eb6bddbe22c08ed79347d35112aad7">libMesh::SystemSubsetBySubdomain::_var_nums</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; _var_nums</div><div class="ttdoc">The set of all variable numbers that are contained in the subset. </div><div class="ttdef"><b>Definition:</b> <a href="system__subset__by__subdomain_8h_source.html#l00189">system_subset_by_subdomain.h:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ParallelObject_html_a20de1180df21bdc9e6ca6151ed4ffda9"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">libMesh::ParallelObject::comm</a></div><div class="ttdeci">const Parallel::Communicator &amp; comm() const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00097">parallel_object.h:97</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_html_a93607e0c670474d382c81531f6004c73"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain.html#a93607e0c670474d382c81531f6004c73">libMesh::SystemSubsetBySubdomain::SystemSubsetBySubdomain</a></div><div class="ttdeci">SystemSubsetBySubdomain(const System &amp;system, const SubdomainSelection &amp;subdomain_selection, const std::set&lt; unsigned int &gt; *const var_nums=nullptr)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="system__subset__by__subdomain_8C_source.html#l00054">system_subset_by_subdomain.C:54</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a4cf032eda109fe32a7fcde672ef5726e"><div class="ttname"><a href="classlibMesh_1_1System.html#a4cf032eda109fe32a7fcde672ef5726e">libMesh::System::n_vars</a></div><div class="ttdeci">unsigned int n_vars() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02349">system.h:2349</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList_html_a3fa55a13ec89d506a7951c8fcdc66f97"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain_1_1SubdomainSelectionByList.html#a3fa55a13ec89d506a7951c8fcdc66f97">libMesh::SystemSubsetBySubdomain::SubdomainSelectionByList::SubdomainSelectionByList</a></div><div class="ttdeci">SubdomainSelectionByList(const std::set&lt; subdomain_id_type &gt; &amp;list)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="system__subset__by__subdomain_8C_source.html#l00038">system_subset_by_subdomain.C:38</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SystemSubsetBySubdomain_html_ab619fb5ef4cbc0cb8a5c670fd55a4ecb"><div class="ttname"><a href="classlibMesh_1_1SystemSubsetBySubdomain.html#ab619fb5ef4cbc0cb8a5c670fd55a4ecb">libMesh::SystemSubsetBySubdomain::_dof_ids</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; _dof_ids</div><div class="ttdoc">The actual set of the dof ids. </div><div class="ttdef"><b>Definition:</b> <a href="system__subset__by__subdomain_8h_source.html#l00194">system_subset_by_subdomain.h:194</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ParallelObject_html_ae1e7d1a1118f63d9889a761c27433bbc"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">libMesh::ParallelObject::processor_id</a></div><div class="ttdeci">processor_id_type processor_id() const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00114">parallel_object.h:114</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html_a0d323b6fcb736454a9f6074ebda9ec28"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a0d323b6fcb736454a9f6074ebda9ec28">libMesh::DofMap::dof_indices</a></div><div class="ttdeci">void dof_indices(const Elem *const elem, std::vector&lt; dof_id_type &gt; &amp;di) const </div><div class="ttdoc">Fills the vector di with the global degree of freedom indices for the element. </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8C_source.html#l01992">dof_map.C:1992</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:06 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::Parallel::Packing&lt; Node * &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="namespacelibMesh_1_1Parallel.html">Parallel</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html">Packing< Node * ></a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::Parallel::Packing&lt; Node * &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="parallel__node_8h_source.html">parallel_node.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a74ac90c36143e0438586e9f4851503b0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#a74ac90c36143e0438586e9f4851503b0">buffer_type</a></td></tr>
+<tr class="separator:a74ac90c36143e0438586e9f4851503b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a90f2561cffa717c5b772b2b5a0bb2fc2"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a90f2561cffa717c5b772b2b5a0bb2fc2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Node.html">Node</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#a90f2561cffa717c5b772b2b5a0bb2fc2">unpack</a> (std::vector&lt; <a class="el" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a> &gt;::const_iterator in, <a class="el" href="classlibMesh_1_1MeshBase.html">MeshBase</a> *<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>)</td></tr>
+<tr class="separator:a90f2561cffa717c5b772b2b5a0bb2fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd760ece95eea393f96b8b438b8159ee"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:acd760ece95eea393f96b8b438b8159ee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Node.html">Node</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#acd760ece95eea393f96b8b438b8159ee">unpack</a> (std::vector&lt; <a class="el" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a> &gt;::const_iterator in, <a class="el" href="classlibMesh_1_1DistributedMesh.html">DistributedMesh</a> *<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>)</td></tr>
+<tr class="separator:acd760ece95eea393f96b8b438b8159ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea827c6026128b45a6845f70c1ffedc"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:afea827c6026128b45a6845f70c1ffedc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Node.html">Node</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#afea827c6026128b45a6845f70c1ffedc">unpack</a> (std::vector&lt; <a class="el" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a> &gt;::const_iterator in, <a class="el" href="classlibMesh_1_1ParallelMesh.html">ParallelMesh</a> *<a class="el" href="mesh__tools_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>)</td></tr>
+<tr class="separator:afea827c6026128b45a6845f70c1ffedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a92062b02c9b553a0a7c46793fcd666a6"><td class="memTemplParams" colspan="2">template&lt;typename OutputIter , typename Context &gt; </td></tr>
+<tr class="memitem:a92062b02c9b553a0a7c46793fcd666a6"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#a92062b02c9b553a0a7c46793fcd666a6">pack</a> (<a class="el" href="classlibMesh_1_1Node.html">Node</a> *const &amp;object, OutputIter data_out, const Context *context)</td></tr>
+<tr class="separator:a92062b02c9b553a0a7c46793fcd666a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1b5ae8bea3432bd4a97d76ef216153"><td class="memTemplParams" colspan="2">template&lt;typename Context &gt; </td></tr>
+<tr class="memitem:aae1b5ae8bea3432bd4a97d76ef216153"><td class="memTemplItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#aae1b5ae8bea3432bd4a97d76ef216153">packable_size</a> (<a class="el" href="classlibMesh_1_1Node.html">Node</a> *const &amp;object, const Context *context)</td></tr>
+<tr class="separator:aae1b5ae8bea3432bd4a97d76ef216153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9323fb88606cdd8719e45a08d19ed048"><td class="memTemplParams" colspan="2">template&lt;typename BufferIter &gt; </td></tr>
+<tr class="memitem:a9323fb88606cdd8719e45a08d19ed048"><td class="memTemplItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#a9323fb88606cdd8719e45a08d19ed048">packed_size</a> (BufferIter iter)</td></tr>
+<tr class="separator:a9323fb88606cdd8719e45a08d19ed048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa47e634fe1594365bcea70e17e32b93"><td class="memTemplParams" colspan="2">template&lt;typename BufferIter , typename Context &gt; </td></tr>
+<tr class="memitem:afa47e634fe1594365bcea70e17e32b93"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classlibMesh_1_1Node.html">Node</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#afa47e634fe1594365bcea70e17e32b93">unpack</a> (BufferIter in, Context *<a class="el" href="namespacelibMesh.html#a38311fdc9440e63855b214269b2472cb">ctx</a>)</td></tr>
+<tr class="separator:afa47e634fe1594365bcea70e17e32b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;&gt;<br/>
+class libMesh::Parallel::Packing&lt; Node * &gt;</h3>
+
+
+<p>在文件 <a class="el" href="parallel__node_8h_source.html">parallel_node.h</a> 第 <a class="el" href="parallel__node_8h_source.html#l00063">63</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="a74ac90c36143e0438586e9f4851503b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a> libMesh::Parallel::Packing&lt; <a class="el" href="classlibMesh_1_1Node.html">Node</a> * &gt;::<a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#a74ac90c36143e0438586e9f4851503b0">buffer_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parallel__node_8h_source.html">parallel_node.h</a> 第 <a class="el" href="parallel__node_8h_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a92062b02c9b553a0a7c46793fcd666a6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OutputIter , typename Context &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void libMesh::Parallel::Packing&lt; <a class="el" href="classlibMesh_1_1Node.html">Node</a> * &gt;::pack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1Node.html">Node</a> *const &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIter&#160;</td>
+          <td class="paramname"><em>data_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Context *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parallel__node_8h_source.html">parallel_node.h</a> 第 <a class="el" href="parallel__node_8h_source.html#l00069">69</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a4d231ce79d0d4194021e8d0ec2629f6d">libMesh::Parallel::Packing&lt; const Node * &gt;::pack()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a4d231ce79d0d4194021e8d0ec2629f6d">Packing&lt;const Node *&gt;::pack</a>(<span class="keywordtype">object</span>, data_out, context); }</div>
+<div class="ttc" id="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4_html_a4d231ce79d0d4194021e8d0ec2629f6d"><div class="ttname"><a href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a4d231ce79d0d4194021e8d0ec2629f6d">libMesh::Parallel::Packing&lt; const Node * &gt;::pack</a></div><div class="ttdeci">static void pack(const Node *const &amp;object, OutputIter data_out, const Context *context)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aae1b5ae8bea3432bd4a97d76ef216153"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int libMesh::Parallel::Packing&lt; <a class="el" href="classlibMesh_1_1Node.html">Node</a> * &gt;::packable_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1Node.html">Node</a> *const &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Context *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parallel__node_8h_source.html">parallel_node.h</a> 第 <a class="el" href="parallel__node_8h_source.html#l00075">75</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a50558b2aedbb164e9e7f8ad59626ecae">libMesh::Parallel::Packing&lt; const Node * &gt;::packable_size()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a50558b2aedbb164e9e7f8ad59626ecae">Packing&lt;const Node*&gt;::packable_size</a>(<span class="keywordtype">object</span>, context); }</div>
+<div class="ttc" id="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4_html_a50558b2aedbb164e9e7f8ad59626ecae"><div class="ttname"><a href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a50558b2aedbb164e9e7f8ad59626ecae">libMesh::Parallel::Packing&lt; const Node * &gt;::packable_size</a></div><div class="ttdeci">static unsigned int packable_size(const Node *const &amp;object, const Context *context)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9323fb88606cdd8719e45a08d19ed048"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BufferIter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int libMesh::Parallel::Packing&lt; <a class="el" href="classlibMesh_1_1Node.html">Node</a> * &gt;::packed_size </td>
+          <td>(</td>
+          <td class="paramtype">BufferIter&#160;</td>
+          <td class="paramname"><em>iter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parallel__node_8h_source.html">parallel_node.h</a> 第 <a class="el" href="parallel__node_8h_source.html#l00080">80</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a184a7e2e94eb0306f5bdcf3d413c48b1">libMesh::Parallel::Packing&lt; const Node * &gt;::packed_size()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a184a7e2e94eb0306f5bdcf3d413c48b1">Packing&lt;const Node *&gt;::packed_size</a>(iter); }</div>
+<div class="ttc" id="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4_html_a184a7e2e94eb0306f5bdcf3d413c48b1"><div class="ttname"><a href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a184a7e2e94eb0306f5bdcf3d413c48b1">libMesh::Parallel::Packing&lt; const Node * &gt;::packed_size</a></div><div class="ttdeci">static unsigned int packed_size(BufferIter iter)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="afa47e634fe1594365bcea70e17e32b93"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BufferIter , typename Context &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classlibMesh_1_1Node.html">Node</a>* libMesh::Parallel::Packing&lt; <a class="el" href="classlibMesh_1_1Node.html">Node</a> * &gt;::unpack </td>
+          <td>(</td>
+          <td class="paramtype">BufferIter&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="parallel__node_8h_source.html#l00090">libMesh::Parallel::Packing&lt; const Node * &gt;::unpack()</a>, <a class="el" href="parallel__node_8h_source.html#l00116">libMesh::Parallel::Packing&lt; Node *const  &gt;::unpack()</a> , 以及 <a class="el" href="parallel__node_8h_source.html#l00143">libMesh::Parallel::Packing&lt; const Node *const  &gt;::unpack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a90f2561cffa717c5b772b2b5a0bb2fc2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Node.html">Node</a>* libMesh::Parallel::Packing&lt; <a class="el" href="classlibMesh_1_1Node.html">Node</a> * &gt;::unpack </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a> &gt;::const_iterator&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1MeshBase.html">MeshBase</a> *&#160;</td>
+          <td class="paramname"><em>mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parallel__node_8C_source.html">parallel_node.C</a> 第 <a class="el" href="parallel__node_8C_source.html#l00182">182</a> 行定义.</p>
+
+<p>参考 <a class="el" href="boundary__info_8C_source.html#l00884">libMesh::BoundaryInfo::add_node()</a>, <a class="el" href="classlibMesh_1_1MeshBase.html#a9422651366024f496b38d0269f0b2a40">libMesh::MeshBase::add_node()</a>, <a class="el" href="mesh__base_8h_source.html#l00155">libMesh::MeshBase::get_boundary_info()</a>, <a class="el" href="dof__object_8h_source.html#l00488">libMesh::DofObject::invalid_processor_id</a>, <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>, <a class="el" href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a184a7e2e94eb0306f5bdcf3d413c48b1">libMesh::Parallel::Packing&lt; const Node * &gt;::packed_size()</a>, <a class="el" href="parallel__object_8h_source.html#l00114">libMesh::ParallelObject::processor_id()</a>, <a class="el" href="classlibMesh_1_1MeshBase.html#a88d3228c36aa7b481f0f5d77f95bd021">libMesh::MeshBase::query_node_ptr()</a>, <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a>, <a class="el" href="libmesh__common_8h_source.html#l00150">libMesh::TOLERANCE</a> , 以及 <a class="el" href="dof__object_8C_source.html#l00575">libMesh::DofObject::unpackable_indexing_size()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor"></span>  <span class="keyword">const</span> std::vector&lt;largest_id_type&gt;::const_iterator original_in = in;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a> incoming_header = *in++;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  libmesh_assert_equal_to (incoming_header, node_magic_header);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> processor_id = cast_int&lt;processor_id_type&gt;(*in++);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(processor_id == <a class="code" href="classlibMesh_1_1DofObject.html#aa65deab833c8b1802790cd43ab1b6ee4">DofObject::invalid_processor_id</a> ||</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                 processor_id &lt; mesh-&gt;n_processors());</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> <span class="keywordtype">id</span> = cast_int&lt;dof_id_type&gt;(*in++);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#ifdef LIBMESH_ENABLE_UNIQUE_ID</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor"></span>  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a0c8246ed396fb6017ccc59711d9b9f7e">unique_id_type</a> unique_id = cast_int&lt;unique_id_type&gt;(*in++);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <a class="code" href="classlibMesh_1_1Node.html">Node</a> * node = mesh-&gt;<a class="code" href="classlibMesh_1_1MeshBase.html#a88d3228c36aa7b481f0f5d77f95bd021">query_node_ptr</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">if</span> (node)</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      libmesh_assert_equal_to (node-&gt;processor_id(), processor_id);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <span class="comment">// We currently don&#39;t communicate mesh motion via packed Nodes,</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      <span class="comment">// so it should usually be safe to assume (and assert) that Node</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="comment">// locations are consistent between processors.</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <span class="comment">// There may be exceptions due to rounding in file I/O, so we&#39;ll</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <span class="comment">// only assert equality to within a tight tolerance, and we&#39;ll</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <span class="comment">// believe the sender&#39;s node locations over our own if we don&#39;t</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      <span class="comment">// own the node.</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i != LIBMESH_DIM; ++i)</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;          <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> idtypes_as_Real;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;          std::memcpy(&amp;idtypes_as_Real, &amp;(*in), <span class="keyword">sizeof</span>(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>));</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;          in += idtypes_per_Real;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;          libmesh_assert_less_equal ((*node)(i), idtypes_as_Real + (std::max(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>(1),idtypes_as_Real)*<a class="code" href="namespacelibMesh.html#aadc7666a2b443d9cccbb63174874c14f">TOLERANCE</a>*<a class="code" href="namespacelibMesh.html#aadc7666a2b443d9cccbb63174874c14f">TOLERANCE</a>));</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;          libmesh_assert_greater_equal ((*node)(i), idtypes_as_Real - (std::max(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>(1),idtypes_as_Real)*<a class="code" href="namespacelibMesh.html#aadc7666a2b443d9cccbb63174874c14f">TOLERANCE</a>*<a class="code" href="namespacelibMesh.html#aadc7666a2b443d9cccbb63174874c14f">TOLERANCE</a>));</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;          <span class="keywordflow">if</span> (processor_id != mesh-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">processor_id</a>())</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            (*node)(i) = idtypes_as_Real;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;      <span class="keywordflow">if</span> (!node-&gt;has_dofs())</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;          node-&gt;unpack_indexing(in);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;          libmesh_assert_equal_to (<a class="code" href="classlibMesh_1_1DofObject.html#a083811f7094ba79f49325cbd1dd7eec3">DofObject::unpackable_indexing_size</a>(in),</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                                   node-&gt;packed_indexing_size());</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;          in += node-&gt;packed_indexing_size();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;          <span class="comment">// FIXME: We should add some debug mode tests to ensure that</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;          <span class="comment">// the encoded indexing is consistent</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;          in += <a class="code" href="classlibMesh_1_1DofObject.html#a083811f7094ba79f49325cbd1dd7eec3">DofObject::unpackable_indexing_size</a>(in);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="comment">// If we don&#39;t already have it, we need to allocate it</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      node = <span class="keyword">new</span> <a class="code" href="classlibMesh_1_1Node.html">Node</a>();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i != LIBMESH_DIM; ++i)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;          <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> idtypes_as_Real;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;          std::memcpy(&amp;idtypes_as_Real, &amp;(*in), <span class="keyword">sizeof</span>(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>));</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;          (*node)(i) = idtypes_as_Real;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          in += idtypes_per_Real;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      node-&gt;set_id() = id;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#ifdef LIBMESH_ENABLE_UNIQUE_ID</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor"></span>      node-&gt;set_unique_id(unique_id);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor"></span>      node-&gt;processor_id() = processor_id;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      node-&gt;unpack_indexing(in);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      libmesh_assert_equal_to (<a class="code" href="classlibMesh_1_1DofObject.html#a083811f7094ba79f49325cbd1dd7eec3">DofObject::unpackable_indexing_size</a>(in),</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                               node-&gt;packed_indexing_size());</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      in += node-&gt;packed_indexing_size();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      mesh-&gt;<a class="code" href="classlibMesh_1_1MeshBase.html#a9422651366024f496b38d0269f0b2a40">add_node</a>(node);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="comment">// FIXME: We should add some debug mode tests to ensure that the</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="comment">// encoded boundary conditions are consistent</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="comment">// Add any nodal boundary condition ids</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a> num_bcs = *in++;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="comment">// libmesh_assert_greater_equal (num_bcs, 0);</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a> bc_it=0; bc_it &lt; num_bcs; bc_it++)</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    mesh-&gt;<a class="code" href="classlibMesh_1_1MeshBase.html#addbb2d78b5c3d5666c68b4b16514638b">get_boundary_info</a>().<a class="code" href="classlibMesh_1_1BoundaryInfo.html#aa9e28f08f591aefb8222813545882f05">add_node</a></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      (node, cast_int&lt;boundary_id_type&gt;(*in++));</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor"></span>  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (in - original_in ==</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                  cast_int&lt;int&gt;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                  (<a class="code" href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a184a7e2e94eb0306f5bdcf3d413c48b1">Parallel::Packing&lt;const Node*&gt;::packed_size</a>(original_in)));</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordflow">return</span> node;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_addbb2d78b5c3d5666c68b4b16514638b"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#addbb2d78b5c3d5666c68b4b16514638b">libMesh::MeshBase::get_boundary_info</a></div><div class="ttdeci">const BoundaryInfo &amp; get_boundary_info() const </div><div class="ttdoc">The information about boundary ids on the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00155">mesh_base.h:155</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4_html_a184a7e2e94eb0306f5bdcf3d413c48b1"><div class="ttname"><a href="classlibMesh_1_1Parallel_1_1Packing_3_01const_01Node_01_5_01_4.html#a184a7e2e94eb0306f5bdcf3d413c48b1">libMesh::Parallel::Packing&lt; const Node * &gt;::packed_size</a></div><div class="ttdeci">static unsigned int packed_size(BufferIter iter)</div></div>
+<div class="ttc" id="classlibMesh_1_1Node_html"><div class="ttname"><a href="classlibMesh_1_1Node.html">libMesh::Node</a></div><div class="ttdoc">A Node is like a Point, but with more information. </div><div class="ttdef"><b>Definition:</b> <a href="node_8h_source.html#l00052">node.h:52</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofObject_html_a083811f7094ba79f49325cbd1dd7eec3"><div class="ttname"><a href="classlibMesh_1_1DofObject.html#a083811f7094ba79f49325cbd1dd7eec3">libMesh::DofObject::unpackable_indexing_size</a></div><div class="ttdeci">static unsigned int unpackable_indexing_size(std::vector&lt; largest_id_type &gt;::const_iterator begin)</div><div class="ttdoc">If we have indices packed into an buffer for communications, how much of that buffer applies to this ...</div><div class="ttdef"><b>Definition:</b> <a href="dof__object_8C_source.html#l00575">dof_object.C:575</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aadc7666a2b443d9cccbb63174874c14f"><div class="ttname"><a href="namespacelibMesh.html#aadc7666a2b443d9cccbb63174874c14f">libMesh::TOLERANCE</a></div><div class="ttdeci">static constexpr Real TOLERANCE</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00150">libmesh_common.h:150</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a6cebcd9e9219b5421f947076df15e75c"><div class="ttname"><a href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">libMesh::largest_id_type</a></div><div class="ttdeci">uint64_t largest_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00148">id_types.h:148</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af18245d4f872c36a41fc74086bda3e80"><div class="ttname"><a href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">libMesh::processor_id_type</a></div><div class="ttdeci">uint8_t processor_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00104">id_types.h:104</a></div></div>
+<div class="ttc" id="classlibMesh_1_1BoundaryInfo_html_aa9e28f08f591aefb8222813545882f05"><div class="ttname"><a href="classlibMesh_1_1BoundaryInfo.html#aa9e28f08f591aefb8222813545882f05">libMesh::BoundaryInfo::add_node</a></div><div class="ttdeci">void add_node(const Node *node, const boundary_id_type id)</div><div class="ttdoc">Add Node node with boundary id id to the boundary information data structures. </div><div class="ttdef"><b>Definition:</b> <a href="boundary__info_8C_source.html#l00884">boundary_info.C:884</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofObject_html_aa65deab833c8b1802790cd43ab1b6ee4"><div class="ttname"><a href="classlibMesh_1_1DofObject.html#aa65deab833c8b1802790cd43ab1b6ee4">libMesh::DofObject::invalid_processor_id</a></div><div class="ttdeci">static const processor_id_type invalid_processor_id</div><div class="ttdoc">An invalid processor_id to distinguish DoFs that have not been assigned to a processor. </div><div class="ttdef"><b>Definition:</b> <a href="dof__object_8h_source.html#l00488">dof_object.h:488</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_a88d3228c36aa7b481f0f5d77f95bd021"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#a88d3228c36aa7b481f0f5d77f95bd021">libMesh::MeshBase::query_node_ptr</a></div><div class="ttdeci">virtual const Node * query_node_ptr(const dof_id_type i) const =0</div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_a9422651366024f496b38d0269f0b2a40"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#a9422651366024f496b38d0269f0b2a40">libMesh::MeshBase::add_node</a></div><div class="ttdeci">virtual Node * add_node(Node *n)=0</div><div class="ttdoc">Add Node n to the end of the vertex array. </div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a0c8246ed396fb6017ccc59711d9b9f7e"><div class="ttname"><a href="namespacelibMesh.html#a0c8246ed396fb6017ccc59711d9b9f7e">libMesh::unique_id_type</a></div><div class="ttdeci">uint8_t unique_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00086">id_types.h:86</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ParallelObject_html_ae1e7d1a1118f63d9889a761c27433bbc"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">libMesh::ParallelObject::processor_id</a></div><div class="ttdeci">processor_id_type processor_id() const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00114">parallel_object.h:114</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ab4541d74809228310a715b11c40587fc"><div class="ttname"><a href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">libMesh::dof_id_type</a></div><div class="ttdeci">uint8_t dof_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00067">id_types.h:67</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="acd760ece95eea393f96b8b438b8159ee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Node.html">Node</a>* libMesh::Parallel::Packing&lt; <a class="el" href="classlibMesh_1_1Node.html">Node</a> * &gt;::unpack </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a> &gt;::const_iterator&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DistributedMesh.html">DistributedMesh</a> *&#160;</td>
+          <td class="paramname"><em>mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parallel__node_8C_source.html">parallel_node.C</a> 第 <a class="el" href="parallel__node_8C_source.html#l00318">318</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;{</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#afa47e634fe1594365bcea70e17e32b93">unpack</a>(in, static_cast&lt;MeshBase*&gt;(mesh));</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4_html_afa47e634fe1594365bcea70e17e32b93"><div class="ttname"><a href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#afa47e634fe1594365bcea70e17e32b93">libMesh::Parallel::Packing&lt; Node * &gt;::unpack</a></div><div class="ttdeci">static Node * unpack(BufferIter in, Context *ctx)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="afea827c6026128b45a6845f70c1ffedc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Node.html">Node</a>* libMesh::Parallel::Packing&lt; <a class="el" href="classlibMesh_1_1Node.html">Node</a> * &gt;::unpack </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacelibMesh.html#a6cebcd9e9219b5421f947076df15e75c">largest_id_type</a> &gt;::const_iterator&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1ParallelMesh.html">ParallelMesh</a> *&#160;</td>
+          <td class="paramname"><em>mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="parallel__node_8C_source.html">parallel_node.C</a> 第 <a class="el" href="parallel__node_8C_source.html#l00328">328</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;{</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#afa47e634fe1594365bcea70e17e32b93">unpack</a>(in, static_cast&lt;MeshBase*&gt;(mesh));</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4_html_afa47e634fe1594365bcea70e17e32b93"><div class="ttname"><a href="classlibMesh_1_1Parallel_1_1Packing_3_01Node_01_5_01_4.html#afa47e634fe1594365bcea70e17e32b93">libMesh::Parallel::Packing&lt; Node * &gt;::unpack</a></div><div class="ttdeci">static Node * unpack(BufferIter in, Context *ctx)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/parallel/<a class="el" href="parallel__node_8h_source.html">parallel_node.h</a></li>
+<li>/home/lwz/libmesh/src/parallel/<a class="el" href="parallel__node_8C_source.html">parallel_node.C</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:47 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

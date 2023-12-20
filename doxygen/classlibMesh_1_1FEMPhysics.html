@@ -1,0 +1,1871 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::FEMPhysics类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1FEMPhysics.html">FEMPhysics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classlibMesh_1_1FEMPhysics-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::FEMPhysics类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class provides a specific system class.  
+ <a href="classlibMesh_1_1FEMPhysics.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="fem__physics_8h_source.html">fem_physics.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::FEMPhysics 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aed6050047ea48a5fb6834a86cc3c1663"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMPhysics.html#aed6050047ea48a5fb6834a86cc3c1663">FEMPhysics</a> ()</td></tr>
+<tr class="memdesc:aed6050047ea48a5fb6834a86cc3c1663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aed6050047ea48a5fb6834a86cc3c1663">更多...</a><br/></td></tr>
+<tr class="separator:aed6050047ea48a5fb6834a86cc3c1663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c554d3d34c5fa8a3852b5915420087"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMPhysics.html#a05c554d3d34c5fa8a3852b5915420087">~FEMPhysics</a> ()=default</td></tr>
+<tr class="memdesc:a05c554d3d34c5fa8a3852b5915420087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a05c554d3d34c5fa8a3852b5915420087">更多...</a><br/></td></tr>
+<tr class="separator:a05c554d3d34c5fa8a3852b5915420087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb1bf406ea53decb009830b8644d89d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMPhysics.html#adbb1bf406ea53decb009830b8644d89d">eulerian_residual</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;context) override</td></tr>
+<tr class="memdesc:adbb1bf406ea53decb009830b8644d89d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a pseudo-convection contribution on <code>elem</code> to elem_residual, if the nodes of <code>elem</code> are being translated by a moving mesh.  <a href="#adbb1bf406ea53decb009830b8644d89d">更多...</a><br/></td></tr>
+<tr class="separator:adbb1bf406ea53decb009830b8644d89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37ebf0a6d46d64d3adbf4169079684d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FEMPhysics.html#ab37ebf0a6d46d64d3adbf4169079684d">mass_residual</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;) override</td></tr>
+<tr class="memdesc:ab37ebf0a6d46d64d3adbf4169079684d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a mass vector contribution on <code>elem</code> from elem_residual.  <a href="#ab37ebf0a6d46d64d3adbf4169079684d">更多...</a><br/></td></tr>
+<tr class="separator:ab37ebf0a6d46d64d3adbf4169079684d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cbb37f319b3bb0be9d87fb50bac970"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html">DifferentiablePhysics</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#ab1cbb37f319b3bb0be9d87fb50bac970">clone_physics</a> ()=0</td></tr>
+<tr class="memdesc:ab1cbb37f319b3bb0be9d87fb50bac970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of this object.  <a href="#ab1cbb37f319b3bb0be9d87fb50bac970">更多...</a><br/></td></tr>
+<tr class="separator:ab1cbb37f319b3bb0be9d87fb50bac970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b8b35b7cd10743f61cb911f7e2c60d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a81b8b35b7cd10743f61cb911f7e2c60d">clear_physics</a> ()</td></tr>
+<tr class="memdesc:a81b8b35b7cd10743f61cb911f7e2c60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear any data structures associated with the physics.  <a href="#a81b8b35b7cd10743f61cb911f7e2c60d">更多...</a><br/></td></tr>
+<tr class="separator:a81b8b35b7cd10743f61cb911f7e2c60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2e3f22e33e5030bb6a32f0804e649d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#aaf2e3f22e33e5030bb6a32f0804e649d">init_physics</a> (const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;sys)</td></tr>
+<tr class="memdesc:aaf2e3f22e33e5030bb6a32f0804e649d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize any data structures associated with the physics.  <a href="#aaf2e3f22e33e5030bb6a32f0804e649d">更多...</a><br/></td></tr>
+<tr class="separator:aaf2e3f22e33e5030bb6a32f0804e649d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c80f2e313fbb8b6ff7d088ff4169be2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a1c80f2e313fbb8b6ff7d088ff4169be2">element_time_derivative</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:a1c80f2e313fbb8b6ff7d088ff4169be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the time derivative contribution on <code>elem</code> to elem_residual.  <a href="#a1c80f2e313fbb8b6ff7d088ff4169be2">更多...</a><br/></td></tr>
+<tr class="separator:a1c80f2e313fbb8b6ff7d088ff4169be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bdc46ab11bb6ab33dc5b17bfbd1ccf3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a1bdc46ab11bb6ab33dc5b17bfbd1ccf3">element_constraint</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:a1bdc46ab11bb6ab33dc5b17bfbd1ccf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the constraint contribution on <code>elem</code> to elem_residual.  <a href="#a1bdc46ab11bb6ab33dc5b17bfbd1ccf3">更多...</a><br/></td></tr>
+<tr class="separator:a1bdc46ab11bb6ab33dc5b17bfbd1ccf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a5c2399209d750f3ea4ee10bdf13c1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a46a5c2399209d750f3ea4ee10bdf13c1">side_time_derivative</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:a46a5c2399209d750f3ea4ee10bdf13c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the time derivative contribution on <code>side</code> of <code>elem</code> to elem_residual.  <a href="#a46a5c2399209d750f3ea4ee10bdf13c1">更多...</a><br/></td></tr>
+<tr class="separator:a46a5c2399209d750f3ea4ee10bdf13c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74bae39adf00d96c559fe81b1158c272"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a74bae39adf00d96c559fe81b1158c272">side_constraint</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:a74bae39adf00d96c559fe81b1158c272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the constraint contribution on <code>side</code> of <code>elem</code> to elem_residual.  <a href="#a74bae39adf00d96c559fe81b1158c272">更多...</a><br/></td></tr>
+<tr class="separator:a74bae39adf00d96c559fe81b1158c272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe254dbb92afb6b42d83315e3b50b93"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#abbe254dbb92afb6b42d83315e3b50b93">nonlocal_time_derivative</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:abbe254dbb92afb6b42d83315e3b50b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds any nonlocal time derivative contributions (e.g.  <a href="#abbe254dbb92afb6b42d83315e3b50b93">更多...</a><br/></td></tr>
+<tr class="separator:abbe254dbb92afb6b42d83315e3b50b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ffc6b599db2eda744da5af375548ee6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a8ffc6b599db2eda744da5af375548ee6">nonlocal_constraint</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:a8ffc6b599db2eda744da5af375548ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds any nonlocal constraint contributions (e.g.  <a href="#a8ffc6b599db2eda744da5af375548ee6">更多...</a><br/></td></tr>
+<tr class="separator:a8ffc6b599db2eda744da5af375548ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5744b5cf72344e4c5eb426b3f50f1d7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a5744b5cf72344e4c5eb426b3f50f1d7e">time_evolving</a> (unsigned int var, unsigned int order)</td></tr>
+<tr class="memdesc:a5744b5cf72344e4c5eb426b3f50f1d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the DiffSystem that variable var is evolving with respect to time.  <a href="#a5744b5cf72344e4c5eb426b3f50f1d7e">更多...</a><br/></td></tr>
+<tr class="separator:a5744b5cf72344e4c5eb426b3f50f1d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8dad6ea83e0f4df29baab44f0f10893"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#ab8dad6ea83e0f4df29baab44f0f10893">is_time_evolving</a> (unsigned int var) const </td></tr>
+<tr class="separator:ab8dad6ea83e0f4df29baab44f0f10893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e41862f9197f1ae47a3fe2bf936a29"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a39e41862f9197f1ae47a3fe2bf936a29">side_mass_residual</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:a39e41862f9197f1ae47a3fe2bf936a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a mass vector contribution on <code>side</code> of <code>elem</code> from elem_residual.  <a href="#a39e41862f9197f1ae47a3fe2bf936a29">更多...</a><br/></td></tr>
+<tr class="separator:a39e41862f9197f1ae47a3fe2bf936a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a653ad59e812a9dc76ddff3beef7aa"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#ad4a653ad59e812a9dc76ddff3beef7aa">nonlocal_mass_residual</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;c)</td></tr>
+<tr class="memdesc:ad4a653ad59e812a9dc76ddff3beef7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts any nonlocal mass vector contributions (e.g.  <a href="#ad4a653ad59e812a9dc76ddff3beef7aa">更多...</a><br/></td></tr>
+<tr class="separator:ad4a653ad59e812a9dc76ddff3beef7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85e4b7839ce25e0341c73686001740f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#ad85e4b7839ce25e0341c73686001740f">damping_residual</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:ad85e4b7839ce25e0341c73686001740f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a damping vector contribution on <code>elem</code> from elem_residual.  <a href="#ad85e4b7839ce25e0341c73686001740f">更多...</a><br/></td></tr>
+<tr class="separator:ad85e4b7839ce25e0341c73686001740f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9e129aacad3e6746c868fd9a259f5c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#adb9e129aacad3e6746c868fd9a259f5c">side_damping_residual</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:adb9e129aacad3e6746c868fd9a259f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a damping vector contribution on <code>side</code> of <code>elem</code> from elem_residual.  <a href="#adb9e129aacad3e6746c868fd9a259f5c">更多...</a><br/></td></tr>
+<tr class="separator:adb9e129aacad3e6746c868fd9a259f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbc9391cdd815aa99a97e96a8228bcf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#acfbc9391cdd815aa99a97e96a8228bcf">nonlocal_damping_residual</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:acfbc9391cdd815aa99a97e96a8228bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts any nonlocal damping vector contributions (e.g.  <a href="#acfbc9391cdd815aa99a97e96a8228bcf">更多...</a><br/></td></tr>
+<tr class="separator:acfbc9391cdd815aa99a97e96a8228bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44062f48afbb6ad9969500eb0f8fc90e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a44062f48afbb6ad9969500eb0f8fc90e">init_context</a> (<a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="separator:a44062f48afbb6ad9969500eb0f8fc90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aadb813e058ee99f1dbe75159469c53"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a3aadb813e058ee99f1dbe75159469c53">set_mesh_system</a> (<a class="el" href="classlibMesh_1_1System.html">System</a> *sys)</td></tr>
+<tr class="memdesc:a3aadb813e058ee99f1dbe75159469c53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html" title="This class provides a specific system class. ">DifferentiablePhysics</a> that system <code>sys</code> contains the isoparametric Lagrangian variables which correspond to the coordinates of mesh nodes, in problems where the mesh itself is expected to move in time.  <a href="#a3aadb813e058ee99f1dbe75159469c53">更多...</a><br/></td></tr>
+<tr class="separator:a3aadb813e058ee99f1dbe75159469c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00730e0acd41b2275fc9dfd984b9b04"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classlibMesh_1_1System.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#af00730e0acd41b2275fc9dfd984b9b04">get_mesh_system</a> () const </td></tr>
+<tr class="separator:af00730e0acd41b2275fc9dfd984b9b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87c50cce641b0eab7e98e6bc2414ed3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1System.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#af87c50cce641b0eab7e98e6bc2414ed3">get_mesh_system</a> ()</td></tr>
+<tr class="separator:af87c50cce641b0eab7e98e6bc2414ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372a46df636268b6b68fbd864cd04ebb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a372a46df636268b6b68fbd864cd04ebb">set_mesh_x_var</a> (unsigned int var)</td></tr>
+<tr class="memdesc:a372a46df636268b6b68fbd864cd04ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html" title="This class provides a specific system class. ">DifferentiablePhysics</a> that variable <code>var</code> from the mesh system should be used to update the x coordinate of mesh nodes, in problems where the mesh itself is expected to move in time.  <a href="#a372a46df636268b6b68fbd864cd04ebb">更多...</a><br/></td></tr>
+<tr class="separator:a372a46df636268b6b68fbd864cd04ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b6da4b35a7ade82f0ad56c8e6ddc40"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#ae9b6da4b35a7ade82f0ad56c8e6ddc40">get_mesh_x_var</a> () const </td></tr>
+<tr class="separator:ae9b6da4b35a7ade82f0ad56c8e6ddc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04147e9771387d9cf2eaa47d8f477004"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a04147e9771387d9cf2eaa47d8f477004">set_mesh_y_var</a> (unsigned int var)</td></tr>
+<tr class="memdesc:a04147e9771387d9cf2eaa47d8f477004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html" title="This class provides a specific system class. ">DifferentiablePhysics</a> that variable <code>var</code> from the mesh system should be used to update the y coordinate of mesh nodes.  <a href="#a04147e9771387d9cf2eaa47d8f477004">更多...</a><br/></td></tr>
+<tr class="separator:a04147e9771387d9cf2eaa47d8f477004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1721154e664e142a440d1259bcf5e47"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#ad1721154e664e142a440d1259bcf5e47">get_mesh_y_var</a> () const </td></tr>
+<tr class="separator:ad1721154e664e142a440d1259bcf5e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7222ddddd09ea18f663da19a672d5c9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#aa7222ddddd09ea18f663da19a672d5c9">set_mesh_z_var</a> (unsigned int var)</td></tr>
+<tr class="memdesc:aa7222ddddd09ea18f663da19a672d5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html" title="This class provides a specific system class. ">DifferentiablePhysics</a> that variable <code>var</code> from the mesh system should be used to update the z coordinate of mesh nodes.  <a href="#aa7222ddddd09ea18f663da19a672d5c9">更多...</a><br/></td></tr>
+<tr class="separator:aa7222ddddd09ea18f663da19a672d5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5e103fdc6ce8ffcc21bcb227ea10eb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a6d5e103fdc6ce8ffcc21bcb227ea10eb">get_mesh_z_var</a> () const </td></tr>
+<tr class="separator:a6d5e103fdc6ce8ffcc21bcb227ea10eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada28f60bb629cdd5421916287a404404"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#ada28f60bb629cdd5421916287a404404">_eulerian_time_deriv</a> (bool request_jacobian, <a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;)</td></tr>
+<tr class="memdesc:ada28f60bb629cdd5421916287a404404"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method simply combines <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a1c80f2e313fbb8b6ff7d088ff4169be2" title="Adds the time derivative contribution on elem to elem_residual. ">element_time_derivative()</a> and <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a63c47f742ea50b5aa65cbf415384de5e" title="Adds a pseudo-convection contribution on elem to elem_residual, if the nodes of elem are being transl...">eulerian_residual()</a>, which makes its address useful as a pointer-to-member-function when refactoring.  <a href="#ada28f60bb629cdd5421916287a404404">更多...</a><br/></td></tr>
+<tr class="separator:ada28f60bb629cdd5421916287a404404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd963623f4c8476804162e8f84a52667"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#abd963623f4c8476804162e8f84a52667">have_first_order_vars</a> () const </td></tr>
+<tr class="separator:abd963623f4c8476804162e8f84a52667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add26aa3e6bc8cda29582f16a9ad23677"><td class="memItemLeft" align="right" valign="top">const std::set&lt; unsigned int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#add26aa3e6bc8cda29582f16a9ad23677">get_first_order_vars</a> () const </td></tr>
+<tr class="separator:add26aa3e6bc8cda29582f16a9ad23677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f0fb45aafa456c314f05eeaead379b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a94f0fb45aafa456c314f05eeaead379b">is_first_order_var</a> (unsigned int var) const </td></tr>
+<tr class="separator:a94f0fb45aafa456c314f05eeaead379b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc9bec59252586a19aa7334fd2e54aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#aecc9bec59252586a19aa7334fd2e54aa">have_second_order_vars</a> () const </td></tr>
+<tr class="separator:aecc9bec59252586a19aa7334fd2e54aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814c1bfb614273e3c449daa52c4892c0"><td class="memItemLeft" align="right" valign="top">const std::set&lt; unsigned int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a814c1bfb614273e3c449daa52c4892c0">get_second_order_vars</a> () const </td></tr>
+<tr class="separator:a814c1bfb614273e3c449daa52c4892c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcb53357db196860e5bc0b762555c2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#aadcb53357db196860e5bc0b762555c2b">is_second_order_var</a> (unsigned int var) const </td></tr>
+<tr class="separator:aadcb53357db196860e5bc0b762555c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4e217fd5c9b6dff26ef83742a7e7dea9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a4e217fd5c9b6dff26ef83742a7e7dea9">compute_internal_sides</a></td></tr>
+<tr class="memdesc:a4e217fd5c9b6dff26ef83742a7e7dea9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>compute_internal_sides</code> is false by default, indicating that side_* computations will only be done on boundary sides.  <a href="#a4e217fd5c9b6dff26ef83742a7e7dea9">更多...</a><br/></td></tr>
+<tr class="separator:a4e217fd5c9b6dff26ef83742a7e7dea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ae762bdeb8c1e819ebf8b09d6a867fff3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1System.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#ae762bdeb8c1e819ebf8b09d6a867fff3">_mesh_sys</a></td></tr>
+<tr class="memdesc:ae762bdeb8c1e819ebf8b09d6a867fff3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classlibMesh_1_1System.html" title="Manages consistently variables, degrees of freedom, and coefficient vectors. ">System</a> from which to acquire moving mesh information.  <a href="#ae762bdeb8c1e819ebf8b09d6a867fff3">更多...</a><br/></td></tr>
+<tr class="separator:ae762bdeb8c1e819ebf8b09d6a867fff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4125b3fcf1dd38b4f1a70e56bac0e2fc"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a4125b3fcf1dd38b4f1a70e56bac0e2fc">_mesh_x_var</a></td></tr>
+<tr class="memdesc:a4125b3fcf1dd38b4f1a70e56bac0e2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables from which to acquire moving mesh information.  <a href="#a4125b3fcf1dd38b4f1a70e56bac0e2fc">更多...</a><br/></td></tr>
+<tr class="separator:a4125b3fcf1dd38b4f1a70e56bac0e2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3102589faec7aa5752b4f605d5e2283e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a3102589faec7aa5752b4f605d5e2283e">_mesh_y_var</a></td></tr>
+<tr class="separator:a3102589faec7aa5752b4f605d5e2283e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081fe25766a214bc0d22f86d114258c4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a081fe25766a214bc0d22f86d114258c4">_mesh_z_var</a></td></tr>
+<tr class="separator:a081fe25766a214bc0d22f86d114258c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab885946dc9eac4b63d57921f991bea33"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#ab885946dc9eac4b63d57921f991bea33">_time_evolving</a></td></tr>
+<tr class="memdesc:ab885946dc9eac4b63d57921f991bea33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores unsigned int to tell us which variables are evolving as first order in time (1), second order in time (2), or are not time evolving (0).  <a href="#ab885946dc9eac4b63d57921f991bea33">更多...</a><br/></td></tr>
+<tr class="separator:ab885946dc9eac4b63d57921f991bea33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73bc59adf0ae024a9216bdc0db2d5b2a"><td class="memItemLeft" align="right" valign="top">std::set&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a73bc59adf0ae024a9216bdc0db2d5b2a">_first_order_vars</a></td></tr>
+<tr class="memdesc:a73bc59adf0ae024a9216bdc0db2d5b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classlibMesh_1_1Variable.html" title="This class defines the notion of a variable in the system. ">Variable</a> indices for those variables that are first order in time.  <a href="#a73bc59adf0ae024a9216bdc0db2d5b2a">更多...</a><br/></td></tr>
+<tr class="separator:a73bc59adf0ae024a9216bdc0db2d5b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3139300c2d5ae16077aa17ff4079384"><td class="memItemLeft" align="right" valign="top">std::set&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#ab3139300c2d5ae16077aa17ff4079384">_second_order_vars</a></td></tr>
+<tr class="memdesc:ab3139300c2d5ae16077aa17ff4079384"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classlibMesh_1_1Variable.html" title="This class defines the notion of a variable in the system. ">Variable</a> indices for those variables that are second order in time.  <a href="#ab3139300c2d5ae16077aa17ff4079384">更多...</a><br/></td></tr>
+<tr class="separator:ab3139300c2d5ae16077aa17ff4079384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceea2499be3300c82d5d2d371a0b5b47"><td class="memItemLeft" align="right" valign="top">std::map&lt; unsigned int, <br class="typebreak"/>
+unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#aceea2499be3300c82d5d2d371a0b5b47">_second_order_dot_vars</a></td></tr>
+<tr class="memdesc:aceea2499be3300c82d5d2d371a0b5b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the user adds any second order variables, then we need to also cache the map to their corresponding dot variable that will be added by this <a class="el" href="classlibMesh_1_1TimeSolver.html" title="This is a generic class that defines a solver to handle time integration of DifferentiableSystems. ">TimeSolver</a> class.  <a href="#aceea2499be3300c82d5d2d371a0b5b47">更多...</a><br/></td></tr>
+<tr class="separator:aceea2499be3300c82d5d2d371a0b5b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This class provides a specific system class. </p>
+<p>It aims to generalize any system, linear or nonlinear, which provides both a residual and a Jacobian.</p>
+<p>This class is part of the new <a class="el" href="classlibMesh_1_1DifferentiableSystem.html" title="该类提供了一个特定的系统类。它旨在泛化任何系统，线性或非线性，提供残差和雅可比矩阵。 ">DifferentiableSystem</a> framework, which is still experimental. Users of this framework should beware of bugs and future API changes.</p>
+<dl class="section author"><dt>作者</dt><dd>Roy H. Stogner </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2012 </dd></dl>
+
+<p>在文件 <a class="el" href="fem__physics_8h_source.html">fem_physics.h</a> 第 <a class="el" href="fem__physics_8h_source.html#l00044">44</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aed6050047ea48a5fb6834a86cc3c1663"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::FEMPhysics::FEMPhysics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+
+<p>在文件 <a class="el" href="fem__physics_8h_source.html">fem_physics.h</a> 第 <a class="el" href="fem__physics_8h_source.html#l00051">51</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                :</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ae142d19991d19083c47b6081e0a48bcc">DifferentiablePhysics</a>()</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {}</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_ae142d19991d19083c47b6081e0a48bcc"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#ae142d19991d19083c47b6081e0a48bcc">libMesh::DifferentiablePhysics::DifferentiablePhysics</a></div><div class="ttdeci">DifferentiablePhysics()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00084">diff_physics.h:84</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a05c554d3d34c5fa8a3852b5915420087"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual libMesh::FEMPhysics::~FEMPhysics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ada28f60bb629cdd5421916287a404404"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::DifferentiablePhysics::_eulerian_time_deriv </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method simply combines <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a1c80f2e313fbb8b6ff7d088ff4169be2" title="Adds the time derivative contribution on elem to elem_residual. ">element_time_derivative()</a> and <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a63c47f742ea50b5aa65cbf415384de5e" title="Adds a pseudo-convection contribution on elem to elem_residual, if the nodes of elem are being transl...">eulerian_residual()</a>, which makes its address useful as a pointer-to-member-function when refactoring. </p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00053">libMesh::EulerSolver::element_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00054">libMesh::Euler2Solver::element_residual()</a> , 以及 <a class="el" href="newmark__solver_8C_source.html#l00161">libMesh::NewmarkSolver::element_residual()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a81b8b35b7cd10743f61cb911f7e2c60d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::DifferentiablePhysics::clear_physics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear any data structures associated with the physics. </p>
+
+<p>参考自 <a class="el" href="diff__system_8C_source.html#l00064">libMesh::DifferentiableSystem::clear()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1cbb37f319b3bb0be9d87fb50bac970"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classlibMesh_1_1DifferentiablePhysics.html">DifferentiablePhysics</a>&gt; libMesh::DifferentiablePhysics::clone_physics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy of this object. </p>
+<p>User should override to copy any needed state. </p>
+
+<p>在 <a class="el" href="classlibMesh_1_1DifferentiableSystem.html#aaecf357f9c98d27273c7bb69bd2754a2">libMesh::DifferentiableSystem</a> 内被实现.</p>
+
+<p>参考自 <a class="el" href="diff__system_8h_source.html#l00180">libMesh::DifferentiableSystem::attach_physics()</a> , 以及 <a class="el" href="diff__system_8C_source.html#l00397">libMesh::DifferentiableSystem::push_physics()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad85e4b7839ce25e0341c73686001740f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::damping_residual </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts a damping vector contribution on <code>elem</code> from elem_residual. </p>
+<p>This method is not used in first-order-in-time problems. For second-order-in-time problems, this is the <img class="formulaInl" alt="$ C(u,\ddot{u})\ddot{u} $" src="form_137.png"/> term. This method is only called for UnsteadySolver-based TimeSolvers.</p>
+<p>If this method receives request_jacobian = true, then it should compute elem_jacobian and return true if possible. If elem_jacobian has not been computed then the method should return false.</p>
+<p>If the problem has no damping, the default "do-nothing" is correct. Otherwise, this must be reimplemented. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00360">360</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00053">libMesh::EulerSolver::element_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00054">libMesh::Euler2Solver::element_residual()</a> , 以及 <a class="el" href="newmark__solver_8C_source.html#l00161">libMesh::NewmarkSolver::element_residual()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">return</span> request_jacobian;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1bdc46ab11bb6ab33dc5b17bfbd1ccf3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::element_constraint </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the constraint contribution on <code>elem</code> to elem_residual. </p>
+<p>If this method receives request_jacobian = true, then it should compute elem_jacobian and return true if possible. If elem_jacobian has not been computed then the method should return false.</p>
+<p>Users may need to reimplement this for their particular PDE.</p>
+<p>To implement the constraint 0 = G(u), the user should examine u = elem_solution and add (G(u), phi_i) to elem_residual in elem_constraint(). </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00144">144</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00053">libMesh::EulerSolver::element_residual()</a>, <a class="el" href="steady__solver_8C_source.html#l00035">libMesh::SteadySolver::element_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00054">libMesh::Euler2Solver::element_residual()</a>, <a class="el" href="newmark__solver_8C_source.html#l00161">libMesh::NewmarkSolver::element_residual()</a> , 以及 <a class="el" href="eigen__time__solver_8C_source.html#l00123">libMesh::EigenTimeSolver::element_residual()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> request_jacobian;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1c80f2e313fbb8b6ff7d088ff4169be2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::element_time_derivative </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the time derivative contribution on <code>elem</code> to elem_residual. </p>
+<p>If this method receives request_jacobian = true, then it should compute elem_jacobian and return true if possible. If elem_jacobian has not been computed then the method should return false.</p>
+<p>Users need to reimplement this for their particular PDE.</p>
+<p>To implement the physics model du/dt = F(u), the user should examine u = elem_solution and add (F(u), phi_i) to elem_residual in elem_time_derivative(). </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00125">125</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="steady__solver_8C_source.html#l00035">libMesh::SteadySolver::element_residual()</a> , 以及 <a class="el" href="eigen__time__solver_8C_source.html#l00123">libMesh::EigenTimeSolver::element_residual()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> request_jacobian;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="adbb1bf406ea53decb009830b8644d89d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::FEMPhysics::eulerian_residual </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a pseudo-convection contribution on <code>elem</code> to elem_residual, if the nodes of <code>elem</code> are being translated by a moving mesh. </p>
+<p>This function assumes that the user's time derivative equations (except for any equations involving unknown mesh xyz coordinates themselves) are expressed in an Eulerian frame of reference, and that the user is satisfied with an unstabilized convection term. Lagrangian equations will probably require overriding <a class="el" href="classlibMesh_1_1FEMPhysics.html#adbb1bf406ea53decb009830b8644d89d" title="Adds a pseudo-convection contribution on elem to elem_residual, if the nodes of elem are being transl...">eulerian_residual()</a> with a blank function; ALE or stabilized formulations will require reimplementing <a class="el" href="classlibMesh_1_1FEMPhysics.html#adbb1bf406ea53decb009830b8644d89d" title="Adds a pseudo-convection contribution on elem to elem_residual, if the nodes of elem are being transl...">eulerian_residual()</a> entirely. </p>
+
+<p>重载 <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a63c47f742ea50b5aa65cbf415384de5e">libMesh::DifferentiablePhysics</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="add26aa3e6bc8cda29582f16a9ad23677"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::set&lt;unsigned int&gt;&amp; libMesh::DifferentiablePhysics::get_first_order_vars </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The set of first order in time variable indices. May be empty. </dd></dl>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00506">506</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00548">libMesh::DifferentiablePhysics::_first_order_vars</a>.</p>
+
+<p>参考自 <a class="el" href="diff__system_8C_source.html#l00323">libMesh::DifferentiableSystem::have_first_order_scalar_vars()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#a73bc59adf0ae024a9216bdc0db2d5b2a">_first_order_vars</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_a73bc59adf0ae024a9216bdc0db2d5b2a"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#a73bc59adf0ae024a9216bdc0db2d5b2a">libMesh::DifferentiablePhysics::_first_order_vars</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; _first_order_vars</div><div class="ttdoc">Variable indices for those variables that are first order in time. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00548">diff_physics.h:548</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af00730e0acd41b2275fc9dfd984b9b04"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classlibMesh_1_1System.html">System</a> * libMesh::DifferentiablePhysics::get_mesh_system </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>A const reference to the system with variables corresponding to mesh nodal coordinates, or nullptr if the mesh is fixed. Useful for ALE calculations. </dd></dl>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00613">613</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00531">libMesh::DifferentiablePhysics::_mesh_sys</a>.</p>
+
+<p>参考自 <a class="el" href="fem__system_8C_source.html#l01346">libMesh::FEMSystem::build_context()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;{</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ae762bdeb8c1e819ebf8b09d6a867fff3">_mesh_sys</a>;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_ae762bdeb8c1e819ebf8b09d6a867fff3"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#ae762bdeb8c1e819ebf8b09d6a867fff3">libMesh::DifferentiablePhysics::_mesh_sys</a></div><div class="ttdeci">System * _mesh_sys</div><div class="ttdoc">System from which to acquire moving mesh information. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00531">diff_physics.h:531</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af87c50cce641b0eab7e98e6bc2414ed3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1System.html">System</a> * libMesh::DifferentiablePhysics::get_mesh_system </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>A reference to the system with variables corresponding to mesh nodal coordinates, or nullptr if the mesh is fixed. </dd></dl>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00619">619</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00531">libMesh::DifferentiablePhysics::_mesh_sys</a>.</p>
+<div class="fragment"><div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;{</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ae762bdeb8c1e819ebf8b09d6a867fff3">_mesh_sys</a>;</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_ae762bdeb8c1e819ebf8b09d6a867fff3"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#ae762bdeb8c1e819ebf8b09d6a867fff3">libMesh::DifferentiablePhysics::_mesh_sys</a></div><div class="ttdeci">System * _mesh_sys</div><div class="ttdoc">System from which to acquire moving mesh information. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00531">diff_physics.h:531</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae9b6da4b35a7ade82f0ad56c8e6ddc40"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::DifferentiablePhysics::get_mesh_x_var </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The variable number corresponding to the mesh x coordinate. Useful for ALE calculations. </dd></dl>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00625">625</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00536">libMesh::DifferentiablePhysics::_mesh_x_var</a>.</p>
+
+<p>参考自 <a class="el" href="fem__system_8C_source.html#l01346">libMesh::FEMSystem::build_context()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;{</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#a4125b3fcf1dd38b4f1a70e56bac0e2fc">_mesh_x_var</a>;</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_a4125b3fcf1dd38b4f1a70e56bac0e2fc"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#a4125b3fcf1dd38b4f1a70e56bac0e2fc">libMesh::DifferentiablePhysics::_mesh_x_var</a></div><div class="ttdeci">unsigned int _mesh_x_var</div><div class="ttdoc">Variables from which to acquire moving mesh information. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00536">diff_physics.h:536</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad1721154e664e142a440d1259bcf5e47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::DifferentiablePhysics::get_mesh_y_var </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The variable number corresponding to the mesh y coordinate. Useful for ALE calculations. </dd></dl>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00631">631</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00536">libMesh::DifferentiablePhysics::_mesh_y_var</a>.</p>
+
+<p>参考自 <a class="el" href="fem__system_8C_source.html#l01346">libMesh::FEMSystem::build_context()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;{</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#a3102589faec7aa5752b4f605d5e2283e">_mesh_y_var</a>;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_a3102589faec7aa5752b4f605d5e2283e"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#a3102589faec7aa5752b4f605d5e2283e">libMesh::DifferentiablePhysics::_mesh_y_var</a></div><div class="ttdeci">unsigned int _mesh_y_var</div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00536">diff_physics.h:536</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6d5e103fdc6ce8ffcc21bcb227ea10eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::DifferentiablePhysics::get_mesh_z_var </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The variable number corresponding to the mesh z coordinate. Useful for ALE calculations. </dd></dl>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00637">637</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00536">libMesh::DifferentiablePhysics::_mesh_z_var</a>.</p>
+
+<p>参考自 <a class="el" href="fem__system_8C_source.html#l01346">libMesh::FEMSystem::build_context()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;{</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#a081fe25766a214bc0d22f86d114258c4">_mesh_z_var</a>;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_a081fe25766a214bc0d22f86d114258c4"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#a081fe25766a214bc0d22f86d114258c4">libMesh::DifferentiablePhysics::_mesh_z_var</a></div><div class="ttdeci">unsigned int _mesh_z_var</div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00536">diff_physics.h:536</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a814c1bfb614273e3c449daa52c4892c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::set&lt;unsigned int&gt;&amp; libMesh::DifferentiablePhysics::get_second_order_vars </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The set of second order in time variable indices. May be empty. </dd></dl>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00519">519</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00553">libMesh::DifferentiablePhysics::_second_order_vars</a>.</p>
+
+<p>参考自 <a class="el" href="diff__system_8C_source.html#l00182">libMesh::DifferentiableSystem::add_second_order_dot_vars()</a>, <a class="el" href="diff__context_8C_source.html#l00032">libMesh::DiffContext::DiffContext()</a>, <a class="el" href="euler2__solver_8C_source.html#l00054">libMesh::Euler2Solver::element_residual()</a>, <a class="el" href="diff__system_8C_source.html#l00335">libMesh::DifferentiableSystem::have_second_order_scalar_vars()</a> , 以及 <a class="el" href="fem__context_8C_source.html#l01675">libMesh::FEMContext::pre_fe_reinit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ab3139300c2d5ae16077aa17ff4079384">_second_order_vars</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_ab3139300c2d5ae16077aa17ff4079384"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#ab3139300c2d5ae16077aa17ff4079384">libMesh::DifferentiablePhysics::_second_order_vars</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; _second_order_vars</div><div class="ttdoc">Variable indices for those variables that are second order in time. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00553">diff_physics.h:553</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abd963623f4c8476804162e8f84a52667"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::DifferentiablePhysics::have_first_order_vars </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00500">500</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00548">libMesh::DifferentiablePhysics::_first_order_vars</a>.</p>
+
+<p>参考自 <a class="el" href="diff__system_8C_source.html#l00323">libMesh::DifferentiableSystem::have_first_order_scalar_vars()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  { <span class="keywordflow">return</span> !<a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#a73bc59adf0ae024a9216bdc0db2d5b2a">_first_order_vars</a>.empty(); }</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_a73bc59adf0ae024a9216bdc0db2d5b2a"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#a73bc59adf0ae024a9216bdc0db2d5b2a">libMesh::DifferentiablePhysics::_first_order_vars</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; _first_order_vars</div><div class="ttdoc">Variable indices for those variables that are first order in time. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00548">diff_physics.h:548</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aecc9bec59252586a19aa7334fd2e54aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::DifferentiablePhysics::have_second_order_vars </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00513">513</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00553">libMesh::DifferentiablePhysics::_second_order_vars</a>.</p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00053">libMesh::EulerSolver::element_residual()</a> , 以及 <a class="el" href="diff__system_8C_source.html#l00335">libMesh::DifferentiableSystem::have_second_order_scalar_vars()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  { <span class="keywordflow">return</span> !<a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ab3139300c2d5ae16077aa17ff4079384">_second_order_vars</a>.empty(); }</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_ab3139300c2d5ae16077aa17ff4079384"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#ab3139300c2d5ae16077aa17ff4079384">libMesh::DifferentiablePhysics::_second_order_vars</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; _second_order_vars</div><div class="ttdoc">Variable indices for those variables that are second order in time. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00553">diff_physics.h:553</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a44062f48afbb6ad9969500eb0f8fc90e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::DifferentiablePhysics::init_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="classlibMesh_1_1FEMSystem.html#a30e9242b511c664a3c93afb61d927d7e">libMesh::FEMSystem</a> 重载.</p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00406">406</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aaf2e3f22e33e5030bb6a32f0804e649d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::DifferentiablePhysics::init_physics </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>sys</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize any data structures associated with the physics. </p>
+
+<p>参考自 <a class="el" href="diff__system_8C_source.html#l00094">libMesh::DifferentiableSystem::init_data()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94f0fb45aafa456c314f05eeaead379b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::DifferentiablePhysics::is_first_order_var </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00509">509</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00548">libMesh::DifferentiablePhysics::_first_order_vars</a>.</p>
+<div class="fragment"><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#a73bc59adf0ae024a9216bdc0db2d5b2a">_first_order_vars</a>.find(var) != <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#a73bc59adf0ae024a9216bdc0db2d5b2a">_first_order_vars</a>.end(); }</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_a73bc59adf0ae024a9216bdc0db2d5b2a"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#a73bc59adf0ae024a9216bdc0db2d5b2a">libMesh::DifferentiablePhysics::_first_order_vars</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; _first_order_vars</div><div class="ttdoc">Variable indices for those variables that are first order in time. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00548">diff_physics.h:548</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aadcb53357db196860e5bc0b762555c2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::DifferentiablePhysics::is_second_order_var </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00522">522</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00553">libMesh::DifferentiablePhysics::_second_order_vars</a>.</p>
+
+<p>参考自 <a class="el" href="first__order__unsteady__solver_8C_source.html#l00032">libMesh::FirstOrderUnsteadySolver::compute_second_order_eqns()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ab3139300c2d5ae16077aa17ff4079384">_second_order_vars</a>.find(var) != <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ab3139300c2d5ae16077aa17ff4079384">_second_order_vars</a>.end(); }</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_ab3139300c2d5ae16077aa17ff4079384"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#ab3139300c2d5ae16077aa17ff4079384">libMesh::DifferentiablePhysics::_second_order_vars</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; _second_order_vars</div><div class="ttdoc">Variable indices for those variables that are second order in time. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00553">diff_physics.h:553</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab8dad6ea83e0f4df29baab44f0f10893"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::DifferentiablePhysics::is_time_evolving </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> iff variable <code>var</code> is evolving with respect to time. In general, the user's <a class="el" href="namespacelibMesh_1_1TriangleWrapper.html#ae06da07f4c64d00ebefa55ce7f5c5e6b" title="Initializes the fields of t to nullptr/0 as necessary. ">init()</a> function should have set <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a5744b5cf72344e4c5eb426b3f50f1d7e" title="Tells the DiffSystem that variable var is evolving with respect to time. ">time_evolving()</a> for any variables which behave like du/dt = F(u), and should not call <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a5744b5cf72344e4c5eb426b3f50f1d7e" title="Tells the DiffSystem that variable var is evolving with respect to time. ">time_evolving()</a> for any variables which behave like 0 = G(u). </dd></dl>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00260">260</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00543">libMesh::DifferentiablePhysics::_time_evolving</a> , 以及 <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>.</p>
+
+<p>参考自 <a class="el" href="fem__system_8C_source.html#l01370">libMesh::FEMSystem::init_context()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    libmesh_assert_less(var,<a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ab885946dc9eac4b63d57921f991bea33">_time_evolving</a>.size());</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>( <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ab885946dc9eac4b63d57921f991bea33">_time_evolving</a>[var] == 0 ||</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                    <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ab885946dc9eac4b63d57921f991bea33">_time_evolving</a>[var] == 1 ||</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                    <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ab885946dc9eac4b63d57921f991bea33">_time_evolving</a>[var] == 2 );</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ab885946dc9eac4b63d57921f991bea33">_time_evolving</a>[var];</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  }</div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_ab885946dc9eac4b63d57921f991bea33"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#ab885946dc9eac4b63d57921f991bea33">libMesh::DifferentiablePhysics::_time_evolving</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; _time_evolving</div><div class="ttdoc">Stores unsigned int to tell us which variables are evolving as first order in time (1)...</div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00543">diff_physics.h:543</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab37ebf0a6d46d64d3adbf4169079684d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::FEMPhysics::mass_residual </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts a mass vector contribution on <code>elem</code> from elem_residual. </p>
+<p>If this method receives request_jacobian = true, then it should compute elem_jacobian and return true if possible. If elem_jacobian has not been computed then the method should return false.</p>
+<p>Many problems can use the reimplementation in <a class="el" href="classlibMesh_1_1FEMPhysics.html#ab37ebf0a6d46d64d3adbf4169079684d" title="Subtracts a mass vector contribution on elem from elem_residual. ">FEMPhysics::mass_residual</a> which subtracts (du/dt,v) for each transient variable u; users with more complicated transient problems will need to reimplement this themselves. </p>
+
+<p>重载 <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#af3dd0a71e42b409c95a6c73fc47adc01">libMesh::DifferentiablePhysics</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ffc6b599db2eda744da5af375548ee6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::nonlocal_constraint </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds any nonlocal constraint contributions (e.g. </p>
+<p>some components of constraints in scalar variable equations) to elem_residual</p>
+<p>If this method receives request_jacobian = true, then it should also modify elem_jacobian and return true if possible. If the Jacobian changes have not been computed then the method should return false.</p>
+<p>Users may need to reimplement this for PDEs on systems to which SCALAR variables with non-transient equations have been added. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00233">233</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00085">libMesh::EulerSolver::nonlocal_residual()</a>, <a class="el" href="steady__solver_8C_source.html#l00057">libMesh::SteadySolver::nonlocal_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00086">libMesh::Euler2Solver::nonlocal_residual()</a>, <a class="el" href="eigen__time__solver_8C_source.html#l00217">libMesh::EigenTimeSolver::nonlocal_residual()</a> , 以及 <a class="el" href="newmark__solver_8C_source.html#l00189">libMesh::NewmarkSolver::nonlocal_residual()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">return</span> request_jacobian;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="acfbc9391cdd815aa99a97e96a8228bcf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::nonlocal_damping_residual </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts any nonlocal damping vector contributions (e.g. </p>
+<p>any first time derivative coefficients in scalar variable equations) from elem_residual</p>
+<p>If this method receives request_jacobian = true, then it should also modify elem_jacobian and return true if possible. If the Jacobian changes have not been computed then the method should return false. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00394">394</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00085">libMesh::EulerSolver::nonlocal_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00086">libMesh::Euler2Solver::nonlocal_residual()</a> , 以及 <a class="el" href="newmark__solver_8C_source.html#l00189">libMesh::NewmarkSolver::nonlocal_residual()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  {</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keywordflow">return</span> request_jacobian;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad4a653ad59e812a9dc76ddff3beef7aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::nonlocal_mass_residual </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts any nonlocal mass vector contributions (e.g. </p>
+<p>any time derivative coefficients in scalar variable equations) from elem_residual</p>
+<p>If this method receives request_jacobian = true, then it should also modify elem_jacobian and return true if possible. If the Jacobian changes have not been computed then the method should return false.</p>
+<p>Many problems can use the reimplementation in <a class="el" href="classlibMesh_1_1FEMPhysics.html#ab37ebf0a6d46d64d3adbf4169079684d" title="Subtracts a mass vector contribution on elem from elem_residual. ">FEMPhysics::mass_residual</a> which subtracts (du/dt,v) for each transient scalar variable u; users with more complicated transient scalar variable equations will need to reimplement this themselves. </p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00085">libMesh::EulerSolver::nonlocal_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00086">libMesh::Euler2Solver::nonlocal_residual()</a>, <a class="el" href="eigen__time__solver_8C_source.html#l00217">libMesh::EigenTimeSolver::nonlocal_residual()</a> , 以及 <a class="el" href="newmark__solver_8C_source.html#l00189">libMesh::NewmarkSolver::nonlocal_residual()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abbe254dbb92afb6b42d83315e3b50b93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::nonlocal_time_derivative </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds any nonlocal time derivative contributions (e.g. </p>
+<p>some components of time derivatives in scalar variable equations) to elem_residual</p>
+<p>If this method receives request_jacobian = true, then it should also modify elem_jacobian and return true if possible. If the Jacobian changes have not been computed then the method should return false.</p>
+<p>Users may need to reimplement this for PDEs on systems to which SCALAR variables have been added. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00214">214</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00085">libMesh::EulerSolver::nonlocal_residual()</a>, <a class="el" href="steady__solver_8C_source.html#l00057">libMesh::SteadySolver::nonlocal_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00086">libMesh::Euler2Solver::nonlocal_residual()</a>, <a class="el" href="eigen__time__solver_8C_source.html#l00217">libMesh::EigenTimeSolver::nonlocal_residual()</a> , 以及 <a class="el" href="newmark__solver_8C_source.html#l00189">libMesh::NewmarkSolver::nonlocal_residual()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">return</span> request_jacobian;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3aadb813e058ee99f1dbe75159469c53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::DifferentiablePhysics::set_mesh_system </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1System.html">System</a> *&#160;</td>
+          <td class="paramname"><em>sys</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells the <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html" title="This class provides a specific system class. ">DifferentiablePhysics</a> that system <code>sys</code> contains the isoparametric Lagrangian variables which correspond to the coordinates of mesh nodes, in problems where the mesh itself is expected to move in time. </p>
+<p>The system with mesh coordinate data (which may be <code>this</code> system itself, for fully coupled moving mesh problems) is currently assumed to have new (end of time step) mesh coordinates stored in solution, old (beginning of time step) mesh coordinates stored in _old_nonlinear_solution, and constant velocity motion during each time step.</p>
+<p>Activating this function ensures that local (but not neighbor!) element geometry is correctly repositioned when evaluating element residuals.</p>
+<p>Currently <code>sys</code> must be <code>*this</code> for a tightly coupled moving mesh problem or nullptr to stop mesh movement; loosely coupled moving mesh problems are not implemented.</p>
+<p>This code is experimental. "Trust but verify, and not in that
+order" </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00569">569</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00531">libMesh::DifferentiablePhysics::_mesh_sys</a>.</p>
+<div class="fragment"><div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;{</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  <span class="comment">// For now we assume that we&#39;re doing fully coupled mesh motion</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;  <span class="comment">//  if (sys &amp;&amp; sys != this)</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="comment">//    libmesh_not_implemented();</span></div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  <span class="comment">// For the foreseeable future we&#39;ll assume that we keep these</span></div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  <span class="comment">// Systems in the same EquationSystems</span></div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  <span class="comment">// libmesh_assert_equal_to (&amp;this-&gt;get_equation_systems(),</span></div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <span class="comment">//                          &amp;sys-&gt;get_equation_systems());</span></div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  <span class="comment">// And for the immediate future this code may not even work</span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  libmesh_experimental();</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#ae762bdeb8c1e819ebf8b09d6a867fff3">_mesh_sys</a> = sys;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_ae762bdeb8c1e819ebf8b09d6a867fff3"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#ae762bdeb8c1e819ebf8b09d6a867fff3">libMesh::DifferentiablePhysics::_mesh_sys</a></div><div class="ttdeci">System * _mesh_sys</div><div class="ttdoc">System from which to acquire moving mesh information. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00531">diff_physics.h:531</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a372a46df636268b6b68fbd864cd04ebb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::DifferentiablePhysics::set_mesh_x_var </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells the <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html" title="This class provides a specific system class. ">DifferentiablePhysics</a> that variable <code>var</code> from the mesh system should be used to update the x coordinate of mesh nodes, in problems where the mesh itself is expected to move in time. </p>
+<p>The system with mesh coordinate data (which may be this system itself, for fully coupled moving mesh problems) is currently assumed to have new (end of time step) mesh coordinates stored in solution, old (beginning of time step) mesh coordinates stored in _old_nonlinear_solution, and constant velocity motion during each time step.</p>
+<p>Activating this function ensures that local (but not neighbor!) element geometry is correctly repositioned when evaluating element residuals. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00589">589</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00536">libMesh::DifferentiablePhysics::_mesh_x_var</a>.</p>
+<div class="fragment"><div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;{</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#a4125b3fcf1dd38b4f1a70e56bac0e2fc">_mesh_x_var</a> = var;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_a4125b3fcf1dd38b4f1a70e56bac0e2fc"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#a4125b3fcf1dd38b4f1a70e56bac0e2fc">libMesh::DifferentiablePhysics::_mesh_x_var</a></div><div class="ttdeci">unsigned int _mesh_x_var</div><div class="ttdoc">Variables from which to acquire moving mesh information. </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00536">diff_physics.h:536</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a04147e9771387d9cf2eaa47d8f477004"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::DifferentiablePhysics::set_mesh_y_var </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells the <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html" title="This class provides a specific system class. ">DifferentiablePhysics</a> that variable <code>var</code> from the mesh system should be used to update the y coordinate of mesh nodes. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00597">597</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00536">libMesh::DifferentiablePhysics::_mesh_y_var</a>.</p>
+<div class="fragment"><div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;{</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;  <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#a3102589faec7aa5752b4f605d5e2283e">_mesh_y_var</a> = var;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_a3102589faec7aa5752b4f605d5e2283e"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#a3102589faec7aa5752b4f605d5e2283e">libMesh::DifferentiablePhysics::_mesh_y_var</a></div><div class="ttdeci">unsigned int _mesh_y_var</div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00536">diff_physics.h:536</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa7222ddddd09ea18f663da19a672d5c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::DifferentiablePhysics::set_mesh_z_var </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells the <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html" title="This class provides a specific system class. ">DifferentiablePhysics</a> that variable <code>var</code> from the mesh system should be used to update the z coordinate of mesh nodes. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00605">605</a> 行定义.</p>
+
+<p>参考 <a class="el" href="diff__physics_8h_source.html#l00536">libMesh::DifferentiablePhysics::_mesh_z_var</a>.</p>
+<div class="fragment"><div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;{</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  <a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#a081fe25766a214bc0d22f86d114258c4">_mesh_z_var</a> = var;</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_a081fe25766a214bc0d22f86d114258c4"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#a081fe25766a214bc0d22f86d114258c4">libMesh::DifferentiablePhysics::_mesh_z_var</a></div><div class="ttdeci">unsigned int _mesh_z_var</div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00536">diff_physics.h:536</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a74bae39adf00d96c559fe81b1158c272"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::side_constraint </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the constraint contribution on <code>side</code> of <code>elem</code> to elem_residual. </p>
+<p>If this method receives request_jacobian = true, then it should compute elem_jacobian and return true if possible. If elem_jacobian has not been computed then the method should return false.</p>
+<p>Users may need to reimplement this for their particular PDE depending on the boundary conditions.</p>
+<p>To implement a weak form of the constraint 0 = G(u), the user should examine u = elem_solution and add (G(u), phi_i) boundary integral contributions to elem_residual in <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a74bae39adf00d96c559fe81b1158c272" title="Adds the constraint contribution on side of elem to elem_residual. ">side_constraint()</a>. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00195">195</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00070">libMesh::EulerSolver::side_residual()</a>, <a class="el" href="steady__solver_8C_source.html#l00046">libMesh::SteadySolver::side_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00071">libMesh::Euler2Solver::side_residual()</a>, <a class="el" href="eigen__time__solver_8C_source.html#l00170">libMesh::EigenTimeSolver::side_residual()</a> , 以及 <a class="el" href="newmark__solver_8C_source.html#l00175">libMesh::NewmarkSolver::side_residual()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span> request_jacobian;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="adb9e129aacad3e6746c868fd9a259f5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::side_damping_residual </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts a damping vector contribution on <code>side</code> of <code>elem</code> from elem_residual. </p>
+<p>If this method receives request_jacobian = true, then it should compute elem_jacobian and return true if possible. If elem_jacobian has not been computed then the method should return false.</p>
+<p>For most problems, the default implementation of "do nothing" is correct; users with boundary conditions including first time derivatives may need to reimplement this themselves. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00378">378</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00070">libMesh::EulerSolver::side_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00071">libMesh::Euler2Solver::side_residual()</a> , 以及 <a class="el" href="newmark__solver_8C_source.html#l00175">libMesh::NewmarkSolver::side_residual()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">return</span> request_jacobian;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a39e41862f9197f1ae47a3fe2bf936a29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::side_mass_residual </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts a mass vector contribution on <code>side</code> of <code>elem</code> from elem_residual. </p>
+<p>If this method receives request_jacobian = true, then it should compute elem_jacobian and return true if possible. If elem_jacobian has not been computed then the method should return false.</p>
+<p>For most problems, the default implementation of "do nothing" is correct; users with boundary conditions including time derivatives may need to reimplement this themselves. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00320">320</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00070">libMesh::EulerSolver::side_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00071">libMesh::Euler2Solver::side_residual()</a>, <a class="el" href="eigen__time__solver_8C_source.html#l00170">libMesh::EigenTimeSolver::side_residual()</a> , 以及 <a class="el" href="newmark__solver_8C_source.html#l00175">libMesh::NewmarkSolver::side_residual()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">return</span> request_jacobian;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a46a5c2399209d750f3ea4ee10bdf13c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libMesh::DifferentiablePhysics::side_time_derivative </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>request_jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the time derivative contribution on <code>side</code> of <code>elem</code> to elem_residual. </p>
+<p>If this method receives request_jacobian = true, then it should compute elem_jacobian and return true if possible. If elem_jacobian has not been computed then the method should return false.</p>
+<p>Users may need to reimplement this for their particular PDE depending on the boundary conditions.</p>
+<p>To implement a weak form of the source term du/dt = F(u) on sides, such as might arise in a flux boundary condition, the user should examine u = elem_solution and add (F(u), phi_i) boundary integral contributions to elem_residual in <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a74bae39adf00d96c559fe81b1158c272" title="Adds the constraint contribution on side of elem to elem_residual. ">side_constraint()</a>. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00174">174</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="euler__solver_8C_source.html#l00070">libMesh::EulerSolver::side_residual()</a>, <a class="el" href="steady__solver_8C_source.html#l00046">libMesh::SteadySolver::side_residual()</a>, <a class="el" href="euler2__solver_8C_source.html#l00071">libMesh::Euler2Solver::side_residual()</a>, <a class="el" href="eigen__time__solver_8C_source.html#l00170">libMesh::EigenTimeSolver::side_residual()</a> , 以及 <a class="el" href="newmark__solver_8C_source.html#l00175">libMesh::NewmarkSolver::side_residual()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">return</span> request_jacobian;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5744b5cf72344e4c5eb426b3f50f1d7e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void libMesh::DifferentiablePhysics::time_evolving </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells the DiffSystem that variable var is evolving with respect to time. </p>
+<p>In general, the user's <a class="el" href="namespacelibMesh_1_1TriangleWrapper.html#ae06da07f4c64d00ebefa55ce7f5c5e6b" title="Initializes the fields of t to nullptr/0 as necessary. ">init()</a> function should call <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a5744b5cf72344e4c5eb426b3f50f1d7e" title="Tells the DiffSystem that variable var is evolving with respect to time. ">time_evolving()</a> with order 1 for any variables which behave like du/dt = F(u), with order 2 for any variables that behave like d^2u/dt^2 = F(u), and should not call <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a5744b5cf72344e4c5eb426b3f50f1d7e" title="Tells the DiffSystem that variable var is evolving with respect to time. ">time_evolving()</a> for any variables which behave like 0 = G(u).</p>
+<p>Most derived systems will not have to reimplement this function; however any system which reimplements <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#af3dd0a71e42b409c95a6c73fc47adc01" title="Subtracts a mass vector contribution on elem from elem_residual. ">mass_residual()</a> may have to reimplement <a class="el" href="classlibMesh_1_1DifferentiablePhysics.html#a5744b5cf72344e4c5eb426b3f50f1d7e" title="Tells the DiffSystem that variable var is evolving with respect to time. ">time_evolving()</a> to prepare data structures. </p>
+
+<p>参考自 <a class="el" href="diff__system_8C_source.html#l00182">libMesh::DifferentiableSystem::add_second_order_dot_vars()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a73bc59adf0ae024a9216bdc0db2d5b2a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;unsigned int&gt; libMesh::DifferentiablePhysics::_first_order_vars</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classlibMesh_1_1Variable.html" title="This class defines the notion of a variable in the system. ">Variable</a> indices for those variables that are first order in time. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00548">548</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="diff__physics_8h_source.html#l00506">libMesh::DifferentiablePhysics::get_first_order_vars()</a>, <a class="el" href="diff__physics_8h_source.html#l00500">libMesh::DifferentiablePhysics::have_first_order_vars()</a> , 以及 <a class="el" href="diff__physics_8h_source.html#l00509">libMesh::DifferentiablePhysics::is_first_order_var()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae762bdeb8c1e819ebf8b09d6a867fff3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1System.html">System</a>* libMesh::DifferentiablePhysics::_mesh_sys</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classlibMesh_1_1System.html" title="Manages consistently variables, degrees of freedom, and coefficient vectors. ">System</a> from which to acquire moving mesh information. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00531">531</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="diff__physics_8h_source.html#l00613">libMesh::DifferentiablePhysics::get_mesh_system()</a>, <a class="el" href="fem__system_8C_source.html#l01423">libMesh::FEMSystem::mesh_position_get()</a>, <a class="el" href="fem__system_8C_source.html#l01087">libMesh::FEMSystem::mesh_position_set()</a>, <a class="el" href="fem__system_8C_source.html#l01210">libMesh::FEMSystem::numerical_jacobian()</a> , 以及 <a class="el" href="diff__physics_8h_source.html#l00569">libMesh::DifferentiablePhysics::set_mesh_system()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4125b3fcf1dd38b4f1a70e56bac0e2fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::DifferentiablePhysics::_mesh_x_var</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variables from which to acquire moving mesh information. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00536">536</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="diff__physics_8h_source.html#l00625">libMesh::DifferentiablePhysics::get_mesh_x_var()</a>, <a class="el" href="fem__system_8C_source.html#l01423">libMesh::FEMSystem::mesh_position_get()</a>, <a class="el" href="fem__system_8C_source.html#l01210">libMesh::FEMSystem::numerical_jacobian()</a> , 以及 <a class="el" href="diff__physics_8h_source.html#l00589">libMesh::DifferentiablePhysics::set_mesh_x_var()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3102589faec7aa5752b4f605d5e2283e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::DifferentiablePhysics::_mesh_y_var</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00536">536</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="diff__physics_8h_source.html#l00631">libMesh::DifferentiablePhysics::get_mesh_y_var()</a>, <a class="el" href="fem__system_8C_source.html#l01423">libMesh::FEMSystem::mesh_position_get()</a>, <a class="el" href="fem__system_8C_source.html#l01210">libMesh::FEMSystem::numerical_jacobian()</a> , 以及 <a class="el" href="diff__physics_8h_source.html#l00597">libMesh::DifferentiablePhysics::set_mesh_y_var()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a081fe25766a214bc0d22f86d114258c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::DifferentiablePhysics::_mesh_z_var</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00536">536</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="diff__physics_8h_source.html#l00637">libMesh::DifferentiablePhysics::get_mesh_z_var()</a>, <a class="el" href="fem__system_8C_source.html#l01423">libMesh::FEMSystem::mesh_position_get()</a>, <a class="el" href="fem__system_8C_source.html#l01210">libMesh::FEMSystem::numerical_jacobian()</a> , 以及 <a class="el" href="diff__physics_8h_source.html#l00605">libMesh::DifferentiablePhysics::set_mesh_z_var()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aceea2499be3300c82d5d2d371a0b5b47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;unsigned int,unsigned int&gt; libMesh::DifferentiablePhysics::_second_order_dot_vars</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the user adds any second order variables, then we need to also cache the map to their corresponding dot variable that will be added by this <a class="el" href="classlibMesh_1_1TimeSolver.html" title="This is a generic class that defines a solver to handle time integration of DifferentiableSystems. ">TimeSolver</a> class. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00560">560</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="diff__system_8C_source.html#l00182">libMesh::DifferentiableSystem::add_second_order_dot_vars()</a> , 以及 <a class="el" href="diff__system_8C_source.html#l00306">libMesh::DifferentiableSystem::get_second_order_dot_var()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3139300c2d5ae16077aa17ff4079384"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;unsigned int&gt; libMesh::DifferentiablePhysics::_second_order_vars</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classlibMesh_1_1Variable.html" title="This class defines the notion of a variable in the system. ">Variable</a> indices for those variables that are second order in time. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00553">553</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="diff__physics_8h_source.html#l00519">libMesh::DifferentiablePhysics::get_second_order_vars()</a>, <a class="el" href="diff__physics_8h_source.html#l00513">libMesh::DifferentiablePhysics::have_second_order_vars()</a> , 以及 <a class="el" href="diff__physics_8h_source.html#l00522">libMesh::DifferentiablePhysics::is_second_order_var()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab885946dc9eac4b63d57921f991bea33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;unsigned int&gt; libMesh::DifferentiablePhysics::_time_evolving</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores unsigned int to tell us which variables are evolving as first order in time (1), second order in time (2), or are not time evolving (0). </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00543">543</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="diff__physics_8h_source.html#l00260">libMesh::DifferentiablePhysics::is_time_evolving()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e217fd5c9b6dff26ef83742a7e7dea9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::DifferentiablePhysics::compute_internal_sides</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>compute_internal_sides</code> is false by default, indicating that side_* computations will only be done on boundary sides. </p>
+<p>If compute_internal_sides is true, computations will be done on sides between elements as well. </p>
+
+<p>在文件 <a class="el" href="diff__physics_8h_source.html">diff_physics.h</a> 第 <a class="el" href="diff__physics_8h_source.html#l00156">156</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/physics/<a class="el" href="fem__physics_8h_source.html">fem_physics.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:38 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

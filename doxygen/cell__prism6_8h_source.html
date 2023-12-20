@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/geom/cell_prism6.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_7b25fee8b20e5ff305ecfa5c6e931be7.html">geom</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cell_prism6.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cell__prism6_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_CELL_PRISM6_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_CELL_PRISM6_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/cell_prism.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html">   58</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1Prism6.html">Prism6</a> final : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1Prism.html">Prism</a></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">explicit</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#a1777591c38a8cb81442e05e77fc48841">   66</a></span>&#160;  <a class="code" href="classlibMesh_1_1Prism6.html#a1777591c38a8cb81442e05e77fc48841">Prism6</a> (<a class="code" href="classlibMesh_1_1Elem.html">Elem</a> * p=<span class="keyword">nullptr</span>) :</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classlibMesh_1_1Prism.html">Prism</a>(<a class="code" href="classlibMesh_1_1Prism6.html">Prism6</a>::<a class="code" href="classlibMesh_1_1Prism.html#ab1d6057a876af230ec1dfad52080d4fe">n_nodes</a>(), p, <a class="code" href="classlibMesh_1_1Prism6.html#ace8ab712b24f13e0c3eaad08492d0e61">_nodelinks_data</a>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classlibMesh_1_1Prism6.html#a1777591c38a8cb81442e05e77fc48841">Prism6</a> (<a class="code" href="classlibMesh_1_1Prism6.html">Prism6</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classlibMesh_1_1Prism6.html#a1777591c38a8cb81442e05e77fc48841">Prism6</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Prism6.html">Prism6</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="classlibMesh_1_1Prism6.html">Prism6</a> &amp; <a class="code" href="classlibMesh_1_1Prism6.html#a32640acf6fc8829138da02a3481011c8">operator= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Prism6.html">Prism6</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classlibMesh_1_1Prism6.html">Prism6</a> &amp; <a class="code" href="classlibMesh_1_1Prism6.html#a32640acf6fc8829138da02a3481011c8">operator= </a>(<a class="code" href="classlibMesh_1_1Prism6.html">Prism6</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1Prism6.html#a9e230ed3ed42f883aeda97799ac561a6">~Prism6</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#aace4486ef6c4eb5c6b0a2db9c52b683f">   79</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a> <a class="code" href="classlibMesh_1_1Prism6.html#aace4486ef6c4eb5c6b0a2db9c52b683f">type</a> ()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967aa483bcc949d5b563a091996fb8b9ec3e">PRISM6</a>; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#a7a511eb279289fa8c07be839fd64082b">   84</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Prism6.html#a7a511eb279289fa8c07be839fd64082b">n_sub_elem</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> 1; }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Prism6.html#ae194f9417c2414d0289bf8ecbe6c1617">is_vertex</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Prism6.html#a977748c60286f6b1bca6285674ec68f7">is_edge</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Prism6.html#a52f4e37a683a9cf2595237c5c1f23d57">is_face</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Prism6.html#a1d9992b268c43cec5eebadd7edc72509">is_node_on_side</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keyword">virtual</span> std::vector&lt;unsigned int&gt; <a class="code" href="classlibMesh_1_1Prism6.html#a154fe7860ed906304f5e49aaa37d9a55">nodes_on_side</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">virtual</span> std::vector&lt;unsigned int&gt; <a class="code" href="classlibMesh_1_1Prism6.html#a7586c192384e31a8da149f5084f7335f">nodes_on_edge</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> e) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Prism6.html#ad22e89d798891f6b07c54c48115cc62b">is_node_on_edge</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> e) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Prism6.html#aa631438c56bf581e9fd1f8b59074b4a0">has_affine_map</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">Order</a> <a class="code" href="classlibMesh_1_1Prism6.html#a394030c9d712e1787d72e73319926365">default_order</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;Elem&gt; <a class="code" href="classlibMesh_1_1Prism6.html#a1e405a993e24cb040b3a4d4e942e2891">build_side_ptr</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                                <span class="keywordtype">bool</span> proxy=<span class="keyword">false</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1Prism6.html#a1e405a993e24cb040b3a4d4e942e2891">build_side_ptr</a> (std::unique_ptr&lt;Elem&gt; &amp; elem,</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;Elem&gt; <a class="code" href="classlibMesh_1_1Prism6.html#a457b0fc0b520e169006f11e50a7c7ef0">build_edge_ptr</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1Prism6.html#a457b0fc0b520e169006f11e50a7c7ef0">build_edge_ptr</a> (std::unique_ptr&lt;Elem&gt; &amp; edge, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1Prism6.html#a3ff18138ac8955cb805b658af285a0e9">connectivity</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sc,</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                            <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a341c6dd5cee5367bd34657973bd490a6">IOPackage</a> iop,</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                            std::vector&lt;dof_id_type&gt; &amp; conn) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#ad5bf88c16d9cac7d7632ca170fb620e0">  162</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Prism6.html#ad5bf88c16d9cac7d7632ca170fb620e0">num_nodes</a> = 6;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#a0c7bdd2831909cf32e9c48eca4dfc01c">  163</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Prism6.html#a0c7bdd2831909cf32e9c48eca4dfc01c">num_sides</a> = 5;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#a5157ff96291d2c3d36375c18e157d67e">  164</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Prism6.html#a5157ff96291d2c3d36375c18e157d67e">num_edges</a> = 9;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#aa53dd7d762fd80f9b1831cd7152de4f8">  165</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Prism6.html#aa53dd7d762fd80f9b1831cd7152de4f8">num_children</a> = 8;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#ad272f76bbdfe95b18e9b351e992ac837">  166</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Prism6.html#ad272f76bbdfe95b18e9b351e992ac837">nodes_per_side</a> = 4;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#ac41bcb319563f1c280b02f0c2cbc4eaf">  167</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Prism6.html#ac41bcb319563f1c280b02f0c2cbc4eaf">nodes_per_edge</a> = 2;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#adbf4b03751ce84c0d3f064ba4dbf2e2e">  173</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Prism6.html#adbf4b03751ce84c0d3f064ba4dbf2e2e">side_nodes_map</a>[<a class="code" href="classlibMesh_1_1Prism6.html#a0c7bdd2831909cf32e9c48eca4dfc01c">num_sides</a>][<a class="code" href="classlibMesh_1_1Prism6.html#ad272f76bbdfe95b18e9b351e992ac837">nodes_per_side</a>];</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#ab2da4c7b705b776bafa989cf5a98650a">  178</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Prism6.html#ab2da4c7b705b776bafa989cf5a98650a">side_elems_map</a>[<a class="code" href="classlibMesh_1_1Prism6.html#a0c7bdd2831909cf32e9c48eca4dfc01c">num_sides</a>][<a class="code" href="classlibMesh_1_1Prism6.html#ad272f76bbdfe95b18e9b351e992ac837">nodes_per_side</a>];</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#a34771ea76bfe1686ccffd15918acbaa4">  184</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Prism6.html#a34771ea76bfe1686ccffd15918acbaa4">edge_nodes_map</a>[<a class="code" href="classlibMesh_1_1Prism6.html#a5157ff96291d2c3d36375c18e157d67e">num_edges</a>][<a class="code" href="classlibMesh_1_1Prism6.html#ac41bcb319563f1c280b02f0c2cbc4eaf">nodes_per_edge</a>];</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> <a class="code" href="classlibMesh_1_1Prism6.html#a6d69c0c5b2e7330a03f74fc6f05d72f7">true_centroid</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1Prism6.html#ac5959a50c65d5540f0257a05e56c9d98">volume</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1BoundingBox.html">BoundingBox</a> <a class="code" href="classlibMesh_1_1Prism6.html#a69151e03a7137bb0e797ecb8b26051de">loose_bounding_box</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1Prism6.html#af65c946bd348c5c9988bca2937b8ad77">permute</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> perm_num) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1Prism6.html#a4fba8e8fe4d6b589c9cb2c0ae3461edc">flip</a>(<a class="code" href="classlibMesh_1_1BoundaryInfo.html">BoundaryInfo</a> *) override final;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <a class="code" href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">ElemType</a> <a class="code" href="classlibMesh_1_1Prism6.html#a990ebb20c8ef37821850b5aac653edf2">side_type</a> (const <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s) const override final;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;protected:</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#ace8ab712b24f13e0c3eaad08492d0e61">  213</a></span>&#160;  <a class="code" href="classlibMesh_1_1Node.html">Node</a> * <a class="code" href="classlibMesh_1_1Prism6.html#ace8ab712b24f13e0c3eaad08492d0e61">_nodelinks_data</a>[<a class="code" href="classlibMesh_1_1Prism6.html#ad5bf88c16d9cac7d7632ca170fb620e0">num_nodes</a>];</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor">#ifdef LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#a84f68740eb1f235eb6916e8edd48ab7a">  222</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1Prism6.html#a84f68740eb1f235eb6916e8edd48ab7a">embedding_matrix</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i,</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j,</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keyword">  </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Prism6.html#adbb1cf39cf041be8f6a900ffe2ffbc33">_embedding_matrix</a>[i][j][k]; }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#adbb1cf39cf041be8f6a900ffe2ffbc33">  231</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1Prism6.html#adbb1cf39cf041be8f6a900ffe2ffbc33">_embedding_matrix</a>[<a class="code" href="classlibMesh_1_1Prism6.html#aa53dd7d762fd80f9b1831cd7152de4f8">num_children</a>][<a class="code" href="classlibMesh_1_1Prism6.html#ad5bf88c16d9cac7d7632ca170fb620e0">num_nodes</a>][<a class="code" href="classlibMesh_1_1Prism6.html#ad5bf88c16d9cac7d7632ca170fb620e0">num_nodes</a>];</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Prism6.html#ac8926651ed49cc352bd1eb2a12246caf">  233</a></span>&#160;  <a class="code" href="classlibMesh_1_1Prism6.html#ac8926651ed49cc352bd1eb2a12246caf">LIBMESH_ENABLE_TOPOLOGY_CACHES</a>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#endif // LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;};</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#endif // LIBMESH_CELL_PRISM6_H</span></div>
+<div class="ttc" id="namespacelibMesh_html_a3f482b3acb4beb528f0ce89f161ff967"><div class="ttname"><a href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967">libMesh::ElemType</a></div><div class="ttdeci">ElemType</div><div class="ttdoc">Defines an enum for geometric element types. </div><div class="ttdef"><b>Definition:</b> <a href="enum__elem__type_8h_source.html#l00033">enum_elem_type.h:33</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af3eb3e8751995b944fc135ea53b09da2"><div class="ttname"><a href="namespacelibMesh.html#af3eb3e8751995b944fc135ea53b09da2">libMesh::Order</a></div><div class="ttdeci">Order</div><div class="ttdoc">defines an enum for polynomial orders. </div><div class="ttdef"><b>Definition:</b> <a href="enum__order_8h_source.html#l00040">enum_order.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_adbf4b03751ce84c0d3f064ba4dbf2e2e"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#adbf4b03751ce84c0d3f064ba4dbf2e2e">libMesh::Prism6::side_nodes_map</a></div><div class="ttdeci">static const unsigned int side_nodes_map[num_sides][nodes_per_side]</div><div class="ttdoc">This maps the  node of the  side to element node numbers. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00173">cell_prism6.h:173</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a990ebb20c8ef37821850b5aac653edf2"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a990ebb20c8ef37821850b5aac653edf2">libMesh::Prism6::side_type</a></div><div class="ttdeci">ElemType side_type(const unsigned int s) const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00536">cell_prism6.C:536</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Node_html"><div class="ttname"><a href="classlibMesh_1_1Node.html">libMesh::Node</a></div><div class="ttdoc">A Node is like a Point, but with more information. </div><div class="ttdef"><b>Definition:</b> <a href="node_8h_source.html#l00052">node.h:52</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_ac5959a50c65d5540f0257a05e56c9d98"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#ac5959a50c65d5540f0257a05e56c9d98">libMesh::Prism6::volume</a></div><div class="ttdeci">virtual Real volume() const override</div><div class="ttdoc">Specialized function for computing the element volume. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00477">cell_prism6.C:477</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism_html_ab1d6057a876af230ec1dfad52080d4fe"><div class="ttname"><a href="classlibMesh_1_1Prism.html#ab1d6057a876af230ec1dfad52080d4fe">libMesh::Prism::n_nodes</a></div><div class="ttdeci">virtual unsigned int n_nodes() const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism_8h_source.html#l00074">cell_prism.h:74</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html"><div class="ttname"><a href="classlibMesh_1_1Prism6.html">libMesh::Prism6</a></div><div class="ttdoc">The Prism6 is an element in 3D composed of 6 nodes. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00058">cell_prism6.h:58</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a341c6dd5cee5367bd34657973bd490a6"><div class="ttname"><a href="namespacelibMesh.html#a341c6dd5cee5367bd34657973bd490a6">libMesh::IOPackage</a></div><div class="ttdeci">IOPackage</div><div class="ttdoc">libMesh interfaces with several different software packages for the purposes of creating, reading, and writing mesh files. </div><div class="ttdef"><b>Definition:</b> <a href="enum__io__package_8h_source.html#l00037">enum_io_package.h:37</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html"><div class="ttname"><a href="classlibMesh_1_1Elem.html">libMesh::Elem</a></div><div class="ttdoc">This is the base class from which all geometric element types are derived. </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l00094">elem.h:94</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a1777591c38a8cb81442e05e77fc48841"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a1777591c38a8cb81442e05e77fc48841">libMesh::Prism6::Prism6</a></div><div class="ttdeci">Prism6(Elem *p=nullptr)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00066">cell_prism6.h:66</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a977748c60286f6b1bca6285674ec68f7"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a977748c60286f6b1bca6285674ec68f7">libMesh::Prism6::is_edge</a></div><div class="ttdeci">virtual bool is_edge(const unsigned int i) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00156">cell_prism6.C:156</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a3ff18138ac8955cb805b658af285a0e9"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a3ff18138ac8955cb805b658af285a0e9">libMesh::Prism6::connectivity</a></div><div class="ttdeci">virtual void connectivity(const unsigned int sc, const IOPackage iop, std::vector&lt; dof_id_type &gt; &amp;conn) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00319">cell_prism6.C:319</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a52f4e37a683a9cf2595237c5c1f23d57"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a52f4e37a683a9cf2595237c5c1f23d57">libMesh::Prism6::is_face</a></div><div class="ttdeci">virtual bool is_face(const unsigned int i) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00161">cell_prism6.C:161</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_ac8926651ed49cc352bd1eb2a12246caf"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#ac8926651ed49cc352bd1eb2a12246caf">libMesh::Prism6::LIBMESH_ENABLE_TOPOLOGY_CACHES</a></div><div class="ttdeci">LIBMESH_ENABLE_TOPOLOGY_CACHES</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00233">cell_prism6.h:233</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a5157ff96291d2c3d36375c18e157d67e"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a5157ff96291d2c3d36375c18e157d67e">libMesh::Prism6::num_edges</a></div><div class="ttdeci">static const int num_edges</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00164">cell_prism6.h:164</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a69151e03a7137bb0e797ecb8b26051de"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a69151e03a7137bb0e797ecb8b26051de">libMesh::Prism6::loose_bounding_box</a></div><div class="ttdeci">virtual BoundingBox loose_bounding_box() const override</div><div class="ttdoc">Builds a bounding box out of the nodal positions. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00485">cell_prism6.C:485</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a394030c9d712e1787d72e73319926365"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a394030c9d712e1787d72e73319926365">libMesh::Prism6::default_order</a></div><div class="ttdeci">virtual Order default_order() const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00213">cell_prism6.C:213</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a4fba8e8fe4d6b589c9cb2c0ae3461edc"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a4fba8e8fe4d6b589c9cb2c0ae3461edc">libMesh::Prism6::flip</a></div><div class="ttdeci">virtual void flip(BoundaryInfo *) overridefinal</div><div class="ttdoc">Flips the element (by swapping node and neighbor pointers) to have a mapping Jacobian of opposite sig...</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00523">cell_prism6.C:523</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a9e230ed3ed42f883aeda97799ac561a6"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a9e230ed3ed42f883aeda97799ac561a6">libMesh::Prism6::~Prism6</a></div><div class="ttdeci">virtual ~Prism6()=default</div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_aace4486ef6c4eb5c6b0a2db9c52b683f"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#aace4486ef6c4eb5c6b0a2db9c52b683f">libMesh::Prism6::type</a></div><div class="ttdeci">virtual ElemType type() const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00079">cell_prism6.h:79</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a84f68740eb1f235eb6916e8edd48ab7a"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a84f68740eb1f235eb6916e8edd48ab7a">libMesh::Prism6::embedding_matrix</a></div><div class="ttdeci">virtual Real embedding_matrix(const unsigned int i, const unsigned int j, const unsigned int k) const override</div><div class="ttdoc">Matrix used to create the elements children. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00222">cell_prism6.h:222</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_ae194f9417c2414d0289bf8ecbe6c1617"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#ae194f9417c2414d0289bf8ecbe6c1617">libMesh::Prism6::is_vertex</a></div><div class="ttdeci">virtual bool is_vertex(const unsigned int i) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00151">cell_prism6.C:151</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_af65c946bd348c5c9988bca2937b8ad77"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#af65c946bd348c5c9988bca2937b8ad77">libMesh::Prism6::permute</a></div><div class="ttdeci">virtual void permute(unsigned int perm_num) overridefinal</div><div class="ttdoc">Permutes the element (by swapping node and neighbor pointers) according to the specified index...</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00492">cell_prism6.C:492</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_adbb1cf39cf041be8f6a900ffe2ffbc33"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#adbb1cf39cf041be8f6a900ffe2ffbc33">libMesh::Prism6::_embedding_matrix</a></div><div class="ttdeci">static const Real _embedding_matrix[num_children][num_nodes][num_nodes]</div><div class="ttdoc">Matrix that computes new nodal locations/solution values from current nodes/solution. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00231">cell_prism6.h:231</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_ad22e89d798891f6b07c54c48115cc62b"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#ad22e89d798891f6b07c54c48115cc62b">libMesh::Prism6::is_node_on_edge</a></div><div class="ttdeci">virtual bool is_node_on_edge(const unsigned int n, const unsigned int e) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00190">cell_prism6.C:190</a></div></div>
+<div class="ttc" id="classlibMesh_1_1BoundaryInfo_html"><div class="ttname"><a href="classlibMesh_1_1BoundaryInfo.html">libMesh::BoundaryInfo</a></div><div class="ttdoc">The BoundaryInfo class contains information relevant to boundary conditions including storing faces...</div><div class="ttdef"><b>Definition:</b> <a href="boundary__info_8h_source.html#l00057">boundary_info.h:57</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism_html"><div class="ttname"><a href="classlibMesh_1_1Prism.html">libMesh::Prism</a></div><div class="ttdoc">The Prism is an element in 3D with 5 sides. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism_8h_source.html#l00036">cell_prism.h:36</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a7a511eb279289fa8c07be839fd64082b"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a7a511eb279289fa8c07be839fd64082b">libMesh::Prism6::n_sub_elem</a></div><div class="ttdeci">virtual unsigned int n_sub_elem() const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00084">cell_prism6.h:84</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_ad272f76bbdfe95b18e9b351e992ac837"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#ad272f76bbdfe95b18e9b351e992ac837">libMesh::Prism6::nodes_per_side</a></div><div class="ttdeci">static const int nodes_per_side</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00166">cell_prism6.h:166</a></div></div>
+<div class="ttc" id="classlibMesh_1_1BoundingBox_html"><div class="ttname"><a href="classlibMesh_1_1BoundingBox.html">libMesh::BoundingBox</a></div><div class="ttdoc">Defines a Cartesian bounding box by the two corner extremum. </div><div class="ttdef"><b>Definition:</b> <a href="bounding__box_8h_source.html#l00040">bounding_box.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_ace8ab712b24f13e0c3eaad08492d0e61"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#ace8ab712b24f13e0c3eaad08492d0e61">libMesh::Prism6::_nodelinks_data</a></div><div class="ttdeci">Node * _nodelinks_data[num_nodes]</div><div class="ttdoc">Data for links to nodes. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00213">cell_prism6.h:213</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_ac41bcb319563f1c280b02f0c2cbc4eaf"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#ac41bcb319563f1c280b02f0c2cbc4eaf">libMesh::Prism6::nodes_per_edge</a></div><div class="ttdeci">static const int nodes_per_edge</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00167">cell_prism6.h:167</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_aa53dd7d762fd80f9b1831cd7152de4f8"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#aa53dd7d762fd80f9b1831cd7152de4f8">libMesh::Prism6::num_children</a></div><div class="ttdeci">static const int num_children</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00165">cell_prism6.h:165</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a0c7bdd2831909cf32e9c48eca4dfc01c"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a0c7bdd2831909cf32e9c48eca4dfc01c">libMesh::Prism6::num_sides</a></div><div class="ttdeci">static const int num_sides</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00163">cell_prism6.h:163</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_aa631438c56bf581e9fd1f8b59074b4a0"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#aa631438c56bf581e9fd1f8b59074b4a0">libMesh::Prism6::has_affine_map</a></div><div class="ttdeci">virtual bool has_affine_map() const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00201">cell_prism6.C:201</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a32640acf6fc8829138da02a3481011c8"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a32640acf6fc8829138da02a3481011c8">libMesh::Prism6::operator=</a></div><div class="ttdeci">Prism6 &amp; operator=(const Prism6 &amp;)=delete</div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a34771ea76bfe1686ccffd15918acbaa4"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a34771ea76bfe1686ccffd15918acbaa4">libMesh::Prism6::edge_nodes_map</a></div><div class="ttdeci">static const unsigned int edge_nodes_map[num_edges][nodes_per_edge]</div><div class="ttdoc">This maps the  node of the  edge to element node numbers. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00184">cell_prism6.h:184</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a3f482b3acb4beb528f0ce89f161ff967aa483bcc949d5b563a091996fb8b9ec3e"><div class="ttname"><a href="namespacelibMesh.html#a3f482b3acb4beb528f0ce89f161ff967aa483bcc949d5b563a091996fb8b9ec3e">libMesh::PRISM6</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__elem__type_8h_source.html#l00050">enum_elem_type.h:50</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a457b0fc0b520e169006f11e50a7c7ef0"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a457b0fc0b520e169006f11e50a7c7ef0">libMesh::Prism6::build_edge_ptr</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Elem &gt; build_edge_ptr(const unsigned int i) override</div><div class="ttdoc">Builds a EDGE2 or INFEDGE2 built coincident with face i. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00305">cell_prism6.C:305</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_ab2da4c7b705b776bafa989cf5a98650a"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#ab2da4c7b705b776bafa989cf5a98650a">libMesh::Prism6::side_elems_map</a></div><div class="ttdeci">static const unsigned int side_elems_map[num_sides][nodes_per_side]</div><div class="ttdoc">This maps the child elements with the associated side of the parent element. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00178">cell_prism6.h:178</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a1e405a993e24cb040b3a4d4e942e2891"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a1e405a993e24cb040b3a4d4e942e2891">libMesh::Prism6::build_side_ptr</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Elem &gt; build_side_ptr(const unsigned int i, bool proxy=false) override</div><div class="ttdoc">Builds a QUAD4 or TRI3 built coincident with face i. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00220">cell_prism6.C:220</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Point_html"><div class="ttname"><a href="classlibMesh_1_1Point.html">libMesh::Point</a></div><div class="ttdoc">A Point defines a location in LIBMESH_DIM dimensional Real space. </div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00039">point.h:39</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a1d9992b268c43cec5eebadd7edc72509"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a1d9992b268c43cec5eebadd7edc72509">libMesh::Prism6::is_node_on_side</a></div><div class="ttdeci">virtual bool is_node_on_side(const unsigned int n, const unsigned int s) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00166">cell_prism6.C:166</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_ad5bf88c16d9cac7d7632ca170fb620e0"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#ad5bf88c16d9cac7d7632ca170fb620e0">libMesh::Prism6::num_nodes</a></div><div class="ttdeci">static const int num_nodes</div><div class="ttdoc">Geometric constants for Prism6. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8h_source.html#l00162">cell_prism6.h:162</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a6d69c0c5b2e7330a03f74fc6f05d72f7"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a6d69c0c5b2e7330a03f74fc6f05d72f7">libMesh::Prism6::true_centroid</a></div><div class="ttdeci">virtual Point true_centroid() const override</div><div class="ttdoc">An Optimized numerical quadrature approach for computing the centroid of the Prism6. </div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00459">cell_prism6.C:459</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a154fe7860ed906304f5e49aaa37d9a55"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a154fe7860ed906304f5e49aaa37d9a55">libMesh::Prism6::nodes_on_side</a></div><div class="ttdeci">virtual std::vector&lt; unsigned int &gt; nodes_on_side(const unsigned int s) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00176">cell_prism6.C:176</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Prism6_html_a7586c192384e31a8da149f5084f7335f"><div class="ttname"><a href="classlibMesh_1_1Prism6.html#a7586c192384e31a8da149f5084f7335f">libMesh::Prism6::nodes_on_edge</a></div><div class="ttdeci">virtual std::vector&lt; unsigned int &gt; nodes_on_edge(const unsigned int e) const override</div><div class="ttdef"><b>Definition:</b> <a href="cell__prism6_8C_source.html#l00184">cell_prism6.C:184</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:02 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

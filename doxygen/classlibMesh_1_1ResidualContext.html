@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::ResidualContext类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1ResidualContext.html">ResidualContext</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classlibMesh_1_1ResidualContext-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::ResidualContext类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9f14a020db1d61a4e2004aca2f9d022e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ResidualContext.html#a9f14a020db1d61a4e2004aca2f9d022e">ResidualContext</a> (<a class="el" href="classlibMesh_1_1PetscNonlinearSolver.html">PetscNonlinearSolver</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; *solver_in, <a class="el" href="classlibMesh_1_1NonlinearImplicitSystem.html">NonlinearImplicitSystem</a> &amp;sys_in, PetscErrorCode ierr_in)</td></tr>
+<tr class="separator:a9f14a020db1d61a4e2004aca2f9d022e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a2b8d644a45c17934eef178f107ceb5e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1PetscNonlinearSolver.html">PetscNonlinearSolver</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ResidualContext.html#a2b8d644a45c17934eef178f107ceb5e4">solver</a></td></tr>
+<tr class="separator:a2b8d644a45c17934eef178f107ceb5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c68f4e6ac23bd9ab071a08773812b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1NonlinearImplicitSystem.html">NonlinearImplicitSystem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ResidualContext.html#a74c68f4e6ac23bd9ab071a08773812b9">sys</a></td></tr>
+<tr class="separator:a74c68f4e6ac23bd9ab071a08773812b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ade5c76c386fd5fe163c9da4580d551"><td class="memItemLeft" align="right" valign="top">PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ResidualContext.html#a1ade5c76c386fd5fe163c9da4580d551">ierr</a></td></tr>
+<tr class="separator:a1ade5c76c386fd5fe163c9da4580d551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="petsc__nonlinear__solver_8C_source.html">petsc_nonlinear_solver.C</a> 第 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00038">38</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a9f14a020db1d61a4e2004aca2f9d022e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::ResidualContext::ResidualContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1PetscNonlinearSolver.html">PetscNonlinearSolver</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; *&#160;</td>
+          <td class="paramname"><em>solver_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1NonlinearImplicitSystem.html">NonlinearImplicitSystem</a> &amp;&#160;</td>
+          <td class="paramname"><em>sys_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PetscErrorCode&#160;</td>
+          <td class="paramname"><em>ierr_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="petsc__nonlinear__solver_8C_source.html">petsc_nonlinear_solver.C</a> 第 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00041">41</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                          :</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="classlibMesh_1_1ResidualContext.html#a2b8d644a45c17934eef178f107ceb5e4">solver</a>(solver_in),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classlibMesh_1_1ResidualContext.html#a74c68f4e6ac23bd9ab071a08773812b9">sys</a>(sys_in),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="classlibMesh_1_1ResidualContext.html#a1ade5c76c386fd5fe163c9da4580d551">ierr</a>(ierr_in)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {}</div>
+<div class="ttc" id="classlibMesh_1_1ResidualContext_html_a2b8d644a45c17934eef178f107ceb5e4"><div class="ttname"><a href="classlibMesh_1_1ResidualContext.html#a2b8d644a45c17934eef178f107ceb5e4">libMesh::ResidualContext::solver</a></div><div class="ttdeci">PetscNonlinearSolver&lt; Number &gt; * solver</div><div class="ttdef"><b>Definition:</b> <a href="petsc__nonlinear__solver_8C_source.html#l00048">petsc_nonlinear_solver.C:48</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ResidualContext_html_a74c68f4e6ac23bd9ab071a08773812b9"><div class="ttname"><a href="classlibMesh_1_1ResidualContext.html#a74c68f4e6ac23bd9ab071a08773812b9">libMesh::ResidualContext::sys</a></div><div class="ttdeci">NonlinearImplicitSystem &amp; sys</div><div class="ttdef"><b>Definition:</b> <a href="petsc__nonlinear__solver_8C_source.html#l00049">petsc_nonlinear_solver.C:49</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ResidualContext_html_a1ade5c76c386fd5fe163c9da4580d551"><div class="ttname"><a href="classlibMesh_1_1ResidualContext.html#a1ade5c76c386fd5fe163c9da4580d551">libMesh::ResidualContext::ierr</a></div><div class="ttdeci">PetscErrorCode ierr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__nonlinear__solver_8C_source.html#l00050">petsc_nonlinear_solver.C:50</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a1ade5c76c386fd5fe163c9da4580d551"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PetscErrorCode libMesh::ResidualContext::ierr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="petsc__nonlinear__solver_8C_source.html">petsc_nonlinear_solver.C</a> 第 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00050">50</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00256">libMesh::libmesh_petsc_snes_fd_residual()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00309">libMesh::libmesh_petsc_snes_mffd_residual()</a> , 以及 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00173">libMesh::libmesh_petsc_snes_residual()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b8d644a45c17934eef178f107ceb5e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1PetscNonlinearSolver.html">PetscNonlinearSolver</a>&lt;<a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&gt;* libMesh::ResidualContext::solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="petsc__nonlinear__solver_8C_source.html">petsc_nonlinear_solver.C</a> 第 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00048">48</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00256">libMesh::libmesh_petsc_snes_fd_residual()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00309">libMesh::libmesh_petsc_snes_mffd_residual()</a> , 以及 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00173">libMesh::libmesh_petsc_snes_residual()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74c68f4e6ac23bd9ab071a08773812b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1NonlinearImplicitSystem.html">NonlinearImplicitSystem</a>&amp; libMesh::ResidualContext::sys</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="petsc__nonlinear__solver_8C_source.html">petsc_nonlinear_solver.C</a> 第 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00049">49</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00256">libMesh::libmesh_petsc_snes_fd_residual()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00309">libMesh::libmesh_petsc_snes_mffd_residual()</a> , 以及 <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00173">libMesh::libmesh_petsc_snes_residual()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/src/solvers/<a class="el" href="petsc__nonlinear__solver_8C_source.html">petsc_nonlinear_solver.C</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:07 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

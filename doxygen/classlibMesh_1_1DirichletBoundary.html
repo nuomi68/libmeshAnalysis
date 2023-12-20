@@ -1,0 +1,909 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::DirichletBoundary类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classlibMesh_1_1DirichletBoundary-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::DirichletBoundary类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class allows one to associate Dirichlet boundary values with a given set of mesh boundary ids and system variable ids.  
+ <a href="classlibMesh_1_1DirichletBoundary.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3bd846b32938281b8f435acb84e4a5c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a3bd846b32938281b8f435acb84e4a5c1">DirichletBoundary</a> (std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; b_in, std::vector&lt; unsigned int &gt; variables_in, const <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; *f_in, const <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a> &gt; *g_in=nullptr)</td></tr>
+<tr class="memdesc:a3bd846b32938281b8f435acb84e4a5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a system-variable-order boundary using pointers-to-functors.  <a href="#a3bd846b32938281b8f435acb84e4a5c1">更多...</a><br/></td></tr>
+<tr class="separator:a3bd846b32938281b8f435acb84e4a5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23580f35aa2c63bb5a6dd818a9c59f05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a23580f35aa2c63bb5a6dd818a9c59f05">DirichletBoundary</a> (std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; b_in, std::vector&lt; unsigned int &gt; variables_in, const <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;f_in, <a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28">VariableIndexing</a> type=<a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28aa7648449a67b6a5c47ee46ceea290beb">SYSTEM_VARIABLE_ORDER</a>)</td></tr>
+<tr class="memdesc:a23580f35aa2c63bb5a6dd818a9c59f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a boundary from reference-to-functor.  <a href="#a23580f35aa2c63bb5a6dd818a9c59f05">更多...</a><br/></td></tr>
+<tr class="separator:a23580f35aa2c63bb5a6dd818a9c59f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e50638ac3c0eb0b031f802d86993fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#ae0e50638ac3c0eb0b031f802d86993fd">DirichletBoundary</a> (std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; b_in, std::vector&lt; unsigned int &gt; variables_in, const <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;f_in, const <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a> &gt; &amp;g_in, <a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28">VariableIndexing</a> type=<a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28aa7648449a67b6a5c47ee46ceea290beb">SYSTEM_VARIABLE_ORDER</a>)</td></tr>
+<tr class="memdesc:ae0e50638ac3c0eb0b031f802d86993fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a system-variable-order boundary from references-to-functors.  <a href="#ae0e50638ac3c0eb0b031f802d86993fd">更多...</a><br/></td></tr>
+<tr class="separator:ae0e50638ac3c0eb0b031f802d86993fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793411afdff8f7b0d7000efa20bd215d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a793411afdff8f7b0d7000efa20bd215d">DirichletBoundary</a> (std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; b_in, std::vector&lt; unsigned int &gt; variables_in, const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;f_sys_in, const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; *f_in, const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a> &gt; *g_in=nullptr)</td></tr>
+<tr class="memdesc:a793411afdff8f7b0d7000efa20bd215d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a system-variable-order boundary from pointers-to-fem-functors.  <a href="#a793411afdff8f7b0d7000efa20bd215d">更多...</a><br/></td></tr>
+<tr class="separator:a793411afdff8f7b0d7000efa20bd215d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed8265ab953bbbe901f41b30cc4c0b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a5ed8265ab953bbbe901f41b30cc4c0b7">DirichletBoundary</a> (std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; b_in, std::vector&lt; unsigned int &gt; variables_in, const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;f_sys_in, const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;f_in, <a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28">VariableIndexing</a> type=<a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28aa7648449a67b6a5c47ee46ceea290beb">SYSTEM_VARIABLE_ORDER</a>)</td></tr>
+<tr class="memdesc:a5ed8265ab953bbbe901f41b30cc4c0b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a system-variable-order boundary from reference-to-fem-functor.  <a href="#a5ed8265ab953bbbe901f41b30cc4c0b7">更多...</a><br/></td></tr>
+<tr class="separator:a5ed8265ab953bbbe901f41b30cc4c0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90297c0b4707176a28516206b761bdb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a90297c0b4707176a28516206b761bdb0">DirichletBoundary</a> (std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt; b_in, std::vector&lt; unsigned int &gt; variables_in, const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;f_sys_in, const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;f_in, const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a> &gt; &amp;g_in, <a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28">VariableIndexing</a> type=<a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28aa7648449a67b6a5c47ee46ceea290beb">SYSTEM_VARIABLE_ORDER</a>)</td></tr>
+<tr class="memdesc:a90297c0b4707176a28516206b761bdb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a system-variable-order boundary from references-to-fem-functors.  <a href="#a90297c0b4707176a28516206b761bdb0">更多...</a><br/></td></tr>
+<tr class="separator:a90297c0b4707176a28516206b761bdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52e6928f665c6e05e6b5ed261344f2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#ac52e6928f665c6e05e6b5ed261344f2a">DirichletBoundary</a> (const <a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp;dirichlet_in)</td></tr>
+<tr class="memdesc:ac52e6928f665c6e05e6b5ed261344f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment/constructor.  <a href="#ac52e6928f665c6e05e6b5ed261344f2a">更多...</a><br/></td></tr>
+<tr class="separator:ac52e6928f665c6e05e6b5ed261344f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917b0a1be61600148b4fad44bd6d22cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a917b0a1be61600148b4fad44bd6d22cf">operator=</a> (const <a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp;)</td></tr>
+<tr class="separator:a917b0a1be61600148b4fad44bd6d22cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0cc07b4b19774606f120b63be30761"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a2f0cc07b4b19774606f120b63be30761">DirichletBoundary</a> (<a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:a2f0cc07b4b19774606f120b63be30761"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is default move-assignable and move-constructible.  <a href="#a2f0cc07b4b19774606f120b63be30761">更多...</a><br/></td></tr>
+<tr class="separator:a2f0cc07b4b19774606f120b63be30761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc4c4d91bd90ee3b6602e5bf6ca099c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a1dc4c4d91bd90ee3b6602e5bf6ca099c">operator=</a> (<a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a1dc4c4d91bd90ee3b6602e5bf6ca099c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8d2df9a7f61a8f824c8ea1dabce374"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a4e8d2df9a7f61a8f824c8ea1dabce374">~DirichletBoundary</a> ()</td></tr>
+<tr class="memdesc:a4e8d2df9a7f61a8f824c8ea1dabce374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard destructor.  <a href="#a4e8d2df9a7f61a8f824c8ea1dabce374">更多...</a><br/></td></tr>
+<tr class="separator:a4e8d2df9a7f61a8f824c8ea1dabce374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9375f30ebf033684e24bc0418872d022"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">b</a></td></tr>
+<tr class="separator:a9375f30ebf033684e24bc0418872d022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3721029b918198d7cd9a5fedc5f4b4cc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a></td></tr>
+<tr class="separator:a3721029b918198d7cd9a5fedc5f4b4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd98cb3bcab3953f83f5d3ac63b00de"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a><br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a></td></tr>
+<tr class="separator:aafd98cb3bcab3953f83f5d3ac63b00de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96c5e97b79759ef9fd7537d6fe55907"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a><br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a></td></tr>
+<tr class="separator:ac96c5e97b79759ef9fd7537d6fe55907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab8b179bbd59f7de5c563df2b6d505c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a></td></tr>
+<tr class="separator:aeab8b179bbd59f7de5c563df2b6d505c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23f3e1d37576494bf43f26fcb51f632"><td class="memItemLeft" align="right" valign="top">std::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#af23f3e1d37576494bf43f26fcb51f632">g_fem</a></td></tr>
+<tr class="separator:af23f3e1d37576494bf43f26fcb51f632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2884691027af6db61ed8dbee6d16383f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classlibMesh_1_1System.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">f_system</a></td></tr>
+<tr class="separator:a2884691027af6db61ed8dbee6d16383f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ae938897afd9194236aafc2633e6b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">jacobian_tolerance</a></td></tr>
+<tr class="memdesc:ac0ae938897afd9194236aafc2633e6b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaults to zero, but can be set to a custom small negative value to try and avoid spurious zero (or negative) Jacobian values when applying Dirichlet constraints.  <a href="#ac0ae938897afd9194236aafc2633e6b0">更多...</a><br/></td></tr>
+<tr class="separator:ac0ae938897afd9194236aafc2633e6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This class allows one to associate Dirichlet boundary values with a given set of mesh boundary ids and system variable ids. </p>
+<p>Dirichlet values must be supplied as the input function "f"; when using some specialized elements, gradient values must be supplied via the input function "g".</p>
+<p>Dirichlet functions may be subclasses of <a class="el" href="classlibMesh_1_1FunctionBase.html" title="FunctionBase是一个函数对象的基类，可以在某一点（可选地包括时间）进行评估。 ">FunctionBase</a> or <a class="el" href="classlibMesh_1_1FEMFunctionBase.html" title="FEMFunctionBase是一个基类，用户可以从中派生出“函数样式”的对象，以在FEMSystem中使用。 ">FEMFunctionBase</a>; in the latter case the user must also supply a reference to the <a class="el" href="classlibMesh_1_1System.html" title="Manages consistently variables, degrees of freedom, and coefficient vectors. ">System</a> on which the <a class="el" href="classlibMesh_1_1FEMFunctionBase.html" title="FEMFunctionBase是一个基类，用户可以从中派生出“函数样式”的对象，以在FEMSystem中使用。 ">FEMFunctionBase</a> will be evaluated.</p>
+<p>Dirichlet functions are allowed to return NaN; if this is encountered, then the degree of freedom values in a patch around the location of the returned NaN will be left unconstrained. E.g. a NaN on a boundary edge in 3D would leave that edge and the two adjoining face interiors unconstrained, but would still permit the other edge and node DoFs around those faces to be constrained.</p>
+<dl class="section author"><dt>作者</dt><dd>Roy Stogner </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2012 Class for specifying Dirichlet boundary conditions as constraints. </dd></dl>
+
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00088">88</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a3bd846b32938281b8f435acb84e4a5c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::DirichletBoundary::DirichletBoundary </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt;&#160;</td>
+          <td class="paramname"><em>b_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
+          <td class="paramname"><em>variables_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; *&#160;</td>
+          <td class="paramname"><em>f_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a> &gt; *&#160;</td>
+          <td class="paramname"><em>g_in</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for a system-variable-order boundary using pointers-to-functors. </p>
+
+<p>在文件 <a class="el" href="dirichlet__boundary_8C_source.html">dirichlet_boundary.C</a> 第 <a class="el" href="dirichlet__boundary_8C_source.html#l00036">36</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dirichlet__boundaries_8h_source.html#l00183">f</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00184">g</a> , 以及 <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                       :</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">b</a>(std::move(b_in)),</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>(std::move(variables_in)),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a>(f_in ? f_in-&gt;<a class="code" href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">clone</a>() : <span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a>(g_in ? g_in-&gt;<a class="code" href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">clone</a>() : <span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">f_system</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">jacobian_tolerance</a>(0.)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(<a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a>-&gt;init();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a>-&gt;init();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_aafd98cb3bcab3953f83f5d3ac63b00de"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">libMesh::DirichletBoundary::f</a></div><div class="ttdeci">std::unique_ptr&lt; FunctionBase&lt; Number &gt; &gt; f</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00183">dirichlet_boundaries.h:183</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_ac0ae938897afd9194236aafc2633e6b0"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">libMesh::DirichletBoundary::jacobian_tolerance</a></div><div class="ttdeci">Real jacobian_tolerance</div><div class="ttdoc">Defaults to zero, but can be set to a custom small negative value to try and avoid spurious zero (or ...</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00203">dirichlet_boundaries.h:203</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a3721029b918198d7cd9a5fedc5f4b4cc"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">libMesh::DirichletBoundary::variables</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; variables</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00181">dirichlet_boundaries.h:181</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a2884691027af6db61ed8dbee6d16383f"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">libMesh::DirichletBoundary::f_system</a></div><div class="ttdeci">const System * f_system</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00189">dirichlet_boundaries.h:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_ac96c5e97b79759ef9fd7537d6fe55907"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">libMesh::DirichletBoundary::g</a></div><div class="ttdeci">std::unique_ptr&lt; FunctionBase&lt; Gradient &gt; &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00184">dirichlet_boundaries.h:184</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FunctionBase_html_a1bfcfaf5b067f6c1b63b4d14d83078ef"><div class="ttname"><a href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">libMesh::FunctionBase::clone</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FunctionBase&lt; Output &gt; &gt; clone() const =0</div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a9375f30ebf033684e24bc0418872d022"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">libMesh::DirichletBoundary::b</a></div><div class="ttdeci">std::set&lt; boundary_id_type &gt; b</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00180">dirichlet_boundaries.h:180</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a23580f35aa2c63bb5a6dd818a9c59f05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::DirichletBoundary::DirichletBoundary </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt;&#160;</td>
+          <td class="paramname"><em>b_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
+          <td class="paramname"><em>variables_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>f_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28">VariableIndexing</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28aa7648449a67b6a5c47ee46ceea290beb">SYSTEM_VARIABLE_ORDER</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for a boundary from reference-to-functor. </p>
+<p>Defaults to system variable indexing for backwards compatibility, but most users will prefer local indexing. </p>
+
+<p>在文件 <a class="el" href="dirichlet__boundary_8C_source.html">dirichlet_boundary.C</a> 第 <a class="el" href="dirichlet__boundary_8C_source.html#l00055">55</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">libMesh::FunctionBase&lt; Output &gt;::clone()</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00183">f</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00062">libMesh::LOCAL_VARIABLE_ORDER</a> , 以及 <a class="el" href="dirichlet__boundaries_8h_source.html#l00181">variables</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                         :</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">b</a>(std::move(b_in)),</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>(std::move(variables_in)),</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">f_system</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">jacobian_tolerance</a>(0.)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">if</span> (type == <a class="code" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7">LOCAL_VARIABLE_ORDER</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keyword">auto</span> c = std::make_unique&lt;CompositeFunction&lt;Number&gt;&gt;();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      c-&gt;attach_subfunction(f_in, <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a> = std::move(c);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a> = f_in.<a class="code" href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">clone</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a>-&gt;init();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_aafd98cb3bcab3953f83f5d3ac63b00de"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">libMesh::DirichletBoundary::f</a></div><div class="ttdeci">std::unique_ptr&lt; FunctionBase&lt; Number &gt; &gt; f</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00183">dirichlet_boundaries.h:183</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_ac0ae938897afd9194236aafc2633e6b0"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">libMesh::DirichletBoundary::jacobian_tolerance</a></div><div class="ttdeci">Real jacobian_tolerance</div><div class="ttdoc">Defaults to zero, but can be set to a custom small negative value to try and avoid spurious zero (or ...</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00203">dirichlet_boundaries.h:203</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7"><div class="ttname"><a href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7">libMesh::LOCAL_VARIABLE_ORDER</a></div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00062">dirichlet_boundaries.h:62</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a3721029b918198d7cd9a5fedc5f4b4cc"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">libMesh::DirichletBoundary::variables</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; variables</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00181">dirichlet_boundaries.h:181</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a2884691027af6db61ed8dbee6d16383f"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">libMesh::DirichletBoundary::f_system</a></div><div class="ttdeci">const System * f_system</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00189">dirichlet_boundaries.h:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FunctionBase_html_a1bfcfaf5b067f6c1b63b4d14d83078ef"><div class="ttname"><a href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">libMesh::FunctionBase::clone</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FunctionBase&lt; Output &gt; &gt; clone() const =0</div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a9375f30ebf033684e24bc0418872d022"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">libMesh::DirichletBoundary::b</a></div><div class="ttdeci">std::set&lt; boundary_id_type &gt; b</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00180">dirichlet_boundaries.h:180</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae0e50638ac3c0eb0b031f802d86993fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::DirichletBoundary::DirichletBoundary </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt;&#160;</td>
+          <td class="paramname"><em>b_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
+          <td class="paramname"><em>variables_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>f_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>g_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28">VariableIndexing</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28aa7648449a67b6a5c47ee46ceea290beb">SYSTEM_VARIABLE_ORDER</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for a system-variable-order boundary from references-to-functors. </p>
+<p>Defaults to system variable indexing for backwards compatibility, but most users will prefer local indexing. </p>
+
+<p>在文件 <a class="el" href="dirichlet__boundary_8C_source.html">dirichlet_boundary.C</a> 第 <a class="el" href="dirichlet__boundary_8C_source.html#l00078">78</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">libMesh::FunctionBase&lt; Output &gt;::clone()</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00183">f</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00184">g</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00062">libMesh::LOCAL_VARIABLE_ORDER</a> , 以及 <a class="el" href="dirichlet__boundaries_8h_source.html#l00181">variables</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                         :</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">b</a>(std::move(b_in)),</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>(std::move(variables_in)),</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">f_system</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">jacobian_tolerance</a>(0.)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">if</span> (type == <a class="code" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7">LOCAL_VARIABLE_ORDER</a>)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">auto</span> cf = std::make_unique&lt;CompositeFunction&lt;Number&gt;&gt;();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      cf-&gt;attach_subfunction(f_in, <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a> = std::move(cf);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">auto</span> cg = std::make_unique&lt;CompositeFunction&lt;Gradient&gt;&gt;();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      cg-&gt;attach_subfunction(g_in, <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a> = std::move(cg);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a> = f_in.<a class="code" href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">clone</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a> = g_in.<a class="code" href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">clone</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a>-&gt;init();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a>-&gt;init();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_aafd98cb3bcab3953f83f5d3ac63b00de"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">libMesh::DirichletBoundary::f</a></div><div class="ttdeci">std::unique_ptr&lt; FunctionBase&lt; Number &gt; &gt; f</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00183">dirichlet_boundaries.h:183</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_ac0ae938897afd9194236aafc2633e6b0"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">libMesh::DirichletBoundary::jacobian_tolerance</a></div><div class="ttdeci">Real jacobian_tolerance</div><div class="ttdoc">Defaults to zero, but can be set to a custom small negative value to try and avoid spurious zero (or ...</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00203">dirichlet_boundaries.h:203</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7"><div class="ttname"><a href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7">libMesh::LOCAL_VARIABLE_ORDER</a></div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00062">dirichlet_boundaries.h:62</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a3721029b918198d7cd9a5fedc5f4b4cc"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">libMesh::DirichletBoundary::variables</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; variables</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00181">dirichlet_boundaries.h:181</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a2884691027af6db61ed8dbee6d16383f"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">libMesh::DirichletBoundary::f_system</a></div><div class="ttdeci">const System * f_system</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00189">dirichlet_boundaries.h:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_ac96c5e97b79759ef9fd7537d6fe55907"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">libMesh::DirichletBoundary::g</a></div><div class="ttdeci">std::unique_ptr&lt; FunctionBase&lt; Gradient &gt; &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00184">dirichlet_boundaries.h:184</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FunctionBase_html_a1bfcfaf5b067f6c1b63b4d14d83078ef"><div class="ttname"><a href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">libMesh::FunctionBase::clone</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FunctionBase&lt; Output &gt; &gt; clone() const =0</div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a9375f30ebf033684e24bc0418872d022"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">libMesh::DirichletBoundary::b</a></div><div class="ttdeci">std::set&lt; boundary_id_type &gt; b</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00180">dirichlet_boundaries.h:180</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a793411afdff8f7b0d7000efa20bd215d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::DirichletBoundary::DirichletBoundary </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt;&#160;</td>
+          <td class="paramname"><em>b_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
+          <td class="paramname"><em>variables_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>f_sys_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; *&#160;</td>
+          <td class="paramname"><em>f_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a> &gt; *&#160;</td>
+          <td class="paramname"><em>g_in</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for a system-variable-order boundary from pointers-to-fem-functors. </p>
+
+<p>在文件 <a class="el" href="dirichlet__boundary_8C_source.html">dirichlet_boundary.C</a> 第 <a class="el" href="dirichlet__boundary_8C_source.html#l00110">110</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dirichlet__boundaries_8h_source.html#l00186">f_fem</a> , 以及 <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                          :</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">b</a>(std::move(b_in)),</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>(std::move(variables_in)),</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a>(f_in ? f_in-&gt;clone() : <span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#af23f3e1d37576494bf43f26fcb51f632">g_fem</a>(g_in ? g_in-&gt;clone() : <span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">f_system</a>(&amp;f_sys_in),</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">jacobian_tolerance</a>(0.)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(<a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_af23f3e1d37576494bf43f26fcb51f632"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#af23f3e1d37576494bf43f26fcb51f632">libMesh::DirichletBoundary::g_fem</a></div><div class="ttdeci">std::unique_ptr&lt; FEMFunctionBase&lt; Gradient &gt; &gt; g_fem</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00187">dirichlet_boundaries.h:187</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_ac0ae938897afd9194236aafc2633e6b0"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">libMesh::DirichletBoundary::jacobian_tolerance</a></div><div class="ttdeci">Real jacobian_tolerance</div><div class="ttdoc">Defaults to zero, but can be set to a custom small negative value to try and avoid spurious zero (or ...</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00203">dirichlet_boundaries.h:203</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a3721029b918198d7cd9a5fedc5f4b4cc"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">libMesh::DirichletBoundary::variables</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; variables</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00181">dirichlet_boundaries.h:181</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_aeab8b179bbd59f7de5c563df2b6d505c"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">libMesh::DirichletBoundary::f_fem</a></div><div class="ttdeci">std::unique_ptr&lt; FEMFunctionBase&lt; Number &gt; &gt; f_fem</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00186">dirichlet_boundaries.h:186</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a2884691027af6db61ed8dbee6d16383f"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">libMesh::DirichletBoundary::f_system</a></div><div class="ttdeci">const System * f_system</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00189">dirichlet_boundaries.h:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a9375f30ebf033684e24bc0418872d022"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">libMesh::DirichletBoundary::b</a></div><div class="ttdeci">std::set&lt; boundary_id_type &gt; b</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00180">dirichlet_boundaries.h:180</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5ed8265ab953bbbe901f41b30cc4c0b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::DirichletBoundary::DirichletBoundary </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt;&#160;</td>
+          <td class="paramname"><em>b_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
+          <td class="paramname"><em>variables_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>f_sys_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>f_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28">VariableIndexing</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28aa7648449a67b6a5c47ee46ceea290beb">SYSTEM_VARIABLE_ORDER</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for a system-variable-order boundary from reference-to-fem-functor. </p>
+<p>Defaults to system variable indexing for backwards compatibility, but most users will prefer local indexing. </p>
+
+<p>在文件 <a class="el" href="dirichlet__boundary_8C_source.html">dirichlet_boundary.C</a> 第 <a class="el" href="dirichlet__boundary_8C_source.html#l00127">127</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classlibMesh_1_1FEMFunctionBase.html#a6c126c89459dd3bc502b22a24164b4e5">libMesh::FEMFunctionBase&lt; Output &gt;::clone()</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00186">f_fem</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00062">libMesh::LOCAL_VARIABLE_ORDER</a> , 以及 <a class="el" href="dirichlet__boundaries_8h_source.html#l00181">variables</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                         :</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">b</a>(std::move(b_in)),</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>(std::move(variables_in)),</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">f_system</a>(&amp;f_sys_in),</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">jacobian_tolerance</a>(0.)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordflow">if</span> (type == <a class="code" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7">LOCAL_VARIABLE_ORDER</a>)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="keyword">auto</span> c = std::make_unique&lt;CompositeFEMFunction&lt;Number&gt;&gt;();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      c-&gt;attach_subfunction(f_in, <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a> = std::move(c);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a> = f_in.clone();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_ac0ae938897afd9194236aafc2633e6b0"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">libMesh::DirichletBoundary::jacobian_tolerance</a></div><div class="ttdeci">Real jacobian_tolerance</div><div class="ttdoc">Defaults to zero, but can be set to a custom small negative value to try and avoid spurious zero (or ...</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00203">dirichlet_boundaries.h:203</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7"><div class="ttname"><a href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7">libMesh::LOCAL_VARIABLE_ORDER</a></div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00062">dirichlet_boundaries.h:62</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a3721029b918198d7cd9a5fedc5f4b4cc"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">libMesh::DirichletBoundary::variables</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; variables</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00181">dirichlet_boundaries.h:181</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_aeab8b179bbd59f7de5c563df2b6d505c"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">libMesh::DirichletBoundary::f_fem</a></div><div class="ttdeci">std::unique_ptr&lt; FEMFunctionBase&lt; Number &gt; &gt; f_fem</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00186">dirichlet_boundaries.h:186</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a2884691027af6db61ed8dbee6d16383f"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">libMesh::DirichletBoundary::f_system</a></div><div class="ttdeci">const System * f_system</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00189">dirichlet_boundaries.h:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a9375f30ebf033684e24bc0418872d022"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">libMesh::DirichletBoundary::b</a></div><div class="ttdeci">std::set&lt; boundary_id_type &gt; b</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00180">dirichlet_boundaries.h:180</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a90297c0b4707176a28516206b761bdb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::DirichletBoundary::DirichletBoundary </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; <a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a> &gt;&#160;</td>
+          <td class="paramname"><em>b_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; unsigned int &gt;&#160;</td>
+          <td class="paramname"><em>variables_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td>
+          <td class="paramname"><em>f_sys_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>f_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; <a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>g_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28">VariableIndexing</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28aa7648449a67b6a5c47ee46ceea290beb">SYSTEM_VARIABLE_ORDER</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for a system-variable-order boundary from references-to-fem-functors. </p>
+<p>Defaults to system variable indexing for backwards compatibility, but most users will prefer local indexing. </p>
+
+<p>在文件 <a class="el" href="dirichlet__boundary_8C_source.html">dirichlet_boundary.C</a> 第 <a class="el" href="dirichlet__boundary_8C_source.html#l00149">149</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classlibMesh_1_1FEMFunctionBase.html#a6c126c89459dd3bc502b22a24164b4e5">libMesh::FEMFunctionBase&lt; Output &gt;::clone()</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00186">f_fem</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00187">g_fem</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00062">libMesh::LOCAL_VARIABLE_ORDER</a> , 以及 <a class="el" href="dirichlet__boundaries_8h_source.html#l00181">variables</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                         :</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">b</a>(std::move(b_in)),</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>(std::move(variables_in)),</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">f_system</a>(&amp;f_sys_in),</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">jacobian_tolerance</a>(0.)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordflow">if</span> (type == <a class="code" href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7">LOCAL_VARIABLE_ORDER</a>)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      <span class="keyword">auto</span> cf = std::make_unique&lt;CompositeFEMFunction&lt;Number&gt;&gt;();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      cf-&gt;attach_subfunction(f_in, <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a> = std::move(cf);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      <span class="keyword">auto</span> cg = std::make_unique&lt;CompositeFEMFunction&lt;Gradient&gt;&gt;();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      cg-&gt;attach_subfunction(g_in, <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <a class="code" href="classlibMesh_1_1DirichletBoundary.html#af23f3e1d37576494bf43f26fcb51f632">g_fem</a> = std::move(cg);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a> = f_in.clone();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <a class="code" href="classlibMesh_1_1DirichletBoundary.html#af23f3e1d37576494bf43f26fcb51f632">g_fem</a> = g_in.clone();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_af23f3e1d37576494bf43f26fcb51f632"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#af23f3e1d37576494bf43f26fcb51f632">libMesh::DirichletBoundary::g_fem</a></div><div class="ttdeci">std::unique_ptr&lt; FEMFunctionBase&lt; Gradient &gt; &gt; g_fem</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00187">dirichlet_boundaries.h:187</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_ac0ae938897afd9194236aafc2633e6b0"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">libMesh::DirichletBoundary::jacobian_tolerance</a></div><div class="ttdeci">Real jacobian_tolerance</div><div class="ttdoc">Defaults to zero, but can be set to a custom small negative value to try and avoid spurious zero (or ...</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00203">dirichlet_boundaries.h:203</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7"><div class="ttname"><a href="namespacelibMesh.html#a20cd22837e2ed8d9a3ab07971357be28a8c9e212a39507fe3bf88de7a13099cd7">libMesh::LOCAL_VARIABLE_ORDER</a></div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00062">dirichlet_boundaries.h:62</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a3721029b918198d7cd9a5fedc5f4b4cc"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">libMesh::DirichletBoundary::variables</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; variables</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00181">dirichlet_boundaries.h:181</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_aeab8b179bbd59f7de5c563df2b6d505c"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">libMesh::DirichletBoundary::f_fem</a></div><div class="ttdeci">std::unique_ptr&lt; FEMFunctionBase&lt; Number &gt; &gt; f_fem</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00186">dirichlet_boundaries.h:186</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a2884691027af6db61ed8dbee6d16383f"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">libMesh::DirichletBoundary::f_system</a></div><div class="ttdeci">const System * f_system</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00189">dirichlet_boundaries.h:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a9375f30ebf033684e24bc0418872d022"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">libMesh::DirichletBoundary::b</a></div><div class="ttdeci">std::set&lt; boundary_id_type &gt; b</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00180">dirichlet_boundaries.h:180</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac52e6928f665c6e05e6b5ed261344f2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::DirichletBoundary::DirichletBoundary </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp;&#160;</td>
+          <td class="paramname"><em>dirichlet_in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy assignment/constructor. </p>
+<p>Deep copies (clones) functors; shallow copies any <a class="el" href="classlibMesh_1_1System.html" title="Manages consistently variables, degrees of freedom, and coefficient vectors. ">System</a> reference </p>
+
+<p>在文件 <a class="el" href="dirichlet__boundary_8C_source.html">dirichlet_boundary.C</a> 第 <a class="el" href="dirichlet__boundary_8C_source.html#l00179">179</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dirichlet__boundaries_8h_source.html#l00183">f</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00186">f_fem</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00189">f_system</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00184">g</a>, <a class="el" href="dirichlet__boundaries_8h_source.html#l00187">g_fem</a> , 以及 <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                                                  :</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">b</a>(d_in.b),</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">variables</a>(d_in.variables),</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a>(d_in.f ? d_in.f-&gt;clone() : <span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a>(d_in.g ? d_in.g-&gt;clone() : <span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a>(d_in.f_fem ? d_in.f_fem-&gt;clone() : <span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#af23f3e1d37576494bf43f26fcb51f632">g_fem</a>(d_in.g_fem ? d_in.g_fem-&gt;clone() : <span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">f_system</a>(d_in.f_system),</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">jacobian_tolerance</a>(d_in.jacobian_tolerance)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(<a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a> || <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a>);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(!(<a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a> &amp;&amp; <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a>));</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(!(<a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a> &amp;&amp; <a class="code" href="classlibMesh_1_1DirichletBoundary.html#af23f3e1d37576494bf43f26fcb51f632">g_fem</a>));</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(!(<a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a> &amp;&amp; <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a>));</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(!(<a class="code" href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">f_fem</a> &amp;&amp; !<a class="code" href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">f_system</a>));</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a>)</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">f</a>-&gt;init();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a>)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">g</a>-&gt;init();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_af23f3e1d37576494bf43f26fcb51f632"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#af23f3e1d37576494bf43f26fcb51f632">libMesh::DirichletBoundary::g_fem</a></div><div class="ttdeci">std::unique_ptr&lt; FEMFunctionBase&lt; Gradient &gt; &gt; g_fem</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00187">dirichlet_boundaries.h:187</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_aafd98cb3bcab3953f83f5d3ac63b00de"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#aafd98cb3bcab3953f83f5d3ac63b00de">libMesh::DirichletBoundary::f</a></div><div class="ttdeci">std::unique_ptr&lt; FunctionBase&lt; Number &gt; &gt; f</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00183">dirichlet_boundaries.h:183</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_ac0ae938897afd9194236aafc2633e6b0"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#ac0ae938897afd9194236aafc2633e6b0">libMesh::DirichletBoundary::jacobian_tolerance</a></div><div class="ttdeci">Real jacobian_tolerance</div><div class="ttdoc">Defaults to zero, but can be set to a custom small negative value to try and avoid spurious zero (or ...</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00203">dirichlet_boundaries.h:203</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a3721029b918198d7cd9a5fedc5f4b4cc"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a3721029b918198d7cd9a5fedc5f4b4cc">libMesh::DirichletBoundary::variables</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; variables</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00181">dirichlet_boundaries.h:181</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_aeab8b179bbd59f7de5c563df2b6d505c"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#aeab8b179bbd59f7de5c563df2b6d505c">libMesh::DirichletBoundary::f_fem</a></div><div class="ttdeci">std::unique_ptr&lt; FEMFunctionBase&lt; Number &gt; &gt; f_fem</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00186">dirichlet_boundaries.h:186</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a2884691027af6db61ed8dbee6d16383f"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a2884691027af6db61ed8dbee6d16383f">libMesh::DirichletBoundary::f_system</a></div><div class="ttdeci">const System * f_system</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00189">dirichlet_boundaries.h:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_ac96c5e97b79759ef9fd7537d6fe55907"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#ac96c5e97b79759ef9fd7537d6fe55907">libMesh::DirichletBoundary::g</a></div><div class="ttdeci">std::unique_ptr&lt; FunctionBase&lt; Gradient &gt; &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00184">dirichlet_boundaries.h:184</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a9375f30ebf033684e24bc0418872d022"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a9375f30ebf033684e24bc0418872d022">libMesh::DirichletBoundary::b</a></div><div class="ttdeci">std::set&lt; boundary_id_type &gt; b</div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundaries_8h_source.html#l00180">dirichlet_boundaries.h:180</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2f0cc07b4b19774606f120b63be30761"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::DirichletBoundary::DirichletBoundary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This class is default move-assignable and move-constructible. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4e8d2df9a7f61a8f824c8ea1dabce374"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::DirichletBoundary::~DirichletBoundary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Standard destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a917b0a1be61600148b4fad44bd6d22cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp; libMesh::DirichletBoundary::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dirichlet__boundary_8C_source.html">dirichlet_boundary.C</a> 第 <a class="el" href="dirichlet__boundary_8C_source.html#l00201">201</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="comment">// Implementation in terms of the copy constructor to avoid code duplication.</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="classlibMesh_1_1DirichletBoundary.html#a3bd846b32938281b8f435acb84e4a5c1">DirichletBoundary</a> tmp(rhs);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  std::swap(tmp, *<span class="keyword">this</span>); <span class="comment">// class must be &quot;MoveAssignable&quot; and &quot;MoveConstructible&quot; for std::swap to work.</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DirichletBoundary_html_a3bd846b32938281b8f435acb84e4a5c1"><div class="ttname"><a href="classlibMesh_1_1DirichletBoundary.html#a3bd846b32938281b8f435acb84e4a5c1">libMesh::DirichletBoundary::DirichletBoundary</a></div><div class="ttdeci">DirichletBoundary(std::set&lt; boundary_id_type &gt; b_in, std::vector&lt; unsigned int &gt; variables_in, const FunctionBase&lt; Number &gt; *f_in, const FunctionBase&lt; Gradient &gt; *g_in=nullptr)</div><div class="ttdoc">Constructor for a system-variable-order boundary using pointers-to-functors. </div><div class="ttdef"><b>Definition:</b> <a href="dirichlet__boundary_8C_source.html#l00036">dirichlet_boundary.C:36</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1dc4c4d91bd90ee3b6602e5bf6ca099c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a>&amp; libMesh::DirichletBoundary::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DirichletBoundary.html">DirichletBoundary</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a9375f30ebf033684e24bc0418872d022"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="namespacelibMesh.html#a3f4d8a52b5ef6ff6156ca209e12b5564">boundary_id_type</a>&gt; libMesh::DirichletBoundary::b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00180">180</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dof__map__constraints_8C_source.html#l05532">libMesh::DofMap::check_dirichlet_bcid_consistency()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l05513">libMesh::DofMap::remove_adjoint_dirichlet_boundary()</a> , 以及 <a class="el" href="dof__map__constraints_8C_source.html#l05499">libMesh::DofMap::remove_dirichlet_boundary()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aafd98cb3bcab3953f83f5d3ac63b00de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt;<a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&gt; &gt; libMesh::DirichletBoundary::f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00183">183</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dirichlet__boundary_8C_source.html#l00036">DirichletBoundary()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeab8b179bbd59f7de5c563df2b6d505c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt;<a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&gt; &gt; libMesh::DirichletBoundary::f_fem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00186">186</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dirichlet__boundary_8C_source.html#l00110">DirichletBoundary()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2884691027af6db61ed8dbee6d16383f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classlibMesh_1_1System.html">System</a>* libMesh::DirichletBoundary::f_system</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00189">189</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dirichlet__boundary_8C_source.html#l00179">DirichletBoundary()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac96c5e97b79759ef9fd7537d6fe55907"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt;<a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a>&gt; &gt; libMesh::DirichletBoundary::g</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00184">184</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dirichlet__boundary_8C_source.html#l00036">DirichletBoundary()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af23f3e1d37576494bf43f26fcb51f632"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt;<a class="el" href="namespacelibMesh.html#a4b46bf2d57c1815051b6684921702ef2">Gradient</a>&gt; &gt; libMesh::DirichletBoundary::g_fem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00187">187</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dirichlet__boundary_8C_source.html#l00149">DirichletBoundary()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0ae938897afd9194236aafc2633e6b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::DirichletBoundary::jacobian_tolerance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defaults to zero, but can be set to a custom small negative value to try and avoid spurious zero (or negative) Jacobian values when applying Dirichlet constraints. </p>
+<p>This can be useful in various different situations, for example: 1.) When specifying DirichletBCs on poorly-shaped elements. 2.) When degenerate Hexahedra are used in place of Prisms for convenience. 3.) On elements (e.g. Pyramids) which always have a zero Jacobian at the "apex" node. In theory there's nothing preventing someone from specifying DirichletBCs in such cases; setting this tolerance to a small negative value makes this possible in practice. </p>
+
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00203">203</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3721029b918198d7cd9a5fedc5f4b4cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;unsigned int&gt; libMesh::DirichletBoundary::variables</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00181">181</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dirichlet__boundary_8C_source.html#l00055">DirichletBoundary()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l05513">libMesh::DofMap::remove_adjoint_dirichlet_boundary()</a> , 以及 <a class="el" href="dof__map__constraints_8C_source.html#l05499">libMesh::DofMap::remove_dirichlet_boundary()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/base/<a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a></li>
+<li>/home/lwz/libmesh/src/base/<a class="el" href="dirichlet__boundary_8C_source.html">dirichlet_boundary.C</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:07 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

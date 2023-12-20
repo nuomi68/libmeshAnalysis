@@ -1,0 +1,1420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectVertices结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a></li><li class="navelem"><a class="el" href="structlibMesh_1_1GenericProjector_1_1ProjectVertices.html">ProjectVertices</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="structlibMesh_1_1GenericProjector_1_1ProjectVertices-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectVertices结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="generic__projector_8h_source.html">generic_projector.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectVertices 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a81dd991a9916b70ffdc7a5dd79ccd9da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1ProjectVertices.html#a81dd991a9916b70ffdc7a5dd79ccd9da">ProjectVertices</a> (<a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a> &amp;p)</td></tr>
+<tr class="separator:a81dd991a9916b70ffdc7a5dd79ccd9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ac7c02dc64c59bedd05a091776381a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1ProjectVertices.html#a04ac7c02dc64c59bedd05a091776381a">ProjectVertices</a> (<a class="el" href="structlibMesh_1_1GenericProjector_1_1ProjectVertices.html">ProjectVertices</a> &amp;p_v, <a class="el" href="classlibMesh_1_1Threads_1_1split.html">Threads::split</a>)</td></tr>
+<tr class="separator:a04ac7c02dc64c59bedd05a091776381a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d4f4062e27f6a7718d16fdbd053a8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1ProjectVertices.html#aa3d4f4062e27f6a7718d16fdbd053a8f">operator()</a> (const <a class="el" href="classlibMesh_1_1GenericProjector.html#a7813e22d0aa05e1f50b7b8e961c2e6f8">node_range</a> &amp;range)</td></tr>
+<tr class="separator:aa3d4f4062e27f6a7718d16fdbd053a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba27a3ea4c45c6f4f92edac6acbd5ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a5ba27a3ea4c45c6f4f92edac6acbd5ff">find_dofs_to_send</a> (const <a class="el" href="classlibMesh_1_1Node.html">Node</a> &amp;node, const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> &amp;elem, unsigned short node_num, const <a class="el" href="classlibMesh_1_1GenericProjector.html#ac16cd62252da54e6b556c318d6428f68">var_set</a> &amp;vars)</td></tr>
+<tr class="separator:a5ba27a3ea4c45c6f4f92edac6acbd5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766d4b32de4ae0a2d693081da3d0b431"><td class="memTemplParams" colspan="2">template&lt;typename InsertInput , typename std::enable_if&lt; std::is_same&lt; typename ProjectionAction::InsertInput, InsertInput &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a766d4b32de4ae0a2d693081da3d0b431"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a> (<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> id, const InsertInput &amp;val, <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> pid)</td></tr>
+<tr class="separator:a766d4b32de4ae0a2d693081da3d0b431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766d4b32de4ae0a2d693081da3d0b431"><td class="memTemplParams" colspan="2">template&lt;typename InsertInput , typename std::enable_if&lt; !std::is_same&lt; typename ProjectionAction::InsertInput, InsertInput &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a766d4b32de4ae0a2d693081da3d0b431"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a> (<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> id, const InsertInput &amp;val, <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> pid)</td></tr>
+<tr class="separator:a766d4b32de4ae0a2d693081da3d0b431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2efad0cd72887e5f1a8848c4839edb"><td class="memTemplParams" colspan="2">template&lt;typename InsertInput , typename std::enable_if&lt; std::is_same&lt; typename ProjectionAction::InsertInput, InsertInput &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a5c2efad0cd72887e5f1a8848c4839edb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a5c2efad0cd72887e5f1a8848c4839edb">insert_ids</a> (const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;ids, const std::vector&lt; InsertInput &gt; &amp;vals, <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> pid)</td></tr>
+<tr class="separator:a5c2efad0cd72887e5f1a8848c4839edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2efad0cd72887e5f1a8848c4839edb"><td class="memTemplParams" colspan="2">template&lt;typename InsertInput , typename std::enable_if&lt; !std::is_same&lt; typename ProjectionAction::InsertInput, InsertInput &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a5c2efad0cd72887e5f1a8848c4839edb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a5c2efad0cd72887e5f1a8848c4839edb">insert_ids</a> (const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;ids, const std::vector&lt; InsertInput &gt; &amp;vals, <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> pid)</td></tr>
+<tr class="separator:a5c2efad0cd72887e5f1a8848c4839edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec927721cf55c26cabf9152a379b13bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#aec927721cf55c26cabf9152a379b13bf">join</a> (const <a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html">SubFunctor</a> &amp;other)</td></tr>
+<tr class="separator:aec927721cf55c26cabf9152a379b13bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a0ee337b55bf1d81fe587512a4053282c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a0ee337b55bf1d81fe587512a4053282c">projector</a></td></tr>
+<tr class="separator:a0ee337b55bf1d81fe587512a4053282c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773154697a2a38617b72e1852ff69d78"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::pair<br class="typebreak"/>
+&lt; typename <br class="typebreak"/>
+FFunctor::ValuePushType, <br class="typebreak"/>
+<a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a773154697a2a38617b72e1852ff69d78">new_ids_to_push</a></td></tr>
+<tr class="separator:a773154697a2a38617b72e1852ff69d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c581befdb8b373600d368c2e2613512"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, typename <br class="typebreak"/>
+FFunctor::ValuePushType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a1c581befdb8b373600d368c2e2613512">new_ids_to_save</a></td></tr>
+<tr class="separator:a1c581befdb8b373600d368c2e2613512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a53d2cadbd7b1b12de206440a629f2fb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#a53d2cadbd7b1b12de206440a629f2fb6">construct_projection</a> (const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;dof_indices_var, const std::vector&lt; unsigned int &gt; &amp;involved_dofs, unsigned int var_component, const <a class="el" href="classlibMesh_1_1Node.html">Node</a> *node, const <a class="el" href="classlibMesh_1_1FEGenericBase.html">FEGenericBase</a>&lt; typename FFunctor::RealType &gt; &amp;fe)</td></tr>
+<tr class="separator:a53d2cadbd7b1b12de206440a629f2fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:abe4b9a2aa547dac425b3d875a17b1f09"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; GFunctor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a></td></tr>
+<tr class="separator:abe4b9a2aa547dac425b3d875a17b1f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6acf500d9a31967020455884bd36744"><td class="memItemLeft" align="right" valign="top">ProjectionAction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab6acf500d9a31967020455884bd36744">action</a></td></tr>
+<tr class="separator:ab6acf500d9a31967020455884bd36744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e6920fc141a5ffce75f3ac092d44ac"><td class="memItemLeft" align="right" valign="top">FFunctor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab7e6920fc141a5ffce75f3ac092d44ac">f</a></td></tr>
+<tr class="separator:ab7e6920fc141a5ffce75f3ac092d44ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48ececdc40897f8b22c84b7085a65cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a></td></tr>
+<tr class="separator:ab48ececdc40897f8b22c84b7085a65cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d1aad42d30041c89d824ca26066d0b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">FEContinuity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ac0d1aad42d30041c89d824ca26066d0b">conts</a></td></tr>
+<tr class="separator:ac0d1aad42d30041c89d824ca26066d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f23ca6e47b3bb05f03dd2d9dbec7d32"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacelibMesh.html#a354ba8d7698a213772f215eab6b08fc1">FEFieldType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a4f23ca6e47b3bb05f03dd2d9dbec7d32">field_types</a></td></tr>
+<tr class="separator:a4f23ca6e47b3bb05f03dd2d9dbec7d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bb222855ab320fb5e55a76d7160e53"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classlibMesh_1_1System.html">System</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a></td></tr>
+<tr class="separator:af4bb222855ab320fb5e55a76d7160e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename FFunctor, typename GFunctor, typename FValue, typename ProjectionAction&gt;<br/>
+struct libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectVertices</h3>
+
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00294">294</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a81dd991a9916b70ffdc7a5dd79ccd9da"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectVertices::ProjectVertices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00295">295</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;: <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#ae5c731d6bd5368c28c8dafa19f61dcf5">SubProjector</a>(p) {}</div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubProjector_html_ae5c731d6bd5368c28c8dafa19f61dcf5"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#ae5c731d6bd5368c28c8dafa19f61dcf5">libMesh::GenericProjector::SubProjector::SubProjector</a></div><div class="ttdeci">SubProjector(GenericProjector &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l01344">generic_projector.h:1344</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a04ac7c02dc64c59bedd05a091776381a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectVertices::ProjectVertices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structlibMesh_1_1GenericProjector_1_1ProjectVertices.html">ProjectVertices</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1Threads_1_1split.html">Threads::split</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00297">297</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;: <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#ae5c731d6bd5368c28c8dafa19f61dcf5">SubProjector</a>(p_v.projector) {}</div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubProjector_html_ae5c731d6bd5368c28c8dafa19f61dcf5"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#ae5c731d6bd5368c28c8dafa19f61dcf5">libMesh::GenericProjector::SubProjector::SubProjector</a></div><div class="ttdeci">SubProjector(GenericProjector &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l01344">generic_projector.h:1344</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a53d2cadbd7b1b12de206440a629f2fb6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubProjector::construct_projection </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dof_indices_var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>involved_dofs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>var_component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1FEGenericBase.html">FEGenericBase</a>&lt; typename FFunctor::RealType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l02988">2988</a> 行定义.</p>
+
+<p>参考 <a class="el" href="enum__fe__family_8h_source.html#l00084">libMesh::C_ONE</a>, <a class="el" href="dense__matrix__impl_8h_source.html#l00804">libMesh::DenseMatrix&lt; T &gt;::cholesky_solve()</a>, <a class="el" href="classlibMesh_1_1FEAbstract.html#a71e43b1681f6e441ff34ba2d5c9bc066">libMesh::FEAbstract::get_continuity()</a>, <a class="el" href="fe__base_8h_source.html#l00230">libMesh::FEGenericBase&lt; T &gt;::get_dphi()</a>, <a class="el" href="fe__abstract_8h_source.html#l00295">libMesh::FEAbstract::get_JxW()</a>, <a class="el" href="fe__base_8h_source.html#l00207">libMesh::FEGenericBase&lt; T &gt;::get_phi()</a>, <a class="el" href="dense__vector_8h_source.html#l00298">libMesh::DenseVector&lt; T &gt;::get_values()</a>, <a class="el" href="fe__abstract_8h_source.html#l00272">libMesh::FEAbstract::get_xyz()</a>, <a class="el" href="generic__projector_8h_source.html#l00148">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ids_to_save</a>, <a class="el" href="tensor__tools_8h_source.html#l00047">libMesh::TensorTools::inner_product()</a>, <a class="el" href="dof__object_8h_source.html#l00488">libMesh::DofObject::invalid_processor_id</a>, <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a>, <a class="el" href="dof__object_8h_source.html#l00898">libMesh::DofObject::processor_id()</a>, <a class="el" href="dense__vector_8h_source.html#l00111">libMesh::DenseVector&lt; T &gt;::size()</a>, <a class="el" href="generic__projector_8h_source.html#l00086">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::system</a> , 以及 <a class="el" href="system_8h_source.html#l01595">libMesh::System::time</a>.</p>
+<div class="fragment"><div class="line"><a name="l02993"></a><span class="lineno"> 2993</span>&#160;{</div>
+<div class="line"><a name="l02994"></a><span class="lineno"> 2994</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> &amp; JxW = fe.get_JxW();</div>
+<div class="line"><a name="l02995"></a><span class="lineno"> 2995</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> &amp; phi = fe.get_phi();</div>
+<div class="line"><a name="l02996"></a><span class="lineno"> 2996</span>&#160;  <span class="keyword">const</span> std::vector&lt;std::vector&lt;typename FEGenericBase&lt;typename FFunctor::RealType&gt;::OutputGradient&gt;&gt; * dphi = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l02997"></a><span class="lineno"> 2997</span>&#160;  <span class="keyword">const</span> std::vector&lt;Point&gt; &amp; xyz_values = fe.get_xyz();</div>
+<div class="line"><a name="l02998"></a><span class="lineno"> 2998</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">FEContinuity</a> cont = fe.get_continuity();</div>
+<div class="line"><a name="l02999"></a><span class="lineno"> 2999</span>&#160;  <span class="keyword">const</span> std::unordered_map&lt;dof_id_type, typename FFunctor::ValuePushType&gt; &amp; <a class="code" href="classlibMesh_1_1GenericProjector.html#a4c1abd47ae1abbc7d6510300edce965e">ids_to_save</a> =</div>
+<div class="line"><a name="l03000"></a><span class="lineno"> 3000</span>&#160;    this-&gt;<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a0ee337b55bf1d81fe587512a4053282c">projector</a>.<a class="code" href="classlibMesh_1_1GenericProjector.html#a4c1abd47ae1abbc7d6510300edce965e">ids_to_save</a>;</div>
+<div class="line"><a name="l03001"></a><span class="lineno"> 3001</span>&#160;</div>
+<div class="line"><a name="l03002"></a><span class="lineno"> 3002</span>&#160;  <span class="keywordflow">if</span> (cont == <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97da3eb599c685af73e85804a8793f733ab4">C_ONE</a>)</div>
+<div class="line"><a name="l03003"></a><span class="lineno"> 3003</span>&#160;    dphi = &amp;(fe.get_dphi());</div>
+<div class="line"><a name="l03004"></a><span class="lineno"> 3004</span>&#160;</div>
+<div class="line"><a name="l03005"></a><span class="lineno"> 3005</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_involved_dofs =</div>
+<div class="line"><a name="l03006"></a><span class="lineno"> 3006</span>&#160;    cast_int&lt;unsigned int&gt;(involved_dofs.size());</div>
+<div class="line"><a name="l03007"></a><span class="lineno"> 3007</span>&#160;</div>
+<div class="line"><a name="l03008"></a><span class="lineno"> 3008</span>&#160;  std::vector&lt;dof_id_type&gt; free_dof_ids;</div>
+<div class="line"><a name="l03009"></a><span class="lineno"> 3009</span>&#160;  DenseVector&lt;typename FFunctor::ValuePushType&gt; Uinvolved(n_involved_dofs);</div>
+<div class="line"><a name="l03010"></a><span class="lineno"> 3010</span>&#160;  std::vector&lt;char&gt; dof_is_fixed(n_involved_dofs, <span class="keyword">false</span>); <span class="comment">// bools</span></div>
+<div class="line"><a name="l03011"></a><span class="lineno"> 3011</span>&#160;</div>
+<div class="line"><a name="l03012"></a><span class="lineno"> 3012</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(n_involved_dofs))</div>
+<div class="line"><a name="l03013"></a><span class="lineno"> 3013</span>&#160;    {</div>
+<div class="line"><a name="l03014"></a><span class="lineno"> 3014</span>&#160;      <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> <span class="keywordtype">id</span> = dof_indices_var[involved_dofs[i]];</div>
+<div class="line"><a name="l03015"></a><span class="lineno"> 3015</span>&#160;      <span class="keyword">auto</span> iter = ids_to_save.find(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l03016"></a><span class="lineno"> 3016</span>&#160;      <span class="keywordflow">if</span> (iter == ids_to_save.end())</div>
+<div class="line"><a name="l03017"></a><span class="lineno"> 3017</span>&#160;        free_dof_ids.push_back(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l03018"></a><span class="lineno"> 3018</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l03019"></a><span class="lineno"> 3019</span>&#160;        {</div>
+<div class="line"><a name="l03020"></a><span class="lineno"> 3020</span>&#160;          dof_is_fixed[i] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l03021"></a><span class="lineno"> 3021</span>&#160;          Uinvolved(i) = iter-&gt;second;</div>
+<div class="line"><a name="l03022"></a><span class="lineno"> 3022</span>&#160;        }</div>
+<div class="line"><a name="l03023"></a><span class="lineno"> 3023</span>&#160;    }</div>
+<div class="line"><a name="l03024"></a><span class="lineno"> 3024</span>&#160;</div>
+<div class="line"><a name="l03025"></a><span class="lineno"> 3025</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> free_dofs = free_dof_ids.size();</div>
+<div class="line"><a name="l03026"></a><span class="lineno"> 3026</span>&#160;</div>
+<div class="line"><a name="l03027"></a><span class="lineno"> 3027</span>&#160;  <span class="comment">// There may be nothing to project</span></div>
+<div class="line"><a name="l03028"></a><span class="lineno"> 3028</span>&#160;  <span class="keywordflow">if</span> (!free_dofs)</div>
+<div class="line"><a name="l03029"></a><span class="lineno"> 3029</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l03030"></a><span class="lineno"> 3030</span>&#160;</div>
+<div class="line"><a name="l03031"></a><span class="lineno"> 3031</span>&#160;  <span class="comment">// The element matrix and RHS for projections.</span></div>
+<div class="line"><a name="l03032"></a><span class="lineno"> 3032</span>&#160;  <span class="comment">// Note that Ke is always real-valued, whereas</span></div>
+<div class="line"><a name="l03033"></a><span class="lineno"> 3033</span>&#160;  <span class="comment">// Fe may be complex valued if complex number</span></div>
+<div class="line"><a name="l03034"></a><span class="lineno"> 3034</span>&#160;  <span class="comment">// support is enabled</span></div>
+<div class="line"><a name="l03035"></a><span class="lineno"> 3035</span>&#160;  <a class="code" href="namespacelibMesh.html#a46d189ab0edc741b6ce690de7be37ae4">DenseMatrix&lt;Real&gt;</a> Ke(free_dofs, free_dofs);</div>
+<div class="line"><a name="l03036"></a><span class="lineno"> 3036</span>&#160;  DenseVector&lt;typename FFunctor::ValuePushType&gt; Fe(free_dofs);</div>
+<div class="line"><a name="l03037"></a><span class="lineno"> 3037</span>&#160;  <span class="comment">// The new degree of freedom coefficients to solve for</span></div>
+<div class="line"><a name="l03038"></a><span class="lineno"> 3038</span>&#160;  DenseVector&lt;typename FFunctor::ValuePushType&gt; Ufree(free_dofs);</div>
+<div class="line"><a name="l03039"></a><span class="lineno"> 3039</span>&#160;</div>
+<div class="line"><a name="l03040"></a><span class="lineno"> 3040</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_qp =</div>
+<div class="line"><a name="l03041"></a><span class="lineno"> 3041</span>&#160;    cast_int&lt;unsigned int&gt;(xyz_values.size());</div>
+<div class="line"><a name="l03042"></a><span class="lineno"> 3042</span>&#160;</div>
+<div class="line"><a name="l03043"></a><span class="lineno"> 3043</span>&#160;  <span class="comment">// Loop over the quadrature points</span></div>
+<div class="line"><a name="l03044"></a><span class="lineno"> 3044</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> qp=0; qp&lt;n_qp; qp++)</div>
+<div class="line"><a name="l03045"></a><span class="lineno"> 3045</span>&#160;    {</div>
+<div class="line"><a name="l03046"></a><span class="lineno"> 3046</span>&#160;      <span class="comment">// solution at the quadrature point</span></div>
+<div class="line"><a name="l03047"></a><span class="lineno"> 3047</span>&#160;      FValue fineval = <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab7e6920fc141a5ffce75f3ac092d44ac">f</a>.eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l03048"></a><span class="lineno"> 3048</span>&#160;                                       var_component,</div>
+<div class="line"><a name="l03049"></a><span class="lineno"> 3049</span>&#160;                                       xyz_values[qp],</div>
+<div class="line"><a name="l03050"></a><span class="lineno"> 3050</span>&#160;                                       <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l03051"></a><span class="lineno"> 3051</span>&#160;                                       <span class="keyword">false</span>);</div>
+<div class="line"><a name="l03052"></a><span class="lineno"> 3052</span>&#160;      <span class="comment">// solution grad at the quadrature point</span></div>
+<div class="line"><a name="l03053"></a><span class="lineno"> 3053</span>&#160;      <span class="keyword">typename</span> GFunctor::FunctorValue finegrad;</div>
+<div class="line"><a name="l03054"></a><span class="lineno"> 3054</span>&#160;      <span class="keywordflow">if</span> (cont == <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97da3eb599c685af73e85804a8793f733ab4">C_ONE</a>)</div>
+<div class="line"><a name="l03055"></a><span class="lineno"> 3055</span>&#160;        finegrad = <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l03056"></a><span class="lineno"> 3056</span>&#160;                                    var_component,</div>
+<div class="line"><a name="l03057"></a><span class="lineno"> 3057</span>&#160;                                    xyz_values[qp],</div>
+<div class="line"><a name="l03058"></a><span class="lineno"> 3058</span>&#160;                                    <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l03059"></a><span class="lineno"> 3059</span>&#160;                                    <span class="keyword">false</span>);</div>
+<div class="line"><a name="l03060"></a><span class="lineno"> 3060</span>&#160;</div>
+<div class="line"><a name="l03061"></a><span class="lineno"> 3061</span>&#160;      <span class="comment">// Form edge projection matrix</span></div>
+<div class="line"><a name="l03062"></a><span class="lineno"> 3062</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sidei=0, freei=0;</div>
+<div class="line"><a name="l03063"></a><span class="lineno"> 3063</span>&#160;           sidei != n_involved_dofs; ++sidei)</div>
+<div class="line"><a name="l03064"></a><span class="lineno"> 3064</span>&#160;        {</div>
+<div class="line"><a name="l03065"></a><span class="lineno"> 3065</span>&#160;          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = involved_dofs[sidei];</div>
+<div class="line"><a name="l03066"></a><span class="lineno"> 3066</span>&#160;          <span class="comment">// fixed DoFs aren&#39;t test functions</span></div>
+<div class="line"><a name="l03067"></a><span class="lineno"> 3067</span>&#160;          <span class="keywordflow">if</span> (dof_is_fixed[sidei])</div>
+<div class="line"><a name="l03068"></a><span class="lineno"> 3068</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l03069"></a><span class="lineno"> 3069</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sidej=0, freej=0;</div>
+<div class="line"><a name="l03070"></a><span class="lineno"> 3070</span>&#160;               sidej != n_involved_dofs; ++sidej)</div>
+<div class="line"><a name="l03071"></a><span class="lineno"> 3071</span>&#160;            {</div>
+<div class="line"><a name="l03072"></a><span class="lineno"> 3072</span>&#160;              <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = involved_dofs[sidej];</div>
+<div class="line"><a name="l03073"></a><span class="lineno"> 3073</span>&#160;              <span class="keywordflow">if</span> (dof_is_fixed[sidej])</div>
+<div class="line"><a name="l03074"></a><span class="lineno"> 3074</span>&#160;                Fe(freei) -= phi[i][qp] * phi[j][qp] *</div>
+<div class="line"><a name="l03075"></a><span class="lineno"> 3075</span>&#160;                  JxW[qp] * Uinvolved(sidej);</div>
+<div class="line"><a name="l03076"></a><span class="lineno"> 3076</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l03077"></a><span class="lineno"> 3077</span>&#160;                Ke(freei,freej) += phi[i][qp] *</div>
+<div class="line"><a name="l03078"></a><span class="lineno"> 3078</span>&#160;                  phi[j][qp] * JxW[qp];</div>
+<div class="line"><a name="l03079"></a><span class="lineno"> 3079</span>&#160;              <span class="keywordflow">if</span> (cont == <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97da3eb599c685af73e85804a8793f733ab4">C_ONE</a>)</div>
+<div class="line"><a name="l03080"></a><span class="lineno"> 3080</span>&#160;                {</div>
+<div class="line"><a name="l03081"></a><span class="lineno"> 3081</span>&#160;                  <span class="keywordflow">if</span> (dof_is_fixed[sidej])</div>
+<div class="line"><a name="l03082"></a><span class="lineno"> 3082</span>&#160;                    Fe(freei) -= ( <a class="code" href="namespacelibMesh_1_1TensorTools.html#a6a13ec120e7404c85443143d968807bb">TensorTools::inner_product</a>((*dphi)[i][qp],</div>
+<div class="line"><a name="l03083"></a><span class="lineno"> 3083</span>&#160;                                                              (*dphi)[j][qp]) ) *</div>
+<div class="line"><a name="l03084"></a><span class="lineno"> 3084</span>&#160;                      JxW[qp] * Uinvolved(sidej);</div>
+<div class="line"><a name="l03085"></a><span class="lineno"> 3085</span>&#160;                  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l03086"></a><span class="lineno"> 3086</span>&#160;                    Ke(freei,freej) += ( <a class="code" href="namespacelibMesh_1_1TensorTools.html#a6a13ec120e7404c85443143d968807bb">TensorTools::inner_product</a>((*dphi)[i][qp],</div>
+<div class="line"><a name="l03087"></a><span class="lineno"> 3087</span>&#160;                                                                    (*dphi)[j][qp]) )</div>
+<div class="line"><a name="l03088"></a><span class="lineno"> 3088</span>&#160;                      * JxW[qp];</div>
+<div class="line"><a name="l03089"></a><span class="lineno"> 3089</span>&#160;                }</div>
+<div class="line"><a name="l03090"></a><span class="lineno"> 3090</span>&#160;              <span class="keywordflow">if</span> (!dof_is_fixed[sidej])</div>
+<div class="line"><a name="l03091"></a><span class="lineno"> 3091</span>&#160;                freej++;</div>
+<div class="line"><a name="l03092"></a><span class="lineno"> 3092</span>&#160;            }</div>
+<div class="line"><a name="l03093"></a><span class="lineno"> 3093</span>&#160;          Fe(freei) += phi[i][qp] * fineval * JxW[qp];</div>
+<div class="line"><a name="l03094"></a><span class="lineno"> 3094</span>&#160;          <span class="keywordflow">if</span> (cont == <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97da3eb599c685af73e85804a8793f733ab4">C_ONE</a>)</div>
+<div class="line"><a name="l03095"></a><span class="lineno"> 3095</span>&#160;            Fe(freei) += (<a class="code" href="namespacelibMesh_1_1TensorTools.html#a6a13ec120e7404c85443143d968807bb">TensorTools::inner_product</a>(finegrad,</div>
+<div class="line"><a name="l03096"></a><span class="lineno"> 3096</span>&#160;                                                     (*dphi)[i][qp]) ) *</div>
+<div class="line"><a name="l03097"></a><span class="lineno"> 3097</span>&#160;              JxW[qp];</div>
+<div class="line"><a name="l03098"></a><span class="lineno"> 3098</span>&#160;          freei++;</div>
+<div class="line"><a name="l03099"></a><span class="lineno"> 3099</span>&#160;        }</div>
+<div class="line"><a name="l03100"></a><span class="lineno"> 3100</span>&#160;    }</div>
+<div class="line"><a name="l03101"></a><span class="lineno"> 3101</span>&#160;</div>
+<div class="line"><a name="l03102"></a><span class="lineno"> 3102</span>&#160;  Ke.cholesky_solve(Fe, Ufree);</div>
+<div class="line"><a name="l03103"></a><span class="lineno"> 3103</span>&#160;</div>
+<div class="line"><a name="l03104"></a><span class="lineno"> 3104</span>&#160;  <span class="comment">// Transfer new edge solutions to element</span></div>
+<div class="line"><a name="l03105"></a><span class="lineno"> 3105</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> pid = node ?</div>
+<div class="line"><a name="l03106"></a><span class="lineno"> 3106</span>&#160;    node-&gt;processor_id() : <a class="code" href="classlibMesh_1_1DofObject.html#aa65deab833c8b1802790cd43ab1b6ee4">DofObject::invalid_processor_id</a>;</div>
+<div class="line"><a name="l03107"></a><span class="lineno"> 3107</span>&#160;  <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a5c2efad0cd72887e5f1a8848c4839edb">insert_ids</a>(free_dof_ids, Ufree.get_values(), pid);</div>
+<div class="line"><a name="l03108"></a><span class="lineno"> 3108</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1System_html_a90b0537fa503134bfa91865a6995742e"><div class="ttname"><a href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">libMesh::System::time</a></div><div class="ttdeci">Real time</div><div class="ttdoc">For time-dependent problems, this is the time t at the beginning of the current timestep. </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l01595">system.h:1595</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af18245d4f872c36a41fc74086bda3e80"><div class="ttname"><a href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">libMesh::processor_id_type</a></div><div class="ttdeci">uint8_t processor_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00104">id_types.h:104</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_ab48ececdc40897f8b22c84b7085a65cc"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">libMesh::GenericProjector::SubFunctor::context</a></div><div class="ttdeci">FEMContext context</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00223">generic_projector.h:223</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubProjector_html_abe4b9a2aa547dac425b3d875a17b1f09"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">libMesh::GenericProjector::SubProjector::g</a></div><div class="ttdeci">std::unique_ptr&lt; GFunctor &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00254">generic_projector.h:254</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a4c1abd47ae1abbc7d6510300edce965e"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a4c1abd47ae1abbc7d6510300edce965e">libMesh::GenericProjector::ids_to_save</a></div><div class="ttdeci">std::unordered_map&lt; dof_id_type, typename FFunctor::ValuePushType &gt; ids_to_save</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00148">generic_projector.h:148</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_a5c2efad0cd72887e5f1a8848c4839edb"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a5c2efad0cd72887e5f1a8848c4839edb">libMesh::GenericProjector::SubFunctor::insert_ids</a></div><div class="ttdeci">void insert_ids(const std::vector&lt; dof_id_type &gt; &amp;ids, const std::vector&lt; InsertInput &gt; &amp;vals, processor_id_type pid)</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l01407">generic_projector.h:1407</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofObject_html_aa65deab833c8b1802790cd43ab1b6ee4"><div class="ttname"><a href="classlibMesh_1_1DofObject.html#aa65deab833c8b1802790cd43ab1b6ee4">libMesh::DofObject::invalid_processor_id</a></div><div class="ttdeci">static const processor_id_type invalid_processor_id</div><div class="ttdoc">An invalid processor_id to distinguish DoFs that have not been assigned to a processor. </div><div class="ttdef"><b>Definition:</b> <a href="dof__object_8h_source.html#l00488">dof_object.h:488</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a46d189ab0edc741b6ce690de7be37ae4"><div class="ttname"><a href="namespacelibMesh.html#a46d189ab0edc741b6ce690de7be37ae4">libMesh::DenseMatrix&lt; Real &gt;</a></div><div class="ttdeci">template class LIBMESH_EXPORT DenseMatrix&lt; Real &gt;</div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix_8C_source.html#l00035">dense_matrix.C:35</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_a0ee337b55bf1d81fe587512a4053282c"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a0ee337b55bf1d81fe587512a4053282c">libMesh::GenericProjector::SubFunctor::projector</a></div><div class="ttdeci">GenericProjector &amp; projector</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00157">generic_projector.h:157</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a09db0990f72f24f6b4f3f3a8df4dc97d"><div class="ttname"><a href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">libMesh::FEContinuity</a></div><div class="ttdeci">FEContinuity</div><div class="ttdoc">defines an enum for finite element types to libmesh_assert a certain level (or type? Hcurl?) of continuity. </div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00081">enum_fe_family.h:81</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a09db0990f72f24f6b4f3f3a8df4dc97da3eb599c685af73e85804a8793f733ab4"><div class="ttname"><a href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97da3eb599c685af73e85804a8793f733ab4">libMesh::C_ONE</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00084">enum_fe_family.h:84</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_af4bb222855ab320fb5e55a76d7160e53"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">libMesh::GenericProjector::SubFunctor::system</a></div><div class="ttdeci">const System &amp; system</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00229">generic_projector.h:229</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_ab7e6920fc141a5ffce75f3ac092d44ac"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab7e6920fc141a5ffce75f3ac092d44ac">libMesh::GenericProjector::SubFunctor::f</a></div><div class="ttdeci">FFunctor f</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00219">generic_projector.h:219</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1TensorTools_html_a6a13ec120e7404c85443143d968807bb"><div class="ttname"><a href="namespacelibMesh_1_1TensorTools.html#a6a13ec120e7404c85443143d968807bb">libMesh::TensorTools::inner_product</a></div><div class="ttdeci">boostcopy::enable_if_c&lt; ScalarTraits&lt; T &gt;::value &amp;&amp;ScalarTraits&lt; T2 &gt;::value, typename CompareTypes&lt; T, T2 &gt;::supertype &gt;::type inner_product(const T &amp;a, const T2 &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="tensor__tools_8h_source.html#l00047">tensor_tools.h:47</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ab4541d74809228310a715b11c40587fc"><div class="ttname"><a href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">libMesh::dof_id_type</a></div><div class="ttdeci">uint8_t dof_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00067">id_types.h:67</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5ba27a3ea4c45c6f4f92edac6acbd5ff"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::find_dofs_to_send </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Node.html">Node</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> &amp;&#160;</td>
+          <td class="paramname"><em>elem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>node_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1GenericProjector.html#ac16cd62252da54e6b556c318d6428f68">var_set</a> &amp;&#160;</td>
+          <td class="paramname"><em>vars</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l02829">2829</a> 行定义.</p>
+
+<p>参考 <a class="el" href="elem_8h_source.html#l02754">libMesh::Elem::active()</a>, <a class="el" href="variable_8h_source.html#l00157">libMesh::Variable::active_on_subdomain()</a>, <a class="el" href="dof__map_8C_source.html#l01992">libMesh::DofMap::dof_indices()</a>, <a class="el" href="mesh__base_8h_source.html#l00614">libMesh::MeshBase::elem_ref()</a>, <a class="el" href="system_8h_source.html#l02293">libMesh::System::get_dof_map()</a>, <a class="el" href="system_8h_source.html#l02277">libMesh::System::get_mesh()</a>, <a class="el" href="dof__object_8h_source.html#l00823">libMesh::DofObject::id()</a>, <a class="el" href="dof__object_8h_source.html#l00488">libMesh::DofObject::invalid_processor_id</a>, <a class="el" href="parallel__conversion__utils_8h_source.html#l00052">libMesh::Parallel::Utils::is_sorted()</a>, <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>, <a class="el" href="mesh__communication_8C_source.html#l01308">mesh</a>, <a class="el" href="elem_8h_source.html#l02307">libMesh::Elem::node_ptr()</a>, <a class="el" href="parallel__object_8h_source.html#l00114">libMesh::ParallelObject::processor_id()</a>, <a class="el" href="dof__object_8h_source.html#l00898">libMesh::DofObject::processor_id()</a>, <a class="el" href="elem_8h_source.html#l02367">libMesh::Elem::subdomain_id()</a>, <a class="el" href="generic__projector_8h_source.html#l00086">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::system</a> , 以及 <a class="el" href="system_8h_source.html#l02377">libMesh::System::variable()</a>.</p>
+<div class="fragment"><div class="line"><a name="l02830"></a><span class="lineno"> 2830</span>&#160;{</div>
+<div class="line"><a name="l02831"></a><span class="lineno"> 2831</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (&amp;node == elem.node_ptr(node_num));</div>
+<div class="line"><a name="l02832"></a><span class="lineno"> 2832</span>&#160;</div>
+<div class="line"><a name="l02833"></a><span class="lineno"> 2833</span>&#160;  <span class="comment">// Any ghosted node in our range might have an owner who needs our</span></div>
+<div class="line"><a name="l02834"></a><span class="lineno"> 2834</span>&#160;  <span class="comment">// data</span></div>
+<div class="line"><a name="l02835"></a><span class="lineno"> 2835</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> owner = node.processor_id();</div>
+<div class="line"><a name="l02836"></a><span class="lineno"> 2836</span>&#160;  <span class="keywordflow">if</span> (owner != <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">processor_id</a>())</div>
+<div class="line"><a name="l02837"></a><span class="lineno"> 2837</span>&#160;    {</div>
+<div class="line"><a name="l02838"></a><span class="lineno"> 2838</span>&#160;      <span class="keyword">const</span> MeshBase &amp; <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a> = <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a39141a08afe4e0334c21035de6f0b7a3">get_mesh</a>();</div>
+<div class="line"><a name="l02839"></a><span class="lineno"> 2839</span>&#160;      <span class="keyword">const</span> DofMap &amp; dof_map = <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a3b392c8791f781092d6326e51856f553">get_dof_map</a>();</div>
+<div class="line"><a name="l02840"></a><span class="lineno"> 2840</span>&#160;</div>
+<div class="line"><a name="l02841"></a><span class="lineno"> 2841</span>&#160;      <span class="comment">// But let&#39;s check and see if we can be certain the owner can</span></div>
+<div class="line"><a name="l02842"></a><span class="lineno"> 2842</span>&#160;      <span class="comment">// compute any or all of its own dof coefficients on that node.</span></div>
+<div class="line"><a name="l02843"></a><span class="lineno"> 2843</span>&#160;      std::vector&lt;dof_id_type&gt; node_dof_ids, patch_dof_ids;</div>
+<div class="line"><a name="l02844"></a><span class="lineno"> 2844</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; var : vars)</div>
+<div class="line"><a name="l02845"></a><span class="lineno"> 2845</span>&#160;        {</div>
+<div class="line"><a name="l02846"></a><span class="lineno"> 2846</span>&#160;          <span class="keyword">const</span> Variable &amp; variable = <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a56d89ed534ffce5eda02dc0137583b56">variable</a>(var);</div>
+<div class="line"><a name="l02847"></a><span class="lineno"> 2847</span>&#160;</div>
+<div class="line"><a name="l02848"></a><span class="lineno"> 2848</span>&#160;          <span class="keywordflow">if</span> (!variable.active_on_subdomain(elem.subdomain_id()))</div>
+<div class="line"><a name="l02849"></a><span class="lineno"> 2849</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l02850"></a><span class="lineno"> 2850</span>&#160;</div>
+<div class="line"><a name="l02851"></a><span class="lineno"> 2851</span>&#160;          dof_map.dof_indices(elem, node_num, node_dof_ids, var);</div>
+<div class="line"><a name="l02852"></a><span class="lineno"> 2852</span>&#160;        }</div>
+<div class="line"><a name="l02853"></a><span class="lineno"> 2853</span>&#160;      <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(<a class="code" href="namespacelibMesh_1_1Parallel_1_1Utils.html#a1a148823d82abcf5e179095dc58bc15e">std::is_sorted</a>(node_dof_ids.begin(),</div>
+<div class="line"><a name="l02854"></a><span class="lineno"> 2854</span>&#160;                                    node_dof_ids.end()));</div>
+<div class="line"><a name="l02855"></a><span class="lineno"> 2855</span>&#160;      <span class="keyword">const</span> std::vector&lt;dof_id_type&gt; &amp; patch =</div>
+<div class="line"><a name="l02856"></a><span class="lineno"> 2856</span>&#160;        (*this-&gt;<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a0ee337b55bf1d81fe587512a4053282c">projector</a>.<a class="code" href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">nodes_to_elem</a>)[node.id()];</div>
+<div class="line"><a name="l02857"></a><span class="lineno"> 2857</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; elem_id : patch)</div>
+<div class="line"><a name="l02858"></a><span class="lineno"> 2858</span>&#160;        {</div>
+<div class="line"><a name="l02859"></a><span class="lineno"> 2859</span>&#160;          <span class="keyword">const</span> Elem &amp; patch_elem = mesh.elem_ref(elem_id);</div>
+<div class="line"><a name="l02860"></a><span class="lineno"> 2860</span>&#160;          <span class="keywordflow">if</span> (!patch_elem.active() || owner != patch_elem.processor_id())</div>
+<div class="line"><a name="l02861"></a><span class="lineno"> 2861</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l02862"></a><span class="lineno"> 2862</span>&#160;          dof_map.dof_indices(&amp;patch_elem, patch_dof_ids);</div>
+<div class="line"><a name="l02863"></a><span class="lineno"> 2863</span>&#160;          std::sort(patch_dof_ids.begin(), patch_dof_ids.end());</div>
+<div class="line"><a name="l02864"></a><span class="lineno"> 2864</span>&#160;</div>
+<div class="line"><a name="l02865"></a><span class="lineno"> 2865</span>&#160;          <span class="comment">// Remove any node_dof_ids that we see can be calculated on</span></div>
+<div class="line"><a name="l02866"></a><span class="lineno"> 2866</span>&#160;          <span class="comment">// this element</span></div>
+<div class="line"><a name="l02867"></a><span class="lineno"> 2867</span>&#160;          std::vector&lt;dof_id_type&gt; diff_ids(node_dof_ids.size());</div>
+<div class="line"><a name="l02868"></a><span class="lineno"> 2868</span>&#160;          <span class="keyword">auto</span> it = std::set_difference(node_dof_ids.begin(), node_dof_ids.end(),</div>
+<div class="line"><a name="l02869"></a><span class="lineno"> 2869</span>&#160;                                        patch_dof_ids.begin(), patch_dof_ids.end(), diff_ids.begin());</div>
+<div class="line"><a name="l02870"></a><span class="lineno"> 2870</span>&#160;          diff_ids.resize(it-diff_ids.begin());</div>
+<div class="line"><a name="l02871"></a><span class="lineno"> 2871</span>&#160;          node_dof_ids.swap(diff_ids);</div>
+<div class="line"><a name="l02872"></a><span class="lineno"> 2872</span>&#160;          <span class="keywordflow">if</span> (node_dof_ids.empty())</div>
+<div class="line"><a name="l02873"></a><span class="lineno"> 2873</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02874"></a><span class="lineno"> 2874</span>&#160;        }</div>
+<div class="line"><a name="l02875"></a><span class="lineno"> 2875</span>&#160;</div>
+<div class="line"><a name="l02876"></a><span class="lineno"> 2876</span>&#160;      <span class="comment">// Give ids_to_push default invalid pid: not yet computed</span></div>
+<div class="line"><a name="l02877"></a><span class="lineno"> 2877</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keywordtype">id</span> : node_dof_ids)</div>
+<div class="line"><a name="l02878"></a><span class="lineno"> 2878</span>&#160;        <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a773154697a2a38617b72e1852ff69d78">new_ids_to_push</a>[id].second = <a class="code" href="classlibMesh_1_1DofObject.html#aa65deab833c8b1802790cd43ab1b6ee4">DofObject::invalid_processor_id</a>;</div>
+<div class="line"><a name="l02879"></a><span class="lineno"> 2879</span>&#160;    }</div>
+<div class="line"><a name="l02880"></a><span class="lineno"> 2880</span>&#160;}</div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_a773154697a2a38617b72e1852ff69d78"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a773154697a2a38617b72e1852ff69d78">libMesh::GenericProjector::SubFunctor::new_ids_to_push</a></div><div class="ttdeci">std::unordered_map&lt; dof_id_type, std::pair&lt; typename FFunctor::ValuePushType, processor_id_type &gt; &gt; new_ids_to_push</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00170">generic_projector.h:170</a></div></div>
+<div class="ttc" id="mesh__communication_8C_html_afaa03b874c297f4693d9cdef7f50f3c6"><div class="ttname"><a href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__communication_8C_source.html#l01308">mesh_communication.C:1308</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af18245d4f872c36a41fc74086bda3e80"><div class="ttname"><a href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">libMesh::processor_id_type</a></div><div class="ttdeci">uint8_t processor_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00104">id_types.h:104</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a39141a08afe4e0334c21035de6f0b7a3"><div class="ttname"><a href="classlibMesh_1_1System.html#a39141a08afe4e0334c21035de6f0b7a3">libMesh::System::get_mesh</a></div><div class="ttdeci">const MeshBase &amp; get_mesh() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02277">system.h:2277</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a3b392c8791f781092d6326e51856f553"><div class="ttname"><a href="classlibMesh_1_1System.html#a3b392c8791f781092d6326e51856f553">libMesh::System::get_dof_map</a></div><div class="ttdeci">const DofMap &amp; get_dof_map() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02293">system.h:2293</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1Parallel_1_1Utils_html_a1a148823d82abcf5e179095dc58bc15e"><div class="ttname"><a href="namespacelibMesh_1_1Parallel_1_1Utils.html#a1a148823d82abcf5e179095dc58bc15e">libMesh::Parallel::Utils::is_sorted</a></div><div class="ttdeci">bool is_sorted(const std::vector&lt; KeyType &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="parallel__conversion__utils_8h_source.html#l00052">parallel_conversion_utils.h:52</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofObject_html_aa65deab833c8b1802790cd43ab1b6ee4"><div class="ttname"><a href="classlibMesh_1_1DofObject.html#aa65deab833c8b1802790cd43ab1b6ee4">libMesh::DofObject::invalid_processor_id</a></div><div class="ttdeci">static const processor_id_type invalid_processor_id</div><div class="ttdoc">An invalid processor_id to distinguish DoFs that have not been assigned to a processor. </div><div class="ttdef"><b>Definition:</b> <a href="dof__object_8h_source.html#l00488">dof_object.h:488</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a56d89ed534ffce5eda02dc0137583b56"><div class="ttname"><a href="classlibMesh_1_1System.html#a56d89ed534ffce5eda02dc0137583b56">libMesh::System::variable</a></div><div class="ttdeci">const Variable &amp; variable(unsigned int var) const </div><div class="ttdoc">Return a constant reference to Variable var. </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02377">system.h:2377</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_a0ee337b55bf1d81fe587512a4053282c"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a0ee337b55bf1d81fe587512a4053282c">libMesh::GenericProjector::SubFunctor::projector</a></div><div class="ttdeci">GenericProjector &amp; projector</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00157">generic_projector.h:157</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a26e703655894221d9fb0d19b387866dd"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">libMesh::GenericProjector::nodes_to_elem</a></div><div class="ttdeci">std::unordered_map&lt; dof_id_type, std::vector&lt; dof_id_type &gt; &gt; * nodes_to_elem</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00095">generic_projector.h:95</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_af4bb222855ab320fb5e55a76d7160e53"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">libMesh::GenericProjector::SubFunctor::system</a></div><div class="ttdeci">const System &amp; system</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00229">generic_projector.h:229</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ParallelObject_html_ae1e7d1a1118f63d9889a761c27433bbc"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">libMesh::ParallelObject::processor_id</a></div><div class="ttdeci">processor_id_type processor_id() const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00114">parallel_object.h:114</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a766d4b32de4ae0a2d693081da3d0b431"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<div class="memtemplate">
+template&lt;typename InsertInput , typename std::enable_if&lt; std::is_same&lt; typename ProjectionAction::InsertInput, InsertInput &gt;::value, int &gt;::type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::insert_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const InsertInput &amp;&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a>&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l01365">1365</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;{</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;  libmesh_error_msg(<span class="stringliteral">&quot;ID insertion should only occur when the provided input matches that &quot;</span></div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;                    <span class="stringliteral">&quot;expected by the ProjectionAction&quot;</span>);</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a766d4b32de4ae0a2d693081da3d0b431"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<div class="memtemplate">
+template&lt;typename InsertInput , typename std::enable_if&lt; !std::is_same&lt; typename ProjectionAction::InsertInput, InsertInput &gt;::value, int &gt;::type  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::insert_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const InsertInput &amp;&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a>&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c2efad0cd72887e5f1a8848c4839edb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<div class="memtemplate">
+template&lt;typename InsertInput , typename std::enable_if&lt; std::is_same&lt; typename ProjectionAction::InsertInput, InsertInput &gt;::value, int &gt;::type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::insert_ids </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; InsertInput &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a>&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l01407">1407</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;{</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;  libmesh_error_msg(<span class="stringliteral">&quot;ID insertion should only occur when the provided input matches that &quot;</span></div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;                    <span class="stringliteral">&quot;expected by the ProjectionAction&quot;</span>);</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5c2efad0cd72887e5f1a8848c4839edb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<div class="memtemplate">
+template&lt;typename InsertInput , typename std::enable_if&lt; !std::is_same&lt; typename ProjectionAction::InsertInput, InsertInput &gt;::value, int &gt;::type  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::insert_ids </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; InsertInput &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a>&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec927721cf55c26cabf9152a379b13bf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::join </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html">SubFunctor</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l01458">1458</a> 行定义.</p>
+
+<p>参考 <a class="el" href="generic__projector_8h_source.html#l00170">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::new_ids_to_push</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l00174">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::new_ids_to_save</a>.</p>
+
+<p>参考自 <a class="el" href="generic__projector_8h_source.html#l01919">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SortAndCopy::join()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;{</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;  <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a773154697a2a38617b72e1852ff69d78">new_ids_to_push</a>.insert(other.new_ids_to_push.begin(), other.new_ids_to_push.end());</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;  <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a1c581befdb8b373600d368c2e2613512">new_ids_to_save</a>.insert(other.new_ids_to_save.begin(), other.new_ids_to_save.end());</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;}</div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_a773154697a2a38617b72e1852ff69d78"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a773154697a2a38617b72e1852ff69d78">libMesh::GenericProjector::SubFunctor::new_ids_to_push</a></div><div class="ttdeci">std::unordered_map&lt; dof_id_type, std::pair&lt; typename FFunctor::ValuePushType, processor_id_type &gt; &gt; new_ids_to_push</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00170">generic_projector.h:170</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_a1c581befdb8b373600d368c2e2613512"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a1c581befdb8b373600d368c2e2613512">libMesh::GenericProjector::SubFunctor::new_ids_to_save</a></div><div class="ttdeci">std::unordered_map&lt; dof_id_type, typename FFunctor::ValuePushType &gt; new_ids_to_save</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00174">generic_projector.h:174</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa3d4f4062e27f6a7718d16fdbd053a8f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::ProjectVertices::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1GenericProjector.html#a7813e22d0aa05e1f50b7b8e961c2e6f8">node_range</a> &amp;&#160;</td>
+          <td class="paramname"><em>range</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l02002">2002</a> 行定义.</p>
+
+<p>参考 <a class="el" href="enum__fe__family_8h_source.html#l00084">libMesh::C_ONE</a>, <a class="el" href="enum__fe__family_8h_source.html#l00083">libMesh::C_ZERO</a>, <a class="el" href="classlibMesh_1_1Elem.html#a90a7ca1f28a92f659ab6f8cdef91d806">libMesh::Elem::dim()</a>, <a class="el" href="enum__fe__family_8h_source.html#l00082">libMesh::DISCONTINUOUS</a>, <a class="el" href="dof__object_8h_source.html#l01025">libMesh::DofObject::dof_number()</a>, <a class="el" href="mesh__base_8h_source.html#l00614">libMesh::MeshBase::elem_ref()</a>, <a class="el" href="fe__interface_8C_source.html#l02817">libMesh::FEInterface::extra_hanging_dofs()</a>, <a class="el" href="fe__type_8h_source.html#l00207">libMesh::FEType::family</a>, <a class="el" href="system_8h_source.html#l02277">libMesh::System::get_mesh()</a>, <a class="el" href="elem_8h_source.html#l02345">libMesh::Elem::get_node_index()</a>, <a class="el" href="enum__fe__family_8h_source.html#l00054">libMesh::HERMITE</a>, <a class="el" href="elem_8C_source.html#l00511">libMesh::Elem::hmin()</a>, <a class="el" href="dof__object_8h_source.html#l00823">libMesh::DofObject::id()</a>, <a class="el" href="int__range_8h_source.html#l00111">libMesh::index_range()</a>, <a class="el" href="elem_8C_source.html#l03007">libMesh::Elem::is_vertex_on_parent()</a>, <a class="el" href="elem_8h_source.html#l01284">libMesh::Elem::JUST_REFINED</a>, <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>, <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a>, <a class="el" href="dof__object_8h_source.html#l00995">libMesh::DofObject::n_comp()</a>, <a class="el" href="fe__interface_8C_source.html#l00650">libMesh::FEInterface::n_dofs_at_node()</a>, <a class="el" href="system_8h_source.html#l02269">libMesh::System::number()</a>, <a class="el" href="elem_8h_source.html#l02843">libMesh::Elem::parent()</a>, <a class="el" href="elem_8h_source.html#l02253">libMesh::Elem::point()</a>, <a class="el" href="dof__object_8h_source.html#l00898">libMesh::DofObject::processor_id()</a>, <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a>, <a class="el" href="elem_8h_source.html#l03023">libMesh::Elem::refinement_flag()</a>, <a class="el" href="enum__fe__family_8h_source.html#l00058">libMesh::SCALAR</a>, <a class="el" href="enum__fe__family_8h_source.html#l00087">libMesh::SIDE_DISCONTINUOUS</a>, <a class="el" href="generic__projector_8h_source.html#l00086">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::system</a>, <a class="el" href="system_8h_source.html#l01595">libMesh::System::time</a>, <a class="el" href="libmesh__common_8h_source.html#l00150">libMesh::TOLERANCE</a>, <a class="el" href="variable_8h_source.html#l00140">libMesh::Variable::type()</a>, <a class="el" href="enum__fe__family_8h_source.html#l00100">libMesh::TYPE_VECTOR</a>, <a class="el" href="system_8h_source.html#l02377">libMesh::System::variable()</a>, <a class="el" href="system_8h_source.html#l02408">libMesh::System::variable_scalar_number()</a> , 以及 <a class="el" href="elem_8h_source.html#l03005">libMesh::Elem::which_child_am_i()</a>.</p>
+<div class="fragment"><div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;{</div>
+<div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;  LOG_SCOPE (<span class="stringliteral">&quot;project_vertices&quot;</span>,<span class="stringliteral">&quot;GenericProjector&quot;</span>);</div>
+<div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;</div>
+<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sys_num = <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#aee5caacb487b070842733f1c84b9a2fd">number</a>();</div>
+<div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;</div>
+<div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;  <span class="comment">// Variables with extra hanging dofs can&#39;t safely use eval_at_node</span></div>
+<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;  <span class="comment">// in as many places as variables without can.</span></div>
+<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;  std::vector&lt;unsigned short&gt; extra_hanging_dofs;</div>
+<div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> v_num : this-&gt;<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a0ee337b55bf1d81fe587512a4053282c">projector</a>.<a class="code" href="classlibMesh_1_1GenericProjector.html#a275e255b09d41a252e95e618371911f2">variables</a>)</div>
+<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;    {</div>
+<div class="line"><a name="l02013"></a><span class="lineno"> 2013</span>&#160;      <span class="keywordflow">if</span> (extra_hanging_dofs.size() &lt;= v_num)</div>
+<div class="line"><a name="l02014"></a><span class="lineno"> 2014</span>&#160;        extra_hanging_dofs.resize(v_num+1, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l02015"></a><span class="lineno"> 2015</span>&#160;      extra_hanging_dofs[v_num] =</div>
+<div class="line"><a name="l02016"></a><span class="lineno"> 2016</span>&#160;        <a class="code" href="classlibMesh_1_1FEInterface.html#ac0363b6fc2b8355ff0416ac65b522066">FEInterface::extra_hanging_dofs</a>(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a56d89ed534ffce5eda02dc0137583b56">variable</a>(v_num).<a class="code" href="classlibMesh_1_1Variable.html#a8dcb07137d70a83fcf5b412e08e2783e">type</a>());</div>
+<div class="line"><a name="l02017"></a><span class="lineno"> 2017</span>&#160;    }</div>
+<div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;</div>
+<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; v_pair : range)</div>
+<div class="line"><a name="l02020"></a><span class="lineno"> 2020</span>&#160;    {</div>
+<div class="line"><a name="l02021"></a><span class="lineno"> 2021</span>&#160;      <span class="keyword">const</span> Node &amp; vertex = *v_pair.first;</div>
+<div class="line"><a name="l02022"></a><span class="lineno"> 2022</span>&#160;      <span class="keyword">const</span> Elem &amp; elem = *std::get&lt;0&gt;(v_pair.second);</div>
+<div class="line"><a name="l02023"></a><span class="lineno"> 2023</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n = std::get&lt;1&gt;(v_pair.second);</div>
+<div class="line"><a name="l02024"></a><span class="lineno"> 2024</span>&#160;      <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1GenericProjector.html#ac16cd62252da54e6b556c318d6428f68">var_set</a> &amp; vertex_vars = std::get&lt;2&gt;(v_pair.second);</div>
+<div class="line"><a name="l02025"></a><span class="lineno"> 2025</span>&#160;</div>
+<div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;      <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>.<a class="code" href="classlibMesh_1_1FEMContext.html#a4bc0ad51d8939df5b9ac3caa84136408">pre_fe_reinit</a>(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>, &amp;elem);</div>
+<div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;</div>
+<div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;      this-&gt;<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a5ba27a3ea4c45c6f4f92edac6acbd5ff">find_dofs_to_send</a>(vertex, elem, n, vertex_vars);</div>
+<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;</div>
+<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;      <span class="comment">// Look at all the variables we&#39;re supposed to interpolate from</span></div>
+<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;      <span class="comment">// this element on this vertex</span></div>
+<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; var : vertex_vars)</div>
+<div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;        {</div>
+<div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;          <span class="keyword">const</span> Variable &amp; variable = <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a56d89ed534ffce5eda02dc0137583b56">variable</a>(var);</div>
+<div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;          <span class="keyword">const</span> FEType &amp; base_fe_type = variable.<a class="code" href="classlibMesh_1_1Variable.html#a8dcb07137d70a83fcf5b412e08e2783e">type</a>();</div>
+<div class="line"><a name="l02036"></a><span class="lineno"> 2036</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> var_component =</div>
+<div class="line"><a name="l02037"></a><span class="lineno"> 2037</span>&#160;            <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a8b51e2e5f42614e581f13540e2dda4aa">variable_scalar_number</a>(var, 0);</div>
+<div class="line"><a name="l02038"></a><span class="lineno"> 2038</span>&#160;</div>
+<div class="line"><a name="l02039"></a><span class="lineno"> 2039</span>&#160;          <span class="keywordflow">if</span> (base_fe_type.family == <a class="code" href="namespacelibMesh.html#abcdbcd8364bf9fb7a67b3b4013031b2daefdbf95da65edcfa0cdb6c10eac5482c">SCALAR</a>)</div>
+<div class="line"><a name="l02040"></a><span class="lineno"> 2040</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l02041"></a><span class="lineno"> 2041</span>&#160;</div>
+<div class="line"><a name="l02042"></a><span class="lineno"> 2042</span>&#160;          <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">FEContinuity</a> cont = this-&gt;<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ac0d1aad42d30041c89d824ca26066d0b">conts</a>[var];</div>
+<div class="line"><a name="l02043"></a><span class="lineno"> 2043</span>&#160;          <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a354ba8d7698a213772f215eab6b08fc1">FEFieldType</a> field_type = this-&gt;<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a4f23ca6e47b3bb05f03dd2d9dbec7d32">field_types</a>[var];</div>
+<div class="line"><a name="l02044"></a><span class="lineno"> 2044</span>&#160;</div>
+<div class="line"><a name="l02045"></a><span class="lineno"> 2045</span>&#160;          <span class="keywordflow">if</span> (cont == <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97daefa1013fc8340a1ceff8bdcf6fb8ca81">DISCONTINUOUS</a>)</div>
+<div class="line"><a name="l02046"></a><span class="lineno"> 2046</span>&#160;            {</div>
+<div class="line"><a name="l02047"></a><span class="lineno"> 2047</span>&#160;              libmesh_assert_equal_to(vertex.n_comp(sys_num, var), 0);</div>
+<div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;            }</div>
+<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (cont == <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97da3d7eb87bf395933a81478e732969e1f4">C_ZERO</a> ||</div>
+<div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;                   cont == <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97dadf4b186dfd8bea051fe97c6fc68a6e05">SIDE_DISCONTINUOUS</a>)</div>
+<div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;            {</div>
+<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;              <span class="keywordflow">if</span> (cont == <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97dadf4b186dfd8bea051fe97c6fc68a6e05">SIDE_DISCONTINUOUS</a> &amp;&amp;</div>
+<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;                  elem.dim() != 1)</div>
+<div class="line"><a name="l02054"></a><span class="lineno"> 2054</span>&#160;                {</div>
+<div class="line"><a name="l02055"></a><span class="lineno"> 2055</span>&#160;                  libmesh_assert_equal_to(vertex.n_comp(sys_num, var), 0);</div>
+<div class="line"><a name="l02056"></a><span class="lineno"> 2056</span>&#160;                  <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l02057"></a><span class="lineno"> 2057</span>&#160;                }</div>
+<div class="line"><a name="l02058"></a><span class="lineno"> 2058</span>&#160;</div>
+<div class="line"><a name="l02059"></a><span class="lineno"> 2059</span>&#160;              <span class="keyword">const</span> FValue val = <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab7e6920fc141a5ffce75f3ac092d44ac">f</a>.eval_at_node</div>
+<div class="line"><a name="l02060"></a><span class="lineno"> 2060</span>&#160;                (<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>, var_component, <span class="comment">/*dim=*/</span> 0, <span class="comment">// Don&#39;t care w/C0</span></div>
+<div class="line"><a name="l02061"></a><span class="lineno"> 2061</span>&#160;                 vertex, extra_hanging_dofs[var], <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>);</div>
+<div class="line"><a name="l02062"></a><span class="lineno"> 2062</span>&#160;</div>
+<div class="line"><a name="l02063"></a><span class="lineno"> 2063</span>&#160;              <span class="keywordflow">if</span> (field_type == <a class="code" href="namespacelibMesh.html#a354ba8d7698a213772f215eab6b08fc1ad826e2ea6a9b3e392e353111c7080170">TYPE_VECTOR</a>)</div>
+<div class="line"><a name="l02064"></a><span class="lineno"> 2064</span>&#160;              {</div>
+<div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160;                libmesh_assert_equal_to(vertex.n_comp(sys_num, var), elem.dim());</div>
+<div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;</div>
+<div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;                <span class="comment">// We will have a number of nodal value DoFs equal to the elem dim</span></div>
+<div class="line"><a name="l02068"></a><span class="lineno"> 2068</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(elem.dim()))</div>
+<div class="line"><a name="l02069"></a><span class="lineno"> 2069</span>&#160;                {</div>
+<div class="line"><a name="l02070"></a><span class="lineno"> 2070</span>&#160;                  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> <span class="keywordtype">id</span> = vertex.dof_number(sys_num, var, i);</div>
+<div class="line"><a name="l02071"></a><span class="lineno"> 2071</span>&#160;</div>
+<div class="line"><a name="l02072"></a><span class="lineno"> 2072</span>&#160;                  <span class="comment">// Need this conversion so that this method</span></div>
+<div class="line"><a name="l02073"></a><span class="lineno"> 2073</span>&#160;                  <span class="comment">// will compile for TYPE_SCALAR instantiations</span></div>
+<div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;                  <span class="keyword">const</span> <span class="keyword">auto</span> insert_val =</div>
+<div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;                    raw_value&lt;typename ProjectionAction::InsertInput&gt;(val, i);</div>
+<div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;</div>
+<div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160;                  <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(<span class="keywordtype">id</span>, insert_val, vertex.processor_id());</div>
+<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;                }</div>
+<div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;              }</div>
+<div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;              {</div>
+<div class="line"><a name="l02082"></a><span class="lineno"> 2082</span>&#160;                <span class="comment">// C_ZERO elements have a single nodal value DoF at</span></div>
+<div class="line"><a name="l02083"></a><span class="lineno"> 2083</span>&#160;                <span class="comment">// vertices.  We can&#39;t assert n_comp==1 here,</span></div>
+<div class="line"><a name="l02084"></a><span class="lineno"> 2084</span>&#160;                <span class="comment">// because if this is a hanging node then it may have</span></div>
+<div class="line"><a name="l02085"></a><span class="lineno"> 2085</span>&#160;                <span class="comment">// more face/edge DoFs, but we don&#39;t need to deal with</span></div>
+<div class="line"><a name="l02086"></a><span class="lineno"> 2086</span>&#160;                <span class="comment">// those here.</span></div>
+<div class="line"><a name="l02087"></a><span class="lineno"> 2087</span>&#160;</div>
+<div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160;                <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> <span class="keywordtype">id</span> = vertex.dof_number(sys_num, var, 0);</div>
+<div class="line"><a name="l02089"></a><span class="lineno"> 2089</span>&#160;                <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(<span class="keywordtype">id</span>, val, vertex.processor_id());</div>
+<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;              }</div>
+<div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;            }</div>
+<div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;          <span class="keywordflow">else</span> <span class="keywordflow">if</span> (cont == <a class="code" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97da3eb599c685af73e85804a8793f733ab4">C_ONE</a>)</div>
+<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;            {</div>
+<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;              <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(vertex.n_comp(sys_num, var));</div>
+<div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160;              <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> first_id = vertex.dof_number(sys_num, var, 0);</div>
+<div class="line"><a name="l02096"></a><span class="lineno"> 2096</span>&#160;</div>
+<div class="line"><a name="l02097"></a><span class="lineno"> 2097</span>&#160;              <span class="comment">// C_ONE elements have a single nodal value and dim</span></div>
+<div class="line"><a name="l02098"></a><span class="lineno"> 2098</span>&#160;              <span class="comment">// gradient values at vertices, as well as cross</span></div>
+<div class="line"><a name="l02099"></a><span class="lineno"> 2099</span>&#160;              <span class="comment">// gradients for HERMITE.  We need to have an element in</span></div>
+<div class="line"><a name="l02100"></a><span class="lineno"> 2100</span>&#160;              <span class="comment">// hand to figure out dim and to have in case this</span></div>
+<div class="line"><a name="l02101"></a><span class="lineno"> 2101</span>&#160;              <span class="comment">// vertex is a new vertex.</span></div>
+<div class="line"><a name="l02102"></a><span class="lineno"> 2102</span>&#160;              <span class="keyword">const</span> <span class="keywordtype">int</span> dim = elem.dim();</div>
+<div class="line"><a name="l02103"></a><span class="lineno"> 2103</span>&#160;<span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><a name="l02104"></a><span class="lineno"> 2104</span>&#160;<span class="preprocessor"></span>              <span class="comment">// For now all C1 elements at a vertex had better have</span></div>
+<div class="line"><a name="l02105"></a><span class="lineno"> 2105</span>&#160;              <span class="comment">// the same dimension.  If anyone hits these asserts let</span></div>
+<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;              <span class="comment">// me know; we could probably support a mixed-dimension</span></div>
+<div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;              <span class="comment">// mesh IFF the 2D elements were all parallel to xy and</span></div>
+<div class="line"><a name="l02108"></a><span class="lineno"> 2108</span>&#160;              <span class="comment">// the 1D elements all parallel to x.</span></div>
+<div class="line"><a name="l02109"></a><span class="lineno"> 2109</span>&#160;              <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> e_id : (*this-&gt;<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a0ee337b55bf1d81fe587512a4053282c">projector</a>.<a class="code" href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">nodes_to_elem</a>)[vertex.id()])</div>
+<div class="line"><a name="l02110"></a><span class="lineno"> 2110</span>&#160;                {</div>
+<div class="line"><a name="l02111"></a><span class="lineno"> 2111</span>&#160;                  <span class="keyword">const</span> Elem &amp; e = <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a39141a08afe4e0334c21035de6f0b7a3">get_mesh</a>().<a class="code" href="classlibMesh_1_1MeshBase.html#a42b7a9f2869772ac1a7d072f45a8378d">elem_ref</a>(e_id);</div>
+<div class="line"><a name="l02112"></a><span class="lineno"> 2112</span>&#160;                  libmesh_assert_equal_to(dim, e.dim());</div>
+<div class="line"><a name="l02113"></a><span class="lineno"> 2113</span>&#160;                }</div>
+<div class="line"><a name="l02114"></a><span class="lineno"> 2114</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l02115"></a><span class="lineno"> 2115</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l02116"></a><span class="lineno"> 2116</span>&#160;<span class="preprocessor"></span>              <span class="keywordtype">bool</span> is_old_vertex = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02117"></a><span class="lineno"> 2117</span>&#160;              <span class="keywordflow">if</span> (elem.refinement_flag() == <a class="code" href="classlibMesh_1_1Elem.html#a674d499e6c104bc63a68ca7e9c7ccb54a6fb8f2a3f8b6cc1a569263dbc1f1c5cf">Elem::JUST_REFINED</a>)</div>
+<div class="line"><a name="l02118"></a><span class="lineno"> 2118</span>&#160;                {</div>
+<div class="line"><a name="l02119"></a><span class="lineno"> 2119</span>&#160;                  <span class="keyword">const</span> <span class="keywordtype">int</span> i_am_child =</div>
+<div class="line"><a name="l02120"></a><span class="lineno"> 2120</span>&#160;                    elem.<a class="code" href="classlibMesh_1_1Elem.html#a7cdd994bb4245128f8617b62d7968e35">parent</a>()-&gt;<a class="code" href="classlibMesh_1_1Elem.html#ad3ec91e1b0444b1d699302681b713fe1">which_child_am_i</a>(&amp;elem);</div>
+<div class="line"><a name="l02121"></a><span class="lineno"> 2121</span>&#160;                  is_old_vertex =</div>
+<div class="line"><a name="l02122"></a><span class="lineno"> 2122</span>&#160;                    elem.parent()-&gt;is_vertex_on_parent(i_am_child, n);</div>
+<div class="line"><a name="l02123"></a><span class="lineno"> 2123</span>&#160;                }</div>
+<div class="line"><a name="l02124"></a><span class="lineno"> 2124</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l02125"></a><span class="lineno"> 2125</span>&#160;<span class="preprocessor"></span>              <span class="keyword">const</span> <span class="keywordtype">bool</span> is_old_vertex = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02126"></a><span class="lineno"> 2126</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l02127"></a><span class="lineno"> 2127</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;              <span class="comment">// The hermite element vertex shape functions are weird</span></div>
+<div class="line"><a name="l02129"></a><span class="lineno"> 2129</span>&#160;              <span class="keywordflow">if</span> (base_fe_type.family == <a class="code" href="namespacelibMesh.html#abcdbcd8364bf9fb7a67b3b4013031b2dab820fd3da9e7dd7be8be1b75f1d3d35a">HERMITE</a>)</div>
+<div class="line"><a name="l02130"></a><span class="lineno"> 2130</span>&#160;                {</div>
+<div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160;                  <span class="keyword">const</span> FValue val =</div>
+<div class="line"><a name="l02132"></a><span class="lineno"> 2132</span>&#160;                    <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab7e6920fc141a5ffce75f3ac092d44ac">f</a>.eval_at_node(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02133"></a><span class="lineno"> 2133</span>&#160;                                   var_component,</div>
+<div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160;                                   dim,</div>
+<div class="line"><a name="l02135"></a><span class="lineno"> 2135</span>&#160;                                   vertex,</div>
+<div class="line"><a name="l02136"></a><span class="lineno"> 2136</span>&#160;                                   extra_hanging_dofs[var],</div>
+<div class="line"><a name="l02137"></a><span class="lineno"> 2137</span>&#160;                                   <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>);</div>
+<div class="line"><a name="l02138"></a><span class="lineno"> 2138</span>&#160;                  <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id, val, vertex.processor_id());</div>
+<div class="line"><a name="l02139"></a><span class="lineno"> 2139</span>&#160;</div>
+<div class="line"><a name="l02140"></a><span class="lineno"> 2140</span>&#160;                  <span class="keyword">typename</span> GFunctor::FunctorValue grad =</div>
+<div class="line"><a name="l02141"></a><span class="lineno"> 2141</span>&#160;                    is_old_vertex ?</div>
+<div class="line"><a name="l02142"></a><span class="lineno"> 2142</span>&#160;                    <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_node(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02143"></a><span class="lineno"> 2143</span>&#160;                                    var_component,</div>
+<div class="line"><a name="l02144"></a><span class="lineno"> 2144</span>&#160;                                    dim,</div>
+<div class="line"><a name="l02145"></a><span class="lineno"> 2145</span>&#160;                                    vertex,</div>
+<div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160;                                    extra_hanging_dofs[var],</div>
+<div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160;                                    <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>) :</div>
+<div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160;                    <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;                                     var_component,</div>
+<div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;                                     vertex,</div>
+<div class="line"><a name="l02151"></a><span class="lineno"> 2151</span>&#160;                                     <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l02152"></a><span class="lineno"> 2152</span>&#160;                                     <span class="keyword">false</span>);</div>
+<div class="line"><a name="l02153"></a><span class="lineno"> 2153</span>&#160;                  <span class="comment">// x derivative. Use slice because grad may be a tensor type</span></div>
+<div class="line"><a name="l02154"></a><span class="lineno"> 2154</span>&#160;                  <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id+1, grad.slice(0),</div>
+<div class="line"><a name="l02155"></a><span class="lineno"> 2155</span>&#160;                            vertex.processor_id());</div>
+<div class="line"><a name="l02156"></a><span class="lineno"> 2156</span>&#160;<span class="preprocessor">#if LIBMESH_DIM &gt; 1</span></div>
+<div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;<span class="preprocessor"></span>                  <span class="keywordflow">if</span> (dim &gt; 1 &amp;&amp; is_old_vertex &amp;&amp; <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab7e6920fc141a5ffce75f3ac092d44ac">f</a>.is_grid_projection())</div>
+<div class="line"><a name="l02158"></a><span class="lineno"> 2158</span>&#160;                    {</div>
+<div class="line"><a name="l02159"></a><span class="lineno"> 2159</span>&#160;                      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; dim; ++i)</div>
+<div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;                        <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id+i+1, grad.slice(i),</div>
+<div class="line"><a name="l02161"></a><span class="lineno"> 2161</span>&#160;                                  vertex.processor_id());</div>
+<div class="line"><a name="l02162"></a><span class="lineno"> 2162</span>&#160;</div>
+<div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;                      <span class="comment">// We can directly copy everything else too</span></div>
+<div class="line"><a name="l02164"></a><span class="lineno"> 2164</span>&#160;                      std::vector&lt;FValue&gt; derivs;</div>
+<div class="line"><a name="l02165"></a><span class="lineno"> 2165</span>&#160;                      <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab7e6920fc141a5ffce75f3ac092d44ac">f</a>.eval_mixed_derivatives</div>
+<div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160;                        (<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>, var_component, dim, vertex, derivs);</div>
+<div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;                      <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(derivs))</div>
+<div class="line"><a name="l02168"></a><span class="lineno"> 2168</span>&#160;                        <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id+dim+1+i, derivs[i],</div>
+<div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;                                  vertex.processor_id());</div>
+<div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;                    }</div>
+<div class="line"><a name="l02171"></a><span class="lineno"> 2171</span>&#160;                  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (dim &gt; 1)</div>
+<div class="line"><a name="l02172"></a><span class="lineno"> 2172</span>&#160;                    {</div>
+<div class="line"><a name="l02173"></a><span class="lineno"> 2173</span>&#160;                      <span class="comment">// We&#39;ll finite difference mixed derivatives.</span></div>
+<div class="line"><a name="l02174"></a><span class="lineno"> 2174</span>&#160;                      <span class="comment">// This delta_x used to be TOLERANCE*hmin, but</span></div>
+<div class="line"><a name="l02175"></a><span class="lineno"> 2175</span>&#160;                      <span class="comment">// the factor of 10 improved the accuracy in</span></div>
+<div class="line"><a name="l02176"></a><span class="lineno"> 2176</span>&#160;                      <span class="comment">// some unit test projections</span></div>
+<div class="line"><a name="l02177"></a><span class="lineno"> 2177</span>&#160;                      <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> delta_x = <a class="code" href="namespacelibMesh.html#aadc7666a2b443d9cccbb63174874c14f">TOLERANCE</a> * 10 * elem.hmin();</div>
+<div class="line"><a name="l02178"></a><span class="lineno"> 2178</span>&#160;</div>
+<div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;                      Point nxminus = elem.point(n),</div>
+<div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160;                            nxplus = elem.point(n);</div>
+<div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;                      nxminus(0) -= delta_x;</div>
+<div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;                      nxplus(0) += delta_x;</div>
+<div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;                      <span class="keyword">typename</span> GFunctor::FunctorValue gxminus =</div>
+<div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;                        <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;                                         var_component,</div>
+<div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;                                         nxminus,</div>
+<div class="line"><a name="l02187"></a><span class="lineno"> 2187</span>&#160;                                         <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l02188"></a><span class="lineno"> 2188</span>&#160;                                         <span class="keyword">true</span>);</div>
+<div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;                      <span class="keyword">typename</span> GFunctor::FunctorValue gxplus =</div>
+<div class="line"><a name="l02190"></a><span class="lineno"> 2190</span>&#160;                        <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;                                         var_component,</div>
+<div class="line"><a name="l02192"></a><span class="lineno"> 2192</span>&#160;                                         nxplus,</div>
+<div class="line"><a name="l02193"></a><span class="lineno"> 2193</span>&#160;                                         <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l02194"></a><span class="lineno"> 2194</span>&#160;                                         <span class="keyword">true</span>);</div>
+<div class="line"><a name="l02195"></a><span class="lineno"> 2195</span>&#160;                      <span class="comment">// y derivative</span></div>
+<div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;                      <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id+2, grad.slice(1),</div>
+<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;                                vertex.processor_id());</div>
+<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;                      <span class="comment">// xy derivative</span></div>
+<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;                      <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id+3,</div>
+<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;                        (grad_component(gxplus, 1) - grad_component(gxminus, 1)) / 2. / delta_x,</div>
+<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;                        vertex.processor_id());</div>
+<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;</div>
+<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;<span class="preprocessor">#if LIBMESH_DIM &gt; 2</span></div>
+<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;<span class="preprocessor"></span>                      <span class="keywordflow">if</span> (dim &gt; 2)</div>
+<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;                        {</div>
+<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;                          <span class="comment">// z derivative</span></div>
+<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;                          <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id+4, grad.slice(2),</div>
+<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;                                    vertex.processor_id());</div>
+<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;                          <span class="comment">// xz derivative</span></div>
+<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;                          <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id+5,</div>
+<div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;                            (grad_component(gxplus, 2) - grad_component(gxminus, 2)) / 2. / delta_x,</div>
+<div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160;                            vertex.processor_id());</div>
+<div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160;</div>
+<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;                          <span class="comment">// We need new points for yz</span></div>
+<div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;                          Point nyminus = elem.point(n),</div>
+<div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;                            nyplus = elem.point(n);</div>
+<div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;                          nyminus(1) -= delta_x;</div>
+<div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;                          nyplus(1) += delta_x;</div>
+<div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;                          <span class="keyword">typename</span> GFunctor::FunctorValue gyminus =</div>
+<div class="line"><a name="l02220"></a><span class="lineno"> 2220</span>&#160;                            <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02221"></a><span class="lineno"> 2221</span>&#160;                                             var_component,</div>
+<div class="line"><a name="l02222"></a><span class="lineno"> 2222</span>&#160;                                             nyminus,</div>
+<div class="line"><a name="l02223"></a><span class="lineno"> 2223</span>&#160;                                             <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l02224"></a><span class="lineno"> 2224</span>&#160;                                             <span class="keyword">true</span>);</div>
+<div class="line"><a name="l02225"></a><span class="lineno"> 2225</span>&#160;                          <span class="keyword">typename</span> GFunctor::FunctorValue gyplus =</div>
+<div class="line"><a name="l02226"></a><span class="lineno"> 2226</span>&#160;                            <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02227"></a><span class="lineno"> 2227</span>&#160;                                             var_component,</div>
+<div class="line"><a name="l02228"></a><span class="lineno"> 2228</span>&#160;                                             nyplus,</div>
+<div class="line"><a name="l02229"></a><span class="lineno"> 2229</span>&#160;                                             <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l02230"></a><span class="lineno"> 2230</span>&#160;                                             <span class="keyword">true</span>);</div>
+<div class="line"><a name="l02231"></a><span class="lineno"> 2231</span>&#160;                          <span class="comment">// yz derivative</span></div>
+<div class="line"><a name="l02232"></a><span class="lineno"> 2232</span>&#160;                          <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id+6,</div>
+<div class="line"><a name="l02233"></a><span class="lineno"> 2233</span>&#160;                            (grad_component(gyplus, 2) - grad_component(gyminus, 2)) / 2. / delta_x,</div>
+<div class="line"><a name="l02234"></a><span class="lineno"> 2234</span>&#160;                            vertex.processor_id());</div>
+<div class="line"><a name="l02235"></a><span class="lineno"> 2235</span>&#160;                          <span class="comment">// Getting a 2nd order xyz is more tedious</span></div>
+<div class="line"><a name="l02236"></a><span class="lineno"> 2236</span>&#160;                          Point nxmym = elem.point(n),</div>
+<div class="line"><a name="l02237"></a><span class="lineno"> 2237</span>&#160;                            nxmyp = elem.point(n),</div>
+<div class="line"><a name="l02238"></a><span class="lineno"> 2238</span>&#160;                            nxpym = elem.point(n),</div>
+<div class="line"><a name="l02239"></a><span class="lineno"> 2239</span>&#160;                            nxpyp = elem.point(n);</div>
+<div class="line"><a name="l02240"></a><span class="lineno"> 2240</span>&#160;                          nxmym(0) -= delta_x;</div>
+<div class="line"><a name="l02241"></a><span class="lineno"> 2241</span>&#160;                          nxmym(1) -= delta_x;</div>
+<div class="line"><a name="l02242"></a><span class="lineno"> 2242</span>&#160;                          nxmyp(0) -= delta_x;</div>
+<div class="line"><a name="l02243"></a><span class="lineno"> 2243</span>&#160;                          nxmyp(1) += delta_x;</div>
+<div class="line"><a name="l02244"></a><span class="lineno"> 2244</span>&#160;                          nxpym(0) += delta_x;</div>
+<div class="line"><a name="l02245"></a><span class="lineno"> 2245</span>&#160;                          nxpym(1) -= delta_x;</div>
+<div class="line"><a name="l02246"></a><span class="lineno"> 2246</span>&#160;                          nxpyp(0) += delta_x;</div>
+<div class="line"><a name="l02247"></a><span class="lineno"> 2247</span>&#160;                          nxpyp(1) += delta_x;</div>
+<div class="line"><a name="l02248"></a><span class="lineno"> 2248</span>&#160;                          <span class="keyword">typename</span> GFunctor::FunctorValue gxmym =</div>
+<div class="line"><a name="l02249"></a><span class="lineno"> 2249</span>&#160;                            <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02250"></a><span class="lineno"> 2250</span>&#160;                                             var_component,</div>
+<div class="line"><a name="l02251"></a><span class="lineno"> 2251</span>&#160;                                             nxmym,</div>
+<div class="line"><a name="l02252"></a><span class="lineno"> 2252</span>&#160;                                             <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l02253"></a><span class="lineno"> 2253</span>&#160;                                             <span class="keyword">true</span>);</div>
+<div class="line"><a name="l02254"></a><span class="lineno"> 2254</span>&#160;                          <span class="keyword">typename</span> GFunctor::FunctorValue gxmyp =</div>
+<div class="line"><a name="l02255"></a><span class="lineno"> 2255</span>&#160;                            <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02256"></a><span class="lineno"> 2256</span>&#160;                                             var_component,</div>
+<div class="line"><a name="l02257"></a><span class="lineno"> 2257</span>&#160;                                             nxmyp,</div>
+<div class="line"><a name="l02258"></a><span class="lineno"> 2258</span>&#160;                                             <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l02259"></a><span class="lineno"> 2259</span>&#160;                                             <span class="keyword">true</span>);</div>
+<div class="line"><a name="l02260"></a><span class="lineno"> 2260</span>&#160;                          <span class="keyword">typename</span> GFunctor::FunctorValue gxpym =</div>
+<div class="line"><a name="l02261"></a><span class="lineno"> 2261</span>&#160;                            <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02262"></a><span class="lineno"> 2262</span>&#160;                                             var_component,</div>
+<div class="line"><a name="l02263"></a><span class="lineno"> 2263</span>&#160;                                             nxpym,</div>
+<div class="line"><a name="l02264"></a><span class="lineno"> 2264</span>&#160;                                             <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;                                             <span class="keyword">true</span>);</div>
+<div class="line"><a name="l02266"></a><span class="lineno"> 2266</span>&#160;                          <span class="keyword">typename</span> GFunctor::FunctorValue gxpyp =</div>
+<div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;                            <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>,</div>
+<div class="line"><a name="l02268"></a><span class="lineno"> 2268</span>&#160;                                             var_component,</div>
+<div class="line"><a name="l02269"></a><span class="lineno"> 2269</span>&#160;                                             nxpyp,</div>
+<div class="line"><a name="l02270"></a><span class="lineno"> 2270</span>&#160;                                             <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>,</div>
+<div class="line"><a name="l02271"></a><span class="lineno"> 2271</span>&#160;                                             <span class="keyword">true</span>);</div>
+<div class="line"><a name="l02272"></a><span class="lineno"> 2272</span>&#160;                          FValue gxzplus = (grad_component(gxpyp, 2) - grad_component(gxmyp, 2))</div>
+<div class="line"><a name="l02273"></a><span class="lineno"> 2273</span>&#160;                            / 2. / delta_x;</div>
+<div class="line"><a name="l02274"></a><span class="lineno"> 2274</span>&#160;                          FValue gxzminus = (grad_component(gxpym, 2) - grad_component(gxmym, 2))</div>
+<div class="line"><a name="l02275"></a><span class="lineno"> 2275</span>&#160;                            / 2. / delta_x;</div>
+<div class="line"><a name="l02276"></a><span class="lineno"> 2276</span>&#160;                          <span class="comment">// xyz derivative</span></div>
+<div class="line"><a name="l02277"></a><span class="lineno"> 2277</span>&#160;                          <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id+7,</div>
+<div class="line"><a name="l02278"></a><span class="lineno"> 2278</span>&#160;                            (gxzplus - gxzminus) / 2. / delta_x,</div>
+<div class="line"><a name="l02279"></a><span class="lineno"> 2279</span>&#160;                            vertex.processor_id());</div>
+<div class="line"><a name="l02280"></a><span class="lineno"> 2280</span>&#160;                        }</div>
+<div class="line"><a name="l02281"></a><span class="lineno"> 2281</span>&#160;<span class="preprocessor">#endif // LIBMESH_DIM &gt; 2</span></div>
+<div class="line"><a name="l02282"></a><span class="lineno"> 2282</span>&#160;<span class="preprocessor"></span>                    }</div>
+<div class="line"><a name="l02283"></a><span class="lineno"> 2283</span>&#160;<span class="preprocessor">#endif // LIBMESH_DIM &gt; 1</span></div>
+<div class="line"><a name="l02284"></a><span class="lineno"> 2284</span>&#160;<span class="preprocessor"></span>                }</div>
+<div class="line"><a name="l02285"></a><span class="lineno"> 2285</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l02286"></a><span class="lineno"> 2286</span>&#160;                {</div>
+<div class="line"><a name="l02287"></a><span class="lineno"> 2287</span>&#160;                  <span class="comment">// Currently other C_ONE elements have a single nodal</span></div>
+<div class="line"><a name="l02288"></a><span class="lineno"> 2288</span>&#160;                  <span class="comment">// value shape function and nodal gradient component</span></div>
+<div class="line"><a name="l02289"></a><span class="lineno"> 2289</span>&#160;                  <span class="comment">// shape functions</span></div>
+<div class="line"><a name="l02290"></a><span class="lineno"> 2290</span>&#160;                  libmesh_assert_equal_to(</div>
+<div class="line"><a name="l02291"></a><span class="lineno"> 2291</span>&#160;                      <a class="code" href="classlibMesh_1_1FEInterface.html#a9d448e5766ac099a401541d191439d0b">FEInterface::n_dofs_at_node</a>(</div>
+<div class="line"><a name="l02292"></a><span class="lineno"> 2292</span>&#160;                          base_fe_type,</div>
+<div class="line"><a name="l02293"></a><span class="lineno"> 2293</span>&#160;                          &amp;elem,</div>
+<div class="line"><a name="l02294"></a><span class="lineno"> 2294</span>&#160;                          elem.get_node_index(&amp;vertex),</div>
+<div class="line"><a name="l02295"></a><span class="lineno"> 2295</span>&#160;                          this-&gt;<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a0ee337b55bf1d81fe587512a4053282c">projector</a>.<a class="code" href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">system</a>.<a class="code" href="classlibMesh_1_1System.html#a3b392c8791f781092d6326e51856f553">get_dof_map</a>().<a class="code" href="classlibMesh_1_1DofMap.html#a709945cd61f9c28ef504f3d7d1ac6962">should_p_refine</a>(</div>
+<div class="line"><a name="l02296"></a><span class="lineno"> 2296</span>&#160;                              this-&gt;<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a0ee337b55bf1d81fe587512a4053282c">projector</a>.<a class="code" href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">system</a>.<a class="code" href="classlibMesh_1_1System.html#a3b392c8791f781092d6326e51856f553">get_dof_map</a>().<a class="code" href="classlibMesh_1_1DofMap.html#a3262c6d5e69e4a6c07dd9b44d79365d1">var_group_from_var_number</a>(var))),</div>
+<div class="line"><a name="l02297"></a><span class="lineno"> 2297</span>&#160;                      (<span class="keywordtype">unsigned</span> int)(1 + dim));</div>
+<div class="line"><a name="l02298"></a><span class="lineno"> 2298</span>&#160;</div>
+<div class="line"><a name="l02299"></a><span class="lineno"> 2299</span>&#160;                  <span class="keyword">const</span> FValue val =</div>
+<div class="line"><a name="l02300"></a><span class="lineno"> 2300</span>&#160;                    <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab7e6920fc141a5ffce75f3ac092d44ac">f</a>.eval_at_node(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>, var_component, dim,</div>
+<div class="line"><a name="l02301"></a><span class="lineno"> 2301</span>&#160;                                   vertex, extra_hanging_dofs[var],</div>
+<div class="line"><a name="l02302"></a><span class="lineno"> 2302</span>&#160;                                   <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>);</div>
+<div class="line"><a name="l02303"></a><span class="lineno"> 2303</span>&#160;                  <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id, val, vertex.processor_id());</div>
+<div class="line"><a name="l02304"></a><span class="lineno"> 2304</span>&#160;                  <span class="keyword">typename</span> GFunctor::FunctorValue grad =</div>
+<div class="line"><a name="l02305"></a><span class="lineno"> 2305</span>&#160;                    is_old_vertex ?</div>
+<div class="line"><a name="l02306"></a><span class="lineno"> 2306</span>&#160;                    <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_node(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>, var_component, dim,</div>
+<div class="line"><a name="l02307"></a><span class="lineno"> 2307</span>&#160;                                    vertex, extra_hanging_dofs[var],</div>
+<div class="line"><a name="l02308"></a><span class="lineno"> 2308</span>&#160;                                    <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>) :</div>
+<div class="line"><a name="l02309"></a><span class="lineno"> 2309</span>&#160;                    <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">g</a>-&gt;eval_at_point(<a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">context</a>, var_component, vertex,</div>
+<div class="line"><a name="l02310"></a><span class="lineno"> 2310</span>&#160;                                     <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">system</a>.<a class="code" href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">time</a>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l02311"></a><span class="lineno"> 2311</span>&#160;                  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i!= dim; ++i)</div>
+<div class="line"><a name="l02312"></a><span class="lineno"> 2312</span>&#160;                    <a class="code" href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">insert_id</a>(first_id + i + 1, grad.slice(i),</div>
+<div class="line"><a name="l02313"></a><span class="lineno"> 2313</span>&#160;                              vertex.processor_id());</div>
+<div class="line"><a name="l02314"></a><span class="lineno"> 2314</span>&#160;                }</div>
+<div class="line"><a name="l02315"></a><span class="lineno"> 2315</span>&#160;            }</div>
+<div class="line"><a name="l02316"></a><span class="lineno"> 2316</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l02317"></a><span class="lineno"> 2317</span>&#160;            libmesh_error_msg(<span class="stringliteral">&quot;Unknown continuity &quot;</span> &lt;&lt; cont);</div>
+<div class="line"><a name="l02318"></a><span class="lineno"> 2318</span>&#160;        }</div>
+<div class="line"><a name="l02319"></a><span class="lineno"> 2319</span>&#160;    }</div>
+<div class="line"><a name="l02320"></a><span class="lineno"> 2320</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html_a3262c6d5e69e4a6c07dd9b44d79365d1"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a3262c6d5e69e4a6c07dd9b44d79365d1">libMesh::DofMap::var_group_from_var_number</a></div><div class="ttdeci">unsigned int var_group_from_var_number(unsigned int var_num) const </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l02347">dof_map.h:2347</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a90b0537fa503134bfa91865a6995742e"><div class="ttname"><a href="classlibMesh_1_1System.html#a90b0537fa503134bfa91865a6995742e">libMesh::System::time</a></div><div class="ttdeci">Real time</div><div class="ttdoc">For time-dependent problems, this is the time t at the beginning of the current timestep. </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l01595">system.h:1595</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Variable_html_a8dcb07137d70a83fcf5b412e08e2783e"><div class="ttname"><a href="classlibMesh_1_1Variable.html#a8dcb07137d70a83fcf5b412e08e2783e">libMesh::Variable::type</a></div><div class="ttdeci">const FEType &amp; type() const </div><div class="ttdef"><b>Definition:</b> <a href="variable_8h_source.html#l00140">variable.h:140</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html_a4bc0ad51d8939df5b9ac3caa84136408"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html#a4bc0ad51d8939df5b9ac3caa84136408">libMesh::FEMContext::pre_fe_reinit</a></div><div class="ttdeci">virtual void pre_fe_reinit(const System &amp;, const Elem *e)</div><div class="ttdoc">Reinitializes local data vectors/matrices on the current geometric element. </div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8C_source.html#l01675">fem_context.C:1675</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_abcdbcd8364bf9fb7a67b3b4013031b2daefdbf95da65edcfa0cdb6c10eac5482c"><div class="ttname"><a href="namespacelibMesh.html#abcdbcd8364bf9fb7a67b3b4013031b2daefdbf95da65edcfa0cdb6c10eac5482c">libMesh::SCALAR</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00058">enum_fe_family.h:58</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_abcdbcd8364bf9fb7a67b3b4013031b2dab820fd3da9e7dd7be8be1b75f1d3d35a"><div class="ttname"><a href="namespacelibMesh.html#abcdbcd8364bf9fb7a67b3b4013031b2dab820fd3da9e7dd7be8be1b75f1d3d35a">libMesh::HERMITE</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00054">enum_fe_family.h:54</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aadc7666a2b443d9cccbb63174874c14f"><div class="ttname"><a href="namespacelibMesh.html#aadc7666a2b443d9cccbb63174874c14f">libMesh::TOLERANCE</a></div><div class="ttdeci">static constexpr Real TOLERANCE</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00150">libmesh_common.h:150</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_a7cdd994bb4245128f8617b62d7968e35"><div class="ttname"><a href="classlibMesh_1_1Elem.html#a7cdd994bb4245128f8617b62d7968e35">libMesh::Elem::parent</a></div><div class="ttdeci">const Elem * parent() const </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l02843">elem.h:2843</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html_a709945cd61f9c28ef504f3d7d1ac6962"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a709945cd61f9c28ef504f3d7d1ac6962">libMesh::DofMap::should_p_refine</a></div><div class="ttdeci">void should_p_refine(unsigned int g, bool p_refine)</div><div class="ttdoc">Describe whether the given variable group should be p-refined. </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l02319">dof_map.h:2319</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_a766d4b32de4ae0a2d693081da3d0b431"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a766d4b32de4ae0a2d693081da3d0b431">libMesh::GenericProjector::SubFunctor::insert_id</a></div><div class="ttdeci">void insert_id(dof_id_type id, const InsertInput &amp;val, processor_id_type pid)</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l01365">generic_projector.h:1365</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a09db0990f72f24f6b4f3f3a8df4dc97daefa1013fc8340a1ceff8bdcf6fb8ca81"><div class="ttname"><a href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97daefa1013fc8340a1ceff8bdcf6fb8ca81">libMesh::DISCONTINUOUS</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00082">enum_fe_family.h:82</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_ab48ececdc40897f8b22c84b7085a65cc"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab48ececdc40897f8b22c84b7085a65cc">libMesh::GenericProjector::SubFunctor::context</a></div><div class="ttdeci">FEMContext context</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00223">generic_projector.h:223</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubProjector_html_abe4b9a2aa547dac425b3d875a17b1f09"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubProjector.html#abe4b9a2aa547dac425b3d875a17b1f09">libMesh::GenericProjector::SubProjector::g</a></div><div class="ttdeci">std::unique_ptr&lt; GFunctor &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00254">generic_projector.h:254</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a09db0990f72f24f6b4f3f3a8df4dc97dadf4b186dfd8bea051fe97c6fc68a6e05"><div class="ttname"><a href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97dadf4b186dfd8bea051fe97c6fc68a6e05">libMesh::SIDE_DISCONTINUOUS</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00087">enum_fe_family.h:87</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a39141a08afe4e0334c21035de6f0b7a3"><div class="ttname"><a href="classlibMesh_1_1System.html#a39141a08afe4e0334c21035de6f0b7a3">libMesh::System::get_mesh</a></div><div class="ttdeci">const MeshBase &amp; get_mesh() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02277">system.h:2277</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a3b392c8791f781092d6326e51856f553"><div class="ttname"><a href="classlibMesh_1_1System.html#a3b392c8791f781092d6326e51856f553">libMesh::System::get_dof_map</a></div><div class="ttdeci">const DofMap &amp; get_dof_map() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02293">system.h:2293</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEInterface_html_ac0363b6fc2b8355ff0416ac65b522066"><div class="ttname"><a href="classlibMesh_1_1FEInterface.html#ac0363b6fc2b8355ff0416ac65b522066">libMesh::FEInterface::extra_hanging_dofs</a></div><div class="ttdeci">static bool extra_hanging_dofs(const FEType &amp;fe_t)</div><div class="ttdef"><b>Definition:</b> <a href="fe__interface_8C_source.html#l02817">fe_interface.C:2817</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a56d89ed534ffce5eda02dc0137583b56"><div class="ttname"><a href="classlibMesh_1_1System.html#a56d89ed534ffce5eda02dc0137583b56">libMesh::System::variable</a></div><div class="ttdeci">const Variable &amp; variable(unsigned int var) const </div><div class="ttdoc">Return a constant reference to Variable var. </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02377">system.h:2377</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a09db0990f72f24f6b4f3f3a8df4dc97da3d7eb87bf395933a81478e732969e1f4"><div class="ttname"><a href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97da3d7eb87bf395933a81478e732969e1f4">libMesh::C_ZERO</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00083">enum_fe_family.h:83</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_a4f23ca6e47b3bb05f03dd2d9dbec7d32"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a4f23ca6e47b3bb05f03dd2d9dbec7d32">libMesh::GenericProjector::SubFunctor::field_types</a></div><div class="ttdeci">std::vector&lt; FEFieldType &gt; field_types</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00227">generic_projector.h:227</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a275e255b09d41a252e95e618371911f2"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a275e255b09d41a252e95e618371911f2">libMesh::GenericProjector::variables</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; &amp; variables</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00094">generic_projector.h:94</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a9f14915fcf180813ee72885b6a840fe1"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a9f14915fcf180813ee72885b6a840fe1">libMesh::GenericProjector::system</a></div><div class="ttdeci">const System &amp; system</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00086">generic_projector.h:86</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEInterface_html_a9d448e5766ac099a401541d191439d0b"><div class="ttname"><a href="classlibMesh_1_1FEInterface.html#a9d448e5766ac099a401541d191439d0b">libMesh::FEInterface::n_dofs_at_node</a></div><div class="ttdeci">static unsigned int n_dofs_at_node(const unsigned int dim, const FEType &amp;fe_t, const ElemType t, const unsigned int n)</div><div class="ttdef"><b>Definition:</b> <a href="fe__interface_8C_source.html#l00650">fe_interface.C:650</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_a5ba27a3ea4c45c6f4f92edac6acbd5ff"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a5ba27a3ea4c45c6f4f92edac6acbd5ff">libMesh::GenericProjector::SubFunctor::find_dofs_to_send</a></div><div class="ttdeci">void find_dofs_to_send(const Node &amp;node, const Elem &amp;elem, unsigned short node_num, const var_set &amp;vars)</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l02829">generic_projector.h:2829</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_ad3ec91e1b0444b1d699302681b713fe1"><div class="ttname"><a href="classlibMesh_1_1Elem.html#ad3ec91e1b0444b1d699302681b713fe1">libMesh::Elem::which_child_am_i</a></div><div class="ttdeci">unsigned int which_child_am_i(const Elem *e) const </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l03005">elem.h:3005</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html_a42b7a9f2869772ac1a7d072f45a8378d"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html#a42b7a9f2869772ac1a7d072f45a8378d">libMesh::MeshBase::elem_ref</a></div><div class="ttdeci">virtual const Elem &amp; elem_ref(const dof_id_type i) const </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00614">mesh_base.h:614</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_a0ee337b55bf1d81fe587512a4053282c"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#a0ee337b55bf1d81fe587512a4053282c">libMesh::GenericProjector::SubFunctor::projector</a></div><div class="ttdeci">GenericProjector &amp; projector</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00157">generic_projector.h:157</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_a26e703655894221d9fb0d19b387866dd"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#a26e703655894221d9fb0d19b387866dd">libMesh::GenericProjector::nodes_to_elem</a></div><div class="ttdeci">std::unordered_map&lt; dof_id_type, std::vector&lt; dof_id_type &gt; &gt; * nodes_to_elem</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00095">generic_projector.h:95</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_aee5caacb487b070842733f1c84b9a2fd"><div class="ttname"><a href="classlibMesh_1_1System.html#aee5caacb487b070842733f1c84b9a2fd">libMesh::System::number</a></div><div class="ttdeci">unsigned int number() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02269">system.h:2269</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a09db0990f72f24f6b4f3f3a8df4dc97d"><div class="ttname"><a href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">libMesh::FEContinuity</a></div><div class="ttdeci">FEContinuity</div><div class="ttdoc">defines an enum for finite element types to libmesh_assert a certain level (or type? Hcurl?) of continuity. </div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00081">enum_fe_family.h:81</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a09db0990f72f24f6b4f3f3a8df4dc97da3eb599c685af73e85804a8793f733ab4"><div class="ttname"><a href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97da3eb599c685af73e85804a8793f733ab4">libMesh::C_ONE</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00084">enum_fe_family.h:84</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_af4bb222855ab320fb5e55a76d7160e53"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#af4bb222855ab320fb5e55a76d7160e53">libMesh::GenericProjector::SubFunctor::system</a></div><div class="ttdeci">const System &amp; system</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00229">generic_projector.h:229</a></div></div>
+<div class="ttc" id="classlibMesh_1_1GenericProjector_html_ac16cd62252da54e6b556c318d6428f68"><div class="ttname"><a href="classlibMesh_1_1GenericProjector.html#ac16cd62252da54e6b556c318d6428f68">libMesh::GenericProjector::var_set</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; var_set</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00152">generic_projector.h:152</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a8b51e2e5f42614e581f13540e2dda4aa"><div class="ttname"><a href="classlibMesh_1_1System.html#a8b51e2e5f42614e581f13540e2dda4aa">libMesh::System::variable_scalar_number</a></div><div class="ttdeci">unsigned int variable_scalar_number(std::string_view var, unsigned int component) const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02408">system.h:2408</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_ab7e6920fc141a5ffce75f3ac092d44ac"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ab7e6920fc141a5ffce75f3ac092d44ac">libMesh::GenericProjector::SubFunctor::f</a></div><div class="ttdeci">FFunctor f</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00219">generic_projector.h:219</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a354ba8d7698a213772f215eab6b08fc1ad826e2ea6a9b3e392e353111c7080170"><div class="ttname"><a href="namespacelibMesh.html#a354ba8d7698a213772f215eab6b08fc1ad826e2ea6a9b3e392e353111c7080170">libMesh::TYPE_VECTOR</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00100">enum_fe_family.h:100</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a26e38c0dc87c05a5e8df7e26bfed543b"><div class="ttname"><a href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">libMesh::index_range</a></div><div class="ttdeci">auto index_range(const T &amp;sizable)</div><div class="ttdoc">Helper function that returns an IntRange&amp;lt;std::size_t&amp;gt; representing all the indices of the passed-in v...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00111">int_range.h:111</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_a674d499e6c104bc63a68ca7e9c7ccb54a6fb8f2a3f8b6cc1a569263dbc1f1c5cf"><div class="ttname"><a href="classlibMesh_1_1Elem.html#a674d499e6c104bc63a68ca7e9c7ccb54a6fb8f2a3f8b6cc1a569263dbc1f1c5cf">libMesh::Elem::JUST_REFINED</a></div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l01284">elem.h:1284</a></div></div>
+<div class="ttc" id="structlibMesh_1_1GenericProjector_1_1SubFunctor_html_ac0d1aad42d30041c89d824ca26066d0b"><div class="ttname"><a href="structlibMesh_1_1GenericProjector_1_1SubFunctor.html#ac0d1aad42d30041c89d824ca26066d0b">libMesh::GenericProjector::SubFunctor::conts</a></div><div class="ttdeci">std::vector&lt; FEContinuity &gt; conts</div><div class="ttdef"><b>Definition:</b> <a href="generic__projector_8h_source.html#l00226">generic_projector.h:226</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ab4541d74809228310a715b11c40587fc"><div class="ttname"><a href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">libMesh::dof_id_type</a></div><div class="ttdeci">uint8_t dof_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00067">id_types.h:67</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a354ba8d7698a213772f215eab6b08fc1"><div class="ttname"><a href="namespacelibMesh.html#a354ba8d7698a213772f215eab6b08fc1">libMesh::FEFieldType</a></div><div class="ttdeci">FEFieldType</div><div class="ttdoc">defines an enum for finite element field types - i.e. </div><div class="ttdef"><b>Definition:</b> <a href="enum__fe__family_8h_source.html#l00098">enum_fe_family.h:98</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ab6acf500d9a31967020455884bd36744"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProjectionAction <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::action</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00218">218</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab48ececdc40897f8b22c84b7085a65cc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1FEMContext.html">FEMContext</a> <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::context</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00223">223</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0d1aad42d30041c89d824ca26066d0b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacelibMesh.html#a09db0990f72f24f6b4f3f3a8df4dc97d">FEContinuity</a>&gt; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::conts</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00226">226</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7e6920fc141a5ffce75f3ac092d44ac"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FFunctor <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00219">219</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f23ca6e47b3bb05f03dd2d9dbec7d32"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacelibMesh.html#a354ba8d7698a213772f215eab6b08fc1">FEFieldType</a>&gt; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::field_types</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00227">227</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe4b9a2aa547dac425b3d875a17b1f09"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;GFunctor&gt; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubProjector::g</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00254">254</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a773154697a2a38617b72e1852ff69d78"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::pair&lt;typename FFunctor::ValuePushType, <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a>&gt; &gt; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::new_ids_to_push</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00170">170</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generic__projector_8h_source.html#l01458">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::join()</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l01201">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::project()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c581befdb8b373600d368c2e2613512"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, typename FFunctor::ValuePushType&gt; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::new_ids_to_save</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00174">174</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generic__projector_8h_source.html#l01458">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::join()</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l01201">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::project()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ee337b55bf1d81fe587512a4053282c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1GenericProjector.html">GenericProjector</a>&amp; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::projector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00157">157</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4bb222855ab320fb5e55a76d7160e53"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FFunctor , typename GFunctor , typename FValue , typename ProjectionAction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classlibMesh_1_1System.html">System</a>&amp; <a class="el" href="classlibMesh_1_1GenericProjector.html">libMesh::GenericProjector</a>&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::system</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="generic__projector_8h_source.html">generic_projector.h</a> 第 <a class="el" href="generic__projector_8h_source.html#l00229">229</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/systems/<a class="el" href="generic__projector_8h_source.html">generic_projector.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:45 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

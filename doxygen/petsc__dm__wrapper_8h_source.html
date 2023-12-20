@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/solvers/petsc_dm_wrapper.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_d45ce12a4fd6845d30540ba69d2ec3cd.html">solvers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">petsc_dm_wrapper.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="petsc__dm__wrapper_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef LIBMESH_PETSC_DM_WRAPPER_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_PETSC_DM_WRAPPER_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;libmesh/petsc_macro.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef LIBMESH_HAVE_PETSC</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if !PETSC_VERSION_LESS_THAN(3,7,3)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if defined(LIBMESH_ENABLE_AMR) &amp;&amp; defined(LIBMESH_HAVE_METAPHYSICL)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// libMesh includes</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;libmesh/petsc_macro.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;libmesh/petsc_matrix.h&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;libmesh/petsc_vector.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;libmesh/wrapped_petsc.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// PETSc includes</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef I</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># define LIBMESH_SAW_I</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;petsc.h&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifndef LIBMESH_SAW_I</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># undef I // Avoid complex.h contamination</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// Forward declarations</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">class </span>System;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">class </span>DofObject;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html">   55</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structlibMesh_1_1PetscDMContext.html">PetscDMContext</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#a4d9fa0259177a7d0a54bfb77b35d3f25">   57</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structlibMesh_1_1PetscDMContext.html#a4d9fa0259177a7d0a54bfb77b35d3f25">n_dofs</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#aa8ea2be3d478af3835ddafd498c5b10c">   58</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structlibMesh_1_1PetscDMContext.html#aa8ea2be3d478af3835ddafd498c5b10c">mesh_dim</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#abc4b610e875f43b85f364a4782fe356e">   59</a></span>&#160;    DM * <a class="code" href="structlibMesh_1_1PetscDMContext.html#abc4b610e875f43b85f364a4782fe356e">coarser_dm</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#a1306f8b46b51b7ca7d2574c9297e4ed7">   60</a></span>&#160;    DM * <a class="code" href="structlibMesh_1_1PetscDMContext.html#a1306f8b46b51b7ca7d2574c9297e4ed7">finer_dm</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#ad8780ec9d1044f7a64a63030239e5a6a">   61</a></span>&#160;    DM * <a class="code" href="structlibMesh_1_1PetscDMContext.html#ad8780ec9d1044f7a64a63030239e5a6a">global_dm</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#a9ccc9e149ba9391f888ab8031c9f7826">   62</a></span>&#160;    <a class="code" href="classlibMesh_1_1PetscMatrix.html">PetscMatrix&lt;libMesh::Number&gt;</a> * <a class="code" href="structlibMesh_1_1PetscDMContext.html#a9ccc9e149ba9391f888ab8031c9f7826">K_interp_ptr</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#aac945bba6a18480eb0ae54c57165fc47">   63</a></span>&#160;    <a class="code" href="classlibMesh_1_1PetscMatrix.html">PetscMatrix&lt;libMesh::Number&gt;</a> * <a class="code" href="structlibMesh_1_1PetscDMContext.html#aac945bba6a18480eb0ae54c57165fc47">K_sub_interp_ptr</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#a1266d5814265abaa09a0ea7a152451ac">   64</a></span>&#160;    <a class="code" href="classlibMesh_1_1PetscMatrix.html">PetscMatrix&lt;libMesh::Number&gt;</a> * <a class="code" href="structlibMesh_1_1PetscDMContext.html#a1266d5814265abaa09a0ea7a152451ac">K_restrict_ptr</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#a9250fa7ad8d63d499d9d0539e75992c9">   65</a></span>&#160;    <a class="code" href="classlibMesh_1_1PetscVector.html">PetscVector&lt;libMesh::Number&gt;</a> * <a class="code" href="structlibMesh_1_1PetscDMContext.html#a9250fa7ad8d63d499d9d0539e75992c9">current_vec</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#ab1020eb11bda4d48401086ba02196c5b">   68</a></span>&#160;    std::vector&lt;std::vector&lt;numeric_index_type&gt;&gt; <a class="code" href="structlibMesh_1_1PetscDMContext.html#ab1020eb11bda4d48401086ba02196c5b">dof_vec</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#a8ebccef4418db61a2e33fdfabf033f11">   71</a></span>&#160;    std::vector&lt;PetscInt&gt; <a class="code" href="structlibMesh_1_1PetscDMContext.html#a8ebccef4418db61a2e33fdfabf033f11">subfields</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structlibMesh_1_1PetscDMContext.html#a8e5321958bcc81d0a6626bc53f0901b4">   73</a></span>&#160;  <a class="code" href="structlibMesh_1_1PetscDMContext.html#a8e5321958bcc81d0a6626bc53f0901b4">PetscDMContext</a>() :</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="structlibMesh_1_1PetscDMContext.html#a4d9fa0259177a7d0a54bfb77b35d3f25">n_dofs</a>(-12345),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="structlibMesh_1_1PetscDMContext.html#aa8ea2be3d478af3835ddafd498c5b10c">mesh_dim</a>(-12345),</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="structlibMesh_1_1PetscDMContext.html#abc4b610e875f43b85f364a4782fe356e">coarser_dm</a>(nullptr),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="structlibMesh_1_1PetscDMContext.html#a1306f8b46b51b7ca7d2574c9297e4ed7">finer_dm</a>(nullptr),</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="structlibMesh_1_1PetscDMContext.html#ad8780ec9d1044f7a64a63030239e5a6a">global_dm</a>(nullptr),</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <a class="code" href="structlibMesh_1_1PetscDMContext.html#a9ccc9e149ba9391f888ab8031c9f7826">K_interp_ptr</a>(nullptr),</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="structlibMesh_1_1PetscDMContext.html#aac945bba6a18480eb0ae54c57165fc47">K_sub_interp_ptr</a>(nullptr),</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <a class="code" href="structlibMesh_1_1PetscDMContext.html#a1266d5814265abaa09a0ea7a152451ac">K_restrict_ptr</a>(nullptr),</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="structlibMesh_1_1PetscDMContext.html#a9250fa7ad8d63d499d9d0539e75992c9">current_vec</a>(nullptr)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  };</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html">   97</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classlibMesh_1_1PetscDMWrapper.html">PetscDMWrapper</a></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#acee98aea761f74b78fb6a969f6244286">PetscDMWrapper</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a112077efd9d815591e2a074a24c6c515">~PetscDMWrapper</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a89d3f9c0a20bdf40beb55266d17615ab">clear</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a2df0375f2aafe4f68ddb9276ce76798e">init_and_attach_petscdm</a>(<a class="code" href="classlibMesh_1_1System.html">System</a> &amp; system, SNES &amp; snes);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#aa4d26a0e9269059e4e3436368ed29060">  117</a></span>&#160;    std::vector&lt;WrappedPetsc&lt;DM&gt;&gt; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#aa4d26a0e9269059e4e3436368ed29060">_dms</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#a7b64223ac3403b535b0d687825aa16b1">  127</a></span>&#160;    std::vector&lt;WrappedPetsc&lt;PetscSection&gt;&gt; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a7b64223ac3403b535b0d687825aa16b1">_sections</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#a8258edc20f6aa9603bc0ee44cd98132b">  136</a></span>&#160;    std::vector&lt;PetscSF&gt; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a8258edc20f6aa9603bc0ee44cd98132b">_star_forests</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#a8db0313aa38a2acc547b5fefaac50027">  143</a></span>&#160;    std::vector&lt;std::unique_ptr&lt;PetscMatrix&lt;Number&gt;&gt;&gt; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a8db0313aa38a2acc547b5fefaac50027">_pmtx_vec</a>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#a2e8ca5ec9955c8f2a2813ca8a70c922e">  150</a></span>&#160;    std::vector&lt;std::unique_ptr&lt;PetscMatrix&lt;Number&gt;&gt;&gt; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a2e8ca5ec9955c8f2a2813ca8a70c922e">_subpmtx_vec</a>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#aa29b614c713146bf8be8dc066ac4cdc3">  157</a></span>&#160;    std::vector&lt;PetscDMContext&gt; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#aa29b614c713146bf8be8dc066ac4cdc3">_ctx_vec</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#a5d2cb2619787d5e29185d720bf5d74f1">  164</a></span>&#160;    std::vector&lt;std::unique_ptr&lt;PetscVector&lt;Number&gt;&gt;&gt; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a5d2cb2619787d5e29185d720bf5d74f1">_vec_vec</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#ade81e2a381216f2d8ba1be473e46fc30">  167</a></span>&#160;    std::vector&lt;unsigned int&gt; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#ade81e2a381216f2d8ba1be473e46fc30">_mesh_dof_sizes</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#ad236a8053fde71cf4344bc02c8af40a9">  170</a></span>&#160;    std::vector&lt;unsigned int&gt; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#ad236a8053fde71cf4344bc02c8af40a9">_mesh_dof_loc_sizes</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a2d70713d86345846096c6ef22258cf14">init_dm_data</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespacelibMesh_1_1MeshTools.html#ae15ece869d4ef3d283edb677942e8439">n_levels</a>, <span class="keyword">const</span> Parallel::Communicator &amp; comm);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#a34bd5c1fa064d2c382a52607f4465c8f">  179</a></span>&#160;    DM &amp; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a34bd5c1fa064d2c382a52607f4465c8f">get_dm</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      { libmesh_assert_less(level, <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#aa4d26a0e9269059e4e3436368ed29060">_dms</a>.size());</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classlibMesh_1_1PetscDMWrapper.html#aa4d26a0e9269059e4e3436368ed29060">_dms</a>[level]; }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#a6295b51ea21d5501420c2c171ac0afa6">  187</a></span>&#160;    PetscSection &amp; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a6295b51ea21d5501420c2c171ac0afa6">get_section</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      { libmesh_assert_less(level, <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a7b64223ac3403b535b0d687825aa16b1">_sections</a>.size());</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a7b64223ac3403b535b0d687825aa16b1">_sections</a>[level]; }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscDMWrapper.html#aed2e29d969ca4c92ed1770477aa1a7ba">  195</a></span>&#160;    PetscSF &amp; <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#aed2e29d969ca4c92ed1770477aa1a7ba">get_star_forest</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      { libmesh_assert_less(level, <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a8258edc20f6aa9603bc0ee44cd98132b">_star_forests</a>.size());</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a8258edc20f6aa9603bc0ee44cd98132b">_star_forests</a>[level]; }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#af9ebb64f4d3f5f353f91ac2fcbe6a198">build_section</a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1System.html">System</a> &amp; system, PetscSection &amp; section);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#ab9a1fd9620e6cbef319c215a7341e8d4">build_sf</a>( <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1System.html">System</a> &amp; system, PetscSF &amp; star_forest );</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a6f5911ff56027bac98ee7000d81ab3c2">set_point_range_in_section</a>( <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1System.html">System</a> &amp; system,</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                     PetscSection &amp; section,</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                     std::unordered_map&lt;dof_id_type,dof_id_type&gt; &amp; node_map,</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                     std::unordered_map&lt;dof_id_type,dof_id_type&gt; &amp; elem_map,</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                     std::map&lt;dof_id_type,unsigned int&gt; &amp; scalar_map);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a4cab51fa93c6f9253c31726ac0806755">add_dofs_to_section</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1System.html">System</a> &amp; system,</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                              PetscSection &amp; section,</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                              <span class="keyword">const</span> std::unordered_map&lt;dof_id_type,dof_id_type&gt; &amp; node_map,</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                              <span class="keyword">const</span> std::unordered_map&lt;dof_id_type,dof_id_type&gt; &amp; elem_map,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                              <span class="keyword">const</span> std::map&lt;dof_id_type,unsigned int&gt; &amp; scalar_map);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a8d41770849fa0210d915d9644de9f176">check_section_n_dofs</a>( PetscSection &amp; section );</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">// Helper function to reduce code duplication when setting dofs in section</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscDMWrapper.html#a740f44c588717f1ef575fd2bd3674fe8">add_dofs_helper</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1System.html">System</a> &amp; system,</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                          <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1DofObject.html">DofObject</a> &amp; dof_object,</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                          <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> local_id,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                          PetscSection &amp; section);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  };</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#endif // #if LIBMESH_ENABLE_AMR &amp;&amp; LIBMESH_HAVE_METAPHYSICL</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // #if PETSC_VERSION</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // #ifdef LIBMESH_HAVE_PETSC</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#endif // LIBMESH_PETSC_DM_WRAPPER_H</span></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a2d70713d86345846096c6ef22258cf14"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a2d70713d86345846096c6ef22258cf14">libMesh::PetscDMWrapper::init_dm_data</a></div><div class="ttdeci">void init_dm_data(unsigned int n_levels, const Parallel::Communicator &amp;comm)</div><div class="ttdoc">Init all the n_mesh_level dependent data structures. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l01076">petsc_dm_wrapper.C:1076</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a8d41770849fa0210d915d9644de9f176"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a8d41770849fa0210d915d9644de9f176">libMesh::PetscDMWrapper::check_section_n_dofs</a></div><div class="ttdeci">dof_id_type check_section_n_dofs(PetscSection &amp;section)</div><div class="ttdoc">Helper function to sanity check PetscSection construction The PetscSection contains local dof informa...</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l01052">petsc_dm_wrapper.C:1052</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a5d2cb2619787d5e29185d720bf5d74f1"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a5d2cb2619787d5e29185d720bf5d74f1">libMesh::PetscDMWrapper::_vec_vec</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; PetscVector&lt; Number &gt; &gt; &gt; _vec_vec</div><div class="ttdoc">Vector of solution vectors for all grid levels. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00164">petsc_dm_wrapper.h:164</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscVector_html"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html">libMesh::PetscVector&lt; libMesh::Number &gt;</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_aa29b614c713146bf8be8dc066ac4cdc3"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#aa29b614c713146bf8be8dc066ac4cdc3">libMesh::PetscDMWrapper::_ctx_vec</a></div><div class="ttdeci">std::vector&lt; PetscDMContext &gt; _ctx_vec</div><div class="ttdoc">Vector of internal PetscDM context structs for all grid levels Pointers to these C++ objects are pass...</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00157">petsc_dm_wrapper.h:157</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_a9ccc9e149ba9391f888ab8031c9f7826"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#a9ccc9e149ba9391f888ab8031c9f7826">libMesh::PetscDMContext::K_interp_ptr</a></div><div class="ttdeci">PetscMatrix&lt; libMesh::Number &gt; * K_interp_ptr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00062">petsc_dm_wrapper.h:62</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a6f5911ff56027bac98ee7000d81ab3c2"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a6f5911ff56027bac98ee7000d81ab3c2">libMesh::PetscDMWrapper::set_point_range_in_section</a></div><div class="ttdeci">void set_point_range_in_section(const System &amp;system, PetscSection &amp;section, std::unordered_map&lt; dof_id_type, dof_id_type &gt; &amp;node_map, std::unordered_map&lt; dof_id_type, dof_id_type &gt; &amp;elem_map, std::map&lt; dof_id_type, unsigned int &gt; &amp;scalar_map)</div><div class="ttdoc">Helper function for build_section. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00846">petsc_dm_wrapper.C:846</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_aa8ea2be3d478af3835ddafd498c5b10c"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#aa8ea2be3d478af3835ddafd498c5b10c">libMesh::PetscDMContext::mesh_dim</a></div><div class="ttdeci">int mesh_dim</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00058">petsc_dm_wrapper.h:58</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_ad8780ec9d1044f7a64a63030239e5a6a"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#ad8780ec9d1044f7a64a63030239e5a6a">libMesh::PetscDMContext::global_dm</a></div><div class="ttdeci">DM * global_dm</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00061">petsc_dm_wrapper.h:61</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a34bd5c1fa064d2c382a52607f4465c8f"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a34bd5c1fa064d2c382a52607f4465c8f">libMesh::PetscDMWrapper::get_dm</a></div><div class="ttdeci">DM &amp; get_dm(unsigned int level)</div><div class="ttdoc">Get reference to DM for the given mesh level. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00179">petsc_dm_wrapper.h:179</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_aa4d26a0e9269059e4e3436368ed29060"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#aa4d26a0e9269059e4e3436368ed29060">libMesh::PetscDMWrapper::_dms</a></div><div class="ttdeci">std::vector&lt; WrappedPetsc&lt; DM &gt; &gt; _dms</div><div class="ttdoc">Vector of DMs for all grid levels. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00117">petsc_dm_wrapper.h:117</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_a8ebccef4418db61a2e33fdfabf033f11"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#a8ebccef4418db61a2e33fdfabf033f11">libMesh::PetscDMContext::subfields</a></div><div class="ttdeci">std::vector&lt; PetscInt &gt; subfields</div><div class="ttdoc">Stores subfield ids for use in subprojection matrixes on coarser DMs. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00071">petsc_dm_wrapper.h:71</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a4cab51fa93c6f9253c31726ac0806755"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a4cab51fa93c6f9253c31726ac0806755">libMesh::PetscDMWrapper::add_dofs_to_section</a></div><div class="ttdeci">void add_dofs_to_section(const System &amp;system, PetscSection &amp;section, const std::unordered_map&lt; dof_id_type, dof_id_type &gt; &amp;node_map, const std::unordered_map&lt; dof_id_type, dof_id_type &gt; &amp;elem_map, const std::map&lt; dof_id_type, unsigned int &gt; &amp;scalar_map)</div><div class="ttdoc">Helper function for build_section. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00961">petsc_dm_wrapper.C:961</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_a8e5321958bcc81d0a6626bc53f0901b4"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#a8e5321958bcc81d0a6626bc53f0901b4">libMesh::PetscDMContext::PetscDMContext</a></div><div class="ttdeci">PetscDMContext()</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00073">petsc_dm_wrapper.h:73</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html">libMesh::PetscDMWrapper</a></div><div class="ttdoc">This class defines a wrapper around the PETSc DM infrastructure. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00097">petsc_dm_wrapper.h:97</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html">libMesh::PetscDMContext</a></div><div class="ttdoc">Struct to house data regarding where in the mesh hierarchy we are located. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00055">petsc_dm_wrapper.h:55</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a8db0313aa38a2acc547b5fefaac50027"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a8db0313aa38a2acc547b5fefaac50027">libMesh::PetscDMWrapper::_pmtx_vec</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; PetscMatrix&lt; Number &gt; &gt; &gt; _pmtx_vec</div><div class="ttdoc">Vector of projection matrixes for all grid levels. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00143">petsc_dm_wrapper.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a2e8ca5ec9955c8f2a2813ca8a70c922e"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a2e8ca5ec9955c8f2a2813ca8a70c922e">libMesh::PetscDMWrapper::_subpmtx_vec</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; PetscMatrix&lt; Number &gt; &gt; &gt; _subpmtx_vec</div><div class="ttdoc">Vector of sub projection matrixes for all grid levels for fieldsplit. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00150">petsc_dm_wrapper.h:150</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a7b64223ac3403b535b0d687825aa16b1"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a7b64223ac3403b535b0d687825aa16b1">libMesh::PetscDMWrapper::_sections</a></div><div class="ttdeci">std::vector&lt; WrappedPetsc&lt; PetscSection &gt; &gt; _sections</div><div class="ttdoc">Vector of PETScSections for all grid levels. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00127">petsc_dm_wrapper.h:127</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html"><div class="ttname"><a href="classlibMesh_1_1System.html">libMesh::System</a></div><div class="ttdoc">Manages consistently variables, degrees of freedom, and coefficient vectors. </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00096">system.h:96</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1MeshTools_html_ae15ece869d4ef3d283edb677942e8439"><div class="ttname"><a href="namespacelibMesh_1_1MeshTools.html#ae15ece869d4ef3d283edb677942e8439">libMesh::MeshTools::n_levels</a></div><div class="ttdeci">unsigned int n_levels(const MeshBase &amp;mesh)</div><div class="ttdef"><b>Definition:</b> <a href="mesh__tools_8C_source.html#l00801">mesh_tools.C:801</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_a1306f8b46b51b7ca7d2574c9297e4ed7"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#a1306f8b46b51b7ca7d2574c9297e4ed7">libMesh::PetscDMContext::finer_dm</a></div><div class="ttdeci">DM * finer_dm</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00060">petsc_dm_wrapper.h:60</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_ab1020eb11bda4d48401086ba02196c5b"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#ab1020eb11bda4d48401086ba02196c5b">libMesh::PetscDMContext::dof_vec</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; numeric_index_type &gt; &gt; dof_vec</div><div class="ttdoc">Stores local dofs for each var for use in subprojection matrixes. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00068">petsc_dm_wrapper.h:68</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a6295b51ea21d5501420c2c171ac0afa6"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a6295b51ea21d5501420c2c171ac0afa6">libMesh::PetscDMWrapper::get_section</a></div><div class="ttdeci">PetscSection &amp; get_section(unsigned int level)</div><div class="ttdoc">Get reference to PetscSection for the given mesh level. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00187">petsc_dm_wrapper.h:187</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_acee98aea761f74b78fb6a969f6244286"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#acee98aea761f74b78fb6a969f6244286">libMesh::PetscDMWrapper::PetscDMWrapper</a></div><div class="ttdeci">PetscDMWrapper()=default</div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_ad236a8053fde71cf4344bc02c8af40a9"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#ad236a8053fde71cf4344bc02c8af40a9">libMesh::PetscDMWrapper::_mesh_dof_loc_sizes</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; _mesh_dof_loc_sizes</div><div class="ttdoc">Stores n_local_dofs for each grid level, to be used for projection vector sizing. ...</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00170">petsc_dm_wrapper.h:170</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a8258edc20f6aa9603bc0ee44cd98132b"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a8258edc20f6aa9603bc0ee44cd98132b">libMesh::PetscDMWrapper::_star_forests</a></div><div class="ttdeci">std::vector&lt; PetscSF &gt; _star_forests</div><div class="ttdoc">Vector of star forests for all grid levels. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00136">petsc_dm_wrapper.h:136</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_aed2e29d969ca4c92ed1770477aa1a7ba"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#aed2e29d969ca4c92ed1770477aa1a7ba">libMesh::PetscDMWrapper::get_star_forest</a></div><div class="ttdeci">PetscSF &amp; get_star_forest(unsigned int level)</div><div class="ttdoc">Get reference to PetscSF for the given mesh level. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00195">petsc_dm_wrapper.h:195</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a740f44c588717f1ef575fd2bd3674fe8"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a740f44c588717f1ef575fd2bd3674fe8">libMesh::PetscDMWrapper::add_dofs_helper</a></div><div class="ttdeci">void add_dofs_helper(const System &amp;system, const DofObject &amp;dof_object, dof_id_type local_id, PetscSection &amp;section)</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l01019">petsc_dm_wrapper.C:1019</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_abc4b610e875f43b85f364a4782fe356e"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#abc4b610e875f43b85f364a4782fe356e">libMesh::PetscDMContext::coarser_dm</a></div><div class="ttdeci">DM * coarser_dm</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00059">petsc_dm_wrapper.h:59</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_ade81e2a381216f2d8ba1be473e46fc30"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#ade81e2a381216f2d8ba1be473e46fc30">libMesh::PetscDMWrapper::_mesh_dof_sizes</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; _mesh_dof_sizes</div><div class="ttdoc">Stores n_dofs for each grid level, to be used for projection matrix sizing. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00167">petsc_dm_wrapper.h:167</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofObject_html"><div class="ttname"><a href="classlibMesh_1_1DofObject.html">libMesh::DofObject</a></div><div class="ttdoc">The DofObject defines an abstract base class for objects that have degrees of freedom associated with...</div><div class="ttdef"><b>Definition:</b> <a href="dof__object_8h_source.html#l00054">dof_object.h:54</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscMatrix_html"><div class="ttname"><a href="classlibMesh_1_1PetscMatrix.html">libMesh::PetscMatrix&lt; libMesh::Number &gt;</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_a1266d5814265abaa09a0ea7a152451ac"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#a1266d5814265abaa09a0ea7a152451ac">libMesh::PetscDMContext::K_restrict_ptr</a></div><div class="ttdeci">PetscMatrix&lt; libMesh::Number &gt; * K_restrict_ptr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00064">petsc_dm_wrapper.h:64</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a112077efd9d815591e2a074a24c6c515"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a112077efd9d815591e2a074a24c6c515">libMesh::PetscDMWrapper::~PetscDMWrapper</a></div><div class="ttdeci">~PetscDMWrapper()</div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_af9ebb64f4d3f5f353f91ac2fcbe6a198"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#af9ebb64f4d3f5f353f91ac2fcbe6a198">libMesh::PetscDMWrapper::build_section</a></div><div class="ttdeci">void build_section(const System &amp;system, PetscSection &amp;section)</div><div class="ttdoc">Takes System, empty PetscSection and populates the PetscSection. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00713">petsc_dm_wrapper.C:713</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_ab9a1fd9620e6cbef319c215a7341e8d4"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#ab9a1fd9620e6cbef319c215a7341e8d4">libMesh::PetscDMWrapper::build_sf</a></div><div class="ttdeci">void build_sf(const System &amp;system, PetscSF &amp;star_forest)</div><div class="ttdoc">Takes System, empty PetscSF and populates the PetscSF. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00777">petsc_dm_wrapper.C:777</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_a9250fa7ad8d63d499d9d0539e75992c9"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#a9250fa7ad8d63d499d9d0539e75992c9">libMesh::PetscDMContext::current_vec</a></div><div class="ttdeci">PetscVector&lt; libMesh::Number &gt; * current_vec</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00065">petsc_dm_wrapper.h:65</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_aac945bba6a18480eb0ae54c57165fc47"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#aac945bba6a18480eb0ae54c57165fc47">libMesh::PetscDMContext::K_sub_interp_ptr</a></div><div class="ttdeci">PetscMatrix&lt; libMesh::Number &gt; * K_sub_interp_ptr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00063">petsc_dm_wrapper.h:63</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a89d3f9c0a20bdf40beb55266d17615ab"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a89d3f9c0a20bdf40beb55266d17615ab">libMesh::PetscDMWrapper::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Destroys and clears all build DM-related data. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00430">petsc_dm_wrapper.C:430</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PetscDMWrapper_html_a2df0375f2aafe4f68ddb9276ce76798e"><div class="ttname"><a href="classlibMesh_1_1PetscDMWrapper.html#a2df0375f2aafe4f68ddb9276ce76798e">libMesh::PetscDMWrapper::init_and_attach_petscdm</a></div><div class="ttdeci">void init_and_attach_petscdm(System &amp;system, SNES &amp;snes)</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00451">petsc_dm_wrapper.C:451</a></div></div>
+<div class="ttc" id="structlibMesh_1_1PetscDMContext_html_a4d9fa0259177a7d0a54bfb77b35d3f25"><div class="ttname"><a href="structlibMesh_1_1PetscDMContext.html#a4d9fa0259177a7d0a54bfb77b35d3f25">libMesh::PetscDMContext::n_dofs</a></div><div class="ttdeci">int n_dofs</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8h_source.html#l00057">petsc_dm_wrapper.h:57</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ab4541d74809228310a715b11c40587fc"><div class="ttname"><a href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">libMesh::dof_id_type</a></div><div class="ttdeci">uint8_t dof_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00067">id_types.h:67</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

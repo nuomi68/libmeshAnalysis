@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/utils/int_range.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_50dcd1e72a70d5a99d79ef31f30e9fad.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">int_range.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="int__range_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_INT_RANGE_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_INT_RANGE_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_common.h&quot;</span> <span class="comment">// cast_int</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Forward declarations</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>DenseSubVector;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>DenseVector;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>NumericVector;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1IntRange.html">IntRange</a></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange_1_1iterator.html">   56</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html">iterator</a> {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange_1_1iterator.html#aca8ae940731405347b2fac25cd42fecf">   58</a></span>&#160;    <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#aca8ae940731405347b2fac25cd42fecf">iterator</a> (T i) : <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#a84c6cc686a499b86fb139dc9459dfb40">_i</a>(i) {}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange_1_1iterator.html#a445254e782729d18f7f585c3a72a65a7">   60</a></span>&#160;    T <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#a445254e782729d18f7f585c3a72a65a7">operator* </a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#a84c6cc686a499b86fb139dc9459dfb40">_i</a>; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange_1_1iterator.html#acbaf8c7d1309e99db5dbfd7a213b13f6">   62</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html">iterator</a> &amp; <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#acbaf8c7d1309e99db5dbfd7a213b13f6">operator++ </a>()</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      ++<a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#a84c6cc686a499b86fb139dc9459dfb40">_i</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange_1_1iterator.html#a9b99e0495191818a280fea0884f5fa75">   68</a></span>&#160;    <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html">iterator</a> <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#acbaf8c7d1309e99db5dbfd7a213b13f6">operator++ </a>(<span class="keywordtype">int</span>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html">iterator</a> returnval(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      ++<a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#a84c6cc686a499b86fb139dc9459dfb40">_i</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> returnval;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange_1_1iterator.html#ae53adb35ab68f1202a3c569e7a2b675a">   75</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#ae53adb35ab68f1202a3c569e7a2b675a">operator== </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html">iterator</a> &amp; j)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">return</span> ( <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#a84c6cc686a499b86fb139dc9459dfb40">_i</a> == j.<a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#a84c6cc686a499b86fb139dc9459dfb40">_i</a> );</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange_1_1iterator.html#af86d8c7426020c844fd2955b632b1f92">   80</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#af86d8c7426020c844fd2955b632b1f92">operator!= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html">iterator</a> &amp; j)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == j);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange_1_1iterator.html#a84c6cc686a499b86fb139dc9459dfb40">   86</a></span>&#160;    T <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html#a84c6cc686a499b86fb139dc9459dfb40">_i</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  };</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U, <span class="keyword">typename</span> V&gt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange.html#aa0a3d06c5625def1e08452c917ad2a8d">   90</a></span>&#160;  <a class="code" href="classlibMesh_1_1IntRange.html#aa0a3d06c5625def1e08452c917ad2a8d">IntRange</a>(U <a class="code" href="classlibMesh_1_1IntRange.html#a965ae266e4a1b242eb042cfd8f0da9cb">begin</a>, V <a class="code" href="classlibMesh_1_1IntRange.html#a870fc4c8814e7822f51344694938a2f9">end</a>) :</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classlibMesh_1_1IntRange.html#a71503d9f235e108d28069ef77364c1d3">_begin</a>(<a class="code" href="namespacelibMesh.html#ac1be866840b46b025b74bf40a9f05eb9">cast_int</a>&lt;T&gt;(begin)),</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classlibMesh_1_1IntRange.html#aa4a7c2a4be79106c39381bc82f14f7e5">_end</a>(<a class="code" href="namespacelibMesh.html#ac1be866840b46b025b74bf40a9f05eb9">cast_int</a>&lt;T&gt;(end))</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  {}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange.html#a965ae266e4a1b242eb042cfd8f0da9cb">   95</a></span>&#160;  <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html">iterator</a> <a class="code" href="classlibMesh_1_1IntRange.html#a965ae266e4a1b242eb042cfd8f0da9cb">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1IntRange.html#a71503d9f235e108d28069ef77364c1d3">_begin</a>; }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange.html#a870fc4c8814e7822f51344694938a2f9">   97</a></span>&#160;  <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html">iterator</a> <a class="code" href="classlibMesh_1_1IntRange.html#a870fc4c8814e7822f51344694938a2f9">end</a> ()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1IntRange.html#aa4a7c2a4be79106c39381bc82f14f7e5">_end</a>; }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classlibMesh_1_1IntRange.html#aa4a7c2a4be79106c39381bc82f14f7e5">  100</a></span>&#160;  <a class="code" href="classlibMesh_1_1IntRange_1_1iterator.html">iterator</a> <a class="code" href="classlibMesh_1_1IntRange.html#a71503d9f235e108d28069ef77364c1d3">_begin</a>, <a class="code" href="classlibMesh_1_1IntRange.html#aa4a7c2a4be79106c39381bc82f14f7e5">_end</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">  111</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(<span class="keyword">const</span> T &amp; sizable)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1IntRange.html">IntRange</a>&lt;decltype(sizable.size())&gt;(0, sizable.size());</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="namespacelibMesh.html#ae946e3d371e89cad71dc83be79cfb685">  121</a></span>&#160;<a class="code" href="classlibMesh_1_1IntRange.html">IntRange&lt;numeric_index_type&gt;</a> <a class="code" href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">index_range</a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; vec)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">return</span> {vec.<a class="code" href="classlibMesh_1_1NumericVector.html#adb02fab0dbedac070aa31d587732c7ba">first_local_index</a>(), vec.<a class="code" href="classlibMesh_1_1NumericVector.html#a18d730bed9ae74b3fb5edc8261d83a96">last_local_index</a>()};</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">  134</a></span>&#160;<a class="code" href="classlibMesh_1_1IntRange.html">IntRange&lt;T&gt;</a> <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(T beg, T end)</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">return</span> {beg, end};</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="namespacelibMesh.html#a85a0ef14b0cb01ffb3c9bf1392921c62">  155</a></span>&#160;<a class="code" href="classlibMesh_1_1IntRange.html">IntRange&lt;T&gt;</a> <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(T end)</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordflow">return</span> {T(0), end};</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#endif // LIBMESH_INT_RANGE_H</span></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_1_1iterator_html_aca8ae940731405347b2fac25cd42fecf"><div class="ttname"><a href="classlibMesh_1_1IntRange_1_1iterator.html#aca8ae940731405347b2fac25cd42fecf">libMesh::IntRange::iterator::iterator</a></div><div class="ttdeci">iterator(T i)</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00058">int_range.h:58</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_html_a71503d9f235e108d28069ef77364c1d3"><div class="ttname"><a href="classlibMesh_1_1IntRange.html#a71503d9f235e108d28069ef77364c1d3">libMesh::IntRange::_begin</a></div><div class="ttdeci">iterator _begin</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00100">int_range.h:100</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_html"><div class="ttname"><a href="classlibMesh_1_1IntRange.html">libMesh::IntRange</a></div><div class="ttdoc">The IntRange templated class is intended to make it easy to loop over integers which are indices of a...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00053">int_range.h:53</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NumericVector_html"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html">libMesh::NumericVector</a></div><div class="ttdoc">提供了不同线性代数库的向量存储方案的统一接口。 </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00067">dof_map.h:67</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_html_a965ae266e4a1b242eb042cfd8f0da9cb"><div class="ttname"><a href="classlibMesh_1_1IntRange.html#a965ae266e4a1b242eb042cfd8f0da9cb">libMesh::IntRange::begin</a></div><div class="ttdeci">iterator begin() const </div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00095">int_range.h:95</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_html_a870fc4c8814e7822f51344694938a2f9"><div class="ttname"><a href="classlibMesh_1_1IntRange.html#a870fc4c8814e7822f51344694938a2f9">libMesh::IntRange::end</a></div><div class="ttdeci">iterator end() const </div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00097">int_range.h:97</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_html_aa0a3d06c5625def1e08452c917ad2a8d"><div class="ttname"><a href="classlibMesh_1_1IntRange.html#aa0a3d06c5625def1e08452c917ad2a8d">libMesh::IntRange::IntRange</a></div><div class="ttdeci">IntRange(U begin, V end)</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00090">int_range.h:90</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_1_1iterator_html_a445254e782729d18f7f585c3a72a65a7"><div class="ttname"><a href="classlibMesh_1_1IntRange_1_1iterator.html#a445254e782729d18f7f585c3a72a65a7">libMesh::IntRange::iterator::operator*</a></div><div class="ttdeci">T operator*() const </div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00060">int_range.h:60</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ac1be866840b46b025b74bf40a9f05eb9"><div class="ttname"><a href="namespacelibMesh.html#ac1be866840b46b025b74bf40a9f05eb9">libMesh::cast_int</a></div><div class="ttdeci">Tnew cast_int(Told oldvar)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00613">libmesh_common.h:613</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_1_1iterator_html_af86d8c7426020c844fd2955b632b1f92"><div class="ttname"><a href="classlibMesh_1_1IntRange_1_1iterator.html#af86d8c7426020c844fd2955b632b1f92">libMesh::IntRange::iterator::operator!=</a></div><div class="ttdeci">bool operator!=(const iterator &amp;j) const </div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00080">int_range.h:80</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_1_1iterator_html_acbaf8c7d1309e99db5dbfd7a213b13f6"><div class="ttname"><a href="classlibMesh_1_1IntRange_1_1iterator.html#acbaf8c7d1309e99db5dbfd7a213b13f6">libMesh::IntRange::iterator::operator++</a></div><div class="ttdeci">const iterator &amp; operator++()</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00062">int_range.h:62</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_1_1iterator_html_ae53adb35ab68f1202a3c569e7a2b675a"><div class="ttname"><a href="classlibMesh_1_1IntRange_1_1iterator.html#ae53adb35ab68f1202a3c569e7a2b675a">libMesh::IntRange::iterator::operator==</a></div><div class="ttdeci">bool operator==(const iterator &amp;j) const </div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00075">int_range.h:75</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NumericVector_html_adb02fab0dbedac070aa31d587732c7ba"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#adb02fab0dbedac070aa31d587732c7ba">libMesh::NumericVector::first_local_index</a></div><div class="ttdeci">virtual numeric_index_type first_local_index() const =0</div><div class="ttdoc">获取实际存储在该处理器上的第一个向量元素的索引。 </div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_html_aa4a7c2a4be79106c39381bc82f14f7e5"><div class="ttname"><a href="classlibMesh_1_1IntRange.html#aa4a7c2a4be79106c39381bc82f14f7e5">libMesh::IntRange::_end</a></div><div class="ttdeci">iterator _end</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00100">int_range.h:100</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_1_1iterator_html"><div class="ttname"><a href="classlibMesh_1_1IntRange_1_1iterator.html">libMesh::IntRange::iterator</a></div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00056">int_range.h:56</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NumericVector_html_a18d730bed9ae74b3fb5edc8261d83a96"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a18d730bed9ae74b3fb5edc8261d83a96">libMesh::NumericVector::last_local_index</a></div><div class="ttdeci">virtual numeric_index_type last_local_index() const =0</div><div class="ttdoc">获取实际存储在该处理器上的最后一个向量元素的索引+1。 </div></div>
+<div class="ttc" id="namespacelibMesh_html_a26e38c0dc87c05a5e8df7e26bfed543b"><div class="ttname"><a href="namespacelibMesh.html#a26e38c0dc87c05a5e8df7e26bfed543b">libMesh::index_range</a></div><div class="ttdeci">auto index_range(const T &amp;sizable)</div><div class="ttdoc">Helper function that returns an IntRange&amp;lt;std::size_t&amp;gt; representing all the indices of the passed-in v...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00111">int_range.h:111</a></div></div>
+<div class="ttc" id="classlibMesh_1_1IntRange_1_1iterator_html_a84c6cc686a499b86fb139dc9459dfb40"><div class="ttname"><a href="classlibMesh_1_1IntRange_1_1iterator.html#a84c6cc686a499b86fb139dc9459dfb40">libMesh::IntRange::iterator::_i</a></div><div class="ttdeci">T _i</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00086">int_range.h:86</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,926 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::Plane类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1Plane.html">Plane</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classlibMesh_1_1Plane-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::Plane类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class defines a plane.  
+ <a href="classlibMesh_1_1Plane.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="plane_8h_source.html">plane.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::Plane 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a83b93591cfc29e9d4e885bd9efa2d0d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a83b93591cfc29e9d4e885bd9efa2d0d8">Plane</a> ()</td></tr>
+<tr class="memdesc:a83b93591cfc29e9d4e885bd9efa2d0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy Constructor.  <a href="#a83b93591cfc29e9d4e885bd9efa2d0d8">更多...</a><br/></td></tr>
+<tr class="separator:a83b93591cfc29e9d4e885bd9efa2d0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19dcc1de7be104020b66c1513478f4e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a19dcc1de7be104020b66c1513478f4e4">Plane</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;n)</td></tr>
+<tr class="memdesc:a19dcc1de7be104020b66c1513478f4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a plane containing point p with normal n.  <a href="#a19dcc1de7be104020b66c1513478f4e4">更多...</a><br/></td></tr>
+<tr class="separator:a19dcc1de7be104020b66c1513478f4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ade99bbdff02e9b92f6f6111b285ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#aa5ade99bbdff02e9b92f6f6111b285ee">Plane</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p0, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p1, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p2)</td></tr>
+<tr class="memdesc:aa5ade99bbdff02e9b92f6f6111b285ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a plane containing the three points.  <a href="#aa5ade99bbdff02e9b92f6f6111b285ee">更多...</a><br/></td></tr>
+<tr class="separator:aa5ade99bbdff02e9b92f6f6111b285ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d0c386c273c3954505538ca582b7f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a73d0c386c273c3954505538ca582b7f6">Plane</a> (const <a class="el" href="classlibMesh_1_1Plane.html">Plane</a> &amp;other_plane)</td></tr>
+<tr class="memdesc:a73d0c386c273c3954505538ca582b7f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-constructor.  <a href="#a73d0c386c273c3954505538ca582b7f6">更多...</a><br/></td></tr>
+<tr class="separator:a73d0c386c273c3954505538ca582b7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3ac0c2dd4ced3f5bd37d91b0051b3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a5c3ac0c2dd4ced3f5bd37d91b0051b3a">~Plane</a> ()</td></tr>
+<tr class="memdesc:a5c3ac0c2dd4ced3f5bd37d91b0051b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a5c3ac0c2dd4ced3f5bd37d91b0051b3a">更多...</a><br/></td></tr>
+<tr class="separator:a5c3ac0c2dd4ced3f5bd37d91b0051b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7667ec704c47133068cd271d6aa8d383"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a7667ec704c47133068cd271d6aa8d383">create_from_point_normal</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;n)</td></tr>
+<tr class="memdesc:a7667ec704c47133068cd271d6aa8d383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a plane containing point p with normal n.  <a href="#a7667ec704c47133068cd271d6aa8d383">更多...</a><br/></td></tr>
+<tr class="separator:a7667ec704c47133068cd271d6aa8d383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02899304b899ed4d87b2998c4b6ec6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#ac02899304b899ed4d87b2998c4b6ec6c">create_from_three_points</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p0, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p1, const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p2)</td></tr>
+<tr class="memdesc:ac02899304b899ed4d87b2998c4b6ec6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a plane intersecting the three points p0, p1, and p2.  <a href="#ac02899304b899ed4d87b2998c4b6ec6c">更多...</a><br/></td></tr>
+<tr class="separator:ac02899304b899ed4d87b2998c4b6ec6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab175c760d1611f0e0a03e4d24ba06318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#ab175c760d1611f0e0a03e4d24ba06318">xy_plane</a> (const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> zpos=0.)</td></tr>
+<tr class="memdesc:ab175c760d1611f0e0a03e4d24ba06318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an XY plane located at z=zpos.  <a href="#ab175c760d1611f0e0a03e4d24ba06318">更多...</a><br/></td></tr>
+<tr class="separator:ab175c760d1611f0e0a03e4d24ba06318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21969fed6f6a4c453bd078b444ad6093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a21969fed6f6a4c453bd078b444ad6093">xz_plane</a> (const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> ypos=0.)</td></tr>
+<tr class="memdesc:a21969fed6f6a4c453bd078b444ad6093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an XZ plane located at y=ypos.  <a href="#a21969fed6f6a4c453bd078b444ad6093">更多...</a><br/></td></tr>
+<tr class="separator:a21969fed6f6a4c453bd078b444ad6093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd8ee639f8ee3dddcb6c5d8f0d601ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a6cd8ee639f8ee3dddcb6c5d8f0d601ca">yz_plane</a> (const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> xpos=0.)</td></tr>
+<tr class="memdesc:a6cd8ee639f8ee3dddcb6c5d8f0d601ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an YZ plane located at x=xpos.  <a href="#a6cd8ee639f8ee3dddcb6c5d8f0d601ca">更多...</a><br/></td></tr>
+<tr class="separator:a6cd8ee639f8ee3dddcb6c5d8f0d601ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efae48cd902b545eb7893de411f2218"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a9efae48cd902b545eb7893de411f2218">above_surface</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p) const override</td></tr>
+<tr class="separator:a9efae48cd902b545eb7893de411f2218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11042ec8ee9a8da1616b149bc9b6f21"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#ac11042ec8ee9a8da1616b149bc9b6f21">below_surface</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p) const override</td></tr>
+<tr class="separator:ac11042ec8ee9a8da1616b149bc9b6f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917e4807692a406a512f5fe1d230d9be"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a917e4807692a406a512f5fe1d230d9be">on_surface</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p) const override</td></tr>
+<tr class="separator:a917e4807692a406a512f5fe1d230d9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4943c70cf005f1a72236a7732413caa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#aa4943c70cf005f1a72236a7732413caa">closest_point</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p) const override</td></tr>
+<tr class="separator:aa4943c70cf005f1a72236a7732413caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48817e4ff760b94461034a99b305eb4c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a48817e4ff760b94461034a99b305eb4c">unit_normal</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;p) const override</td></tr>
+<tr class="separator:a48817e4ff760b94461034a99b305eb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430c56e779d4605485c88087aa95b19f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a430c56e779d4605485c88087aa95b19f">get_planar_point</a> () const </td></tr>
+<tr class="separator:a430c56e779d4605485c88087aa95b19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a4fa957c682bf31f2a85c759c3ee0d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#a88a4fa957c682bf31f2a85c759c3ee0d">surface_coords</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;<a class="el" href="classlibMesh_1_1Surface.html#a8895a938edbc3cc8f5a71f2d2acd0059">world_coords</a>) const </td></tr>
+<tr class="separator:a88a4fa957c682bf31f2a85c759c3ee0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8895a938edbc3cc8f5a71f2d2acd0059"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Surface.html#a8895a938edbc3cc8f5a71f2d2acd0059">world_coords</a> (const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;surf_coords) const </td></tr>
+<tr class="separator:a8895a938edbc3cc8f5a71f2d2acd0059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a72aa11fb8de0886a64e1b95fc489de0b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a72aa11fb8de0886a64e1b95fc489de0b">normal</a> () const </td></tr>
+<tr class="separator:a72aa11fb8de0886a64e1b95fc489de0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a36906fdf173293c8c7a9a6c378931f58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">_point</a></td></tr>
+<tr class="memdesc:a36906fdf173293c8c7a9a6c378931f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">The plane is defined by a point and a normal.  <a href="#a36906fdf173293c8c7a9a6c378931f58">更多...</a><br/></td></tr>
+<tr class="separator:a36906fdf173293c8c7a9a6c378931f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183bfe4b7a079185eb1171e68ec62675"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">_normal</a></td></tr>
+<tr class="separator:a183bfe4b7a079185eb1171e68ec62675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This class defines a plane. </p>
+<dl class="section author"><dt>作者</dt><dd>Benjamin S. Kirk </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2002 A geometric object representing a planar surface. </dd></dl>
+
+<p>在文件 <a class="el" href="plane_8h_source.html">plane.h</a> 第 <a class="el" href="plane_8h_source.html#l00036">36</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a83b93591cfc29e9d4e885bd9efa2d0d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Plane::Plane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dummy Constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a19dcc1de7be104020b66c1513478f4e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Plane::Plane </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a plane containing point p with normal n. </p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00034">34</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8C_source.html#l00064">create_from_point_normal()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1Plane.html#a7667ec704c47133068cd271d6aa8d383">create_from_point_normal</a> (p, n);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a7667ec704c47133068cd271d6aa8d383"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a7667ec704c47133068cd271d6aa8d383">libMesh::Plane::create_from_point_normal</a></div><div class="ttdeci">void create_from_point_normal(const Point &amp;p, const Point &amp;n)</div><div class="ttdoc">Defines a plane containing point p with normal n. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8C_source.html#l00064">plane.C:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa5ade99bbdff02e9b92f6f6111b285ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Plane::Plane </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a plane containing the three points. </p>
+<p>The normal is determined in a counter-clockwise sense. See the create_from_three_points method for more details. </p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00042">42</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8C_source.html#l00072">create_from_three_points()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1Plane.html#ac02899304b899ed4d87b2998c4b6ec6c">create_from_three_points</a> (p0, p1, p2);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_ac02899304b899ed4d87b2998c4b6ec6c"><div class="ttname"><a href="classlibMesh_1_1Plane.html#ac02899304b899ed4d87b2998c4b6ec6c">libMesh::Plane::create_from_three_points</a></div><div class="ttdeci">void create_from_three_points(const Point &amp;p0, const Point &amp;p1, const Point &amp;p2)</div><div class="ttdoc">Defines a plane intersecting the three points p0, p1, and p2. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8C_source.html#l00072">plane.C:72</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a73d0c386c273c3954505538ca582b7f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Plane::Plane </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>other_plane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy-constructor. </p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00051">51</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00145">_normal</a>, <a class="el" href="plane_8h_source.html#l00144">_point</a> , 以及 <a class="el" href="plane_8C_source.html#l00064">create_from_point_normal()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                       :</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classlibMesh_1_1Surface.html#a0edd05c2937f905bacb10a37792af13d">Surface</a>()</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1Plane.html#a7667ec704c47133068cd271d6aa8d383">create_from_point_normal</a>(other_plane._point,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                 other_plane._normal);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Surface_html_a0edd05c2937f905bacb10a37792af13d"><div class="ttname"><a href="classlibMesh_1_1Surface.html#a0edd05c2937f905bacb10a37792af13d">libMesh::Surface::Surface</a></div><div class="ttdeci">Surface()=default</div><div class="ttdoc">Constructor. </div></div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a7667ec704c47133068cd271d6aa8d383"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a7667ec704c47133068cd271d6aa8d383">libMesh::Plane::create_from_point_normal</a></div><div class="ttdeci">void create_from_point_normal(const Point &amp;p, const Point &amp;n)</div><div class="ttdoc">Defines a plane containing point p with normal n. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8C_source.html#l00064">plane.C:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5c3ac0c2dd4ced3f5bd37d91b0051b3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Plane::~Plane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+<p>Does nothing at the moment. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a9efae48cd902b545eb7893de411f2218"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::Plane::above_surface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if the point p is above the surface, false otherwise. </dd></dl>
+
+<p>实现了 <a class="el" href="classlibMesh_1_1Surface.html#affcf5b567bb5ef2f2fd2410599b853c5">libMesh::Surface</a>.</p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00121">121</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00144">_point</a>, <a class="el" href="plane_8h_source.html#l00139">normal()</a> , 以及 <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a>.</p>
+
+<p>参考自 <a class="el" href="plane_8C_source.html#l00138">below_surface()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="comment">// Create a vector from the surface to point p;</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keyword">const</span> Point w = p - <a class="code" href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">_point</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="comment">// The point is above the surface if the projection</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="comment">// of that vector onto the normal is positive</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> proj = w*this-&gt;<a class="code" href="classlibMesh_1_1Plane.html#a72aa11fb8de0886a64e1b95fc489de0b">normal</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordflow">if</span> (proj &gt; 0.)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a36906fdf173293c8c7a9a6c378931f58"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">libMesh::Plane::_point</a></div><div class="ttdeci">Point _point</div><div class="ttdoc">The plane is defined by a point and a normal. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00144">plane.h:144</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a72aa11fb8de0886a64e1b95fc489de0b"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a72aa11fb8de0886a64e1b95fc489de0b">libMesh::Plane::normal</a></div><div class="ttdeci">const Point &amp; normal() const </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00139">plane.h:139</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac11042ec8ee9a8da1616b149bc9b6f21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::Plane::below_surface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if the point p is below the surface, false otherwise. </dd></dl>
+
+<p>实现了 <a class="el" href="classlibMesh_1_1Surface.html#a0f7e3d0e7a9528c19e087d996560e100">libMesh::Surface</a>.</p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00138">138</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8C_source.html#l00121">above_surface()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordflow">return</span> ( !this-&gt;<a class="code" href="classlibMesh_1_1Plane.html#a9efae48cd902b545eb7893de411f2218">above_surface</a> (p) );</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a9efae48cd902b545eb7893de411f2218"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a9efae48cd902b545eb7893de411f2218">libMesh::Plane::above_surface</a></div><div class="ttdeci">virtual bool above_surface(const Point &amp;p) const override</div><div class="ttdef"><b>Definition:</b> <a href="plane_8C_source.html#l00121">plane.C:121</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa4943c70cf005f1a72236a7732413caa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Point.html">Point</a> libMesh::Plane::closest_point </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The closest point on the surface to point p. </dd></dl>
+
+<p>实现了 <a class="el" href="classlibMesh_1_1Surface.html#a524c8adf956705862a28259670674be0">libMesh::Surface</a>.</p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00163">163</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00144">_point</a> , 以及 <a class="el" href="plane_8h_source.html#l00139">normal()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="comment">// Create a vector from the surface to point p;</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">const</span> Point w = p - <a class="code" href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">_point</a>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">// The closest point in the plane to point p</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="comment">// is in the negative normal direction</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// a distance w (dot) p.</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keyword">const</span> Point cp = p - this-&gt;<a class="code" href="classlibMesh_1_1Plane.html#a72aa11fb8de0886a64e1b95fc489de0b">normal</a>()*(w*this-&gt;<a class="code" href="classlibMesh_1_1Plane.html#a72aa11fb8de0886a64e1b95fc489de0b">normal</a>());</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordflow">return</span> cp;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a36906fdf173293c8c7a9a6c378931f58"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">libMesh::Plane::_point</a></div><div class="ttdeci">Point _point</div><div class="ttdoc">The plane is defined by a point and a normal. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00144">plane.h:144</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a72aa11fb8de0886a64e1b95fc489de0b"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a72aa11fb8de0886a64e1b95fc489de0b">libMesh::Plane::normal</a></div><div class="ttdeci">const Point &amp; normal() const </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00139">plane.h:139</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7667ec704c47133068cd271d6aa8d383"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Plane::create_from_point_normal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines a plane containing point p with normal n. </p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00064">64</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00145">_normal</a>, <a class="el" href="plane_8h_source.html#l00144">_point</a> , 以及 <a class="el" href="type__vector_8h_source.html#l01246">libMesh::TypeVector&lt; T &gt;::unit()</a>.</p>
+
+<p>参考自 <a class="el" href="plane_8C_source.html#l00034">Plane()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">_normal</a> = n.<a class="code" href="classlibMesh_1_1TypeVector.html#af309ac3227a31641f8e8ecbe9bb972a5">unit</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">_point</a>  = p;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a36906fdf173293c8c7a9a6c378931f58"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">libMesh::Plane::_point</a></div><div class="ttdeci">Point _point</div><div class="ttdoc">The plane is defined by a point and a normal. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00144">plane.h:144</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TypeVector_html_af309ac3227a31641f8e8ecbe9bb972a5"><div class="ttname"><a href="classlibMesh_1_1TypeVector.html#af309ac3227a31641f8e8ecbe9bb972a5">libMesh::TypeVector::unit</a></div><div class="ttdeci">TypeVector&lt; T &gt; unit() const </div><div class="ttdoc">返回指向该向量方向的单位向量。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l01246">type_vector.h:1246</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a183bfe4b7a079185eb1171e68ec62675"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">libMesh::Plane::_normal</a></div><div class="ttdeci">Point _normal</div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00145">plane.h:145</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac02899304b899ed4d87b2998c4b6ec6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Plane::create_from_three_points </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines a plane intersecting the three points p0, p1, and p2. </p>
+<p>The normal is constructed in a counter-clockwise sense, i.e. (p1-p0)x(p2-p0); </p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00072">72</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00145">_normal</a>, <a class="el" href="plane_8h_source.html#l00144">_point</a>, <a class="el" href="type__vector_8h_source.html#l01032">libMesh::TypeVector&lt; T &gt;::cross()</a> , 以及 <a class="el" href="type__vector_8h_source.html#l01246">libMesh::TypeVector&lt; T &gt;::unit()</a>.</p>
+
+<p>参考自 <a class="el" href="plane_8C_source.html#l00042">Plane()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">// Just use p0 for the point.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">_point</a> = p0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> Point e0 = p1 - p0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> Point e1 = p2 - p0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> Point n  = e0.<a class="code" href="classlibMesh_1_1TypeVector.html#a00d6b8d9b0f2b60c32f27a49a21e969e">cross</a>(e1);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">_normal</a> = n.<a class="code" href="classlibMesh_1_1TypeVector.html#af309ac3227a31641f8e8ecbe9bb972a5">unit</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a36906fdf173293c8c7a9a6c378931f58"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">libMesh::Plane::_point</a></div><div class="ttdeci">Point _point</div><div class="ttdoc">The plane is defined by a point and a normal. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00144">plane.h:144</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TypeVector_html_a00d6b8d9b0f2b60c32f27a49a21e969e"><div class="ttname"><a href="classlibMesh_1_1TypeVector.html#a00d6b8d9b0f2b60c32f27a49a21e969e">libMesh::TypeVector::cross</a></div><div class="ttdeci">TypeVector&lt; typename CompareTypes&lt; T, T2 &gt;::supertype &gt; cross(const TypeVector&lt; T2 &gt; &amp;v) const </div><div class="ttdoc">计算该向量与另一个向量的叉积。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l01032">type_vector.h:1032</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TypeVector_html_af309ac3227a31641f8e8ecbe9bb972a5"><div class="ttname"><a href="classlibMesh_1_1TypeVector.html#af309ac3227a31641f8e8ecbe9bb972a5">libMesh::TypeVector::unit</a></div><div class="ttdeci">TypeVector&lt; T &gt; unit() const </div><div class="ttdoc">返回指向该向量方向的单位向量。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l01246">type_vector.h:1246</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a183bfe4b7a079185eb1171e68ec62675"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">libMesh::Plane::_normal</a></div><div class="ttdeci">Point _normal</div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00145">plane.h:145</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a430c56e779d4605485c88087aa95b19f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp; libMesh::Plane::get_planar_point </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>A point on the plane useful for determining position. </dd></dl>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00183">183</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00144">_point</a>.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">_point</a>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a36906fdf173293c8c7a9a6c378931f58"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">libMesh::Plane::_point</a></div><div class="ttdeci">Point _point</div><div class="ttdoc">The plane is defined by a point and a normal. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00144">plane.h:144</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a72aa11fb8de0886a64e1b95fc489de0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classlibMesh_1_1Point.html">Point</a>&amp; libMesh::Plane::normal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The normal for the plane. </dd></dl>
+
+<p>在文件 <a class="el" href="plane_8h_source.html">plane.h</a> 第 <a class="el" href="plane_8h_source.html#l00139">139</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00145">_normal</a>.</p>
+
+<p>参考自 <a class="el" href="plane_8C_source.html#l00121">above_surface()</a>, <a class="el" href="plane_8C_source.html#l00163">closest_point()</a> , 以及 <a class="el" href="plane_8C_source.html#l00145">on_surface()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">_normal</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a183bfe4b7a079185eb1171e68ec62675"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">libMesh::Plane::_normal</a></div><div class="ttdeci">Point _normal</div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00145">plane.h:145</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a917e4807692a406a512f5fe1d230d9be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::Plane::on_surface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if the point p is on the surface, false otherwise.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>The definition of "on the surface" really means "very close" to account for roundoff error. </dd></dl>
+
+<p>实现了 <a class="el" href="classlibMesh_1_1Surface.html#a41be0551ded958bab175046a4a259321">libMesh::Surface</a>.</p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00145">145</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00144">_point</a>, <a class="el" href="type__vector_8h_source.html#l00112">std::abs()</a>, <a class="el" href="plane_8h_source.html#l00139">normal()</a> , 以及 <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="comment">// Create a vector from the surface to point p;</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keyword">const</span> Point w = p - <a class="code" href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">_point</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="comment">// If the projection of that vector onto the</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="comment">// plane&#39;s normal is 0 then the point is in</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="comment">// the plane.</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> proj = w * this-&gt;<a class="code" href="classlibMesh_1_1Plane.html#a72aa11fb8de0886a64e1b95fc489de0b">normal</a>();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="namespacestd.html#aea71d536ca6ae5ef192477c8e9c9b197">std::abs</a>(proj) &lt; 1.e-10)</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a36906fdf173293c8c7a9a6c378931f58"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">libMesh::Plane::_point</a></div><div class="ttdeci">Point _point</div><div class="ttdoc">The plane is defined by a point and a normal. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00144">plane.h:144</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a72aa11fb8de0886a64e1b95fc489de0b"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a72aa11fb8de0886a64e1b95fc489de0b">libMesh::Plane::normal</a></div><div class="ttdeci">const Point &amp; normal() const </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00139">plane.h:139</a></div></div>
+<div class="ttc" id="namespacestd_html_aea71d536ca6ae5ef192477c8e9c9b197"><div class="ttname"><a href="namespacestd.html#aea71d536ca6ae5ef192477c8e9c9b197">std::abs</a></div><div class="ttdeci">ADRealEigenVector&lt; T, D, asd &gt; abs(const ADRealEigenVector&lt; T, D, asd &gt; &amp;)</div><div class="ttdoc">计算自动微分实数向量的绝对值。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l00112">type_vector.h:112</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a88a4fa957c682bf31f2a85c759c3ee0d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a> libMesh::Surface::surface_coords </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>world_coords</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The <code><a class="el" href="classlibMesh_1_1Point.html" title="A Point defines a location in LIBMESH_DIM dimensional Real space. ">Point</a></code> <code>world_coords</code> in the surface's coordinate system. <code>world_coords</code> is in the world coordinate system. This method is not purely virtual, because there may be surfaces that do not have their own coordinate system. These simply do not have to override this method. </dd></dl>
+
+<p>被 <a class="el" href="classlibMesh_1_1Sphere.html#a7ece64e9defc7d5292b6599ab91d47ee">libMesh::Sphere</a> 重载.</p>
+
+<p>在文件 <a class="el" href="surface_8h_source.html">surface.h</a> 第 <a class="el" href="surface_8h_source.html#l00101">101</a> 行定义.</p>
+
+<p>参考 <a class="el" href="surface_8h_source.html#l00110">libMesh::Surface::world_coords()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Surface.html#a8895a938edbc3cc8f5a71f2d2acd0059">world_coords</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1Surface_html_a8895a938edbc3cc8f5a71f2d2acd0059"><div class="ttname"><a href="classlibMesh_1_1Surface.html#a8895a938edbc3cc8f5a71f2d2acd0059">libMesh::Surface::world_coords</a></div><div class="ttdeci">virtual Point world_coords(const Point &amp;surf_coords) const </div><div class="ttdef"><b>Definition:</b> <a href="surface_8h_source.html#l00110">surface.h:110</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a48817e4ff760b94461034a99b305eb4c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Point.html">Point</a> libMesh::Plane::unit_normal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>A unit vector normal to the surface at point p. </dd></dl>
+
+<p>实现了 <a class="el" href="classlibMesh_1_1Surface.html#a38a53c9e7f08045b627efb3375112c24">libMesh::Surface</a>.</p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00178">178</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00145">_normal</a>.</p>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">_normal</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a183bfe4b7a079185eb1171e68ec62675"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">libMesh::Plane::_normal</a></div><div class="ttdeci">Point _normal</div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00145">plane.h:145</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8895a938edbc3cc8f5a71f2d2acd0059"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classlibMesh_1_1Point.html">Point</a> libMesh::Surface::world_coords </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>surf_coords</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>The world (cartesian) coordinates for the surface coordinates <code>surf_coords</code>. This method is not purely virtual, because there may be surfaces that do not have an own coordinate system. These simply do not have to override this method. </dd></dl>
+
+<p>被 <a class="el" href="classlibMesh_1_1Sphere.html#a2ea436433bfd4e75358ad782a17eae91">libMesh::Sphere</a> 重载.</p>
+
+<p>在文件 <a class="el" href="surface_8h_source.html">surface.h</a> 第 <a class="el" href="surface_8h_source.html#l00110">110</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="surface_8h_source.html#l00101">libMesh::Surface::surface_coords()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{ <span class="keywordflow">return</span> surf_coords; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab175c760d1611f0e0a03e4d24ba06318"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Plane::xy_plane </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>zpos</em> = <code>0.</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an XY plane located at z=zpos. </p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00088">88</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00145">_normal</a> , 以及 <a class="el" href="plane_8h_source.html#l00144">_point</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">const</span> Point p (0., 0., zpos);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">const</span> Point n (0., 0., 1.);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">_point</a>  = p;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">_normal</a> = n;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a36906fdf173293c8c7a9a6c378931f58"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">libMesh::Plane::_point</a></div><div class="ttdeci">Point _point</div><div class="ttdoc">The plane is defined by a point and a normal. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00144">plane.h:144</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a183bfe4b7a079185eb1171e68ec62675"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">libMesh::Plane::_normal</a></div><div class="ttdeci">Point _normal</div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00145">plane.h:145</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a21969fed6f6a4c453bd078b444ad6093"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Plane::xz_plane </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>ypos</em> = <code>0.</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an XZ plane located at y=ypos. </p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00099">99</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00145">_normal</a> , 以及 <a class="el" href="plane_8h_source.html#l00144">_point</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">const</span> Point p (0., ypos, 0.);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">const</span> Point n (0., 1., 0.);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">_point</a>  = p;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">_normal</a> = n;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a36906fdf173293c8c7a9a6c378931f58"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">libMesh::Plane::_point</a></div><div class="ttdeci">Point _point</div><div class="ttdoc">The plane is defined by a point and a normal. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00144">plane.h:144</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a183bfe4b7a079185eb1171e68ec62675"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">libMesh::Plane::_normal</a></div><div class="ttdeci">Point _normal</div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00145">plane.h:145</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6cd8ee639f8ee3dddcb6c5d8f0d601ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Plane::yz_plane </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>xpos</em> = <code>0.</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an YZ plane located at x=xpos. </p>
+
+<p>在文件 <a class="el" href="plane_8C_source.html">plane.C</a> 第 <a class="el" href="plane_8C_source.html#l00110">110</a> 行定义.</p>
+
+<p>参考 <a class="el" href="plane_8h_source.html#l00145">_normal</a> , 以及 <a class="el" href="plane_8h_source.html#l00144">_point</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">const</span> Point p (xpos, 0., 0.);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">const</span> Point n (1., 0., 0.);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">_point</a>  = p;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">_normal</a> = n;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a36906fdf173293c8c7a9a6c378931f58"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a36906fdf173293c8c7a9a6c378931f58">libMesh::Plane::_point</a></div><div class="ttdeci">Point _point</div><div class="ttdoc">The plane is defined by a point and a normal. </div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00144">plane.h:144</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Plane_html_a183bfe4b7a079185eb1171e68ec62675"><div class="ttname"><a href="classlibMesh_1_1Plane.html#a183bfe4b7a079185eb1171e68ec62675">libMesh::Plane::_normal</a></div><div class="ttdeci">Point _normal</div><div class="ttdef"><b>Definition:</b> <a href="plane_8h_source.html#l00145">plane.h:145</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a183bfe4b7a079185eb1171e68ec62675"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Point.html">Point</a> libMesh::Plane::_normal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="plane_8h_source.html">plane.h</a> 第 <a class="el" href="plane_8h_source.html#l00145">145</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="plane_8C_source.html#l00064">create_from_point_normal()</a>, <a class="el" href="plane_8C_source.html#l00072">create_from_three_points()</a>, <a class="el" href="plane_8h_source.html#l00139">normal()</a>, <a class="el" href="plane_8C_source.html#l00051">Plane()</a>, <a class="el" href="plane_8C_source.html#l00178">unit_normal()</a>, <a class="el" href="plane_8C_source.html#l00088">xy_plane()</a>, <a class="el" href="plane_8C_source.html#l00099">xz_plane()</a> , 以及 <a class="el" href="plane_8C_source.html#l00110">yz_plane()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36906fdf173293c8c7a9a6c378931f58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1Point.html">Point</a> libMesh::Plane::_point</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The plane is defined by a point and a normal. </p>
+
+<p>在文件 <a class="el" href="plane_8h_source.html">plane.h</a> 第 <a class="el" href="plane_8h_source.html#l00144">144</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="plane_8C_source.html#l00121">above_surface()</a>, <a class="el" href="plane_8C_source.html#l00163">closest_point()</a>, <a class="el" href="plane_8C_source.html#l00064">create_from_point_normal()</a>, <a class="el" href="plane_8C_source.html#l00072">create_from_three_points()</a>, <a class="el" href="plane_8C_source.html#l00183">get_planar_point()</a>, <a class="el" href="plane_8C_source.html#l00145">on_surface()</a>, <a class="el" href="plane_8C_source.html#l00051">Plane()</a>, <a class="el" href="plane_8C_source.html#l00088">xy_plane()</a>, <a class="el" href="plane_8C_source.html#l00099">xz_plane()</a> , 以及 <a class="el" href="plane_8C_source.html#l00110">yz_plane()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/geom/<a class="el" href="plane_8h_source.html">plane.h</a></li>
+<li>/home/lwz/libmesh/src/geom/<a class="el" href="plane_8C_source.html">plane.C</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:32 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,1208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::DenseMatrixBase&lt; T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-static-methods">静态 Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classlibMesh_1_1DenseMatrixBase-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::DenseMatrixBase&lt; T &gt; 模板类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>为有限元类型的计算定义了一个抽象的稠密矩阵基类。例如 DenseSubMatrices 可以从这个类派生出来。  
+ <a href="classlibMesh_1_1DenseMatrixBase.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dense__matrix__base_8h_source.html">dense_matrix_base.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::DenseMatrixBase&lt; T &gt; 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa81d40d60f367bdb56ce8b73312af399"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#aa81d40d60f367bdb56ce8b73312af399">DenseMatrixBase</a> (<a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:aa81d40d60f367bdb56ce8b73312af399"><td class="mdescLeft">&#160;</td><td class="mdescRight">这五个特殊函数可以为此类默认。因为它不管理任何内存本身。  <a href="#aa81d40d60f367bdb56ce8b73312af399">更多...</a><br/></td></tr>
+<tr class="separator:aa81d40d60f367bdb56ce8b73312af399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c4a513ab4814abc5475e2243f191ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a47c4a513ab4814abc5475e2243f191ed">DenseMatrixBase</a> (const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a> &amp;)=default</td></tr>
+<tr class="separator:a47c4a513ab4814abc5475e2243f191ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ded82dc3ac36e5b9772676afdc065c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a9ded82dc3ac36e5b9772676afdc065c4">operator=</a> (const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a> &amp;)=default</td></tr>
+<tr class="separator:a9ded82dc3ac36e5b9772676afdc065c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0ee023fb91f18041bd8adf2df99410"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#acf0ee023fb91f18041bd8adf2df99410">operator=</a> (<a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:acf0ee023fb91f18041bd8adf2df99410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7ee4ffed185b14a4083303791ab43d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a9a7ee4ffed185b14a4083303791ab43d">~DenseMatrixBase</a> ()=default</td></tr>
+<tr class="separator:a9a7ee4ffed185b14a4083303791ab43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b2447c7f9169d1d1c01f9b453f48df9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a9b2447c7f9169d1d1c01f9b453f48df9">zero</a> ()=0</td></tr>
+<tr class="memdesc:a9b2447c7f9169d1d1c01f9b453f48df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">将矩阵的每个元素设置为 0。必须重新定义零矩阵的含义，因为它取决于值的存储方式。  <a href="#a9b2447c7f9169d1d1c01f9b453f48df9">更多...</a><br/></td></tr>
+<tr class="separator:a9b2447c7f9169d1d1c01f9b453f48df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b1c581e3f4badd001432e7ca67e31c"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">el</a> (const unsigned int i, const unsigned int j) const =0</td></tr>
+<tr class="memdesc:a18b1c581e3f4badd001432e7ca67e31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵的 <code></code>(i,j) 元素。 由于内部数据表示可能不同，必须重新定义此函数。  <a href="#a18b1c581e3f4badd001432e7ca67e31c">更多...</a><br/></td></tr>
+<tr class="separator:a18b1c581e3f4badd001432e7ca67e31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19959018f7e5a1bb90f1f7084041ac94"><td class="memItemLeft" align="right" valign="top">virtual T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a19959018f7e5a1bb90f1f7084041ac94">el</a> (const unsigned int i, const unsigned int j)=0</td></tr>
+<tr class="memdesc:a19959018f7e5a1bb90f1f7084041ac94"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵的 <code></code>(i,j) 元素的可写引用。 由于内部数据表示可能不同，必须重新定义此函数。  <a href="#a19959018f7e5a1bb90f1f7084041ac94">更多...</a><br/></td></tr>
+<tr class="separator:a19959018f7e5a1bb90f1f7084041ac94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb264450d957c4bc7ca54ad487ea8df"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#afcb264450d957c4bc7ca54ad487ea8df">left_multiply</a> (const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;M2)=0</td></tr>
+<tr class="memdesc:afcb264450d957c4bc7ca54ad487ea8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行操作: (*this) &lt;- M2 * (*this)。  <a href="#afcb264450d957c4bc7ca54ad487ea8df">更多...</a><br/></td></tr>
+<tr class="separator:afcb264450d957c4bc7ca54ad487ea8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a8f1cc874504144e65f4ba01747c286"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a1a8f1cc874504144e65f4ba01747c286">right_multiply</a> (const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;M3)=0</td></tr>
+<tr class="memdesc:a1a8f1cc874504144e65f4ba01747c286"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行操作: (*this) &lt;- (*this) * M3。  <a href="#a1a8f1cc874504144e65f4ba01747c286">更多...</a><br/></td></tr>
+<tr class="separator:a1a8f1cc874504144e65f4ba01747c286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bd665fb9252382cc9a28df4099d76a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">m</a> () const </td></tr>
+<tr class="memdesc:a68bd665fb9252382cc9a28df4099d76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵的行维度。  <a href="#a68bd665fb9252382cc9a28df4099d76a">更多...</a><br/></td></tr>
+<tr class="separator:a68bd665fb9252382cc9a28df4099d76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb8c524109fd5dff8c98855437544ee"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">n</a> () const </td></tr>
+<tr class="memdesc:a4fb8c524109fd5dff8c98855437544ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵的列维度。  <a href="#a4fb8c524109fd5dff8c98855437544ee">更多...</a><br/></td></tr>
+<tr class="separator:a4fb8c524109fd5dff8c98855437544ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041c10a32db1f43eccfb86bdc9f63e60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a041c10a32db1f43eccfb86bdc9f63e60">print</a> (std::ostream &amp;os=<a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>) const </td></tr>
+<tr class="memdesc:a041c10a32db1f43eccfb86bdc9f63e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">漂亮地打印矩阵，默认为 <code>libMesh::out。</code>  <a href="#a041c10a32db1f43eccfb86bdc9f63e60">更多...</a><br/></td></tr>
+<tr class="separator:a041c10a32db1f43eccfb86bdc9f63e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4ad2f2166df67ecc47f3b172f92b55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a1d4ad2f2166df67ecc47f3b172f92b55">print_scientific</a> (std::ostream &amp;os, unsigned precision=8) const </td></tr>
+<tr class="memdesc:a1d4ad2f2166df67ecc47f3b172f92b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">以科学计数法格式打印矩阵。  <a href="#a1d4ad2f2166df67ecc47f3b172f92b55">更多...</a><br/></td></tr>
+<tr class="separator:a1d4ad2f2166df67ecc47f3b172f92b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c91341906c282edcf79ae0a9894f8e2"><td class="memTemplParams" colspan="2">template&lt;typename T2 , typename T3 &gt; </td></tr>
+<tr class="memitem:a2c91341906c282edcf79ae0a9894f8e2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structlibMesh_1_1boostcopy_1_1enable__if__c.html">boostcopy::enable_if_c</a><br class="typebreak"/>
+&lt; <a class="el" href="structlibMesh_1_1ScalarTraits.html">ScalarTraits</a>&lt; T2 &gt;::<a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>, <br class="typebreak"/>
+void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a2c91341906c282edcf79ae0a9894f8e2">add</a> (const T2 factor, const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T3 &gt; &amp;mat)</td></tr>
+<tr class="memdesc:a2c91341906c282edcf79ae0a9894f8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <code>factor</code> 添加到矩阵的每个元素。 这应该仅在 T += T2 * T3 是有效的 C++，且 T2 是标量的情况下工作。返回类型是 void。  <a href="#a2c91341906c282edcf79ae0a9894f8e2">更多...</a><br/></td></tr>
+<tr class="separator:a2c91341906c282edcf79ae0a9894f8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ebd354e73b92fa540f711798bae822"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#af2ebd354e73b92fa540f711798bae822">diagonal</a> () const </td></tr>
+<tr class="memdesc:af2ebd354e73b92fa540f711798bae822"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵的对角线。  <a href="#af2ebd354e73b92fa540f711798bae822">更多...</a><br/></td></tr>
+<tr class="separator:af2ebd354e73b92fa540f711798bae822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:acf1b9ad2924795e6bc40899a30d89906"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#acf1b9ad2924795e6bc40899a30d89906">DenseMatrixBase</a> (const unsigned int new_m=0, const unsigned int new_n=0)</td></tr>
+<tr class="memdesc:acf1b9ad2924795e6bc40899a30d89906"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数。创建一个维度为 <code>m</code> 乘 <code>n</code> 的稠密矩阵。 Protected，以便用户无法创建一个实例。  <a href="#acf1b9ad2924795e6bc40899a30d89906">更多...</a><br/></td></tr>
+<tr class="separator:acf1b9ad2924795e6bc40899a30d89906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0472bd2ec76bfa88657299b9d39ab399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a0472bd2ec76bfa88657299b9d39ab399">condense</a> (const unsigned int i, const unsigned int j, const T val, <a class="el" href="classlibMesh_1_1DenseVectorBase.html">DenseVectorBase</a>&lt; T &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:a0472bd2ec76bfa88657299b9d39ab399"><td class="mdescLeft">&#160;</td><td class="mdescRight">将矩阵的 <code></code>(i,j) 条目压缩出来，强制它取值为 <code>val。这对于在数值模拟中应用边界条件很有用。</code> 保留矩阵的对称性。  <a href="#a0472bd2ec76bfa88657299b9d39ab399">更多...</a><br/></td></tr>
+<tr class="separator:a0472bd2ec76bfa88657299b9d39ab399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+静态 Protected 成员函数</h2></td></tr>
+<tr class="memitem:a97a0f61a31b72851e000af4f7b78a889"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a97a0f61a31b72851e000af4f7b78a889">multiply</a> (<a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;M1, const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;M2, const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;M3)</td></tr>
+<tr class="memdesc:a97a0f61a31b72851e000af4f7b78a889"><td class="mdescLeft">&#160;</td><td class="mdescRight">辅助函数 - 执行计算 M1 = M2 * M3 其中: M1 = (m x n) M2 = (m x p) M3 = (p x n)  <a href="#a97a0f61a31b72851e000af4f7b78a889">更多...</a><br/></td></tr>
+<tr class="separator:a97a0f61a31b72851e000af4f7b78a889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:aa7400426b259d1c630a4b26221205e76"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">_m</a></td></tr>
+<tr class="memdesc:aa7400426b259d1c630a4b26221205e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">行维度。  <a href="#aa7400426b259d1c630a4b26221205e76">更多...</a><br/></td></tr>
+<tr class="separator:aa7400426b259d1c630a4b26221205e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65ad8af64975eb0ecfc621a75743a869"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a65ad8af64975eb0ecfc621a75743a869">_n</a></td></tr>
+<tr class="memdesc:a65ad8af64975eb0ecfc621a75743a869"><td class="mdescLeft">&#160;</td><td class="mdescRight">列维度。  <a href="#a65ad8af64975eb0ecfc621a75743a869">更多...</a><br/></td></tr>
+<tr class="separator:a65ad8af64975eb0ecfc621a75743a869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ae69bcf4703696e88fb14522c77f46567"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html#ae69bcf4703696e88fb14522c77f46567">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;<a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">m</a>)</td></tr>
+<tr class="memdesc:ae69bcf4703696e88fb14522c77f46567"><td class="mdescLeft">&#160;</td><td class="mdescRight">格式化打印，允许执行 <a class="el" href="classlibMesh_1_1DenseMatrix.html" title="定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 ">DenseMatrix</a> K; <a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a> &lt;&lt; K &lt;&lt; std::endl;。  <a href="#ae69bcf4703696e88fb14522c77f46567">更多...</a><br/></td></tr>
+<tr class="separator:ae69bcf4703696e88fb14522c77f46567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class libMesh::DenseMatrixBase&lt; T &gt;</h3>
+
+<p>为有限元类型的计算定义了一个抽象的稠密矩阵基类。例如 DenseSubMatrices 可以从这个类派生出来。 </p>
+<dl class="section author"><dt>作者</dt><dd>John W. Peterson </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2003 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base_8h_source.html">dense_matrix_base.h</a> 第 <a class="el" href="dense__matrix__base_8h_source.html#l00045">45</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="acf1b9ad2924795e6bc40899a30d89906"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::<a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a> </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>new_m</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>new_n</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数。创建一个维度为 <code>m</code> 乘 <code>n</code> 的稠密矩阵。 Protected，以便用户无法创建一个实例。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_m</td><td>矩阵的行维度。 </td></tr>
+    <tr><td class="paramname">new_n</td><td>矩阵的列维度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base_8h_source.html">dense_matrix_base.h</a> 第 <a class="el" href="dense__matrix__base_8h_source.html#l00056">56</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                              : <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">_m</a>(new_m), <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a65ad8af64975eb0ecfc621a75743a869">_n</a>(new_n) {}</div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a65ad8af64975eb0ecfc621a75743a869"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a65ad8af64975eb0ecfc621a75743a869">libMesh::DenseMatrixBase::_n</a></div><div class="ttdeci">unsigned int _n</div><div class="ttdoc">列维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00209">dense_matrix_base.h:209</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_aa7400426b259d1c630a4b26221205e76"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">libMesh::DenseMatrixBase::_m</a></div><div class="ttdeci">unsigned int _m</div><div class="ttdoc">行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00204">dense_matrix_base.h:204</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa81d40d60f367bdb56ce8b73312af399"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::<a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这五个特殊函数可以为此类默认。因为它不管理任何内存本身。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a47c4a513ab4814abc5475e2243f191ed"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::<a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a7ee4ffed185b14a4083303791ab43d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::~<a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a2c91341906c282edcf79ae0a9894f8e2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename T2 , typename T3 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structlibMesh_1_1boostcopy_1_1enable__if__c.html">boostcopy::enable_if_c</a>&lt; <a class="el" href="structlibMesh_1_1ScalarTraits.html">ScalarTraits</a>&lt; T2 &gt;::<a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>, void &gt;::type <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::add </td>
+          <td>(</td>
+          <td class="paramtype">const T2&#160;</td>
+          <td class="paramname"><em>factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将 <code>factor</code> 添加到矩阵的每个元素。 这应该仅在 T += T2 * T3 是有效的 C++，且 T2 是标量的情况下工作。返回类型是 void。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factor</td><td>要添加的标量因子。 </td></tr>
+    <tr><td class="paramname">mat</td><td>乘法的右操作数矩阵。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base_8h_source.html">dense_matrix_base.h</a> 第 <a class="el" href="dense__matrix__base_8h_source.html#l00217">217</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">libMesh::DenseMatrixBase&lt; T &gt;::el()</a>, <a class="el" href="dense__matrix__base_8h_source.html#l00115">libMesh::DenseMatrixBase&lt; T &gt;::m()</a>, <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a> , 以及 <a class="el" href="dense__matrix__base_8h_source.html#l00122">libMesh::DenseMatrixBase&lt; T &gt;::n()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  libmesh_assert_equal_to (this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">m</a>(), mat.m());</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  libmesh_assert_equal_to (this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">n</a>(), mat.n());</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">n</a>()))</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">m</a>()))</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">el</a>(i,j) += factor*mat.el(i,j);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a4fb8c524109fd5dff8c98855437544ee"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">libMesh::DenseMatrixBase::n</a></div><div class="ttdeci">unsigned int n() const </div><div class="ttdoc">返回矩阵的列维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00122">dense_matrix_base.h:122</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a18b1c581e3f4badd001432e7ca67e31c"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">libMesh::DenseMatrixBase::el</a></div><div class="ttdeci">virtual T el(const unsigned int i, const unsigned int j) const =0</div><div class="ttdoc">返回矩阵的 (i,j) 元素。 由于内部数据表示可能不同，必须重新定义此函数。 </div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a68bd665fb9252382cc9a28df4099d76a"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">libMesh::DenseMatrixBase::m</a></div><div class="ttdeci">unsigned int m() const </div><div class="ttdoc">返回矩阵的行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00115">dense_matrix_base.h:115</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0472bd2ec76bfa88657299b9d39ab399"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::condense </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>jv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DenseVectorBase.html">DenseVectorBase</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将矩阵的 <code></code>(i,j) 条目压缩出来，强制它取值为 <code>val。这对于在数值模拟中应用边界条件很有用。</code> 保留矩阵的对称性。 </p>
+<p>将矩阵列约减为已知值。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>要压缩的行索引。 </td></tr>
+    <tr><td class="paramname">j</td><td>要压缩的列索引。 </td></tr>
+    <tr><td class="paramname">val</td><td>压缩出的值。 </td></tr>
+    <tr><td class="paramname">rhs</td><td>与压缩操作相关联的右侧向量。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>矩阵元素类型。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iv</td><td>列索引。 </td></tr>
+    <tr><td class="paramname">jv</td><td>列索引。 </td></tr>
+    <tr><td class="paramname">val</td><td>已知值。 </td></tr>
+    <tr><td class="paramname">rhs</td><td>包含右侧向量的 <a class="el" href="classlibMesh_1_1DenseVectorBase.html" title="定义用于有限元计算的抽象稠密向量基类。 可以从这个类派生出特定的稠密向量，例如 DenseSubVectors。 ">DenseVectorBase</a> 对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base__impl_8h_source.html">dense_matrix_base_impl.h</a> 第 <a class="el" href="dense__matrix__base__impl_8h_source.html#l00094">94</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classlibMesh_1_1DenseVectorBase.html#a35567e09039c62b9914def1fd063a73c">libMesh::DenseVectorBase&lt; T &gt;::el()</a>, <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a> , 以及 <a class="el" href="classlibMesh_1_1DenseVectorBase.html#a4ec1ad50c02f01beea21df4c29ed9736">libMesh::DenseVectorBase&lt; T &gt;::size()</a>.</p>
+
+<p>参考自 <a class="el" href="dense__matrix_8h_source.html#l00507">libMesh::DenseMatrix&lt; Real &gt;::condense()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    libmesh_assert_equal_to(this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">_m</a>, rhs.size());</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    libmesh_assert_equal_to(iv, jv);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// 将已知值移入 RHS，并将列置零</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">m</a>()))</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        rhs.el(i) -= this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">el</a>(i, jv) * val;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">el</a>(i, jv) = 0.;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// 将行置零</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">n</a>()))</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">el</a>(iv, j) = 0.;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">el</a>(iv, jv) = 1.;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    rhs.el(iv) = val;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a4fb8c524109fd5dff8c98855437544ee"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">libMesh::DenseMatrixBase::n</a></div><div class="ttdeci">unsigned int n() const </div><div class="ttdoc">返回矩阵的列维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00122">dense_matrix_base.h:122</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a18b1c581e3f4badd001432e7ca67e31c"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">libMesh::DenseMatrixBase::el</a></div><div class="ttdeci">virtual T el(const unsigned int i, const unsigned int j) const =0</div><div class="ttdoc">返回矩阵的 (i,j) 元素。 由于内部数据表示可能不同，必须重新定义此函数。 </div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a68bd665fb9252382cc9a28df4099d76a"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">libMesh::DenseMatrixBase::m</a></div><div class="ttdeci">unsigned int m() const </div><div class="ttdoc">返回矩阵的行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00115">dense_matrix_base.h:115</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_aa7400426b259d1c630a4b26221205e76"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">libMesh::DenseMatrixBase::_m</a></div><div class="ttdeci">unsigned int _m</div><div class="ttdoc">行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00204">dense_matrix_base.h:204</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af2ebd354e73b92fa540f711798bae822"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; T &gt; <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::diagonal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回矩阵的对角线。 </p>
+<p>返回稠密矩阵的对角线。</p>
+<dl class="section return"><dt>返回</dt><dd>矩阵对角线的 DenseVector。</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>矩阵元素类型。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回包含对角线元素的 <a class="el" href="classlibMesh_1_1DenseVector.html" title="定义用于有限元计算的稠密向量类。该类基本上是为了补充 DenseMatrix 类而设计的。 它相对于 std::vector 具有额外的功能，使其在有限元中特别有用，特别是对于方程组。 所有重写的虚拟函...">DenseVector</a> 对象。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base__impl_8h_source.html">dense_matrix_base_impl.h</a> 第 <a class="el" href="dense__matrix__base__impl_8h_source.html#l00043">43</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="diagonal__matrix_8C_source.html#l00217">libMesh::DiagonalMatrix&lt; T &gt;::add_matrix()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    DenseVector&lt;T&gt; ret(<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">_m</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span> (decltype(<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">_m</a>) i = 0; i &lt; <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">_m</a>; ++i)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        ret(i) = <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">el</a>(i, i);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a18b1c581e3f4badd001432e7ca67e31c"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">libMesh::DenseMatrixBase::el</a></div><div class="ttdeci">virtual T el(const unsigned int i, const unsigned int j) const =0</div><div class="ttdoc">返回矩阵的 (i,j) 元素。 由于内部数据表示可能不同，必须重新定义此函数。 </div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_aa7400426b259d1c630a4b26221205e76"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">libMesh::DenseMatrixBase::_m</a></div><div class="ttdeci">unsigned int _m</div><div class="ttdoc">行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00204">dense_matrix_base.h:204</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a18b1c581e3f4badd001432e7ca67e31c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual T <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::el </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回矩阵的 <code></code>(i,j) 元素。 由于内部数据表示可能不同，必须重新定义此函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>行索引。 </td></tr>
+    <tr><td class="paramname">j</td><td>列索引。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>T 类型的矩阵元素。 </dd></dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1DenseMatrix.html#aae3c4867c5b4622fff7f7a7f21c69510">libMesh::DenseMatrix&lt; T &gt;</a>, <a class="el" href="classlibMesh_1_1DenseMatrix.html#aae3c4867c5b4622fff7f7a7f21c69510">libMesh::DenseMatrix&lt; Number &gt;</a>, <a class="el" href="classlibMesh_1_1DenseMatrix.html#aae3c4867c5b4622fff7f7a7f21c69510">libMesh::DenseMatrix&lt; Real &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1DenseSubMatrix.html#a85f117ef46ad1fb19e3168450ea797d1">libMesh::DenseSubMatrix&lt; T &gt;</a> 内被实现.</p>
+
+<p>参考自 <a class="el" href="dense__matrix__base_8h_source.html#l00217">libMesh::DenseMatrixBase&lt; T &gt;::add()</a> , 以及 <a class="el" href="dense__matrix__base__impl_8h_source.html#l00061">libMesh::DenseMatrixBase&lt; T &gt;::multiply()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19959018f7e5a1bb90f1f7084041ac94"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual T&amp; <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::el </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回矩阵的 <code></code>(i,j) 元素的可写引用。 由于内部数据表示可能不同，必须重新定义此函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>行索引。 </td></tr>
+    <tr><td class="paramname">j</td><td>列索引。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>T 类型的矩阵元素的可写引用。 </dd></dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1DenseMatrix.html#ad8d889439136457fb80f89fe3b148df1">libMesh::DenseMatrix&lt; T &gt;</a>, <a class="el" href="classlibMesh_1_1DenseMatrix.html#ad8d889439136457fb80f89fe3b148df1">libMesh::DenseMatrix&lt; Number &gt;</a>, <a class="el" href="classlibMesh_1_1DenseMatrix.html#ad8d889439136457fb80f89fe3b148df1">libMesh::DenseMatrix&lt; Real &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1DenseSubMatrix.html#a5bba662c8ba5c161da6f430466254484">libMesh::DenseSubMatrix&lt; T &gt;</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="afcb264450d957c4bc7ca54ad487ea8df"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::left_multiply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>M2</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>执行操作: (*this) &lt;- M2 * (*this)。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M2</td><td>乘法的右操作数矩阵。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1DenseMatrix.html#aed85e54952383e30309f47282e41c7fc">libMesh::DenseMatrix&lt; T &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1DenseSubMatrix.html#aa9d1d894258c50444b7cdfcb9986ed73">libMesh::DenseSubMatrix&lt; T &gt;</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a68bd665fb9252382cc9a28df4099d76a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::m </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回矩阵的行维度。 </p>
+<dl class="section return"><dt>返回</dt><dd>矩阵的行维度。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base_8h_source.html">dense_matrix_base.h</a> 第 <a class="el" href="dense__matrix__base_8h_source.html#l00115">115</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dense__matrix__base_8h_source.html#l00204">libMesh::DenseMatrixBase&lt; T &gt;::_m</a>.</p>
+
+<p>参考自 <a class="el" href="dense__matrix__impl_8h_source.html#l00125">libMesh::DenseMatrix&lt; T &gt;::_left_multiply_transpose()</a>, <a class="el" href="dense__matrix__blas__lapack_8C_source.html#l00037">libMesh::DenseMatrix&lt; T &gt;::_multiply_blas()</a>, <a class="el" href="dense__matrix__impl_8h_source.html#l00261">libMesh::DenseMatrix&lt; T &gt;::_right_multiply_transpose()</a>, <a class="el" href="dense__matrix__blas__lapack_8C_source.html#l00529">libMesh::DenseMatrix&lt; T &gt;::_svd_solve_lapack()</a>, <a class="el" href="dense__matrix__base_8h_source.html#l00217">libMesh::DenseMatrixBase&lt; T &gt;::add()</a>, <a class="el" href="sparse__matrix_8C_source.html#l00077">libMesh::SparseMatrix&lt; T &gt;::add_block_matrix()</a>, <a class="el" href="petsc__matrix_8C_source.html#l00768">libMesh::PetscMatrix&lt; T &gt;::add_block_matrix()</a>, <a class="el" href="eigen__sparse__matrix_8C_source.html#l00123">libMesh::EigenSparseMatrix&lt; T &gt;::add_matrix()</a>, <a class="el" href="diagonal__matrix_8C_source.html#l00198">libMesh::DiagonalMatrix&lt; T &gt;::add_matrix()</a>, <a class="el" href="laspack__matrix_8C_source.html#l00201">libMesh::LaspackMatrix&lt; T &gt;::add_matrix()</a>, <a class="el" href="trilinos__epetra__matrix_8C_source.html#l00278">libMesh::EpetraMatrix&lt; T &gt;::add_matrix()</a>, <a class="el" href="petsc__matrix_8C_source.html#l00741">libMesh::PetscMatrix&lt; T &gt;::add_matrix()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03459">libMesh::DofMap::build_constraint_matrix()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03569">libMesh::DofMap::build_constraint_matrix_and_vector()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03048">libMesh::DofMap::constrain_element_dyad_matrix()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02380">libMesh::DofMap::constrain_element_matrix()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02450">libMesh::DofMap::constrain_element_matrix_and_vector()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03006">libMesh::DofMap::constrain_element_vector()</a>, <a class="el" href="dof__map_8C_source.html#l01910">libMesh::DofMap::extract_local_vector()</a>, <a class="el" href="dense__matrix__impl_8h_source.html#l00578">libMesh::DenseMatrix&lt; T &gt;::get_transpose()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02635">libMesh::DofMap::heterogeneously_constrain_element_jacobian_and_residual()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02529">libMesh::DofMap::heterogeneously_constrain_element_matrix_and_vector()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02720">libMesh::DofMap::heterogeneously_constrain_element_residual()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02836">libMesh::DofMap::heterogeneously_constrain_element_vector()</a>, <a class="el" href="dense__matrix__impl_8h_source.html#l00051">libMesh::DenseMatrix&lt; T &gt;::left_multiply()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03381">libMesh::DofMap::max_constraint_error()</a>, <a class="el" href="dense__matrix__base__impl_8h_source.html#l00061">libMesh::DenseMatrixBase&lt; T &gt;::multiply()</a>, <a class="el" href="weighted__patch__recovery__error__estimator_8C_source.html#l00112">libMesh::WeightedPatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00211">libMesh::PatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="dense__matrix__impl_8h_source.html#l00188">libMesh::DenseMatrix&lt; T &gt;::right_multiply()</a> , 以及 <a class="el" href="dense__matrix_8h_source.html#l01348">MetaPhysicL::RawType&lt; libMesh::DenseMatrix&lt; T &gt; &gt;::value()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">_m</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_aa7400426b259d1c630a4b26221205e76"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">libMesh::DenseMatrixBase::_m</a></div><div class="ttdeci">unsigned int _m</div><div class="ttdoc">行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00204">dense_matrix_base.h:204</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a97a0f61a31b72851e000af4f7b78a889"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::multiply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>M1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>M2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>M3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>辅助函数 - 执行计算 M1 = M2 * M3 其中: M1 = (m x n) M2 = (m x p) M3 = (p x n) </p>
+<p>将两个矩阵相乘。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M1</td><td>乘法的结果矩阵。 </td></tr>
+    <tr><td class="paramname">M2</td><td>乘法的左操作数矩阵。 </td></tr>
+    <tr><td class="paramname">M3</td><td>乘法的右操作数矩阵。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>矩阵元素类型。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M1</td><td>存储结果的矩阵。 </td></tr>
+    <tr><td class="paramname">M2</td><td>第一个矩阵。 </td></tr>
+    <tr><td class="paramname">M3</td><td>第二个矩阵。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base__impl_8h_source.html">dense_matrix_base_impl.h</a> 第 <a class="el" href="dense__matrix__base__impl_8h_source.html#l00061">61</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">libMesh::DenseMatrixBase&lt; T &gt;::el()</a>, <a class="el" href="dense__matrix__base_8h_source.html#l00115">libMesh::DenseMatrixBase&lt; T &gt;::m()</a> , 以及 <a class="el" href="dense__matrix__base_8h_source.html#l00122">libMesh::DenseMatrixBase&lt; T &gt;::n()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// 断言确保我们传递了正确维度的矩阵</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    libmesh_assert_equal_to(M1.m(), M2.m());</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    libmesh_assert_equal_to(M1.n(), M3.n());</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    libmesh_assert_equal_to(M2.n(), M3.m());</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_s = M2.m();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p_s = M2.n();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_s = M1.n();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// 通过这种方式执行是因为有很大的机会（至少对于约束矩阵来说）</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// 在右乘时 M3(k,j) = 0.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = 0; k &lt; p_s; k++)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; n_s; j++)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (M3.el(k, j) != 0.)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; m_s; i++)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    M1.el(i, j) += M2.el(i, k) * M3.el(k, j);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4fb8c524109fd5dff8c98855437544ee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::n </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回矩阵的列维度。 </p>
+<dl class="section return"><dt>返回</dt><dd>矩阵的列维度。 </dd></dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base_8h_source.html">dense_matrix_base.h</a> 第 <a class="el" href="dense__matrix__base_8h_source.html#l00122">122</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dense__matrix__base_8h_source.html#l00209">libMesh::DenseMatrixBase&lt; T &gt;::_n</a>.</p>
+
+<p>参考自 <a class="el" href="dense__matrix__impl_8h_source.html#l00125">libMesh::DenseMatrix&lt; T &gt;::_left_multiply_transpose()</a>, <a class="el" href="dense__matrix__blas__lapack_8C_source.html#l00037">libMesh::DenseMatrix&lt; T &gt;::_multiply_blas()</a>, <a class="el" href="dense__matrix__impl_8h_source.html#l00261">libMesh::DenseMatrix&lt; T &gt;::_right_multiply_transpose()</a>, <a class="el" href="dense__matrix__blas__lapack_8C_source.html#l00529">libMesh::DenseMatrix&lt; T &gt;::_svd_solve_lapack()</a>, <a class="el" href="dense__matrix__base_8h_source.html#l00217">libMesh::DenseMatrixBase&lt; T &gt;::add()</a>, <a class="el" href="sparse__matrix_8C_source.html#l00077">libMesh::SparseMatrix&lt; T &gt;::add_block_matrix()</a>, <a class="el" href="petsc__matrix_8C_source.html#l00768">libMesh::PetscMatrix&lt; T &gt;::add_block_matrix()</a>, <a class="el" href="eigen__sparse__matrix_8C_source.html#l00123">libMesh::EigenSparseMatrix&lt; T &gt;::add_matrix()</a>, <a class="el" href="diagonal__matrix_8C_source.html#l00198">libMesh::DiagonalMatrix&lt; T &gt;::add_matrix()</a>, <a class="el" href="laspack__matrix_8C_source.html#l00201">libMesh::LaspackMatrix&lt; T &gt;::add_matrix()</a>, <a class="el" href="trilinos__epetra__matrix_8C_source.html#l00278">libMesh::EpetraMatrix&lt; T &gt;::add_matrix()</a>, <a class="el" href="petsc__matrix_8C_source.html#l00741">libMesh::PetscMatrix&lt; T &gt;::add_matrix()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03459">libMesh::DofMap::build_constraint_matrix()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03569">libMesh::DofMap::build_constraint_matrix_and_vector()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03048">libMesh::DofMap::constrain_element_dyad_matrix()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02380">libMesh::DofMap::constrain_element_matrix()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02450">libMesh::DofMap::constrain_element_matrix_and_vector()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02782">libMesh::DofMap::constrain_element_residual()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03006">libMesh::DofMap::constrain_element_vector()</a>, <a class="el" href="dof__map_8C_source.html#l01910">libMesh::DofMap::extract_local_vector()</a>, <a class="el" href="dense__matrix__impl_8h_source.html#l00578">libMesh::DenseMatrix&lt; T &gt;::get_transpose()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02635">libMesh::DofMap::heterogeneously_constrain_element_jacobian_and_residual()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02529">libMesh::DofMap::heterogeneously_constrain_element_matrix_and_vector()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02720">libMesh::DofMap::heterogeneously_constrain_element_residual()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02836">libMesh::DofMap::heterogeneously_constrain_element_vector()</a>, <a class="el" href="dense__matrix__impl_8h_source.html#l00051">libMesh::DenseMatrix&lt; T &gt;::left_multiply()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03381">libMesh::DofMap::max_constraint_error()</a>, <a class="el" href="dense__matrix__base__impl_8h_source.html#l00061">libMesh::DenseMatrixBase&lt; T &gt;::multiply()</a>, <a class="el" href="weighted__patch__recovery__error__estimator_8C_source.html#l00112">libMesh::WeightedPatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00211">libMesh::PatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="dense__matrix__impl_8h_source.html#l00188">libMesh::DenseMatrix&lt; T &gt;::right_multiply()</a> , 以及 <a class="el" href="dense__matrix_8h_source.html#l01348">MetaPhysicL::RawType&lt; libMesh::DenseMatrix&lt; T &gt; &gt;::value()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a65ad8af64975eb0ecfc621a75743a869">_n</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a65ad8af64975eb0ecfc621a75743a869"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a65ad8af64975eb0ecfc621a75743a869">libMesh::DenseMatrixBase::_n</a></div><div class="ttdeci">unsigned int _n</div><div class="ttdoc">列维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00209">dense_matrix_base.h:209</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9ded82dc3ac36e5b9772676afdc065c4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&amp; <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf0ee023fb91f18041bd8adf2df99410"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&amp; <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a041c10a32db1f43eccfb86bdc9f63e60"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::print </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em> = <code><a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>漂亮地打印矩阵，默认为 <code>libMesh::out。</code> </p>
+<p>以普通格式打印矩阵。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>输出流，默认为 <code>libMesh::out。</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>矩阵元素类型。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>输出流。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base__impl_8h_source.html">dense_matrix_base_impl.h</a> 第 <a class="el" href="dense__matrix__base__impl_8h_source.html#l00155">155</a> 行定义.</p>
+
+<p>参考 <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">m</a>()))</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">n</a>()))</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            os &lt;&lt; std::setw(8)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;               &lt;&lt; this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">el</a>(i, j) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        os &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a4fb8c524109fd5dff8c98855437544ee"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">libMesh::DenseMatrixBase::n</a></div><div class="ttdeci">unsigned int n() const </div><div class="ttdoc">返回矩阵的列维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00122">dense_matrix_base.h:122</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a18b1c581e3f4badd001432e7ca67e31c"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">libMesh::DenseMatrixBase::el</a></div><div class="ttdeci">virtual T el(const unsigned int i, const unsigned int j) const =0</div><div class="ttdoc">返回矩阵的 (i,j) 元素。 由于内部数据表示可能不同，必须重新定义此函数。 </div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a68bd665fb9252382cc9a28df4099d76a"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">libMesh::DenseMatrixBase::m</a></div><div class="ttdeci">unsigned int m() const </div><div class="ttdoc">返回矩阵的行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00115">dense_matrix_base.h:115</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1d4ad2f2166df67ecc47f3b172f92b55"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::print_scientific </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>precision</em> = <code>8</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>以科学计数法格式打印矩阵。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>输出流。 </td></tr>
+    <tr><td class="paramname">precision</td><td>打印的精度。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>矩阵元素类型。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>输出流。 </td></tr>
+    <tr><td class="paramname">precision</td><td>打印的精度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base__impl_8h_source.html">dense_matrix_base_impl.h</a> 第 <a class="el" href="dense__matrix__base__impl_8h_source.html#l00126">126</a> 行定义.</p>
+
+<p>参考 <a class="el" href="int__range_8h_source.html#l00134">libMesh::make_range()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// 保存初始格式标志</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    std::ios_base::fmtflags os_flags = os.flags();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// 打印矩阵元素</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">m</a>()))</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">n</a>()))</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            os &lt;&lt; std::setw(15)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;               &lt;&lt; std::scientific</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;               &lt;&lt; std::setprecision(precision)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;               &lt;&lt; this-&gt;<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">el</a>(i, j) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        os &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">// 恢复原始格式标志</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    os.flags(os_flags);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a4fb8c524109fd5dff8c98855437544ee"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">libMesh::DenseMatrixBase::n</a></div><div class="ttdeci">unsigned int n() const </div><div class="ttdoc">返回矩阵的列维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00122">dense_matrix_base.h:122</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a18b1c581e3f4badd001432e7ca67e31c"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a18b1c581e3f4badd001432e7ca67e31c">libMesh::DenseMatrixBase::el</a></div><div class="ttdeci">virtual T el(const unsigned int i, const unsigned int j) const =0</div><div class="ttdoc">返回矩阵的 (i,j) 元素。 由于内部数据表示可能不同，必须重新定义此函数。 </div></div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a68bd665fb9252382cc9a28df4099d76a"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">libMesh::DenseMatrixBase::m</a></div><div class="ttdeci">unsigned int m() const </div><div class="ttdoc">返回矩阵的行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00115">dense_matrix_base.h:115</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1a8f1cc874504144e65f4ba01747c286"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::right_multiply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>M3</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>执行操作: (*this) &lt;- (*this) * M3。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M3</td><td>乘法的右操作数矩阵。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classlibMesh_1_1DenseMatrix.html#aec22afa33a0cc7c64dc20cbb519b8eb0">libMesh::DenseMatrix&lt; T &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1DenseSubMatrix.html#a6ef414281e44a7035ead2e04af022b82">libMesh::DenseSubMatrix&lt; T &gt;</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b2447c7f9169d1d1c01f9b453f48df9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::zero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将矩阵的每个元素设置为 0。必须重新定义零矩阵的含义，因为它取决于值的存储方式。 </p>
+
+<p>在 <a class="el" href="classlibMesh_1_1DenseMatrix.html#a91216948c639c8836bc88e16622c7ff9">libMesh::DenseMatrix&lt; T &gt;</a>, <a class="el" href="classlibMesh_1_1DenseMatrix.html#a91216948c639c8836bc88e16622c7ff9">libMesh::DenseMatrix&lt; Number &gt;</a>, <a class="el" href="classlibMesh_1_1DenseMatrix.html#a91216948c639c8836bc88e16622c7ff9">libMesh::DenseMatrix&lt; Real &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1DenseSubMatrix.html#a0c32d4d15fbc637ec5e866098e19787b">libMesh::DenseSubMatrix&lt; T &gt;</a> 内被实现.</p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="ae69bcf4703696e88fb14522c77f46567"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">DenseMatrixBase</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>格式化打印，允许执行 <a class="el" href="classlibMesh_1_1DenseMatrix.html" title="定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 ">DenseMatrix</a> K; <a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a> &lt;&lt; K &lt;&lt; std::endl;。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>输出流。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="dense__matrix__base_8h_source.html">dense_matrix_base.h</a> 第 <a class="el" href="dense__matrix__base_8h_source.html#l00136">136</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">m</a>.print(os);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a68bd665fb9252382cc9a28df4099d76a"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">libMesh::DenseMatrixBase::m</a></div><div class="ttdeci">unsigned int m() const </div><div class="ttdoc">返回矩阵的行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00115">dense_matrix_base.h:115</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="aa7400426b259d1c630a4b26221205e76"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::_m</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>行维度。 </p>
+
+<p>在文件 <a class="el" href="dense__matrix__base_8h_source.html">dense_matrix_base.h</a> 第 <a class="el" href="dense__matrix__base_8h_source.html#l00204">204</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dense__matrix__base_8h_source.html#l00115">libMesh::DenseMatrixBase&lt; T &gt;::m()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a65ad8af64975eb0ecfc621a75743a869"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a>&lt; T &gt;::_n</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>列维度。 </p>
+
+<p>在文件 <a class="el" href="dense__matrix__base_8h_source.html">dense_matrix_base.h</a> 第 <a class="el" href="dense__matrix__base_8h_source.html#l00209">209</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dense__matrix__base_8h_source.html#l00122">libMesh::DenseMatrixBase&lt; T &gt;::n()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/numerics/<a class="el" href="dense__matrix__base_8h_source.html">dense_matrix_base.h</a></li>
+<li>/home/lwz/libmesh/include/numerics/<a class="el" href="dense__matrix__base__impl_8h_source.html">dense_matrix_base_impl.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:36 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

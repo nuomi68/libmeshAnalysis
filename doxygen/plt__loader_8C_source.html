@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/src/utils/plt_loader.C 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_6c0ca45eb2c1f3d268151e81241ae7ef.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">plt_loader.C</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="plt__loader_8C.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;libmesh/plt_loader.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;libmesh/int_range.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//---------------------------------------------------------</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// PltLoader static data</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1PltLoader.html#a588d5b552d86c48761f4128b1d96cac0">PltLoader::NNodes</a>[4] = {3, 4, 4, 8};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// PltLoader members</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PltLoader.html#aef684653bb010154c675fc270da94308">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PltLoader.html#aef684653bb010154c675fc270da94308">PltLoader::clear</a> ()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// clear vectors &amp; strings.  Using .erase() for strings instead of .clear()</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// since GCC 2.95.3 does not support .clear().</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#acb3d2919324f2451dc73503da2ad5f6e">_version</a>.erase();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a6364d04036b867652fb95c866bc56b99">_title</a>.erase();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#ad2230d28907ccd8287e8522dc68f6d67">_var_names</a>.clear();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#ade97e61c4d9ff6db11db912862afa261">_var_types</a>.clear();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a9c111581ccb80cc6c25a15e2105b49ad">_zone_types</a>.clear();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a0db0a06853555bcefaa9b75b5e2c3547">_zone_names</a>.clear();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a053448147086c798c2d68e63100eee94">_zone_pack</a>.clear();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#aff4443dc2f56526f1281b48d091b31a1">_imax</a>.clear();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a5ca3620bca95305bb33911281ed66ab0">_jmax</a>.clear();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a2641096095be44b6887b7aaf537f6858">_kmax</a>.clear();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#af6bbe64ea7aedf8a4b3a8b6529b1ffc6">_data</a>.clear();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a48d79240d114db927d8df38e29e9f2bd">_conn</a>.clear();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// reinitialize</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a5236e5f331229462ea3340bb272ebf81">_is_foreign</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a529c129bdb7903069b9f19aa4ec66ef5">_n_vars</a>     = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a9e267a2347cab16c4bd4dea567bae243">_n_zones</a>    = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PltLoader.html#afaa69a8529611b18e13613f048bcb74f">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PltLoader.html#afaa69a8529611b18e13613f048bcb74f">PltLoader::set_n_vars</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nv)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a529c129bdb7903069b9f19aa4ec66ef5">_n_vars</a> = nv;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#ade97e61c4d9ff6db11db912862afa261">_var_types</a>.resize (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#a4ad8b558e933f7a499b07532d05b8a60">n_vars</a>());</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#ad2230d28907ccd8287e8522dc68f6d67">_var_names</a>.resize (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#a4ad8b558e933f7a499b07532d05b8a60">n_vars</a>());</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// Default to float data</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::fill (<a class="code" href="classlibMesh_1_1PltLoader.html#ade97e61c4d9ff6db11db912862afa261">_var_types</a>.begin(), <a class="code" href="classlibMesh_1_1PltLoader.html#ade97e61c4d9ff6db11db912862afa261">_var_types</a>.end(), 1);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// If the number of zones is set, resize the data.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>())</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="classlibMesh_1_1PltLoader.html#af6bbe64ea7aedf8a4b3a8b6529b1ffc6">_data</a>.resize  (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>());</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> z : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>()))</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="classlibMesh_1_1PltLoader.html#af6bbe64ea7aedf8a4b3a8b6529b1ffc6">_data</a>[z].resize  (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#a4ad8b558e933f7a499b07532d05b8a60">n_vars</a>());</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PltLoader.html#ae0364699e72ca26b00031ad3010b531e">   85</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PltLoader.html#ae0364699e72ca26b00031ad3010b531e">PltLoader::set_n_zones</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nz)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a9e267a2347cab16c4bd4dea567bae243">_n_zones</a> = nz;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a9c111581ccb80cc6c25a15e2105b49ad">_zone_types</a>.resize (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>());</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a0db0a06853555bcefaa9b75b5e2c3547">_zone_names</a>.resize (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>());</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a053448147086c798c2d68e63100eee94">_zone_pack</a>.resize  (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>());</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#aff4443dc2f56526f1281b48d091b31a1">_imax</a>.resize (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a5ca3620bca95305bb33911281ed66ab0">_jmax</a>.resize (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>());</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a2641096095be44b6887b7aaf537f6858">_kmax</a>.resize (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>());</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#af6bbe64ea7aedf8a4b3a8b6529b1ffc6">_data</a>.resize (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>());</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="classlibMesh_1_1PltLoader.html#a48d79240d114db927d8df38e29e9f2bd">_conn</a>.resize        (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>());</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// If the number of variables are set, resize the data.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#a4ad8b558e933f7a499b07532d05b8a60">n_vars</a>())</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> z : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">n_zones</a>()))</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <a class="code" href="classlibMesh_1_1PltLoader.html#af6bbe64ea7aedf8a4b3a8b6529b1ffc6">_data</a>[z].resize (this-&gt;<a class="code" href="classlibMesh_1_1PltLoader.html#a4ad8b558e933f7a499b07532d05b8a60">n_vars</a>());</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_ae0364699e72ca26b00031ad3010b531e"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#ae0364699e72ca26b00031ad3010b531e">libMesh::PltLoader::set_n_zones</a></div><div class="ttdeci">void set_n_zones(const unsigned int nz)</div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8C_source.html#l00085">plt_loader.C:85</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a48d79240d114db927d8df38e29e9f2bd"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a48d79240d114db927d8df38e29e9f2bd">libMesh::PltLoader::_conn</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; _conn</div><div class="ttdoc">Vectors to hold the connectivity for each zone (only for unstructured files). </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00436">plt_loader.h:436</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a0db0a06853555bcefaa9b75b5e2c3547"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a0db0a06853555bcefaa9b75b5e2c3547">libMesh::PltLoader::_zone_names</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _zone_names</div><div class="ttdoc">The name of each zone. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00413">plt_loader.h:413</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_af6bbe64ea7aedf8a4b3a8b6529b1ffc6"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#af6bbe64ea7aedf8a4b3a8b6529b1ffc6">libMesh::PltLoader::_data</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::vector&lt; float &gt; &gt; &gt; _data</div><div class="ttdoc">Vector to hold the data. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00430">plt_loader.h:430</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a053448147086c798c2d68e63100eee94"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a053448147086c798c2d68e63100eee94">libMesh::PltLoader::_zone_pack</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; _zone_pack</div><div class="ttdoc">The data packing for each zone (new version only) </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00418">plt_loader.h:418</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a4ad8b558e933f7a499b07532d05b8a60"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a4ad8b558e933f7a499b07532d05b8a60">libMesh::PltLoader::n_vars</a></div><div class="ttdeci">unsigned int n_vars() const </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00180">plt_loader.h:180</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a2641096095be44b6887b7aaf537f6858"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a2641096095be44b6887b7aaf537f6858">libMesh::PltLoader::_kmax</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; _kmax</div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00425">plt_loader.h:425</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_ade97e61c4d9ff6db11db912862afa261"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#ade97e61c4d9ff6db11db912862afa261">libMesh::PltLoader::_var_types</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; _var_types</div><div class="ttdoc">The type of each variable. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00398">plt_loader.h:398</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_afaa69a8529611b18e13613f048bcb74f"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#afaa69a8529611b18e13613f048bcb74f">libMesh::PltLoader::set_n_vars</a></div><div class="ttdeci">void set_n_vars(const unsigned int nv)</div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8C_source.html#l00063">plt_loader.C:63</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_aef684653bb010154c675fc270da94308"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#aef684653bb010154c675fc270da94308">libMesh::PltLoader::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear all data and return to a pristine state. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8C_source.html#l00037">plt_loader.C:37</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a9c111581ccb80cc6c25a15e2105b49ad"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a9c111581ccb80cc6c25a15e2105b49ad">libMesh::PltLoader::_zone_types</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; _zone_types</div><div class="ttdoc">The type of each zone. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00408">plt_loader.h:408</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a5ca3620bca95305bb33911281ed66ab0"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a5ca3620bca95305bb33911281ed66ab0">libMesh::PltLoader::_jmax</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; _jmax</div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00424">plt_loader.h:424</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_aff4443dc2f56526f1281b48d091b31a1"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#aff4443dc2f56526f1281b48d091b31a1">libMesh::PltLoader::_imax</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; _imax</div><div class="ttdoc">The (imax,jmax,kmax) value for each zone. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00423">plt_loader.h:423</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a588d5b552d86c48761f4128b1d96cac0"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a588d5b552d86c48761f4128b1d96cac0">libMesh::PltLoader::NNodes</a></div><div class="ttdeci">static const unsigned int NNodes[4]</div><div class="ttdoc">Enum defining the number of nodes for each element type. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00250">plt_loader.h:250</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_ad2230d28907ccd8287e8522dc68f6d67"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#ad2230d28907ccd8287e8522dc68f6d67">libMesh::PltLoader::_var_names</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _var_names</div><div class="ttdoc">The name for each variable. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00392">plt_loader.h:392</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a6364d04036b867652fb95c866bc56b99"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a6364d04036b867652fb95c866bc56b99">libMesh::PltLoader::_title</a></div><div class="ttdeci">std::string _title</div><div class="ttdoc">The Tecplot data set title. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00382">plt_loader.h:382</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a529c129bdb7903069b9f19aa4ec66ef5"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a529c129bdb7903069b9f19aa4ec66ef5">libMesh::PltLoader::_n_vars</a></div><div class="ttdeci">unsigned int _n_vars</div><div class="ttdoc">The number of variables in the data set. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00387">plt_loader.h:387</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_acb3d2919324f2451dc73503da2ad5f6e"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#acb3d2919324f2451dc73503da2ad5f6e">libMesh::PltLoader::_version</a></div><div class="ttdeci">std::string _version</div><div class="ttdoc">The Tecplot Version number string. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00372">plt_loader.h:372</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a5236e5f331229462ea3340bb272ebf81"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a5236e5f331229462ea3340bb272ebf81">libMesh::PltLoader::_is_foreign</a></div><div class="ttdeci">bool _is_foreign</div><div class="ttdoc">Is the data foreign? </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00377">plt_loader.h:377</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_ab9fb82f4250ac7a2d28ac95de765bbe2"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#ab9fb82f4250ac7a2d28ac95de765bbe2">libMesh::PltLoader::n_zones</a></div><div class="ttdeci">unsigned int n_zones() const </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00195">plt_loader.h:195</a></div></div>
+<div class="ttc" id="classlibMesh_1_1PltLoader_html_a9e267a2347cab16c4bd4dea567bae243"><div class="ttname"><a href="classlibMesh_1_1PltLoader.html#a9e267a2347cab16c4bd4dea567bae243">libMesh::PltLoader::_n_zones</a></div><div class="ttdeci">unsigned int _n_zones</div><div class="ttdoc">The number of zones. </div><div class="ttdef"><b>Definition:</b> <a href="plt__loader_8h_source.html#l00403">plt_loader.h:403</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:06 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

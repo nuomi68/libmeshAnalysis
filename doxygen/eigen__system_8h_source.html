@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/systems/eigen_system.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_db5ab631c76ff4a7c063bc29cb45bd0f.html">systems</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">eigen_system.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="eigen__system_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef LIBMESH_EIGEN_SYSTEM_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_EIGEN_SYSTEM_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_config.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// 当前，EigenSystem应仅在启用SLEPc支持时可用。</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if defined(LIBMESH_HAVE_SLEPC)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// 本地包含</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;libmesh/system.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;libmesh/eigen_solver.h&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// 前置声明</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>SparseMatrix;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>ShellMatrix;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1EigenSystem.html">EigenSystem</a> : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1System.html">System</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classlibMesh_1_1EigenSystem.html#a83a2f82bb651ccf49d8b17968ba1918d">EigenSystem</a> (<a class="code" href="classlibMesh_1_1EquationSystems.html">EquationSystems</a> &amp; es,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;               <span class="keyword">const</span> std::string &amp; name_in,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> number_in);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classlibMesh_1_1EigenSystem.html#a83a2f82bb651ccf49d8b17968ba1918d">EigenSystem</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1EigenSystem.html">EigenSystem</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="classlibMesh_1_1EigenSystem.html">EigenSystem</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a5a38478b5e9759c05ff450315ea15887">operator= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1EigenSystem.html">EigenSystem</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classlibMesh_1_1EigenSystem.html#a83a2f82bb651ccf49d8b17968ba1918d">EigenSystem</a> (<a class="code" href="classlibMesh_1_1EigenSystem.html">EigenSystem</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classlibMesh_1_1EigenSystem.html">EigenSystem</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a5a38478b5e9759c05ff450315ea15887">operator= </a>(<a class="code" href="classlibMesh_1_1EigenSystem.html">EigenSystem</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#ae3a45c2f12c1550c21de6619a6ec4a29">~EigenSystem</a> ();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#ace706850a85a1d9f2f16ad30441c35a5">   74</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classlibMesh_1_1EigenSystem.html">EigenSystem</a> <a class="code" href="classlibMesh_1_1EigenSystem.html#ace706850a85a1d9f2f16ad30441c35a5">sys_type</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#ac9935d3e4da94909a02f6baa2f9eb33b">   79</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classlibMesh_1_1System.html">System</a> <a class="code" href="classlibMesh_1_1EigenSystem.html#ac9935d3e4da94909a02f6baa2f9eb33b">Parent</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a3b82b1af728dfd206dc3c998632f5020">   84</a></span>&#160;  <a class="code" href="classlibMesh_1_1EigenSystem.html">sys_type</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a3b82b1af728dfd206dc3c998632f5020">system</a> () { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a2383c3b24eb9b18aaa14fc5befb2cdef">clear</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#ada56149d08b01dcbe8313325504c49d0">reinit</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a503f49857a248d50766f9ff99e7e8b75">solve</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">virtual</span> std::pair&lt;Real, Real&gt; <a class="code" href="classlibMesh_1_1EigenSystem.html#a57deda4521ecc50788f557b11ad420da">get_eigenpair</a> (<a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> i);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">virtual</span> std::pair&lt;Real, Real&gt; <a class="code" href="classlibMesh_1_1EigenSystem.html#a0588622f5cf2b0f5c90e114c38aa3b3d">get_eigenvalue</a> (<a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> i);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a07b73be5a2f6ed5a7587971bf88c14d5">  114</a></span>&#160;  <span class="keyword">virtual</span> std::string <a class="code" href="classlibMesh_1_1EigenSystem.html#a07b73be5a2f6ed5a7587971bf88c14d5">system_type</a> ()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Eigen&quot;</span>; }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#ab4c0a9337a8e0243e81fbafa043cb29f">  119</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#ab4c0a9337a8e0243e81fbafa043cb29f">get_n_converged</a> ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a1039a53237198f12d499d915fbbee461">_n_converged_eigenpairs</a>;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a30651749e2beae7f85f03c7af876121f">  124</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a30651749e2beae7f85f03c7af876121f">get_n_iterations</a> ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a421e2df19a534ae1bf640b2dd11dbc4c">_n_iterations</a>;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a0e58b2fd0efeb1fa491ff16df6403098">set_eigenproblem_type</a> (<a class="code" href="namespacelibMesh.html#ad3f6a411751258ad4a7e2f8ab6ed1e26">EigenProblemType</a> ept);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a0e009dde1a2a36034ee5a473c25c2608">  134</a></span>&#160;  <a class="code" href="namespacelibMesh.html#ad3f6a411751258ad4a7e2f8ab6ed1e26">EigenProblemType</a> <a class="code" href="classlibMesh_1_1EigenSystem.html#a0e009dde1a2a36034ee5a473c25c2608">get_eigenproblem_type</a> ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a133520e379693b5c933283c1507fed32">_eigen_problem_type</a>;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a05819eda4df55f4525e4fe0c8f4d6ad3">set_initial_space</a>(<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;Number&gt;</a> &amp; initial_space_in);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#aff9b2776cd721fc84ee71bb66b5d6f5b">generalized</a> () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a5d19a1da8755a7245d6a5089fef3abb4">  149</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a5d19a1da8755a7245d6a5089fef3abb4">use_shell_matrices</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a06c4a502e1a977a022d8e0da3f1d15dd">_use_shell_matrices</a>; }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a8be972feb83eb0cd551fead0c7b7e3e3">  154</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a8be972feb83eb0cd551fead0c7b7e3e3">use_shell_matrices</a>(<span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a5d19a1da8755a7245d6a5089fef3abb4">use_shell_matrices</a>) { <a class="code" href="classlibMesh_1_1EigenSystem.html#a06c4a502e1a977a022d8e0da3f1d15dd">_use_shell_matrices</a> = <a class="code" href="classlibMesh_1_1EigenSystem.html#a8be972feb83eb0cd551fead0c7b7e3e3">use_shell_matrices</a>; }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#ac6c805a6772cc369f027977dc31b7cc1">  159</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#ac6c805a6772cc369f027977dc31b7cc1">use_shell_precond_matrix</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a451af75d1f96fb4bca0069e46f307b88">_use_shell_precond_matrix</a>; }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#ad7e0c990f95beafbdbaf1b218b90265b">  164</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#ad7e0c990f95beafbdbaf1b218b90265b">use_shell_precond_matrix</a>(<span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#ac6c805a6772cc369f027977dc31b7cc1">use_shell_precond_matrix</a>) { <a class="code" href="classlibMesh_1_1EigenSystem.html#a451af75d1f96fb4bca0069e46f307b88">_use_shell_precond_matrix</a> = <a class="code" href="classlibMesh_1_1EigenSystem.html#ad7e0c990f95beafbdbaf1b218b90265b">use_shell_precond_matrix</a>; }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#aebd5ef364dd0791483ab7f822bacca73">get_matrix_A</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#aebd5ef364dd0791483ab7f822bacca73">get_matrix_A</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a03c1812dea26c55838b5e254c49a950f">get_matrix_B</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a03c1812dea26c55838b5e254c49a950f">get_matrix_B</a>();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#af84b1aa6d75ec1e0cab7570317f894cd">get_precond_matrix</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#af84b1aa6d75ec1e0cab7570317f894cd">get_precond_matrix</a>();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#aa21935f057124d2e298ed2d3d6da1ab0">get_shell_matrix_A</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <a class="code" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#aa21935f057124d2e298ed2d3d6da1ab0">get_shell_matrix_A</a>();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a13c591c57b85b0bc1f194d4f921ec6fc">get_shell_matrix_B</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <a class="code" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a13c591c57b85b0bc1f194d4f921ec6fc">get_shell_matrix_B</a>();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a2f57b7d0e5c17fb603d6dfe4889c4234">get_shell_precond_matrix</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <a class="code" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a2f57b7d0e5c17fb603d6dfe4889c4234">get_shell_precond_matrix</a>();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1EigenSolver.html">EigenSolver&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a809627010474d3965677967bbb57d8ac">get_eigen_solver</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="classlibMesh_1_1EigenSolver.html">EigenSolver&lt;Number&gt;</a> &amp; <a class="code" href="classlibMesh_1_1EigenSystem.html#a809627010474d3965677967bbb57d8ac">get_eigen_solver</a>();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#aca3c36c34eee24f8191d3e38b5469155">has_matrix_A</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a54b5e5a8432a7693c98b5b8f4d229a77">has_matrix_B</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a94bd7321e6c971fec645534c6cb73320">has_precond_matrix</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a9ebdc1301d0e0a54d7a848baf00894af">has_shell_matrix_A</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#acaa317280a7cf30b21b6da9c5c681247">has_shell_matrix_B</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a197ec908fcb46191baae65f0acae0a3b">has_shell_precond_matrix</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a01a29a78830ad7813cdf0f64997b586f">  291</a></span>&#160;  <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;Number&gt;</a> * <a class="code" href="classlibMesh_1_1EigenSystem.html#a01a29a78830ad7813cdf0f64997b586f">matrix_A</a>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a16b1c6094998ba06a32f5c965d0aee0b">  298</a></span>&#160;  <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;Number&gt;</a> * <a class="code" href="classlibMesh_1_1EigenSystem.html#a16b1c6094998ba06a32f5c965d0aee0b">matrix_B</a>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a3e947228796c93f446c3e57d3e65bcae">  305</a></span>&#160;  std::unique_ptr&lt;ShellMatrix&lt;Number&gt;&gt; <a class="code" href="classlibMesh_1_1EigenSystem.html#a3e947228796c93f446c3e57d3e65bcae">shell_matrix_A</a>;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#af46bed2cfe7e3a0413cf0716f118b4eb">  312</a></span>&#160;  std::unique_ptr&lt;ShellMatrix&lt;Number&gt;&gt; <a class="code" href="classlibMesh_1_1EigenSystem.html#af46bed2cfe7e3a0413cf0716f118b4eb">shell_matrix_B</a>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a852564ec21a43361c73bd3538b8e2fec">  319</a></span>&#160;  <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;Number&gt;</a> * <a class="code" href="classlibMesh_1_1EigenSystem.html#a852564ec21a43361c73bd3538b8e2fec">precond_matrix</a>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a7141438aa8461a7d4ea82bb9a71d22a2">  326</a></span>&#160;  std::unique_ptr&lt;ShellMatrix&lt;Number&gt;&gt; <a class="code" href="classlibMesh_1_1EigenSystem.html#a7141438aa8461a7d4ea82bb9a71d22a2">shell_precond_matrix</a>;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#ad189afae5a56bd89d32949b913e44bb3">  333</a></span>&#160;  std::unique_ptr&lt;EigenSolver&lt;Number&gt;&gt; <a class="code" href="classlibMesh_1_1EigenSystem.html#ad189afae5a56bd89d32949b913e44bb3">eigen_solver</a>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#ae7fa4901e8c8a303747955bc61d9fe89">add_matrices</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#aa880a5c1f358e4d8b314609cfc60f07e">init_matrices</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a4b87a747126b87053026efe939ebc18b">  351</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a4b87a747126b87053026efe939ebc18b">set_n_converged</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nconv)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  { <a class="code" href="classlibMesh_1_1EigenSystem.html#a1039a53237198f12d499d915fbbee461">_n_converged_eigenpairs</a> = nconv; }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#ae85415626f2d9b82b03788228be72edc">  357</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#ae85415626f2d9b82b03788228be72edc">set_n_iterations</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> its)</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  { <a class="code" href="classlibMesh_1_1EigenSystem.html#a421e2df19a534ae1bf640b2dd11dbc4c">_n_iterations</a> = its;}</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a1039a53237198f12d499d915fbbee461">  366</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a1039a53237198f12d499d915fbbee461">_n_converged_eigenpairs</a>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a421e2df19a534ae1bf640b2dd11dbc4c">  371</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a421e2df19a534ae1bf640b2dd11dbc4c">_n_iterations</a>;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a133520e379693b5c933283c1507fed32">  376</a></span>&#160;  <a class="code" href="namespacelibMesh.html#ad3f6a411751258ad4a7e2f8ab6ed1e26">EigenProblemType</a> <a class="code" href="classlibMesh_1_1EigenSystem.html#a133520e379693b5c933283c1507fed32">_eigen_problem_type</a>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a06c4a502e1a977a022d8e0da3f1d15dd">  381</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a06c4a502e1a977a022d8e0da3f1d15dd">_use_shell_matrices</a>;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSystem.html#a451af75d1f96fb4bca0069e46f307b88">  386</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EigenSystem.html#a451af75d1f96fb4bca0069e46f307b88">_use_shell_precond_matrix</a>;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;};</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="preprocessor">#endif // LIBMESH_HAVE_SLEPC</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="preprocessor">#endif // LIBMESH_EIGEN_SYSTEM_H</span></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a9ebdc1301d0e0a54d7a848baf00894af"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a9ebdc1301d0e0a54d7a848baf00894af">libMesh::EigenSystem::has_shell_matrix_A</a></div><div class="ttdeci">bool has_shell_matrix_A() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00442">eigen_system.C:442</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_ada56149d08b01dcbe8313325504c49d0"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#ada56149d08b01dcbe8313325504c49d0">libMesh::EigenSystem::reinit</a></div><div class="ttdeci">virtual void reinit() override</div><div class="ttdoc">重新初始化与系统关联的成员数据字段，以便，例如，可以使用assemble()。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00182">eigen_system.C:182</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a57deda4521ecc50788f557b11ad420da"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a57deda4521ecc50788f557b11ad420da">libMesh::EigenSystem::get_eigenpair</a></div><div class="ttdeci">virtual std::pair&lt; Real, Real &gt; get_eigenpair(dof_id_type i)</div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00286">eigen_system.C:286</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a8be972feb83eb0cd551fead0c7b7e3e3"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a8be972feb83eb0cd551fead0c7b7e3e3">libMesh::EigenSystem::use_shell_matrices</a></div><div class="ttdeci">void use_shell_matrices(bool use_shell_matrices)</div><div class="ttdoc">设置使用Shell矩阵的标志 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00154">eigen_system.h:154</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html">libMesh::EquationSystems</a></div><div class="ttdoc">这个 EquationSystems 类. </div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00064">equation_systems.h:64</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_aa21935f057124d2e298ed2d3d6da1ab0"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#aa21935f057124d2e298ed2d3d6da1ab0">libMesh::EigenSystem::get_shell_matrix_A</a></div><div class="ttdeci">const ShellMatrix&lt; Number &gt; &amp; get_shell_matrix_A() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00369">eigen_system.C:369</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_ace706850a85a1d9f2f16ad30441c35a5"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#ace706850a85a1d9f2f16ad30441c35a5">libMesh::EigenSystem::sys_type</a></div><div class="ttdeci">EigenSystem sys_type</div><div class="ttdoc">系统类型。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00074">eigen_system.h:74</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a54b5e5a8432a7693c98b5b8f4d229a77"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a54b5e5a8432a7693c98b5b8f4d229a77">libMesh::EigenSystem::has_matrix_B</a></div><div class="ttdeci">bool has_matrix_B() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00428">eigen_system.C:428</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a16b1c6094998ba06a32f5c965d0aee0b"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a16b1c6094998ba06a32f5c965d0aee0b">libMesh::EigenSystem::matrix_B</a></div><div class="ttdeci">SparseMatrix&lt; Number &gt; * matrix_B</div><div class="ttdoc">用于广义特征值问题的第二个系统矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00298">eigen_system.h:298</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a94bd7321e6c971fec645534c6cb73320"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a94bd7321e6c971fec645534c6cb73320">libMesh::EigenSystem::has_precond_matrix</a></div><div class="ttdeci">bool has_precond_matrix() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00435">eigen_system.C:435</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a1039a53237198f12d499d915fbbee461"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a1039a53237198f12d499d915fbbee461">libMesh::EigenSystem::_n_converged_eigenpairs</a></div><div class="ttdeci">unsigned int _n_converged_eigenpairs</div><div class="ttdoc">收敛的特征对的数量。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00366">eigen_system.h:366</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a3b82b1af728dfd206dc3c998632f5020"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a3b82b1af728dfd206dc3c998632f5020">libMesh::EigenSystem::system</a></div><div class="ttdeci">sys_type &amp; system()</div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00084">eigen_system.h:84</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a7141438aa8461a7d4ea82bb9a71d22a2"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a7141438aa8461a7d4ea82bb9a71d22a2">libMesh::EigenSystem::shell_precond_matrix</a></div><div class="ttdeci">std::unique_ptr&lt; ShellMatrix&lt; Number &gt; &gt; shell_precond_matrix</div><div class="ttdoc">预处理Shell矩阵 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00326">eigen_system.h:326</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_af84b1aa6d75ec1e0cab7570317f894cd"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#af84b1aa6d75ec1e0cab7570317f894cd">libMesh::EigenSystem::get_precond_matrix</a></div><div class="ttdeci">const SparseMatrix&lt; Number &gt; &amp; get_precond_matrix() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00349">eigen_system.C:349</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a30651749e2beae7f85f03c7af876121f"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a30651749e2beae7f85f03c7af876121f">libMesh::EigenSystem::get_n_iterations</a></div><div class="ttdeci">unsigned int get_n_iterations() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00124">eigen_system.h:124</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a809627010474d3965677967bbb57d8ac"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a809627010474d3965677967bbb57d8ac">libMesh::EigenSystem::get_eigen_solver</a></div><div class="ttdeci">const EigenSolver&lt; Number &gt; &amp; get_eigen_solver() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00460">eigen_system.C:460</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_ab4c0a9337a8e0243e81fbafa043cb29f"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#ab4c0a9337a8e0243e81fbafa043cb29f">libMesh::EigenSystem::get_n_converged</a></div><div class="ttdeci">unsigned int get_n_converged() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00119">eigen_system.h:119</a></div></div>
+<div class="ttc" id="classlibMesh_1_1NumericVector_html"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html">libMesh::NumericVector&lt; Number &gt;</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ad3f6a411751258ad4a7e2f8ab6ed1e26"><div class="ttname"><a href="namespacelibMesh.html#ad3f6a411751258ad4a7e2f8ab6ed1e26">libMesh::EigenProblemType</a></div><div class="ttdeci">EigenProblemType</div><div class="ttdoc">Defines an enum for eigenproblem types. </div><div class="ttdef"><b>Definition:</b> <a href="enum__eigen__solver__type_8h_source.html#l00054">enum_eigen_solver_type.h:54</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_aa880a5c1f358e4d8b314609cfc60f07e"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#aa880a5c1f358e4d8b314609cfc60f07e">libMesh::EigenSystem::init_matrices</a></div><div class="ttdeci">virtual void init_matrices() override</div><div class="ttdoc">初始和系统关联的矩阵 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00158">eigen_system.C:158</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a07b73be5a2f6ed5a7587971bf88c14d5"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a07b73be5a2f6ed5a7587971bf88c14d5">libMesh::EigenSystem::system_type</a></div><div class="ttdeci">virtual std::string system_type() const override</div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00114">eigen_system.h:114</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a5a38478b5e9759c05ff450315ea15887"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a5a38478b5e9759c05ff450315ea15887">libMesh::EigenSystem::operator=</a></div><div class="ttdeci">EigenSystem &amp; operator=(const EigenSystem &amp;)=delete</div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a05819eda4df55f4525e4fe0c8f4d6ad3"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a05819eda4df55f4525e4fe0c8f4d6ad3">libMesh::EigenSystem::set_initial_space</a></div><div class="ttdeci">void set_initial_space(NumericVector&lt; Number &gt; &amp;initial_space_in)</div><div class="ttdoc">设置初始特征向量 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00297">eigen_system.C:297</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a197ec908fcb46191baae65f0acae0a3b"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a197ec908fcb46191baae65f0acae0a3b">libMesh::EigenSystem::has_shell_precond_matrix</a></div><div class="ttdeci">bool has_shell_precond_matrix() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00454">eigen_system.C:454</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_ac6c805a6772cc369f027977dc31b7cc1"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#ac6c805a6772cc369f027977dc31b7cc1">libMesh::EigenSystem::use_shell_precond_matrix</a></div><div class="ttdeci">bool use_shell_precond_matrix() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00159">eigen_system.h:159</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_aca3c36c34eee24f8191d3e38b5469155"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#aca3c36c34eee24f8191d3e38b5469155">libMesh::EigenSystem::has_matrix_A</a></div><div class="ttdeci">bool has_matrix_A() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00421">eigen_system.C:421</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_ac9935d3e4da94909a02f6baa2f9eb33b"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#ac9935d3e4da94909a02f6baa2f9eb33b">libMesh::EigenSystem::Parent</a></div><div class="ttdeci">System Parent</div><div class="ttdoc">父类的类型 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00079">eigen_system.h:79</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a421e2df19a534ae1bf640b2dd11dbc4c"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a421e2df19a534ae1bf640b2dd11dbc4c">libMesh::EigenSystem::_n_iterations</a></div><div class="ttdeci">unsigned int _n_iterations</div><div class="ttdoc">特征值求解器算法的迭代次数。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00371">eigen_system.h:371</a></div></div>
+<div class="ttc" id="classlibMesh_1_1SparseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix&lt; Number &gt;</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a3e947228796c93f446c3e57d3e65bcae"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a3e947228796c93f446c3e57d3e65bcae">libMesh::EigenSystem::shell_matrix_A</a></div><div class="ttdeci">std::unique_ptr&lt; ShellMatrix&lt; Number &gt; &gt; shell_matrix_A</div><div class="ttdoc">用于标准特征值问题的系统Shell矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00305">eigen_system.h:305</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a852564ec21a43361c73bd3538b8e2fec"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a852564ec21a43361c73bd3538b8e2fec">libMesh::EigenSystem::precond_matrix</a></div><div class="ttdeci">SparseMatrix&lt; Number &gt; * precond_matrix</div><div class="ttdoc">预处理矩阵 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00319">eigen_system.h:319</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_ad7e0c990f95beafbdbaf1b218b90265b"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#ad7e0c990f95beafbdbaf1b218b90265b">libMesh::EigenSystem::use_shell_precond_matrix</a></div><div class="ttdeci">void use_shell_precond_matrix(bool use_shell_precond_matrix)</div><div class="ttdoc">设置使用Shell预处理矩阵的标志 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00164">eigen_system.h:164</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_ae85415626f2d9b82b03788228be72edc"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#ae85415626f2d9b82b03788228be72edc">libMesh::EigenSystem::set_n_iterations</a></div><div class="ttdeci">void set_n_iterations(unsigned int its)</div><div class="ttdoc">设置 _n_iterations 成员，对于 EigenSystem 的子类很有用。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00357">eigen_system.h:357</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_aff9b2776cd721fc84ee71bb66b5d6f5b"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#aff9b2776cd721fc84ee71bb66b5d6f5b">libMesh::EigenSystem::generalized</a></div><div class="ttdeci">bool generalized() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00303">eigen_system.C:303</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html"><div class="ttname"><a href="classlibMesh_1_1System.html">libMesh::System</a></div><div class="ttdoc">Manages consistently variables, degrees of freedom, and coefficient vectors. </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00096">system.h:96</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a451af75d1f96fb4bca0069e46f307b88"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a451af75d1f96fb4bca0069e46f307b88">libMesh::EigenSystem::_use_shell_precond_matrix</a></div><div class="ttdeci">bool _use_shell_precond_matrix</div><div class="ttdoc">一个布尔标志，指示是否使用Shell预处理矩阵 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00386">eigen_system.h:386</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_af46bed2cfe7e3a0413cf0716f118b4eb"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#af46bed2cfe7e3a0413cf0716f118b4eb">libMesh::EigenSystem::shell_matrix_B</a></div><div class="ttdeci">std::unique_ptr&lt; ShellMatrix&lt; Number &gt; &gt; shell_matrix_B</div><div class="ttdoc">用于广义特征值问题的第二个系统Shell矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00312">eigen_system.h:312</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a01a29a78830ad7813cdf0f64997b586f"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a01a29a78830ad7813cdf0f64997b586f">libMesh::EigenSystem::matrix_A</a></div><div class="ttdeci">SparseMatrix&lt; Number &gt; * matrix_A</div><div class="ttdoc">用于标准特征值问题的系统矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00291">eigen_system.h:291</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a4b87a747126b87053026efe939ebc18b"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a4b87a747126b87053026efe939ebc18b">libMesh::EigenSystem::set_n_converged</a></div><div class="ttdeci">void set_n_converged(unsigned int nconv)</div><div class="ttdoc">设置 _n_converged_eigenpairs 成员，对于 EigenSystem 的子类很有用。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00351">eigen_system.h:351</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_ae3a45c2f12c1550c21de6619a6ec4a29"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#ae3a45c2f12c1550c21de6619a6ec4a29">libMesh::EigenSystem::~EigenSystem</a></div><div class="ttdeci">virtual ~EigenSystem()</div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_acaa317280a7cf30b21b6da9c5c681247"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#acaa317280a7cf30b21b6da9c5c681247">libMesh::EigenSystem::has_shell_matrix_B</a></div><div class="ttdeci">bool has_shell_matrix_B() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00448">eigen_system.C:448</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a5d19a1da8755a7245d6a5089fef3abb4"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a5d19a1da8755a7245d6a5089fef3abb4">libMesh::EigenSystem::use_shell_matrices</a></div><div class="ttdeci">bool use_shell_matrices() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00149">eigen_system.h:149</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_aebd5ef364dd0791483ab7f822bacca73"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#aebd5ef364dd0791483ab7f822bacca73">libMesh::EigenSystem::get_matrix_A</a></div><div class="ttdeci">const SparseMatrix&lt; Number &gt; &amp; get_matrix_A() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00311">eigen_system.C:311</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a0588622f5cf2b0f5c90e114c38aa3b3d"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a0588622f5cf2b0f5c90e114c38aa3b3d">libMesh::EigenSystem::get_eigenvalue</a></div><div class="ttdeci">virtual std::pair&lt; Real, Real &gt; get_eigenvalue(dof_id_type i)</div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00292">eigen_system.C:292</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a503f49857a248d50766f9ff99e7e8b75"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a503f49857a248d50766f9ff99e7e8b75">libMesh::EigenSystem::solve</a></div><div class="ttdeci">virtual void solve() override</div><div class="ttdoc">装配和求解特征值系统。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00209">eigen_system.C:209</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a83a2f82bb651ccf49d8b17968ba1918d"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a83a2f82bb651ccf49d8b17968ba1918d">libMesh::EigenSystem::EigenSystem</a></div><div class="ttdeci">EigenSystem(EquationSystems &amp;es, const std::string &amp;name_in, const unsigned int number_in)</div><div class="ttdoc">构造函数。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00039">eigen_system.C:39</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a06c4a502e1a977a022d8e0da3f1d15dd"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a06c4a502e1a977a022d8e0da3f1d15dd">libMesh::EigenSystem::_use_shell_matrices</a></div><div class="ttdeci">bool _use_shell_matrices</div><div class="ttdoc">一个布尔标志，指示是否使用Shell矩阵 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00381">eigen_system.h:381</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_ad189afae5a56bd89d32949b913e44bb3"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#ad189afae5a56bd89d32949b913e44bb3">libMesh::EigenSystem::eigen_solver</a></div><div class="ttdeci">std::unique_ptr&lt; EigenSolver&lt; Number &gt; &gt; eigen_solver</div><div class="ttdoc">EigenSolver，定义使用的接口，即使用的求解器包。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00333">eigen_system.h:333</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_ae7fa4901e8c8a303747955bc61d9fe89"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#ae7fa4901e8c8a303747955bc61d9fe89">libMesh::EigenSystem::add_matrices</a></div><div class="ttdeci">virtual void add_matrices() override</div><div class="ttdoc">添加必要的矩阵和Shell矩阵（可能是JFNK运算符的意思） </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00126">eigen_system.C:126</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a133520e379693b5c933283c1507fed32"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a133520e379693b5c933283c1507fed32">libMesh::EigenSystem::_eigen_problem_type</a></div><div class="ttdeci">EigenProblemType _eigen_problem_type</div><div class="ttdoc">特征值问题的类型。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00376">eigen_system.h:376</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a0e58b2fd0efeb1fa491ff16df6403098"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a0e58b2fd0efeb1fa491ff16df6403098">libMesh::EigenSystem::set_eigenproblem_type</a></div><div class="ttdeci">void set_eigenproblem_type(EigenProblemType ept)</div><div class="ttdoc">设置当前特征问题的类型。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00085">eigen_system.C:85</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a13c591c57b85b0bc1f194d4f921ec6fc"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a13c591c57b85b0bc1f194d4f921ec6fc">libMesh::EigenSystem::get_shell_matrix_B</a></div><div class="ttdeci">const ShellMatrix&lt; Number &gt; &amp; get_shell_matrix_B() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00385">eigen_system.C:385</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a2383c3b24eb9b18aaa14fc5befb2cdef"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a2383c3b24eb9b18aaa14fc5befb2cdef">libMesh::EigenSystem::clear</a></div><div class="ttdeci">virtual void clear() override</div><div class="ttdoc">清除与系统关联的所有数据结构。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00062">eigen_system.C:62</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ShellMatrix_html"><div class="ttname"><a href="classlibMesh_1_1ShellMatrix.html">libMesh::ShellMatrix&lt; Number &gt;</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html">libMesh::EigenSystem</a></div><div class="ttdoc">为特征值问题管理一致的变量、自由度和系数向量。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00049">eigen_system.h:49</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a03c1812dea26c55838b5e254c49a950f"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a03c1812dea26c55838b5e254c49a950f">libMesh::EigenSystem::get_matrix_B</a></div><div class="ttdeci">const SparseMatrix&lt; Number &gt; &amp; get_matrix_B() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00329">eigen_system.C:329</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a0e009dde1a2a36034ee5a473c25c2608"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a0e009dde1a2a36034ee5a473c25c2608">libMesh::EigenSystem::get_eigenproblem_type</a></div><div class="ttdeci">EigenProblemType get_eigenproblem_type() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8h_source.html#l00134">eigen_system.h:134</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSystem_html_a2f57b7d0e5c17fb603d6dfe4889c4234"><div class="ttname"><a href="classlibMesh_1_1EigenSystem.html#a2f57b7d0e5c17fb603d6dfe4889c4234">libMesh::EigenSystem::get_shell_precond_matrix</a></div><div class="ttdeci">const ShellMatrix&lt; Number &gt; &amp; get_shell_precond_matrix() const </div><div class="ttdef"><b>Definition:</b> <a href="eigen__system_8C_source.html#l00403">eigen_system.C:403</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ab4541d74809228310a715b11c40587fc"><div class="ttname"><a href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">libMesh::dof_id_type</a></div><div class="ttdeci">uint8_t dof_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00067">id_types.h:67</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EigenSolver_html"><div class="ttname"><a href="classlibMesh_1_1EigenSolver.html">libMesh::EigenSolver</a></div><div class="ttdoc">This class provides an interface to solvers for eigenvalue problems. </div><div class="ttdef"><b>Definition:</b> <a href="eigen__solver_8h_source.html#l00058">eigen_solver.h:58</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

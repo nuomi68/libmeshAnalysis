@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/utils/tree_node.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_50dcd1e72a70d5a99d79ef31f30e9fad.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">tree_node.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tree__node_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_TREE_NODE_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_TREE_NODE_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_common.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;libmesh/bounding_box.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;libmesh/point.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// Forward Declarations</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span>MeshBase;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>Node;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>Elem;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1TreeNode.html">TreeNode</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classlibMesh_1_1TreeNode.html#a570545f407a404e8bd420e639a49d4d0">TreeNode</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; m,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tbs,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1TreeNode.html">TreeNode&lt;N&gt;</a> * p = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classlibMesh_1_1TreeNode.html#a570545f407a404e8bd420e639a49d4d0">TreeNode</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1TreeNode.html">TreeNode&lt;N&gt;</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classlibMesh_1_1TreeNode.html#aea7192fe2c8c55a3e74ba33342471dab">~TreeNode</a> () = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#a5b06322b8712acba5287af9f65004148">   82</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1TreeNode.html#a5b06322b8712acba5287af9f65004148">is_root</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<a class="code" href="classlibMesh_1_1TreeNode.html#a98575c8b74bf9d72f85796cf6cf7c89f">parent</a> == <span class="keyword">nullptr</span>); }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#ad5c262dd88a8f9e6b23e70a306868d79">   88</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1TreeNode.html#ad5c262dd88a8f9e6b23e70a306868d79">active</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1TreeNode.html#a27ffd455b350472a8be546377c2d34c4">children</a>.empty(); }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1TreeNode.html#aec5c1d244b00fe00cf79666485e6291a">insert</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Node.html">Node</a> * nd);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1TreeNode.html#aec5c1d244b00fe00cf79666485e6291a">insert</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> * nd);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TreeNode.html#aaf7ff9c13b6d74e4abf1b20e57b3e118">refine</a> ();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TreeNode.html#ab65de2214ecabc4d6e6ac9b5b5f406a9">set_bounding_box</a> (<span class="keyword">const</span> std::pair&lt;Point, Point&gt; &amp; bbox);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1TreeNode.html#a7ec35dddd2dbd43f7e346853be6b65c4">bounds_node</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Node.html">Node</a> * nd,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> relative_tol = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1TreeNode.html#afe912c6ce0d13ee37d1f2f7ea5b8545c">bounds_point</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                     <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> relative_tol = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1TreeNode.html#a7d5d9e9b7f00b2a843c65be863f5441b">level</a> () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TreeNode.html#a2c2916bd961168765cf74f3995bbe940">print_nodes</a>(std::ostream &amp; out_stream=<a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TreeNode.html#a632b8c164f129e989913b51811e0a0c4">print_elements</a>(std::ostream &amp; out_stream=<a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TreeNode.html#a3a5161e3b687ead57a99d06069e937eb">transform_nodes_to_elements</a> (std::vector&lt;std::vector&lt;const Elem *&gt;&gt; &amp; nodes_to_elem);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TreeNode.html#a3a5161e3b687ead57a99d06069e937eb">transform_nodes_to_elements</a> (std::unordered_map&lt;<a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, std::vector&lt;const Elem *&gt;&gt; &amp; nodes_to_elem);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1TreeNode.html#a685b42e4c404fb312d281d68b260517f">n_active_bins</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> * <a class="code" href="classlibMesh_1_1TreeNode.html#ad0b76df8b6861be52d8ecf1739945a22">find_element</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                             <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; * allowed_subdomains = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                             <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> relative_tol = <a class="code" href="namespacelibMesh.html#aadc7666a2b443d9cccbb63174874c14f">TOLERANCE</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TreeNode.html#afd1bde132323c09d5f062997553946df">find_elements</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                      std::set&lt;const Elem *&gt; &amp; candidate_elements,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                      <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; * allowed_subdomains = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                      <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> relative_tol = <a class="code" href="namespacelibMesh.html#aadc7666a2b443d9cccbb63174874c14f">TOLERANCE</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> * <a class="code" href="classlibMesh_1_1TreeNode.html#a8f28a88589df7e7a791fbb75baafb85e">find_element_in_children</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                         <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; * allowed_subdomains,</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                         <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> relative_tol) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TreeNode.html#aa94970ae31c4c492cb3f3f65cdfe8a0c">find_elements_in_children</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> &amp; p,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                  std::set&lt;const Elem *&gt; &amp; candidate_elements,</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                  <span class="keyword">const</span> std::set&lt;subdomain_id_type&gt; * allowed_subdomains,</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                  <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> relative_tol) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <a class="code" href="classlibMesh_1_1BoundingBox.html">BoundingBox</a> <a class="code" href="classlibMesh_1_1TreeNode.html#abf7ecbd4fa22b95092826e0ce89405a5">create_bounding_box</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> c) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#a37039a85042f440dd232a4d6673bab99">  207</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; <a class="code" href="classlibMesh_1_1TreeNode.html#a37039a85042f440dd232a4d6673bab99">mesh</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#a98575c8b74bf9d72f85796cf6cf7c89f">  212</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1TreeNode.html">TreeNode&lt;N&gt;</a> * <a class="code" href="classlibMesh_1_1TreeNode.html#a98575c8b74bf9d72f85796cf6cf7c89f">parent</a>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#a27ffd455b350472a8be546377c2d34c4">  218</a></span>&#160;  std::vector&lt;std::unique_ptr&lt;TreeNode&lt;N&gt;&gt;&gt; <a class="code" href="classlibMesh_1_1TreeNode.html#a27ffd455b350472a8be546377c2d34c4">children</a>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#a79d65de0ea4e57a368bed2d1cacd82dd">  223</a></span>&#160;  <a class="code" href="classlibMesh_1_1BoundingBox.html">BoundingBox</a> <a class="code" href="classlibMesh_1_1TreeNode.html#a79d65de0ea4e57a368bed2d1cacd82dd">bounding_box</a>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#aade619a28339f61b72ee515bde085aaa">  228</a></span>&#160;  std::vector&lt;const Elem *&gt; <a class="code" href="classlibMesh_1_1TreeNode.html#aade619a28339f61b72ee515bde085aaa">elements</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#a9539ed3aa616ce9c17a350b88c45d681">  233</a></span>&#160;  std::vector&lt;const Node *&gt; <a class="code" href="classlibMesh_1_1TreeNode.html#a9539ed3aa616ce9c17a350b88c45d681">nodes</a>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#aff965c397f937629040562583add6002">  239</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1TreeNode.html#aff965c397f937629040562583add6002">tgt_bin_size</a>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#afff5e1a9772f70fde1c5585d4821fcdf">  248</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1TreeNode.html#afff5e1a9772f70fde1c5585d4821fcdf">target_bin_size_increase_level</a>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#ac0262c3c49fb5ffea2ab359794b7a252">  253</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1TreeNode.html#ac0262c3c49fb5ffea2ab359794b7a252">contains_ifems</a>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;};</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">// ------------------------------------------------------------</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">// TreeNode class inline methods</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N&gt;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#a570545f407a404e8bd420e639a49d4d0">  264</a></span>&#160;<a class="code" href="classlibMesh_1_1TreeNode.html#a570545f407a404e8bd420e639a49d4d0">TreeNode&lt;N&gt;::TreeNode</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1MeshBase.html">MeshBase</a> &amp; m,</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tbs,</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                       <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1TreeNode.html">TreeNode&lt;N&gt;</a> * p) :</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <a class="code" href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a>           (m),</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  parent         (p),</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  tgt_bin_size   (tbs),</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  target_bin_size_increase_level(10),</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  contains_ifems (false)</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;{</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="comment">// libmesh_assert our children are empty, thus we are active.</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (<a class="code" href="classlibMesh_1_1TreeNode.html#a27ffd455b350472a8be546377c2d34c4">children</a>.empty());</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (this-&gt;<a class="code" href="classlibMesh_1_1TreeNode.html#ad5c262dd88a8f9e6b23e70a306868d79">active</a>());</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="comment">// Reserve space for the nodes &amp; elements</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <a class="code" href="classlibMesh_1_1TreeNode.html#a9539ed3aa616ce9c17a350b88c45d681">nodes</a>.reserve    (<a class="code" href="classlibMesh_1_1TreeNode.html#aff965c397f937629040562583add6002">tgt_bin_size</a>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <a class="code" href="classlibMesh_1_1TreeNode.html#aade619a28339f61b72ee515bde085aaa">elements</a>.reserve (<a class="code" href="classlibMesh_1_1TreeNode.html#aff965c397f937629040562583add6002">tgt_bin_size</a>);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N&gt;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="classlibMesh_1_1TreeNode.html#a7d5d9e9b7f00b2a843c65be863f5441b">  286</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1TreeNode.html#a7d5d9e9b7f00b2a843c65be863f5441b">TreeNode&lt;N&gt;::level</a> ()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordflow">if</span> (parent != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">return</span> parent-&gt;level()+1;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="comment">// if we have no parent, we are a level-0 box</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor">#endif // LIBMESH_TREE_NODE_H</span></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_afff5e1a9772f70fde1c5585d4821fcdf"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#afff5e1a9772f70fde1c5585d4821fcdf">libMesh::TreeNode::target_bin_size_increase_level</a></div><div class="ttdeci">unsigned int target_bin_size_increase_level</div><div class="ttdoc">This specifies the refinement level beyond which we will scale up the target bin size in child TreeNo...</div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00248">tree_node.h:248</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Node_html"><div class="ttname"><a href="classlibMesh_1_1Node.html">libMesh::Node</a></div><div class="ttdoc">A Node is like a Point, but with more information. </div><div class="ttdef"><b>Definition:</b> <a href="node_8h_source.html#l00052">node.h:52</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a7ec35dddd2dbd43f7e346853be6b65c4"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a7ec35dddd2dbd43f7e346853be6b65c4">libMesh::TreeNode::bounds_node</a></div><div class="ttdeci">bool bounds_node(const Node *nd, Real relative_tol=0) const </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00255">tree_node.C:255</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_aaf7ff9c13b6d74e4abf1b20e57b3e118"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#aaf7ff9c13b6d74e4abf1b20e57b3e118">libMesh::TreeNode::refine</a></div><div class="ttdeci">void refine()</div><div class="ttdoc">Refine the tree node into N children if it contains more than tol nodes. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00202">tree_node.C:202</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aadc7666a2b443d9cccbb63174874c14f"><div class="ttname"><a href="namespacelibMesh.html#aadc7666a2b443d9cccbb63174874c14f">libMesh::TOLERANCE</a></div><div class="ttdeci">static constexpr Real TOLERANCE</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00150">libmesh_common.h:150</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a5b06322b8712acba5287af9f65004148"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a5b06322b8712acba5287af9f65004148">libMesh::TreeNode::is_root</a></div><div class="ttdeci">bool is_root() const </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00082">tree_node.h:82</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a98575c8b74bf9d72f85796cf6cf7c89f"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a98575c8b74bf9d72f85796cf6cf7c89f">libMesh::TreeNode::parent</a></div><div class="ttdeci">const TreeNode&lt; N &gt; * parent</div><div class="ttdoc">Pointer to this node&amp;#39;s parent. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00212">tree_node.h:212</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html"><div class="ttname"><a href="classlibMesh_1_1Elem.html">libMesh::Elem</a></div><div class="ttdoc">This is the base class from which all geometric element types are derived. </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l00094">elem.h:94</a></div></div>
+<div class="ttc" id="mesh__communication_8C_html_afaa03b874c297f4693d9cdef7f50f3c6"><div class="ttname"><a href="mesh__communication_8C.html#afaa03b874c297f4693d9cdef7f50f3c6">mesh</a></div><div class="ttdeci">MeshBase &amp; mesh</div><div class="ttdef"><b>Definition:</b> <a href="mesh__communication_8C_source.html#l01308">mesh_communication.C:1308</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a9539ed3aa616ce9c17a350b88c45d681"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a9539ed3aa616ce9c17a350b88c45d681">libMesh::TreeNode::nodes</a></div><div class="ttdeci">std::vector&lt; const Node * &gt; nodes</div><div class="ttdoc">The node numbers contained in this portion of the tree. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00233">tree_node.h:233</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a2c2916bd961168765cf74f3995bbe940"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a2c2916bd961168765cf74f3995bbe940">libMesh::TreeNode::print_nodes</a></div><div class="ttdeci">void print_nodes(std::ostream &amp;out_stream=libMesh::out) const </div><div class="ttdoc">Prints the contents of the node_numbers vector if we are active. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00410">tree_node.C:410</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a632b8c164f129e989913b51811e0a0c4"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a632b8c164f129e989913b51811e0a0c4">libMesh::TreeNode::print_elements</a></div><div class="ttdeci">void print_elements(std::ostream &amp;out_stream=libMesh::out) const </div><div class="ttdoc">Prints the contents of the elements set if we are active. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00429">tree_node.C:429</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_aade619a28339f61b72ee515bde085aaa"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#aade619a28339f61b72ee515bde085aaa">libMesh::TreeNode::elements</a></div><div class="ttdeci">std::vector&lt; const Elem * &gt; elements</div><div class="ttdoc">Pointers to the elements in this tree node. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00228">tree_node.h:228</a></div></div>
+<div class="ttc" id="classlibMesh_1_1MeshBase_html"><div class="ttname"><a href="classlibMesh_1_1MeshBase.html">libMesh::MeshBase</a></div><div class="ttdoc">This is the MeshBase class. </div><div class="ttdef"><b>Definition:</b> <a href="mesh__base_8h_source.html#l00070">mesh_base.h:70</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_aec5c1d244b00fe00cf79666485e6291a"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#aec5c1d244b00fe00cf79666485e6291a">libMesh::TreeNode::insert</a></div><div class="ttdeci">bool insert(const Node *nd)</div><div class="ttdoc">Tries to insert Node nd into the TreeNode. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00036">tree_node.C:36</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a27ffd455b350472a8be546377c2d34c4"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a27ffd455b350472a8be546377c2d34c4">libMesh::TreeNode::children</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; TreeNode&lt; N &gt; &gt; &gt; children</div><div class="ttdoc">Pointers to our children. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00218">tree_node.h:218</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_aea7192fe2c8c55a3e74ba33342471dab"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#aea7192fe2c8c55a3e74ba33342471dab">libMesh::TreeNode::~TreeNode</a></div><div class="ttdeci">~TreeNode()=default</div><div class="ttdoc">Destructor. </div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_aff965c397f937629040562583add6002"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#aff965c397f937629040562583add6002">libMesh::TreeNode::tgt_bin_size</a></div><div class="ttdeci">const unsigned int tgt_bin_size</div><div class="ttdoc">The maximum number of things we should store before refining ourself. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00239">tree_node.h:239</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_ad0b76df8b6861be52d8ecf1739945a22"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#ad0b76df8b6861be52d8ecf1739945a22">libMesh::TreeNode::find_element</a></div><div class="ttdeci">const Elem * find_element(const Point &amp;p, const std::set&lt; subdomain_id_type &gt; *allowed_subdomains=nullptr, Real relative_tol=TOLERANCE) const </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00577">tree_node.C:577</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a79d65de0ea4e57a368bed2d1cacd82dd"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a79d65de0ea4e57a368bed2d1cacd82dd">libMesh::TreeNode::bounding_box</a></div><div class="ttdeci">BoundingBox bounding_box</div><div class="ttdoc">The Cartesian bounding box for the node. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00223">tree_node.h:223</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a685b42e4c404fb312d281d68b260517f"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a685b42e4c404fb312d281d68b260517f">libMesh::TreeNode::n_active_bins</a></div><div class="ttdeci">unsigned int n_active_bins() const </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00557">tree_node.C:557</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_afe912c6ce0d13ee37d1f2f7ea5b8545c"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#afe912c6ce0d13ee37d1f2f7ea5b8545c">libMesh::TreeNode::bounds_point</a></div><div class="ttdeci">bool bounds_point(const Point &amp;p, Real relative_tol=0) const </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00265">tree_node.C:265</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html">libMesh::TreeNode</a></div><div class="ttdoc">This class defines a node on a tree. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00054">tree_node.h:54</a></div></div>
+<div class="ttc" id="classlibMesh_1_1BoundingBox_html"><div class="ttname"><a href="classlibMesh_1_1BoundingBox.html">libMesh::BoundingBox</a></div><div class="ttdoc">Defines a Cartesian bounding box by the two corner extremum. </div><div class="ttdef"><b>Definition:</b> <a href="bounding__box_8h_source.html#l00040">bounding_box.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a7d5d9e9b7f00b2a843c65be863f5441b"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a7d5d9e9b7f00b2a843c65be863f5441b">libMesh::TreeNode::level</a></div><div class="ttdeci">unsigned int level() const </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00286">tree_node.h:286</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a3a5161e3b687ead57a99d06069e937eb"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a3a5161e3b687ead57a99d06069e937eb">libMesh::TreeNode::transform_nodes_to_elements</a></div><div class="ttdeci">void transform_nodes_to_elements(std::vector&lt; std::vector&lt; const Elem * &gt;&gt; &amp;nodes_to_elem)</div><div class="ttdoc">Transforms node numbers to element pointers. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00448">tree_node.C:448</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_afd1bde132323c09d5f062997553946df"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#afd1bde132323c09d5f062997553946df">libMesh::TreeNode::find_elements</a></div><div class="ttdeci">void find_elements(const Point &amp;p, std::set&lt; const Elem * &gt; &amp;candidate_elements, const std::set&lt; subdomain_id_type &gt; *allowed_subdomains=nullptr, Real relative_tol=TOLERANCE) const </div><div class="ttdoc">Fills candidate_elements with any elements containing the specified point p, optionally restricted to...</div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00611">tree_node.C:611</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_aa94970ae31c4c492cb3f3f65cdfe8a0c"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#aa94970ae31c4c492cb3f3f65cdfe8a0c">libMesh::TreeNode::find_elements_in_children</a></div><div class="ttdeci">void find_elements_in_children(const Point &amp;p, std::set&lt; const Elem * &gt; &amp;candidate_elements, const std::set&lt; subdomain_id_type &gt; *allowed_subdomains, Real relative_tol) const </div><div class="ttdoc">Look for points in our children, optionally restricted to a set of allowed subdomains. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00698">tree_node.C:698</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a37039a85042f440dd232a4d6673bab99"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a37039a85042f440dd232a4d6673bab99">libMesh::TreeNode::mesh</a></div><div class="ttdeci">const MeshBase &amp; mesh</div><div class="ttdoc">Reference to the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00207">tree_node.h:207</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a8f28a88589df7e7a791fbb75baafb85e"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a8f28a88589df7e7a791fbb75baafb85e">libMesh::TreeNode::find_element_in_children</a></div><div class="ttdeci">const Elem * find_element_in_children(const Point &amp;p, const std::set&lt; subdomain_id_type &gt; *allowed_subdomains, Real relative_tol) const </div><div class="ttdoc">Look for point p in our children, optionally restricted to a set of allowed subdomains. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00642">tree_node.C:642</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_ad5c262dd88a8f9e6b23e70a306868d79"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#ad5c262dd88a8f9e6b23e70a306868d79">libMesh::TreeNode::active</a></div><div class="ttdeci">bool active() const </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00088">tree_node.h:88</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_ab65de2214ecabc4d6e6ac9b5b5f406a9"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#ab65de2214ecabc4d6e6ac9b5b5f406a9">libMesh::TreeNode::set_bounding_box</a></div><div class="ttdeci">void set_bounding_box(const std::pair&lt; Point, Point &gt; &amp;bbox)</div><div class="ttdoc">Sets the bounding box;. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00247">tree_node.C:247</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a63e3c3158308e2184c12b55ab9ea9a35"><div class="ttname"><a href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></div><div class="ttdeci">OStreamProxy out(std::cout)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00100">libmesh_common.h:100</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Point_html"><div class="ttname"><a href="classlibMesh_1_1Point.html">libMesh::Point</a></div><div class="ttdoc">A Point defines a location in LIBMESH_DIM dimensional Real space. </div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00039">point.h:39</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_abf7ecbd4fa22b95092826e0ce89405a5"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#abf7ecbd4fa22b95092826e0ce89405a5">libMesh::TreeNode::create_bounding_box</a></div><div class="ttdeci">BoundingBox create_bounding_box(unsigned int c) const </div><div class="ttdoc">Constructs the bounding box for child c. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8C_source.html#l00293">tree_node.C:293</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_a570545f407a404e8bd420e639a49d4d0"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#a570545f407a404e8bd420e639a49d4d0">libMesh::TreeNode::TreeNode</a></div><div class="ttdeci">TreeNode(const MeshBase &amp;m, unsigned int tbs, const TreeNode&lt; N &gt; *p=nullptr)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00264">tree_node.h:264</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TreeNode_html_ac0262c3c49fb5ffea2ab359794b7a252"><div class="ttname"><a href="classlibMesh_1_1TreeNode.html#ac0262c3c49fb5ffea2ab359794b7a252">libMesh::TreeNode::contains_ifems</a></div><div class="ttdeci">bool contains_ifems</div><div class="ttdoc">Does this node contain any infinite elements. </div><div class="ttdef"><b>Definition:</b> <a href="tree__node_8h_source.html#l00253">tree_node.h:253</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ab4541d74809228310a715b11c40587fc"><div class="ttname"><a href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">libMesh::dof_id_type</a></div><div class="ttdeci">uint8_t dof_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00067">id_types.h:67</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:03 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

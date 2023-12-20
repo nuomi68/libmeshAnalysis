@@ -1,0 +1,9 @@
+digraph "/home/lwz/libmesh/include/fe" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e7fee3c13989f8a9ad582fb61a959d2f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_e7fee3c13989f8a9ad582fb61a959d2f.html"]
+  dir_58da79ef8a9e79550905c1d069c57b3e [shape=box, label="fe", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_58da79ef8a9e79550905c1d069c57b3e.html"];
+  }
+}

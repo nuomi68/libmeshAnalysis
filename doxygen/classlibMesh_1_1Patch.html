@@ -1,0 +1,674 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::Patch类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1Patch.html">Patch</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classlibMesh_1_1Patch-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::Patch类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class implements useful utility functions for a patch of elements.  
+ <a href="classlibMesh_1_1Patch.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="patch_8h_source.html">patch.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::Patch 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a2223898c123f750a1e66a8d75d72a89c"><td class="memItemLeft" align="right" valign="top">typedef void(Patch::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#a2223898c123f750a1e66a8d75d72a89c">PMF</a> )()</td></tr>
+<tr class="memdesc:a2223898c123f750a1e66a8d75d72a89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to Member Function typedef.  <a href="#a2223898c123f750a1e66a8d75d72a89c">更多...</a><br/></td></tr>
+<tr class="separator:a2223898c123f750a1e66a8d75d72a89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a389a20c02c851633934699776014824a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#a389a20c02c851633934699776014824a">Patch</a> (const <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> my_procid=static_cast&lt; <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> &gt;(-1))</td></tr>
+<tr class="memdesc:a389a20c02c851633934699776014824a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a389a20c02c851633934699776014824a">更多...</a><br/></td></tr>
+<tr class="separator:a389a20c02c851633934699776014824a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92babb43d8adc89e9ac790bf2911ed3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#a92babb43d8adc89e9ac790bf2911ed3e">~Patch</a> ()=default</td></tr>
+<tr class="memdesc:a92babb43d8adc89e9ac790bf2911ed3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a92babb43d8adc89e9ac790bf2911ed3e">更多...</a><br/></td></tr>
+<tr class="separator:a92babb43d8adc89e9ac790bf2911ed3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa571745668280fdba35de80031aacf9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#aa571745668280fdba35de80031aacf9c">add_face_neighbors</a> ()</td></tr>
+<tr class="memdesc:aa571745668280fdba35de80031aacf9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds all elements which touch the current patch at a face, and adds them to the patch.  <a href="#aa571745668280fdba35de80031aacf9c">更多...</a><br/></td></tr>
+<tr class="separator:aa571745668280fdba35de80031aacf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a0fcd13cfe4dff3036af054cb548500"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#a5a0fcd13cfe4dff3036af054cb548500">add_local_face_neighbors</a> ()</td></tr>
+<tr class="memdesc:a5a0fcd13cfe4dff3036af054cb548500"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds all elements on the current processor which touch the current patch at a face, and adds them to the patch.  <a href="#a5a0fcd13cfe4dff3036af054cb548500">更多...</a><br/></td></tr>
+<tr class="separator:a5a0fcd13cfe4dff3036af054cb548500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af398395a7fee63d1cbd0f3be17703bd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#af398395a7fee63d1cbd0f3be17703bd3">add_semilocal_face_neighbors</a> ()</td></tr>
+<tr class="memdesc:af398395a7fee63d1cbd0f3be17703bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds all elements which touch the current patch at a face and which touch one of our processor's elements at any point, and it adds them to the patch.  <a href="#af398395a7fee63d1cbd0f3be17703bd3">更多...</a><br/></td></tr>
+<tr class="separator:af398395a7fee63d1cbd0f3be17703bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b615f30ef27475e5507d1ec93750d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#a11b615f30ef27475e5507d1ec93750d6">add_point_neighbors</a> ()</td></tr>
+<tr class="memdesc:a11b615f30ef27475e5507d1ec93750d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds all elements which touch the current patch at any point, and adds them to the patch.  <a href="#a11b615f30ef27475e5507d1ec93750d6">更多...</a><br/></td></tr>
+<tr class="separator:a11b615f30ef27475e5507d1ec93750d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a6c3aebdd08ce17ac5a17c5a8a4c15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#a86a6c3aebdd08ce17ac5a17c5a8a4c15">add_local_point_neighbors</a> ()</td></tr>
+<tr class="memdesc:a86a6c3aebdd08ce17ac5a17c5a8a4c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds all elements on the current processor which touch the current patch at any point, and adds them to the patch.  <a href="#a86a6c3aebdd08ce17ac5a17c5a8a4c15">更多...</a><br/></td></tr>
+<tr class="separator:a86a6c3aebdd08ce17ac5a17c5a8a4c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38289a5f3b0ca96f707a9e83e6afa6c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#a38289a5f3b0ca96f707a9e83e6afa6c8">add_semilocal_point_neighbors</a> ()</td></tr>
+<tr class="memdesc:a38289a5f3b0ca96f707a9e83e6afa6c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds all elements which touch the current patch at any point and which touch one of our processor's elements at any point, and it adds them to the patch.  <a href="#a38289a5f3b0ca96f707a9e83e6afa6c8">更多...</a><br/></td></tr>
+<tr class="separator:a38289a5f3b0ca96f707a9e83e6afa6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c8cdb3d027e4c895cd66cf39ab0247"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#ac4c8cdb3d027e4c895cd66cf39ab0247">build_around_element</a> (const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> *elem, const unsigned int target_patch_size=10, <a class="el" href="classlibMesh_1_1Patch.html#a2223898c123f750a1e66a8d75d72a89c">PMF</a> patchtype=&amp;<a class="el" href="classlibMesh_1_1Patch.html#a5a0fcd13cfe4dff3036af054cb548500">Patch::add_local_face_neighbors</a>)</td></tr>
+<tr class="memdesc:ac4c8cdb3d027e4c895cd66cf39ab0247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases any elements in the current patch, then builds a new patch containing element <code>elem</code> by repeated addition of neighbors on the current processor.  <a href="#ac4c8cdb3d027e4c895cd66cf39ab0247">更多...</a><br/></td></tr>
+<tr class="separator:ac4c8cdb3d027e4c895cd66cf39ab0247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a45fb72b1f70f52bb361e3c0f1a3cee06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#a45fb72b1f70f52bb361e3c0f1a3cee06">find_face_neighbors</a> (std::set&lt; const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> * &gt; &amp;neighbor_set)</td></tr>
+<tr class="memdesc:a45fb72b1f70f52bb361e3c0f1a3cee06"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds all elements which touch the current patch at a face.  <a href="#a45fb72b1f70f52bb361e3c0f1a3cee06">更多...</a><br/></td></tr>
+<tr class="separator:a45fb72b1f70f52bb361e3c0f1a3cee06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39122bba3dc1ac5591ae81f2febaf957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#a39122bba3dc1ac5591ae81f2febaf957">find_point_neighbors</a> (std::set&lt; const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> * &gt; &amp;neighbor_set)</td></tr>
+<tr class="memdesc:a39122bba3dc1ac5591ae81f2febaf957"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds all elements which touch the current patch at any point.  <a href="#a39122bba3dc1ac5591ae81f2febaf957">更多...</a><br/></td></tr>
+<tr class="separator:a39122bba3dc1ac5591ae81f2febaf957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ae9db4c0dd673c566c0b4cce2b47476b1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">_my_procid</a></td></tr>
+<tr class="separator:ae9db4c0dd673c566c0b4cce2b47476b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This class implements useful utility functions for a patch of elements. </p>
+<dl class="section author"><dt>作者</dt><dd>Varis Carey </dd>
+<dd>
+Benjamin S. Kirk </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2004 </dd></dl>
+<dl class="section author"><dt>作者</dt><dd>Roy H. Stogner </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2007 </dd></dl>
+
+<p>在文件 <a class="el" href="patch_8h_source.html">patch.h</a> 第 <a class="el" href="patch_8h_source.html#l00047">47</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="a2223898c123f750a1e66a8d75d72a89c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(Patch::* libMesh::Patch::PMF)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to Member Function typedef. </p>
+
+<p>在文件 <a class="el" href="patch_8h_source.html">patch.h</a> 第 <a class="el" href="patch_8h_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a389a20c02c851633934699776014824a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Patch::Patch </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a>&#160;</td>
+          <td class="paramname"><em>my_procid</em> = <code>static_cast&lt;<a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a>&gt;(-1)</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>Requires the processor ID to be interpreted as "local". </p>
+
+<p>在文件 <a class="el" href="patch_8h_source.html">patch.h</a> 第 <a class="el" href="patch_8h_source.html#l00054">54</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                                                :</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">_my_procid</a>(my_procid)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {}</div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_ae9db4c0dd673c566c0b4cce2b47476b1"><div class="ttname"><a href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">libMesh::Patch::_my_procid</a></div><div class="ttdeci">const processor_id_type _my_procid</div><div class="ttdef"><b>Definition:</b> <a href="patch_8h_source.html#l00131">patch.h:131</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a92babb43d8adc89e9ac790bf2911ed3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::Patch::~Patch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="aa571745668280fdba35de80031aacf9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Patch::add_face_neighbors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function finds all elements which touch the current patch at a face, and adds them to the patch. </p>
+
+<p>在文件 <a class="el" href="patch_8C_source.html">patch.C</a> 第 <a class="el" href="patch_8C_source.html#l00064">64</a> 行定义.</p>
+
+<p>参考 <a class="el" href="patch_8C_source.html#l00037">find_face_neighbors()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::set&lt;const Elem *&gt; new_neighbors;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1Patch.html#a45fb72b1f70f52bb361e3c0f1a3cee06">find_face_neighbors</a>(new_neighbors);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  this-&gt;insert(new_neighbors.begin(), new_neighbors.end());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_a45fb72b1f70f52bb361e3c0f1a3cee06"><div class="ttname"><a href="classlibMesh_1_1Patch.html#a45fb72b1f70f52bb361e3c0f1a3cee06">libMesh::Patch::find_face_neighbors</a></div><div class="ttdeci">void find_face_neighbors(std::set&lt; const Elem * &gt; &amp;neighbor_set)</div><div class="ttdoc">This function finds all elements which touch the current patch at a face. </div><div class="ttdef"><b>Definition:</b> <a href="patch_8C_source.html#l00037">patch.C:37</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5a0fcd13cfe4dff3036af054cb548500"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Patch::add_local_face_neighbors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function finds all elements on the current processor which touch the current patch at a face, and adds them to the patch. </p>
+
+<p>在文件 <a class="el" href="patch_8C_source.html">patch.C</a> 第 <a class="el" href="patch_8C_source.html#l00075">75</a> 行定义.</p>
+
+<p>参考 <a class="el" href="patch_8h_source.html#l00131">_my_procid</a> , 以及 <a class="el" href="patch_8C_source.html#l00037">find_face_neighbors()</a>.</p>
+
+<p>参考自 <a class="el" href="patch_8C_source.html#l00156">build_around_element()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::set&lt;const Elem *&gt; new_neighbors;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1Patch.html#a45fb72b1f70f52bb361e3c0f1a3cee06">find_face_neighbors</a>(new_neighbors);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// if neighbor belongs to this processor then add it to the patch</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; neighbor : new_neighbors)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (neighbor-&gt;processor_id() == <a class="code" href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">_my_procid</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      this-&gt;insert (neighbor);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_a45fb72b1f70f52bb361e3c0f1a3cee06"><div class="ttname"><a href="classlibMesh_1_1Patch.html#a45fb72b1f70f52bb361e3c0f1a3cee06">libMesh::Patch::find_face_neighbors</a></div><div class="ttdeci">void find_face_neighbors(std::set&lt; const Elem * &gt; &amp;neighbor_set)</div><div class="ttdoc">This function finds all elements which touch the current patch at a face. </div><div class="ttdef"><b>Definition:</b> <a href="patch_8C_source.html#l00037">patch.C:37</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_ae9db4c0dd673c566c0b4cce2b47476b1"><div class="ttname"><a href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">libMesh::Patch::_my_procid</a></div><div class="ttdeci">const processor_id_type _my_procid</div><div class="ttdef"><b>Definition:</b> <a href="patch_8h_source.html#l00131">patch.h:131</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a86a6c3aebdd08ce17ac5a17c5a8a4c15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Patch::add_local_point_neighbors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function finds all elements on the current processor which touch the current patch at any point, and adds them to the patch. </p>
+
+<p>在文件 <a class="el" href="patch_8C_source.html">patch.C</a> 第 <a class="el" href="patch_8C_source.html#l00129">129</a> 行定义.</p>
+
+<p>参考 <a class="el" href="patch_8h_source.html#l00131">_my_procid</a> , 以及 <a class="el" href="patch_8C_source.html#l00102">find_point_neighbors()</a>.</p>
+
+<p>参考自 <a class="el" href="patch_8C_source.html#l00156">build_around_element()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  std::set&lt;const Elem *&gt; new_neighbors;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1Patch.html#a39122bba3dc1ac5591ae81f2febaf957">find_point_neighbors</a>(new_neighbors);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="comment">// if neighbor belongs to this processor then add it to the patch</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; neighbor : new_neighbors)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">if</span> (neighbor-&gt;processor_id() == <a class="code" href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">_my_procid</a>)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      this-&gt;insert (neighbor);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_ae9db4c0dd673c566c0b4cce2b47476b1"><div class="ttname"><a href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">libMesh::Patch::_my_procid</a></div><div class="ttdeci">const processor_id_type _my_procid</div><div class="ttdef"><b>Definition:</b> <a href="patch_8h_source.html#l00131">patch.h:131</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_a39122bba3dc1ac5591ae81f2febaf957"><div class="ttname"><a href="classlibMesh_1_1Patch.html#a39122bba3dc1ac5591ae81f2febaf957">libMesh::Patch::find_point_neighbors</a></div><div class="ttdeci">void find_point_neighbors(std::set&lt; const Elem * &gt; &amp;neighbor_set)</div><div class="ttdoc">This function finds all elements which touch the current patch at any point. </div><div class="ttdef"><b>Definition:</b> <a href="patch_8C_source.html#l00102">patch.C:102</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a11b615f30ef27475e5507d1ec93750d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Patch::add_point_neighbors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function finds all elements which touch the current patch at any point, and adds them to the patch. </p>
+
+<p>在文件 <a class="el" href="patch_8C_source.html">patch.C</a> 第 <a class="el" href="patch_8C_source.html#l00118">118</a> 行定义.</p>
+
+<p>参考 <a class="el" href="patch_8C_source.html#l00102">find_point_neighbors()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  std::set&lt;const Elem *&gt; new_neighbors;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1Patch.html#a39122bba3dc1ac5591ae81f2febaf957">find_point_neighbors</a>(new_neighbors);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  this-&gt;insert(new_neighbors.begin(), new_neighbors.end());</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_a39122bba3dc1ac5591ae81f2febaf957"><div class="ttname"><a href="classlibMesh_1_1Patch.html#a39122bba3dc1ac5591ae81f2febaf957">libMesh::Patch::find_point_neighbors</a></div><div class="ttdeci">void find_point_neighbors(std::set&lt; const Elem * &gt; &amp;neighbor_set)</div><div class="ttdoc">This function finds all elements which touch the current patch at any point. </div><div class="ttdef"><b>Definition:</b> <a href="patch_8C_source.html#l00102">patch.C:102</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af398395a7fee63d1cbd0f3be17703bd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Patch::add_semilocal_face_neighbors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function finds all elements which touch the current patch at a face and which touch one of our processor's elements at any point, and it adds them to the patch. </p>
+
+<p>在文件 <a class="el" href="patch_8C_source.html">patch.C</a> 第 <a class="el" href="patch_8C_source.html#l00089">89</a> 行定义.</p>
+
+<p>参考 <a class="el" href="patch_8h_source.html#l00131">_my_procid</a> , 以及 <a class="el" href="patch_8C_source.html#l00037">find_face_neighbors()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  std::set&lt;const Elem *&gt; new_neighbors;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1Patch.html#a45fb72b1f70f52bb361e3c0f1a3cee06">find_face_neighbors</a>(new_neighbors);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; neighbor : new_neighbors)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> (neighbor-&gt;is_semilocal(<a class="code" href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">_my_procid</a>))</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      this-&gt;insert (neighbor);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_a45fb72b1f70f52bb361e3c0f1a3cee06"><div class="ttname"><a href="classlibMesh_1_1Patch.html#a45fb72b1f70f52bb361e3c0f1a3cee06">libMesh::Patch::find_face_neighbors</a></div><div class="ttdeci">void find_face_neighbors(std::set&lt; const Elem * &gt; &amp;neighbor_set)</div><div class="ttdoc">This function finds all elements which touch the current patch at a face. </div><div class="ttdef"><b>Definition:</b> <a href="patch_8C_source.html#l00037">patch.C:37</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_ae9db4c0dd673c566c0b4cce2b47476b1"><div class="ttname"><a href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">libMesh::Patch::_my_procid</a></div><div class="ttdeci">const processor_id_type _my_procid</div><div class="ttdef"><b>Definition:</b> <a href="patch_8h_source.html#l00131">patch.h:131</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a38289a5f3b0ca96f707a9e83e6afa6c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Patch::add_semilocal_point_neighbors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function finds all elements which touch the current patch at any point and which touch one of our processor's elements at any point, and it adds them to the patch. </p>
+
+<p>在文件 <a class="el" href="patch_8C_source.html">patch.C</a> 第 <a class="el" href="patch_8C_source.html#l00143">143</a> 行定义.</p>
+
+<p>参考 <a class="el" href="patch_8h_source.html#l00131">_my_procid</a> , 以及 <a class="el" href="patch_8C_source.html#l00102">find_point_neighbors()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  std::set&lt;const Elem *&gt; new_neighbors;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1Patch.html#a39122bba3dc1ac5591ae81f2febaf957">find_point_neighbors</a>(new_neighbors);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; neighbor : new_neighbors)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span> (neighbor-&gt;is_semilocal(<a class="code" href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">_my_procid</a>))</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      this-&gt;insert (neighbor);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_ae9db4c0dd673c566c0b4cce2b47476b1"><div class="ttname"><a href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">libMesh::Patch::_my_procid</a></div><div class="ttdeci">const processor_id_type _my_procid</div><div class="ttdef"><b>Definition:</b> <a href="patch_8h_source.html#l00131">patch.h:131</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_a39122bba3dc1ac5591ae81f2febaf957"><div class="ttname"><a href="classlibMesh_1_1Patch.html#a39122bba3dc1ac5591ae81f2febaf957">libMesh::Patch::find_point_neighbors</a></div><div class="ttdeci">void find_point_neighbors(std::set&lt; const Elem * &gt; &amp;neighbor_set)</div><div class="ttdoc">This function finds all elements which touch the current patch at any point. </div><div class="ttdef"><b>Definition:</b> <a href="patch_8C_source.html#l00102">patch.C:102</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac4c8cdb3d027e4c895cd66cf39ab0247"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Patch::build_around_element </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>target_patch_size</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1Patch.html#a2223898c123f750a1e66a8d75d72a89c">PMF</a>&#160;</td>
+          <td class="paramname"><em>patchtype</em> = <code>&amp;<a class="el" href="classlibMesh_1_1Patch.html#a5a0fcd13cfe4dff3036af054cb548500">Patch::add_local_face_neighbors</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Erases any elements in the current patch, then builds a new patch containing element <code>elem</code> by repeated addition of neighbors on the current processor. </p>
+<p>This procedure is repeated until the number of elements meets or exceeds <code>target_patch_size</code>, or until the patch has no more local neighbors. </p>
+
+<p>在文件 <a class="el" href="patch_8C_source.html">patch.C</a> 第 <a class="el" href="patch_8C_source.html#l00156">156</a> 行定义.</p>
+
+<p>参考 <a class="el" href="patch_8h_source.html#l00131">_my_procid</a>, <a class="el" href="elem_8h_source.html#l02754">libMesh::Elem::active()</a>, <a class="el" href="patch_8C_source.html#l00075">add_local_face_neighbors()</a>, <a class="el" href="patch_8C_source.html#l00129">add_local_point_neighbors()</a>, <a class="el" href="libmesh__common_8h_source.html#l00101">libMesh::err</a>, <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a> , 以及 <a class="el" href="dof__object_8h_source.html#l00898">libMesh::DofObject::processor_id()</a>.</p>
+
+<p>参考自 <a class="el" href="weighted__patch__recovery__error__estimator_8C_source.html#l00112">libMesh::WeightedPatchRecoveryErrorEstimator::EstimateError::operator()()</a> , 以及 <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00211">libMesh::PatchRecoveryErrorEstimator::EstimateError::operator()()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="comment">// Make sure we are building a patch for an active element.</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(e0);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (e0-&gt;active());</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="comment">// Make sure we are either starting with a local element or</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="comment">// requesting a nonlocal patch</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> ((patchtype != &amp;<a class="code" href="classlibMesh_1_1Patch.html#a5a0fcd13cfe4dff3036af054cb548500">Patch::add_local_face_neighbors</a> &amp;&amp;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                   patchtype != &amp;<a class="code" href="classlibMesh_1_1Patch.html#a86a6c3aebdd08ce17ac5a17c5a8a4c15">Patch::add_local_point_neighbors</a>) ||</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                  e0-&gt;processor_id() == <a class="code" href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">_my_procid</a>);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// First clear the current set, then add the element of interest.</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  this-&gt;clear();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  this-&gt;insert (e0);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="comment">// Repeatedly add the neighbors of the elements in the patch until</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="comment">// the target patch size is met</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">while</span> (this-&gt;size() &lt; target_patch_size)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="comment">// It is possible that the target patch size is larger than the number</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="comment">// of elements that can be added to the patch.  Since we don&#39;t</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="comment">// have access to the Mesh object here, the only way we can</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="comment">// detect this case is by detecting a &quot;stagnant patch,&quot; i.e. a</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="comment">// patch whose size does not increase after adding face neighbors</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keyword">const</span> std::size_t old_patch_size = this-&gt;size();</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      <span class="comment">// We profile the patch-extending functions separately</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      (this-&gt;*patchtype)();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <span class="comment">// Check for a &quot;stagnant&quot; patch</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordflow">if</span> (this-&gt;size() == old_patch_size)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;          libmesh_do_once(<a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                          <span class="stringliteral">&quot;WARNING: stagnant patch of &quot;</span> &lt;&lt; this-&gt;size() &lt;&lt; <span class="stringliteral">&quot; elements.&quot;</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                          &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                          <span class="stringliteral">&quot;Does the target patch size exceed the number of local elements?&quot;</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                          &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                          libmesh_here(););</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    } <span class="comment">// end while loop</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="comment">// make sure all the elements in the patch are active and local</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="comment">// if we are in debug mode</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; elem : *<span class="keyword">this</span>)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a> (elem-&gt;active());</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">if</span> ((patchtype == &amp;<a class="code" href="classlibMesh_1_1Patch.html#a5a0fcd13cfe4dff3036af054cb548500">Patch::add_local_face_neighbors</a> ||</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;             patchtype == &amp;<a class="code" href="classlibMesh_1_1Patch.html#a86a6c3aebdd08ce17ac5a17c5a8a4c15">Patch::add_local_point_neighbors</a>))</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;          libmesh_assert_equal_to (elem-&gt;processor_id(), <a class="code" href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">_my_procid</a>);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_a86a6c3aebdd08ce17ac5a17c5a8a4c15"><div class="ttname"><a href="classlibMesh_1_1Patch.html#a86a6c3aebdd08ce17ac5a17c5a8a4c15">libMesh::Patch::add_local_point_neighbors</a></div><div class="ttdeci">void add_local_point_neighbors()</div><div class="ttdoc">This function finds all elements on the current processor which touch the current patch at any point...</div><div class="ttdef"><b>Definition:</b> <a href="patch_8C_source.html#l00129">patch.C:129</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="namespacelibMesh_html_a74e5bc8a72d210b3d87b0221b1f69db1"><div class="ttname"><a href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a></div><div class="ttdeci">OStreamProxy err(std::cerr)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00101">libmesh_common.h:101</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_a5a0fcd13cfe4dff3036af054cb548500"><div class="ttname"><a href="classlibMesh_1_1Patch.html#a5a0fcd13cfe4dff3036af054cb548500">libMesh::Patch::add_local_face_neighbors</a></div><div class="ttdeci">void add_local_face_neighbors()</div><div class="ttdoc">This function finds all elements on the current processor which touch the current patch at a face...</div><div class="ttdef"><b>Definition:</b> <a href="patch_8C_source.html#l00075">patch.C:75</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Patch_html_ae9db4c0dd673c566c0b4cce2b47476b1"><div class="ttname"><a href="classlibMesh_1_1Patch.html#ae9db4c0dd673c566c0b4cce2b47476b1">libMesh::Patch::_my_procid</a></div><div class="ttdeci">const processor_id_type _my_procid</div><div class="ttdef"><b>Definition:</b> <a href="patch_8h_source.html#l00131">patch.h:131</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a45fb72b1f70f52bb361e3c0f1a3cee06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Patch::find_face_neighbors </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>neighbor_set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function finds all elements which touch the current patch at a face. </p>
+
+<p>在文件 <a class="el" href="patch_8C_source.html">patch.C</a> 第 <a class="el" href="patch_8C_source.html#l00037">37</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="patch_8C_source.html#l00064">add_face_neighbors()</a>, <a class="el" href="patch_8C_source.html#l00075">add_local_face_neighbors()</a> , 以及 <a class="el" href="patch_8C_source.html#l00089">add_semilocal_face_neighbors()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Loop over all the elements in the patch</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; elem : *<span class="keyword">this</span>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> neighbor : elem-&gt;neighbor_ptr_range())</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (neighbor != <span class="keyword">nullptr</span>)        <span class="comment">// we have a neighbor on this side</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;          {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#ifdef LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">if</span> (!neighbor-&gt;active())          <span class="comment">// the neighbor is *not* active,</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;              {                               <span class="comment">// so add *all* neighboring</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                              <span class="comment">// active children to the patch</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                std::vector&lt;const Elem *&gt; active_neighbor_children;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                neighbor-&gt;active_family_tree_by_neighbor</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  (active_neighbor_children, elem);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; child : active_neighbor_children)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  new_neighbors.insert(child);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;              }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // #ifdef LIBMESH_ENABLE_AMR</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span>              new_neighbors.insert (neighbor); <span class="comment">// add active neighbors</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a39122bba3dc1ac5591ae81f2febaf957"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::Patch::find_point_neighbors </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; const <a class="el" href="classlibMesh_1_1Elem.html">Elem</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>neighbor_set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function finds all elements which touch the current patch at any point. </p>
+
+<p>在文件 <a class="el" href="patch_8C_source.html">patch.C</a> 第 <a class="el" href="patch_8C_source.html#l00102">102</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="patch_8C_source.html#l00129">add_local_point_neighbors()</a>, <a class="el" href="patch_8C_source.html#l00118">add_point_neighbors()</a> , 以及 <a class="el" href="patch_8C_source.html#l00143">add_semilocal_point_neighbors()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">// Loop over all the elements in the patch</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; elem : *<span class="keyword">this</span>)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      std::set&lt;const Elem *&gt; elem_point_neighbors;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      elem-&gt;find_point_neighbors(elem_point_neighbors);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      new_neighbors.insert(elem_point_neighbors.begin(),</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                           elem_point_neighbors.end());</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ae9db4c0dd673c566c0b4cce2b47476b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> libMesh::Patch::_my_procid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="patch_8h_source.html">patch.h</a> 第 <a class="el" href="patch_8h_source.html#l00131">131</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="patch_8C_source.html#l00075">add_local_face_neighbors()</a>, <a class="el" href="patch_8C_source.html#l00129">add_local_point_neighbors()</a>, <a class="el" href="patch_8C_source.html#l00089">add_semilocal_face_neighbors()</a>, <a class="el" href="patch_8C_source.html#l00143">add_semilocal_point_neighbors()</a> , 以及 <a class="el" href="patch_8C_source.html#l00156">build_around_element()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/mesh/<a class="el" href="patch_8h_source.html">patch.h</a></li>
+<li>/home/lwz/libmesh/src/mesh/<a class="el" href="patch_8C_source.html">patch.C</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:35 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

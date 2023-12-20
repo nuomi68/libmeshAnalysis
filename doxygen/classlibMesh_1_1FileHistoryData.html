@@ -1,0 +1,1124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::FileHistoryData类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="classlibMesh_1_1FileHistoryData.html">FileHistoryData</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classlibMesh_1_1FileHistoryData-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::FileHistoryData类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="classlibMesh_1_1HistoryData.html" title="The History Data classes are companion classes to SolutionHistory and MeshHistory classes...">HistoryData</a> subclass that provides a struct to store history data such as timestamps, mesh, primal and adjoint filenames and timestep sizes.  
+ <a href="classlibMesh_1_1FileHistoryData.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="file__history__data_8h_source.html">file_history_data.h</a>&gt;</code></p>
+<div class="dynheader">
+类 libMesh::FileHistoryData 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ad4702667493d14301324d627dfb3c712"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>, <br class="typebreak"/>
+std::unique_ptr&lt; <a class="el" href="classlibMesh_1_1HistoryData.html">HistoryData</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#ad4702667493d14301324d627dfb3c712">map_type</a></td></tr>
+<tr class="separator:ad4702667493d14301324d627dfb3c712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5275c559c5d9476bccd961a413633a1c"><td class="memItemLeft" align="right" valign="top">typedef map_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#a5275c559c5d9476bccd961a413633a1c">stored_data_iterator</a></td></tr>
+<tr class="separator:a5275c559c5d9476bccd961a413633a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:afc15a86e2c37d3bd58cf35f5af017006"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#afc15a86e2c37d3bd58cf35f5af017006">FileHistoryData</a> (<a class="el" href="classlibMesh_1_1DifferentiableSystem.html">DifferentiableSystem</a> &amp;system)</td></tr>
+<tr class="separator:afc15a86e2c37d3bd58cf35f5af017006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c920f9f29cf156b9e97fc05fe702618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a1c920f9f29cf156b9e97fc05fe702618">~FileHistoryData</a> ()</td></tr>
+<tr class="separator:a1c920f9f29cf156b9e97fc05fe702618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17800cd3d43119bb9e2d7f4aeed42c7"><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#ad17800cd3d43119bb9e2d7f4aeed42c7">get_mesh_filename</a> ()</td></tr>
+<tr class="separator:ad17800cd3d43119bb9e2d7f4aeed42c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814fcaccb9b8394390285381421def5d"><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a814fcaccb9b8394390285381421def5d">get_primal_filename</a> ()</td></tr>
+<tr class="separator:a814fcaccb9b8394390285381421def5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a139af19822627bbe0af6f68952370836"><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a139af19822627bbe0af6f68952370836">get_adjoint_filename</a> ()</td></tr>
+<tr class="separator:a139af19822627bbe0af6f68952370836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0d5fe2cf82fd1e1e3cf4143d6a0ef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a2e0d5fe2cf82fd1e1e3cf4143d6a0ef2">set_mesh_filename</a> (std::string &amp;mesh_name)</td></tr>
+<tr class="separator:a2e0d5fe2cf82fd1e1e3cf4143d6a0ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1338befe9f0761e78922ac7160dd6577"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a1338befe9f0761e78922ac7160dd6577">set_primal_filename</a> (std::string &amp;primal_sol_name)</td></tr>
+<tr class="separator:a1338befe9f0761e78922ac7160dd6577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d067f15e6c4d6a6eac7e9ecaebc117"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a52d067f15e6c4d6a6eac7e9ecaebc117">set_adjoint_filename</a> (std::string &amp;adjoint_sol_name)</td></tr>
+<tr class="separator:a52d067f15e6c4d6a6eac7e9ecaebc117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd463b62b0cfd73befa2dacf8e564a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a3fd463b62b0cfd73befa2dacf8e564a2">store_initial_solution</a> () override</td></tr>
+<tr class="separator:a3fd463b62b0cfd73befa2dacf8e564a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67ede6f37880b07e2dc1dab2549d494"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#ad67ede6f37880b07e2dc1dab2549d494">store_primal_solution</a> (<a class="el" href="classlibMesh_1_1HistoryData.html#a5275c559c5d9476bccd961a413633a1c">stored_data_iterator</a> stored_datum) override</td></tr>
+<tr class="separator:ad67ede6f37880b07e2dc1dab2549d494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a548b5e730733e1f73f13e4ed71f602"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a4a548b5e730733e1f73f13e4ed71f602">store_adjoint_solution</a> () override</td></tr>
+<tr class="separator:a4a548b5e730733e1f73f13e4ed71f602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df703774eb80491ae119b5095b66b53"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a9df703774eb80491ae119b5095b66b53">rewrite_stored_solution</a> () override</td></tr>
+<tr class="separator:a9df703774eb80491ae119b5095b66b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c63180de3c648ac804f5a5a0013eef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a67c63180de3c648ac804f5a5a0013eef">retrieve_primal_solution</a> () override</td></tr>
+<tr class="separator:a67c63180de3c648ac804f5a5a0013eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0750d7ed71a3d2dee5bd5c1adc8f9dfa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a0750d7ed71a3d2dee5bd5c1adc8f9dfa">retrieve_adjoint_solution</a> () override</td></tr>
+<tr class="separator:a0750d7ed71a3d2dee5bd5c1adc8f9dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1946c7b5a882c29ea23ffe8501c95b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#afd1946c7b5a882c29ea23ffe8501c95b">get_time_stamp</a> ()</td></tr>
+<tr class="separator:afd1946c7b5a882c29ea23ffe8501c95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55caf76ab1c4d4c4a8b637408e9d9b91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#a55caf76ab1c4d4c4a8b637408e9d9b91">get_deltat_at</a> ()</td></tr>
+<tr class="separator:a55caf76ab1c4d4c4a8b637408e9d9b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8905cff222f4a261539fa8557d10208"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#ae8905cff222f4a261539fa8557d10208">get_previously_stored</a> ()</td></tr>
+<tr class="separator:ae8905cff222f4a261539fa8557d10208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e532d065973525853bf56b48809ea5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#ad0e532d065973525853bf56b48809ea5">set_time_stamp</a> (unsigned int time_stamp_val)</td></tr>
+<tr class="separator:ad0e532d065973525853bf56b48809ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f4c39be164f5c783f695e71f2465d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#a54f4c39be164f5c783f695e71f2465d3">set_deltat_at</a> (<a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> deltat_at_val)</td></tr>
+<tr class="separator:a54f4c39be164f5c783f695e71f2465d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8404d4a99294b724dc30be659716ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#abe8404d4a99294b724dc30be659716ad">set_previously_stored</a> (bool previously_stored_val)</td></tr>
+<tr class="separator:abe8404d4a99294b724dc30be659716ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a93a12ab64985a1a24f83be4ca6f19d17"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">time_stamp</a></td></tr>
+<tr class="separator:a93a12ab64985a1a24f83be4ca6f19d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2e9fe1adc9a3cb995426dbbe63864f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#a5d2e9fe1adc9a3cb995426dbbe63864f">deltat_at</a></td></tr>
+<tr class="separator:a5d2e9fe1adc9a3cb995426dbbe63864f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea975ae399a97897e495cebcb5e1f01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">previously_stored</a></td></tr>
+<tr class="separator:acea975ae399a97897e495cebcb5e1f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a8f4a080bf550997ac9b5d9d2579ea6ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DifferentiableSystem.html">DifferentiableSystem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">_system</a></td></tr>
+<tr class="separator:a8f4a080bf550997ac9b5d9d2579ea6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affbfd44a62471ac6c9448aa716b696f9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#affbfd44a62471ac6c9448aa716b696f9">mesh_filename</a></td></tr>
+<tr class="separator:affbfd44a62471ac6c9448aa716b696f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19585adb84e909203d7bc88d26d6f3e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a></td></tr>
+<tr class="separator:aa19585adb84e909203d7bc88d26d6f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382d36438e6db82bb13d7d05193dae77"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">adjoint_filename</a></td></tr>
+<tr class="separator:a382d36438e6db82bb13d7d05193dae77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="classlibMesh_1_1HistoryData.html" title="The History Data classes are companion classes to SolutionHistory and MeshHistory classes...">HistoryData</a> subclass that provides a struct to store history data such as timestamps, mesh, primal and adjoint filenames and timestep sizes. </p>
+<dl class="section author"><dt>作者</dt><dd>Vikram Garg </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021 </dd></dl>
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00018">18</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="ad4702667493d14301324d627dfb3c712"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;<a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>, std::unique_ptr&lt;<a class="el" href="classlibMesh_1_1HistoryData.html">HistoryData</a>&gt; &gt; <a class="el" href="classlibMesh_1_1HistoryData.html#ad4702667493d14301324d627dfb3c712">libMesh::HistoryData::map_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5275c559c5d9476bccd961a413633a1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef map_type::iterator <a class="el" href="classlibMesh_1_1HistoryData.html#a5275c559c5d9476bccd961a413633a1c">libMesh::HistoryData::stored_data_iterator</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="afc15a86e2c37d3bd58cf35f5af017006"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::FileHistoryData::FileHistoryData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1DifferentiableSystem.html">DifferentiableSystem</a> &amp;&#160;</td>
+          <td class="paramname"><em>system</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00022">22</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;: <a class="code" href="classlibMesh_1_1HistoryData.html#a3bd9e546efbfc0bfbaffb0d55ded4752">HistoryData</a>(), <a class="code" href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">_system</a>(system),<a class="code" href="classlibMesh_1_1FileHistoryData.html#affbfd44a62471ac6c9448aa716b696f9">mesh_filename</a>(<span class="stringliteral">&quot;&quot;</span>), <a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a>(<span class="stringliteral">&quot;&quot;</span>), <a class="code" href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">adjoint_filename</a>(<span class="stringliteral">&quot;&quot;</span>) {};</div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_aa19585adb84e909203d7bc88d26d6f3e"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">libMesh::FileHistoryData::primal_filename</a></div><div class="ttdeci">std::string primal_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00060">file_history_data.h:60</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_affbfd44a62471ac6c9448aa716b696f9"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#affbfd44a62471ac6c9448aa716b696f9">libMesh::FileHistoryData::mesh_filename</a></div><div class="ttdeci">std::string mesh_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00059">file_history_data.h:59</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a382d36438e6db82bb13d7d05193dae77"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">libMesh::FileHistoryData::adjoint_filename</a></div><div class="ttdeci">std::string adjoint_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00061">file_history_data.h:61</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a8f4a080bf550997ac9b5d9d2579ea6ba"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">libMesh::FileHistoryData::_system</a></div><div class="ttdeci">DifferentiableSystem &amp; _system</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00056">file_history_data.h:56</a></div></div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a3bd9e546efbfc0bfbaffb0d55ded4752"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a3bd9e546efbfc0bfbaffb0d55ded4752">libMesh::HistoryData::HistoryData</a></div><div class="ttdeci">HistoryData()</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00026">history_data.h:26</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1c920f9f29cf156b9e97fc05fe702618"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libMesh::FileHistoryData::~FileHistoryData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00024">24</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{};</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a139af19822627bbe0af6f68952370836"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string&amp; libMesh::FileHistoryData::get_adjoint_filename </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00033">33</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00061">adjoint_filename</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">adjoint_filename</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a382d36438e6db82bb13d7d05193dae77"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">libMesh::FileHistoryData::adjoint_filename</a></div><div class="ttdeci">std::string adjoint_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00061">file_history_data.h:61</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a55caf76ab1c4d4c4a8b637408e9d9b91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::HistoryData::get_deltat_at </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00036">36</a> 行定义.</p>
+
+<p>参考 <a class="el" href="history__data_8h_source.html#l00076">libMesh::HistoryData::deltat_at</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1HistoryData.html#a5d2e9fe1adc9a3cb995426dbbe63864f">deltat_at</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a5d2e9fe1adc9a3cb995426dbbe63864f"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a5d2e9fe1adc9a3cb995426dbbe63864f">libMesh::HistoryData::deltat_at</a></div><div class="ttdeci">Real deltat_at</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00076">history_data.h:76</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad17800cd3d43119bb9e2d7f4aeed42c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string&amp; libMesh::FileHistoryData::get_mesh_filename </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00027">27</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00059">mesh_filename</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1FileHistoryData.html#affbfd44a62471ac6c9448aa716b696f9">mesh_filename</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_affbfd44a62471ac6c9448aa716b696f9"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#affbfd44a62471ac6c9448aa716b696f9">libMesh::FileHistoryData::mesh_filename</a></div><div class="ttdeci">std::string mesh_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00059">file_history_data.h:59</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae8905cff222f4a261539fa8557d10208"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::HistoryData::get_previously_stored </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00039">39</a> 行定义.</p>
+
+<p>参考 <a class="el" href="history__data_8h_source.html#l00079">libMesh::HistoryData::previously_stored</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">previously_stored</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_acea975ae399a97897e495cebcb5e1f01"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">libMesh::HistoryData::previously_stored</a></div><div class="ttdeci">bool previously_stored</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00079">history_data.h:79</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a814fcaccb9b8394390285381421def5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string&amp; libMesh::FileHistoryData::get_primal_filename </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00030">30</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00060">primal_filename</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_aa19585adb84e909203d7bc88d26d6f3e"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">libMesh::FileHistoryData::primal_filename</a></div><div class="ttdeci">std::string primal_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00060">file_history_data.h:60</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="afd1946c7b5a882c29ea23ffe8501c95b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::HistoryData::get_time_stamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00033">33</a> 行定义.</p>
+
+<p>参考 <a class="el" href="history__data_8h_source.html#l00073">libMesh::HistoryData::time_stamp</a>.</p>
+
+<p>参考自 <a class="el" href="memory__history__data_8C_source.html#l00036">libMesh::MemoryHistoryData::store_primal_solution()</a> , 以及 <a class="el" href="file__history__data_8C_source.html#l00045">store_primal_solution()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">time_stamp</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a93a12ab64985a1a24f83be4ca6f19d17"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">libMesh::HistoryData::time_stamp</a></div><div class="ttdeci">unsigned int time_stamp</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00073">history_data.h:73</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0750d7ed71a3d2dee5bd5c1adc8f9dfa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::FileHistoryData::retrieve_adjoint_solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classlibMesh_1_1HistoryData.html#a76a68545eb6ffc7c68ecc88b35c1a05a">libMesh::HistoryData</a>.</p>
+
+<p>在文件 <a class="el" href="file__history__data_8C_source.html">file_history_data.C</a> 第 <a class="el" href="file__history__data_8C_source.html#l00093">93</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00056">_system</a>, <a class="el" href="file__history__data_8h_source.html#l00061">adjoint_filename</a>, <a class="el" href="system_8h_source.html#l00730">libMesh::System::get_equation_systems()</a>, <a class="el" href="enum__xdr__mode_8h_source.html#l00041">libMesh::READ</a>, <a class="el" href="equation__systems__io_8C_source.html#l00089">libMesh::EquationSystems::read()</a>, <a class="el" href="equation__systems_8h_source.html#l00075">libMesh::EquationSystems::READ_ADDITIONAL_DATA</a> , 以及 <a class="el" href="equation__systems_8h_source.html#l00074">libMesh::EquationSystems::READ_DATA</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;     <span class="comment">// Read in the adjoint solution stored at the current recovery time from the disk</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;     <a class="code" href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">_system</a>.<a class="code" href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">get_equation_systems</a>().<a class="code" href="classlibMesh_1_1EquationSystems.html#a6c7c2eff08f991b61c1cdc142b340046">read</a>(<a class="code" href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">adjoint_filename</a>, <a class="code" href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232a71bdf26ce57830760354cd7e37809a13">READ</a>, <a class="code" href="classlibMesh_1_1EquationSystems.html#a9a3b0e740fd481142a43130304066e35ac343ca4237c893115866c2c582b30f7b">EquationSystems::READ_DATA</a> | <a class="code" href="classlibMesh_1_1EquationSystems.html#a9a3b0e740fd481142a43130304066e35a681bafe8583d3817a7731913b8c997a5">EquationSystems::READ_ADDITIONAL_DATA</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a9a3b0e740fd481142a43130304066e35ac343ca4237c893115866c2c582b30f7b"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a9a3b0e740fd481142a43130304066e35ac343ca4237c893115866c2c582b30f7b">libMesh::EquationSystems::READ_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00074">equation_systems.h:74</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a382d36438e6db82bb13d7d05193dae77"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">libMesh::FileHistoryData::adjoint_filename</a></div><div class="ttdeci">std::string adjoint_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00061">file_history_data.h:61</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a8f4a080bf550997ac9b5d9d2579ea6ba"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">libMesh::FileHistoryData::_system</a></div><div class="ttdeci">DifferentiableSystem &amp; _system</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00056">file_history_data.h:56</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af69099c56f3f1120c5d134b1586b4232a71bdf26ce57830760354cd7e37809a13"><div class="ttname"><a href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232a71bdf26ce57830760354cd7e37809a13">libMesh::READ</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__xdr__mode_8h_source.html#l00041">enum_xdr_mode.h:41</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a9a3b0e740fd481142a43130304066e35a681bafe8583d3817a7731913b8c997a5"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a9a3b0e740fd481142a43130304066e35a681bafe8583d3817a7731913b8c997a5">libMesh::EquationSystems::READ_ADDITIONAL_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00075">equation_systems.h:75</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_ac5ca6b1f3adcfac56982982e90dc905b"><div class="ttname"><a href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">libMesh::System::get_equation_systems</a></div><div class="ttdeci">const EquationSystems &amp; get_equation_systems() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00730">system.h:730</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a6c7c2eff08f991b61c1cdc142b340046"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a6c7c2eff08f991b61c1cdc142b340046">libMesh::EquationSystems::read</a></div><div class="ttdeci">void read(std::string_view name, const XdrMODE, const unsigned int read_flags=(READ_HEADER|READ_DATA), bool partition_agnostic=true)</div><div class="ttdoc">Read &amp;amp; initialize the systems from disk using the XDR data format. </div><div class="ttdef"><b>Definition:</b> <a href="equation__systems__io_8C_source.html#l00089">equation_systems_io.C:89</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a67c63180de3c648ac804f5a5a0013eef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::FileHistoryData::retrieve_primal_solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classlibMesh_1_1HistoryData.html#a6f2f670c6847c2c898b0ebbf5bb93333">libMesh::HistoryData</a>.</p>
+
+<p>在文件 <a class="el" href="file__history__data_8C_source.html">file_history_data.C</a> 第 <a class="el" href="file__history__data_8C_source.html#l00087">87</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00056">_system</a>, <a class="el" href="system_8h_source.html#l00730">libMesh::System::get_equation_systems()</a>, <a class="el" href="file__history__data_8h_source.html#l00060">primal_filename</a>, <a class="el" href="enum__xdr__mode_8h_source.html#l00041">libMesh::READ</a>, <a class="el" href="equation__systems__io_8C_source.html#l00089">libMesh::EquationSystems::read()</a>, <a class="el" href="equation__systems_8h_source.html#l00075">libMesh::EquationSystems::READ_ADDITIONAL_DATA</a> , 以及 <a class="el" href="equation__systems_8h_source.html#l00074">libMesh::EquationSystems::READ_DATA</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;     <span class="comment">// Read in the primal solution stored at the current recovery time from the disk</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;     <a class="code" href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">_system</a>.<a class="code" href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">get_equation_systems</a>().<a class="code" href="classlibMesh_1_1EquationSystems.html#a6c7c2eff08f991b61c1cdc142b340046">read</a>(<a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a>, <a class="code" href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232a71bdf26ce57830760354cd7e37809a13">READ</a>, <a class="code" href="classlibMesh_1_1EquationSystems.html#a9a3b0e740fd481142a43130304066e35ac343ca4237c893115866c2c582b30f7b">EquationSystems::READ_DATA</a> | <a class="code" href="classlibMesh_1_1EquationSystems.html#a9a3b0e740fd481142a43130304066e35a681bafe8583d3817a7731913b8c997a5">EquationSystems::READ_ADDITIONAL_DATA</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a9a3b0e740fd481142a43130304066e35ac343ca4237c893115866c2c582b30f7b"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a9a3b0e740fd481142a43130304066e35ac343ca4237c893115866c2c582b30f7b">libMesh::EquationSystems::READ_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00074">equation_systems.h:74</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_aa19585adb84e909203d7bc88d26d6f3e"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">libMesh::FileHistoryData::primal_filename</a></div><div class="ttdeci">std::string primal_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00060">file_history_data.h:60</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a8f4a080bf550997ac9b5d9d2579ea6ba"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">libMesh::FileHistoryData::_system</a></div><div class="ttdeci">DifferentiableSystem &amp; _system</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00056">file_history_data.h:56</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af69099c56f3f1120c5d134b1586b4232a71bdf26ce57830760354cd7e37809a13"><div class="ttname"><a href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232a71bdf26ce57830760354cd7e37809a13">libMesh::READ</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__xdr__mode_8h_source.html#l00041">enum_xdr_mode.h:41</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a9a3b0e740fd481142a43130304066e35a681bafe8583d3817a7731913b8c997a5"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a9a3b0e740fd481142a43130304066e35a681bafe8583d3817a7731913b8c997a5">libMesh::EquationSystems::READ_ADDITIONAL_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00075">equation_systems.h:75</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_ac5ca6b1f3adcfac56982982e90dc905b"><div class="ttname"><a href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">libMesh::System::get_equation_systems</a></div><div class="ttdeci">const EquationSystems &amp; get_equation_systems() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00730">system.h:730</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a6c7c2eff08f991b61c1cdc142b340046"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a6c7c2eff08f991b61c1cdc142b340046">libMesh::EquationSystems::read</a></div><div class="ttdeci">void read(std::string_view name, const XdrMODE, const unsigned int read_flags=(READ_HEADER|READ_DATA), bool partition_agnostic=true)</div><div class="ttdoc">Read &amp;amp; initialize the systems from disk using the XDR data format. </div><div class="ttdef"><b>Definition:</b> <a href="equation__systems__io_8C_source.html#l00089">equation_systems_io.C:89</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9df703774eb80491ae119b5095b66b53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::FileHistoryData::rewrite_stored_solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classlibMesh_1_1HistoryData.html#ae5ac319c5ab7d29c86ecd63fadafaea5">libMesh::HistoryData</a>.</p>
+
+<p>在文件 <a class="el" href="file__history__data_8C_source.html">file_history_data.C</a> 第 <a class="el" href="file__history__data_8C_source.html#l00079">79</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00056">_system</a>, <a class="el" href="system_8h_source.html#l00730">libMesh::System::get_equation_systems()</a>, <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>, <a class="el" href="history__data_8h_source.html#l00079">libMesh::HistoryData::previously_stored</a>, <a class="el" href="file__history__data_8h_source.html#l00060">primal_filename</a>, <a class="el" href="enum__xdr__mode_8h_source.html#l00040">libMesh::WRITE</a>, <a class="el" href="equation__systems__io_8C_source.html#l00350">libMesh::EquationSystems::write()</a>, <a class="el" href="equation__systems_8h_source.html#l00084">libMesh::EquationSystems::WRITE_ADDITIONAL_DATA</a> , 以及 <a class="el" href="equation__systems_8h_source.html#l00083">libMesh::EquationSystems::WRITE_DATA</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;     <span class="comment">// We are rewriting.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;     <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(<a class="code" href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">previously_stored</a> == <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;     <a class="code" href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">_system</a>.<a class="code" href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">get_equation_systems</a>().<a class="code" href="classlibMesh_1_1EquationSystems.html#af3bb9742eb8b6b6cb64ef63fb59b17dd">write</a>(<a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a>, <a class="code" href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1">WRITE</a>, <a class="code" href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2">EquationSystems::WRITE_DATA</a> | <a class="code" href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8">EquationSystems::WRITE_ADDITIONAL_DATA</a>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8">libMesh::EquationSystems::WRITE_ADDITIONAL_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00084">equation_systems.h:84</a></div></div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_acea975ae399a97897e495cebcb5e1f01"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">libMesh::HistoryData::previously_stored</a></div><div class="ttdeci">bool previously_stored</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00079">history_data.h:79</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_af3bb9742eb8b6b6cb64ef63fb59b17dd"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#af3bb9742eb8b6b6cb64ef63fb59b17dd">libMesh::EquationSystems::write</a></div><div class="ttdeci">void write(std::string_view name, const XdrMODE, const unsigned int write_flags=(WRITE_DATA), bool partition_agnostic=true) const </div><div class="ttdoc">Write the systems to disk using the XDR data format. </div><div class="ttdef"><b>Definition:</b> <a href="equation__systems__io_8C_source.html#l00350">equation_systems_io.C:350</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_aa19585adb84e909203d7bc88d26d6f3e"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">libMesh::FileHistoryData::primal_filename</a></div><div class="ttdeci">std::string primal_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00060">file_history_data.h:60</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1"><div class="ttname"><a href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1">libMesh::WRITE</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__xdr__mode_8h_source.html#l00040">enum_xdr_mode.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a8f4a080bf550997ac9b5d9d2579ea6ba"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">libMesh::FileHistoryData::_system</a></div><div class="ttdeci">DifferentiableSystem &amp; _system</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00056">file_history_data.h:56</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2">libMesh::EquationSystems::WRITE_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00083">equation_systems.h:83</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_ac5ca6b1f3adcfac56982982e90dc905b"><div class="ttname"><a href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">libMesh::System::get_equation_systems</a></div><div class="ttdeci">const EquationSystems &amp; get_equation_systems() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00730">system.h:730</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a52d067f15e6c4d6a6eac7e9ecaebc117"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::FileHistoryData::set_adjoint_filename </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>adjoint_sol_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00042">42</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00061">adjoint_filename</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        { <a class="code" href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">adjoint_filename</a> = adjoint_sol_name; }</div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a382d36438e6db82bb13d7d05193dae77"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">libMesh::FileHistoryData::adjoint_filename</a></div><div class="ttdeci">std::string adjoint_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00061">file_history_data.h:61</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a54f4c39be164f5c783f695e71f2465d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::HistoryData::set_deltat_at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
+          <td class="paramname"><em>deltat_at_val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00046">46</a> 行定义.</p>
+
+<p>参考 <a class="el" href="history__data_8h_source.html#l00076">libMesh::HistoryData::deltat_at</a>.</p>
+
+<p>参考自 <a class="el" href="memory__history__data_8C_source.html#l00036">libMesh::MemoryHistoryData::store_primal_solution()</a> , 以及 <a class="el" href="file__history__data_8C_source.html#l00045">store_primal_solution()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        { <a class="code" href="classlibMesh_1_1HistoryData.html#a5d2e9fe1adc9a3cb995426dbbe63864f">deltat_at</a> = deltat_at_val; }</div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a5d2e9fe1adc9a3cb995426dbbe63864f"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a5d2e9fe1adc9a3cb995426dbbe63864f">libMesh::HistoryData::deltat_at</a></div><div class="ttdeci">Real deltat_at</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00076">history_data.h:76</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2e0d5fe2cf82fd1e1e3cf4143d6a0ef2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::FileHistoryData::set_mesh_filename </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>mesh_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00036">36</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00059">mesh_filename</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        { <a class="code" href="classlibMesh_1_1FileHistoryData.html#affbfd44a62471ac6c9448aa716b696f9">mesh_filename</a> = mesh_name; }</div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_affbfd44a62471ac6c9448aa716b696f9"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#affbfd44a62471ac6c9448aa716b696f9">libMesh::FileHistoryData::mesh_filename</a></div><div class="ttdeci">std::string mesh_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00059">file_history_data.h:59</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abe8404d4a99294b724dc30be659716ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::HistoryData::set_previously_stored </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>previously_stored_val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00049">49</a> 行定义.</p>
+
+<p>参考 <a class="el" href="history__data_8h_source.html#l00079">libMesh::HistoryData::previously_stored</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        { <a class="code" href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">previously_stored</a> = previously_stored_val; }</div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_acea975ae399a97897e495cebcb5e1f01"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">libMesh::HistoryData::previously_stored</a></div><div class="ttdeci">bool previously_stored</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00079">history_data.h:79</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1338befe9f0761e78922ac7160dd6577"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::FileHistoryData::set_primal_filename </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>primal_sol_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00039">39</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00060">primal_filename</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        { <a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a> = primal_sol_name; }</div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_aa19585adb84e909203d7bc88d26d6f3e"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">libMesh::FileHistoryData::primal_filename</a></div><div class="ttdeci">std::string primal_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00060">file_history_data.h:60</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad0e532d065973525853bf56b48809ea5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::HistoryData::set_time_stamp </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>time_stamp_val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00043">43</a> 行定义.</p>
+
+<p>参考 <a class="el" href="history__data_8h_source.html#l00073">libMesh::HistoryData::time_stamp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        { <a class="code" href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">time_stamp</a> = time_stamp_val; }</div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a93a12ab64985a1a24f83be4ca6f19d17"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">libMesh::HistoryData::time_stamp</a></div><div class="ttdeci">unsigned int time_stamp</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00073">history_data.h:73</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4a548b5e730733e1f73f13e4ed71f602"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::FileHistoryData::store_adjoint_solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classlibMesh_1_1HistoryData.html#a75ab82f62a4864ba985047cbfbbce16d">libMesh::HistoryData</a>.</p>
+
+<p>在文件 <a class="el" href="file__history__data_8C_source.html">file_history_data.C</a> 第 <a class="el" href="file__history__data_8C_source.html#l00070">70</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00056">_system</a>, <a class="el" href="file__history__data_8h_source.html#l00061">adjoint_filename</a>, <a class="el" href="system_8h_source.html#l00730">libMesh::System::get_equation_systems()</a>, <a class="el" href="history__data_8h_source.html#l00073">libMesh::HistoryData::time_stamp</a>, <a class="el" href="enum__xdr__mode_8h_source.html#l00040">libMesh::WRITE</a>, <a class="el" href="equation__systems__io_8C_source.html#l00350">libMesh::EquationSystems::write()</a>, <a class="el" href="equation__systems_8h_source.html#l00084">libMesh::EquationSystems::WRITE_ADDITIONAL_DATA</a> , 以及 <a class="el" href="equation__systems_8h_source.html#l00083">libMesh::EquationSystems::WRITE_DATA</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;     <a class="code" href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">adjoint_filename</a> = <span class="stringliteral">&quot;adjoint.out.xda.&quot;</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;     <a class="code" href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">adjoint_filename</a> += std::to_string(<a class="code" href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">time_stamp</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;     <a class="code" href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">_system</a>.<a class="code" href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">get_equation_systems</a>().<a class="code" href="classlibMesh_1_1EquationSystems.html#af3bb9742eb8b6b6cb64ef63fb59b17dd">write</a>(<a class="code" href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">adjoint_filename</a>, <a class="code" href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1">WRITE</a>, <a class="code" href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2">EquationSystems::WRITE_DATA</a> | <a class="code" href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8">EquationSystems::WRITE_ADDITIONAL_DATA</a>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a93a12ab64985a1a24f83be4ca6f19d17"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">libMesh::HistoryData::time_stamp</a></div><div class="ttdeci">unsigned int time_stamp</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00073">history_data.h:73</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8">libMesh::EquationSystems::WRITE_ADDITIONAL_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00084">equation_systems.h:84</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_af3bb9742eb8b6b6cb64ef63fb59b17dd"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#af3bb9742eb8b6b6cb64ef63fb59b17dd">libMesh::EquationSystems::write</a></div><div class="ttdeci">void write(std::string_view name, const XdrMODE, const unsigned int write_flags=(WRITE_DATA), bool partition_agnostic=true) const </div><div class="ttdoc">Write the systems to disk using the XDR data format. </div><div class="ttdef"><b>Definition:</b> <a href="equation__systems__io_8C_source.html#l00350">equation_systems_io.C:350</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a382d36438e6db82bb13d7d05193dae77"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a382d36438e6db82bb13d7d05193dae77">libMesh::FileHistoryData::adjoint_filename</a></div><div class="ttdeci">std::string adjoint_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00061">file_history_data.h:61</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1"><div class="ttname"><a href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1">libMesh::WRITE</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__xdr__mode_8h_source.html#l00040">enum_xdr_mode.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a8f4a080bf550997ac9b5d9d2579ea6ba"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">libMesh::FileHistoryData::_system</a></div><div class="ttdeci">DifferentiableSystem &amp; _system</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00056">file_history_data.h:56</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2">libMesh::EquationSystems::WRITE_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00083">equation_systems.h:83</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_ac5ca6b1f3adcfac56982982e90dc905b"><div class="ttname"><a href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">libMesh::System::get_equation_systems</a></div><div class="ttdeci">const EquationSystems &amp; get_equation_systems() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00730">system.h:730</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3fd463b62b0cfd73befa2dacf8e564a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::FileHistoryData::store_initial_solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classlibMesh_1_1HistoryData.html#a4aa281f62f36ed945e21b62ac11ba5be">libMesh::HistoryData</a>.</p>
+
+<p>在文件 <a class="el" href="file__history__data_8C_source.html">file_history_data.C</a> 第 <a class="el" href="file__history__data_8C_source.html#l00026">26</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00056">_system</a>, <a class="el" href="history__data_8h_source.html#l00076">libMesh::HistoryData::deltat_at</a>, <a class="el" href="system_8h_source.html#l00730">libMesh::System::get_equation_systems()</a>, <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>, <a class="el" href="history__data_8h_source.html#l00079">libMesh::HistoryData::previously_stored</a>, <a class="el" href="file__history__data_8h_source.html#l00060">primal_filename</a>, <a class="el" href="history__data_8h_source.html#l00073">libMesh::HistoryData::time_stamp</a>, <a class="el" href="enum__xdr__mode_8h_source.html#l00040">libMesh::WRITE</a>, <a class="el" href="equation__systems__io_8C_source.html#l00350">libMesh::EquationSystems::write()</a>, <a class="el" href="equation__systems_8h_source.html#l00084">libMesh::EquationSystems::WRITE_ADDITIONAL_DATA</a> , 以及 <a class="el" href="equation__systems_8h_source.html#l00083">libMesh::EquationSystems::WRITE_DATA</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// The initial data should only be stored once.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(<a class="code" href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">previously_stored</a> == <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">time_stamp</a> = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a> = <span class="stringliteral">&quot;primal.out.xda.&quot;</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a> += std::to_string(<a class="code" href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">time_stamp</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">_system</a>.<a class="code" href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">get_equation_systems</a>().<a class="code" href="classlibMesh_1_1EquationSystems.html#af3bb9742eb8b6b6cb64ef63fb59b17dd">write</a> (<a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a>, <a class="code" href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1">WRITE</a>, <a class="code" href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2">EquationSystems::WRITE_DATA</a> | <a class="code" href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8">EquationSystems::WRITE_ADDITIONAL_DATA</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// We wont know the deltat taken at this timestep until the solve is completed, which is done after the store operation.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classlibMesh_1_1HistoryData.html#a5d2e9fe1adc9a3cb995426dbbe63864f">deltat_at</a> = std::numeric_limits&lt;double&gt;::signaling_NaN();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">previously_stored</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a93a12ab64985a1a24f83be4ca6f19d17"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">libMesh::HistoryData::time_stamp</a></div><div class="ttdeci">unsigned int time_stamp</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00073">history_data.h:73</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8">libMesh::EquationSystems::WRITE_ADDITIONAL_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00084">equation_systems.h:84</a></div></div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_acea975ae399a97897e495cebcb5e1f01"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">libMesh::HistoryData::previously_stored</a></div><div class="ttdeci">bool previously_stored</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00079">history_data.h:79</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_af3bb9742eb8b6b6cb64ef63fb59b17dd"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#af3bb9742eb8b6b6cb64ef63fb59b17dd">libMesh::EquationSystems::write</a></div><div class="ttdeci">void write(std::string_view name, const XdrMODE, const unsigned int write_flags=(WRITE_DATA), bool partition_agnostic=true) const </div><div class="ttdoc">Write the systems to disk using the XDR data format. </div><div class="ttdef"><b>Definition:</b> <a href="equation__systems__io_8C_source.html#l00350">equation_systems_io.C:350</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_aa19585adb84e909203d7bc88d26d6f3e"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">libMesh::FileHistoryData::primal_filename</a></div><div class="ttdeci">std::string primal_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00060">file_history_data.h:60</a></div></div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a5d2e9fe1adc9a3cb995426dbbe63864f"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a5d2e9fe1adc9a3cb995426dbbe63864f">libMesh::HistoryData::deltat_at</a></div><div class="ttdeci">Real deltat_at</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00076">history_data.h:76</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1"><div class="ttname"><a href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1">libMesh::WRITE</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__xdr__mode_8h_source.html#l00040">enum_xdr_mode.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a8f4a080bf550997ac9b5d9d2579ea6ba"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">libMesh::FileHistoryData::_system</a></div><div class="ttdeci">DifferentiableSystem &amp; _system</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00056">file_history_data.h:56</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2">libMesh::EquationSystems::WRITE_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00083">equation_systems.h:83</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_ac5ca6b1f3adcfac56982982e90dc905b"><div class="ttname"><a href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">libMesh::System::get_equation_systems</a></div><div class="ttdeci">const EquationSystems &amp; get_equation_systems() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00730">system.h:730</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad67ede6f37880b07e2dc1dab2549d494"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::FileHistoryData::store_primal_solution </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlibMesh_1_1HistoryData.html#a5275c559c5d9476bccd961a413633a1c">stored_data_iterator</a>&#160;</td>
+          <td class="paramname"><em>stored_datum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classlibMesh_1_1HistoryData.html#a2d4aa7aed877f8fd2f1680546c3dbd3d">libMesh::HistoryData</a>.</p>
+
+<p>在文件 <a class="el" href="file__history__data_8C_source.html">file_history_data.C</a> 第 <a class="el" href="file__history__data_8C_source.html#l00045">45</a> 行定义.</p>
+
+<p>参考 <a class="el" href="file__history__data_8h_source.html#l00056">_system</a>, <a class="el" href="history__data_8h_source.html#l00076">libMesh::HistoryData::deltat_at</a>, <a class="el" href="system_8h_source.html#l00730">libMesh::System::get_equation_systems()</a>, <a class="el" href="history__data_8h_source.html#l00033">libMesh::HistoryData::get_time_stamp()</a>, <a class="el" href="history__data_8h_source.html#l00079">libMesh::HistoryData::previously_stored</a>, <a class="el" href="file__history__data_8h_source.html#l00060">primal_filename</a>, <a class="el" href="history__data_8h_source.html#l00046">libMesh::HistoryData::set_deltat_at()</a>, <a class="el" href="diff__system_8h_source.html#l00229">libMesh::DifferentiableSystem::time_solver</a>, <a class="el" href="history__data_8h_source.html#l00073">libMesh::HistoryData::time_stamp</a>, <a class="el" href="enum__xdr__mode_8h_source.html#l00040">libMesh::WRITE</a>, <a class="el" href="equation__systems__io_8C_source.html#l00350">libMesh::EquationSystems::write()</a>, <a class="el" href="equation__systems_8h_source.html#l00084">libMesh::EquationSystems::WRITE_ADDITIONAL_DATA</a> , 以及 <a class="el" href="equation__systems_8h_source.html#l00083">libMesh::EquationSystems::WRITE_DATA</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// An iterator to the datum being stored has been passed. This is taken to imply</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// that we are in a sequential time stepping sequence.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classlibMesh_1_1HistoryData.html#a5275c559c5d9476bccd961a413633a1c">stored_data_iterator</a> stored_datum_last = stored_datum;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    stored_datum_last--;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">time_stamp</a> = (stored_datum_last-&gt;second)-&gt;<a class="code" href="classlibMesh_1_1HistoryData.html#afd1946c7b5a882c29ea23ffe8501c95b">get_time_stamp</a>() + 1;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a> = <span class="stringliteral">&quot;primal.out.xda.&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a> += std::to_string(<a class="code" href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">time_stamp</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">_system</a>.<a class="code" href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">get_equation_systems</a>().<a class="code" href="classlibMesh_1_1EquationSystems.html#af3bb9742eb8b6b6cb64ef63fb59b17dd">write</a> (<a class="code" href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">primal_filename</a>, <a class="code" href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1">WRITE</a>, <a class="code" href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2">EquationSystems::WRITE_DATA</a> | <a class="code" href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8">EquationSystems::WRITE_ADDITIONAL_DATA</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// We dont know the deltat that will be taken at the current timestep.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classlibMesh_1_1HistoryData.html#a5d2e9fe1adc9a3cb995426dbbe63864f">deltat_at</a> = std::numeric_limits&lt;double&gt;::signaling_NaN();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// But we know what deltat got us to the current time.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    (stored_datum_last-&gt;second)-&gt;<a class="code" href="classlibMesh_1_1HistoryData.html#a54f4c39be164f5c783f695e71f2465d3">set_deltat_at</a>(<a class="code" href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">_system</a>.<a class="code" href="classlibMesh_1_1DifferentiableSystem.html#aece93931d398b846da32c5b6a86ed94f">time_solver</a>-&gt;TimeSolver::last_completed_timestep_size());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">previously_stored</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a93a12ab64985a1a24f83be4ca6f19d17"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a93a12ab64985a1a24f83be4ca6f19d17">libMesh::HistoryData::time_stamp</a></div><div class="ttdeci">unsigned int time_stamp</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00073">history_data.h:73</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532adb3b46d8dd4d07aad77c353eafc3e2a8">libMesh::EquationSystems::WRITE_ADDITIONAL_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00084">equation_systems.h:84</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DifferentiableSystem_html_aece93931d398b846da32c5b6a86ed94f"><div class="ttname"><a href="classlibMesh_1_1DifferentiableSystem.html#aece93931d398b846da32c5b6a86ed94f">libMesh::DifferentiableSystem::time_solver</a></div><div class="ttdeci">std::unique_ptr&lt; TimeSolver &gt; time_solver</div><div class="ttdoc">要使用的求解器对象的指针。 这必须在求解之前实例化！ </div><div class="ttdef"><b>Definition:</b> <a href="diff__system_8h_source.html#l00229">diff_system.h:229</a></div></div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_acea975ae399a97897e495cebcb5e1f01"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#acea975ae399a97897e495cebcb5e1f01">libMesh::HistoryData::previously_stored</a></div><div class="ttdeci">bool previously_stored</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00079">history_data.h:79</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_af3bb9742eb8b6b6cb64ef63fb59b17dd"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#af3bb9742eb8b6b6cb64ef63fb59b17dd">libMesh::EquationSystems::write</a></div><div class="ttdeci">void write(std::string_view name, const XdrMODE, const unsigned int write_flags=(WRITE_DATA), bool partition_agnostic=true) const </div><div class="ttdoc">Write the systems to disk using the XDR data format. </div><div class="ttdef"><b>Definition:</b> <a href="equation__systems__io_8C_source.html#l00350">equation_systems_io.C:350</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_aa19585adb84e909203d7bc88d26d6f3e"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#aa19585adb84e909203d7bc88d26d6f3e">libMesh::FileHistoryData::primal_filename</a></div><div class="ttdeci">std::string primal_filename</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00060">file_history_data.h:60</a></div></div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_afd1946c7b5a882c29ea23ffe8501c95b"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#afd1946c7b5a882c29ea23ffe8501c95b">libMesh::HistoryData::get_time_stamp</a></div><div class="ttdeci">unsigned int get_time_stamp()</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00033">history_data.h:33</a></div></div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a5d2e9fe1adc9a3cb995426dbbe63864f"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a5d2e9fe1adc9a3cb995426dbbe63864f">libMesh::HistoryData::deltat_at</a></div><div class="ttdeci">Real deltat_at</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00076">history_data.h:76</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1"><div class="ttname"><a href="namespacelibMesh.html#af69099c56f3f1120c5d134b1586b4232ac4aa6bb6cf3b088da8fd5f4d4c1723a1">libMesh::WRITE</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__xdr__mode_8h_source.html#l00040">enum_xdr_mode.h:40</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FileHistoryData_html_a8f4a080bf550997ac9b5d9d2579ea6ba"><div class="ttname"><a href="classlibMesh_1_1FileHistoryData.html#a8f4a080bf550997ac9b5d9d2579ea6ba">libMesh::FileHistoryData::_system</a></div><div class="ttdeci">DifferentiableSystem &amp; _system</div><div class="ttdef"><b>Definition:</b> <a href="file__history__data_8h_source.html#l00056">file_history_data.h:56</a></div></div>
+<div class="ttc" id="classlibMesh_1_1EquationSystems_html_a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2"><div class="ttname"><a href="classlibMesh_1_1EquationSystems.html#a6a315352a9c8f99542d4c589c45b2532ab363df4400f883ee435550e14b84c2b2">libMesh::EquationSystems::WRITE_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="equation__systems_8h_source.html#l00083">equation_systems.h:83</a></div></div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a54f4c39be164f5c783f695e71f2465d3"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a54f4c39be164f5c783f695e71f2465d3">libMesh::HistoryData::set_deltat_at</a></div><div class="ttdeci">void set_deltat_at(Real deltat_at_val)</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00046">history_data.h:46</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_ac5ca6b1f3adcfac56982982e90dc905b"><div class="ttname"><a href="classlibMesh_1_1System.html#ac5ca6b1f3adcfac56982982e90dc905b">libMesh::System::get_equation_systems</a></div><div class="ttdeci">const EquationSystems &amp; get_equation_systems() const </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00730">system.h:730</a></div></div>
+<div class="ttc" id="classlibMesh_1_1HistoryData_html_a5275c559c5d9476bccd961a413633a1c"><div class="ttname"><a href="classlibMesh_1_1HistoryData.html#a5275c559c5d9476bccd961a413633a1c">libMesh::HistoryData::stored_data_iterator</a></div><div class="ttdeci">map_type::iterator stored_data_iterator</div><div class="ttdef"><b>Definition:</b> <a href="history__data_8h_source.html#l00055">history_data.h:55</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a8f4a080bf550997ac9b5d9d2579ea6ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DifferentiableSystem.html">DifferentiableSystem</a>&amp; libMesh::FileHistoryData::_system</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00056">56</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="file__history__data_8C_source.html#l00093">retrieve_adjoint_solution()</a>, <a class="el" href="file__history__data_8C_source.html#l00087">retrieve_primal_solution()</a>, <a class="el" href="file__history__data_8C_source.html#l00079">rewrite_stored_solution()</a>, <a class="el" href="file__history__data_8C_source.html#l00070">store_adjoint_solution()</a>, <a class="el" href="file__history__data_8C_source.html#l00026">store_initial_solution()</a> , 以及 <a class="el" href="file__history__data_8C_source.html#l00045">store_primal_solution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a382d36438e6db82bb13d7d05193dae77"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string libMesh::FileHistoryData::adjoint_filename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00061">61</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="file__history__data_8h_source.html#l00033">get_adjoint_filename()</a>, <a class="el" href="file__history__data_8C_source.html#l00093">retrieve_adjoint_solution()</a>, <a class="el" href="file__history__data_8h_source.html#l00042">set_adjoint_filename()</a> , 以及 <a class="el" href="file__history__data_8C_source.html#l00070">store_adjoint_solution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d2e9fe1adc9a3cb995426dbbe63864f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> libMesh::HistoryData::deltat_at</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00076">76</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="history__data_8h_source.html#l00036">libMesh::HistoryData::get_deltat_at()</a>, <a class="el" href="history__data_8h_source.html#l00046">libMesh::HistoryData::set_deltat_at()</a>, <a class="el" href="memory__history__data_8C_source.html#l00022">libMesh::MemoryHistoryData::store_initial_solution()</a>, <a class="el" href="file__history__data_8C_source.html#l00026">store_initial_solution()</a>, <a class="el" href="memory__history__data_8C_source.html#l00036">libMesh::MemoryHistoryData::store_primal_solution()</a> , 以及 <a class="el" href="file__history__data_8C_source.html#l00045">store_primal_solution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="affbfd44a62471ac6c9448aa716b696f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string libMesh::FileHistoryData::mesh_filename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00059">59</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="file__history__data_8h_source.html#l00027">get_mesh_filename()</a> , 以及 <a class="el" href="file__history__data_8h_source.html#l00036">set_mesh_filename()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acea975ae399a97897e495cebcb5e1f01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::HistoryData::previously_stored</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00079">79</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="history__data_8h_source.html#l00039">libMesh::HistoryData::get_previously_stored()</a>, <a class="el" href="memory__history__data_8C_source.html#l00101">libMesh::MemoryHistoryData::retrieve_vectors()</a>, <a class="el" href="memory__history__data_8C_source.html#l00058">libMesh::MemoryHistoryData::rewrite_stored_solution()</a>, <a class="el" href="file__history__data_8C_source.html#l00079">rewrite_stored_solution()</a>, <a class="el" href="history__data_8h_source.html#l00049">libMesh::HistoryData::set_previously_stored()</a>, <a class="el" href="memory__history__data_8C_source.html#l00022">libMesh::MemoryHistoryData::store_initial_solution()</a>, <a class="el" href="file__history__data_8C_source.html#l00026">store_initial_solution()</a>, <a class="el" href="memory__history__data_8C_source.html#l00036">libMesh::MemoryHistoryData::store_primal_solution()</a> , 以及 <a class="el" href="file__history__data_8C_source.html#l00045">store_primal_solution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa19585adb84e909203d7bc88d26d6f3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string libMesh::FileHistoryData::primal_filename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="file__history__data_8h_source.html">file_history_data.h</a> 第 <a class="el" href="file__history__data_8h_source.html#l00060">60</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="file__history__data_8h_source.html#l00030">get_primal_filename()</a>, <a class="el" href="file__history__data_8C_source.html#l00087">retrieve_primal_solution()</a>, <a class="el" href="file__history__data_8C_source.html#l00079">rewrite_stored_solution()</a>, <a class="el" href="file__history__data_8h_source.html#l00039">set_primal_filename()</a>, <a class="el" href="file__history__data_8C_source.html#l00026">store_initial_solution()</a> , 以及 <a class="el" href="file__history__data_8C_source.html#l00045">store_primal_solution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93a12ab64985a1a24f83be4ca6f19d17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int libMesh::HistoryData::time_stamp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="history__data_8h_source.html">history_data.h</a> 第 <a class="el" href="history__data_8h_source.html#l00073">73</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="history__data_8h_source.html#l00033">libMesh::HistoryData::get_time_stamp()</a>, <a class="el" href="history__data_8h_source.html#l00043">libMesh::HistoryData::set_time_stamp()</a>, <a class="el" href="file__history__data_8C_source.html#l00070">store_adjoint_solution()</a>, <a class="el" href="memory__history__data_8C_source.html#l00022">libMesh::MemoryHistoryData::store_initial_solution()</a>, <a class="el" href="file__history__data_8C_source.html#l00026">store_initial_solution()</a>, <a class="el" href="memory__history__data_8C_source.html#l00036">libMesh::MemoryHistoryData::store_primal_solution()</a> , 以及 <a class="el" href="file__history__data_8C_source.html#l00045">store_primal_solution()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/solvers/<a class="el" href="file__history__data_8h_source.html">file_history_data.h</a></li>
+<li>/home/lwz/libmesh/src/solvers/<a class="el" href="file__history__data_8C_source.html">file_history_data.C</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:41 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

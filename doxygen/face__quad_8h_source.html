@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/include/geom/face_quad.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_7b25fee8b20e5ff305ecfa5c6e931be7.html">geom</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">face_quad.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="face__quad_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef LIBMESH_FACE_QUAD_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIBMESH_FACE_QUAD_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// Local includes</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;libmesh/libmesh_common.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;libmesh/face.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibMesh_1_1Quad.html">Quad</a> : <span class="keyword">public</span> <a class="code" href="classlibMesh_1_1Face.html">Face</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#af7f1ddb7133253ed9d75fece6a32fe01">   56</a></span>&#160;  <a class="code" href="classlibMesh_1_1Quad.html#af7f1ddb7133253ed9d75fece6a32fe01">Quad</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nn, <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> * p, <a class="code" href="classlibMesh_1_1Node.html">Node</a> ** nodelinkdata) :</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classlibMesh_1_1Face.html">Face</a>(nn, <a class="code" href="classlibMesh_1_1Quad.html">Quad</a>::<a class="code" href="classlibMesh_1_1Quad.html#a6a24ed21c88d8bcc7b8a2ff9882d83fe">n_sides</a>(), p, <a class="code" href="classlibMesh_1_1Quad.html#a4fbd42e6f82de146434218a58813c3bf">_elemlinks_data</a>, nodelinkdata)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Make sure the interior parent isn&#39;t undefined</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (LIBMESH_DIM &gt; 2)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      this-&gt;<a class="code" href="classlibMesh_1_1Elem.html#a6b6161aa2c540a7c75822c5962475ebf">set_interior_parent</a>(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classlibMesh_1_1Quad.html#af7f1ddb7133253ed9d75fece6a32fe01">Quad</a> (<a class="code" href="classlibMesh_1_1Quad.html">Quad</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classlibMesh_1_1Quad.html#af7f1ddb7133253ed9d75fece6a32fe01">Quad</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Quad.html">Quad</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="classlibMesh_1_1Quad.html">Quad</a> &amp; <a class="code" href="classlibMesh_1_1Quad.html#a89e6928b9159c5ac72bf5f346f748c6f">operator= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1Quad.html">Quad</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classlibMesh_1_1Quad.html">Quad</a> &amp; <a class="code" href="classlibMesh_1_1Quad.html#a89e6928b9159c5ac72bf5f346f748c6f">operator= </a>(<a class="code" href="classlibMesh_1_1Quad.html">Quad</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1Quad.html#a305c9fa6f11934a70c5e7de241168d90">~Quad</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#ac005994c8dfcb8876bc2d079fe3d91b7">   74</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a> <a class="code" href="classlibMesh_1_1Quad.html#ac005994c8dfcb8876bc2d079fe3d91b7">master_point</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    libmesh_assert_less(i, this-&gt;<a class="code" href="classlibMesh_1_1Quad.html#a71ddac21e60aa7c8ab024ec9b6721ccd">n_nodes</a>());</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1Point.html">Point</a>(<a class="code" href="classlibMesh_1_1Quad.html#adee35d652e20ae319d819728833ba7bb">_master_points</a>[i][0],</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                 <a class="code" href="classlibMesh_1_1Quad.html#adee35d652e20ae319d819728833ba7bb">_master_points</a>[i][1],</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                 <a class="code" href="classlibMesh_1_1Quad.html#adee35d652e20ae319d819728833ba7bb">_master_points</a>[i][2]);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#a71ddac21e60aa7c8ab024ec9b6721ccd">   86</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#a71ddac21e60aa7c8ab024ec9b6721ccd">n_nodes</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> 4; }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#a6a24ed21c88d8bcc7b8a2ff9882d83fe">   91</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#a6a24ed21c88d8bcc7b8a2ff9882d83fe">n_sides</a>() const override final { <span class="keywordflow">return</span> 4; }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#a04fcc80b47bcd7bef8ebc21b39f8f2b3">   96</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#a04fcc80b47bcd7bef8ebc21b39f8f2b3">n_vertices</a>() const override final { <span class="keywordflow">return</span> 4; }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#a1b6e0ee9622bf8876a783a2221c3f7ad">  101</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#a1b6e0ee9622bf8876a783a2221c3f7ad">n_edges</a>() const override final { <span class="keywordflow">return</span> 4; }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#a167efa74cec85a02cee6224ebe956f82">  106</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#a167efa74cec85a02cee6224ebe956f82">n_children</a>() const override final { <span class="keywordflow">return</span> 4; }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Quad.html#add1cc7e6b92bfd2d0ab6bf0323b734f3">is_child_on_side</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> c,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#a655d00007d646a8e504377e4d9867224">opposite_side</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#a77ddfcc8e8f711e8cf6974359284756b">opposite_node</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                     <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">using</span> <a class="code" href="classlibMesh_1_1Elem.html#a457b879a3e3fbdc308eb28f8cb73e3b8">Elem::key</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> <a class="code" href="classlibMesh_1_1Quad.html#ae3ff77717d897b2578eb780fe84678d6">key</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> <a class="code" href="classlibMesh_1_1Quad.html#ae3ff77717d897b2578eb780fe84678d6">key</a> () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#aa4c511db1be67073ad140e4a28286d78">local_side_node</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> side,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> side_node) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#a19df2a2b1a9151ebcbf977e4392ec55c">local_edge_node</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> edge,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> edge_node) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;Elem&gt; <a class="code" href="classlibMesh_1_1Quad.html#acd97e608004c58b35dbf28f9e6395031">side_ptr</a> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1Quad.html#acd97e608004c58b35dbf28f9e6395031">side_ptr</a> (std::unique_ptr&lt;Elem&gt; &amp; elem,</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1Quad.html#a5baa1c8a5b94af95b50edd92b2ff8cfd">quality</a> (<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a946d81af6e15ff9ef6c3ad477b8816e5">ElemQuality</a> q) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keyword">virtual</span> std::pair&lt;Real, Real&gt; <a class="code" href="classlibMesh_1_1Quad.html#a818fe438b0488c2b813b87ea90eb31c3">qual_bounds</a> (<span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a946d81af6e15ff9ef6c3ad477b8816e5">ElemQuality</a> q) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#ad4393e6a065022df03a3947900f7a53c">  189</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#ad4393e6a065022df03a3947900f7a53c">n_permutations</a>() const override final { <span class="keywordflow">return</span> 4; }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1Quad.html#a46fd9becc47b94c5fbe791a7e1f5e373">is_flipped</a>() const override final;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;protected:</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#a4fbd42e6f82de146434218a58813c3bf">  198</a></span>&#160;  <a class="code" href="classlibMesh_1_1Elem.html">Elem</a> * <a class="code" href="classlibMesh_1_1Quad.html#a4fbd42e6f82de146434218a58813c3bf">_elemlinks_data</a>[5+(LIBMESH_DIM&gt;2)];</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#accbea2bdf844d9f7f40b341a9829cae0">  206</a></span>&#160;  static const <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#accbea2bdf844d9f7f40b341a9829cae0">_second_order_adjacent_vertices</a>[4][2];</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#add80df7cb52d641e6b3f843bf16cd5a0">  211</a></span>&#160;  static const <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#add80df7cb52d641e6b3f843bf16cd5a0">_second_order_vertex_child_number</a>[9];</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#aec9cd4af30c2a0cb74e8f77e11490319">  216</a></span>&#160;  static const <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#aec9cd4af30c2a0cb74e8f77e11490319">_second_order_vertex_child_index</a>[9];</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#adee35d652e20ae319d819728833ba7bb">  221</a></span>&#160;  static const <a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="code" href="classlibMesh_1_1Quad.html#adee35d652e20ae319d819728833ba7bb">_master_points</a>[9][3];</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="classlibMesh_1_1Quad.html#ab868262e70181359003c50f3a43cc6d1">  227</a></span>&#160;  static const <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1Quad.html#ab868262e70181359003c50f3a43cc6d1">_child_node_lookup</a>[4][9];</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;};</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">#endif // LIBMESH_FACE_QUAD_H</span></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a818fe438b0488c2b813b87ea90eb31c3"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a818fe438b0488c2b813b87ea90eb31c3">libMesh::Quad::qual_bounds</a></div><div class="ttdeci">virtual std::pair&lt; Real, Real &gt; qual_bounds(const ElemQuality q) const override</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8C_source.html#l00377">face_quad.C:377</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a4fbd42e6f82de146434218a58813c3bf"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a4fbd42e6f82de146434218a58813c3bf">libMesh::Quad::_elemlinks_data</a></div><div class="ttdeci">Elem * _elemlinks_data[5+(LIBMESH_DIM &gt;2)]</div><div class="ttdoc">Data for links to parent/neighbor/interior_parent elements. </div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00198">face_quad.h:198</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Node_html"><div class="ttname"><a href="classlibMesh_1_1Node.html">libMesh::Node</a></div><div class="ttdoc">A Node is like a Point, but with more information. </div><div class="ttdef"><b>Definition:</b> <a href="node_8h_source.html#l00052">node.h:52</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Face_html"><div class="ttname"><a href="classlibMesh_1_1Face.html">libMesh::Face</a></div><div class="ttdoc">The Face is an abstract element type that lives in two dimensions. </div><div class="ttdef"><b>Definition:</b> <a href="face_8h_source.html#l00037">face.h:37</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_ab868262e70181359003c50f3a43cc6d1"><div class="ttname"><a href="classlibMesh_1_1Quad.html#ab868262e70181359003c50f3a43cc6d1">libMesh::Quad::_child_node_lookup</a></div><div class="ttdeci">static const int _child_node_lookup[4][9]</div><div class="ttdoc">Lookup table from child id, child node id to &amp;quot;possible node location&amp;quot; (a simple dictionary-index in a...</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00227">face_quad.h:227</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html"><div class="ttname"><a href="classlibMesh_1_1Elem.html">libMesh::Elem</a></div><div class="ttdoc">This is the base class from which all geometric element types are derived. </div><div class="ttdef"><b>Definition:</b> <a href="elem_8h_source.html#l00094">elem.h:94</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_ae3ff77717d897b2578eb780fe84678d6"><div class="ttname"><a href="classlibMesh_1_1Quad.html#ae3ff77717d897b2578eb780fe84678d6">libMesh::Quad::key</a></div><div class="ttdeci">virtual dof_id_type key() const override</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8C_source.html#l00084">face_quad.C:84</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_adee35d652e20ae319d819728833ba7bb"><div class="ttname"><a href="classlibMesh_1_1Quad.html#adee35d652e20ae319d819728833ba7bb">libMesh::Quad::_master_points</a></div><div class="ttdeci">static const Real _master_points[9][3]</div><div class="ttdoc">Master element node locations. </div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00221">face_quad.h:221</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a167efa74cec85a02cee6224ebe956f82"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a167efa74cec85a02cee6224ebe956f82">libMesh::Quad::n_children</a></div><div class="ttdeci">virtual unsigned int n_children() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00106">face_quad.h:106</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_a6b6161aa2c540a7c75822c5962475ebf"><div class="ttname"><a href="classlibMesh_1_1Elem.html#a6b6161aa2c540a7c75822c5962475ebf">libMesh::Elem::set_interior_parent</a></div><div class="ttdeci">void set_interior_parent(Elem *p)</div><div class="ttdoc">Sets the pointer to the element&amp;#39;s interior_parent. </div><div class="ttdef"><b>Definition:</b> <a href="elem_8C_source.html#l01055">elem.C:1055</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_ad4393e6a065022df03a3947900f7a53c"><div class="ttname"><a href="classlibMesh_1_1Quad.html#ad4393e6a065022df03a3947900f7a53c">libMesh::Quad::n_permutations</a></div><div class="ttdeci">virtual unsigned int n_permutations() const overridefinal</div><div class="ttdoc">Four sides, one orientation each. </div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00189">face_quad.h:189</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_add1cc7e6b92bfd2d0ab6bf0323b734f3"><div class="ttname"><a href="classlibMesh_1_1Quad.html#add1cc7e6b92bfd2d0ab6bf0323b734f3">libMesh::Quad::is_child_on_side</a></div><div class="ttdeci">virtual bool is_child_on_side(const unsigned int c, const unsigned int s) const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8C_source.html#l00116">face_quad.C:116</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a46fd9becc47b94c5fbe791a7e1f5e373"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a46fd9becc47b94c5fbe791a7e1f5e373">libMesh::Quad::is_flipped</a></div><div class="ttdeci">virtual bool is_flipped() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8C_source.html#l00166">face_quad.C:166</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Elem_html_a457b879a3e3fbdc308eb28f8cb73e3b8"><div class="ttname"><a href="classlibMesh_1_1Elem.html#a457b879a3e3fbdc308eb28f8cb73e3b8">libMesh::Elem::key</a></div><div class="ttdeci">virtual dof_id_type key() const </div><div class="ttdef"><b>Definition:</b> <a href="elem_8C_source.html#l00562">elem.C:562</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a77ddfcc8e8f711e8cf6974359284756b"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a77ddfcc8e8f711e8cf6974359284756b">libMesh::Quad::opposite_node</a></div><div class="ttdeci">virtual unsigned int opposite_node(const unsigned int n, const unsigned int s) const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8C_source.html#l00139">face_quad.C:139</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_aec9cd4af30c2a0cb74e8f77e11490319"><div class="ttname"><a href="classlibMesh_1_1Quad.html#aec9cd4af30c2a0cb74e8f77e11490319">libMesh::Quad::_second_order_vertex_child_index</a></div><div class="ttdeci">static const unsigned short int _second_order_vertex_child_index[9]</div><div class="ttdoc">Vector that names the child vertex index for each second order node. </div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00216">face_quad.h:216</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_acd97e608004c58b35dbf28f9e6395031"><div class="ttname"><a href="classlibMesh_1_1Quad.html#acd97e608004c58b35dbf28f9e6395031">libMesh::Quad::side_ptr</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Elem &gt; side_ptr(const unsigned int i) overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8C_source.html#l00094">face_quad.C:94</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_add80df7cb52d641e6b3f843bf16cd5a0"><div class="ttname"><a href="classlibMesh_1_1Quad.html#add80df7cb52d641e6b3f843bf16cd5a0">libMesh::Quad::_second_order_vertex_child_number</a></div><div class="ttdeci">static const unsigned short int _second_order_vertex_child_number[9]</div><div class="ttdoc">Vector that names a child sharing each second order node. </div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00211">face_quad.h:211</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a946d81af6e15ff9ef6c3ad477b8816e5"><div class="ttname"><a href="namespacelibMesh.html#a946d81af6e15ff9ef6c3ad477b8816e5">libMesh::ElemQuality</a></div><div class="ttdeci">ElemQuality</div><div class="ttdoc">Defines an enum for element quality metrics. </div><div class="ttdef"><b>Definition:</b> <a href="enum__elem__quality_8h_source.html#l00034">enum_elem_quality.h:34</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_aa4c511db1be67073ad140e4a28286d78"><div class="ttname"><a href="classlibMesh_1_1Quad.html#aa4c511db1be67073ad140e4a28286d78">libMesh::Quad::local_side_node</a></div><div class="ttdeci">virtual unsigned int local_side_node(unsigned int side, unsigned int side_node) const override</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8C_source.html#l00065">face_quad.C:65</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_accbea2bdf844d9f7f40b341a9829cae0"><div class="ttname"><a href="classlibMesh_1_1Quad.html#accbea2bdf844d9f7f40b341a9829cae0">libMesh::Quad::_second_order_adjacent_vertices</a></div><div class="ttdeci">static const unsigned short int _second_order_adjacent_vertices[4][2]</div><div class="ttdoc">Matrix that tells which vertices define the location of mid-side (or second-order) nodes...</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00206">face_quad.h:206</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a5baa1c8a5b94af95b50edd92b2ff8cfd"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a5baa1c8a5b94af95b50edd92b2ff8cfd">libMesh::Quad::quality</a></div><div class="ttdeci">virtual Real quality(const ElemQuality q) const override</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8C_source.html#l00181">face_quad.C:181</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a6a24ed21c88d8bcc7b8a2ff9882d83fe"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a6a24ed21c88d8bcc7b8a2ff9882d83fe">libMesh::Quad::n_sides</a></div><div class="ttdeci">virtual unsigned int n_sides() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00091">face_quad.h:91</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_af7f1ddb7133253ed9d75fece6a32fe01"><div class="ttname"><a href="classlibMesh_1_1Quad.html#af7f1ddb7133253ed9d75fece6a32fe01">libMesh::Quad::Quad</a></div><div class="ttdeci">Quad(const unsigned int nn, Elem *p, Node **nodelinkdata)</div><div class="ttdoc">Default quadrilateral element, takes number of nodes and parent. </div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00056">face_quad.h:56</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_ac005994c8dfcb8876bc2d079fe3d91b7"><div class="ttname"><a href="classlibMesh_1_1Quad.html#ac005994c8dfcb8876bc2d079fe3d91b7">libMesh::Quad::master_point</a></div><div class="ttdeci">virtual Point master_point(const unsigned int i) const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00074">face_quad.h:74</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a305c9fa6f11934a70c5e7de241168d90"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a305c9fa6f11934a70c5e7de241168d90">libMesh::Quad::~Quad</a></div><div class="ttdeci">virtual ~Quad()=default</div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html"><div class="ttname"><a href="classlibMesh_1_1Quad.html">libMesh::Quad</a></div><div class="ttdoc">The QUAD is an element in 2D composed of 4 sides. </div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00048">face_quad.h:48</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a1b6e0ee9622bf8876a783a2221c3f7ad"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a1b6e0ee9622bf8876a783a2221c3f7ad">libMesh::Quad::n_edges</a></div><div class="ttdeci">virtual unsigned int n_edges() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00101">face_quad.h:101</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a71ddac21e60aa7c8ab024ec9b6721ccd"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a71ddac21e60aa7c8ab024ec9b6721ccd">libMesh::Quad::n_nodes</a></div><div class="ttdeci">virtual unsigned int n_nodes() const override</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00086">face_quad.h:86</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a89e6928b9159c5ac72bf5f346f748c6f"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a89e6928b9159c5ac72bf5f346f748c6f">libMesh::Quad::operator=</a></div><div class="ttdeci">Quad &amp; operator=(const Quad &amp;)=delete</div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a655d00007d646a8e504377e4d9867224"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a655d00007d646a8e504377e4d9867224">libMesh::Quad::opposite_side</a></div><div class="ttdeci">virtual unsigned int opposite_side(const unsigned int s) const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8C_source.html#l00130">face_quad.C:130</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Point_html"><div class="ttname"><a href="classlibMesh_1_1Point.html">libMesh::Point</a></div><div class="ttdoc">A Point defines a location in LIBMESH_DIM dimensional Real space. </div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00039">point.h:39</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a19df2a2b1a9151ebcbf977e4392ec55c"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a19df2a2b1a9151ebcbf977e4392ec55c">libMesh::Quad::local_edge_node</a></div><div class="ttdeci">virtual unsigned int local_edge_node(unsigned int edge, unsigned int edge_node) const override</div><div class="ttdoc">Calls local_side_node(edge, edge_node). </div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8C_source.html#l00076">face_quad.C:76</a></div></div>
+<div class="ttc" id="classlibMesh_1_1Quad_html_a04fcc80b47bcd7bef8ebc21b39f8f2b3"><div class="ttname"><a href="classlibMesh_1_1Quad.html#a04fcc80b47bcd7bef8ebc21b39f8f2b3">libMesh::Quad::n_vertices</a></div><div class="ttdeci">virtual unsigned int n_vertices() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="face__quad_8h_source.html#l00096">face_quad.h:96</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ab4541d74809228310a715b11c40587fc"><div class="ttname"><a href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">libMesh::dof_id_type</a></div><div class="ttdeci">uint8_t dof_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00067">id_types.h:67</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:02 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

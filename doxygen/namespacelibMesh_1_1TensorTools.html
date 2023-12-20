@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: libMesh::TensorTools 命名空间参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="namespacemembers.html"><span>命名空间成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelibMesh.html">libMesh</a></li><li class="navelem"><a class="el" href="namespacelibMesh_1_1TensorTools.html">TensorTools</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">libMesh::TensorTools 命名空间参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1IncrementRank.html">IncrementRank</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1IncrementRank_3_01VectorValue_3_01T_01_4_01_4.html">IncrementRank&lt; VectorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1IncrementRank_3_01TypeVector_3_01T_01_4_01_4.html">IncrementRank&lt; TypeVector&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1IncrementRank_3_01TypeTensor_3_01T_01_4_01_4.html">IncrementRank&lt; TypeTensor&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1IncrementRank_3_01TensorValue_3_01T_01_4_01_4.html">IncrementRank&lt; TensorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1IncrementRank_3_01TypeNTensor_3_01N_00_01T_01_4_01_4.html">IncrementRank&lt; TypeNTensor&lt; N, T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1DecrementRank.html">DecrementRank</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1DecrementRank_3_01VectorValue_3_01T_01_4_01_4.html">DecrementRank&lt; VectorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1DecrementRank_3_01TypeVector_3_01T_01_4_01_4.html">DecrementRank&lt; TypeVector&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1DecrementRank_3_01TensorValue_3_01T_01_4_01_4.html">DecrementRank&lt; TensorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1DecrementRank_3_01TypeTensor_3_01T_01_4_01_4.html">DecrementRank&lt; TypeTensor&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1DecrementRank_3_01TypeNTensor_3_01N_00_01T_01_4_01_4.html">DecrementRank&lt; TypeNTensor&lt; N, T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeNumber.html">MakeNumber</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeNumber_3_01std_1_1complex_3_01T_01_4_01_4.html">MakeNumber&lt; std::complex&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeNumber_3_01TypeVector_3_01T_01_4_01_4.html">MakeNumber&lt; TypeVector&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeNumber_3_01VectorValue_3_01T_01_4_01_4.html">MakeNumber&lt; VectorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeNumber_3_01TypeTensor_3_01T_01_4_01_4.html">MakeNumber&lt; TypeTensor&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeNumber_3_01TensorValue_3_01T_01_4_01_4.html">MakeNumber&lt; TensorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeNumber_3_01TypeNTensor_3_01N_00_01T_01_4_01_4.html">MakeNumber&lt; TypeNTensor&lt; N, T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeReal.html">MakeReal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeReal_3_01std_1_1complex_3_01T_01_4_01_4.html">MakeReal&lt; std::complex&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeReal_3_01TypeVector_3_01T_01_4_01_4.html">MakeReal&lt; TypeVector&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeReal_3_01VectorValue_3_01T_01_4_01_4.html">MakeReal&lt; VectorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeReal_3_01TypeTensor_3_01T_01_4_01_4.html">MakeReal&lt; TypeTensor&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeReal_3_01TensorValue_3_01T_01_4_01_4.html">MakeReal&lt; TensorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeReal_3_01TypeNTensor_3_01N_00_01T_01_4_01_4.html">MakeReal&lt; TypeNTensor&lt; N, T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits.html">MathWrapperTraits</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此辅助结构用于确定模板类是否是我们的数学结构之一， 例如TypeVector、TypeTensor及其后代  <a href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits_3_01TypeVector_3_01T_01_4_01_4.html">MathWrapperTraits&lt; TypeVector&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示模板类型是TypeVector时为true  <a href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits_3_01TypeVector_3_01T_01_4_01_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits_3_01VectorValue_3_01T_01_4_01_4.html">MathWrapperTraits&lt; VectorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示模板类型是VectorValue时为true  <a href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits_3_01VectorValue_3_01T_01_4_01_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits_3_01TypeTensor_3_01T_01_4_01_4.html">MathWrapperTraits&lt; TypeTensor&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示模板类型是TypeTensor时为true  <a href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits_3_01TypeTensor_3_01T_01_4_01_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits_3_01TensorValue_3_01T_01_4_01_4.html">MathWrapperTraits&lt; TensorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示模板类型是TensorValue时为true  <a href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits_3_01TensorValue_3_01T_01_4_01_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits_3_01TypeNTensor_3_01N_00_01T_01_4_01_4.html">MathWrapperTraits&lt; TypeNTensor&lt; N, T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示模板类型是TypeNTensor时为true  <a href="structlibMesh_1_1TensorTools_1_1MathWrapperTraits_3_01TypeNTensor_3_01N_00_01T_01_4_01_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeBaseNumber.html">MakeBaseNumber</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板结构用于创建基础数值类型，支持标量类型。 如果模板类型不是标量类型，则不会创建基础数值类型。  <a href="structlibMesh_1_1TensorTools_1_1MakeBaseNumber.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeBaseNumber_3_01T_00_01typename_01std_1_1enable__if_3_01Scala443ec0f8454bf1fb7a66806aea974eb3.html">MakeBaseNumber&lt; T, typename std::enable_if&lt; ScalarTraits&lt; T &gt;::value &gt;::type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示对于标量类型，将使用MakeNumber来创建基础数值类型。  <a href="structlibMesh_1_1TensorTools_1_1MakeBaseNumber_3_01T_00_01typename_01std_1_1enable__if_3_01Scala443ec0f8454bf1fb7a66806aea974eb3.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1MakeBaseNumber_3_01Wrapper_3_01T_01_4_00_01typename_01std_1_1enac170101808be8e0bb03f186a72cb3c41.html">MakeBaseNumber&lt; Wrapper&lt; T &gt;, typename std::enable_if&lt; MathWrapperTraits&lt; Wrapper&lt; T &gt; &gt;::value &gt;::type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板结构用于根据模板包装类型创建基础数值类型。 如果模板类型不是数学包装类型，则不会创建基础数值类型。  <a href="structlibMesh_1_1TensorTools_1_1MakeBaseNumber_3_01Wrapper_3_01T_01_4_00_01typename_01std_1_1enac170101808be8e0bb03f186a72cb3c41.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1TensorTraits.html">TensorTraits</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板结构用于获取张量的特性，包括张量的秩。 默认情况下，它被断言为false，需要为特定类型进行特化。  <a href="structlibMesh_1_1TensorTools_1_1TensorTraits.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01T_00_01typename_01std_1_1enable__if_3_01ScalarT36143a26ed3e120e89a9b16f9793e4b0.html">TensorTraits&lt; T, typename std::enable_if&lt; ScalarTraits&lt; T &gt;::value &gt;::type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示对于标量类型，张量秩为0。  <a href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01T_00_01typename_01std_1_1enable__if_3_01ScalarT36143a26ed3e120e89a9b16f9793e4b0.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01TypeVector_3_01T_01_4_01_4.html">TensorTraits&lt; TypeVector&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示对于TypeVector类型，张量秩为1。  <a href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01TypeVector_3_01T_01_4_01_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01VectorValue_3_01T_01_4_01_4.html">TensorTraits&lt; VectorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示对于VectorValue类型，张量秩为1。  <a href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01VectorValue_3_01T_01_4_01_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01TypeTensor_3_01T_01_4_01_4.html">TensorTraits&lt; TypeTensor&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示对于TypeTensor类型，张量秩为2。  <a href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01TypeTensor_3_01T_01_4_01_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01TensorValue_3_01T_01_4_01_4.html">TensorTraits&lt; TensorValue&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示对于TensorValue类型，张量秩为2。  <a href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01TensorValue_3_01T_01_4_01_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01TypeNTensor_3_01N_00_01T_01_4_01_4.html">TensorTraits&lt; TypeNTensor&lt; N, T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此模板特化表示对于TypeNTensor类型，张量秩为N，其中N是模板参数。  <a href="structlibMesh_1_1TensorTools_1_1TensorTraits_3_01TypeNTensor_3_01N_00_01T_01_4_01_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5344a854eb5e5a798e8d58d66f004940"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a5344a854eb5e5a798e8d58d66f004940">curl_from_grad</a> (const <a class="el" href="classlibMesh_1_1VectorValue.html">VectorValue</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;)</td></tr>
+<tr class="separator:a5344a854eb5e5a798e8d58d66f004940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd12959039a9a05895dfb1493de060a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1VectorValue.html">VectorValue</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#afd12959039a9a05895dfb1493de060a4">curl_from_grad</a> (const <a class="el" href="classlibMesh_1_1TensorValue.html">TensorValue</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;grad)</td></tr>
+<tr class="memdesc:afd12959039a9a05895dfb1493de060a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据梯度计算矢量的旋度  <a href="#afd12959039a9a05895dfb1493de060a4">更多...</a><br/></td></tr>
+<tr class="separator:afd12959039a9a05895dfb1493de060a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193d08f636453d92ebb96b09deb55951"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1TensorValue.html">TensorValue</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a193d08f636453d92ebb96b09deb55951">curl_from_grad</a> (const <a class="el" href="classlibMesh_1_1TypeNTensor.html">TypeNTensor</a>&lt; 3, <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;)</td></tr>
+<tr class="separator:a193d08f636453d92ebb96b09deb55951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf349d7d64168fde70c2786408d9b62a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#acf349d7d64168fde70c2786408d9b62a">div_from_grad</a> (const <a class="el" href="classlibMesh_1_1VectorValue.html">VectorValue</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;grad)</td></tr>
+<tr class="memdesc:acf349d7d64168fde70c2786408d9b62a"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚拟函数。标量的散度未定义，但需要使ExactSolution编译通过  <a href="#acf349d7d64168fde70c2786408d9b62a">更多...</a><br/></td></tr>
+<tr class="separator:acf349d7d64168fde70c2786408d9b62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc3f3e5bee41113bad3a52480f7a1bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#abcc3f3e5bee41113bad3a52480f7a1bc">div_from_grad</a> (const <a class="el" href="classlibMesh_1_1TensorValue.html">TensorValue</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;grad)</td></tr>
+<tr class="memdesc:abcc3f3e5bee41113bad3a52480f7a1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据梯度计算矢量的散度  <a href="#abcc3f3e5bee41113bad3a52480f7a1bc">更多...</a><br/></td></tr>
+<tr class="separator:abcc3f3e5bee41113bad3a52480f7a1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d73332a18eba13e6461806037b67de0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1VectorValue.html">VectorValue</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a8d73332a18eba13e6461806037b67de0">div_from_grad</a> (const <a class="el" href="classlibMesh_1_1TypeNTensor.html">TypeNTensor</a>&lt; 3, <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; &amp;)</td></tr>
+<tr class="separator:a8d73332a18eba13e6461806037b67de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a13ec120e7404c85443143d968807bb"><td class="memTemplParams" colspan="2">template&lt;typename T , typename T2 &gt; </td></tr>
+<tr class="memitem:a6a13ec120e7404c85443143d968807bb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structlibMesh_1_1boostcopy_1_1enable__if__c.html">boostcopy::enable_if_c</a><br class="typebreak"/>
+&lt; <a class="el" href="structlibMesh_1_1ScalarTraits.html">ScalarTraits</a>&lt; T &gt;::<a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a> <br class="typebreak"/>
+&amp;&amp;<a class="el" href="structlibMesh_1_1ScalarTraits.html">ScalarTraits</a>&lt; T2 &gt;::<a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>, <br class="typebreak"/>
+typename <a class="el" href="structlibMesh_1_1CompareTypes.html">CompareTypes</a>&lt; T, T2 &gt;<br class="typebreak"/>
+::supertype &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a6a13ec120e7404c85443143d968807bb">inner_product</a> (const T &amp;a, const T2 &amp;b)</td></tr>
+<tr class="separator:a6a13ec120e7404c85443143d968807bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e6784f4de1f01e1cbd82d9ef2b10f1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename T2 &gt; </td></tr>
+<tr class="memitem:a06e6784f4de1f01e1cbd82d9ef2b10f1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structlibMesh_1_1CompareTypes.html">CompareTypes</a>&lt; T, T2 &gt;::supertype&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a06e6784f4de1f01e1cbd82d9ef2b10f1">inner_product</a> (const <a class="el" href="classlibMesh_1_1TypeVector.html">TypeVector</a>&lt; T &gt; &amp;a, const <a class="el" href="classlibMesh_1_1TypeVector.html">TypeVector</a>&lt; T2 &gt; &amp;b)</td></tr>
+<tr class="separator:a06e6784f4de1f01e1cbd82d9ef2b10f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7328e1556f225b0fcebd23dcd0f5e25f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename T2 &gt; </td></tr>
+<tr class="memitem:a7328e1556f225b0fcebd23dcd0f5e25f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structlibMesh_1_1CompareTypes.html">CompareTypes</a>&lt; T, T2 &gt;::supertype&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a7328e1556f225b0fcebd23dcd0f5e25f">inner_product</a> (const <a class="el" href="classlibMesh_1_1TypeTensor.html">TypeTensor</a>&lt; T &gt; &amp;a, const <a class="el" href="classlibMesh_1_1TypeTensor.html">TypeTensor</a>&lt; T2 &gt; &amp;b)</td></tr>
+<tr class="separator:a7328e1556f225b0fcebd23dcd0f5e25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c06fcbd88071acc5d31ce1ae70b750d"><td class="memTemplParams" colspan="2">template&lt;unsigned int N, typename T , typename T2 &gt; </td></tr>
+<tr class="memitem:a2c06fcbd88071acc5d31ce1ae70b750d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structlibMesh_1_1CompareTypes.html">CompareTypes</a>&lt; T, T2 &gt;::supertype&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a2c06fcbd88071acc5d31ce1ae70b750d">inner_product</a> (const <a class="el" href="classlibMesh_1_1TypeNTensor.html">TypeNTensor</a>&lt; N, T &gt; &amp;a, const <a class="el" href="classlibMesh_1_1TypeNTensor.html">TypeNTensor</a>&lt; N, T2 &gt; &amp;b)</td></tr>
+<tr class="separator:a2c06fcbd88071acc5d31ce1ae70b750d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece0d041f4f91b393d2564f4a5e4b1ee"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aece0d041f4f91b393d2564f4a5e4b1ee"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#aece0d041f4f91b393d2564f4a5e4b1ee">norm_sq</a> (std::complex&lt; T &gt; a)</td></tr>
+<tr class="separator:aece0d041f4f91b393d2564f4a5e4b1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eaf06bc796dd58afd0aff28a2302b47"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2eaf06bc796dd58afd0aff28a2302b47"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a2eaf06bc796dd58afd0aff28a2302b47">norm_sq</a> (const T &amp;a) -&gt; decltype(<a class="el" href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a>(a))</td></tr>
+<tr class="separator:a2eaf06bc796dd58afd0aff28a2302b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9158018d1645ad06e7d4df17d1f27b6c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9158018d1645ad06e7d4df17d1f27b6c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a9158018d1645ad06e7d4df17d1f27b6c">norm_sq</a> (const <a class="el" href="classlibMesh_1_1TypeVector.html">TypeVector</a>&lt; T &gt; &amp;a) -&gt; decltype(<a class="el" href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a>(T()))</td></tr>
+<tr class="separator:a9158018d1645ad06e7d4df17d1f27b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ec553b9cee5876031526ecede2d8bc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a10ec553b9cee5876031526ecede2d8bc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a10ec553b9cee5876031526ecede2d8bc">norm_sq</a> (const <a class="el" href="classlibMesh_1_1VectorValue.html">VectorValue</a>&lt; T &gt; &amp;a) -&gt; decltype(<a class="el" href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a>(T()))</td></tr>
+<tr class="separator:a10ec553b9cee5876031526ecede2d8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c225e81b6216ee3fa9595c0be59515"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a41c225e81b6216ee3fa9595c0be59515"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1TensorTools.html#a41c225e81b6216ee3fa9595c0be59515">is_zero</a> (const T &amp;a)</td></tr>
+<tr class="separator:a41c225e81b6216ee3fa9595c0be59515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a5344a854eb5e5a798e8d58d66f004940"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> libMesh::TensorTools::curl_from_grad </td>
+          <td>(</td>
+          <td class="paramtype">const VectorValue&lt; Number &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tensor__tools_8C_source.html">tensor_tools.C</a> 第 <a class="el" href="tensor__tools_8C_source.html#l00028">28</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exact__solution_8C_source.html#l00452">libMesh::ExactSolution::_compute_error()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  libmesh_error_msg(<span class="stringliteral">&quot;Operation not defined for scalar quantities.&quot;</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="afd12959039a9a05895dfb1493de060a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1VectorValue.html">VectorValue</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; libMesh::TensorTools::curl_from_grad </td>
+          <td>(</td>
+          <td class="paramtype">const TensorValue&lt; Number &gt; &amp;&#160;</td>
+          <td class="paramname"><em>grad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据梯度计算矢量的旋度 </p>
+
+<p>在文件 <a class="el" href="tensor__tools_8C_source.html">tensor_tools.C</a> 第 <a class="el" href="tensor__tools_8C_source.html#l00033">33</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> duz_dy = grad(2,1);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> duy_dz = grad(1,2);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> dux_dz = grad(0,2);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> duz_dx = grad(2,0);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> duy_dx = grad(1,0);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> dux_dy = grad(0,1);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">return</span> VectorValue&lt;Number&gt;(duz_dy - duy_dz,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                             dux_dz - duz_dx,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                             duy_dx - dux_dy);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_html_a8b17bf24a15bc292850c3a3894e2e8f9"><div class="ttname"><a href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">libMesh::Number</a></div><div class="ttdeci">Real Number</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00214">libmesh_common.h:214</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a193d08f636453d92ebb96b09deb55951"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1TensorValue.html">TensorValue</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; libMesh::TensorTools::curl_from_grad </td>
+          <td>(</td>
+          <td class="paramtype">const TypeNTensor&lt; 3, Number &gt; &amp;&#160;</td>
+          <td class="paramname"><em>grad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>占位符，用于使ExactSolution编译通过。将根据张量的梯度计算张量的旋度。 </p>
+
+<p>在文件 <a class="el" href="tensor__tools_8C_source.html">tensor_tools.C</a> 第 <a class="el" href="tensor__tools_8C_source.html#l00048">48</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  libmesh_not_implemented();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="acf349d7d64168fde70c2786408d9b62a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> libMesh::TensorTools::div_from_grad </td>
+          <td>(</td>
+          <td class="paramtype">const VectorValue&lt; Number &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>虚拟函数。标量的散度未定义，但需要使ExactSolution编译通过 </p>
+
+<p>在文件 <a class="el" href="tensor__tools_8C_source.html">tensor_tools.C</a> 第 <a class="el" href="tensor__tools_8C_source.html#l00054">54</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="exact__solution_8C_source.html#l00452">libMesh::ExactSolution::_compute_error()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  libmesh_error_msg(<span class="stringliteral">&quot;Operation not defined for scalar quantities.&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abcc3f3e5bee41113bad3a52480f7a1bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> libMesh::TensorTools::div_from_grad </td>
+          <td>(</td>
+          <td class="paramtype">const TensorValue&lt; Number &gt; &amp;&#160;</td>
+          <td class="paramname"><em>grad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据梯度计算矢量的散度 </p>
+
+<p>在文件 <a class="el" href="tensor__tools_8C_source.html">tensor_tools.C</a> 第 <a class="el" href="tensor__tools_8C_source.html#l00059">59</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> dux_dx = grad(0,0);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> duy_dy = grad(1,1);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> duz_dz = grad(2,2);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">return</span> dux_dx + duy_dy + duz_dz;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_html_a8b17bf24a15bc292850c3a3894e2e8f9"><div class="ttname"><a href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">libMesh::Number</a></div><div class="ttdeci">Real Number</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00214">libmesh_common.h:214</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8d73332a18eba13e6461806037b67de0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1VectorValue.html">VectorValue</a>&lt; <a class="el" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> &gt; libMesh::TensorTools::div_from_grad </td>
+          <td>(</td>
+          <td class="paramtype">const TypeNTensor&lt; 3, Number &gt; &amp;&#160;</td>
+          <td class="paramname"><em>grad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>占位符，用于使ExactSolution编译通过。将根据张量的梯度计算张量的散度。 </p>
+
+<p>在文件 <a class="el" href="tensor__tools_8C_source.html">tensor_tools.C</a> 第 <a class="el" href="tensor__tools_8C_source.html#l00069">69</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  libmesh_not_implemented();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6a13ec120e7404c85443143d968807bb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename T2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structlibMesh_1_1boostcopy_1_1enable__if__c.html">boostcopy::enable_if_c</a>&lt;<a class="el" href="structlibMesh_1_1ScalarTraits.html">ScalarTraits</a>&lt;T&gt;::<a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a> &amp;&amp; <a class="el" href="structlibMesh_1_1ScalarTraits.html">ScalarTraits</a>&lt;T2&gt;::<a class="el" href="xdr__io_8C.html#a11ddd051208250c32dc4985abcafa86d">value</a>, typename <a class="el" href="structlibMesh_1_1CompareTypes.html">CompareTypes</a>&lt;T, T2&gt;::supertype&gt;::type libMesh::TensorTools::inner_product </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T2 &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tensor__tools_8h_source.html">tensor_tools.h</a> 第 <a class="el" href="tensor__tools_8h_source.html#l00047">47</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="fe__base_8C_source.html#l00976">libMesh::FEGenericBase&lt; T &gt;::coarsened_dof_values()</a>, <a class="el" href="fe__base_8C_source.html#l01847">libMesh::FEGenericBase&lt; T &gt;::compute_periodic_constraints()</a>, <a class="el" href="fe__base_8C_source.html#l01539">libMesh::FEGenericBase&lt; T &gt;::compute_proj_constraints()</a> , 以及 <a class="el" href="generic__projector_8h_source.html#l02988">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubProjector::construct_projection()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{ <span class="keywordflow">return</span> a * b; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a06e6784f4de1f01e1cbd82d9ef2b10f1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename T2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structlibMesh_1_1CompareTypes.html">CompareTypes</a>&lt;T, T2&gt;::supertype libMesh::TensorTools::inner_product </td>
+          <td>(</td>
+          <td class="paramtype">const TypeVector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TypeVector&lt; T2 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tensor__tools_8h_source.html">tensor_tools.h</a> 第 <a class="el" href="tensor__tools_8h_source.html#l00054">54</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{ <span class="keywordflow">return</span> a * b; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7328e1556f225b0fcebd23dcd0f5e25f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename T2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structlibMesh_1_1CompareTypes.html">CompareTypes</a>&lt;T, T2&gt;::supertype libMesh::TensorTools::inner_product </td>
+          <td>(</td>
+          <td class="paramtype">const TypeTensor&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TypeTensor&lt; T2 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tensor__tools_8h_source.html">tensor_tools.h</a> 第 <a class="el" href="tensor__tools_8h_source.html#l00061">61</a> 行定义.</p>
+
+<p>参考 <a class="el" href="type__tensor_8h_source.html#l01358">libMesh::TypeTensor&lt; T &gt;::contract()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{ <span class="keywordflow">return</span> a.contract(b); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2c06fcbd88071acc5d31ce1ae70b750d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned int N, typename T , typename T2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structlibMesh_1_1CompareTypes.html">CompareTypes</a>&lt;T, T2&gt;::supertype libMesh::TensorTools::inner_product </td>
+          <td>(</td>
+          <td class="paramtype">const TypeNTensor&lt; N, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TypeNTensor&lt; N, T2 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tensor__tools_8h_source.html">tensor_tools.h</a> 第 <a class="el" href="tensor__tools_8h_source.html#l00068">68</a> 行定义.</p>
+
+<p>参考 <a class="el" href="type__n__tensor_8h_source.html#l00197">libMesh::TypeNTensor&lt; N, T &gt;::contract()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{ <span class="keywordflow">return</span> a.contract(b); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a41c225e81b6216ee3fa9595c0be59515"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::TensorTools::is_zero </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tensor__tools_8h_source.html">tensor_tools.h</a> 第 <a class="el" href="tensor__tools_8h_source.html#l00097">97</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{ <span class="keywordflow">return</span> a.is_zero();}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aece0d041f4f91b393d2564f4a5e4b1ee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T libMesh::TensorTools::norm_sq </td>
+          <td>(</td>
+          <td class="paramtype">std::complex&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tensor__tools_8h_source.html">tensor_tools.h</a> 第 <a class="el" href="tensor__tools_8h_source.html#l00074">74</a> 行定义.</p>
+
+<p>参考 <a class="el" href="type__vector_8h_source.html#l00064">std::norm()</a>.</p>
+
+<p>参考自 <a class="el" href="exact__solution_8C_source.html#l00452">libMesh::ExactSolution::_compute_error()</a>, <a class="el" href="uniform__refinement__estimator_8C_source.html#l00119">libMesh::UniformRefinementEstimator::_estimate_error()</a>, <a class="el" href="discontinuity__measure_8C_source.html#l00129">libMesh::DiscontinuityMeasure::boundary_side_integration()</a>, <a class="el" href="kelly__error__estimator_8C_source.html#l00135">libMesh::KellyErrorEstimator::boundary_side_integration()</a>, <a class="el" href="system_8C_source.html#l01693">libMesh::System::calculate_norm()</a>, <a class="el" href="cell__tet_8C_source.html#l00180">libMesh::Tet::choose_diagonal()</a>, <a class="el" href="face__inf__quad4_8C_source.html#l00107">libMesh::InfQuad4::contains_point()</a>, <a class="el" href="cell__inf__prism_8C_source.html#l00222">libMesh::InfPrism::contains_point()</a>, <a class="el" href="cell__inf__hex_8C_source.html#l00479">libMesh::InfHex::contains_point()</a>, <a class="el" href="exact__error__estimator_8C_source.html#l00402">libMesh::ExactErrorEstimator::find_squared_element_error()</a>, <a class="el" href="fourth__error__estimators_8C_source.html#l00090">libMesh::LaplacianErrorEstimator::internal_side_integration()</a>, <a class="el" href="discontinuity__measure_8C_source.html#l00086">libMesh::DiscontinuityMeasure::internal_side_integration()</a>, <a class="el" href="kelly__error__estimator_8C_source.html#l00090">libMesh::KellyErrorEstimator::internal_side_integration()</a>, <a class="el" href="dense__subvector_8h_source.html#l00273">libMesh::DenseSubVector&lt; T &gt;::l2_norm()</a>, <a class="el" href="distributed__vector_8C_source.html#l00092">libMesh::DistributedVector&lt; T &gt;::l2_norm()</a>, <a class="el" href="dense__vector_8h_source.html#l00671">libMesh::DenseVector&lt; T &gt;::l2_norm()</a>, <a class="el" href="numeric__vector_8C_source.html#l00363">libMesh::NumericVector&lt; T &gt;::l2_norm_diff()</a>, <a class="el" href="dense__subvector_8h_source.html#l00287">libMesh::DenseSubVector&lt; T &gt;::linfty_norm()</a>, <a class="el" href="dense__vector_8h_source.html#l00697">libMesh::DenseVector&lt; T &gt;::linfty_norm()</a>, <a class="el" href="point__locator__base_8C_source.html#l00135">libMesh::PointLocatorBase::locate_node()</a>, <a class="el" href="type__vector_8h_source.html#l01055">libMesh::TypeVector&lt; T &gt;::norm()</a>, <a class="el" href="type__tensor_8h_source.html#l01438">libMesh::TypeTensor&lt; T &gt;::norm_sq()</a>, <a class="el" href="type__vector_8h_source.html#l01074">libMesh::TypeVector&lt; T &gt;::norm_sq()</a>, <a class="el" href="weighted__patch__recovery__error__estimator_8C_source.html#l00112">libMesh::WeightedPatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00211">libMesh::PatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="hp__coarsentest_8C_source.html#l00137">libMesh::HPCoarsenTest::select_refinement()</a> , 以及 <a class="el" href="numeric__vector_8C_source.html#l00323">libMesh::NumericVector&lt; T &gt;::subset_l2_norm()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a>(a); }</div>
+<div class="ttc" id="namespacestd_html_a6e740e64c53e9ae1489f7eee3899c10f"><div class="ttname"><a href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a></div><div class="ttdeci">ADRealEigenVector&lt; T, D, asd &gt; norm(const ADRealEigenVector&lt; T, D, asd &gt; &amp;)</div><div class="ttdoc">计算自动微分实数向量的范数。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l00064">type_vector.h:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2eaf06bc796dd58afd0aff28a2302b47"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto libMesh::TensorTools::norm_sq </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td> -&gt; decltype(<a class="el" href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a>(a))
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tensor__tools_8h_source.html">tensor_tools.h</a> 第 <a class="el" href="tensor__tools_8h_source.html#l00079">79</a> 行定义.</p>
+
+<p>参考 <a class="el" href="type__vector_8h_source.html#l00064">std::norm()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a>(a); }</div>
+<div class="ttc" id="namespacestd_html_a6e740e64c53e9ae1489f7eee3899c10f"><div class="ttname"><a href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a></div><div class="ttdeci">ADRealEigenVector&lt; T, D, asd &gt; norm(const ADRealEigenVector&lt; T, D, asd &gt; &amp;)</div><div class="ttdoc">计算自动微分实数向量的范数。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l00064">type_vector.h:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9158018d1645ad06e7d4df17d1f27b6c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto libMesh::TensorTools::norm_sq </td>
+          <td>(</td>
+          <td class="paramtype">const TypeVector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td> -&gt; decltype(<a class="el" href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a>(T()))
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tensor__tools_8h_source.html">tensor_tools.h</a> 第 <a class="el" href="tensor__tools_8h_source.html#l00085">85</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{ <span class="keywordflow">return</span> a.norm_sq(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a10ec553b9cee5876031526ecede2d8bc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto libMesh::TensorTools::norm_sq </td>
+          <td>(</td>
+          <td class="paramtype">const VectorValue&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td> -&gt; decltype(<a class="el" href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a>(T()))
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tensor__tools_8h_source.html">tensor_tools.h</a> 第 <a class="el" href="tensor__tools_8h_source.html#l00091">91</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{ <span class="keywordflow">return</span> a.norm_sq(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:48 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

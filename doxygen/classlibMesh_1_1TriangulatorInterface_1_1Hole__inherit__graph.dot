@@ -1,0 +1,16 @@
+digraph "libMesh::TriangulatorInterface::Hole"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="libMesh::TriangulatorInterface\l::Hole",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="libMesh::TriangulatorInterface\l::AffineHole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1TriangulatorInterface_1_1AffineHole.html",tooltip="A way to translate and/or rotate an existing hole; perhaps to tile it in many places or to put it at ..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="libMesh::TriangulatorInterface\l::ArbitraryHole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1TriangulatorInterface_1_1ArbitraryHole.html",tooltip="Another concrete instantiation of the hole, this one should be sufficiently general for most non-poly..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="libMesh::TriangulatorInterface\l::MeshedHole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1TriangulatorInterface_1_1MeshedHole.html",tooltip="Another concrete instantiation of the hole, as general as ArbitraryHole, but based on an existing 1D ..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="libMesh::TriangulatorInterface\l::PolygonHole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1TriangulatorInterface_1_1PolygonHole.html",tooltip="A concrete instantiation of the Hole class that describes polygonal (triangular, square, pentagonal, ...) holes. "];
+}

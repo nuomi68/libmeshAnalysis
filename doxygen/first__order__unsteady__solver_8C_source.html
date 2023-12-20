@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: /home/lwz/libmesh/src/solvers/first_order_unsteady_solver.C 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_361396e29cc252330d234b7ce0bc64a8.html">solvers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">first_order_unsteady_solver.C</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="first__order__unsteady__solver_8C.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// The libMesh Finite Element Library.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2002-2023 Benjamin S. Kirk, John W. Peterson, Roy H. Stogner</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;libmesh/first_order_unsteady_solver.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;libmesh/diff_system.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;libmesh/quadrature.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>libMesh</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FirstOrderUnsteadySolver.html#a0e53509b111f7bee8137ca33642b11f0">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1FirstOrderUnsteadySolver.html#a0e53509b111f7bee8137ca33642b11f0">FirstOrderUnsteadySolver::prepare_accel</a>(<a class="code" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp; context)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  context.<a class="code" href="classlibMesh_1_1DiffContext.html#a135567f7fbed1a9d96bcbb7eb67a32dc">get_elem_solution_accel</a>() = context.<a class="code" href="classlibMesh_1_1DiffContext.html#a60f2c24ed9b77764caa9cfce0e607efd">get_elem_solution_rate</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  context.<a class="code" href="classlibMesh_1_1DiffContext.html#a1d31c4e79026c183d48e1d9c7d254eca">elem_solution_accel_derivative</a> = context.<a class="code" href="classlibMesh_1_1DiffContext.html#aa6747913dc71cad586e6d4123c4b925f">get_elem_solution_rate_derivative</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classlibMesh_1_1FirstOrderUnsteadySolver.html#a0804044301e3a7fc7ff88aa8e20cadd1">   32</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1FirstOrderUnsteadySolver.html#a0804044301e3a7fc7ff88aa8e20cadd1">FirstOrderUnsteadySolver::compute_second_order_eqns</a>(<span class="keywordtype">bool</span> compute_jacobian, <a class="code" href="classlibMesh_1_1DiffContext.html">DiffContext</a> &amp; c)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classlibMesh_1_1FEMContext.html">FEMContext</a> &amp; context = cast_ref&lt;FEMContext &amp;&gt;(c);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_qpoints = context.<a class="code" href="classlibMesh_1_1FEMContext.html#af96292d930ad51b7b9f256cb4a5a75b3">get_element_qrule</a>().<a class="code" href="classlibMesh_1_1QBase.html#ac0395144dc0b41dd27689f303c1eba2b">n_points</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> var : <a class="code" href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">make_range</a>(context.<a class="code" href="classlibMesh_1_1DiffContext.html#a3808511b30f01331b0d05b8e5172c205">n_vars</a>()))</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classlibMesh_1_1TimeSolver.html#a0cf14c8b81127d014c49c45d88dfaf46">_system</a>.<a class="code" href="classlibMesh_1_1DifferentiablePhysics.html#aadcb53357db196860e5bc0b762555c2b">is_second_order_var</a>(var))</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dot_var = this-&gt;<a class="code" href="classlibMesh_1_1TimeSolver.html#a0cf14c8b81127d014c49c45d88dfaf46">_system</a>.<a class="code" href="classlibMesh_1_1DifferentiableSystem.html#a0ca2e533a7009a9c64425a61560aa085">get_second_order_dot_var</a>(var);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="comment">// We&#39;re assuming that the FE space for var and dot_var are the same</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>( context.<a class="code" href="classlibMesh_1_1DiffContext.html#aaad90af303f636b0e0325847b734e67b">get_system</a>().<a class="code" href="classlibMesh_1_1System.html#a56d89ed534ffce5eda02dc0137583b56">variable</a>(var).<a class="code" href="classlibMesh_1_1Variable.html#a8dcb07137d70a83fcf5b412e08e2783e">type</a>() ==</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                      context.<a class="code" href="classlibMesh_1_1DiffContext.html#aaad90af303f636b0e0325847b734e67b">get_system</a>().<a class="code" href="classlibMesh_1_1System.html#a56d89ed534ffce5eda02dc0137583b56">variable</a>(dot_var).<a class="code" href="classlibMesh_1_1Variable.html#a8dcb07137d70a83fcf5b412e08e2783e">type</a>() );</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <a class="code" href="classlibMesh_1_1FEGenericBase.html">FEBase</a> * elem_fe = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      context.<a class="code" href="classlibMesh_1_1FEMContext.html#a279f4d71ead25e062370f1b5a98f1cd8">get_element_fe</a>( var, elem_fe );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">const</span> std::vector&lt;Real&gt; &amp; JxW = elem_fe-&gt;get_JxW();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keyword">const</span> std::vector&lt;std::vector&lt;Real&gt;&gt; &amp; phi = elem_fe-&gt;get_phi();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_dofs = cast_int&lt;unsigned int&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        (context.<a class="code" href="classlibMesh_1_1DiffContext.html#a505f5de95b7a4dd1e5bde01079bb9a75">get_dof_indices</a>(dot_var).size());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="classlibMesh_1_1DenseSubVector.html">DenseSubVector&lt;Number&gt;</a> &amp; Fu = context.<a class="code" href="classlibMesh_1_1DiffContext.html#a02979c5b814868a6657b5b146bcc1763">get_elem_residual</a>(var);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="classlibMesh_1_1DenseSubMatrix.html">DenseSubMatrix&lt;Number&gt;</a> &amp; Kuu = context.<a class="code" href="classlibMesh_1_1DiffContext.html#a07d41dee2024383b2fa1b449d167936a">get_elem_jacobian</a>( var, var );</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <a class="code" href="classlibMesh_1_1DenseSubMatrix.html">DenseSubMatrix&lt;Number&gt;</a> &amp; Kuv = context.<a class="code" href="classlibMesh_1_1DiffContext.html#a07d41dee2024383b2fa1b449d167936a">get_elem_jacobian</a>( var, dot_var );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> qp = 0; qp != n_qpoints; ++qp)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> udot, v;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          context.<a class="code" href="classlibMesh_1_1FEMContext.html#a36156f54c65c8f877d67c891fb01888d">interior_rate</a>(var, qp, udot);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;          context.<a class="code" href="classlibMesh_1_1FEMContext.html#a44e73b3d2836ab9e93dd3f67dab31642">interior_value</a>(dot_var, qp, v);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; n_dofs; i++)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;              Fu(i) += JxW[qp]*(udot-v)*phi[i][qp];</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;              <span class="keywordflow">if</span> (compute_jacobian)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                  <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> rate_factor = JxW[qp]*context.<a class="code" href="classlibMesh_1_1DiffContext.html#aa6747913dc71cad586e6d4123c4b925f">get_elem_solution_rate_derivative</a>()*phi[i][qp];</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                  <a class="code" href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">Number</a> soln_factor = JxW[qp]*context.<a class="code" href="classlibMesh_1_1DiffContext.html#a29b2bb05fc4be2c5593e4630466aa75a">get_elem_solution_derivative</a>()*phi[i][qp];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                  Kuu(i,i) += rate_factor*phi[i][qp];</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                  Kuv(i,i) -= soln_factor*phi[i][qp];</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = i+1; j &lt; n_dofs; j++)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                    {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                      Kuu(i,j) += rate_factor*phi[j][qp];</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                      Kuu(j,i) += rate_factor*phi[j][qp];</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                      Kuv(i,j) -= soln_factor*phi[j][qp];</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                      Kuv(j,i) -= soln_factor*phi[j][qp];</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">return</span> compute_jacobian;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="ttc" id="classlibMesh_1_1Variable_html_a8dcb07137d70a83fcf5b412e08e2783e"><div class="ttname"><a href="classlibMesh_1_1Variable.html#a8dcb07137d70a83fcf5b412e08e2783e">libMesh::Variable::type</a></div><div class="ttdeci">const FEType &amp; type() const </div><div class="ttdef"><b>Definition:</b> <a href="variable_8h_source.html#l00140">variable.h:140</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FirstOrderUnsteadySolver_html_a0804044301e3a7fc7ff88aa8e20cadd1"><div class="ttname"><a href="classlibMesh_1_1FirstOrderUnsteadySolver.html#a0804044301e3a7fc7ff88aa8e20cadd1">libMesh::FirstOrderUnsteadySolver::compute_second_order_eqns</a></div><div class="ttdeci">bool compute_second_order_eqns(bool compute_jacobian, DiffContext &amp;c)</div><div class="ttdoc">If there are second order variables, then we need to compute their residual equations and correspondi...</div><div class="ttdef"><b>Definition:</b> <a href="first__order__unsteady__solver_8C_source.html#l00032">first_order_unsteady_solver.C:32</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html">libMesh::DiffContext</a></div><div class="ttdoc">该类提供了执行本地单元残差和雅可比积分所需的所有数据，用于物理包（例如 DifferentiableSystem 子类）。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00051">diff_context.h:51</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FirstOrderUnsteadySolver_html_a0e53509b111f7bee8137ca33642b11f0"><div class="ttname"><a href="classlibMesh_1_1FirstOrderUnsteadySolver.html#a0e53509b111f7bee8137ca33642b11f0">libMesh::FirstOrderUnsteadySolver::prepare_accel</a></div><div class="ttdeci">void prepare_accel(DiffContext &amp;context)</div><div class="ttdoc">If there are second order variables in the system, then we also prepare the accel for those variables...</div><div class="ttdef"><b>Definition:</b> <a href="first__order__unsteady__solver_8C_source.html#l00025">first_order_unsteady_solver.C:25</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_a135567f7fbed1a9d96bcbb7eb67a32dc"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#a135567f7fbed1a9d96bcbb7eb67a32dc">libMesh::DiffContext::get_elem_solution_accel</a></div><div class="ttdeci">const DenseVector&lt; Number &gt; &amp; get_elem_solution_accel() const </div><div class="ttdoc">访问器用于解对时间的加速度的单元解。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00162">diff_context.h:162</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_a505f5de95b7a4dd1e5bde01079bb9a75"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#a505f5de95b7a4dd1e5bde01079bb9a75">libMesh::DiffContext::get_dof_indices</a></div><div class="ttdeci">const std::vector&lt; dof_id_type &gt; &amp; get_dof_indices() const </div><div class="ttdoc">获取元素自由度（Degree of Freedom，简称dof）索引的访问器。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00336">diff_context.h:336</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html_a279f4d71ead25e062370f1b5a98f1cd8"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html#a279f4d71ead25e062370f1b5a98f1cd8">libMesh::FEMContext::get_element_fe</a></div><div class="ttdeci">void get_element_fe(unsigned int var, FEGenericBase&lt; OutputShape &gt; *&amp;fe) const </div><div class="ttdoc">Accessor for interior finite element object for variable var for the largest dimension in the mesh...</div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8h_source.html#l00277">fem_context.h:277</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_a02979c5b814868a6657b5b146bcc1763"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#a02979c5b814868a6657b5b146bcc1763">libMesh::DiffContext::get_elem_residual</a></div><div class="ttdeci">const DenseVector&lt; Number &gt; &amp; get_elem_residual() const </div><div class="ttdoc">元素残差的常量访问器。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00222">diff_context.h:222</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html_a44e73b3d2836ab9e93dd3f67dab31642"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html#a44e73b3d2836ab9e93dd3f67dab31642">libMesh::FEMContext::interior_value</a></div><div class="ttdeci">Number interior_value(unsigned int var, unsigned int qp) const </div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8C_source.html#l00404">fem_context.C:404</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubVector_html"><div class="ttname"><a href="classlibMesh_1_1DenseSubVector.html">libMesh::DenseSubVector</a></div><div class="ttdoc">定义了一个用于有限元计算的稠密子向量。 在将元素载荷向量累加到全局向量之前存储这些载荷向量时特别有用，尤其是在存在方程组的情况下。 所有重写的虚拟函数在 dense_vector_base.h 中有文档说明。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__subvector_8h_source.html#l00042">dense_subvector.h:42</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DifferentiableSystem_html_a0ca2e533a7009a9c64425a61560aa085"><div class="ttname"><a href="classlibMesh_1_1DifferentiableSystem.html#a0ca2e533a7009a9c64425a61560aa085">libMesh::DifferentiableSystem::get_second_order_dot_var</a></div><div class="ttdeci">unsigned int get_second_order_dot_var(unsigned int var) const </div><div class="ttdoc">对于给定的时间变量var的二阶（在时间上）变量，此方法将返回对应的“dot”变量的索引。 对于FirstOrderUnsteadySolver类，将自动添加“dot”变量，并且返回的索引将对应于该变量。...</div><div class="ttdef"><b>Definition:</b> <a href="diff__system_8C_source.html#l00306">diff_system.C:306</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_a07d41dee2024383b2fa1b449d167936a"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#a07d41dee2024383b2fa1b449d167936a">libMesh::DiffContext::get_elem_jacobian</a></div><div class="ttdeci">const DenseMatrix&lt; Number &gt; &amp; get_elem_jacobian() const </div><div class="ttdoc">元素雅可比矩阵的常量访问器。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00252">diff_context.h:252</a></div></div>
+<div class="ttc" id="classlibMesh_1_1TimeSolver_html_a0cf14c8b81127d014c49c45d88dfaf46"><div class="ttname"><a href="classlibMesh_1_1TimeSolver.html#a0cf14c8b81127d014c49c45d88dfaf46">libMesh::TimeSolver::_system</a></div><div class="ttdeci">sys_type &amp; _system</div><div class="ttdoc">A reference to the system we are solving. </div><div class="ttdef"><b>Definition:</b> <a href="time__solver_8h_source.html#l00312">time_solver.h:312</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_aa6747913dc71cad586e6d4123c4b925f"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#aa6747913dc71cad586e6d4123c4b925f">libMesh::DiffContext::get_elem_solution_rate_derivative</a></div><div class="ttdeci">Real get_elem_solution_rate_derivative() const </div><div class="ttdoc">获取当前元素解速率对未知解的导数。相应的雅可比贡献应乘以此量， 或者如果get_elem_solution_rate_derivative()为0，则可以跳过。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00407">diff_context.h:407</a></div></div>
+<div class="ttc" id="classlibMesh_1_1System_html_a56d89ed534ffce5eda02dc0137583b56"><div class="ttname"><a href="classlibMesh_1_1System.html#a56d89ed534ffce5eda02dc0137583b56">libMesh::System::variable</a></div><div class="ttdeci">const Variable &amp; variable(unsigned int var) const </div><div class="ttdoc">Return a constant reference to Variable var. </div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l02377">system.h:2377</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DenseSubMatrix_html"><div class="ttname"><a href="classlibMesh_1_1DenseSubMatrix.html">libMesh::DenseSubMatrix</a></div><div class="ttdoc">为有限元类型的计算定义密集子矩阵。 在将元素刚度矩阵相加到全局矩阵之前存储非常有用，特别是在存在方程组时。 所有重写的虚拟函数在 dense_matrix_base.h 中有文档。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__submatrix_8h_source.html#l00043">dense_submatrix.h:43</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html">libMesh::FEMContext</a></div><div class="ttdoc">This class provides all data required for a physics package (e.g. </div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8h_source.html#l00062">fem_context.h:62</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_aaad90af303f636b0e0325847b734e67b"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#aaad90af303f636b0e0325847b734e67b">libMesh::DiffContext::get_system</a></div><div class="ttdeci">const System &amp; get_system() const </div><div class="ttdoc">关联系统的访问器。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00096">diff_context.h:96</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_a60f2c24ed9b77764caa9cfce0e607efd"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#a60f2c24ed9b77764caa9cfce0e607efd">libMesh::DiffContext::get_elem_solution_rate</a></div><div class="ttdeci">const DenseVector&lt; Number &gt; &amp; get_elem_solution_rate() const </div><div class="ttdoc">访问器用于解对时间的速率的单元解。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00132">diff_context.h:132</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DifferentiablePhysics_html_aadcb53357db196860e5bc0b762555c2b"><div class="ttname"><a href="classlibMesh_1_1DifferentiablePhysics.html#aadcb53357db196860e5bc0b762555c2b">libMesh::DifferentiablePhysics::is_second_order_var</a></div><div class="ttdeci">bool is_second_order_var(unsigned int var) const </div><div class="ttdef"><b>Definition:</b> <a href="diff__physics_8h_source.html#l00522">diff_physics.h:522</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html_a36156f54c65c8f877d67c891fb01888d"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html#a36156f54c65c8f877d67c891fb01888d">libMesh::FEMContext::interior_rate</a></div><div class="ttdeci">void interior_rate(unsigned int var, unsigned int qp, OutputType &amp;u) const </div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8C_source.html#l01351">fem_context.C:1351</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_a29b2bb05fc4be2c5593e4630466aa75a"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#a29b2bb05fc4be2c5593e4630466aa75a">libMesh::DiffContext::get_elem_solution_derivative</a></div><div class="ttdeci">Real get_elem_solution_derivative() const </div><div class="ttdoc">获取当前元素解对未知解的导数。相应的雅可比贡献应乘以此量， 或者如果get_elem_solution_derivative()为0，则可以跳过。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00400">diff_context.h:400</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEMContext_html_af96292d930ad51b7b9f256cb4a5a75b3"><div class="ttname"><a href="classlibMesh_1_1FEMContext.html#af96292d930ad51b7b9f256cb4a5a75b3">libMesh::FEMContext::get_element_qrule</a></div><div class="ttdeci">const QBase &amp; get_element_qrule() const </div><div class="ttdoc">Accessor for element interior quadrature rule for the dimension of the current _elem. </div><div class="ttdef"><b>Definition:</b> <a href="fem__context_8h_source.html#l00802">fem_context.h:802</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a18dea64f5cc7fa12c864d7571bb69d0b"><div class="ttname"><a href="namespacelibMesh.html#a18dea64f5cc7fa12c864d7571bb69d0b">libMesh::make_range</a></div><div class="ttdeci">IntRange&lt; T &gt; make_range(T beg, T end)</div><div class="ttdoc">The 2-parameter make_range() helper function returns an IntRange&amp;lt;T&amp;gt; when both input parameters are of...</div><div class="ttdef"><b>Definition:</b> <a href="int__range_8h_source.html#l00134">int_range.h:134</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a8b17bf24a15bc292850c3a3894e2e8f9"><div class="ttname"><a href="namespacelibMesh.html#a8b17bf24a15bc292850c3a3894e2e8f9">libMesh::Number</a></div><div class="ttdeci">Real Number</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00214">libmesh_common.h:214</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_a1d31c4e79026c183d48e1d9c7d254eca"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#a1d31c4e79026c183d48e1d9c7d254eca">libMesh::DiffContext::elem_solution_accel_derivative</a></div><div class="ttdeci">Real elem_solution_accel_derivative</div><div class="ttdoc">当前元素解加速度相对于当前非线性解的导数，供具有非默认质量残差项的系统使用。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00462">diff_context.h:462</a></div></div>
+<div class="ttc" id="classlibMesh_1_1QBase_html_ac0395144dc0b41dd27689f303c1eba2b"><div class="ttname"><a href="classlibMesh_1_1QBase.html#ac0395144dc0b41dd27689f303c1eba2b">libMesh::QBase::n_points</a></div><div class="ttdeci">unsigned int n_points() const </div><div class="ttdef"><b>Definition:</b> <a href="quadrature_8h_source.html#l00123">quadrature.h:123</a></div></div>
+<div class="ttc" id="classlibMesh_1_1FEGenericBase_html"><div class="ttname"><a href="classlibMesh_1_1FEGenericBase.html">libMesh::FEGenericBase</a></div><div class="ttdoc">This class forms the foundation from which generic finite elements may be derived. </div><div class="ttdef"><b>Definition:</b> <a href="exact__error__estimator_8h_source.html#l00039">exact_error_estimator.h:39</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DiffContext_html_a3808511b30f01331b0d05b8e5172c205"><div class="ttname"><a href="classlibMesh_1_1DiffContext.html#a3808511b30f01331b0d05b8e5172c205">libMesh::DiffContext::n_vars</a></div><div class="ttdeci">unsigned int n_vars() const </div><div class="ttdoc">解决方案中的变量数。 </div><div class="ttdef"><b>Definition:</b> <a href="diff__context_8h_source.html#l00090">diff_context.h:90</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 12:09:05 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

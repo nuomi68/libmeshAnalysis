@@ -1,9 +1,0 @@
-digraph "/home/lwz/libmesh/src/mesh" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_b67bea1992da7c14177dd4764c9b03c0 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_b67bea1992da7c14177dd4764c9b03c0.html"]
-  dir_ea5f1abaf92f7f47a5e7be75e4c0e6b5 [shape=box, label="mesh", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ea5f1abaf92f7f47a5e7be75e4c0e6b5.html"];
-  }
-}

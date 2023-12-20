@@ -4,5 +4,5 @@ digraph "类继承关系图"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="libMesh::FEComputeData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1FEComputeData.html",tooltip="class FEComputeData hides arbitrary data to be passed to and from children of FEBase through the FEIn..."];
+  Node1 [label="libMesh::TensorTools\l::TensorTraits\< TypeVector\l\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlibMesh_1_1TensorTools_1_1TensorTraits_3_01TypeVector_3_01T_01_4_01_4.html",tooltip="此模板特化表示对于TypeVector类型，张量秩为1。 "];
 }

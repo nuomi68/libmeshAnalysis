@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,14 +88,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
 <a href="classlibMesh_1_1PetscSolverException-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">libMesh::PetscSolverException类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A specialization of the <a class="el" href="classlibMesh_1_1SolverException.html" title="A class representing an exception during a solve. ">SolverException</a> class for PETSc.  
+<p>A specialization of the SolverException class for PETSc.  
  <a href="classlibMesh_1_1PetscSolverException.html#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="petsc__solver__exception_8h_source.html">petsc_solver_exception.h</a>&gt;</code></p>
@@ -110,21 +109,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a4503eb0d18f7f08a1c42b169c0efb7dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscSolverException.html#a4503eb0d18f7f08a1c42b169c0efb7dd">PetscSolverException</a> (int error_code_in)</td></tr>
 <tr class="separator:a4503eb0d18f7f08a1c42b169c0efb7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b7e15de06d8cdfa90816ac22374808"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SolverException.html#a97b7e15de06d8cdfa90816ac22374808">what</a> () const noexceptoverride</td></tr>
-<tr class="memdesc:a97b7e15de06d8cdfa90816ac22374808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the <a class="el" href="classlibMesh_1_1SolverException.html#a97b7e15de06d8cdfa90816ac22374808" title="Override the what() function to provide a generic error message. ">what()</a> function to provide a generic error message.  <a href="#a97b7e15de06d8cdfa90816ac22374808">更多...</a><br/></td></tr>
-<tr class="separator:a97b7e15de06d8cdfa90816ac22374808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public 属性</h2></td></tr>
-<tr class="memitem:aa7c03f8284850a24b4422a220282b703"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SolverException.html#aa7c03f8284850a24b4422a220282b703">error_code</a></td></tr>
-<tr class="memdesc:aa7c03f8284850a24b4422a220282b703"><td class="mdescLeft">&#160;</td><td class="mdescRight">The error code generated by the solver.  <a href="#aa7c03f8284850a24b4422a220282b703">更多...</a><br/></td></tr>
-<tr class="separator:aa7c03f8284850a24b4422a220282b703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acffd0cb3806b894dcaccd1e3bfdbbf65"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SolverException.html#acffd0cb3806b894dcaccd1e3bfdbbf65">what_message</a></td></tr>
-<tr class="memdesc:acffd0cb3806b894dcaccd1e3bfdbbf65"><td class="mdescLeft">&#160;</td><td class="mdescRight">string which holds the message built in the constructor.  <a href="#acffd0cb3806b894dcaccd1e3bfdbbf65">更多...</a><br/></td></tr>
-<tr class="separator:acffd0cb3806b894dcaccd1e3bfdbbf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>A specialization of the <a class="el" href="classlibMesh_1_1SolverException.html" title="A class representing an exception during a solve. ">SolverException</a> class for PETSc. </p>
+<div class="textblock"><p>A specialization of the SolverException class for PETSc. </p>
 
 <p>在文件 <a class="el" href="petsc__solver__exception_8h_source.html">petsc_solver_exception.h</a> 第 <a class="el" href="petsc__solver__exception_8h_source.html#l00054">54</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
@@ -151,118 +138,24 @@ Public 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>在文件 <a class="el" href="petsc__solver__exception_8h_source.html">petsc_solver_exception.h</a> 第 <a class="el" href="petsc__solver__exception_8h_source.html#l00057">57</a> 行定义.</p>
-
-<p>参考 <a class="el" href="libmesh__exceptions_8h_source.html#l00135">libMesh::SolverException::error_code</a> , 以及 <a class="el" href="libmesh__exceptions_8h_source.html#l00140">libMesh::SolverException::what_message</a>.</p>
 <div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                          :</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classlibMesh_1_1SolverException.html#a9e3bce676607b2bae98c4db405e4ef53">SolverException</a>(error_code_in)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    SolverException(error_code_in)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> * text;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">char</span> * specific;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// This is one scenario where we don&#39;t catch the error code</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// returned by a PETSc function :)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    PetscErrorMessage(<a class="code" href="classlibMesh_1_1SolverException.html#aa7c03f8284850a24b4422a220282b703">error_code</a>, &amp;text, &amp;specific);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    PetscErrorMessage(error_code, &amp;text, &amp;specific);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Usually the &quot;specific&quot; error message string is more useful than</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// the generic text corresponding to the error_code, since many</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// SETERRQ calls just use error_code == 1</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (specific)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="classlibMesh_1_1SolverException.html#acffd0cb3806b894dcaccd1e3bfdbbf65">what_message</a> = std::string(specific);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      what_message = std::string(specific);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (text)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="classlibMesh_1_1SolverException.html#acffd0cb3806b894dcaccd1e3bfdbbf65">what_message</a> = std::string(text);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      what_message = std::string(text);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
-<div class="ttc" id="classlibMesh_1_1SolverException_html_a9e3bce676607b2bae98c4db405e4ef53"><div class="ttname"><a href="classlibMesh_1_1SolverException.html#a9e3bce676607b2bae98c4db405e4ef53">libMesh::SolverException::SolverException</a></div><div class="ttdeci">SolverException(int error_code_in)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__exceptions_8h_source.html#l00108">libmesh_exceptions.h:108</a></div></div>
-<div class="ttc" id="classlibMesh_1_1SolverException_html_aa7c03f8284850a24b4422a220282b703"><div class="ttname"><a href="classlibMesh_1_1SolverException.html#aa7c03f8284850a24b4422a220282b703">libMesh::SolverException::error_code</a></div><div class="ttdeci">int error_code</div><div class="ttdoc">The error code generated by the solver. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh__exceptions_8h_source.html#l00135">libmesh_exceptions.h:135</a></div></div>
-<div class="ttc" id="classlibMesh_1_1SolverException_html_acffd0cb3806b894dcaccd1e3bfdbbf65"><div class="ttname"><a href="classlibMesh_1_1SolverException.html#acffd0cb3806b894dcaccd1e3bfdbbf65">libMesh::SolverException::what_message</a></div><div class="ttdeci">std::string what_message</div><div class="ttdoc">string which holds the message built in the constructor. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh__exceptions_8h_source.html#l00140">libmesh_exceptions.h:140</a></div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">成员函数说明</h2>
-<a class="anchor" id="a97b7e15de06d8cdfa90816ac22374808"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* libMesh::SolverException::what </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Override the <a class="el" href="classlibMesh_1_1SolverException.html#a97b7e15de06d8cdfa90816ac22374808" title="Override the what() function to provide a generic error message. ">what()</a> function to provide a generic error message. </p>
-
-<p>在文件 <a class="el" href="libmesh__exceptions_8h_source.html">libmesh_exceptions.h</a> 第 <a class="el" href="libmesh__exceptions_8h_source.html#l00125">125</a> 行定义.</p>
-
-<p>参考 <a class="el" href="libmesh__exceptions_8h_source.html#l00140">libMesh::SolverException::what_message</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// std::string::c_str() is noexcept in C++11, so it&#39;s safe to call</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// in what() because it can&#39;t throw.</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1SolverException.html#acffd0cb3806b894dcaccd1e3bfdbbf65">what_message</a>.c_str();</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  }</div>
-<div class="ttc" id="classlibMesh_1_1SolverException_html_acffd0cb3806b894dcaccd1e3bfdbbf65"><div class="ttname"><a href="classlibMesh_1_1SolverException.html#acffd0cb3806b894dcaccd1e3bfdbbf65">libMesh::SolverException::what_message</a></div><div class="ttdeci">std::string what_message</div><div class="ttdoc">string which holds the message built in the constructor. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh__exceptions_8h_source.html#l00140">libmesh_exceptions.h:140</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">类成员变量说明</h2>
-<a class="anchor" id="aa7c03f8284850a24b4422a220282b703"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int libMesh::SolverException::error_code</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The error code generated by the solver. </p>
-
-<p>在文件 <a class="el" href="libmesh__exceptions_8h_source.html">libmesh_exceptions.h</a> 第 <a class="el" href="libmesh__exceptions_8h_source.html#l00135">135</a> 行定义.</p>
-
-<p>参考自 <a class="el" href="petsc__solver__exception_8h_source.html#l00057">PetscSolverException()</a> , 以及 <a class="el" href="libmesh__exceptions_8h_source.html#l00108">libMesh::SolverException::SolverException()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acffd0cb3806b894dcaccd1e3bfdbbf65"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string libMesh::SolverException::what_message</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>string which holds the message built in the constructor. </p>
-
-<p>在文件 <a class="el" href="libmesh__exceptions_8h_source.html">libmesh_exceptions.h</a> 第 <a class="el" href="libmesh__exceptions_8h_source.html#l00140">140</a> 行定义.</p>
-
-<p>参考自 <a class="el" href="petsc__solver__exception_8h_source.html#l00057">PetscSolverException()</a>, <a class="el" href="libmesh__exceptions_8h_source.html#l00108">libMesh::SolverException::SolverException()</a> , 以及 <a class="el" href="libmesh__exceptions_8h_source.html#l00125">libMesh::SolverException::what()</a>.</p>
-
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
@@ -271,7 +164,7 @@ Public 属性</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 12:09:37 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 13:53:24 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

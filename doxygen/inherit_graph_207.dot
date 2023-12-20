@@ -1,8 +1,0 @@
-digraph "类继承关系图"
-{
- // INTERACTIVE_SVG=YES
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="libMesh::RefinementSelector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1RefinementSelector.html",tooltip="这个抽象类提供了一个接口，用于选择在给定网格中的每个元素上要使用的细化类型。 目前我们假设一组元素已经被标记为 h 细化，而唯一的具体子类将会更改其中一些元素以标记为 p 细化。 未来的子类可能会处理各..."];
-}

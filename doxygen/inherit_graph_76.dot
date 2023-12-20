@@ -4,5 +4,5 @@ digraph "类继承关系图"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="libMesh::FEMFunctionWrapper\l\< Output \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1FEMFunctionWrapper.html",tooltip="The FEMFunctionWrapper input functor class can be used with a GenericProjector to read values from an..."];
+  Node1 [label="libMesh::TypeNTensor\l\< N, T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1TypeNTensor.html",tooltip="该类最终将定义一个在类型为T的LIBMESH_DIM维空间中的N阶张量。 "];
 }

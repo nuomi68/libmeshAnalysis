@@ -4,5 +4,5 @@ digraph "类继承关系图"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="libMesh::BasicOStreamProxy\l\< charT, traits \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1BasicOStreamProxy.html",tooltip="This class is intended to be reseatable like a pointer-to-ostream for flexibility, but to look like a reference when used to produce less awkward user code. "];
+  Node1 [label="libMesh::ConstTypeTensor\lColumn\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1ConstTypeTensorColumn.html",tooltip="表示 ConstTypeTensorColumn 类，用于访问 TypeTensor 的列并进行只读操作。 "];
 }

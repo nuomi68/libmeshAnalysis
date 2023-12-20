@@ -1,26 +1,11 @@
-digraph "libMesh::NumericVector&lt; T &gt;"
+digraph "libMesh::NumericVector&lt; typename &gt;"
 {
  // INTERACTIVE_SVG=YES
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="libMesh::NumericVector\< T \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 [label="libMesh::NumericVector\l\< typename \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
   Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="libMesh::ReferenceCounted\lObject\< NumericVector\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1ReferenceCountedObject.html"];
-  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="libMesh::ReferenceCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1ReferenceCounter.html",tooltip="This is the base class for enabling reference counting. "];
-  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="libMesh::ParallelObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1ParallelObject.html",tooltip="An object whose state is distributed along a set of processors. "];
-  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="libMesh::DistributedVector\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DistributedVector.html",tooltip="该类提供了一个简单的并行分布式向量数据类型， 专门用于 libmesh。提供了一些集体通信功能。 "];
-  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="libMesh::EigenSparseVector\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1EigenSparseVector.html",tooltip="This class provides a nice interface to the Eigen C++-based data structures for serial vectors..."];
-  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="libMesh::EpetraVector\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1EpetraVector.html",tooltip="此类提供了对Trilinos Epetra_Vector对象的友好接口。所有重写的虚拟函数在numeric_vector.h中都有文档。 "];
-  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node8 [label="libMesh::LaspackVector\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1LaspackVector.html",tooltip="这个类为基于laspackc的串行向量数据结构提供了一个很好的接口。 所有被覆盖的虚函数都记录在numeric_vector.h中。 "];
-  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="libMesh::PetscVector\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1PetscVector.html",tooltip="该类提供了一个良好的接口，用于访问 PETSc 的 Vec 对象。所有重写的虚拟函数都在 numeric_vector.h 中有文档说明。 "];
-  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="PetscVector\< libMesh\l::Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1PetscVector.html"];
+  Node2 [label="ReferenceCountedObject\l\< NumericVector\< T \> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ParallelObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
 }

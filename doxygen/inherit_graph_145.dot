@@ -1,8 +1,0 @@
-digraph "类继承关系图"
-{
- // INTERACTIVE_SVG=YES
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="libMesh::Parallel::\lPacking\< Eigen::Matrix\l\< Scalar, Rows, Cols,\l Options, MaxRows, MaxCols \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1Parallel_1_1Packing_3_01Eigen_1_1Matrix_3_01Scalar_00_01Rows_00_01Cols_00_01Optieb76b857bed7045b2d00148d52549571.html"];
-}

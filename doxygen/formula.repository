@@ -1,171 +1,65 @@
-\form#0:$ Ue[i] = Ug[dof_indices[i]] $
-\form#1:$ \sqrt{-1} $
-\form#2:$ \pi=3.14159... $
-\form#3:$ zero=0. $
-\form#4:$ i^{th} $
-\form#5:$ j^{th} $
-\form#6:$ C^1 $
-\form#7:$ x \le 1 $
-\form#8:$ x \le 1 + \epsilon $
-\form#9:$ 1/{r^2} $
-\form#10:$ \xi \le 1 $
-\form#11:$ \xi \le 1 + \epsilon $
-\form#12:$ \{ p_n \} $
-\form#13:$ \|p - p_n\| < \mbox{\texttt{tolerance}} $
-\form#14:$ \phi(x) = \phi(\xi) $
-\form#15:$ H(curl) $
-\form#16:$ \phi = (dx/d\xi)^{-T} \hat{\phi} $
-\form#17:$ (dx/d\xi)^{-T} $
-\form#18:$ x, \xi $
-\form#19:$ \nabla \times \phi = J^{-1} * \nabla \times \hat{\phi} $
-\form#20:$ J = \det( dx/d\xi ) $
-\form#21:$ \nabla \times \phi = J^{-1} dx/d\xi \nabla \times \hat{\phi} $
-\form#22:$ H(div) $
-\form#23:$ \phi = J^{-1} (dx/d\xi) \hat{\phi} $
-\form#24:$ (dx/d\xi) $
-\form#25:$ \nabla \cdot \phi = J^{-1} \nabla \cdot \hat{\phi} $
-\form#26:$ decay= r^{-\frac{dim+1}{2}}$
-\form#27:$ decay = r^{-\frac{dim+1}{2}} $
-\form#28:$ \ge 1 $
-\form#29:$ 1/r $
-\form#30:$ v^{th} $
-\form#31:$ n^{th} $
-\form#32:$ 8 \le n < 20 $
-\form#33:$ 8 \le n < 27 $
-\form#34:$ 6^{th} $
-\form#35:$ 8 \le n < 16 $
-\form#36:$ 8 \le n < 18 $
-\form#37:$ 5^{th} $
-\form#38:$ 6 \le n < 12 $
-\form#39:$ 6 \le n < 15 $
-\form#40:$ 6 \le n < 18 $
-\form#41:$ 6 \le n < 20 $
-\form#42:$ 6 \le n < 21 $
-\form#43:$ 4 \le n < 10 $
-\form#44:$ 4 \le n < 14 $
-\form#45:$ 4 \le n < 6 $
-\form#46:$ 4 \le n < 8 $
-\form#47:$ 3 \le n < 6 $
-\form#48:$ 3 \le n < 7 $
-\form#49:$ (x, y, z) $
-\form#50:$ (r, \theta, \phi) $
-\form#51:$ 0 \le r < \infty $
-\form#52:$ 0 \le \theta < \pi $
-\form#53:$ 0 \le \phi < 2\pi $
-\form#54:$ \phi $
-\form#55:$ \theta $
-\form#56:$ nx \times ny \times nz $
-\form#57:$ [0,1] $
-\form#58:$\mathbf{a}$
-\form#59:$\mathbf{b}$
-\form#60:\[ (\mathbf{a}\mathbf{b}^T)_{i,j} = \mathbf{a}_i \mathbf{b}_j . \]
-\form#61:\[ (\mathbf{a}\mathbf{b}^H)_{i,j} = \mathbf{a}_i \mathbf{b}^*_j , \]
-\form#62:$H$
-\form#63:$*$
-\form#64:$ |Mv|_1 \leq |M|_1 |v|_1 $
-\form#65:$ |Mv|_\infty \leq |M|_\infty |v|_\infty $
-\form#66:$ Ax=b $
-\form#67:$ Ax=rhs $
-\form#68:$ A $
-\form#69:$ u_j $
-\form#70:$ u_j^H A = lambda_j u_j^H $
-\form#71:$ u_j^H $
-\form#72:$ v_j $
-\form#73:$ A v_j = lambda_j v_j $
-\form#74:$ lambda_j $
-\form#75:$(m \times n)$
-\form#76:$(0,0)$
-\form#77:$(ioff,joff)$
-\form#78:$l_1$
-\form#79:$l_2$
-\form#80:$l_\infty$
-\form#81:$ f(\mathbf{x},t) = \mbox{\texttt{v}} $
-\form#82:$ (i,j) $
-\form#83:$ (i, j) $
-\form#84:$ a \cdot X $
-\form#85:$ a $
-\form#86:$ X $
-\form#87:$ L^1 $
-\form#88:$ L^\infty $
-\form#89:$ \ell_1 $
-\form#90:$ \ell_2 $
-\form#91:$ \ell_{\infty} $
-\form#92:$ \vec{u} - \vec{v} $
-\form#93:$ \vec{u} $
-\form#94:$ \vec{u} \leftarrow \vec{u} + \vec{v} $
-\form#95:$ \vec{u} \leftarrow \vec{u} - \vec{v} $
-\form#96:$ \vec{u} \leftarrow a\vec{u} $
-\form#97:$ u_i \leftarrow u_i v_i \, \forall i$
-\form#98:$ \vec{u} \leftarrow \frac{1}{a}\vec{u} $
-\form#99:$ u_i \leftarrow \frac{u_i}{v_i} \, \forall i$
-\form#100:$ u_i \leftarrow \frac{1}{u_i} \, \forall i$
-\form#101:$ u_i \leftarrow u_i + s $
-\form#102:$ \vec{u} \leftarrow \vec{u} + a\vec{v} $
-\form#103:$ \vec{u} \leftarrow \vec{u} + A \vec{v} $
-\form#104:$ \vec{u} \leftarrow \vec{u} + A^T \vec{v} $
-\form#105:$ u_i \leftarrow |u_i| $
-\form#106:$ \vec{u} \cdot \vec{v} $
-\form#107:$ \frac{|a[i]-b[i]|}{\max_j(a[j],b[j])} $
-\form#108:$ u_i \leftarrow u_i v_i $
-\form#109:$ u_i \leftarrow \frac{v_{1,i}}{v_{2,i}} $
-\form#110:$ U \leftarrow U + A^H v $
-\form#111:$ Py=x $
-\form#112:$ P^-1 x $
-\form#113:$ M \times N $
-\form#114:$ A \leftarrow A + a*X $
-\form#115:$ |M|_1 = \max_{j} \sum_{i} |M_{ij}| $
-\form#116:$ |M|_{\infty} = \max_{i} \sum_{j} |M_{ij}| $
-\form#117:$ |Mv|_{\infty} \leq |M|_{\infty} |v|_{\infty} $
-\form#118:$ \sum_{ij} A_{ij} B_{ij} $
-\form#119:$ A \cdot x = b $
-\form#120:$ x $
-\form#121:$ i $
-\form#122:$ j $
-\form#123:\[ F(u) + G(u) - M(u,\dot{u})\dot{u} = 0 \]
-\form#124:$ F(u) = 0$
-\form#125:$F(u)$
-\form#126:$ G(u) $
-\form#127:$ M(u,\dot{u})\dot{u} $
-\form#128:\[ M(u,\ddot{u})\ddot{u} + C(u,\dot{u})\dot{u} + F(u) + G(u) = 0 \]
-\form#129:$G(u)$
-\form#130:$C(u,\dot{u})\dot{u}$
-\form#131:$ -M(u,\ddot{u})\ddot{u}$
-\form#132:${u}$
-\form#133:$\dot{u}$
-\form#134:$\ddot{u}$
-\form#135:$ u_{n+1} $
-\form#136:$ M(u,\ddot{u})\ddot{u} $
-\form#137:$ C(u,\ddot{u})\ddot{u} $
-\form#138:$ \frac{1}{V} \sum \|w_i\|, $
-\form#139:$ \mu $
-\form#140:\[ M(u)\dot{u} = F(u)\]
-\form#141:\[ M(u)\ddot{u} + C(u)\dot{u} + F(u) = 0 \]
-\form#142:$\dot{u} = v$
-\form#143:\begin{eqnarray} \dot{u} &=& v \\ M(u)\dot{v} + C(u)v + F(u) &=& 0\end{eqnarray}
-\form#144:$u$
-\form#145:$v$
-\form#146:$ \dot{u} = v$
-\form#147:$ M(u)\dot{v} + C(u)v + F(u) = 0 $
-\form#148:$ \dot{u} - v = 0 $
-\form#149:$ u $
-\form#150:$ v $
-\form#151:$\gamma$
-\form#152:$\beta$
-\form#153:$a_0$
-\form#154:$\gamma=0.5$
-\form#155:$ \beta $
-\form#156:$ \gamma $
-\form#157:$ \gamma = 1/2 $
-\form#158:$ \beta \ge \frac{1}{4} \left( \gamma + \frac{1}{2}\right)^2 $
-\form#159:$ R(X) $
-\form#160:$ J(X) $
-\form#161:$ XL $
-\form#162:$ XU $
-\form#163:$\dot{u}_n$
-\form#164:$\ddot{u}_n$
-\form#165:$ \dot{u}_n $
-\form#166:$ \ddot{u}_n $
-\form#167:$ ||A x - \lambda x|| / |\lambda x| $
-\form#168:$ t_{\theta} $
-\form#169:$ [ \texttt{n\_start, n\_stop} ]^{th} $
-\form#170:$ [ \texttt{min\_freq, max\_freq} ] $
+\form#0:$\mathbf{a}$
+\form#1:$\mathbf{b}$
+\form#2:\[ (\mathbf{a}\mathbf{b}^T)_{i,j} = \mathbf{a}_i \mathbf{b}_j . \]
+\form#3:\[ (\mathbf{a}\mathbf{b}^H)_{i,j} = \mathbf{a}_i \mathbf{b}^*_j , \]
+\form#4:$H$
+\form#5:$*$
+\form#6:$ |Mv|_1 \leq |M|_1 |v|_1 $
+\form#7:$ |Mv|_\infty \leq |M|_\infty |v|_\infty $
+\form#8:$ Ax=b $
+\form#9:$ Ax=rhs $
+\form#10:$ A $
+\form#11:$ u_j $
+\form#12:$ u_j^H A = lambda_j u_j^H $
+\form#13:$ u_j^H $
+\form#14:$ v_j $
+\form#15:$ A v_j = lambda_j v_j $
+\form#16:$ lambda_j $
+\form#17:$(m \times n)$
+\form#18:$(0,0)$
+\form#19:$(ioff,joff)$
+\form#20:$l_1$
+\form#21:$l_2$
+\form#22:$l_\infty$
+\form#23:$ f(\mathbf{x},t) = \mbox{\texttt{v}} $
+\form#24:$ (i,j) $
+\form#25:$ (i, j) $
+\form#26:$ a \cdot X $
+\form#27:$ a $
+\form#28:$ X $
+\form#29:$ L^1 $
+\form#30:$ L^\infty $
+\form#31:$ \ell_1 $
+\form#32:$ \ell_2 $
+\form#33:$ \ell_{\infty} $
+\form#34:$ \vec{u} - \vec{v} $
+\form#35:$ \vec{u} $
+\form#36:$ \vec{u} \leftarrow \vec{u} + \vec{v} $
+\form#37:$ \vec{u} \leftarrow \vec{u} - \vec{v} $
+\form#38:$ \vec{u} \leftarrow a\vec{u} $
+\form#39:$ u_i \leftarrow u_i v_i \, \forall i$
+\form#40:$ \vec{u} \leftarrow \frac{1}{a}\vec{u} $
+\form#41:$ u_i \leftarrow \frac{u_i}{v_i} \, \forall i$
+\form#42:$ u_i \leftarrow \frac{1}{u_i} \, \forall i$
+\form#43:$ u_i \leftarrow u_i + s $
+\form#44:$ \vec{u} \leftarrow \vec{u} + a\vec{v} $
+\form#45:$ \vec{u} \leftarrow \vec{u} + A \vec{v} $
+\form#46:$ \vec{u} \leftarrow \vec{u} + A^T \vec{v} $
+\form#47:$ u_i \leftarrow |u_i| $
+\form#48:$ \vec{u} \cdot \vec{v} $
+\form#49:$ \frac{|a[i]-b[i]|}{\max_j(a[j],b[j])} $
+\form#50:$ u_i \leftarrow u_i v_i $
+\form#51:$ u_i \leftarrow \frac{v_{1,i}}{v_{2,i}} $
+\form#52:$ U \leftarrow U + A^H v $
+\form#53:$ Py=x $
+\form#54:$ P^-1 x $
+\form#55:$ M \times N $
+\form#56:$ A \leftarrow A + a*X $
+\form#57:$ |M|_1 = \max_{j} \sum_{i} |M_{ij}| $
+\form#58:$ |M|_{\infty} = \max_{i} \sum_{j} |M_{ij}| $
+\form#59:$ |Mv|_{\infty} \leq |M|_{\infty} |v|_{\infty} $
+\form#60:$ \sum_{ij} A_{ij} B_{ij} $
+\form#61:$ A \cdot x = b $
+\form#62:$ x $
+\form#63:$ i $
+\form#64:$ j $

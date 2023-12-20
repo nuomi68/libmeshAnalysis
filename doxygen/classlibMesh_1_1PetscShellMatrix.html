@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,10 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
-<a href="#pro-types">Protected 类型</a> &#124;
-<a href="#pro-methods">Protected 成员函数</a> &#124;
 <a href="#pro-attribs">Protected 属性</a> &#124;
-<a href="#pro-static-attribs">静态 Protected 属性</a> &#124;
 <a href="classlibMesh_1_1PetscShellMatrix-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">libMesh::PetscShellMatrix&lt; T &gt; 模板类 参考</div>  </div>
@@ -118,16 +115,16 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:ac1e3e5fb6879baf37949c94d49e62219"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#ac1e3e5fb6879baf37949c94d49e62219">~PetscShellMatrix</a> ()=default</td></tr>
 <tr class="memdesc:ac1e3e5fb6879baf37949c94d49e62219"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认虚拟析构函数。  <a href="#ac1e3e5fb6879baf37949c94d49e62219">更多...</a><br/></td></tr>
 <tr class="separator:ac1e3e5fb6879baf37949c94d49e62219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a077e9fe39f443bfafbfbdf2c589acf5c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#a077e9fe39f443bfafbfbdf2c589acf5c">m</a> () const override</td></tr>
+<tr class="memitem:a077e9fe39f443bfafbfbdf2c589acf5c"><td class="memItemLeft" align="right" valign="top">virtual numeric_index_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#a077e9fe39f443bfafbfbdf2c589acf5c">m</a> () const override</td></tr>
 <tr class="memdesc:a077e9fe39f443bfafbfbdf2c589acf5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取矩阵的行数。  <a href="#a077e9fe39f443bfafbfbdf2c589acf5c">更多...</a><br/></td></tr>
 <tr class="separator:a077e9fe39f443bfafbfbdf2c589acf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad266918e54274ae267f9a0b36242ddbe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#ad266918e54274ae267f9a0b36242ddbe">n</a> () const override</td></tr>
+<tr class="memitem:ad266918e54274ae267f9a0b36242ddbe"><td class="memItemLeft" align="right" valign="top">virtual numeric_index_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#ad266918e54274ae267f9a0b36242ddbe">n</a> () const override</td></tr>
 <tr class="memdesc:ad266918e54274ae267f9a0b36242ddbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取矩阵的列数。  <a href="#ad266918e54274ae267f9a0b36242ddbe">更多...</a><br/></td></tr>
 <tr class="separator:ad266918e54274ae267f9a0b36242ddbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a82c19ac58bde4df925a49166c199f5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#a9a82c19ac58bde4df925a49166c199f5">local_m</a> () const </td></tr>
+<tr class="memitem:a9a82c19ac58bde4df925a49166c199f5"><td class="memItemLeft" align="right" valign="top">virtual numeric_index_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#a9a82c19ac58bde4df925a49166c199f5">local_m</a> () const </td></tr>
 <tr class="memdesc:a9a82c19ac58bde4df925a49166c199f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取本地处理的矩阵行数。  <a href="#a9a82c19ac58bde4df925a49166c199f5">更多...</a><br/></td></tr>
 <tr class="separator:a9a82c19ac58bde4df925a49166c199f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61ed02373acf9116472132c2bae12226"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#a61ed02373acf9116472132c2bae12226">local_n</a> () const </td></tr>
+<tr class="memitem:a61ed02373acf9116472132c2bae12226"><td class="memItemLeft" align="right" valign="top">virtual numeric_index_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#a61ed02373acf9116472132c2bae12226">local_n</a> () const </td></tr>
 <tr class="memdesc:a61ed02373acf9116472132c2bae12226"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取本地处理的矩阵列数。  <a href="#a61ed02373acf9116472132c2bae12226">更多...</a><br/></td></tr>
 <tr class="separator:a61ed02373acf9116472132c2bae12226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae60962be7f2a880e486d8ecb6e043b83"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#ae60962be7f2a880e486d8ecb6e043b83">vector_mult</a> (<a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; T &gt; &amp;dest, const <a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; T &gt; &amp;arg) const override</td></tr>
@@ -151,53 +148,16 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a6f33d0fe5c887127722206aea471cceb"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#a6f33d0fe5c887127722206aea471cceb">mat</a> ()</td></tr>
 <tr class="memdesc:a6f33d0fe5c887127722206aea471cceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指向底层 PETSc Mat 对象的指针。调用此函数前必须调用 <a class="el" href="classlibMesh_1_1PetscShellMatrix.html#a280c878e5030264a43a51430d7875ff2" title="初始化矩阵。 ">init()</a>。  <a href="#a6f33d0fe5c887127722206aea471cceb">更多...</a><br/></td></tr>
 <tr class="separator:a6f33d0fe5c887127722206aea471cceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d5ae7c428d4724c6db17b34176e084f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ShellMatrix.html#a6d5ae7c428d4724c6db17b34176e084f">attach_dof_map</a> (const <a class="el" href="classlibMesh_1_1DofMap.html">DofMap</a> &amp;dof_map)</td></tr>
-<tr class="memdesc:a6d5ae7c428d4724c6db17b34176e084f"><td class="mdescLeft">&#160;</td><td class="mdescRight">附加要使用的 <code><a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a></code> 指针。  <a href="#a6d5ae7c428d4724c6db17b34176e084f">更多...</a><br/></td></tr>
+<tr class="memitem:a6d5ae7c428d4724c6db17b34176e084f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ShellMatrix.html#a6d5ae7c428d4724c6db17b34176e084f">attach_dof_map</a> (const DofMap &amp;dof_map)</td></tr>
+<tr class="memdesc:a6d5ae7c428d4724c6db17b34176e084f"><td class="mdescLeft">&#160;</td><td class="mdescRight">附加要使用的 <code>DofMap</code> 指针。  <a href="#a6d5ae7c428d4724c6db17b34176e084f">更多...</a><br/></td></tr>
 <tr class="separator:a6d5ae7c428d4724c6db17b34176e084f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20de1180df21bdc9e6ca6151ed4ffda9"><td class="memItemLeft" align="right" valign="top">const Parallel::Communicator &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">comm</a> () const </td></tr>
-<tr class="separator:a20de1180df21bdc9e6ca6151ed4ffda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50719f74165b613ab929afd29b6d5f4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParallelObject.html#a50719f74165b613ab929afd29b6d5f4a">n_processors</a> () const </td></tr>
-<tr class="separator:a50719f74165b613ab929afd29b6d5f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1e7d1a1118f63d9889a761c27433bbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">processor_id</a> () const </td></tr>
-<tr class="separator:ae1e7d1a1118f63d9889a761c27433bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
 <tr class="memitem:a6be702fe777476e38b5e848a5e4c265f"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ShellMatrix.html#a6be702fe777476e38b5e848a5e4c265f">build</a> (const Parallel::Communicator &amp;<a class="el" href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">comm</a>, const <a class="el" href="namespacelibMesh.html#a8092cf1b717214f45bc1244aec8549dd">SolverPackage</a> solver_package=<a class="el" href="namespacelibMesh.html#a496c62248223cd940c7715932dd0dc2d">libMesh::default_solver_package</a>())</td></tr>
+&lt; <a class="el" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ShellMatrix.html#a6be702fe777476e38b5e848a5e4c265f">build</a> (const Parallel::Communicator &amp;comm, const SolverPackage solver_package=libMesh::default_solver_package())</td></tr>
 <tr class="memdesc:a6be702fe777476e38b5e848a5e4c265f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用指定的线性求解器包构建一个 <code>ShellMatrix&lt;T&gt;。</code>  <a href="#a6be702fe777476e38b5e848a5e4c265f">更多...</a><br/></td></tr>
 <tr class="separator:a6be702fe777476e38b5e848a5e4c265f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a103b37125ae9eaaadf6f7854df17faa2"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a103b37125ae9eaaadf6f7854df17faa2">get_info</a> ()</td></tr>
-<tr class="memdesc:a103b37125ae9eaaadf6f7854df17faa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a string containing the reference information.  <a href="#a103b37125ae9eaaadf6f7854df17faa2">更多...</a><br/></td></tr>
-<tr class="separator:a103b37125ae9eaaadf6f7854df17faa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ce734a14ffd1dbb6496dab702da8e1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a13ce734a14ffd1dbb6496dab702da8e1">print_info</a> (std::ostream &amp;out_stream=<a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>)</td></tr>
-<tr class="memdesc:a13ce734a14ffd1dbb6496dab702da8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the reference information, by default to <code><a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></code>.  <a href="#a13ce734a14ffd1dbb6496dab702da8e1">更多...</a><br/></td></tr>
-<tr class="separator:a13ce734a14ffd1dbb6496dab702da8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50e74641afc6e2870c9e1ce412f8c44f"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a50e74641afc6e2870c9e1ce412f8c44f">n_objects</a> ()</td></tr>
-<tr class="memdesc:a50e74641afc6e2870c9e1ce412f8c44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the number of outstanding (created, but not yet destroyed) objects.  <a href="#a50e74641afc6e2870c9e1ce412f8c44f">更多...</a><br/></td></tr>
-<tr class="separator:a50e74641afc6e2870c9e1ce412f8c44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86837c50216b2ddb800b3836d2a08c09"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a86837c50216b2ddb800b3836d2a08c09">enable_print_counter_info</a> ()</td></tr>
-<tr class="memdesc:a86837c50216b2ddb800b3836d2a08c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methods to enable/disable the reference counter output from <a class="el" href="classlibMesh_1_1ReferenceCounter.html#a13ce734a14ffd1dbb6496dab702da8e1" title="Prints the reference information, by default to libMesh::out. ">print_info()</a>  <a href="#a86837c50216b2ddb800b3836d2a08c09">更多...</a><br/></td></tr>
-<tr class="separator:a86837c50216b2ddb800b3836d2a08c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c0a2d3d3c531f9f069b0d623d4ace0f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a5c0a2d3d3c531f9f069b0d623d4ace0f">disable_print_counter_info</a> ()</td></tr>
-<tr class="separator:a5c0a2d3d3c531f9f069b0d623d4ace0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected 类型</h2></td></tr>
-<tr class="memitem:adb5daadc989c1fe71ec8d173adf0ed1e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
-std::pair&lt; unsigned int, <br class="typebreak"/>
-unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#adb5daadc989c1fe71ec8d173adf0ed1e">Counts</a></td></tr>
-<tr class="memdesc:adb5daadc989c1fe71ec8d173adf0ed1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure to log the information.  <a href="#adb5daadc989c1fe71ec8d173adf0ed1e">更多...</a><br/></td></tr>
-<tr class="separator:adb5daadc989c1fe71ec8d173adf0ed1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected 成员函数</h2></td></tr>
-<tr class="memitem:af0cd2f1fbd46c66dade1e750436ee7ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#af0cd2f1fbd46c66dade1e750436ee7ab">increment_constructor_count</a> (const std::string &amp;name) noexcept</td></tr>
-<tr class="memdesc:af0cd2f1fbd46c66dade1e750436ee7ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the construction counter.  <a href="#af0cd2f1fbd46c66dade1e750436ee7ab">更多...</a><br/></td></tr>
-<tr class="separator:af0cd2f1fbd46c66dade1e750436ee7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a769ddb2e2299db1aafcdfb33dfb830d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a769ddb2e2299db1aafcdfb33dfb830d8">increment_destructor_count</a> (const std::string &amp;name) noexcept</td></tr>
-<tr class="memdesc:a769ddb2e2299db1aafcdfb33dfb830d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the destruction counter.  <a href="#a769ddb2e2299db1aafcdfb33dfb830d8">更多...</a><br/></td></tr>
-<tr class="separator:a769ddb2e2299db1aafcdfb33dfb830d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected 属性</h2></td></tr>
@@ -207,27 +167,9 @@ Protected 属性</h2></td></tr>
 <tr class="memitem:aed7aedfad6c4f5e4c660e5acec9c3e03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1PetscShellMatrix.html#aed7aedfad6c4f5e4c660e5acec9c3e03">_is_initialized</a></td></tr>
 <tr class="memdesc:aed7aedfad6c4f5e4c660e5acec9c3e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示矩阵是否已初始化的标志。  <a href="#aed7aedfad6c4f5e4c660e5acec9c3e03">更多...</a><br/></td></tr>
 <tr class="separator:aed7aedfad6c4f5e4c660e5acec9c3e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab89946d220702b4bde5c57f71083009f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DofMap.html">DofMap</a> const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a></td></tr>
-<tr class="memdesc:ab89946d220702b4bde5c57f71083009f"><td class="mdescLeft">&#160;</td><td class="mdescRight">与此对象关联的 <code><a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a></code> 对象。  <a href="#ab89946d220702b4bde5c57f71083009f">更多...</a><br/></td></tr>
+<tr class="memitem:ab89946d220702b4bde5c57f71083009f"><td class="memItemLeft" align="right" valign="top">DofMap const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a></td></tr>
+<tr class="memdesc:ab89946d220702b4bde5c57f71083009f"><td class="mdescLeft">&#160;</td><td class="mdescRight">与此对象关联的 <code>DofMap</code> 对象。  <a href="#ab89946d220702b4bde5c57f71083009f">更多...</a><br/></td></tr>
 <tr class="separator:ab89946d220702b4bde5c57f71083009f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ffb5b08919ab435109a302f94a7b3eb"><td class="memItemLeft" align="right" valign="top">const Parallel::Communicator &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParallelObject.html#a1ffb5b08919ab435109a302f94a7b3eb">_communicator</a></td></tr>
-<tr class="separator:a1ffb5b08919ab435109a302f94a7b3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-静态 Protected 属性</h2></td></tr>
-<tr class="memitem:a7c913252d05560f8bc7c75a63547c4c3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classlibMesh_1_1ReferenceCounter.html#adb5daadc989c1fe71ec8d173adf0ed1e">Counts</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">_counts</a></td></tr>
-<tr class="memdesc:a7c913252d05560f8bc7c75a63547c4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actually holds the data.  <a href="#a7c913252d05560f8bc7c75a63547c4c3">更多...</a><br/></td></tr>
-<tr class="separator:a7c913252d05560f8bc7c75a63547c4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2c30f0f71dcd00f00faa8e46aa3e043"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classlibMesh_1_1Threads_1_1atomic.html">Threads::atomic</a><br class="typebreak"/>
-&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#ad2c30f0f71dcd00f00faa8e46aa3e043">_n_objects</a></td></tr>
-<tr class="memdesc:ad2c30f0f71dcd00f00faa8e46aa3e043"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of objects.  <a href="#ad2c30f0f71dcd00f00faa8e46aa3e043">更多...</a><br/></td></tr>
-<tr class="separator:ad2c30f0f71dcd00f00faa8e46aa3e043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abedbd3a4ce19686187449a8a0557b74b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classlibMesh_1_1Threads_1_1spin__mutex.html">Threads::spin_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#abedbd3a4ce19686187449a8a0557b74b">_mutex</a></td></tr>
-<tr class="memdesc:abedbd3a4ce19686187449a8a0557b74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutual exclusion object to enable thread-safe reference counting.  <a href="#abedbd3a4ce19686187449a8a0557b74b">更多...</a><br/></td></tr>
-<tr class="separator:abedbd3a4ce19686187449a8a0557b74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f75e8a4a280f2c41636f2ae1307a311"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">_enable_print_counter</a> = true</td></tr>
-<tr class="memdesc:a8f75e8a4a280f2c41636f2ae1307a311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to control whether reference count information is printed when print_info is called.  <a href="#a8f75e8a4a280f2c41636f2ae1307a311">更多...</a><br/></td></tr>
-<tr class="separator:a8f75e8a4a280f2c41636f2ae1307a311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
@@ -238,33 +180,7 @@ class libMesh::PetscShellMatrix&lt; T &gt;</h3>
 <dl class="section date"><dt>日期</dt><dd>2019 </dd></dl>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8h_source.html">petsc_shell_matrix.h</a> 第 <a class="el" href="petsc__shell__matrix_8h_source.html#l00057">57</a> 行定义.</p>
-</div><h2 class="groupheader">成员类型定义说明</h2>
-<a class="anchor" id="adb5daadc989c1fe71ec8d173adf0ed1e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::map&lt;std::string, std::pair&lt;unsigned int, unsigned int&gt; &gt; <a class="el" href="classlibMesh_1_1ReferenceCounter.html#adb5daadc989c1fe71ec8d173adf0ed1e">libMesh::ReferenceCounter::Counts</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Data structure to log the information. </p>
-<p>The log is identified by the class name. </p>
-
-<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00119">119</a> 行定义.</p>
-
-</div>
-</div>
-<h2 class="groupheader">构造及析构函数说明</h2>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
 <a class="anchor" id="a28f45bf73d00aa26d3b76ce277fb9cc0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +226,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -346,7 +262,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classlibMesh_1_1ShellMatrix.html">libMesh::ShellMatrix</a>&lt; T &gt;::attach_dof_map </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DofMap.html">DofMap</a> &amp;&#160;</td>
+          <td class="paramtype">const DofMap &amp;&#160;</td>
           <td class="paramname"><em>dof_map</em></td><td>)</td>
           <td></td>
         </tr>
@@ -358,15 +274,17 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>附加要使用的 <code><a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a></code> 指针。 </p>
+<p>附加要使用的 <code>DofMap</code> 指针。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dof_map</td><td>要附加的 <code><a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a></code> 对象 </td></tr>
+    <tr><td class="paramname">dof_map</td><td>要附加的 <code>DofMap</code> 对象 </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>在文件 <a class="el" href="shell__matrix_8h_source.html">shell_matrix.h</a> 第 <a class="el" href="shell__matrix_8h_source.html#l00120">120</a> 行定义.</p>
+
+<p>参考 <a class="el" href="shell__matrix_8h_source.html#l00141">libMesh::ShellMatrix&lt; T &gt;::_dof_map</a>.</p>
 <div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  { <a class="code" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a> = &amp;dof_map; }</div>
 <div class="ttc" id="classlibMesh_1_1ShellMatrix_html_ab89946d220702b4bde5c57f71083009f"><div class="ttname"><a href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">libMesh::ShellMatrix::_dof_map</a></div><div class="ttdeci">DofMap const * _dof_map</div><div class="ttdoc">与此对象关联的 DofMap 对象。 </div><div class="ttdef"><b>Definition:</b> <a href="shell__matrix_8h_source.html#l00141">shell_matrix.h:141</a></div></div>
 </div><!-- fragment -->
@@ -390,8 +308,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a8092cf1b717214f45bc1244aec8549dd">SolverPackage</a>&#160;</td>
-          <td class="paramname"><em>solver_package</em> = <code><a class="el" href="namespacelibMesh.html#a496c62248223cd940c7715932dd0dc2d">libMesh::default_solver_package</a>()</code>&#160;</td>
+          <td class="paramtype">const SolverPackage&#160;</td>
+          <td class="paramname"><em>solver_package</em> = <code>libMesh::default_solver_package()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -417,29 +335,22 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>返回</dt><dd>返回一个包含 <code>ShellMatrix&lt;T&gt;</code> 的 std::unique_ptr </dd></dl>
 
 <p>在文件 <a class="el" href="shell__matrix_8C_source.html">shell_matrix.C</a> 第 <a class="el" href="shell__matrix_8C_source.html#l00032">32</a> 行定义.</p>
-
-<p>参考 <a class="el" href="libmesh__common_8h_source.html#l00516">libMesh::libmesh_ignore()</a> , 以及 <a class="el" href="enum__solver__package_8h_source.html#l00036">libMesh::PETSC_SOLVERS</a>.</p>
-
-<p>参考自 <a class="el" href="eigen__system_8C_source.html#l00126">libMesh::EigenSystem::add_matrices()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Avoid unused parameter warnings when no solver packages are enabled.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="namespacelibMesh.html#a43f45640aab1af26176e69592c666432">libmesh_ignore</a>(<a class="code" href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">comm</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    libmesh_ignore(comm);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Build the appropriate vector</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">switch</span> (solver_package)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">  #ifdef LIBMESH_HAVE_PETSC</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">case</span> <a class="code" href="namespacelibMesh.html#a8092cf1b717214f45bc1244aec8549dda3a8fbb56fc5329954ccf3f2c4583db9e">PETSC_SOLVERS</a>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> std::make_unique&lt;PetscShellMatrix&lt;T&gt;&gt;(<a class="code" href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">comm</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">case</span> PETSC_SOLVERS:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> std::make_unique&lt;PetscShellMatrix&lt;T&gt;&gt;(comm);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">  #endif</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        libmesh_error_msg(<span class="stringliteral">&quot;ERROR:  Unrecognized solver package: &quot;</span> &lt;&lt; solver_package);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="ttc" id="namespacelibMesh_html_a8092cf1b717214f45bc1244aec8549dda3a8fbb56fc5329954ccf3f2c4583db9e"><div class="ttname"><a href="namespacelibMesh.html#a8092cf1b717214f45bc1244aec8549dda3a8fbb56fc5329954ccf3f2c4583db9e">libMesh::PETSC_SOLVERS</a></div><div class="ttdef"><b>Definition:</b> <a href="enum__solver__package_8h_source.html#l00036">enum_solver_package.h:36</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a43f45640aab1af26176e69592c666432"><div class="ttname"><a href="namespacelibMesh.html#a43f45640aab1af26176e69592c666432">libMesh::libmesh_ignore</a></div><div class="ttdeci">void libmesh_ignore(const Args &amp;...)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00516">libmesh_common.h:516</a></div></div>
-<div class="ttc" id="classlibMesh_1_1ParallelObject_html_a20de1180df21bdc9e6ca6151ed4ffda9"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">libMesh::ParallelObject::comm</a></div><div class="ttdeci">const Parallel::Communicator &amp; comm() const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00097">parallel_object.h:97</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -471,8 +382,6 @@ template&lt;typename T &gt; </div>
 <p>重载 <a class="el" href="classlibMesh_1_1ShellMatrix.html#a0a96d98b52e42f9be2707853c97d1e6b">libMesh::ShellMatrix&lt; T &gt;</a> .</p>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8C_source.html">petsc_shell_matrix.C</a> 第 <a class="el" href="petsc__shell__matrix_8C_source.html#l00053">53</a> 行定义.</p>
-
-<p>参考 <a class="el" href="libmesh_8C_source.html#l00242">libMesh::libMeshPrivateData::_is_initialized</a> , 以及 <a class="el" href="libmesh_8C_source.html#l00261">libMesh::initialized()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#a4e487862e0ea29f50e3dbd7c37855063">initialized</a>())</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
@@ -484,104 +393,6 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_a4e487862e0ea29f50e3dbd7c37855063"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#a4e487862e0ea29f50e3dbd7c37855063">libMesh::PetscShellMatrix::initialized</a></div><div class="ttdeci">virtual bool initialized() const </div><div class="ttdoc">检查矩阵是否已初始化。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8C_source.html#l00108">petsc_shell_matrix.C:108</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_aed7aedfad6c4f5e4c660e5acec9c3e03"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#aed7aedfad6c4f5e4c660e5acec9c3e03">libMesh::PetscShellMatrix::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">表示矩阵是否已初始化的标志。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00160">petsc_shell_matrix.h:160</a></div></div>
 <div class="ttc" id="structlibMesh_1_1WrappedPetsc_html_aa3ad21832c6cc546d389db9e90db54c2"><div class="ttname"><a href="structlibMesh_1_1WrappedPetsc.html#aa3ad21832c6cc546d389db9e90db54c2">libMesh::WrappedPetsc::destroy</a></div><div class="ttdeci">void destroy()</div><div class="ttdoc">必须特例化以调用适当的XXXDestroy()例程，以便实例化WrappedPetsc&amp;lt;T&amp;gt;对象。 </div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a20de1180df21bdc9e6ca6151ed4ffda9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Parallel::Communicator&amp; libMesh::ParallelObject::comm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>返回</dt><dd>A reference to the <code>Parallel::Communicator</code> object used by this mesh. </dd></dl>
-
-<p>在文件 <a class="el" href="parallel__object_8h_source.html">parallel_object.h</a> 第 <a class="el" href="parallel__object_8h_source.html#l00097">97</a> 行定义.</p>
-
-<p>参考 <a class="el" href="parallel__object_8h_source.html#l00120">libMesh::ParallelObject::_communicator</a>.</p>
-
-<p>参考自 <a class="el" href="petsc__diff__solver_8C_source.html#l00135">libMesh::__libmesh_petsc_diff_solver_jacobian()</a>, <a class="el" href="petsc__diff__solver_8C_source.html#l00044">libMesh::__libmesh_petsc_diff_solver_monitor()</a>, <a class="el" href="petsc__diff__solver_8C_source.html#l00088">libMesh::__libmesh_petsc_diff_solver_residual()</a>, <a class="el" href="tao__optimization__solver_8C_source.html#l00206">libMesh::__libmesh_tao_equality_constraints()</a>, <a class="el" href="tao__optimization__solver_8C_source.html#l00258">libMesh::__libmesh_tao_equality_constraints_jacobian()</a>, <a class="el" href="tao__optimization__solver_8C_source.html#l00098">libMesh::__libmesh_tao_gradient()</a>, <a class="el" href="tao__optimization__solver_8C_source.html#l00149">libMesh::__libmesh_tao_hessian()</a>, <a class="el" href="tao__optimization__solver_8C_source.html#l00307">libMesh::__libmesh_tao_inequality_constraints()</a>, <a class="el" href="tao__optimization__solver_8C_source.html#l00359">libMesh::__libmesh_tao_inequality_constraints_jacobian()</a>, <a class="el" href="tao__optimization__solver_8C_source.html#l00050">libMesh::__libmesh_tao_objective()</a>, <a class="el" href="mesh__refinement_8C_source.html#l01335">libMesh::MeshRefinement::_coarsen_elements()</a>, <a class="el" href="exact__solution_8C_source.html#l00452">libMesh::ExactSolution::_compute_error()</a>, <a class="el" href="parmetis__partitioner_8C_source.html#l00110">libMesh::ParmetisPartitioner::_do_repartition()</a>, <a class="el" href="uniform__refinement__estimator_8C_source.html#l00119">libMesh::UniformRefinementEstimator::_estimate_error()</a>, <a class="el" href="partitioner_8C_source.html#l01067">libMesh::Partitioner::_find_global_index_by_pid_map()</a>, <a class="el" href="boundary__info_8C_source.html#l03032">libMesh::BoundaryInfo::_find_id_maps()</a>, <a class="el" href="slepc__eigen__solver_8C_source.html#l00928">libMesh::SlepcEigenSolver&lt; T &gt;::_petsc_shell_matrix_get_diagonal()</a>, <a class="el" href="petsc__linear__solver_8C_source.html#l01026">libMesh::PetscLinearSolver&lt; T &gt;::_petsc_shell_matrix_get_diagonal()</a>, <a class="el" href="petsc__linear__solver_8C_source.html#l00972">libMesh::PetscLinearSolver&lt; T &gt;::_petsc_shell_matrix_mult()</a>, <a class="el" href="slepc__eigen__solver_8C_source.html#l00903">libMesh::SlepcEigenSolver&lt; T &gt;::_petsc_shell_matrix_mult()</a>, <a class="el" href="petsc__linear__solver_8C_source.html#l00996">libMesh::PetscLinearSolver&lt; T &gt;::_petsc_shell_matrix_mult_add()</a>, <a class="el" href="mesh__refinement_8C_source.html#l01468">libMesh::MeshRefinement::_refine_elements()</a>, <a class="el" href="mesh__refinement_8C_source.html#l01600">libMesh::MeshRefinement::_smooth_flags()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l05349">libMesh::DofMap::add_constraints_to_send_list()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l01019">libMesh::PetscDMWrapper::add_dofs_helper()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00961">libMesh::PetscDMWrapper::add_dofs_to_section()</a>, <a class="el" href="eigen__system_8C_source.html#l00126">libMesh::EigenSystem::add_matrices()</a>, <a class="el" href="system_8C_source.html#l00984">libMesh::System::add_matrix()</a>, <a class="el" href="system_8C_source.html#l01304">libMesh::System::add_variable()</a>, <a class="el" href="system_8C_source.html#l01418">libMesh::System::add_variables()</a>, <a class="el" href="system_8C_source.html#l00750">libMesh::System::add_vector()</a>, <a class="el" href="unstructured__mesh_8C_source.html#l01518">libMesh::UnstructuredMesh::all_complete_order()</a>, <a class="el" href="unstructured__mesh_8C_source.html#l01277">libMesh::UnstructuredMesh::all_second_order_range()</a>, <a class="el" href="mesh__modification_8C_source.html#l00333">libMesh::MeshTools::Modification::all_tri()</a>, <a class="el" href="mesh__smoother__laplace_8C_source.html#l00289">libMesh::LaplaceMeshSmoother::allgather_graph()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03708">libMesh::DofMap::allgather_recursive_constraints()</a>, <a class="el" href="fem__system_8C_source.html#l01147">libMesh::FEMSystem::assemble_qoi()</a>, <a class="el" href="nemesis__io_8C_source.html#l00161">libMesh::Nemesis_IO::assert_symmetric_cmaps()</a>, <a class="el" href="mesh__communication__global__indices_8C_source.html#l00204">libMesh::MeshCommunication::assign_global_indices()</a>, <a class="el" href="partitioner_8C_source.html#l01334">libMesh::Partitioner::assign_partitioning()</a>, <a class="el" href="mesh__generation_8C_source.html#l02238">libMesh::MeshTools::Generation::build_extrusion()</a>, <a class="el" href="boundary__info_8C_source.html#l02309">libMesh::BoundaryInfo::build_node_list_from_side_list()</a>, <a class="el" href="equation__systems_8C_source.html#l01151">libMesh::EquationSystems::build_parallel_elemental_solution_vector()</a>, <a class="el" href="equation__systems_8C_source.html#l00584">libMesh::EquationSystems::build_parallel_solution_vector()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00713">libMesh::PetscDMWrapper::build_section()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00777">libMesh::PetscDMWrapper::build_sf()</a>, <a class="el" href="mesh__base_8C_source.html#l01655">libMesh::MeshBase::cache_elem_data()</a>, <a class="el" href="system_8C_source.html#l01693">libMesh::System::calculate_norm()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l05532">libMesh::DofMap::check_dirichlet_bcid_consistency()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01530">libMesh::Nemesis_IO_Helper::compute_num_global_elem_blocks()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01419">libMesh::Nemesis_IO_Helper::compute_num_global_nodesets()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01326">libMesh::Nemesis_IO_Helper::compute_num_global_sidesets()</a>, <a class="el" href="dof__map_8C_source.html#l00296">libMesh::DofMap::computed_sparsity_already()</a>, <a class="el" href="trilinos__nox__nonlinear__solver_8C_source.html#l00094">libMesh::Problem_Interface::computeF()</a>, <a class="el" href="trilinos__nox__nonlinear__solver_8C_source.html#l00152">libMesh::Problem_Interface::computeJacobian()</a>, <a class="el" href="trilinos__nox__nonlinear__solver_8C_source.html#l00215">libMesh::Problem_Interface::computePreconditioner()</a>, <a class="el" href="continuation__system_8C_source.html#l00030">libMesh::ContinuationSystem::ContinuationSystem()</a>, <a class="el" href="exodusII__io_8C_source.html#l01118">libMesh::ExodusII_IO::copy_elemental_solution()</a>, <a class="el" href="exodusII__io_8C_source.html#l01014">libMesh::ExodusII_IO::copy_nodal_solution()</a>, <a class="el" href="exodusII__io_8C_source.html#l01234">libMesh::ExodusII_IO::copy_scalar_solution()</a>, <a class="el" href="mesh__tools_8C_source.html#l02222">libMesh::MeshTools::correct_node_proc_ids()</a>, <a class="el" href="mesh__tools_8C_source.html#l00558">libMesh::MeshTools::create_bounding_box()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l01736">libMesh::DofMap::create_dof_constraints()</a>, <a class="el" href="mesh__tools_8C_source.html#l00583">libMesh::MeshTools::create_nodal_bounding_box()</a>, <a class="el" href="mesh__refinement_8C_source.html#l00222">libMesh::MeshRefinement::create_parent_error_vector()</a>, <a class="el" href="mesh__tools_8C_source.html#l00637">libMesh::MeshTools::create_processor_bounding_box()</a>, <a class="el" href="mesh__tools_8C_source.html#l00677">libMesh::MeshTools::create_subdomain_bounding_box()</a>, <a class="el" href="petsc__matrix_8C_source.html#l00863">libMesh::PetscMatrix&lt; T &gt;::create_submatrix_nosort()</a>, <a class="el" href="mesh__communication_8C_source.html#l01976">libMesh::MeshCommunication::delete_remote_elements()</a>, <a class="el" href="dof__map_8C_source.html#l00927">libMesh::DofMap::distribute_dofs()</a>, <a class="el" href="petscdmlibmeshimpl_8C_source.html#l00616">DMlibMeshFunction()</a>, <a class="el" href="petscdmlibmeshimpl_8C_source.html#l00684">DMlibMeshJacobian()</a>, <a class="el" href="petscdmlibmeshimpl_8C_source.html#l00093">DMlibMeshSetSystem_libMesh()</a>, <a class="el" href="petscdmlibmeshimpl_8C_source.html#l00756">DMVariableBounds_libMesh()</a>, <a class="el" href="mesh__refinement__smoothing_8C_source.html#l00369">libMesh::MeshRefinement::eliminate_unrefined_patches()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03285">libMesh::DofMap::enforce_adjoint_constraints_exactly()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03113">libMesh::DofMap::enforce_constraints_exactly()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03203">libMesh::DofMap::enforce_constraints_on_residual()</a>, <a class="el" href="trilinos__epetra__vector_8h_source.html#l00875">libMesh::EpetraVector&lt; T &gt;::EpetraVector()</a>, <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00154">libMesh::PatchRecoveryErrorEstimator::estimate_error()</a>, <a class="el" href="weighted__patch__recovery__error__estimator_8C_source.html#l00055">libMesh::WeightedPatchRecoveryErrorEstimator::estimate_error()</a>, <a class="el" href="adjoint__refinement__estimator_8C_source.html#l00091">libMesh::AdjointRefinementEstimator::estimate_error()</a>, <a class="el" href="exact__error__estimator_8C_source.html#l00188">libMesh::ExactErrorEstimator::estimate_error()</a>, <a class="el" href="mesh__refinement__flagging_8C_source.html#l00445">libMesh::MeshRefinement::flag_elements_by_elem_fraction()</a>, <a class="el" href="mesh__refinement__flagging_8C_source.html#l00044">libMesh::MeshRefinement::flag_elements_by_error_fraction()</a>, <a class="el" href="mesh__refinement__flagging_8C_source.html#l00170">libMesh::MeshRefinement::flag_elements_by_error_tolerance()</a>, <a class="el" href="mesh__refinement__flagging_8C_source.html#l00583">libMesh::MeshRefinement::flag_elements_by_mean_stddev()</a>, <a class="el" href="mesh__refinement__flagging_8C_source.html#l00237">libMesh::MeshRefinement::flag_elements_by_nelem_target()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l05055">libMesh::DofMap::gather_constraints()</a>, <a class="el" href="condensed__eigen__system_8C_source.html#l00178">libMesh::CondensedEigenSystem::get_eigenpair()</a>, <a class="el" href="mesh__base_8C_source.html#l01020">libMesh::MeshBase::get_info()</a>, <a class="el" href="system_8C_source.html#l01948">libMesh::System::get_info()</a>, <a class="el" href="dof__map_8C_source.html#l02922">libMesh::DofMap::get_info()</a>, <a class="el" href="implicit__system_8C_source.html#l01188">libMesh::ImplicitSystem::get_linear_solver()</a>, <a class="el" href="rb__eim__construction_8h_source.html#l00344">libMesh::RBEIMConstruction::get_max_abs_value()</a>, <a class="el" href="location__maps_8C_source.html#l00047">libMesh::LocationMap&lt; T &gt;::init()</a>, <a class="el" href="topology__map_8C_source.html#l00036">libMesh::TopologyMap::init()</a>, <a class="el" href="time__solver_8C_source.html#l00072">libMesh::TimeSolver::init()</a>, <a class="el" href="system__subset__by__subdomain_8C_source.html#l00103">libMesh::SystemSubsetBySubdomain::init()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00451">libMesh::PetscDMWrapper::init_and_attach_petscdm()</a>, <a class="el" href="parmetis__partitioner_8C_source.html#l00241">libMesh::ParmetisPartitioner::initialize()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l02182">libMesh::ExodusII_IO_Helper::initialize()</a>, <a class="el" href="optimization__system_8C_source.html#l00083">libMesh::OptimizationSystem::initialize_equality_constraints_storage()</a>, <a class="el" href="optimization__system_8C_source.html#l00119">libMesh::OptimizationSystem::initialize_inequality_constraints_storage()</a>, <a class="el" href="mesh__tools_8C_source.html#l01783">libMesh::MeshTools::libmesh_assert_consistent_distributed()</a>, <a class="el" href="mesh__tools_8C_source.html#l01813">libMesh::MeshTools::libmesh_assert_consistent_distributed_nodes()</a>, <a class="el" href="mesh__tools_8C_source.html#l01266">libMesh::MeshTools::libmesh_assert_contiguous_dof_ids()</a>, <a class="el" href="mesh__tools_8C_source.html#l01490">libMesh::MeshTools::libmesh_assert_equal_connectivity()</a>, <a class="el" href="mesh__tools_8C_source.html#l01474">libMesh::MeshTools::libmesh_assert_equal_points()</a>, <a class="el" href="mesh__tools_8C_source.html#l01894">libMesh::MeshTools::libmesh_assert_parallel_consistent_new_node_procids()</a>, <a class="el" href="mesh__tools_8C_source.html#l01846">libMesh::MeshTools::libmesh_assert_parallel_consistent_procids&lt; Elem &gt;()</a>, <a class="el" href="mesh__tools_8C_source.html#l01932">libMesh::MeshTools::libmesh_assert_parallel_consistent_procids&lt; Node &gt;()</a>, <a class="el" href="mesh__tools_8C_source.html#l01352">libMesh::MeshTools::libmesh_assert_topology_consistent_procids&lt; Node &gt;()</a>, <a class="el" href="mesh__tools_8C_source.html#l01534">libMesh::MeshTools::libmesh_assert_valid_boundary_ids()</a>, <a class="el" href="mesh__tools_8C_source.html#l01704">libMesh::MeshTools::libmesh_assert_valid_dof_ids()</a>, <a class="el" href="mesh__tools_8C_source.html#l02034">libMesh::MeshTools::libmesh_assert_valid_neighbors()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01170">libMesh::DistributedMesh::libmesh_assert_valid_parallel_flags()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01083">libMesh::DistributedMesh::libmesh_assert_valid_parallel_object_ids()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01147">libMesh::DistributedMesh::libmesh_assert_valid_parallel_p_levels()</a>, <a class="el" href="mesh__tools_8C_source.html#l01987">libMesh::MeshTools::libmesh_assert_valid_refinement_flags()</a>, <a class="el" href="mesh__tools_8C_source.html#l01732">libMesh::MeshTools::libmesh_assert_valid_unique_ids()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00551">libMesh::libmesh_petsc_linesearch_shellfunc()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00116">libMesh::libmesh_petsc_recalculate_monitor()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00256">libMesh::libmesh_petsc_snes_fd_residual()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00447">libMesh::libmesh_petsc_snes_jacobian()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00354">libMesh::libmesh_petsc_snes_mffd_interface()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00309">libMesh::libmesh_petsc_snes_mffd_residual()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00582">libMesh::libmesh_petsc_snes_postcheck()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00173">libMesh::libmesh_petsc_snes_residual()</a>, <a class="el" href="petsc__nonlinear__solver_8C_source.html#l00054">libMesh::libmesh_petsc_snes_residual_helper()</a>, <a class="el" href="mesh__refinement__smoothing_8C_source.html#l00126">libMesh::MeshRefinement::limit_level_mismatch_at_edge()</a>, <a class="el" href="mesh__refinement__smoothing_8C_source.html#l00039">libMesh::MeshRefinement::limit_level_mismatch_at_node()</a>, <a class="el" href="mesh__refinement__smoothing_8C_source.html#l00256">libMesh::MeshRefinement::limit_overrefined_boundary()</a>, <a class="el" href="mesh__refinement__smoothing_8C_source.html#l00310">libMesh::MeshRefinement::limit_underrefined_boundary()</a>, <a class="el" href="linear__implicit__system_8C_source.html#l00035">libMesh::LinearImplicitSystem::LinearImplicitSystem()</a>, <a class="el" href="mesh__refinement_8C_source.html#l00779">libMesh::MeshRefinement::make_coarsening_compatible()</a>, <a class="el" href="mesh__communication_8C_source.html#l01634">libMesh::MeshCommunication::make_elems_parallel_consistent()</a>, <a class="el" href="mesh__refinement_8C_source.html#l00751">libMesh::MeshRefinement::make_flags_parallel_consistent()</a>, <a class="el" href="mesh__communication_8C_source.html#l01814">libMesh::MeshCommunication::make_new_node_proc_ids_parallel_consistent()</a>, <a class="el" href="mesh__communication_8C_source.html#l01934">libMesh::MeshCommunication::make_new_nodes_parallel_consistent()</a>, <a class="el" href="mesh__communication_8C_source.html#l01612">libMesh::MeshCommunication::make_node_bcids_parallel_consistent()</a>, <a class="el" href="mesh__communication_8C_source.html#l01562">libMesh::MeshCommunication::make_node_ids_parallel_consistent()</a>, <a class="el" href="mesh__communication_8C_source.html#l01785">libMesh::MeshCommunication::make_node_proc_ids_parallel_consistent()</a>, <a class="el" href="mesh__communication_8C_source.html#l01591">libMesh::MeshCommunication::make_node_unique_ids_parallel_consistent()</a>, <a class="el" href="mesh__communication_8C_source.html#l01892">libMesh::MeshCommunication::make_nodes_parallel_consistent()</a>, <a class="el" href="mesh__communication_8C_source.html#l01658">libMesh::MeshCommunication::make_p_levels_parallel_consistent()</a>, <a class="el" href="mesh__refinement_8C_source.html#l01159">libMesh::MeshRefinement::make_refinement_compatible()</a>, <a class="el" href="fem__system_8C_source.html#l01087">libMesh::FEMSystem::mesh_position_set()</a>, <a class="el" href="mesh__triangle__holes_8C_source.html#l00451">libMesh::TriangulatorInterface::MeshedHole::MeshedHole()</a>, <a class="el" href="mesh__serializer_8C_source.html#l00027">libMesh::MeshSerializer::MeshSerializer()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01696">libMesh::DistributedMesh::n_active_elem()</a>, <a class="el" href="mesh__tools_8C_source.html#l00771">libMesh::MeshTools::n_active_levels()</a>, <a class="el" href="boundary__info_8C_source.html#l02171">libMesh::BoundaryInfo::n_boundary_conds()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l01714">libMesh::DofMap::n_constrained_dofs()</a>, <a class="el" href="boundary__info_8C_source.html#l02192">libMesh::BoundaryInfo::n_edge_conds()</a>, <a class="el" href="condensed__eigen__system_8C_source.html#l00075">libMesh::CondensedEigenSystem::n_global_non_condensed_dofs()</a>, <a class="el" href="mesh__tools_8C_source.html#l00801">libMesh::MeshTools::n_levels()</a>, <a class="el" href="boundary__info_8C_source.html#l02236">libMesh::BoundaryInfo::n_nodeset_conds()</a>, <a class="el" href="mesh__tools_8C_source.html#l00866">libMesh::MeshTools::n_p_levels()</a>, <a class="el" href="boundary__info_8C_source.html#l02214">libMesh::BoundaryInfo::n_shellface_conds()</a>, <a class="el" href="mesh__base_8C_source.html#l00210">libMesh::MeshBase::operator==()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00310">libMesh::DistributedMesh::parallel_max_elem_id()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00384">libMesh::DistributedMesh::parallel_max_node_id()</a>, <a class="el" href="replicated__mesh_8C_source.html#l00688">libMesh::ReplicatedMesh::parallel_max_unique_id()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00344">libMesh::DistributedMesh::parallel_max_unique_id()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00297">libMesh::DistributedMesh::parallel_n_elem()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00371">libMesh::DistributedMesh::parallel_n_nodes()</a>, <a class="el" href="sparsity__pattern_8C_source.html#l00469">libMesh::SparsityPattern::Build::parallel_sync()</a>, <a class="el" href="boundary__info_8C_source.html#l02489">libMesh::BoundaryInfo::parallel_sync_node_ids()</a>, <a class="el" href="boundary__info_8C_source.html#l02433">libMesh::BoundaryInfo::parallel_sync_side_ids()</a>, <a class="el" href="mesh__tools_8C_source.html#l00825">libMesh::MeshTools::paranoid_n_levels()</a>, <a class="el" href="partitioner_8C_source.html#l00195">libMesh::Partitioner::partition()</a>, <a class="el" href="linear__partitioner_8C_source.html#l00036">libMesh::LinearPartitioner::partition_range()</a>, <a class="el" href="metis__partitioner_8C_source.html#l00068">libMesh::MetisPartitioner::partition_range()</a>, <a class="el" href="partitioner_8C_source.html#l00351">libMesh::Partitioner::partition_unpartitioned_elements()</a>, <a class="el" href="petsc__auto__fieldsplit_8C_source.html#l00054">libMesh::petsc_auto_fieldsplit()</a>, <a class="el" href="system_8C_source.html#l02458">libMesh::System::point_gradient()</a>, <a class="el" href="system_8C_source.html#l02602">libMesh::System::point_hessian()</a>, <a class="el" href="system_8C_source.html#l02329">libMesh::System::point_value()</a>, <a class="el" href="mesh__base_8C_source.html#l00740">libMesh::MeshBase::prepare_for_use()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02262">libMesh::DofMap::print_dof_constraints()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l01898">libMesh::DofMap::process_mesh_constraint_rows()</a>, <a class="el" href="partitioner_8C_source.html#l00578">libMesh::Partitioner::processor_pairs_to_interface_nodes()</a>, <a class="el" href="inter__mesh__projection_8C_source.html#l00043">libMesh::InterMeshProjection::project_system_vectors()</a>, <a class="el" href="nemesis__io_8C_source.html#l00198">libMesh::Nemesis_IO::read()</a>, <a class="el" href="xdr__io_8C_source.html#l01420">libMesh::XdrIO::read()</a>, <a class="el" href="equation__systems__io_8C_source.html#l00108">libMesh::EquationSystems::read()</a>, <a class="el" href="exodusII__io_8C_source.html#l00894">libMesh::ExodusII_IO::read_header()</a>, <a class="el" href="checkpoint__io_8C_source.html#l00893">libMesh::CheckpointIO::read_header()</a>, <a class="el" href="xdr__io_8C_source.html#l01552">libMesh::XdrIO::read_header()</a>, <a class="el" href="system__io_8C_source.html#l00097">libMesh::System::read_header()</a>, <a class="el" href="system__io_8C_source.html#l00302">libMesh::System::read_legacy_data()</a>, <a class="el" href="system__io_8C_source.html#l01089">libMesh::System::read_SCALAR_dofs()</a>, <a class="el" href="xdr__io_8C_source.html#l02371">libMesh::XdrIO::read_serialized_bc_names()</a>, <a class="el" href="xdr__io_8C_source.html#l02192">libMesh::XdrIO::read_serialized_bcs_helper()</a>, <a class="el" href="system__io_8C_source.html#l00765">libMesh::System::read_serialized_blocked_dof_objects()</a>, <a class="el" href="xdr__io_8C_source.html#l01727">libMesh::XdrIO::read_serialized_connectivity()</a>, <a class="el" href="xdr__io_8C_source.html#l01968">libMesh::XdrIO::read_serialized_nodes()</a>, <a class="el" href="xdr__io_8C_source.html#l02307">libMesh::XdrIO::read_serialized_nodesets()</a>, <a class="el" href="xdr__io_8C_source.html#l01664">libMesh::XdrIO::read_serialized_subdomain_names()</a>, <a class="el" href="system__io_8C_source.html#l01136">libMesh::System::read_serialized_vector()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l02763">libMesh::Nemesis_IO_Helper::read_var_names_impl()</a>, <a class="el" href="mesh__base_8C_source.html#l01538">libMesh::MeshBase::recalculate_n_partitions()</a>, <a class="el" href="mesh__refinement_8C_source.html#l00478">libMesh::MeshRefinement::refine_and_coarsen_elements()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01200">libMesh::DistributedMesh::renumber_dof_objects()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01454">libMesh::DistributedMesh::renumber_nodes_and_elements()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l04643">libMesh::DofMap::scatter_constraints()</a>, <a class="el" href="checkpoint__io_8C_source.html#l00188">libMesh::CheckpointIO::select_split_config()</a>, <a class="el" href="generic__projector_8h_source.html#l02890">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::send_and_insert_dof_values()</a>, <a class="el" href="partitioner_8C_source.html#l00656">libMesh::Partitioner::set_interface_node_processor_ids_BFS()</a>, <a class="el" href="partitioner_8C_source.html#l00631">libMesh::Partitioner::set_interface_node_processor_ids_linear()</a>, <a class="el" href="partitioner_8C_source.html#l00737">libMesh::Partitioner::set_interface_node_processor_ids_petscpartitioner()</a>, <a class="el" href="partitioner_8C_source.html#l00851">libMesh::Partitioner::set_node_processor_ids()</a>, <a class="el" href="dof__map_8C_source.html#l00356">libMesh::DofMap::set_nonlocal_dof_objects()</a>, <a class="el" href="partitioner_8C_source.html#l00425">libMesh::Partitioner::set_parent_processor_ids()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00846">libMesh::PetscDMWrapper::set_point_range_in_section()</a>, <a class="el" href="petsc__diff__solver_8C_source.html#l00342">libMesh::PetscDiffSolver::setup_petsc_data()</a>, <a class="el" href="partitioner_8C_source.html#l00297">libMesh::Partitioner::single_partition()</a>, <a class="el" href="mesh__smoother__laplace_8C_source.html#l00046">libMesh::LaplaceMeshSmoother::smooth()</a>, <a class="el" href="checkpoint__io_8C_source.html#l00138">libMesh::split_mesh()</a>, <a class="el" href="mesh__base_8C_source.html#l00897">libMesh::MeshBase::subdomain_ids()</a>, <a class="el" href="boundary__info_8C_source.html#l00428">libMesh::BoundaryInfo::sync()</a>, <a class="el" href="parallel__ghost__sync_8h_source.html#l00453">libMesh::Parallel::sync_element_data_by_parent_id()</a>, <a class="el" href="parallel__ghost__sync_8h_source.html#l00780">libMesh::Parallel::sync_node_data_by_element_id()</a>, <a class="el" href="parallel__ghost__sync_8h_source.html#l00580">libMesh::Parallel::sync_node_data_by_element_id_once()</a>, <a class="el" href="mesh__refinement_8C_source.html#l00355">libMesh::MeshRefinement::test_level_one()</a>, <a class="el" href="mesh__refinement_8C_source.html#l00430">libMesh::MeshRefinement::test_unflagged()</a>, <a class="el" href="mesh__tools_8C_source.html#l00413">libMesh::MeshTools::total_weight()</a>, <a class="el" href="poly2tri__triangulator_8C_source.html#l00368">libMesh::Poly2TriTriangulator::triangulate()</a>, <a class="el" href="mesh__refinement_8C_source.html#l01709">libMesh::MeshRefinement::uniformly_coarsen()</a>, <a class="el" href="namebased__io_8C_source.html#l00308">libMesh::NameBasedIO::write()</a>, <a class="el" href="xdr__io_8C_source.html#l00111">libMesh::XdrIO::write()</a>, <a class="el" href="system__io_8C_source.html#l02062">libMesh::System::write_SCALAR_dofs()</a>, <a class="el" href="xdr__io_8C_source.html#l01163">libMesh::XdrIO::write_serialized_bcs_helper()</a>, <a class="el" href="system__io_8C_source.html#l01776">libMesh::System::write_serialized_blocked_dof_objects()</a>, <a class="el" href="xdr__io_8C_source.html#l00330">libMesh::XdrIO::write_serialized_connectivity()</a>, <a class="el" href="xdr__io_8C_source.html#l00692">libMesh::XdrIO::write_serialized_nodes()</a> , 以及 <a class="el" href="xdr__io_8C_source.html#l01306">libMesh::XdrIO::write_serialized_nodesets()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1ParallelObject.html#a1ffb5b08919ab435109a302f94a7b3eb">_communicator</a>; }</div>
-<div class="ttc" id="classlibMesh_1_1ParallelObject_html_a1ffb5b08919ab435109a302f94a7b3eb"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#a1ffb5b08919ab435109a302f94a7b3eb">libMesh::ParallelObject::_communicator</a></div><div class="ttdeci">const Parallel::Communicator &amp; _communicator</div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00120">parallel_object.h:120</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a5c0a2d3d3c531f9f069b0d623d4ace0f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void libMesh::ReferenceCounter::disable_print_counter_info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>在文件 <a class="el" href="reference__counter_8C_source.html">reference_counter.C</a> 第 <a class="el" href="reference__counter_8C_source.html#l00100">100</a> 行定义.</p>
-
-<p>参考 <a class="el" href="reference__counter_8h_source.html#l00143">libMesh::ReferenceCounter::_enable_print_counter</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">_enable_print_counter</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a8f75e8a4a280f2c41636f2ae1307a311"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">libMesh::ReferenceCounter::_enable_print_counter</a></div><div class="ttdeci">static bool _enable_print_counter</div><div class="ttdoc">Flag to control whether reference count information is printed when print_info is called...</div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00143">reference_counter.h:143</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a86837c50216b2ddb800b3836d2a08c09"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void libMesh::ReferenceCounter::enable_print_counter_info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Methods to enable/disable the reference counter output from <a class="el" href="classlibMesh_1_1ReferenceCounter.html#a13ce734a14ffd1dbb6496dab702da8e1" title="Prints the reference information, by default to libMesh::out. ">print_info()</a> </p>
-
-<p>在文件 <a class="el" href="reference__counter_8C_source.html">reference_counter.C</a> 第 <a class="el" href="reference__counter_8C_source.html#l00094">94</a> 行定义.</p>
-
-<p>参考 <a class="el" href="reference__counter_8h_source.html#l00143">libMesh::ReferenceCounter::_enable_print_counter</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">_enable_print_counter</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
-<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a8f75e8a4a280f2c41636f2ae1307a311"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">libMesh::ReferenceCounter::_enable_print_counter</a></div><div class="ttdeci">static bool _enable_print_counter</div><div class="ttdoc">Flag to control whether reference count information is printed when print_info is called...</div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00143">reference_counter.h:143</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -621,184 +432,15 @@ template&lt;typename T &gt; </div>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8h_source.html">petsc_shell_matrix.h</a> 第 <a class="el" href="petsc__shell__matrix_8h_source.html#l00235">235</a> 行定义.</p>
 
-<p>参考 <a class="el" href="petsc__dm__wrapper_8C_source.html#l00061">libMesh::ierr</a> , 以及 <a class="el" href="petsc__vector_8h_source.html#l00641">libMesh::PetscVector&lt; T &gt;::vec()</a>.</p>
+<p>参考 <a class="el" href="petsc__vector_8h_source.html#l00641">libMesh::PetscVector&lt; T &gt;::vec()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;{</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="comment">// 确保传入的NumericVector确实是PetscVector</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  PetscVector&lt;T&gt; &amp; petsc_dest = cast_ref&lt;PetscVector&lt;T&gt; &amp;&gt;(dest);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  PetscErrorCode <a class="code" href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">ierr</a> = MatGetDiagonal(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, petsc_dest.vec());</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  PetscErrorCode ierr = MatGetDiagonal(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, petsc_dest.vec());</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  LIBMESH_CHKERR(ierr);</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_abf78792d778bc45b322318cc1f96ca60"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">libMesh::PetscShellMatrix::_mat</a></div><div class="ttdeci">WrappedPetsc&lt; Mat &gt; _mat</div><div class="ttdoc">PETSc Shell 矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00155">petsc_shell_matrix.h:155</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a03d02ae8c0dab01091f6b27bd0765c7d"><div class="ttname"><a href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">libMesh::ierr</a></div><div class="ttdeci">PetscErrorCode PetscInt const PetscInt IS DM *subdm PetscErrorCode ierr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00061">petsc_dm_wrapper.C:61</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a103b37125ae9eaaadf6f7854df17faa2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string libMesh::ReferenceCounter::get_info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets a string containing the reference information. </p>
-
-<p>在文件 <a class="el" href="reference__counter_8C_source.html">reference_counter.C</a> 第 <a class="el" href="reference__counter_8C_source.html#l00047">47</a> 行定义.</p>
-
-<p>参考 <a class="el" href="reference__counter_8h_source.html#l00124">libMesh::ReferenceCounter::_counts</a> , 以及 <a class="el" href="elem__quality_8C_source.html#l00042">libMesh::Quality::name()</a>.</p>
-
-<p>参考自 <a class="el" href="reference__counter_8C_source.html#l00081">libMesh::ReferenceCounter::print_info()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#if defined(LIBMESH_ENABLE_REFERENCE_COUNTING) &amp;&amp; defined(DEBUG)</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::ostringstream oss;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  oss &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; ---------------------------------------------------------------------------- \n&quot;</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;| Reference count information                                                |\n&quot;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; ---------------------------------------------------------------------------- \n&quot;</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; [<a class="code" href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">name</a>, cd] : <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">_counts</a>)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    oss &lt;&lt; <span class="stringliteral">&quot;| &quot;</span> &lt;&lt; <a class="code" href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">name</a> &lt;&lt; <span class="stringliteral">&quot; reference count information:\n&quot;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;|  Creations:    &quot;</span> &lt;&lt; cd.first    &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;|  Destructions: &quot;</span> &lt;&lt; cd.second &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  oss &lt;&lt; <span class="stringliteral">&quot; ---------------------------------------------------------------------------- \n&quot;</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">return</span> oss.str();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="namespacelibMesh_1_1Quality_html_a1d3617b89c15ade245910fc9a4ddfa34"><div class="ttname"><a href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">libMesh::Quality::name</a></div><div class="ttdeci">std::string name(const ElemQuality q)</div><div class="ttdoc">This function returns a string containing some name for q. </div><div class="ttdef"><b>Definition:</b> <a href="elem__quality_8C_source.html#l00042">elem_quality.C:42</a></div></div>
-<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a7c913252d05560f8bc7c75a63547c4c3"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">libMesh::ReferenceCounter::_counts</a></div><div class="ttdeci">static Counts _counts</div><div class="ttdoc">Actually holds the data. </div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00124">reference_counter.h:124</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="af0cd2f1fbd46c66dade1e750436ee7ab"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void libMesh::ReferenceCounter::increment_constructor_count </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Increments the construction counter. </p>
-<p>Should be called in the constructor of any derived class that will be reference counted. </p>
-
-<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00183">183</a> 行定义.</p>
-
-<p>参考 <a class="el" href="libmesh__common_8h_source.html#l00101">libMesh::err</a>, <a class="el" href="ostream__proxy_8h_source.html#l00217">libMesh::BasicOStreamProxy&lt; charT, traits &gt;::get()</a>, <a class="el" href="elem__quality_8C_source.html#l00042">libMesh::Quality::name()</a> , 以及 <a class="el" href="threads_8C_source.html#l00030">libMesh::Threads::spin_mtx</a>.</p>
-
-<p>参考自 <a class="el" href="reference__counted__object_8h_source.html#l00074">libMesh::ReferenceCountedObject&lt; RBParametrized &gt;::ReferenceCountedObject()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  libmesh_try</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    Threads::spin_mutex::scoped_lock lock(<a class="code" href="namespacelibMesh_1_1Threads.html#a29932e1987dacf7e89b1b27bb49bf0c9">Threads::spin_mtx</a>);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    std::pair&lt;unsigned int, unsigned int&gt; &amp; p = <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">_counts</a>[<a class="code" href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">name</a>];</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    p.first++;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  libmesh_catch (...)</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">auto</span> stream = <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a>.<a class="code" href="classlibMesh_1_1BasicOStreamProxy.html#ae2d18b50fc63d23e47d46fcee630b4f5">get</a>();</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    stream-&gt;exceptions(stream-&gt;goodbit); <span class="comment">// stream must not throw</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;Encountered unrecoverable error while calling &quot;</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;ReferenceCounter::increment_constructor_count() &quot;</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;for a(n) &quot;</span> &lt;&lt; <a class="code" href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">name</a> &lt;&lt; <span class="stringliteral">&quot; object.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    std::terminate();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
-<div class="ttc" id="namespacelibMesh_1_1Quality_html_a1d3617b89c15ade245910fc9a4ddfa34"><div class="ttname"><a href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">libMesh::Quality::name</a></div><div class="ttdeci">std::string name(const ElemQuality q)</div><div class="ttdoc">This function returns a string containing some name for q. </div><div class="ttdef"><b>Definition:</b> <a href="elem__quality_8C_source.html#l00042">elem_quality.C:42</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a74e5bc8a72d210b3d87b0221b1f69db1"><div class="ttname"><a href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a></div><div class="ttdeci">OStreamProxy err(std::cerr)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00101">libmesh_common.h:101</a></div></div>
-<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a7c913252d05560f8bc7c75a63547c4c3"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">libMesh::ReferenceCounter::_counts</a></div><div class="ttdeci">static Counts _counts</div><div class="ttdoc">Actually holds the data. </div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00124">reference_counter.h:124</a></div></div>
-<div class="ttc" id="classlibMesh_1_1BasicOStreamProxy_html_ae2d18b50fc63d23e47d46fcee630b4f5"><div class="ttname"><a href="classlibMesh_1_1BasicOStreamProxy.html#ae2d18b50fc63d23e47d46fcee630b4f5">libMesh::BasicOStreamProxy::get</a></div><div class="ttdeci">streamT * get()</div><div class="ttdoc">Rather than implement every ostream/ios/ios_base function, we&amp;#39;ll be lazy and make esoteric uses go th...</div><div class="ttdef"><b>Definition:</b> <a href="ostream__proxy_8h_source.html#l00217">ostream_proxy.h:217</a></div></div>
-<div class="ttc" id="namespacelibMesh_1_1Threads_html_a29932e1987dacf7e89b1b27bb49bf0c9"><div class="ttname"><a href="namespacelibMesh_1_1Threads.html#a29932e1987dacf7e89b1b27bb49bf0c9">libMesh::Threads::spin_mtx</a></div><div class="ttdeci">spin_mutex spin_mtx</div><div class="ttdoc">A convenient spin mutex object which can be used for obtaining locks. </div><div class="ttdef"><b>Definition:</b> <a href="threads_8C_source.html#l00030">threads.C:30</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a769ddb2e2299db1aafcdfb33dfb830d8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void libMesh::ReferenceCounter::increment_destructor_count </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Increments the destruction counter. </p>
-<p>Should be called in the destructor of any derived class that will be reference counted. </p>
-
-<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00207">207</a> 行定义.</p>
-
-<p>参考 <a class="el" href="libmesh__common_8h_source.html#l00101">libMesh::err</a>, <a class="el" href="ostream__proxy_8h_source.html#l00217">libMesh::BasicOStreamProxy&lt; charT, traits &gt;::get()</a>, <a class="el" href="elem__quality_8C_source.html#l00042">libMesh::Quality::name()</a> , 以及 <a class="el" href="threads_8C_source.html#l00030">libMesh::Threads::spin_mtx</a>.</p>
-
-<p>参考自 <a class="el" href="reference__counted__object_8h_source.html#l00127">libMesh::ReferenceCountedObject&lt; RBParametrized &gt;::~ReferenceCountedObject()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  libmesh_try</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    Threads::spin_mutex::scoped_lock lock(<a class="code" href="namespacelibMesh_1_1Threads.html#a29932e1987dacf7e89b1b27bb49bf0c9">Threads::spin_mtx</a>);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    std::pair&lt;unsigned int, unsigned int&gt; &amp; p = <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">_counts</a>[<a class="code" href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">name</a>];</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    p.second++;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  libmesh_catch (...)</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keyword">auto</span> stream = <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a>.<a class="code" href="classlibMesh_1_1BasicOStreamProxy.html#ae2d18b50fc63d23e47d46fcee630b4f5">get</a>();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    stream-&gt;exceptions(stream-&gt;goodbit); <span class="comment">// stream must not throw</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;Encountered unrecoverable error while calling &quot;</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;ReferenceCounter::increment_destructor_count() &quot;</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;for a(n) &quot;</span> &lt;&lt; <a class="code" href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">name</a> &lt;&lt; <span class="stringliteral">&quot; object.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    std::terminate();</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
-<div class="ttc" id="namespacelibMesh_1_1Quality_html_a1d3617b89c15ade245910fc9a4ddfa34"><div class="ttname"><a href="namespacelibMesh_1_1Quality.html#a1d3617b89c15ade245910fc9a4ddfa34">libMesh::Quality::name</a></div><div class="ttdeci">std::string name(const ElemQuality q)</div><div class="ttdoc">This function returns a string containing some name for q. </div><div class="ttdef"><b>Definition:</b> <a href="elem__quality_8C_source.html#l00042">elem_quality.C:42</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a74e5bc8a72d210b3d87b0221b1f69db1"><div class="ttname"><a href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a></div><div class="ttdeci">OStreamProxy err(std::cerr)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00101">libmesh_common.h:101</a></div></div>
-<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a7c913252d05560f8bc7c75a63547c4c3"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">libMesh::ReferenceCounter::_counts</a></div><div class="ttdeci">static Counts _counts</div><div class="ttdoc">Actually holds the data. </div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00124">reference_counter.h:124</a></div></div>
-<div class="ttc" id="classlibMesh_1_1BasicOStreamProxy_html_ae2d18b50fc63d23e47d46fcee630b4f5"><div class="ttname"><a href="classlibMesh_1_1BasicOStreamProxy.html#ae2d18b50fc63d23e47d46fcee630b4f5">libMesh::BasicOStreamProxy::get</a></div><div class="ttdeci">streamT * get()</div><div class="ttdoc">Rather than implement every ostream/ios/ios_base function, we&amp;#39;ll be lazy and make esoteric uses go th...</div><div class="ttdef"><b>Definition:</b> <a href="ostream__proxy_8h_source.html#l00217">ostream_proxy.h:217</a></div></div>
-<div class="ttc" id="namespacelibMesh_1_1Threads_html_a29932e1987dacf7e89b1b27bb49bf0c9"><div class="ttname"><a href="namespacelibMesh_1_1Threads.html#a29932e1987dacf7e89b1b27bb49bf0c9">libMesh::Threads::spin_mtx</a></div><div class="ttdeci">spin_mutex spin_mtx</div><div class="ttdoc">A convenient spin mutex object which can be used for obtaining locks. </div><div class="ttdef"><b>Definition:</b> <a href="threads_8C_source.html#l00030">threads.C:30</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -830,10 +472,8 @@ template&lt;typename T &gt; </div>
 <p>重载 <a class="el" href="classlibMesh_1_1ShellMatrix.html#a7204c5b8f3f75b58e3d33db2a2ccb01c">libMesh::ShellMatrix&lt; T &gt;</a> .</p>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8C_source.html">petsc_shell_matrix.C</a> 第 <a class="el" href="petsc__shell__matrix_8C_source.html#l00064">64</a> 行定义.</p>
-
-<p>参考 <a class="el" href="libmesh_8C_source.html#l00242">libMesh::libMeshPrivateData::_is_initialized</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00061">libMesh::ierr</a>, <a class="el" href="libmesh_8C_source.html#l00261">libMesh::initialized()</a> , 以及 <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(this-&gt;<a class="code" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a>);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">// Clear initialized matrices</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#a4e487862e0ea29f50e3dbd7c37855063">initialized</a>())</div>
@@ -842,23 +482,23 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#aed7aedfad6c4f5e4c660e5acec9c3e03">_is_initialized</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> my_m = this-&gt;<a class="code" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#a77f8d984574b1bf8886057799e9b0134">n_dofs</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> my_n = my_m;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> n_l  = this-&gt;<a class="code" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#a765ac72717810e0a86f04ab8a938cd22">n_dofs_on_processor</a>(this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">processor_id</a>());</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> m_l  = n_l;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> numeric_index_type my_m = this-&gt;<a class="code" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a>-&gt;n_dofs();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> numeric_index_type my_n = my_m;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> numeric_index_type n_l  = this-&gt;<a class="code" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a>-&gt;n_dofs_on_processor(this-&gt;processor_id());</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> numeric_index_type m_l  = n_l;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  PetscErrorCode <a class="code" href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">ierr</a> = 0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  PetscErrorCode ierr = 0;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  PetscInt m_global   = <span class="keyword">static_cast&lt;</span>PetscInt<span class="keyword">&gt;</span>(my_m);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  PetscInt n_global   = <span class="keyword">static_cast&lt;</span>PetscInt<span class="keyword">&gt;</span>(my_n);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  PetscInt m_local    = <span class="keyword">static_cast&lt;</span>PetscInt<span class="keyword">&gt;</span>(m_l);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  PetscInt n_local    = <span class="keyword">static_cast&lt;</span>PetscInt<span class="keyword">&gt;</span>(n_l);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  ierr = MatCreate(this-&gt;<a class="code" href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">comm</a>().<span class="keyword">get</span>(), <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>.<a class="code" href="structlibMesh_1_1WrappedPetsc.html#ad21aaccb13b0a3ca0bc9a1be13441586">get</a>());</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  ierr = MatCreate(this-&gt;comm().<span class="keyword">get</span>(), <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>.<a class="code" href="structlibMesh_1_1WrappedPetsc.html#ad21aaccb13b0a3ca0bc9a1be13441586">get</a>());</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  LIBMESH_CHKERR(ierr);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  ierr = MatSetSizes(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, m_local, n_local, m_global, n_global);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  LIBMESH_CHKERR(ierr);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  PetscInt blocksize  = <span class="keyword">static_cast&lt;</span>PetscInt<span class="keyword">&gt;</span>(this-&gt;<a class="code" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#ad2336dd53d13c233c14d7d4389d0702a">block_size</a>());</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  PetscInt blocksize  = <span class="keyword">static_cast&lt;</span>PetscInt<span class="keyword">&gt;</span>(this-&gt;<a class="code" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a>-&gt;block_size());</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  ierr = MatSetBlockSize(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, blocksize);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  LIBMESH_CHKERR(ierr);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
@@ -876,17 +516,9 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_abf78792d778bc45b322318cc1f96ca60"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">libMesh::PetscShellMatrix::_mat</a></div><div class="ttdeci">WrappedPetsc&lt; Mat &gt; _mat</div><div class="ttdoc">PETSc Shell 矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00155">petsc_shell_matrix.h:155</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_a4e487862e0ea29f50e3dbd7c37855063"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#a4e487862e0ea29f50e3dbd7c37855063">libMesh::PetscShellMatrix::initialized</a></div><div class="ttdeci">virtual bool initialized() const </div><div class="ttdoc">检查矩阵是否已初始化。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8C_source.html#l00108">petsc_shell_matrix.C:108</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_a97eb13ba9979ecf775dedd5c981226a0"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#a97eb13ba9979ecf775dedd5c981226a0">libMesh::PetscShellMatrix::clear</a></div><div class="ttdeci">virtual void clear() override</div><div class="ttdoc">清除矩阵的内部数据结构。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8C_source.html#l00053">petsc_shell_matrix.C:53</a></div></div>
-<div class="ttc" id="classlibMesh_1_1DofMap_html_ad2336dd53d13c233c14d7d4389d0702a"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#ad2336dd53d13c233c14d7d4389d0702a">libMesh::DofMap::block_size</a></div><div class="ttdeci">unsigned int block_size() const </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00651">dof_map.h:651</a></div></div>
-<div class="ttc" id="classlibMesh_1_1DofMap_html_a77f8d984574b1bf8886057799e9b0134"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a77f8d984574b1bf8886057799e9b0134">libMesh::DofMap::n_dofs</a></div><div class="ttdeci">dof_id_type n_dofs() const </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00659">dof_map.h:659</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a03d02ae8c0dab01091f6b27bd0765c7d"><div class="ttname"><a href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">libMesh::ierr</a></div><div class="ttdeci">PetscErrorCode PetscInt const PetscInt IS DM *subdm PetscErrorCode ierr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00061">petsc_dm_wrapper.C:61</a></div></div>
-<div class="ttc" id="classlibMesh_1_1DofMap_html_a765ac72717810e0a86f04ab8a938cd22"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a765ac72717810e0a86f04ab8a938cd22">libMesh::DofMap::n_dofs_on_processor</a></div><div class="ttdeci">dof_id_type n_dofs_on_processor(const processor_id_type proc) const </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00675">dof_map.h:675</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a7b7f67063580fe2c771a3dc5095d6ecb"><div class="ttname"><a href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">libMesh::numeric_index_type</a></div><div class="ttdeci">dof_id_type numeric_index_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00099">id_types.h:99</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_aed7aedfad6c4f5e4c660e5acec9c3e03"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#aed7aedfad6c4f5e4c660e5acec9c3e03">libMesh::PetscShellMatrix::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">表示矩阵是否已初始化的标志。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00160">petsc_shell_matrix.h:160</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ShellMatrix_html_ab89946d220702b4bde5c57f71083009f"><div class="ttname"><a href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">libMesh::ShellMatrix::_dof_map</a></div><div class="ttdeci">DofMap const * _dof_map</div><div class="ttdoc">与此对象关联的 DofMap 对象。 </div><div class="ttdef"><b>Definition:</b> <a href="shell__matrix_8h_source.html#l00141">shell_matrix.h:141</a></div></div>
 <div class="ttc" id="structlibMesh_1_1WrappedPetsc_html_ad21aaccb13b0a3ca0bc9a1be13441586"><div class="ttname"><a href="structlibMesh_1_1WrappedPetsc.html#ad21aaccb13b0a3ca0bc9a1be13441586">libMesh::WrappedPetsc::get</a></div><div class="ttdeci">T * get()</div><div class="ttdoc">获取托管对象的指针。 这用于模拟以下代码： KSP ksp; KSPCreate(comm, &amp;amp;ksp); 因为在这种上下文中，取包装对象的地址是没有意义的。 </div><div class="ttdef"><b>Definition:</b> <a href="wrapped__petsc_8h_source.html#l00109">wrapped_petsc.h:109</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
-<div class="ttc" id="classlibMesh_1_1ParallelObject_html_a20de1180df21bdc9e6ca6151ed4ffda9"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#a20de1180df21bdc9e6ca6151ed4ffda9">libMesh::ParallelObject::comm</a></div><div class="ttdeci">const Parallel::Communicator &amp; comm() const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00097">parallel_object.h:97</a></div></div>
-<div class="ttc" id="classlibMesh_1_1ParallelObject_html_ae1e7d1a1118f63d9889a761c27433bbc"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#ae1e7d1a1118f63d9889a761c27433bbc">libMesh::ParallelObject::processor_id</a></div><div class="ttdeci">processor_id_type processor_id() const </div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00114">parallel_object.h:114</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -917,8 +549,6 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>返回</dt><dd>如果矩阵已初始化，则返回 true；否则返回 false。 </dd></dl>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8C_source.html">petsc_shell_matrix.C</a> 第 <a class="el" href="petsc__shell__matrix_8C_source.html#l00108">108</a> 行定义.</p>
-
-<p>参考 <a class="el" href="libmesh_8C_source.html#l00242">libMesh::libMeshPrivateData::_is_initialized</a>.</p>
 <div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#aed7aedfad6c4f5e4c660e5acec9c3e03">_is_initialized</a>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
@@ -936,7 +566,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1PetscShellMatrix.html">libMesh::PetscShellMatrix</a>&lt; T &gt;::local_m </td>
+          <td class="memname">numeric_index_type <a class="el" href="classlibMesh_1_1PetscShellMatrix.html">libMesh::PetscShellMatrix</a>&lt; T &gt;::local_m </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -953,10 +583,8 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>返回</dt><dd>返回本地处理的矩阵行数。 </dd></dl>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8h_source.html">petsc_shell_matrix.h</a> 第 <a class="el" href="petsc__shell__matrix_8h_source.html#l00206">206</a> 行定义.</p>
-
-<p>参考 <a class="el" href="petsc__dm__wrapper_8C_source.html#l00061">libMesh::ierr</a>.</p>
 <div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  PetscErrorCode <a class="code" href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">ierr</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  PetscErrorCode ierr;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  PetscInt <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#a077e9fe39f443bfafbfbdf2c589acf5c">m</a>;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  ierr = MatGetLocalSize(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, &amp;m, <span class="keyword">nullptr</span>);</div>
@@ -965,7 +593,6 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#a077e9fe39f443bfafbfbdf2c589acf5c">m</a>;</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_abf78792d778bc45b322318cc1f96ca60"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">libMesh::PetscShellMatrix::_mat</a></div><div class="ttdeci">WrappedPetsc&lt; Mat &gt; _mat</div><div class="ttdoc">PETSc Shell 矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00155">petsc_shell_matrix.h:155</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a03d02ae8c0dab01091f6b27bd0765c7d"><div class="ttname"><a href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">libMesh::ierr</a></div><div class="ttdeci">PetscErrorCode PetscInt const PetscInt IS DM *subdm PetscErrorCode ierr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00061">petsc_dm_wrapper.C:61</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_a077e9fe39f443bfafbfbdf2c589acf5c"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#a077e9fe39f443bfafbfbdf2c589acf5c">libMesh::PetscShellMatrix::m</a></div><div class="ttdeci">virtual numeric_index_type m() const override</div><div class="ttdoc">获取矩阵的行数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00177">petsc_shell_matrix.h:177</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -980,7 +607,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1PetscShellMatrix.html">libMesh::PetscShellMatrix</a>&lt; T &gt;::local_n </td>
+          <td class="memname">numeric_index_type <a class="el" href="classlibMesh_1_1PetscShellMatrix.html">libMesh::PetscShellMatrix</a>&lt; T &gt;::local_n </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -997,10 +624,8 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>返回</dt><dd>返回本地处理的矩阵列数。 </dd></dl>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8h_source.html">petsc_shell_matrix.h</a> 第 <a class="el" href="petsc__shell__matrix_8h_source.html#l00221">221</a> 行定义.</p>
-
-<p>参考 <a class="el" href="petsc__dm__wrapper_8C_source.html#l00061">libMesh::ierr</a>.</p>
 <div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  PetscErrorCode <a class="code" href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">ierr</a>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  PetscErrorCode ierr;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  PetscInt <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#ad266918e54274ae267f9a0b36242ddbe">n</a>;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  ierr = MatGetLocalSize(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, <span class="keyword">nullptr</span>, &amp;n);</div>
@@ -1009,7 +634,6 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#ad266918e54274ae267f9a0b36242ddbe">n</a>;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_abf78792d778bc45b322318cc1f96ca60"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">libMesh::PetscShellMatrix::_mat</a></div><div class="ttdeci">WrappedPetsc&lt; Mat &gt; _mat</div><div class="ttdoc">PETSc Shell 矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00155">petsc_shell_matrix.h:155</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a03d02ae8c0dab01091f6b27bd0765c7d"><div class="ttname"><a href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">libMesh::ierr</a></div><div class="ttdeci">PetscErrorCode PetscInt const PetscInt IS DM *subdm PetscErrorCode ierr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00061">petsc_dm_wrapper.C:61</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_ad266918e54274ae267f9a0b36242ddbe"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#ad266918e54274ae267f9a0b36242ddbe">libMesh::PetscShellMatrix::n</a></div><div class="ttdeci">virtual numeric_index_type n() const override</div><div class="ttdoc">获取矩阵的列数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00192">petsc_shell_matrix.h:192</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1024,7 +648,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1PetscShellMatrix.html">libMesh::PetscShellMatrix</a>&lt; T &gt;::m </td>
+          <td class="memname">numeric_index_type <a class="el" href="classlibMesh_1_1PetscShellMatrix.html">libMesh::PetscShellMatrix</a>&lt; T &gt;::m </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1043,10 +667,8 @@ template&lt;typename T &gt; </div>
 <p>实现了 <a class="el" href="classlibMesh_1_1ShellMatrix.html#a8a1cf848d85e7f710b4d9153c9405248">libMesh::ShellMatrix&lt; T &gt;</a>.</p>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8h_source.html">petsc_shell_matrix.h</a> 第 <a class="el" href="petsc__shell__matrix_8h_source.html#l00177">177</a> 行定义.</p>
-
-<p>参考 <a class="el" href="petsc__dm__wrapper_8C_source.html#l00061">libMesh::ierr</a>.</p>
 <div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  PetscErrorCode <a class="code" href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">ierr</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  PetscErrorCode ierr;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  PetscInt <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#a077e9fe39f443bfafbfbdf2c589acf5c">m</a>;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  ierr = MatGetSize(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, &amp;m, <span class="keyword">nullptr</span>);</div>
@@ -1055,7 +677,6 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#a077e9fe39f443bfafbfbdf2c589acf5c">m</a>;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_abf78792d778bc45b322318cc1f96ca60"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">libMesh::PetscShellMatrix::_mat</a></div><div class="ttdeci">WrappedPetsc&lt; Mat &gt; _mat</div><div class="ttdoc">PETSc Shell 矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00155">petsc_shell_matrix.h:155</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a03d02ae8c0dab01091f6b27bd0765c7d"><div class="ttname"><a href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">libMesh::ierr</a></div><div class="ttdeci">PetscErrorCode PetscInt const PetscInt IS DM *subdm PetscErrorCode ierr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00061">petsc_dm_wrapper.C:61</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_a077e9fe39f443bfafbfbdf2c589acf5c"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#a077e9fe39f443bfafbfbdf2c589acf5c">libMesh::PetscShellMatrix::m</a></div><div class="ttdeci">virtual numeric_index_type m() const override</div><div class="ttdoc">获取矩阵的行数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00177">petsc_shell_matrix.h:177</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1079,8 +700,6 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>返回</dt><dd>返回 PETSc Mat 对象的指针。 </dd></dl>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8C_source.html">petsc_shell_matrix.C</a> 第 <a class="el" href="petsc__shell__matrix_8C_source.html#l00114">114</a> 行定义.</p>
-
-<p>参考自 <a class="el" href="slepc__eigen__solver_8C_source.html#l00417">libMesh::SlepcEigenSolver&lt; T &gt;::solve_generalized()</a> , 以及 <a class="el" href="slepc__eigen__solver_8C_source.html#l00172">libMesh::SlepcEigenSolver&lt; T &gt;::solve_standard()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  libmesh_error_msg_if(!<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, <span class="stringliteral">&quot;A petsc shell matrix is not created yet. Please call init() first.&quot;</span>);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>;</div>
@@ -1099,7 +718,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1PetscShellMatrix.html">libMesh::PetscShellMatrix</a>&lt; T &gt;::n </td>
+          <td class="memname">numeric_index_type <a class="el" href="classlibMesh_1_1PetscShellMatrix.html">libMesh::PetscShellMatrix</a>&lt; T &gt;::n </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1118,10 +737,8 @@ template&lt;typename T &gt; </div>
 <p>实现了 <a class="el" href="classlibMesh_1_1ShellMatrix.html#a019c16a58f871435ea75956ad1aaf9b5">libMesh::ShellMatrix&lt; T &gt;</a>.</p>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8h_source.html">petsc_shell_matrix.h</a> 第 <a class="el" href="petsc__shell__matrix_8h_source.html#l00192">192</a> 行定义.</p>
-
-<p>参考 <a class="el" href="petsc__dm__wrapper_8C_source.html#l00061">libMesh::ierr</a>.</p>
 <div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;{</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  PetscErrorCode <a class="code" href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">ierr</a>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  PetscErrorCode ierr;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  PetscInt <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#ad266918e54274ae267f9a0b36242ddbe">n</a>;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  ierr = MatGetSize(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, <span class="keyword">nullptr</span>, &amp;n);</div>
@@ -1130,150 +747,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#ad266918e54274ae267f9a0b36242ddbe">n</a>;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_abf78792d778bc45b322318cc1f96ca60"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">libMesh::PetscShellMatrix::_mat</a></div><div class="ttdeci">WrappedPetsc&lt; Mat &gt; _mat</div><div class="ttdoc">PETSc Shell 矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00155">petsc_shell_matrix.h:155</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a03d02ae8c0dab01091f6b27bd0765c7d"><div class="ttname"><a href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">libMesh::ierr</a></div><div class="ttdeci">PetscErrorCode PetscInt const PetscInt IS DM *subdm PetscErrorCode ierr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00061">petsc_dm_wrapper.C:61</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_ad266918e54274ae267f9a0b36242ddbe"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#ad266918e54274ae267f9a0b36242ddbe">libMesh::PetscShellMatrix::n</a></div><div class="ttdeci">virtual numeric_index_type n() const override</div><div class="ttdoc">获取矩阵的列数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00192">petsc_shell_matrix.h:192</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a50e74641afc6e2870c9e1ce412f8c44f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static unsigned int libMesh::ReferenceCounter::n_objects </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prints the number of outstanding (created, but not yet destroyed) objects. </p>
-
-<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00085">85</a> 行定义.</p>
-
-<p>参考 <a class="el" href="reference__counter_8h_source.html#l00132">libMesh::ReferenceCounter::_n_objects</a>.</p>
-
-<p>参考自 <a class="el" href="libmesh_8C_source.html#l00668">libMesh::LibMeshInit::~LibMeshInit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1ReferenceCounter.html#ad2c30f0f71dcd00f00faa8e46aa3e043">_n_objects</a>; }</div>
-<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_ad2c30f0f71dcd00f00faa8e46aa3e043"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#ad2c30f0f71dcd00f00faa8e46aa3e043">libMesh::ReferenceCounter::_n_objects</a></div><div class="ttdeci">static Threads::atomic&lt; unsigned int &gt; _n_objects</div><div class="ttdoc">The number of objects. </div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00132">reference_counter.h:132</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a50719f74165b613ab929afd29b6d5f4a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> libMesh::ParallelObject::n_processors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>返回</dt><dd>The number of processors in the group. </dd></dl>
-
-<p>在文件 <a class="el" href="parallel__object_8h_source.html">parallel_object.h</a> 第 <a class="el" href="parallel__object_8h_source.html#l00103">103</a> 行定义.</p>
-
-<p>参考 <a class="el" href="parallel__object_8h_source.html#l00120">libMesh::ParallelObject::_communicator</a> , 以及 <a class="el" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert()</a>.</p>
-
-<p>参考自 <a class="el" href="parmetis__partitioner_8C_source.html#l00110">libMesh::ParmetisPartitioner::_do_repartition()</a>, <a class="el" href="partitioner_8C_source.html#l01067">libMesh::Partitioner::_find_global_index_by_pid_map()</a>, <a class="el" href="boundary__info_8C_source.html#l03032">libMesh::BoundaryInfo::_find_id_maps()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l05349">libMesh::DofMap::add_constraints_to_send_list()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00961">libMesh::PetscDMWrapper::add_dofs_to_section()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00532">libMesh::DistributedMesh::add_elem()</a>, <a class="el" href="dof__map_8C_source.html#l01544">libMesh::DofMap::add_neighbors_to_send_list()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00799">libMesh::DistributedMesh::add_node()</a>, <a class="el" href="system_8C_source.html#l00750">libMesh::System::add_vector()</a>, <a class="el" href="mesh__smoother__laplace_8C_source.html#l00289">libMesh::LaplaceMeshSmoother::allgather_graph()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03708">libMesh::DofMap::allgather_recursive_constraints()</a>, <a class="el" href="fem__system_8C_source.html#l00880">libMesh::FEMSystem::assembly()</a>, <a class="el" href="nemesis__io_8C_source.html#l00161">libMesh::Nemesis_IO::assert_symmetric_cmaps()</a>, <a class="el" href="trilinos__aztec__linear__solver_8C_source.html#l00041">libMesh::AztecLinearSolver&lt; T &gt;::AztecLinearSolver()</a>, <a class="el" href="equation__systems_8C_source.html#l01151">libMesh::EquationSystems::build_parallel_elemental_solution_vector()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00989">libMesh::DistributedMesh::clear()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01022">libMesh::DistributedMesh::clear_elems()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01793">libMesh::Nemesis_IO_Helper::compute_border_node_ids()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l02791">libMesh::Nemesis_IO_Helper::construct_nemesis_filename()</a>, <a class="el" href="exodusII__io_8C_source.html#l01234">libMesh::ExodusII_IO::copy_scalar_solution()</a>, <a class="el" href="nemesis__io_8C_source.html#l01752">libMesh::Nemesis_IO::copy_scalar_solution()</a>, <a class="el" href="unstructured__mesh_8C_source.html#l00939">libMesh::UnstructuredMesh::create_pid_mesh()</a>, <a class="el" href="mesh__tools_8C_source.html#l00637">libMesh::MeshTools::create_processor_bounding_box()</a>, <a class="el" href="dof__map_8C_source.html#l00927">libMesh::DofMap::distribute_dofs()</a>, <a class="el" href="dof__map_8C_source.html#l01394">libMesh::DofMap::distribute_scalar_dofs()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00195">libMesh::DistributedMesh::DistributedMesh()</a>, <a class="el" href="ensight__io_8C_source.html#l00065">libMesh::EnsightIO::EnsightIO()</a>, <a class="el" href="mesh__base_8C_source.html#l01020">libMesh::MeshBase::get_info()</a>, <a class="el" href="system__subset__by__subdomain_8C_source.html#l00103">libMesh::SystemSubsetBySubdomain::init()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00451">libMesh::PetscDMWrapper::init_and_attach_petscdm()</a>, <a class="el" href="parmetis__partitioner_8C_source.html#l00241">libMesh::ParmetisPartitioner::initialize()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00735">libMesh::Nemesis_IO_Helper::initialize()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l02182">libMesh::ExodusII_IO_Helper::initialize()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00654">libMesh::DistributedMesh::insert_elem()</a>, <a class="el" href="mesh__tools_8C_source.html#l01266">libMesh::MeshTools::libmesh_assert_contiguous_dof_ids()</a>, <a class="el" href="mesh__tools_8C_source.html#l01894">libMesh::MeshTools::libmesh_assert_parallel_consistent_new_node_procids()</a>, <a class="el" href="mesh__tools_8C_source.html#l01846">libMesh::MeshTools::libmesh_assert_parallel_consistent_procids&lt; Elem &gt;()</a>, <a class="el" href="mesh__tools_8C_source.html#l01932">libMesh::MeshTools::libmesh_assert_parallel_consistent_procids&lt; Node &gt;()</a>, <a class="el" href="mesh__tools_8C_source.html#l01352">libMesh::MeshTools::libmesh_assert_topology_consistent_procids&lt; Node &gt;()</a>, <a class="el" href="mesh__tools_8C_source.html#l01534">libMesh::MeshTools::libmesh_assert_valid_boundary_ids()</a>, <a class="el" href="mesh__tools_8C_source.html#l01704">libMesh::MeshTools::libmesh_assert_valid_dof_ids()</a>, <a class="el" href="mesh__tools_8C_source.html#l02034">libMesh::MeshTools::libmesh_assert_valid_neighbors()</a>, <a class="el" href="mesh__tools_8C_source.html#l01987">libMesh::MeshTools::libmesh_assert_valid_refinement_flags()</a>, <a class="el" href="dof__map_8C_source.html#l01109">libMesh::DofMap::local_variable_indices()</a>, <a class="el" href="mesh__refinement_8C_source.html#l00779">libMesh::MeshRefinement::make_coarsening_compatible()</a>, <a class="el" href="mesh__base_8C_source.html#l00987">libMesh::MeshBase::n_active_elem_on_proc()</a>, <a class="el" href="mesh__base_8C_source.html#l00974">libMesh::MeshBase::n_elem_on_proc()</a>, <a class="el" href="mesh__base_8C_source.html#l00961">libMesh::MeshBase::n_nodes_on_proc()</a>, <a class="el" href="partitioner_8C_source.html#l00188">libMesh::Partitioner::partition()</a>, <a class="el" href="mesh__base_8h_source.html#l01135">libMesh::MeshBase::partition()</a>, <a class="el" href="partitioner_8C_source.html#l00344">libMesh::Partitioner::partition_unpartitioned_elements()</a>, <a class="el" href="petsc__linear__solver_8C_source.html#l00094">libMesh::PetscLinearSolver&lt; T &gt;::PetscLinearSolver()</a>, <a class="el" href="system_8C_source.html#l02458">libMesh::System::point_gradient()</a>, <a class="el" href="system_8C_source.html#l02602">libMesh::System::point_hessian()</a>, <a class="el" href="system_8C_source.html#l02329">libMesh::System::point_value()</a>, <a class="el" href="dof__map_8C_source.html#l01692">libMesh::DofMap::prepare_send_list()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02262">libMesh::DofMap::print_dof_constraints()</a>, <a class="el" href="namebased__io_8C_source.html#l00080">libMesh::NameBasedIO::read()</a>, <a class="el" href="nemesis__io_8C_source.html#l00198">libMesh::Nemesis_IO::read()</a>, <a class="el" href="checkpoint__io_8C_source.html#l00814">libMesh::CheckpointIO::read()</a>, <a class="el" href="checkpoint__io_8C_source.html#l01127">libMesh::CheckpointIO::read_connectivity()</a>, <a class="el" href="xdr__io_8C_source.html#l01552">libMesh::XdrIO::read_header()</a>, <a class="el" href="checkpoint__io_8C_source.html#l01033">libMesh::CheckpointIO::read_nodes()</a>, <a class="el" href="system__io_8C_source.html#l00449">libMesh::System::read_parallel_data()</a>, <a class="el" href="system__io_8C_source.html#l01089">libMesh::System::read_SCALAR_dofs()</a>, <a class="el" href="system__io_8C_source.html#l00765">libMesh::System::read_serialized_blocked_dof_objects()</a>, <a class="el" href="system__io_8C_source.html#l01136">libMesh::System::read_serialized_vector()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01200">libMesh::DistributedMesh::renumber_dof_objects()</a>, <a class="el" href="partitioner_8C_source.html#l00255">libMesh::Partitioner::repartition()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l04643">libMesh::DofMap::scatter_constraints()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00357">libMesh::DistributedMesh::set_next_unique_id()</a>, <a class="el" href="dof__map_8C_source.html#l00356">libMesh::DofMap::set_nonlocal_dof_objects()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00846">libMesh::PetscDMWrapper::set_point_range_in_section()</a>, <a class="el" href="mesh__refinement_8C_source.html#l01709">libMesh::MeshRefinement::uniformly_coarsen()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00255">libMesh::DistributedMesh::update_parallel_id_counts()</a>, <a class="el" href="gmv__io_8C_source.html#l01221">libMesh::GMVIO::write_binary()</a>, <a class="el" href="gmv__io_8C_source.html#l01539">libMesh::GMVIO::write_discontinuous_gmv()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l02379">libMesh::ExodusII_IO_Helper::write_nodal_coordinates()</a>, <a class="el" href="exodusII__io_8C_source.html#l01790">libMesh::ExodusII_IO::write_nodal_data()</a>, <a class="el" href="system__io_8C_source.html#l01468">libMesh::System::write_parallel_data()</a>, <a class="el" href="system__io_8C_source.html#l02062">libMesh::System::write_SCALAR_dofs()</a>, <a class="el" href="xdr__io_8C_source.html#l01163">libMesh::XdrIO::write_serialized_bcs_helper()</a>, <a class="el" href="system__io_8C_source.html#l01776">libMesh::System::write_serialized_blocked_dof_objects()</a>, <a class="el" href="xdr__io_8C_source.html#l00330">libMesh::XdrIO::write_serialized_connectivity()</a>, <a class="el" href="xdr__io_8C_source.html#l00692">libMesh::XdrIO::write_serialized_nodes()</a> , 以及 <a class="el" href="xdr__io_8C_source.html#l01306">libMesh::XdrIO::write_serialized_nodesets()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> returnval =</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      cast_int&lt;processor_id_type&gt;(<a class="code" href="classlibMesh_1_1ParallelObject.html#a1ffb5b08919ab435109a302f94a7b3eb">_communicator</a>.size());</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libmesh_assert</a>(returnval); <span class="comment">// We never have an empty comm</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> returnval;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
-<div class="ttc" id="classlibMesh_1_1ParallelObject_html_a1ffb5b08919ab435109a302f94a7b3eb"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#a1ffb5b08919ab435109a302f94a7b3eb">libMesh::ParallelObject::_communicator</a></div><div class="ttdeci">const Parallel::Communicator &amp; _communicator</div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00120">parallel_object.h:120</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_af18245d4f872c36a41fc74086bda3e80"><div class="ttname"><a href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">libMesh::processor_id_type</a></div><div class="ttdeci">uint8_t processor_id_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00104">id_types.h:104</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a4f791f2cb1525c37e7916d564c3b3b78"><div class="ttname"><a href="namespacelibMesh.html#a4f791f2cb1525c37e7916d564c3b3b78">libMesh::libmesh_assert</a></div><div class="ttdeci">libmesh_assert(ctx)</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a13ce734a14ffd1dbb6496dab702da8e1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void libMesh::ReferenceCounter::print_info </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out_stream</em> = <code><a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prints the reference information, by default to <code><a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></code>. </p>
-
-<p>在文件 <a class="el" href="reference__counter_8C_source.html">reference_counter.C</a> 第 <a class="el" href="reference__counter_8C_source.html#l00081">81</a> 行定义.</p>
-
-<p>参考 <a class="el" href="reference__counter_8h_source.html#l00143">libMesh::ReferenceCounter::_enable_print_counter</a> , 以及 <a class="el" href="reference__counter_8C_source.html#l00047">libMesh::ReferenceCounter::get_info()</a>.</p>
-
-<p>参考自 <a class="el" href="libmesh_8C_source.html#l00668">libMesh::LibMeshInit::~LibMeshInit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">_enable_print_counter</a>)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    out_stream &lt;&lt; <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a103b37125ae9eaaadf6f7854df17faa2">ReferenceCounter::get_info</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a103b37125ae9eaaadf6f7854df17faa2"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a103b37125ae9eaaadf6f7854df17faa2">libMesh::ReferenceCounter::get_info</a></div><div class="ttdeci">static std::string get_info()</div><div class="ttdoc">Gets a string containing the reference information. </div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8C_source.html#l00047">reference_counter.C:47</a></div></div>
-<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a8f75e8a4a280f2c41636f2ae1307a311"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">libMesh::ReferenceCounter::_enable_print_counter</a></div><div class="ttdeci">static bool _enable_print_counter</div><div class="ttdoc">Flag to control whether reference count information is printed when print_info is called...</div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00143">reference_counter.h:143</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="ae1e7d1a1118f63d9889a761c27433bbc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacelibMesh.html#af18245d4f872c36a41fc74086bda3e80">processor_id_type</a> libMesh::ParallelObject::processor_id </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>返回</dt><dd>The rank of this processor in the group. </dd></dl>
-
-<p>在文件 <a class="el" href="parallel__object_8h_source.html">parallel_object.h</a> 第 <a class="el" href="parallel__object_8h_source.html#l00114">114</a> 行定义.</p>
-
-<p>参考 <a class="el" href="parallel__object_8h_source.html#l00120">libMesh::ParallelObject::_communicator</a>.</p>
-
-<p>参考自 <a class="el" href="boundary__info_8C_source.html#l03032">libMesh::BoundaryInfo::_find_id_maps()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00961">libMesh::PetscDMWrapper::add_dofs_to_section()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00532">libMesh::DistributedMesh::add_elem()</a>, <a class="el" href="boundary__info_8C_source.html#l00620">libMesh::BoundaryInfo::add_elements()</a>, <a class="el" href="dof__map_8C_source.html#l01544">libMesh::DofMap::add_neighbors_to_send_list()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00799">libMesh::DistributedMesh::add_node()</a>, <a class="el" href="mesh__modification_8C_source.html#l00333">libMesh::MeshTools::Modification::all_tri()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l03708">libMesh::DofMap::allgather_recursive_constraints()</a>, <a class="el" href="fem__system_8C_source.html#l00880">libMesh::FEMSystem::assembly()</a>, <a class="el" href="nemesis__io_8C_source.html#l00161">libMesh::Nemesis_IO::assert_symmetric_cmaps()</a>, <a class="el" href="partitioner_8C_source.html#l01334">libMesh::Partitioner::assign_partitioning()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01630">libMesh::Nemesis_IO_Helper::build_element_and_node_maps()</a>, <a class="el" href="partitioner_8C_source.html#l01111">libMesh::Partitioner::build_graph()</a>, <a class="el" href="inf__elem__builder_8C_source.html#l00041">libMesh::InfElemBuilder::build_inf_elem()</a>, <a class="el" href="boundary__info_8C_source.html#l02309">libMesh::BoundaryInfo::build_node_list_from_side_list()</a>, <a class="el" href="equation__systems_8C_source.html#l01151">libMesh::EquationSystems::build_parallel_elemental_solution_vector()</a>, <a class="el" href="equation__systems_8C_source.html#l00584">libMesh::EquationSystems::build_parallel_solution_vector()</a>, <a class="el" href="dof__map_8C_source.html#l00064">libMesh::DofMap::build_sparsity()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00989">libMesh::DistributedMesh::clear()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01022">libMesh::DistributedMesh::clear_elems()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l01752">libMesh::ExodusII_IO_Helper::close()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01793">libMesh::Nemesis_IO_Helper::compute_border_node_ids()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01110">libMesh::Nemesis_IO_Helper::compute_communication_map_parameters()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01188">libMesh::Nemesis_IO_Helper::compute_internal_and_border_elems_and_internal_nodes()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01038">libMesh::Nemesis_IO_Helper::compute_node_communication_maps()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01530">libMesh::Nemesis_IO_Helper::compute_num_global_elem_blocks()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01419">libMesh::Nemesis_IO_Helper::compute_num_global_nodesets()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01326">libMesh::Nemesis_IO_Helper::compute_num_global_sidesets()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l02791">libMesh::Nemesis_IO_Helper::construct_nemesis_filename()</a>, <a class="el" href="exodusII__io_8C_source.html#l01118">libMesh::ExodusII_IO::copy_elemental_solution()</a>, <a class="el" href="exodusII__io_8C_source.html#l01014">libMesh::ExodusII_IO::copy_nodal_solution()</a>, <a class="el" href="exodusII__io_8C_source.html#l01234">libMesh::ExodusII_IO::copy_scalar_solution()</a>, <a class="el" href="nemesis__io_8C_source.html#l01752">libMesh::Nemesis_IO::copy_scalar_solution()</a>, <a class="el" href="mesh__tools_8C_source.html#l02222">libMesh::MeshTools::correct_node_proc_ids()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l02125">libMesh::ExodusII_IO_Helper::create()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00711">libMesh::DistributedMesh::delete_elem()</a>, <a class="el" href="mesh__communication_8C_source.html#l01976">libMesh::MeshCommunication::delete_remote_elements()</a>, <a class="el" href="dof__map_8C_source.html#l00927">libMesh::DofMap::distribute_dofs()</a>, <a class="el" href="dof__map_8C_source.html#l01196">libMesh::DofMap::distribute_local_dofs_node_major()</a>, <a class="el" href="dof__map_8C_source.html#l01299">libMesh::DofMap::distribute_local_dofs_var_major()</a>, <a class="el" href="dof__map_8C_source.html#l01394">libMesh::DofMap::distribute_scalar_dofs()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00195">libMesh::DistributedMesh::DistributedMesh()</a>, <a class="el" href="dof__map_8h_source.html#l00711">libMesh::DofMap::end_dof()</a>, <a class="el" href="dof__map_8h_source.html#l00734">libMesh::DofMap::end_old_dof()</a>, <a class="el" href="ensight__io_8C_source.html#l00065">libMesh::EnsightIO::EnsightIO()</a>, <a class="el" href="generic__projector_8h_source.html#l02829">libMesh::GenericProjector&lt; FFunctor, GFunctor, FValue, ProjectionAction &gt;::SubFunctor::find_dofs_to_send()</a>, <a class="el" href="mesh__function_8C_source.html#l00648">libMesh::MeshFunction::find_element()</a>, <a class="el" href="mesh__function_8C_source.html#l00692">libMesh::MeshFunction::find_elements()</a>, <a class="el" href="unstructured__mesh_8C_source.html#l00530">libMesh::UnstructuredMesh::find_neighbors()</a>, <a class="el" href="dof__map_8h_source.html#l00687">libMesh::DofMap::first_dof()</a>, <a class="el" href="dof__map_8h_source.html#l00697">libMesh::DofMap::first_old_dof()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00369">libMesh::Nemesis_IO_Helper::get_cmap_params()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00223">libMesh::Nemesis_IO_Helper::get_eb_info_global()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00454">libMesh::Nemesis_IO_Helper::get_elem_cmap()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00301">libMesh::Nemesis_IO_Helper::get_elem_map()</a>, <a class="el" href="mesh__base_8C_source.html#l01020">libMesh::MeshBase::get_info()</a>, <a class="el" href="dof__map_8C_source.html#l02922">libMesh::DofMap::get_info()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00132">libMesh::Nemesis_IO_Helper::get_init_global()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00252">libMesh::Nemesis_IO_Helper::get_init_info()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00271">libMesh::Nemesis_IO_Helper::get_loadbal_param()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02288">libMesh::DofMap::get_local_constraints()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00412">libMesh::Nemesis_IO_Helper::get_node_cmap()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00332">libMesh::Nemesis_IO_Helper::get_node_map()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00191">libMesh::Nemesis_IO_Helper::get_ns_param_global()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00155">libMesh::Nemesis_IO_Helper::get_ss_param_global()</a>, <a class="el" href="sparsity__pattern_8C_source.html#l00111">libMesh::SparsityPattern::Build::handle_vi_vj()</a>, <a class="el" href="mesh__smoother__laplace_8C_source.html#l00159">libMesh::LaplaceMeshSmoother::init()</a>, <a class="el" href="system__subset__by__subdomain_8C_source.html#l00103">libMesh::SystemSubsetBySubdomain::init()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00451">libMesh::PetscDMWrapper::init_and_attach_petscdm()</a>, <a class="el" href="parmetis__partitioner_8C_source.html#l00241">libMesh::ParmetisPartitioner::initialize()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l02182">libMesh::ExodusII_IO_Helper::initialize()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l03206">libMesh::ExodusII_IO_Helper::initialize_element_variables()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l03301">libMesh::ExodusII_IO_Helper::initialize_global_variables()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l03273">libMesh::ExodusII_IO_Helper::initialize_nodal_variables()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00654">libMesh::DistributedMesh::insert_elem()</a>, <a class="el" href="dof__map_8C_source.html#l02609">libMesh::DofMap::is_evaluable()</a>, <a class="el" href="sparsity__pattern_8C_source.html#l00363">libMesh::SparsityPattern::Build::join()</a>, <a class="el" href="mesh__tools_8C_source.html#l01783">libMesh::MeshTools::libmesh_assert_consistent_distributed()</a>, <a class="el" href="mesh__tools_8C_source.html#l01813">libMesh::MeshTools::libmesh_assert_consistent_distributed_nodes()</a>, <a class="el" href="mesh__tools_8C_source.html#l01266">libMesh::MeshTools::libmesh_assert_contiguous_dof_ids()</a>, <a class="el" href="mesh__tools_8C_source.html#l01846">libMesh::MeshTools::libmesh_assert_parallel_consistent_procids&lt; Elem &gt;()</a>, <a class="el" href="mesh__tools_8C_source.html#l02034">libMesh::MeshTools::libmesh_assert_valid_neighbors()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01083">libMesh::DistributedMesh::libmesh_assert_valid_parallel_object_ids()</a>, <a class="el" href="dof__map_8C_source.html#l01109">libMesh::DofMap::local_variable_indices()</a>, <a class="el" href="mesh__refinement_8C_source.html#l00779">libMesh::MeshRefinement::make_coarsening_compatible()</a>, <a class="el" href="mesh__triangle__holes_8C_source.html#l00451">libMesh::TriangulatorInterface::MeshedHole::MeshedHole()</a>, <a class="el" href="mesh__base_8h_source.html#l00540">libMesh::MeshBase::n_active_local_elem()</a>, <a class="el" href="boundary__info_8C_source.html#l02171">libMesh::BoundaryInfo::n_boundary_conds()</a>, <a class="el" href="boundary__info_8C_source.html#l02192">libMesh::BoundaryInfo::n_edge_conds()</a>, <a class="el" href="dof__map_8h_source.html#l00669">libMesh::DofMap::n_local_dofs()</a>, <a class="el" href="system_8C_source.html#l00149">libMesh::System::n_local_dofs()</a>, <a class="el" href="mesh__base_8h_source.html#l00523">libMesh::MeshBase::n_local_elem()</a>, <a class="el" href="mesh__base_8h_source.html#l00417">libMesh::MeshBase::n_local_nodes()</a>, <a class="el" href="boundary__info_8C_source.html#l02236">libMesh::BoundaryInfo::n_nodeset_conds()</a>, <a class="el" href="boundary__info_8C_source.html#l02214">libMesh::BoundaryInfo::n_shellface_conds()</a>, <a class="el" href="periodic__boundaries_8C_source.html#l00059">libMesh::PeriodicBoundaries::neighbor()</a>, <a class="el" href="weighted__patch__recovery__error__estimator_8C_source.html#l00112">libMesh::WeightedPatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="sparsity__pattern_8C_source.html#l00238">libMesh::SparsityPattern::Build::operator()()</a>, <a class="el" href="patch__recovery__error__estimator_8C_source.html#l00211">libMesh::PatchRecoveryErrorEstimator::EstimateError::operator()()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00785">libMesh::DistributedMesh::own_node()</a>, <a class="el" href="boundary__info_8C_source.html#l02489">libMesh::BoundaryInfo::parallel_sync_node_ids()</a>, <a class="el" href="boundary__info_8C_source.html#l02433">libMesh::BoundaryInfo::parallel_sync_side_ids()</a>, <a class="el" href="metis__partitioner_8C_source.html#l00068">libMesh::MetisPartitioner::partition_range()</a>, <a class="el" href="system_8C_source.html#l02458">libMesh::System::point_gradient()</a>, <a class="el" href="system_8C_source.html#l02602">libMesh::System::point_hessian()</a>, <a class="el" href="system_8C_source.html#l02329">libMesh::System::point_value()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l02262">libMesh::DofMap::print_dof_constraints()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l01898">libMesh::DofMap::process_mesh_constraint_rows()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00620">libMesh::Nemesis_IO_Helper::put_cmap_params()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00700">libMesh::Nemesis_IO_Helper::put_elem_cmap()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00721">libMesh::Nemesis_IO_Helper::put_elem_map()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00594">libMesh::Nemesis_IO_Helper::put_loadbal_param()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00639">libMesh::Nemesis_IO_Helper::put_node_cmap()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l00683">libMesh::Nemesis_IO_Helper::put_node_map()</a>, <a class="el" href="namebased__io_8C_source.html#l00080">libMesh::NameBasedIO::read()</a>, <a class="el" href="nemesis__io_8C_source.html#l00198">libMesh::Nemesis_IO::read()</a>, <a class="el" href="xdr__io_8C_source.html#l01420">libMesh::XdrIO::read()</a>, <a class="el" href="checkpoint__io_8C_source.html#l00814">libMesh::CheckpointIO::read()</a>, <a class="el" href="equation__systems__io_8C_source.html#l00089">libMesh::EquationSystems::read()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l01453">libMesh::ExodusII_IO_Helper::read_elem_num_map()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l04623">libMesh::ExodusII_IO_Helper::read_global_values()</a>, <a class="el" href="exodusII__io_8C_source.html#l00894">libMesh::ExodusII_IO::read_header()</a>, <a class="el" href="checkpoint__io_8C_source.html#l00893">libMesh::CheckpointIO::read_header()</a>, <a class="el" href="xdr__io_8C_source.html#l01552">libMesh::XdrIO::read_header()</a>, <a class="el" href="system__io_8C_source.html#l00097">libMesh::System::read_header()</a>, <a class="el" href="system__io_8C_source.html#l00302">libMesh::System::read_legacy_data()</a>, <a class="el" href="dyna__io_8C_source.html#l00177">libMesh::DynaIO::read_mesh()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l00877">libMesh::ExodusII_IO_Helper::read_node_num_map()</a>, <a class="el" href="system__io_8C_source.html#l00449">libMesh::System::read_parallel_data()</a>, <a class="el" href="system__io_8C_source.html#l01089">libMesh::System::read_SCALAR_dofs()</a>, <a class="el" href="xdr__io_8C_source.html#l02371">libMesh::XdrIO::read_serialized_bc_names()</a>, <a class="el" href="xdr__io_8C_source.html#l02192">libMesh::XdrIO::read_serialized_bcs_helper()</a>, <a class="el" href="system__io_8C_source.html#l00765">libMesh::System::read_serialized_blocked_dof_objects()</a>, <a class="el" href="xdr__io_8C_source.html#l01727">libMesh::XdrIO::read_serialized_connectivity()</a>, <a class="el" href="system__io_8C_source.html#l00680">libMesh::System::read_serialized_data()</a>, <a class="el" href="xdr__io_8C_source.html#l01968">libMesh::XdrIO::read_serialized_nodes()</a>, <a class="el" href="xdr__io_8C_source.html#l02307">libMesh::XdrIO::read_serialized_nodesets()</a>, <a class="el" href="xdr__io_8C_source.html#l01664">libMesh::XdrIO::read_serialized_subdomain_names()</a>, <a class="el" href="system__io_8C_source.html#l01136">libMesh::System::read_serialized_vector()</a>, <a class="el" href="system__io_8C_source.html#l02165">libMesh::System::read_serialized_vectors()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l02763">libMesh::Nemesis_IO_Helper::read_var_names_impl()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01200">libMesh::DistributedMesh::renumber_dof_objects()</a>, <a class="el" href="distributed__mesh_8C_source.html#l01454">libMesh::DistributedMesh::renumber_nodes_and_elements()</a>, <a class="el" href="dof__map__constraints_8C_source.html#l04643">libMesh::DofMap::scatter_constraints()</a>, <a class="el" href="checkpoint__io_8C_source.html#l00188">libMesh::CheckpointIO::select_split_config()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00357">libMesh::DistributedMesh::set_next_unique_id()</a>, <a class="el" href="dof__map_8C_source.html#l00356">libMesh::DofMap::set_nonlocal_dof_objects()</a>, <a class="el" href="petsc__dm__wrapper_8C_source.html#l00846">libMesh::PetscDMWrapper::set_point_range_in_section()</a>, <a class="el" href="mesh__tools_8C_source.html#l00413">libMesh::MeshTools::total_weight()</a>, <a class="el" href="mesh__refinement_8C_source.html#l01709">libMesh::MeshRefinement::uniformly_coarsen()</a>, <a class="el" href="parallel__node_8C_source.html#l00182">libMesh::Parallel::Packing&lt; Node * &gt;::unpack()</a>, <a class="el" href="parallel__elem_8C_source.html#l00411">libMesh::Parallel::Packing&lt; Elem * &gt;::unpack()</a>, <a class="el" href="distributed__mesh_8C_source.html#l00255">libMesh::DistributedMesh::update_parallel_id_counts()</a>, <a class="el" href="mesh__tools_8h_source.html#l00078">libMesh::MeshTools::weight()</a>, <a class="el" href="namebased__io_8C_source.html#l00308">libMesh::NameBasedIO::write()</a>, <a class="el" href="xdr__io_8C_source.html#l00111">libMesh::XdrIO::write()</a>, <a class="el" href="checkpoint__io_8C_source.html#l00283">libMesh::CheckpointIO::write()</a>, <a class="el" href="equation__systems__io_8C_source.html#l00350">libMesh::EquationSystems::write()</a>, <a class="el" href="gmv__io_8C_source.html#l01539">libMesh::GMVIO::write_discontinuous_gmv()</a>, <a class="el" href="exodusII__io_8C_source.html#l01330">libMesh::ExodusII_IO::write_element_data()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l04303">libMesh::ExodusII_IO_Helper::write_element_values()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l04388">libMesh::ExodusII_IO_Helper::write_element_values_element_major()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l02516">libMesh::ExodusII_IO_Helper::write_elements()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l03884">libMesh::ExodusII_IO_Helper::write_elemset_data()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l03390">libMesh::ExodusII_IO_Helper::write_elemsets()</a>, <a class="el" href="exodusII__io_8C_source.html#l01956">libMesh::ExodusII_IO::write_global_data()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l04591">libMesh::ExodusII_IO_Helper::write_global_values()</a>, <a class="el" href="system__io_8C_source.html#l01267">libMesh::System::write_header()</a>, <a class="el" href="exodusII__io_8C_source.html#l01943">libMesh::ExodusII_IO::write_information_records()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l04553">libMesh::ExodusII_IO_Helper::write_information_records()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l02379">libMesh::ExodusII_IO_Helper::write_nodal_coordinates()</a>, <a class="el" href="ucd__io_8C_source.html#l00333">libMesh::UCDIO::write_nodal_data()</a>, <a class="el" href="exodusII__io_8C_source.html#l01790">libMesh::ExodusII_IO::write_nodal_data()</a>, <a class="el" href="exodusII__io_8C_source.html#l02257">libMesh::ExodusII_IO::write_nodal_data_common()</a>, <a class="el" href="exodusII__io_8C_source.html#l02179">libMesh::ExodusII_IO::write_nodal_data_discontinuous()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l04525">libMesh::ExodusII_IO_Helper::write_nodal_values()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l03779">libMesh::ExodusII_IO_Helper::write_nodeset_data()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l01915">libMesh::Nemesis_IO_Helper::write_nodesets()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l03102">libMesh::ExodusII_IO_Helper::write_nodesets()</a>, <a class="el" href="system__io_8C_source.html#l01468">libMesh::System::write_parallel_data()</a>, <a class="el" href="system__io_8C_source.html#l02062">libMesh::System::write_SCALAR_dofs()</a>, <a class="el" href="xdr__io_8C_source.html#l01380">libMesh::XdrIO::write_serialized_bc_names()</a>, <a class="el" href="xdr__io_8C_source.html#l01163">libMesh::XdrIO::write_serialized_bcs_helper()</a>, <a class="el" href="system__io_8C_source.html#l01776">libMesh::System::write_serialized_blocked_dof_objects()</a>, <a class="el" href="xdr__io_8C_source.html#l00330">libMesh::XdrIO::write_serialized_connectivity()</a>, <a class="el" href="system__io_8C_source.html#l01668">libMesh::System::write_serialized_data()</a>, <a class="el" href="xdr__io_8C_source.html#l00692">libMesh::XdrIO::write_serialized_nodes()</a>, <a class="el" href="xdr__io_8C_source.html#l01306">libMesh::XdrIO::write_serialized_nodesets()</a>, <a class="el" href="xdr__io_8C_source.html#l00291">libMesh::XdrIO::write_serialized_subdomain_names()</a>, <a class="el" href="system__io_8C_source.html#l02118">libMesh::System::write_serialized_vector()</a>, <a class="el" href="system__io_8C_source.html#l02259">libMesh::System::write_serialized_vectors()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l03487">libMesh::ExodusII_IO_Helper::write_sideset_data()</a>, <a class="el" href="nemesis__io__helper_8C_source.html#l02066">libMesh::Nemesis_IO_Helper::write_sidesets()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l02978">libMesh::ExodusII_IO_Helper::write_sidesets()</a>, <a class="el" href="exodusII__io_8C_source.html#l01988">libMesh::ExodusII_IO::write_timestep()</a>, <a class="el" href="exodusII__io__helper_8C_source.html#l03367">libMesh::ExodusII_IO_Helper::write_timestep()</a> , 以及 <a class="el" href="exodusII__io_8C_source.html#l00188">libMesh::ExodusII_IO::write_timestep_discontinuous()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  { <span class="keywordflow">return</span> cast_int&lt;processor_id_type&gt;(<a class="code" href="classlibMesh_1_1ParallelObject.html#a1ffb5b08919ab435109a302f94a7b3eb">_communicator</a>.rank()); }</div>
-<div class="ttc" id="classlibMesh_1_1ParallelObject_html_a1ffb5b08919ab435109a302f94a7b3eb"><div class="ttname"><a href="classlibMesh_1_1ParallelObject.html#a1ffb5b08919ab435109a302f94a7b3eb">libMesh::ParallelObject::_communicator</a></div><div class="ttdeci">const Parallel::Communicator &amp; _communicator</div><div class="ttdef"><b>Definition:</b> <a href="parallel__object_8h_source.html#l00120">parallel_object.h:120</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1324,16 +798,15 @@ template&lt;typename T &gt; </div>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8C_source.html">petsc_shell_matrix.C</a> 第 <a class="el" href="petsc__shell__matrix_8C_source.html#l00028">28</a> 行定义.</p>
 
-<p>参考 <a class="el" href="petsc__dm__wrapper_8C_source.html#l00061">libMesh::ierr</a> , 以及 <a class="el" href="petsc__vector_8h_source.html#l00641">libMesh::PetscVector&lt; T &gt;::vec()</a>.</p>
+<p>参考 <a class="el" href="petsc__vector_8h_source.html#l00641">libMesh::PetscVector&lt; T &gt;::vec()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  PetscVector&lt;T&gt; &amp; petsc_dest = cast_ref&lt;PetscVector&lt;T&gt; &amp;&gt;(dest);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">const</span> PetscVector&lt;T&gt; &amp; petsc_arg = cast_ref&lt;const PetscVector&lt;T&gt; &amp;&gt;(arg);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  PetscErrorCode <a class="code" href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">ierr</a> = MatMult(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, petsc_arg.vec(), petsc_dest.vec());</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  PetscErrorCode ierr = MatMult(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, petsc_arg.vec(), petsc_dest.vec());</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  LIBMESH_CHKERR(ierr);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_abf78792d778bc45b322318cc1f96ca60"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">libMesh::PetscShellMatrix::_mat</a></div><div class="ttdeci">WrappedPetsc&lt; Mat &gt; _mat</div><div class="ttdoc">PETSc Shell 矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00155">petsc_shell_matrix.h:155</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a03d02ae8c0dab01091f6b27bd0765c7d"><div class="ttname"><a href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">libMesh::ierr</a></div><div class="ttdeci">PetscErrorCode PetscInt const PetscInt IS DM *subdm PetscErrorCode ierr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00061">petsc_dm_wrapper.C:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1384,70 +857,19 @@ template&lt;typename T &gt; </div>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8C_source.html">petsc_shell_matrix.C</a> 第 <a class="el" href="petsc__shell__matrix_8C_source.html#l00041">41</a> 行定义.</p>
 
-<p>参考 <a class="el" href="petsc__dm__wrapper_8C_source.html#l00061">libMesh::ierr</a> , 以及 <a class="el" href="petsc__vector_8h_source.html#l00641">libMesh::PetscVector&lt; T &gt;::vec()</a>.</p>
+<p>参考 <a class="el" href="petsc__vector_8h_source.html#l00641">libMesh::PetscVector&lt; T &gt;::vec()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  PetscVector&lt;T&gt; &amp; petsc_dest = cast_ref&lt;PetscVector&lt;T&gt; &amp;&gt;(dest);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> PetscVector&lt;T&gt; &amp; petsc_arg = cast_ref&lt;const PetscVector&lt;T&gt; &amp;&gt;(arg);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  PetscErrorCode <a class="code" href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">ierr</a> = MatMultAdd(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, petsc_arg.vec(), petsc_dest.vec(), petsc_dest.vec());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  PetscErrorCode ierr = MatMultAdd(<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">_mat</a>, petsc_arg.vec(), petsc_dest.vec(), petsc_dest.vec());</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  LIBMESH_CHKERR(ierr);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_abf78792d778bc45b322318cc1f96ca60"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">libMesh::PetscShellMatrix::_mat</a></div><div class="ttdeci">WrappedPetsc&lt; Mat &gt; _mat</div><div class="ttdoc">PETSc Shell 矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00155">petsc_shell_matrix.h:155</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a03d02ae8c0dab01091f6b27bd0765c7d"><div class="ttname"><a href="namespacelibMesh.html#a03d02ae8c0dab01091f6b27bd0765c7d">libMesh::ierr</a></div><div class="ttdeci">PetscErrorCode PetscInt const PetscInt IS DM *subdm PetscErrorCode ierr</div><div class="ttdef"><b>Definition:</b> <a href="petsc__dm__wrapper_8C_source.html#l00061">petsc_dm_wrapper.C:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">类成员变量说明</h2>
-<a class="anchor" id="a1ffb5b08919ab435109a302f94a7b3eb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Parallel::Communicator&amp; libMesh::ParallelObject::_communicator</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>在文件 <a class="el" href="parallel__object_8h_source.html">parallel_object.h</a> 第 <a class="el" href="parallel__object_8h_source.html#l00120">120</a> 行定义.</p>
-
-<p>参考自 <a class="el" href="equation__systems_8C_source.html#l01151">libMesh::EquationSystems::build_parallel_elemental_solution_vector()</a>, <a class="el" href="equation__systems_8C_source.html#l00584">libMesh::EquationSystems::build_parallel_solution_vector()</a>, <a class="el" href="parallel__object_8h_source.html#l00097">libMesh::ParallelObject::comm()</a>, <a class="el" href="parallel__object_8h_source.html#l00103">libMesh::ParallelObject::n_processors()</a>, <a class="el" href="parallel__object_8h_source.html#l00082">libMesh::ParallelObject::operator=()</a>, <a class="el" href="parallel__object_8h_source.html#l00114">libMesh::ParallelObject::processor_id()</a> , 以及 <a class="el" href="boundary__info_8C_source.html#l00360">libMesh::BoundaryInfo::regenerate_id_sets()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7c913252d05560f8bc7c75a63547c4c3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#adb5daadc989c1fe71ec8d173adf0ed1e">ReferenceCounter::Counts</a> libMesh::ReferenceCounter::_counts</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Actually holds the data. </p>
-
-<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00124">124</a> 行定义.</p>
-
-<p>参考自 <a class="el" href="reference__counter_8C_source.html#l00047">libMesh::ReferenceCounter::get_info()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ab89946d220702b4bde5c57f71083009f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1458,7 +880,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlibMesh_1_1DofMap.html">DofMap</a> const* <a class="el" href="classlibMesh_1_1ShellMatrix.html">libMesh::ShellMatrix</a>&lt; T &gt;::_dof_map</td>
+          <td class="memname">DofMap const* <a class="el" href="classlibMesh_1_1ShellMatrix.html">libMesh::ShellMatrix</a>&lt; T &gt;::_dof_map</td>
         </tr>
       </table>
   </td>
@@ -1468,37 +890,11 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>与此对象关联的 <code><a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a></code> 对象。 </p>
+<p>与此对象关联的 <code>DofMap</code> 对象。 </p>
 
 <p>在文件 <a class="el" href="shell__matrix_8h_source.html">shell_matrix.h</a> 第 <a class="el" href="shell__matrix_8h_source.html#l00141">141</a> 行定义.</p>
 
-<p>参考自 <a class="el" href="shell__matrix_8h_source.html#l00120">libMesh::ShellMatrix&lt; Number &gt;::attach_dof_map()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8f75e8a4a280f2c41636f2ae1307a311"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool libMesh::ReferenceCounter::_enable_print_counter = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Flag to control whether reference count information is printed when print_info is called. </p>
-
-<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00143">143</a> 行定义.</p>
-
-<p>参考自 <a class="el" href="reference__counter_8C_source.html#l00100">libMesh::ReferenceCounter::disable_print_counter_info()</a>, <a class="el" href="reference__counter_8C_source.html#l00094">libMesh::ReferenceCounter::enable_print_counter_info()</a> , 以及 <a class="el" href="reference__counter_8C_source.html#l00081">libMesh::ReferenceCounter::print_info()</a>.</p>
+<p>参考自 <a class="el" href="shell__matrix_8h_source.html#l00120">libMesh::ShellMatrix&lt; T &gt;::attach_dof_map()</a>.</p>
 
 </div>
 </div>
@@ -1506,7 +902,7 @@ template&lt;typename T&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1532,7 +928,7 @@ template&lt;typename T&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1554,57 +950,6 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abedbd3a4ce19686187449a8a0557b74b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classlibMesh_1_1Threads_1_1spin__mutex.html">Threads::spin_mutex</a> libMesh::ReferenceCounter::_mutex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mutual exclusion object to enable thread-safe reference counting. </p>
-
-<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00137">137</a> 行定义.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad2c30f0f71dcd00f00faa8e46aa3e043"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classlibMesh_1_1Threads_1_1atomic.html">Threads::atomic</a>&lt; unsigned int &gt; libMesh::ReferenceCounter::_n_objects</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The number of objects. </p>
-<p>Print the reference count information when the number returns to 0. </p>
-
-<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00132">132</a> 行定义.</p>
-
-<p>参考自 <a class="el" href="reference__counter_8h_source.html#l00085">libMesh::ReferenceCounter::n_objects()</a>, <a class="el" href="reference__counter_8h_source.html#l00150">libMesh::ReferenceCounter::ReferenceCounter()</a> , 以及 <a class="el" href="reference__counter_8h_source.html#l00171">libMesh::ReferenceCounter::~ReferenceCounter()</a>.</p>
-
-</div>
-</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>/home/lwz/libmesh/include/numerics/<a class="el" href="petsc__shell__matrix_8h_source.html">petsc_shell_matrix.h</a></li>
 <li>/home/lwz/libmesh/src/numerics/<a class="el" href="petsc__shell__matrix_8C_source.html">petsc_shell_matrix.C</a></li>
@@ -1612,7 +957,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 12:09:37 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 13:53:24 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

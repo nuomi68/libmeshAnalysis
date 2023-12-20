@@ -4,5 +4,5 @@ digraph "类继承关系图"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="libMesh::GmshIO::Element\lDefinition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlibMesh_1_1GmshIO_1_1ElementDefinition.html",tooltip="Defines mapping from libMesh element types to Gmsh element types or vice-versa. "];
+  Node1 [label="MetaPhysicL::ReplaceAlgebraic\lType\< libMesh::VectorValue\l\< T \>, U \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMetaPhysicL_1_1ReplaceAlgebraicType_3_01libMesh_1_1VectorValue_3_01T_01_4_00_01U_01_4.html"];
 }

@@ -61,7 +61,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
-      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,13 +79,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">类</a> &#124;
-<a href="#namespaces">命名空间</a>  </div>
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#typedef-members">类型定义</a>  </div>
   <div class="headertitle">
 <div class="title">tensor_value.h 文件参考</div>  </div>
 </div><!--header-->
@@ -109,15 +109,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 命名空间</h2></td></tr>
 <tr class="memitem:namespacelibMesh"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh.html">libMesh</a></td></tr>
-<tr class="memdesc:namespacelibMesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code><a class="el" href="namespacelibMesh.html" title="The libMesh namespace provides an interface to certain functionality in the library. ">libMesh</a></code> namespace provides an interface to certain functionality in the library. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceMetaPhysicL"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMetaPhysicL.html">MetaPhysicL</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ac535bcd5f0f844971b6c81fcc7ed7948"><td class="memItemLeft" align="right" valign="top">typedef TensorValue&lt; Real &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh.html#ac535bcd5f0f844971b6c81fcc7ed7948">libMesh::RealTensorValue</a></td></tr>
+<tr class="memdesc:ac535bcd5f0f844971b6c81fcc7ed7948"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于允许在实数和复数数据类型之间无缝切换的有用typedef。  <a href="#ac535bcd5f0f844971b6c81fcc7ed7948">更多...</a><br/></td></tr>
+<tr class="separator:ac535bcd5f0f844971b6c81fcc7ed7948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865fd7fee7c211a9a67114a6b7588983"><td class="memItemLeft" align="right" valign="top">typedef TensorValue&lt; Number &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh.html#a865fd7fee7c211a9a67114a6b7588983">libMesh::NumberTensorValue</a></td></tr>
+<tr class="separator:a865fd7fee7c211a9a67114a6b7588983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd4c05784227753fe29f61700ac5190"><td class="memItemLeft" align="right" valign="top">typedef RealTensorValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh.html#a9bd4c05784227753fe29f61700ac5190">libMesh::RealTensor</a></td></tr>
+<tr class="separator:a9bd4c05784227753fe29f61700ac5190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f437145a24acdee8c954a449f6389af"><td class="memItemLeft" align="right" valign="top">typedef NumberTensorValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh.html#a5f437145a24acdee8c954a449f6389af">libMesh::Tensor</a></td></tr>
+<tr class="separator:a5f437145a24acdee8c954a449f6389af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 12:09:06 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 13:53:23 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

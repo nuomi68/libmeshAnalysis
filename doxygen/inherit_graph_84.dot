@@ -4,5 +4,5 @@ digraph "类继承关系图"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="libMesh::FETransformation\lBase\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1FETransformationBase.html",tooltip="This class handles the computation of the shape functions in the physical domain. ..."];
+  Node1 [label="MetaPhysicL::RawType\l\< libMesh::DenseVector\l\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMetaPhysicL_1_1RawType_3_01libMesh_1_1DenseVector_3_01T_01_4_01_4.html"];
 }

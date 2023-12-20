@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>libmesh解析: libMesh - 一个 C++ 有限元计算工具包</title>
+<title>libmesh解析: 首页</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -75,96 +75,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="namespacelibMesh.html" title="The libMesh namespace provides an interface to certain functionality in the library. ">libMesh</a> - 一个 C++ 有限元计算工具包 </div>  </div>
+<div class="title">libmesh解析 文档</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><code><a class="el" href="namespacelibMesh.html" title="The libMesh namespace provides an interface to certain functionality in the library. ">libMesh</a></code> 工具包 是一个能够并行和串行模拟求解偏微分方程的C++工具包 诞生于2002年3月，目的是为当前可用的软件包提供一个友好的界面。 原工作网站https://libmesh.github.io/libmesh一个主要的目标是自适应网格细化（AMR）并行计算，以此允许物理学家们专注于方程计算而不是代码开发</p>
-<p>这个工具包主要提供</p>
-<ul>
-<li>分区域算法<ul>
-<li><a class="el" href="namespaceMetis.html">Metis</a> K-Way 加权图分解。</li>
-<li><a class="el" href="namespaceParmetis.html">Parmetis</a> 并行图分解。</li>
-<li><a class="el" href="namespaceHilbert.html">Hilbert</a> 和 Morton-ordered 空间曲线填充.</li>
-</ul>
-</li>
-<li>通用1D有限元<ul>
-<li>2, 3, 和 4 节点边 (<code>Edge2</code>, <code>Edge3</code>, <code>Edge4</code>).</li>
-</ul>
-</li>
-<li>通用2D有限元<ul>
-<li>3, 6, 和 7 点三角形 (<code>Tri3</code>, <code>Tri6</code>, <code>Tri7</code>).</li>
-<li>4, 8, 和 9 点四边形 (<code>Quad4</code>, <code>Quad8</code>, <code>Quad9</code>).</li>
-<li>4 和 6 点的无限元四边形 (<code>InfQuad4</code>, <code>InfQuad6</code>).</li>
-</ul>
-</li>
-<li>通用3D有限元<ul>
-<li>4, 10, 和 14 点四面体 (<code>Tet4</code>, <code>Tet10</code>, <code>Tet14</code>).</li>
-<li>8, 20, 和 27 点六面体 (<code>Hex8</code>, <code>Hex20</code>, <code>Hex27</code>).</li>
-<li>6, 15, 和 18 点棱镜体 (<code>Prism6</code>, <code>Prism15</code>, <code>Prism18</code>).</li>
-<li>5, 13, 和 14 点金字塔 (<code>Pyramid5</code>, <code>Pyramid13</code>, <code>Pyramid14</code>).</li>
-<li>8, 16, 和 18 点无限元四面体 (<code>InfHex8</code>, <code>InfHex16</code>, <code>InfHex18</code>).</li>
-<li>6 和 12 点无限元棱镜体 (<code>InfPrism6</code>, <code>InfPrism12</code>).</li>
-</ul>
-</li>
-<li>通用有限元基函数<ul>
-<li>Lagrange</li>
-<li>Hierarchic</li>
-<li>C1 单元 (Hermite, Clough-Tocher)</li>
-<li>Discontinuous 单元 (Monomials, L2-Lagrange)</li>
-<li>Vector-valued 单元 (Lagrange-Vec, Monomial-Vec, 一阶Nedelec, Raviart-Thomas)</li>
-</ul>
-</li>
-<li>维度无关<ul>
-<li>可以在不改变整体代码的情况下运行2D 或 3D模拟</li>
-<li>在2D情况下调试的代码，可以立即增大规模，进行3D模拟</li>
-</ul>
-</li>
-<li>稀疏线性代数（矩阵运算）<ul>
-<li><code>PETSc</code> 和 Trilinos 接口为串行和并行求解提供一套迭代和预处理器</li>
-<li>同时 <code>PETSc</code> 支持复数运算</li>
-<li><code>Eigen</code> (可选 LASPACK) 为串行程序提供迭代和预处理求解器</li>
-<li><code>SparseMatrix</code>, <code>NumericVector</code>, 和 <code>LinearSolver</code> 允许自由切换求解包 添加新的求解器就像C++类的派生一样简单（这个可能不太简单.......）</li>
-</ul>
-</li>
-<li>网格读写 &amp; 格式转换工具<ul>
-<li>Ideas Universal (UNV) 格式 (.unv) 支持从2414个数据集读取节点数据.</li>
-<li>Sandia National Labs ExodusII 格式 (.exd)</li>
-<li>Amtec Engineering's Tecplot 二进制格式 (.plt)</li>
-<li>Amtec Engineering's Tecplot ascii 格式 (.dat)</li>
-<li>Los Alamos National Labs GMV 格式 (.gmv)</li>
-<li>AVS Unstructured UCD 格式 (.ucd)</li>
-<li>Gmsh (<a href="http://geuz.org/gmsh">http://geuz.org/gmsh</a>) 格式 (.msh)</li>
-<li>Abaqus 格式 (.inp)</li>
-<li>VTK 非结构化网格格式 (.vtk)</li>
-</ul>
-</li>
-<li>网格划分 &amp; 修改工具<ul>
-<li>粗化或者细化网格: prescribed, level-one-compatible, 或 uniform.</li>
-<li>创建均值 n-cubes的 <code>Edge2</code>, <code>Tri3</code>, <code>Tri6</code>, <code>Quad4</code>, <code>Quad8</code>, <code>Quad9</code>, <code>Hex8</code>, <code>Hex20</code>, <code>Hex27</code>.</li>
-<li>创建圆圈或者圆的 <code>Tri3</code>, <code>Tri6</code>, <code>Quad4</code>, <code>Quad8</code>, <code>Quad9</code>, <code>Hex8</code>.</li>
-<li>添加无限元素到基于体的网格，处理对称平面。</li>
-<li>转化 <code>Quad4</code>, <code>Quad8</code>, <code>Quad9</code> 到 <code>Tri3</code>, <code>Tri6</code>.</li>
-<li>将上述所有的线性元组成的网格转换到对应的二阶单元</li>
-<li>对网格进行扭曲、平移、旋转和缩放</li>
-<li>定义边界框或球</li>
-<li>提取网格的边作为边界条件或者作为一个单独的网格</li>
-</ul>
-</li>
-<li>数值积分<ul>
-<li>Gauss-Legendre（1D和2D、3D的张量积规则）高精度表格，最高达44阶</li>
-<li>三角形和四面体的最佳规则，支持非常高的阶数</li>
-<li>对于四边形和六面体，使用最佳的单项式规则</li>
-</ul>
-</li>
-<li>求解优化问题<ul>
-<li>支持基于 TAO 和 nlopt 的带有梯度和 Hessian 信息的约束优化求解器。 </li>
-</ul>
-</li>
-</ul>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 12:10:41 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 13:53:24 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

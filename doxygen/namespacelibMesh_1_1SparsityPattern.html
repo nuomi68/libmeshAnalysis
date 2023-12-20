@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,139 +83,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">类</a> &#124;
-<a href="#typedef-members">类型定义</a> &#124;
-<a href="#func-members">函数</a>  </div>
   <div class="headertitle">
 <div class="title">libMesh::SparsityPattern 命名空间参考</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This defines the sparsity pattern, or graph, of a sparse matrix.  
-<a href="#details">更多...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-类</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparsityPattern_1_1Graph.html">Graph</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparsityPattern_1_1NonlocalGraph.html">NonlocalGraph</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparsityPattern_1_1AugmentSparsityPattern.html">AugmentSparsityPattern</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class to be used to add user-defined implicit degree of freedom couplings.  <a href="classlibMesh_1_1SparsityPattern_1_1AugmentSparsityPattern.html#details">更多...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparsityPattern_1_1Build.html">Build</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This helper class can be called on multiple threads to compute the sparsity pattern (or graph) of the sparse matrix resulting from the discretization.  <a href="classlibMesh_1_1SparsityPattern_1_1Build.html#details">更多...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-类型定义</h2></td></tr>
-<tr class="memitem:ab73448d7cfb2bfc5ebeba5d0561d71df"><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
-&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, <br class="typebreak"/>
-<a class="el" href="classlibMesh_1_1Threads_1_1scalable__allocator.html">Threads::scalable_allocator</a><br class="typebreak"/>
-&lt; <a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1SparsityPattern.html#ab73448d7cfb2bfc5ebeba5d0561d71df">Row</a></td></tr>
-<tr class="separator:ab73448d7cfb2bfc5ebeba5d0561d71df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-函数</h2></td></tr>
-<tr class="memitem:a859cc7fecedbd239ca60ef57d33fd1d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1SparsityPattern.html#a859cc7fecedbd239ca60ef57d33fd1d0">_dummy_function</a> (void)</td></tr>
-<tr class="separator:a859cc7fecedbd239ca60ef57d33fd1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49c80b2ced17a3c61377fd9e6a196146"><td class="memTemplParams" colspan="2">template&lt;typename BidirectionalIterator &gt; </td></tr>
-<tr class="memitem:a49c80b2ced17a3c61377fd9e6a196146"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelibMesh_1_1SparsityPattern.html#a49c80b2ced17a3c61377fd9e6a196146">sort_row</a> (const BidirectionalIterator begin, BidirectionalIterator middle, const BidirectionalIterator end)</td></tr>
-<tr class="memdesc:a49c80b2ced17a3c61377fd9e6a196146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splices the two sorted ranges [begin,middle) and [middle,end) into one sorted range [begin,end).  <a href="#a49c80b2ced17a3c61377fd9e6a196146">更多...</a><br/></td></tr>
-<tr class="separator:a49c80b2ced17a3c61377fd9e6a196146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>This defines the sparsity pattern, or graph, of a sparse matrix. </p>
-<p>The format is quite simple &ndash; the global indices of the nonzero entries in each row are packed into a vector. The global indices (i,j) of the nth nonzero entry of row i are given by j = sparsity_pattern[i][n];</p>
-<dl class="section author"><dt>作者</dt><dd>Roy Stogner </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2010 Defines the sparsity pattern of a sparse matrix. </dd></dl>
-</div><h2 class="groupheader">类型定义说明</h2>
-<a class="anchor" id="ab73448d7cfb2bfc5ebeba5d0561d71df"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>, <a class="el" href="classlibMesh_1_1Threads_1_1scalable__allocator.html">Threads::scalable_allocator</a>&lt;<a class="el" href="namespacelibMesh.html#ab4541d74809228310a715b11c40587fc">dof_id_type</a>&gt; &gt; <a class="el" href="namespacelibMesh_1_1SparsityPattern.html#ab73448d7cfb2bfc5ebeba5d0561d71df">libMesh::SparsityPattern::Row</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>在文件 <a class="el" href="sparsity__pattern_8h_source.html">sparsity_pattern.h</a> 第 <a class="el" href="sparsity__pattern_8h_source.html#l00051">51</a> 行定义.</p>
-
-</div>
-</div>
-<h2 class="groupheader">函数说明</h2>
-<a class="anchor" id="a859cc7fecedbd239ca60ef57d33fd1d0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void libMesh::SparsityPattern::_dummy_function </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>在文件 <a class="el" href="sparsity__pattern_8C_source.html">sparsity_pattern.C</a> 第 <a class="el" href="sparsity__pattern_8C_source.html#l00086">86</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a49c80b2ced17a3c61377fd9e6a196146"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BidirectionalIterator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void libMesh::SparsityPattern::sort_row </td>
-          <td>(</td>
-          <td class="paramtype">const BidirectionalIterator&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BidirectionalIterator&#160;</td>
-          <td class="paramname"><em>middle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const BidirectionalIterator&#160;</td>
-          <td class="paramname"><em>end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Splices the two sorted ranges [begin,middle) and [middle,end) into one sorted range [begin,end). </p>
-<p>This method is much like std::inplace_merge except it assumes the intersection of the two sorted ranges is empty and that any element in each range occurs only once in that range. Additionally, this sort occurs in-place, while std::inplace_merge may use a temporary buffer. </p>
-
-<p>参考自 <a class="el" href="sparsity__pattern_8C_source.html#l00111">libMesh::SparsityPattern::Build::handle_vi_vj()</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 12:09:48 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 13:53:24 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

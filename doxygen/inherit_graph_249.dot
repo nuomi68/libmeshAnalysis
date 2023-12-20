@@ -1,8 +1,0 @@
-digraph "类继承关系图"
-{
- // INTERACTIVE_SVG=YES
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="libMesh::TensorTools\l::MakeBaseNumber\< T,\l typename std::enable\l_if\< ScalarTraits\< T \>\l::value \>::type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlibMesh_1_1TensorTools_1_1MakeBaseNumber_3_01T_00_01typename_01std_1_1enable__if_3_01Scala443ec0f8454bf1fb7a66806aea974eb3.html",tooltip="此模板特化表示对于标量类型，将使用MakeNumber来创建基础数值类型。 "];
-}

@@ -3,14 +3,9 @@ digraph "libMesh::DenseMatrixBase&lt; T &gt;"
  // INTERACTIVE_SVG=YES
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
   Node1 [label="libMesh::DenseMatrixBase\< T \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="DenseMatrix\< Number \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseMatrix.html"];
+  Node2 [label="libMesh::DenseMatrix\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseMatrix.html",tooltip="定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 "];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="DenseMatrix\< Real \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseMatrix.html"];
-  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="libMesh::DenseMatrix\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseMatrix.html",tooltip="定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 "];
-  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="libMesh::DenseSubMatrix\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseSubMatrix.html",tooltip="为有限元类型的计算定义密集子矩阵。 在将元素刚度矩阵相加到全局矩阵之前存储非常有用，特别是在存在方程组时。 所有重写的虚拟函数在 dense_matrix_base.h 中有文档。 "];
+  Node3 [label="libMesh::DenseSubMatrix\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibMesh_1_1DenseSubMatrix.html",tooltip="为有限元类型的计算定义密集子矩阵。 在将元素刚度矩阵相加到全局矩阵之前存储非常有用，特别是在存在方程组时。 所有重写的虚拟函数在 dense_matrix_base.h 中有文档。 "];
 }

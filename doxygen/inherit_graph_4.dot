@@ -4,5 +4,5 @@ digraph "类继承关系图"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="GETPOT_NAMESPACE::GetPot\l::ltstr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structGETPOT__NAMESPACE_1_1GetPot_1_1ltstr.html",tooltip="helper functor for creating sets of C-style strings "];
+  Node1 [label="libMesh::CompareTypes\l\< VectorValue\< T \>, TypeVector\l\< T2 \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlibMesh_1_1CompareTypes_3_01VectorValue_3_01T_01_4_00_01TypeVector_3_01T2_01_4_01_4.html"];
 }

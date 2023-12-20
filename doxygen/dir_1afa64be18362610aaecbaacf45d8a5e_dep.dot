@@ -1,9 +1,0 @@
-digraph "/home/lwz/libmesh/include/timpi_shims" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_e7fee3c13989f8a9ad582fb61a959d2f {
-    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_e7fee3c13989f8a9ad582fb61a959d2f.html"]
-  dir_1afa64be18362610aaecbaacf45d8a5e [shape=box, label="timpi_shims", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_1afa64be18362610aaecbaacf45d8a5e.html"];
-  }
-}

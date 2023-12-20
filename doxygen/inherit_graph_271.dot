@@ -1,8 +1,0 @@
-digraph "类继承关系图"
-{
- // INTERACTIVE_SVG=YES
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="libMesh::TensorTools\l::TensorTraits\< T, Enable \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlibMesh_1_1TensorTools_1_1TensorTraits.html",tooltip="此模板结构用于获取张量的特性，包括张量的秩。 默认情况下，它被断言为false，需要为特定类型进行特化。 "];
-}

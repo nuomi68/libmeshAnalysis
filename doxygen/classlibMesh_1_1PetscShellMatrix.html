@@ -103,8 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="dynheader">
 类 libMesh::PetscShellMatrix&lt; T &gt; 继承关系图:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classlibMesh_1_1PetscShellMatrix__inherit__graph.svg" width="331" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classlibMesh_1_1PetscShellMatrix__inherit__graph.svg" width="331" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -155,7 +154,7 @@ Public 成员函数</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
 <tr class="memitem:a6be702fe777476e38b5e848a5e4c265f"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ShellMatrix.html#a6be702fe777476e38b5e848a5e4c265f">build</a> (const Parallel::Communicator &amp;comm, const SolverPackage solver_package=libMesh::default_solver_package())</td></tr>
+&lt; <a class="el" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ShellMatrix.html#a6be702fe777476e38b5e848a5e4c265f">build</a> (const Parallel::Communicator &amp;comm, const SolverPackage solver_package=<a class="el" href="namespacelibMesh.html#a496c62248223cd940c7715932dd0dc2d">libMesh::default_solver_package</a>())</td></tr>
 <tr class="memdesc:a6be702fe777476e38b5e848a5e4c265f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用指定的线性求解器包构建一个 <code>ShellMatrix&lt;T&gt;。</code>  <a href="#a6be702fe777476e38b5e848a5e4c265f">更多...</a><br/></td></tr>
 <tr class="separator:a6be702fe777476e38b5e848a5e4c265f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -309,7 +308,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const SolverPackage&#160;</td>
-          <td class="paramname"><em>solver_package</em> = <code>libMesh::default_solver_package()</code>&#160;</td>
+          <td class="paramname"><em>solver_package</em> = <code><a class="el" href="namespacelibMesh.html#a496c62248223cd940c7715932dd0dc2d">libMesh::default_solver_package</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -382,6 +381,8 @@ template&lt;typename T &gt; </div>
 <p>重载 <a class="el" href="classlibMesh_1_1ShellMatrix.html#a0a96d98b52e42f9be2707853c97d1e6b">libMesh::ShellMatrix&lt; T &gt;</a> .</p>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8C_source.html">petsc_shell_matrix.C</a> 第 <a class="el" href="petsc__shell__matrix_8C_source.html#l00053">53</a> 行定义.</p>
+
+<p>参考 <a class="el" href="libmesh_8C_source.html#l00242">libMesh::libMeshPrivateData::_is_initialized</a> , 以及 <a class="el" href="libmesh_8C_source.html#l00261">libMesh::initialized()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#a4e487862e0ea29f50e3dbd7c37855063">initialized</a>())</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
@@ -472,6 +473,8 @@ template&lt;typename T &gt; </div>
 <p>重载 <a class="el" href="classlibMesh_1_1ShellMatrix.html#a7204c5b8f3f75b58e3d33db2a2ccb01c">libMesh::ShellMatrix&lt; T &gt;</a> .</p>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8C_source.html">petsc_shell_matrix.C</a> 第 <a class="el" href="petsc__shell__matrix_8C_source.html#l00064">64</a> 行定义.</p>
+
+<p>参考 <a class="el" href="libmesh_8C_source.html#l00242">libMesh::libMeshPrivateData::_is_initialized</a> , 以及 <a class="el" href="libmesh_8C_source.html#l00261">libMesh::initialized()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">_dof_map</a>);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
@@ -549,6 +552,8 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>返回</dt><dd>如果矩阵已初始化，则返回 true；否则返回 false。 </dd></dl>
 
 <p>在文件 <a class="el" href="petsc__shell__matrix_8C_source.html">petsc_shell_matrix.C</a> 第 <a class="el" href="petsc__shell__matrix_8C_source.html#l00108">108</a> 行定义.</p>
+
+<p>参考 <a class="el" href="libmesh_8C_source.html#l00242">libMesh::libMeshPrivateData::_is_initialized</a>.</p>
 <div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1PetscShellMatrix.html#aed7aedfad6c4f5e4c660e5acec9c3e03">_is_initialized</a>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
@@ -957,7 +962,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:29 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:01 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

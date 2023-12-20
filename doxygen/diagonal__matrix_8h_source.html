@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -193,7 +194,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1DiagonalMatrix.html#a06b4f8f8163587cbf0a523578893769e">closed</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DiagonalMatrix.html#a1120e7c92f91babd1ac1d7a7503c7ca6">print_personal</a>(std::ostream &amp; os = libMesh::out) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DiagonalMatrix.html#a1120e7c92f91babd1ac1d7a7503c7ca6">print_personal</a>(std::ostream &amp; os = <a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DiagonalMatrix.html#aa3c363bc7590eb8c45a8a85c3ca4d712">get_diagonal</a>(<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; dest) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
@@ -237,12 +238,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1DiagonalMatrix_html_abef2633b02a269a73b238232fb6fc50e"><div class="ttname"><a href="classlibMesh_1_1DiagonalMatrix.html#abef2633b02a269a73b238232fb6fc50e">libMesh::DiagonalMatrix::_diagonal</a></div><div class="ttdeci">std::unique_ptr&lt; NumericVector&lt; T &gt; &gt; _diagonal</div><div class="ttdoc">底层对角矩阵存储 </div><div class="ttdef"><b>Definition:</b> <a href="diagonal__matrix_8h_source.html#l00292">diagonal_matrix.h:292</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DiagonalMatrix_html_a91edb6bb9b4558a383a73bcfcd9958b5"><div class="ttname"><a href="classlibMesh_1_1DiagonalMatrix.html#a91edb6bb9b4558a383a73bcfcd9958b5">libMesh::DiagonalMatrix::init</a></div><div class="ttdeci">virtual void init(const numeric_index_type m, const numeric_index_type n, const numeric_index_type m_l, const numeric_index_type n_l, const numeric_index_type nnz=30, const numeric_index_type noz=10, const numeric_index_type blocksize=1) override</div><div class="ttdoc">初始化矩阵的维度和结构 </div><div class="ttdef"><b>Definition:</b> <a href="diagonal__matrix_8C_source.html#l00060">diagonal_matrix.C:60</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1DenseMatrix.html">libMesh::DenseMatrix</a></div><div class="ttdoc">定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix_8h_source.html#l00070">dense_matrix.h:70</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a63e3c3158308e2184c12b55ab9ea9a35"><div class="ttname"><a href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></div><div class="ttdeci">OStreamProxy out(std::cout)</div></div>
 <div class="ttc" id="classlibMesh_1_1DiagonalMatrix_html_a5ec155146d558dd5d9a7a879b4582a27"><div class="ttname"><a href="classlibMesh_1_1DiagonalMatrix.html#a5ec155146d558dd5d9a7a879b4582a27">libMesh::DiagonalMatrix::add</a></div><div class="ttdeci">virtual void add(const numeric_index_type i, const numeric_index_type j, const T value) override</div><div class="ttdoc">在矩阵中指定位置的元素上添加一个值。 </div><div class="ttdef"><b>Definition:</b> <a href="diagonal__matrix_8C_source.html#l00190">diagonal_matrix.C:190</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DiagonalMatrix_html_aa3db9aab723c7779b5110492cd9f1cd3"><div class="ttname"><a href="classlibMesh_1_1DiagonalMatrix.html#aa3db9aab723c7779b5110492cd9f1cd3">libMesh::DiagonalMatrix::zero_clone</a></div><div class="ttdeci">virtual std::unique_ptr&lt; SparseMatrix&lt; T &gt; &gt; zero_clone() const override</div><div class="ttdoc">创建当前矩阵的零副本，其结构和维度相同。 </div><div class="ttdef"><b>Definition:</b> <a href="diagonal__matrix_8C_source.html#l00112">diagonal_matrix.C:112</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

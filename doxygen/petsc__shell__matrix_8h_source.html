@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -182,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscShellMatrix.html#a28f45bf73d00aa26d3b76ce277fb9cc0">  168</a></span>&#160;<a class="code" href="classlibMesh_1_1PetscShellMatrix.html#a28f45bf73d00aa26d3b76ce277fb9cc0">PetscShellMatrix&lt;T&gt;::PetscShellMatrix</a> (<span class="keyword">const</span> Parallel::Communicator &amp; comm_in):</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="code" href="classlibMesh_1_1ShellMatrix.html">ShellMatrix</a>&lt;T&gt;(comm_in),</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  _is_initialized(false)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a>(false)</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{}</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
@@ -276,6 +277,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_a077e9fe39f443bfafbfbdf2c589acf5c"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#a077e9fe39f443bfafbfbdf2c589acf5c">libMesh::PetscShellMatrix::m</a></div><div class="ttdeci">virtual numeric_index_type m() const override</div><div class="ttdoc">获取矩阵的行数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00177">petsc_shell_matrix.h:177</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_ae60962be7f2a880e486d8ecb6e043b83"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#ae60962be7f2a880e486d8ecb6e043b83">libMesh::PetscShellMatrix::vector_mult</a></div><div class="ttdeci">virtual void vector_mult(NumericVector&lt; T &gt; &amp;dest, const NumericVector&lt; T &gt; &amp;arg) const override</div><div class="ttdoc">执行矩阵与向量的乘法。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8C_source.html#l00028">petsc_shell_matrix.C:28</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_ac1e3e5fb6879baf37949c94d49e62219"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#ac1e3e5fb6879baf37949c94d49e62219">libMesh::PetscShellMatrix::~PetscShellMatrix</a></div><div class="ttdeci">virtual ~PetscShellMatrix()=default</div><div class="ttdoc">默认虚拟析构函数。 </div></div>
+<div class="ttc" id="namespacelibMesh_1_1libMeshPrivateData_html_ab8b7115ea57ced35ec86d1fdfa0ab853"><div class="ttname"><a href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">libMesh::libMeshPrivateData::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">Flag that tells if init() has been called. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00242">libmesh.C:242</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_aed7aedfad6c4f5e4c660e5acec9c3e03"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#aed7aedfad6c4f5e4c660e5acec9c3e03">libMesh::PetscShellMatrix::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">表示矩阵是否已初始化的标志。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00160">petsc_shell_matrix.h:160</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_a61ed02373acf9116472132c2bae12226"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#a61ed02373acf9116472132c2bae12226">libMesh::PetscShellMatrix::local_n</a></div><div class="ttdeci">virtual numeric_index_type local_n() const </div><div class="ttdoc">获取本地处理的矩阵列数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00221">petsc_shell_matrix.h:221</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscShellMatrix_html_ac76537683aea19779e5e47bb5caec237"><div class="ttname"><a href="classlibMesh_1_1PetscShellMatrix.html#ac76537683aea19779e5e47bb5caec237">libMesh::PetscShellMatrix::get_diagonal</a></div><div class="ttdeci">virtual void get_diagonal(NumericVector&lt; T &gt; &amp;dest) const override</div><div class="ttdoc">获取矩阵的对角线。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__shell__matrix_8h_source.html#l00235">petsc_shell_matrix.h:235</a></div></div>
@@ -286,7 +288,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

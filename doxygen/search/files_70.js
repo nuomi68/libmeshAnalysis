@@ -4,6 +4,9 @@ var searchData=
   ['parsed_5ffem_5ffunction_5fparameter_2eh',['parsed_fem_function_parameter.h',['../parsed__fem__function__parameter_8h.html',1,'']]],
   ['parsed_5ffunction_2eh',['parsed_function.h',['../parsed__function_8h.html',1,'']]],
   ['parsed_5ffunction_5fparameter_2eh',['parsed_function_parameter.h',['../parsed__function__parameter_8h.html',1,'']]],
+  ['periodic_5fboundaries_2ec',['periodic_boundaries.C',['../periodic__boundaries_8C.html',1,'']]],
+  ['periodic_5fboundary_2ec',['periodic_boundary.C',['../periodic__boundary_8C.html',1,'']]],
+  ['periodic_5fboundary_5fbase_2ec',['periodic_boundary_base.C',['../periodic__boundary__base_8C.html',1,'']]],
   ['petsc_5fmacro_2eh',['petsc_macro.h',['../petsc__macro_8h.html',1,'']]],
   ['petsc_5fmatrix_2ec',['petsc_matrix.C',['../petsc__matrix_8C.html',1,'']]],
   ['petsc_5fmatrix_2eh',['petsc_matrix.h',['../petsc__matrix_8h.html',1,'']]],
@@ -15,5 +18,6 @@ var searchData=
   ['petsc_5fvector_2ec',['petsc_vector.C',['../petsc__vector_8C.html',1,'']]],
   ['petsc_5fvector_2eh',['petsc_vector.h',['../petsc__vector_8h.html',1,'']]],
   ['preconditioner_2ec',['preconditioner.C',['../preconditioner_8C.html',1,'']]],
-  ['preconditioner_2eh',['preconditioner.h',['../preconditioner_8h.html',1,'']]]
+  ['preconditioner_2eh',['preconditioner.h',['../preconditioner_8h.html',1,'']]],
+  ['print_5ftrace_2ec',['print_trace.C',['../print__trace_8C.html',1,'']]]
 ];

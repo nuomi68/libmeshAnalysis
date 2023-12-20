@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -300,7 +301,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  <span class="keywordtype">bool</span> operator&gt;(const <a class="code" href="classlibMesh_1_1TypeTensor.html">TypeTensor</a>&lt;T&gt; &amp;rhs) const;</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TypeTensor.html#af9cd72d4c5032325266d14f4d9d4bf73">print</a>(std::ostream &amp;os = libMesh::out) const;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TypeTensor.html#af9cd72d4c5032325266d14f4d9d4bf73">print</a>(std::ostream &amp;os = libMesh::<a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">out</a>) const;</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1TypeTensor.html#ac8b449a21654048f993527aa91c21909">write_unformatted</a>(std::ostream &amp;out_stream,</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                        const <span class="keywordtype">bool</span> newline = true) const;</div>
@@ -1328,12 +1329,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1TypeTensor_html_a46cb9ceda4beea7cc15c97485c1e2684"><div class="ttname"><a href="classlibMesh_1_1TypeTensor.html#a46cb9ceda4beea7cc15c97485c1e2684">libMesh::TypeTensor::operator+=</a></div><div class="ttdeci">const TypeTensor&lt; T &gt; &amp; operator+=(const TypeTensor&lt; T2 &gt; &amp;)</div><div class="ttdoc">在该 Tensor 上加上另一个 Tensor。 </div><div class="ttdef"><b>Definition:</b> <a href="type__tensor_8h_source.html#l00918">type_tensor.h:918</a></div></div>
 <div class="ttc" id="classlibMesh_1_1TypeTensorColumn_html_a2eb5917dc57ba10c05da72b7b50744f5"><div class="ttname"><a href="classlibMesh_1_1TypeTensorColumn.html#a2eb5917dc57ba10c05da72b7b50744f5">libMesh::TypeTensorColumn::slice</a></div><div class="ttdeci">T &amp; slice(const unsigned int i)</div><div class="ttdoc">返回该张量的第  行第  列元素的可写引用。 </div><div class="ttdef"><b>Definition:</b> <a href="type__tensor_8h_source.html#l00541">type_tensor.h:541</a></div></div>
 <div class="ttc" id="classlibMesh_1_1TypeTensor_html_a88a69b892523e0f5fbfc6852fd0d6e90"><div class="ttname"><a href="classlibMesh_1_1TypeTensor.html#a88a69b892523e0f5fbfc6852fd0d6e90">libMesh::TypeTensor::operator*=</a></div><div class="ttdeci">const TypeTensor&lt; T &gt; &amp; operator*=(const Scalar &amp;factor)</div><div class="ttdoc">在地方上将该 Tensor 乘以标量值。 </div><div class="ttdef"><b>Definition:</b> <a href="type__tensor_8h_source.html#l00304">type_tensor.h:304</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a63e3c3158308e2184c12b55ab9ea9a35"><div class="ttname"><a href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></div><div class="ttdeci">OStreamProxy out(std::cout)</div></div>
 <div class="ttc" id="classlibMesh_1_1ConstTypeTensorColumn_html_a4d1f7d2fb2c4e70d517d4dd939bc6232"><div class="ttname"><a href="classlibMesh_1_1ConstTypeTensorColumn.html#a4d1f7d2fb2c4e70d517d4dd939bc6232">libMesh::ConstTypeTensorColumn::_j</a></div><div class="ttdeci">const unsigned int _j</div><div class="ttdef"><b>Definition:</b> <a href="type__tensor_8h_source.html#l00608">type_tensor.h:608</a></div></div>
 <div class="ttc" id="classlibMesh_1_1TypeTensor_html_a9d7a4e6e7d0df17a315aa215806d115d"><div class="ttname"><a href="classlibMesh_1_1TypeTensor.html#a9d7a4e6e7d0df17a315aa215806d115d">libMesh::TypeTensor::tr</a></div><div class="ttdeci">T tr() const </div><div class="ttdoc">返回 Tensor 的迹。 </div><div class="ttdef"><b>Definition:</b> <a href="type__tensor_8h_source.html#l01411">type_tensor.h:1411</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

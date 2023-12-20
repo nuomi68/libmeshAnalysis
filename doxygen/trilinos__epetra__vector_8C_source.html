@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_9bd4cbfd6409cef009e38f31cf95dda6.html">src</a></li><li class="navelem"><a class="el" href="dir_28f56bcccd12e4a0ab470f65d1b1ebd5.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_f9975977ce271819849de43d89795655.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -138,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EpetraVector.html#a9ad1d903e0dfe121698aa0839c4d118a">   50</a></span>&#160;T <a class="code" href="classlibMesh_1_1EpetraVector.html#a9ad1d903e0dfe121698aa0839c4d118a">EpetraVector&lt;T&gt;::sum</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nl = _vec-&gt;MyLength();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
@@ -157,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EpetraVector.html#ab7ac67240a29c8987260d0c868835efb">   69</a></span>&#160;Real <a class="code" href="classlibMesh_1_1EpetraVector.html#ab7ac67240a29c8987260d0c868835efb">EpetraVector&lt;T&gt;::l1_norm</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  Real value;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
@@ -169,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EpetraVector.html#af17421b592476a99a59f89f7275d0a59">   81</a></span>&#160;Real <a class="code" href="classlibMesh_1_1EpetraVector.html#af17421b592476a99a59f89f7275d0a59">EpetraVector&lt;T&gt;::l2_norm</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  Real value;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
@@ -181,7 +182,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EpetraVector.html#ae4894a7ed7b73470a8a06299ac5ab3f9">   93</a></span>&#160;Real <a class="code" href="classlibMesh_1_1EpetraVector.html#ae4894a7ed7b73470a8a06299ac5ab3f9">EpetraVector&lt;T&gt;::linfty_norm</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  Real value;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
@@ -194,7 +195,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp;</div>
 <div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EpetraVector.html#a58cbae85646193dc9720f0d932c45128">  106</a></span>&#160;<a class="code" href="classlibMesh_1_1EpetraVector.html#a58cbae85646193dc9720f0d932c45128">EpetraVector&lt;T&gt;::operator += </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  this-&gt;add(1., v);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
@@ -207,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp;</div>
 <div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EpetraVector.html#a093da68e728c31438cd89695207f837b">  119</a></span>&#160;<a class="code" href="classlibMesh_1_1EpetraVector.html#a093da68e728c31438cd89695207f837b">EpetraVector&lt;T&gt;::operator -= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v)</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  this-&gt;add(-1., v);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
@@ -219,7 +220,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp;</div>
 <div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EpetraVector.html#ad7b5bee2322d72e36422901090273046">  131</a></span>&#160;<a class="code" href="classlibMesh_1_1EpetraVector.html#ad7b5bee2322d72e36422901090273046">EpetraVector&lt;T&gt;::operator *= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v)</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  libmesh_assert_equal_to(size(), v.<a class="code" href="classlibMesh_1_1NumericVector.html#ab4d7da004477eae4d19b369a8aeb7650">size</a>());</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1EpetraVector.html">EpetraVector&lt;T&gt;</a> &amp; v_vec = cast_ref&lt;const EpetraVector&lt;T&gt; &amp;&gt;(v);</div>
@@ -234,7 +235,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp;</div>
 <div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EpetraVector.html#ac2f980337e7061dcfbc4bb1d90e38ffd">  146</a></span>&#160;<a class="code" href="classlibMesh_1_1EpetraVector.html#ac2f980337e7061dcfbc4bb1d90e38ffd">EpetraVector&lt;T&gt;::operator /= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v)</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  libmesh_assert_equal_to(size(), v.<a class="code" href="classlibMesh_1_1NumericVector.html#ab4d7da004477eae4d19b369a8aeb7650">size</a>());</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1EpetraVector.html">EpetraVector&lt;T&gt;</a> &amp; v_vec = cast_ref&lt;const EpetraVector&lt;T&gt; &amp;&gt;(v);</div>
@@ -875,7 +876,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    <span class="comment">//  put value in nonlocalCoefs_[offset][0]</span></div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;</div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    <span class="keywordflow">if</span> (numValues != nonlocalElementSize_[offset]) {</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;      libMesh::err &lt;&lt; <span class="stringliteral">&quot;Epetra_FEVector ERROR: block-size for GID &quot;</span> &lt;&lt; GID &lt;&lt; <span class="stringliteral">&quot; is &quot;</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;      <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;Epetra_FEVector ERROR: block-size for GID &quot;</span> &lt;&lt; GID &lt;&lt; <span class="stringliteral">&quot; is &quot;</span></div>
 <div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;                   &lt;&lt; numValues&lt;&lt;<span class="stringliteral">&quot; which doesn&#39;t match previously set block-size of &quot;</span></div>
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;                   &lt;&lt; nonlocalElementSize_[offset] &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;      <span class="keywordflow">return</span>(-1);</div>
@@ -1021,6 +1022,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;<span class="preprocessor">#endif // LIBMESH_TRILINOS_HAVE_EPETRA</span></div>
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html_aa1e7328f1102266e20469f1fb8701d33"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html#aa1e7328f1102266e20469f1fb8701d33">libMesh::EpetraVector::nonlocalCoefs_</a></div><div class="ttdeci">double ** nonlocalCoefs_</div><div class="ttdoc">非本地系数的指针数组。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8h_source.html#l00783">trilinos_epetra_vector.h:783</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html_ac2f980337e7061dcfbc4bb1d90e38ffd"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html#ac2f980337e7061dcfbc4bb1d90e38ffd">libMesh::EpetraVector::operator/=</a></div><div class="ttdeci">virtual NumericVector&lt; T &gt; &amp; operator/=(const NumericVector&lt; T &gt; &amp;v) override</div><div class="ttdoc">将矢量与另一个矢量逐元素相除并将结果存储在当前矢量中。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8C_source.html#l00146">trilinos_epetra_vector.C:146</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a3dc0a134260371bd023e0d0f632399e1"><div class="ttname"><a href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">libMesh::closed</a></div><div class="ttdeci">bool closed()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00268">libmesh.C:268</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html">libMesh::EpetraVector</a></div><div class="ttdoc">此类提供了对Trilinos Epetra_Vector对象的友好接口。所有重写的虚拟函数在numeric_vector.h中都有文档。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8h_source.html#l00063">trilinos_epetra_vector.h:63</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html_a93e551afa6bf9bab2652d39c8c383fd2"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html#a93e551afa6bf9bab2652d39c8c383fd2">libMesh::EpetraVector::pointwise_mult</a></div><div class="ttdeci">virtual void pointwise_mult(const NumericVector&lt; T &gt; &amp;vec1, const NumericVector&lt; T &gt; &amp;vec2) override</div><div class="ttdoc">计算当前矢量与另一个矢量的逐元素乘积。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8C_source.html#l00345">trilinos_epetra_vector.C:345</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html_a0b3f93e467b835d167218d1b5e246bc3"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html#a0b3f93e467b835d167218d1b5e246bc3">libMesh::EpetraVector::allocatedNonlocalLength_</a></div><div class="ttdeci">int allocatedNonlocalLength_</div><div class="ttdoc">已分配的非本地长度。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8h_source.html#l00778">trilinos_epetra_vector.h:778</a></div></div>
@@ -1053,6 +1055,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html_a093da68e728c31438cd89695207f837b"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html#a093da68e728c31438cd89695207f837b">libMesh::EpetraVector::operator-=</a></div><div class="ttdeci">virtual NumericVector&lt; T &gt; &amp; operator-=(const NumericVector&lt; T &gt; &amp;v) override</div><div class="ttdoc">将矢量与另一个矢量相减并将结果存储在当前矢量中。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8C_source.html#l00119">trilinos_epetra_vector.C:119</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html_a4699de5b2bdd29556cdbbb984c21ef64"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html#a4699de5b2bdd29556cdbbb984c21ef64">libMesh::EpetraVector::inputNonlocalValue</a></div><div class="ttdeci">int inputNonlocalValue(int GID, double value, bool accumulate)</div><div class="ttdoc">输入非本地值到向量中，覆盖或累积到指定 GID 的已存在的任何值。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8C_source.html#l00739">trilinos_epetra_vector.C:739</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html_ae4894a7ed7b73470a8a06299ac5ab3f9"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html#ae4894a7ed7b73470a8a06299ac5ab3f9">libMesh::EpetraVector::linfty_norm</a></div><div class="ttdeci">virtual Real linfty_norm() const override</div><div class="ttdoc">计算矢量的L∞范数。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8C_source.html#l00093">trilinos_epetra_vector.C:93</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a74e5bc8a72d210b3d87b0221b1f69db1"><div class="ttname"><a href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a></div><div class="ttdeci">OStreamProxy err(std::cerr)</div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html_ab6ac3fb8e1fd3e93fbf5f16c9acc7e94"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html#ab6ac3fb8e1fd3e93fbf5f16c9acc7e94">libMesh::EpetraVector::init</a></div><div class="ttdeci">virtual void init(const numeric_index_type N, const numeric_index_type n_local, const bool fast=false, const ParallelType type=AUTOMATIC) override</div><div class="ttdoc">初始化矢量。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8h_source.html#l00960">trilinos_epetra_vector.h:960</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html_ac90a48a92387c00639bc9845963fd59f"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html#ac90a48a92387c00639bc9845963fd59f">libMesh::EpetraVector::destroyNonlocalData</a></div><div class="ttdeci">void destroyNonlocalData()</div><div class="ttdoc">销毁非本地数据。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8C_source.html#l00915">trilinos_epetra_vector.C:915</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraVector_html_a7d2aa132f0948b0ab9e27eaca79e9da3"><div class="ttname"><a href="classlibMesh_1_1EpetraVector.html#a7d2aa132f0948b0ab9e27eaca79e9da3">libMesh::EpetraVector::numNonlocalIDs_</a></div><div class="ttdeci">int numNonlocalIDs_</div><div class="ttdoc">非本地 ID 数量。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__vector_8h_source.html#l00773">trilinos_epetra_vector.h:773</a></div></div>
@@ -1070,7 +1073,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

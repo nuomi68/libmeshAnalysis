@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_9bd4cbfd6409cef009e38f31cf95dda6.html">src</a></li><li class="navelem"><a class="el" href="dir_28f56bcccd12e4a0ab470f65d1b1ebd5.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_f9975977ce271819849de43d89795655.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -148,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  libmesh_error_msg_if(!this-&gt;_matrix, <span class="stringliteral">&quot;ERROR: No matrix set for PetscPreconditioner, but init() called&quot;</span>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// Clear the preconditioner in case it has been created in the past</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (!this-&gt;_is_initialized)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a>)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="comment">// Should probably use PCReset(), but it&#39;s not working at the moment so we&#39;ll destroy instead</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">if</span> (_pc)</div>
@@ -173,7 +174,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// multiple times.</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  set_petsc_preconditioner_type(this-&gt;_preconditioner_type, *_pc);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  this-&gt;_is_initialized = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  this-&gt;<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
@@ -317,7 +318,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      libMesh::err &lt;&lt; <span class="stringliteral">&quot;ERROR:  Unsupported PETSC Preconditioner: &quot;</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;ERROR:  Unsupported PETSC Preconditioner: &quot;</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                   &lt;&lt; preconditioner_type       &lt;&lt; std::endl</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                   &lt;&lt; <span class="stringliteral">&quot;Continuing with PETSC defaults&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
@@ -398,11 +399,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;} <span class="comment">// namespace libMesh</span></div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#endif // #ifdef LIBMESH_HAVE_PETSC</span></div>
+<div class="ttc" id="namespacelibMesh_1_1libMeshPrivateData_html_ab8b7115ea57ced35ec86d1fdfa0ab853"><div class="ttname"><a href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">libMesh::libMeshPrivateData::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">Flag that tells if init() has been called. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00242">libmesh.C:242</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a74e5bc8a72d210b3d87b0221b1f69db1"><div class="ttname"><a href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a></div><div class="ttdeci">OStreamProxy err(std::cerr)</div></div>
 <div class="ttc" id="namespacelibMesh_html_ac0d4208716123dfc1b5c860e6a6927aa"><div class="ttname"><a href="namespacelibMesh.html#ac0d4208716123dfc1b5c860e6a6927aa">libMesh::PetscPreconditioner&lt; Number &gt;</a></div><div class="ttdeci">template class LIBMESH_EXPORT PetscPreconditioner&lt; Number &gt;</div><div class="ttdef"><b>Definition:</b> <a href="petsc__preconditioner_8C_source.html#l00307">petsc_preconditioner.C:307</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

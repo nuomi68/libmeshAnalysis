@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_9bd4cbfd6409cef009e38f31cf95dda6.html">src</a></li><li class="navelem"><a class="el" href="dir_28f56bcccd12e4a0ab470f65d1b1ebd5.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_f9975977ce271819849de43d89795655.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -128,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  ParallelObject(comm_in),</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  _matrix(nullptr),</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  _preconditioner_type (ILU_PRECOND),</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  _is_initialized      (false)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a>      (false)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
@@ -154,12 +155,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef LIBMESH_TRILINOS_HAVE_EPETRA</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> TRILINOS_SOLVERS:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="namespacelibMesh.html#aa27e267f495ee0599f7cd8981c0cf7ad">TRILINOS_SOLVERS</a>:</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">return</span> std::make_unique&lt;TrilinosPreconditioner&lt;T&gt;&gt;(comm);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#ifdef LIBMESH_HAVE_EIGEN</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> EIGEN_SOLVERS:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="namespacelibMesh.html#ae73defe502d02a0aa591555f4dd18dd4">EIGEN_SOLVERS</a>:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">return</span> std::make_unique&lt;EigenPreconditioner&lt;T&gt;&gt;(comm);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span></div>
@@ -175,13 +176,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="namespacelibMesh.html#a528c82b3a74e3e461681b2050a4a1674">   86</a></span>&#160;<span class="keyword">template</span> <span class="keyword">class </span>LIBMESH_EXPORT <a class="code" href="classlibMesh_1_1Preconditioner.html">Preconditioner&lt;Number&gt;</a>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="ttc" id="namespacelibMesh_html_ae73defe502d02a0aa591555f4dd18dd4"><div class="ttname"><a href="namespacelibMesh.html#ae73defe502d02a0aa591555f4dd18dd4">libMesh::EIGEN_SOLVERS</a></div><div class="ttdeci">EIGEN_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00249">libmesh.C:249</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aa27e267f495ee0599f7cd8981c0cf7ad"><div class="ttname"><a href="namespacelibMesh.html#aa27e267f495ee0599f7cd8981c0cf7ad">libMesh::TRILINOS_SOLVERS</a></div><div class="ttdeci">TRILINOS_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00247">libmesh.C:247</a></div></div>
 <div class="ttc" id="classlibMesh_1_1Preconditioner_html"><div class="ttname"><a href="classlibMesh_1_1Preconditioner.html">libMesh::Preconditioner</a></div><div class="ttdoc">该类提供了一个统一的接口，用于预处理器。此基类可继承，以包装来自不同软件包（如 PETSc 或 Trilinos）的预处理器。 </div><div class="ttdef"><b>Definition:</b> <a href="preconditioner_8h_source.html#l00052">preconditioner.h:52</a></div></div>
 <div class="ttc" id="classlibMesh_1_1Preconditioner_html_a9aee63ecfe69e8d4f2f56d78730225e2"><div class="ttname"><a href="classlibMesh_1_1Preconditioner.html#a9aee63ecfe69e8d4f2f56d78730225e2">libMesh::Preconditioner::Preconditioner</a></div><div class="ttdeci">Preconditioner(const libMesh::Parallel::Communicator &amp;comm)</div><div class="ttdoc">构造函数。初始化 Preconditioner 的数据结构。 </div><div class="ttdef"><b>Definition:</b> <a href="preconditioner_8C_source.html#l00038">preconditioner.C:38</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1libMeshPrivateData_html_ab8b7115ea57ced35ec86d1fdfa0ab853"><div class="ttname"><a href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">libMesh::libMeshPrivateData::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">Flag that tells if init() has been called. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00242">libmesh.C:242</a></div></div>
 <div class="ttc" id="classlibMesh_1_1Preconditioner_html_afe0fb189ea183313549469c87fc75f9a"><div class="ttname"><a href="classlibMesh_1_1Preconditioner.html#afe0fb189ea183313549469c87fc75f9a">libMesh::Preconditioner::build_preconditioner</a></div><div class="ttdeci">static std::unique_ptr&lt; Preconditioner&lt; T &gt; &gt; build_preconditioner(const libMesh::Parallel::Communicator &amp;comm, const SolverPackage solver_package=libMesh::default_solver_package())</div><div class="ttdoc">构建一个 Preconditioner，使用由 solver_package 指定的线性求解器软件包， 并以 std::unique_ptr 包装结果以确保安全性。 ...</div><div class="ttdef"><b>Definition:</b> <a href="preconditioner_8C_source.html#l00050">preconditioner.C:50</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

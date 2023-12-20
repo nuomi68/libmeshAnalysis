@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -163,7 +164,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classlibMesh_1_1AnalyticFunction.html#aff805dd21ea92e28b7267b4f51c5c29d">  132</a></span>&#160;Output <a class="code" href="classlibMesh_1_1AnalyticFunction.html#aff805dd21ea92e28b7267b4f51c5c29d">AnalyticFunction&lt;Output&gt;::operator()</a>(<span class="keyword">const</span> Point &amp; p, <span class="keyword">const</span> Real time)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  libmesh_assert(this-&gt;initialized());</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">return</span> (this-&gt;_number_fptr(p, time));</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
@@ -171,7 +172,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classlibMesh_1_1AnalyticFunction.html#aeb9ef4076188636f1de9e346b595f8c0">  146</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1AnalyticFunction.html#aff805dd21ea92e28b7267b4f51c5c29d">AnalyticFunction&lt;Output&gt;::operator()</a>(<span class="keyword">const</span> Point &amp; p, <span class="keyword">const</span> Real time, <a class="code" href="classlibMesh_1_1DenseVector.html">DenseVector&lt;Output&gt;</a> &amp; output)</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  libmesh_assert(this-&gt;initialized());</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  this-&gt;_vector_fptr(output, p, time);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
@@ -244,13 +245,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1AnalyticFunction_html_aa0337928b5c1fa34ea5b63289850d629"><div class="ttname"><a href="classlibMesh_1_1AnalyticFunction.html#aa0337928b5c1fa34ea5b63289850d629">libMesh::AnalyticFunction::init</a></div><div class="ttdeci">virtual void init() override</div><div class="ttdoc">初始化函数。检查是否已准备好使用。 </div><div class="ttdef"><b>Definition:</b> <a href="analytic__function_8h_source.html#l00186">analytic_function.h:186</a></div></div>
 <div class="ttc" id="classlibMesh_1_1AnalyticFunction_html_a80a18571578a68258f0d8bcf46fabe5d"><div class="ttname"><a href="classlibMesh_1_1AnalyticFunction.html#a80a18571578a68258f0d8bcf46fabe5d">libMesh::AnalyticFunction::OutputFunction</a></div><div class="ttdeci">Output(* OutputFunction)(const Point &amp;p, const Real time)</div><div class="ttdoc">标量返回值函数指针类型。 </div><div class="ttdef"><b>Definition:</b> <a href="analytic__function_8h_source.html#l00053">analytic_function.h:53</a></div></div>
 <div class="ttc" id="classlibMesh_1_1AnalyticFunction_html_acf9780dee724f1260f34d077a6894374"><div class="ttname"><a href="classlibMesh_1_1AnalyticFunction.html#acf9780dee724f1260f34d077a6894374">libMesh::AnalyticFunction::clear</a></div><div class="ttdeci">virtual void clear() override</div><div class="ttdoc">清理函数。将函数指针重置为nullptr，并标记未准备好使用。 </div><div class="ttdef"><b>Definition:</b> <a href="analytic__function_8h_source.html#l00200">analytic_function.h:200</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aad2e4639e47d92a7d34c80bf2e936cba"><div class="ttname"><a href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">libMesh::initialized</a></div><div class="ttdeci">bool initialized()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00261">libmesh.C:261</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseVector_html"><div class="ttname"><a href="classlibMesh_1_1DenseVector.html">libMesh::DenseVector</a></div><div class="ttdoc">定义用于有限元计算的稠密向量类。该类基本上是为了补充 DenseMatrix 类而设计的。 它相对于 std::vector 具有额外的功能，使其在有限元中特别有用，特别是对于方程组。 所有重写的虚拟函...</div><div class="ttdef"><b>Definition:</b> <a href="analytic__function_8h_source.html#l00034">analytic_function.h:34</a></div></div>
 <div class="ttc" id="classlibMesh_1_1FunctionBase_html"><div class="ttname"><a href="classlibMesh_1_1FunctionBase.html">libMesh::FunctionBase</a></div><div class="ttdoc">FunctionBase是一个函数对象的基类，可以在某一点（可选地包括时间）进行评估。 </div><div class="ttdef"><b>Definition:</b> <a href="function__base_8h_source.html#l00061">function_base.h:61</a></div></div>
 <div class="ttc" id="classlibMesh_1_1AnalyticFunction_html_a739d12f6b59a822b20ab6ab816cbc1e4"><div class="ttname"><a href="classlibMesh_1_1AnalyticFunction.html#a739d12f6b59a822b20ab6ab816cbc1e4">libMesh::AnalyticFunction::operator=</a></div><div class="ttdeci">AnalyticFunction &amp; operator=(const AnalyticFunction &amp;)=default</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

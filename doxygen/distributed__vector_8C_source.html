@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_9bd4cbfd6409cef009e38f31cf95dda6.html">src</a></li><li class="navelem"><a class="el" href="dir_28f56bcccd12e4a0ab470f65d1b1ebd5.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_f9975977ce271819849de43d89795655.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -139,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// This function must be run on all processors at once</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
@@ -161,7 +162,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">// This function must be run on all processors at once</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
@@ -183,7 +184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">// This function must be run on all processors at once</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
@@ -205,7 +206,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="comment">// This function must be run on all processors at once</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
@@ -228,8 +229,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#ac3db086ddc82af9ccd62ce08d28639ba">  140</a></span>&#160;<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; <a class="code" href="classlibMesh_1_1DistributedVector.html#ac3db086ddc82af9ccd62ce08d28639ba">DistributedVector&lt;T&gt;::operator += </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v)</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;{</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  libmesh_assert (this-&gt;closed());</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
@@ -243,8 +244,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#a2b467f8f69a5293d40e5f80ac1685f3b">  155</a></span>&#160;<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; <a class="code" href="classlibMesh_1_1DistributedVector.html#a2b467f8f69a5293d40e5f80ac1685f3b">DistributedVector&lt;T&gt;::operator -= </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v)</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  libmesh_assert (this-&gt;closed());</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
@@ -316,7 +317,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#aec3e275929cbf8ad6e2278c1653ade09">  228</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DistributedVector.html#a98d313e6603defadf97c0e42a46b3ff8">DistributedVector&lt;T&gt;::add</a> (<span class="keyword">const</span> T v)</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;{</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
@@ -329,7 +330,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#a6b270fb9196259d98a2e9175ee8acecb">  241</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DistributedVector.html#a98d313e6603defadf97c0e42a46b3ff8">DistributedVector&lt;T&gt;::add</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v)</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;{</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
@@ -341,7 +342,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#aec796582b903821d6f35f402dc58df68">  253</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DistributedVector.html#a98d313e6603defadf97c0e42a46b3ff8">DistributedVector&lt;T&gt;::add</a> (<span class="keyword">const</span> T a, <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v_in)</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;{</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
@@ -358,7 +359,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#a960dacb6c650542bf345ff8cac002683">  270</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DistributedVector.html#a960dacb6c650542bf345ff8cac002683">DistributedVector&lt;T&gt;::scale</a> (<span class="keyword">const</span> T factor)</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;{</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
@@ -369,7 +370,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#aee968e1138dda3abedb895993b73a72c">  281</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DistributedVector.html#aee968e1138dda3abedb895993b73a72c">DistributedVector&lt;T&gt;::abs</a>()</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;{</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; val : _values)</div>
@@ -411,7 +412,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp;</div>
 <div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#a4c9f0934695f360ade96b82c21c93ab0">  323</a></span>&#160;<a class="code" href="classlibMesh_1_1DistributedVector.html#a06bd37121edcffe888bd30e20062d396">DistributedVector&lt;T&gt;::operator = </a>(<span class="keyword">const</span> T s)</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
@@ -441,7 +442,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<a class="code" href="classlibMesh_1_1DistributedVector.html">DistributedVector&lt;T&gt;</a> &amp;</div>
 <div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#a06bd37121edcffe888bd30e20062d396">  353</a></span>&#160;<a class="code" href="classlibMesh_1_1DistributedVector.html#a06bd37121edcffe888bd30e20062d396">DistributedVector&lt;T&gt;::operator = </a>(<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1DistributedVector.html">DistributedVector&lt;T&gt;</a> &amp; v)</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  this-&gt;_is_initialized    = v.<a class="code" href="classlibMesh_1_1NumericVector.html#a3193f0970634e97961f9c174e28e4291">_is_initialized</a>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  this-&gt;<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a>    = v.<a class="code" href="classlibMesh_1_1NumericVector.html#a3193f0970634e97961f9c174e28e4291">_is_initialized</a>;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  this-&gt;_is_closed         = v.<a class="code" href="classlibMesh_1_1NumericVector.html#af52f96de77a3380320753f1ab3a4d7de">_is_closed</a>;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  _global_size       = v.<a class="code" href="classlibMesh_1_1DistributedVector.html#ac2abbff536695b50f8d399984ee9e9bb">_global_size</a>;</div>
@@ -464,7 +465,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp;</div>
 <div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#a3ff2366ba2da34b456b4ecb4a84865a3">  376</a></span>&#160;<a class="code" href="classlibMesh_1_1DistributedVector.html#a06bd37121edcffe888bd30e20062d396">DistributedVector&lt;T&gt;::operator = </a>(<span class="keyword">const</span> std::vector&lt;T&gt; &amp; v)</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;{</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
@@ -487,7 +488,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#a8bf08c3aa0da4a120f051d7d29946c8b">  398</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DistributedVector.html#a00442a48168c760e8eda21ff833a2129">DistributedVector&lt;T&gt;::localize</a> (<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v_local_in)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="keyword"></span></div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
@@ -519,7 +520,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DistributedVector.html#a837fd72e3ed1c0c3ab76a9bf4a7811ff">  430</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DistributedVector.html#a00442a48168c760e8eda21ff833a2129">DistributedVector&lt;T&gt;::localize</a> (<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v_local_in,</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                                     <span class="keyword">const</span> std::vector&lt;numeric_index_type&gt; &amp;)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
@@ -662,7 +663,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="comment">// This function must be run on all processors at once</span></div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
@@ -684,7 +685,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  <span class="comment">// This function must be run on all processors at once</span></div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;  libmesh_assert_equal_to (_values.size(), _local_size);</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;  libmesh_assert_equal_to ((_last_local_index - _first_local_index), _local_size);</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;</div>
@@ -720,6 +721,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00631"></a><span class="lineno"><a class="line" href="namespacelibMesh.html#a31e7e360c1f3684c9599122c80b6bd8f">  631</a></span>&#160;<span class="keyword">template</span> <span class="keyword">class </span>LIBMESH_EXPORT <a class="code" href="classlibMesh_1_1DistributedVector.html">DistributedVector&lt;Number&gt;</a>;</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="ttc" id="namespacelibMesh_html_a3dc0a134260371bd023e0d0f632399e1"><div class="ttname"><a href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">libMesh::closed</a></div><div class="ttdeci">bool closed()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00268">libmesh.C:268</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_adb301e6160e098919384b4fc4621de19"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#adb301e6160e098919384b4fc4621de19">libMesh::DistributedVector::dot</a></div><div class="ttdeci">virtual T dot(const NumericVector&lt; T &gt; &amp;V) const override</div><div class="ttdoc">计算 ，即 (*this) 与向量 v 的点积。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8C_source.html#l00295">distributed_vector.C:295</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_a395dfe326b06f2cbf43e6b2ad8b9415c"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#a395dfe326b06f2cbf43e6b2ad8b9415c">libMesh::DistributedVector::_last_local_index</a></div><div class="ttdeci">numeric_index_type _last_local_index</div><div class="ttdoc">本地存储的最后一个分量（+1）。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8h_source.html#l00254">distributed_vector.h:254</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_a960dacb6c650542bf345ff8cac002683"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#a960dacb6c650542bf345ff8cac002683">libMesh::DistributedVector::scale</a></div><div class="ttdeci">virtual void scale(const T factor) override</div><div class="ttdoc">缩放向量的每个元素。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8C_source.html#l00270">distributed_vector.C:270</a></div></div>
@@ -742,6 +744,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_a452d0671f07abf71d00de193c90c421d"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#a452d0671f07abf71d00de193c90c421d">libMesh::DistributedVector::l1_norm</a></div><div class="ttdeci">virtual Real l1_norm() const override</div><div class="ttdoc">获取向量的 -范数，即条目的绝对值之和。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8C_source.html#l00070">distributed_vector.C:70</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a3193f0970634e97961f9c174e28e4291"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a3193f0970634e97961f9c174e28e4291">libMesh::NumericVector&lt; T &gt;::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">在调用 init() 后设置为 true。 </div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8h_source.html#l00918">numeric_vector.h:918</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html">libMesh::DistributedVector</a></div><div class="ttdoc">该类提供了一个简单的并行分布式向量数据类型， 专门用于 libmesh。提供了一些集体通信功能。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8h_source.html#l00052">distributed_vector.h:52</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1libMeshPrivateData_html_ab8b7115ea57ced35ec86d1fdfa0ab853"><div class="ttname"><a href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">libMesh::libMeshPrivateData::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">Flag that tells if init() has been called. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00242">libmesh.C:242</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_a0259312d88ea437a6f305c20801b890f"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#a0259312d88ea437a6f305c20801b890f">libMesh::DistributedVector::pointwise_divide</a></div><div class="ttdeci">virtual void pointwise_divide(const NumericVector&lt; T &gt; &amp;vec1, const NumericVector&lt; T &gt; &amp;vec2) override</div><div class="ttdoc">计算该向量与另一个向量的逐点除法。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8C_source.html#l00623">distributed_vector.C:623</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_ae172bc9ca73c0c0a1ed61bc4300b2e03"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#ae172bc9ca73c0c0a1ed61bc4300b2e03">libMesh::DistributedVector::pointwise_mult</a></div><div class="ttdeci">virtual void pointwise_mult(const NumericVector&lt; T &gt; &amp;vec1, const NumericVector&lt; T &gt; &amp;vec2) override</div><div class="ttdoc">比较该向量与另一个向量的全局相对差异。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8C_source.html#l00614">distributed_vector.C:614</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_a4fd59306fac453d5bbd4514f43e17e80"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#a4fd59306fac453d5bbd4514f43e17e80">libMesh::DistributedVector::conjugate</a></div><div class="ttdeci">virtual void conjugate() override</div><div class="ttdoc">反转向量中每个条目的虚部。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8C_source.html#l00216">distributed_vector.C:216</a></div></div>
@@ -752,6 +755,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_a00442a48168c760e8eda21ff833a2129"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#a00442a48168c760e8eda21ff833a2129">libMesh::DistributedVector::localize</a></div><div class="ttdeci">virtual void localize(std::vector&lt; T &gt; &amp;v_local) const override</div><div class="ttdoc">创建全局向量的副本并存储在本地向量 v_local 中。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8C_source.html#l00571">distributed_vector.C:571</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_a75c6f7ee9bc9d9d90a5d007ff38ae7ca"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#a75c6f7ee9bc9d9d90a5d007ff38ae7ca">libMesh::DistributedVector::l2_norm</a></div><div class="ttdeci">virtual Real l2_norm() const override</div><div class="ttdoc">获取向量的 -范数，即条目平方和的平方根。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8C_source.html#l00092">distributed_vector.C:92</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_aee968e1138dda3abedb895993b73a72c"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#aee968e1138dda3abedb895993b73a72c">libMesh::DistributedVector::abs</a></div><div class="ttdeci">virtual void abs() override</div><div class="ttdoc">设置 ，对向量中的每个条目进行绝对值操作。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8C_source.html#l00281">distributed_vector.C:281</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aad2e4639e47d92a7d34c80bf2e936cba"><div class="ttname"><a href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">libMesh::initialized</a></div><div class="ttdeci">bool initialized()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00261">libmesh.C:261</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_a46ee090c8acd96842afe7b5fae9aee86"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#a46ee090c8acd96842afe7b5fae9aee86">libMesh::DistributedVector::init</a></div><div class="ttdeci">virtual void init(const numeric_index_type N, const numeric_index_type n_local, const bool fast=false, const ParallelType ptype=AUTOMATIC) override</div><div class="ttdoc">更改向量的维度为 n 。如果可能的话 ，该向量的保留内存保持不变。 如果 n==0 ，所有内存都将被释放。因此，如果要调整向量的大小并释放不需要的内存， 必须首先调用 init(0) ，然后调用 ini...</div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8h_source.html#l00316">distributed_vector.h:316</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_a1074892adb5701b7c13614058356fc0a"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#a1074892adb5701b7c13614058356fc0a">libMesh::DistributedVector::_values</a></div><div class="ttdeci">std::vector&lt; T &gt; _values</div><div class="ttdoc">实际的向量数据类型，用于保存向量条目。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8h_source.html#l00234">distributed_vector.h:234</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DistributedVector_html_adab92e48467d7abfe7f1a0f68c1a3882"><div class="ttname"><a href="classlibMesh_1_1DistributedVector.html#adab92e48467d7abfe7f1a0f68c1a3882">libMesh::DistributedVector::sum</a></div><div class="ttdeci">virtual T sum() const override</div><div class="ttdoc">获取向量中所有值的总和。 </div><div class="ttdef"><b>Definition:</b> <a href="distributed__vector_8C_source.html#l00048">distributed_vector.C:48</a></div></div>
@@ -759,7 +763,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

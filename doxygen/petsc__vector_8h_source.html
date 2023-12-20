@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -594,7 +595,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;  PetscInt petsc_n=<span class="keyword">static_cast&lt;</span>PetscInt<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;</div>
 <div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;  <span class="comment">// Clear initialized vectors</span></div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;  <span class="keywordflow">if</span> (this-&gt;initialized())</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>())</div>
 <div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    this-&gt;clear();</div>
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;</div>
 <div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  <span class="keywordflow">if</span> (ptype == AUTOMATIC)</div>
@@ -638,7 +639,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    libmesh_error_msg(<span class="stringliteral">&quot;Unsupported type &quot;</span> &lt;&lt; Utility::enum_to_string(this-&gt;_type));</div>
 <div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;  this-&gt;_is_initialized = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;  this-&gt;<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;  this-&gt;_is_closed = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;</div>
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;</div>
@@ -686,7 +687,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;    <span class="keyword">const_cast&lt;</span>PetscInt *<span class="keyword">&gt;</span>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>PetscInt *<span class="keyword">&gt;</span>(ghost.data()));</div>
 <div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;</div>
 <div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;  <span class="comment">// 清除已初始化的向量</span></div>
-<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;  <span class="keywordflow">if</span> (this-&gt;initialized())</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>())</div>
 <div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;    this-&gt;clear();</div>
 <div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;</div>
 <div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;  libmesh_assert(ptype == AUTOMATIC || ptype == GHOSTED);</div>
@@ -712,7 +713,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;  ierr = VecSetFromOptions (_vec);</div>
 <div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;  LIBMESH_CHKERR(ierr);</div>
 <div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;  this-&gt;_is_initialized = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;  this-&gt;<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;  this-&gt;_is_closed = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;</div>
 <div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;  <span class="keywordflow">if</span> (fast == <span class="keyword">false</span>)</div>
@@ -728,7 +729,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;</div>
 <div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;  <span class="comment">// 清除已初始化的向量</span></div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;  <span class="keywordflow">if</span> (this-&gt;initialized())</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>())</div>
 <div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    this-&gt;clear();</div>
 <div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;</div>
 <div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;  <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1PetscVector.html">PetscVector&lt;T&gt;</a> &amp; v = cast_ref&lt;const PetscVector&lt;T&gt; &amp;&gt;(other);</div>
@@ -743,7 +744,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;</div>
 <div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;  <span class="comment">// 即使我们基于一个未初始化或未关闭的向量来初始化大小，*这个*向量现在正在初始化，最初是关闭的。</span></div>
 <div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;  this-&gt;_is_closed      = <span class="keyword">true</span>; <span class="comment">// v._is_closed;</span></div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;  this-&gt;_is_initialized = <span class="keyword">true</span>; <span class="comment">// v._is_initialized;</span></div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;  this-&gt;<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a> = <span class="keyword">true</span>; <span class="comment">// v._is_initialized;</span></div>
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;</div>
 <div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;  this-&gt;_type = v.<a class="code" href="classlibMesh_1_1NumericVector.html#a5c7b16576944b6d57634cd07e349b699">_type</a>;</div>
 <div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;</div>
@@ -781,10 +782,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;{</div>
 <div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;  exceptionless_parallel_object_only();</div>
 <div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;</div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;  <span class="keywordflow">if</span> (this-&gt;initialized())</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>())</div>
 <div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;    this-&gt;_restore_array();</div>
 <div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;  <span class="keywordflow">if</span> ((this-&gt;initialized()) &amp;&amp; (this-&gt;_destroy_vec_on_exit))</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;  <span class="keywordflow">if</span> ((this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>()) &amp;&amp; (this-&gt;_destroy_vec_on_exit))</div>
 <div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;    {</div>
 <div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;      <span class="comment">// If we encounter an error here, print a warning but otherwise</span></div>
 <div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;      <span class="comment">// keep going since we may be recovering from an exception.</span></div>
@@ -793,7 +794,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;        libmesh_warning(<span class="stringliteral">&quot;Warning: VecDestroy returned a non-zero error code which we ignored.&quot;</span>);</div>
 <div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;    }</div>
 <div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;  this-&gt;_is_closed = this-&gt;_is_initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;  this-&gt;_is_closed = this-&gt;<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;</div>
 <div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;  _global_to_local_map.clear();</div>
 <div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;}</div>
@@ -806,7 +807,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;{</div>
 <div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;</div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;</div>
 <div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;  this-&gt;_restore_array();</div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;</div>
@@ -864,12 +865,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l01238"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscVector.html#a290cc789f9c0e1195cfe13c96a3e243e"> 1238</a></span>&#160;numeric_index_type <a class="code" href="classlibMesh_1_1PetscVector.html#a290cc789f9c0e1195cfe13c96a3e243e">PetscVector&lt;T&gt;::size</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;</div>
 <div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;  PetscErrorCode ierr=0;</div>
 <div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;  PetscInt petsc_size=0;</div>
 <div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;  <span class="keywordflow">if</span> (!this-&gt;initialized())</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;  <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>())</div>
 <div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;</div>
 <div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;  ierr = VecGetSize(_vec, &amp;petsc_size);</div>
@@ -884,7 +885,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l01258"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscVector.html#aae1ce7cef57d31bd819bb78a4181a51f"> 1258</a></span>&#160;numeric_index_type <a class="code" href="classlibMesh_1_1PetscVector.html#aae1ce7cef57d31bd819bb78a4181a51f">PetscVector&lt;T&gt;::local_size</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;</div>
 <div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;  PetscErrorCode ierr=0;</div>
 <div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;  PetscInt petsc_size=0;</div>
@@ -901,7 +902,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l01275"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscVector.html#a49487be8e7a518206598d9140b28360d"> 1275</a></span>&#160;numeric_index_type <a class="code" href="classlibMesh_1_1PetscVector.html#a49487be8e7a518206598d9140b28360d">PetscVector&lt;T&gt;::first_local_index</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;</div>
 <div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;  numeric_index_type first = 0;</div>
 <div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;</div>
@@ -925,7 +926,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l01299"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscVector.html#aa8430b6180b7a1ab9f6f996b53f9cfa6"> 1299</a></span>&#160;numeric_index_type <a class="code" href="classlibMesh_1_1PetscVector.html#aa8430b6180b7a1ab9f6f996b53f9cfa6">PetscVector&lt;T&gt;::last_local_index</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;</div>
 <div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;  numeric_index_type last = 0;</div>
 <div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;</div>
@@ -949,7 +950,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l01323"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscVector.html#a6780349c56a4839ce9b94e76e8a9d59f"> 1323</a></span>&#160;numeric_index_type <a class="code" href="classlibMesh_1_1PetscVector.html#a6780349c56a4839ce9b94e76e8a9d59f">PetscVector&lt;T&gt;::map_global_to_local_index</a> (<span class="keyword">const</span> numeric_index_type i)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;</div>
 <div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;  numeric_index_type first=0;</div>
 <div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;  numeric_index_type last=0;</div>
@@ -1179,6 +1180,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a01b815df08920f6d33251754c10bf368"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a01b815df08920f6d33251754c10bf368">libMesh::PetscVector::_get_array</a></div><div class="ttdeci">void _get_array(bool read_only) const </div><div class="ttdoc">从 PETSc 查询数组（如果向量是幽灵的，则还包括本地形式）。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l01266">petsc_vector.C:1266</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a8a9e3ba828bd24ad3bae5a1e4ffb026b"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a8a9e3ba828bd24ad3bae5a1e4ffb026b">libMesh::PetscVector::l2_norm</a></div><div class="ttdeci">virtual Real l2_norm() const override</div><div class="ttdoc">计算 NumericVector 的 L2 范数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00077">petsc_vector.C:77</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a33e18e24eae44834161c9f7eacad7bb0"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a33e18e24eae44834161c9f7eacad7bb0">libMesh::PetscVector::PetscVector</a></div><div class="ttdeci">PetscVector(const Parallel::Communicator &amp;comm_in, const ParallelType type=AUTOMATIC)</div><div class="ttdoc">无效的构造函数。维度=0。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l00756">petsc_vector.h:756</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a3dc0a134260371bd023e0d0f632399e1"><div class="ttname"><a href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">libMesh::closed</a></div><div class="ttdeci">bool closed()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00268">libmesh.C:268</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_ab3b8505a3e13fa32554cf81302dd1242"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#ab3b8505a3e13fa32554cf81302dd1242">libMesh::PetscVector::localize</a></div><div class="ttdeci">virtual void localize(std::vector&lt; T &gt; &amp;v_local) const override</div><div class="ttdoc">将当前向量的数据本地化到 std::vector v_local 中。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00863">petsc_vector.C:863</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html">libMesh::PetscVector</a></div><div class="ttdoc">该类提供了一个良好的接口，用于访问 PETSc 的 Vec 对象。所有重写的虚拟函数都在 numeric_vector.h 中有文档说明。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l00075">petsc_vector.h:75</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_adbedcad04292938a49ff3b01d65276ed"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#adbedcad04292938a49ff3b01d65276ed">libMesh::PetscVector::add_vector_conjugate_transpose</a></div><div class="ttdeci">void add_vector_conjugate_transpose(const NumericVector&lt; T &gt; &amp;v, const SparseMatrix&lt; T &gt; &amp;A)</div><div class="ttdoc">. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00299">petsc_vector.C:299</a></div></div>
@@ -1214,6 +1216,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a04af5355d6a0463f3466750d77143f02"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a04af5355d6a0463f3466750d77143f02">libMesh::PetscVector::_local_form</a></div><div class="ttdeci">Vec _local_form</div><div class="ttdoc">用于保存幽灵向量的本地形式的 PETSc 向量数据类型。仅当向量是幽灵的且 _array_is_present 为真时，此字段的内容才有效。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l00693">petsc_vector.h:693</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_ac28fe132e16a1de3b1521b2aedef05ce"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#ac28fe132e16a1de3b1521b2aedef05ce">libMesh::PetscVector::_global_to_local_map</a></div><div class="ttdeci">GlobalToLocalMap _global_to_local_map</div><div class="ttdoc">用于将全局幽灵单元格映射到本地单元格的映射（如果不是幽灵单元格模式，则为空）。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l00731">petsc_vector.h:731</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_ae53102930d169c44f136c3b609d2484b"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#ae53102930d169c44f136c3b609d2484b">libMesh::PetscVector::abs</a></div><div class="ttdeci">virtual void abs() override</div><div class="ttdoc">对当前向量的所有元素取绝对值。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00459">petsc_vector.C:459</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1libMeshPrivateData_html_ab8b7115ea57ced35ec86d1fdfa0ab853"><div class="ttname"><a href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">libMesh::libMeshPrivateData::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">Flag that tells if init() has been called. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00242">libmesh.C:242</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_ae10345bff1d65f2b84f7d16c6c7b538c"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#ae10345bff1d65f2b84f7d16c6c7b538c">libMesh::PetscVector::_array_is_present</a></div><div class="ttdeci">bool _array_is_present</div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l00668">petsc_vector.h:668</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a376676d599b27fea5bee6a6ba56d5b5a"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a376676d599b27fea5bee6a6ba56d5b5a">libMesh::PetscVector::operator+=</a></div><div class="ttdeci">virtual NumericVector&lt; T &gt; &amp; operator+=(const NumericVector&lt; T &gt; &amp;v) override</div><div class="ttdoc">将当前 NumericVector 与另一个 NumericVector v 相加。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00118">petsc_vector.C:118</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_aff0f2e31f9cd5cc31ea687c10494ced8"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#aff0f2e31f9cd5cc31ea687c10494ced8">libMesh::PetscVector::_restore_array</a></div><div class="ttdeci">void _restore_array() const </div><div class="ttdoc">将数组（如果向量是幽灵的，则还包括本地形式）恢复到 PETSc。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l01346">petsc_vector.C:1346</a></div></div>
@@ -1234,6 +1237,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a4a3bb09ff24810391b15da006ba39cb4"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a4a3bb09ff24810391b15da006ba39cb4">libMesh::NumericVector::swap</a></div><div class="ttdeci">virtual void swap(NumericVector&lt; T &gt; &amp;v)</div><div class="ttdoc">交换该向量的内容与向量 v 的内容。子类应提供足够的间接性以使此操作成为 O(1) 的头部交换操作。 </div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8h_source.html#l01179">numeric_vector.h:1179</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_aff6622db204ae4da8493ef4e582488bd"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#aff6622db204ae4da8493ef4e582488bd">libMesh::PetscVector::init</a></div><div class="ttdeci">virtual void init(const numeric_index_type N, const numeric_index_type n_local, const bool fast=false, const ParallelType type=AUTOMATIC) override</div><div class="ttdoc">初始化 NumericVector 对象。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l00959">petsc_vector.h:959</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a63479af5d8468ff81c4d04e0cf2280bc"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a63479af5d8468ff81c4d04e0cf2280bc">libMesh::PetscVector::max</a></div><div class="ttdeci">virtual Real max() const override</div><div class="ttdoc">获取 NumericVector 中的最大值。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l01478">petsc_vector.h:1478</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aad2e4639e47d92a7d34c80bf2e936cba"><div class="ttname"><a href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">libMesh::initialized</a></div><div class="ttdeci">bool initialized()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00261">libmesh.C:261</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a37c72213c220ab3b9c796abf265dd154"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a37c72213c220ab3b9c796abf265dd154">libMesh::PetscVector::_first</a></div><div class="ttdeci">numeric_index_type _first</div><div class="ttdoc">第一个本地索引。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l00676">petsc_vector.h:676</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_ac5d22bbaca988db497afe01cf1a26b1b"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#ac5d22bbaca988db497afe01cf1a26b1b">libMesh::PetscVector::operator=</a></div><div class="ttdeci">PetscVector&lt; T &gt; &amp; operator=(const PetscVector&lt; T &gt; &amp;v)</div><div class="ttdoc">复制赋值运算符。 在执行各种检查后调用 VecCopy。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00566">petsc_vector.C:566</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a47190fb6c0e223214da7a8fcec32aff3"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a47190fb6c0e223214da7a8fcec32aff3">libMesh::PetscVector::~PetscVector</a></div><div class="ttdeci">virtual ~PetscVector()</div><div class="ttdoc">析构函数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l00950">petsc_vector.h:950</a></div></div>
@@ -1258,7 +1262,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

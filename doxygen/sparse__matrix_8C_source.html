@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_9bd4cbfd6409cef009e38f31cf95dda6.html">src</a></li><li class="navelem"><a class="el" href="dir_28f56bcccd12e4a0ab470f65d1b1ebd5.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_f9975977ce271819849de43d89795655.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -138,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  ParallelObject(comm_in),</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  _dof_map(nullptr),</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  _sp(nullptr),</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  _is_initialized(false)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a>(false)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
@@ -252,7 +253,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#ifdef LIBMESH_HAVE_LASPACK</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> LASPACK_SOLVERS:</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="namespacelibMesh.html#aeb2a777af969e03421c99c4afe9d68a0">LASPACK_SOLVERS</a>:</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="keywordflow">return</span> std::make_unique&lt;LaspackMatrix&lt;T&gt;&gt;(comm);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor"></span></div>
@@ -264,13 +265,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#ifdef LIBMESH_TRILINOS_HAVE_EPETRA</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> TRILINOS_SOLVERS:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="namespacelibMesh.html#aa27e267f495ee0599f7cd8981c0cf7ad">TRILINOS_SOLVERS</a>:</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="keywordflow">return</span> std::make_unique&lt;EpetraMatrix&lt;T&gt;&gt;(comm);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#ifdef LIBMESH_HAVE_EIGEN</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> EIGEN_SOLVERS:</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="namespacelibMesh.html#ae73defe502d02a0aa591555f4dd18dd4">EIGEN_SOLVERS</a>:</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      <span class="keywordflow">return</span> std::make_unique&lt;EigenSparseMatrix&lt;T&gt;&gt;(comm);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor"></span></div>
@@ -315,7 +316,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  libmesh_error_msg_if(!this-&gt;_dof_map, <span class="stringliteral">&quot;Error!  Trying to print a matrix with no dof_map set!&quot;</span>);</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
@@ -443,6 +444,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a164ea3f7f89b81307b71a9841da5d723"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a164ea3f7f89b81307b71a9841da5d723">libMesh::SparseMatrix::add_block_matrix</a></div><div class="ttdeci">virtual void add_block_matrix(const DenseMatrix&lt; T &gt; &amp;dm, const std::vector&lt; numeric_index_type &gt; &amp;brows, const std::vector&lt; numeric_index_type &gt; &amp;bcols)</div><div class="ttdoc">将完整矩阵 dm 添加到 SparseMatrix。这对于在装配时添加元素矩阵很有用。 矩阵被假定为块矩阵，brow、bcol 对应于*块*行和列索引。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00077">sparse_matrix.C:77</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_ae40ff57fbce60cb118f64efecf78cf52"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#ae40ff57fbce60cb118f64efecf78cf52">libMesh::SparseMatrix::SparseMatrix</a></div><div class="ttdeci">SparseMatrix(const Parallel::Communicator &amp;comm)</div><div class="ttdoc">构造函数；初始化矩阵为空，没有任何结构，即矩阵无法使用。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00048">sparse_matrix.C:48</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a4fb8c524109fd5dff8c98855437544ee"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">libMesh::DenseMatrixBase::n</a></div><div class="ttdeci">unsigned int n() const </div><div class="ttdoc">返回矩阵的列维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00122">dense_matrix_base.h:122</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_ae73defe502d02a0aa591555f4dd18dd4"><div class="ttname"><a href="namespacelibMesh.html#ae73defe502d02a0aa591555f4dd18dd4">libMesh::EIGEN_SOLVERS</a></div><div class="ttdeci">EIGEN_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00249">libmesh.C:249</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aa27e267f495ee0599f7cd8981c0cf7ad"><div class="ttname"><a href="namespacelibMesh.html#aa27e267f495ee0599f7cd8981c0cf7ad">libMesh::TRILINOS_SOLVERS</a></div><div class="ttdeci">TRILINOS_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00247">libmesh.C:247</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a577d12daa958dc9708c2a77655844a28"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a577d12daa958dc9708c2a77655844a28">libMesh::NumericVector::add_vector</a></div><div class="ttdeci">virtual void add_vector(const T *v, const std::vector&lt; numeric_index_type &gt; &amp;dof_indices)</div><div class="ttdoc">计算 ，其中 v 是一个指针， 每个 dof_indices[i] 指定了要添加的值 v[i] 的位置。 这应该在子类中进行重写以提高效率。请注意，此方法的库实现是线程安全的。 ...</div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8C_source.html#l00379">numeric_vector.C:379</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_adaccc5857f1a5d5ca264ded0b8bfb986"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#adaccc5857f1a5d5ca264ded0b8bfb986">libMesh::SparseMatrix::vector_mult</a></div><div class="ttdeci">void vector_mult(NumericVector&lt; T &gt; &amp;dest, const NumericVector&lt; T &gt; &amp;arg) const </div><div class="ttdoc">将矩阵乘以 NumericVector arg 并将结果存储在 NumericVector dest 中。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00195">sparse_matrix.C:195</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_aec90c7c742a5636010ac3e57fef0fa11"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#aec90c7c742a5636010ac3e57fef0fa11">libMesh::SparseMatrix::attach_sparsity_pattern</a></div><div class="ttdeci">void attach_sparsity_pattern(const SparsityPattern::Build &amp;sp)</div><div class="ttdoc">设置要使用的稀疏性模式的指针。在矩阵需要比系统中的大（或更小以提高效率）的模式， 或者在 DofMap 未计算系统稀疏性模式的情况下使用。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00068">sparse_matrix.C:68</a></div></div>
@@ -450,16 +453,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a0a7445955e126e341cd9a2e71b3c3976"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a0a7445955e126e341cd9a2e71b3c3976">libMesh::SparseMatrix::vector_mult_add</a></div><div class="ttdeci">void vector_mult_add(NumericVector&lt; T &gt; &amp;dest, const NumericVector&lt; T &gt; &amp;arg) const </div><div class="ttdoc">将矩阵乘以 NumericVector arg ,并将结果添加到 NumericVector dest 中。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00205">sparse_matrix.C:205</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a24060040686ce1e3bf9dd07e47e473da"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a24060040686ce1e3bf9dd07e47e473da">libMesh::SparseMatrix::build</a></div><div class="ttdeci">static std::unique_ptr&lt; SparseMatrix&lt; T &gt; &gt; build(const Parallel::Communicator &amp;comm, const SolverPackage solver_package=libMesh::default_solver_package(), const MatrixBuildType matrix_build_type=MatrixBuildType::AUTOMATIC)</div><div class="ttdoc">使用由 solver_package 指定的线性求解器包构建一个 SparseMatrix&amp;lt;T&amp;gt;。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00151">sparse_matrix.C:151</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a></div><div class="ttdoc">这是一个通用的稀疏矩阵类。该类包含了必须在派生类中覆盖的纯虚拟成员。 使用一个公共的基类允许从不同的求解器包中以不同的格式统一访问稀疏矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__preconditioner_8h_source.html#l00034">eigen_preconditioner.h:34</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1libMeshPrivateData_html_ab8b7115ea57ced35ec86d1fdfa0ab853"><div class="ttname"><a href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">libMesh::libMeshPrivateData::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">Flag that tells if init() has been called. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00242">libmesh.C:242</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a68bd665fb9252382cc9a28df4099d76a"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">libMesh::DenseMatrixBase::m</a></div><div class="ttdeci">unsigned int m() const </div><div class="ttdoc">返回矩阵的行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00115">dense_matrix_base.h:115</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aeb2a777af969e03421c99c4afe9d68a0"><div class="ttname"><a href="namespacelibMesh.html#aeb2a777af969e03421c99c4afe9d68a0">libMesh::LASPACK_SOLVERS</a></div><div class="ttdeci">LASPACK_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00251">libmesh.C:251</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a7a274d06b61a27e86f60f0fdd3be1043"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a7a274d06b61a27e86f60f0fdd3be1043">libMesh::SparseMatrix::zero_rows</a></div><div class="ttdeci">virtual void zero_rows(std::vector&lt; numeric_index_type &gt; &amp;rows, T diag_value=0.0)</div><div class="ttdoc">将所有行条目设置为 0，然后将 diag_value 放在对角线条目。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00216">sparse_matrix.C:216</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a13a64368e6c7520c7150118e39e2faf2"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a13a64368e6c7520c7150118e39e2faf2">libMesh::NumericVector::zero</a></div><div class="ttdeci">virtual void zero()=0</div><div class="ttdoc">将所有条目设置为零。等同于 v = 0，但更明显且更快。 </div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a327789280fc9e054844455b212d143b4"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a327789280fc9e054844455b212d143b4">libMesh::SparseMatrix::attach_dof_map</a></div><div class="ttdeci">void attach_dof_map(const DofMap &amp;dof_map)</div><div class="ttdoc">设置要使用的 DofMap 的指针。如果不使用单独的稀疏性模式， 则使用来自 DofMap 的模式。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00058">sparse_matrix.C:58</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_afcdf5bc4246bc646599e5d1a031b3c96"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#afcdf5bc4246bc646599e5d1a031b3c96">libMesh::SparseMatrix::print</a></div><div class="ttdeci">void print(std::ostream &amp;os=libMesh::out, const bool sparse=false) const </div><div class="ttdoc">将矩阵的内容以统一的样式打印到屏幕上，而不考虑正在使用的矩阵/求解器包。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00225">sparse_matrix.C:225</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aad2e4639e47d92a7d34c80bf2e936cba"><div class="ttname"><a href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">libMesh::initialized</a></div><div class="ttdeci">bool initialized()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00261">libmesh.C:261</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1DenseMatrix.html">libMesh::DenseMatrix</a></div><div class="ttdoc">定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix_8h_source.html#l00070">dense_matrix.h:70</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

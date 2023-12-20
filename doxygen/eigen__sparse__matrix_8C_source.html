@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_9bd4cbfd6409cef009e38f31cf95dda6.html">src</a></li><li class="navelem"><a class="el" href="dir_28f56bcccd12e4a0ab470f65d1b1ebd5.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_f9975977ce271819849de43d89795655.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -145,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  _mat.resize(m_in, n_in);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  _mat.reserve(Eigen::Matrix&lt;numeric_index_type, Eigen::Dynamic, 1&gt;::Constant(m_in,nnz));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  this-&gt;_is_initialized = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  this-&gt;<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
@@ -154,14 +155,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSparseMatrix.html#a1f3713465199abcc16341df3c93ab950">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSparseMatrix.html#af0327b275c78c1ff611d473a1bcffff9">EigenSparseMatrix&lt;T&gt;::init</a> (<span class="keyword">const</span> ParallelType)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">// Ignore calls on initialized objects</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">if</span> (this-&gt;initialized())</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>())</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">// We need the DofMap for this!</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  libmesh_assert(this-&gt;_dof_map);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// Clear initialized matrices</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (this-&gt;initialized())</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>())</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    this-&gt;clear();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> numeric_index_type n_rows   = this-&gt;_dof_map-&gt;n_dofs();</div>
@@ -200,7 +201,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  _mat.resize(n_rows,n_cols);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  _mat.reserve(n_nz);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  this-&gt;_is_initialized = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  this-&gt;<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  libmesh_assert_equal_to (n_rows, this-&gt;m());</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  libmesh_assert_equal_to (n_cols, this-&gt;n());</div>
@@ -214,7 +215,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                      <span class="keyword">const</span> std::vector&lt;numeric_index_type&gt; &amp; cols)</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_rows = cast_int&lt;unsigned int&gt;(rows.size());</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_cols = cast_int&lt;unsigned int&gt;(cols.size());</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  libmesh_assert_equal_to (dm.<a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">m</a>(), n_rows);</div>
@@ -263,7 +264,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  _mat.resize(0,0);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  _closed = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  this-&gt;_is_initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  this-&gt;<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
@@ -310,7 +311,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSparseMatrix.html#a48b5195a5ab04ffcaa2563fac8d2257a">  222</a></span>&#160;numeric_index_type <a class="code" href="classlibMesh_1_1EigenSparseMatrix.html#a48b5195a5ab04ffcaa2563fac8d2257a">EigenSparseMatrix&lt;T&gt;::m</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">return</span> cast_int&lt;numeric_index_type&gt;(_mat.rows());</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
@@ -320,7 +321,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSparseMatrix.html#ad23bdd66f3082c1e901b8421f9d29098">  232</a></span>&#160;numeric_index_type <a class="code" href="classlibMesh_1_1EigenSparseMatrix.html#ad23bdd66f3082c1e901b8421f9d29098">EigenSparseMatrix&lt;T&gt;::n</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordflow">return</span> cast_int&lt;numeric_index_type&gt;(_mat.cols());</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
@@ -348,7 +349,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                <span class="keyword">const</span> numeric_index_type j,</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                <span class="keyword">const</span> T value)</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  libmesh_assert_less (i, this-&gt;m());</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  libmesh_assert_less (j, this-&gt;n());</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
@@ -362,7 +363,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                <span class="keyword">const</span> numeric_index_type j,</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                <span class="keyword">const</span> T value)</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  libmesh_assert_less (i, this-&gt;m());</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  libmesh_assert_less (j, this-&gt;n());</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
@@ -383,7 +384,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSparseMatrix.html#aaf3457619bf95254308fd192ce12cab2">  295</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EigenSparseMatrix.html#ad6afbb4f166e24b582f7f6d53f0274e1">EigenSparseMatrix&lt;T&gt;::add</a> (<span class="keyword">const</span> T a_in, <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix&lt;T&gt;</a> &amp; X_in)</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;{</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  libmesh_assert_equal_to (this-&gt;m(), X_in.<a class="code" href="classlibMesh_1_1SparseMatrix.html#a95dedaf3b58050d303a5e971e1124882">m</a>());</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  libmesh_assert_equal_to (this-&gt;n(), X_in.<a class="code" href="classlibMesh_1_1SparseMatrix.html#a759bad4b67e66f75c5a2fdc0772b755b">n</a>());</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
@@ -400,7 +401,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="classlibMesh_1_1EigenSparseMatrix.html#ab66576dd0a26443238118c8ca5b36a50">  311</a></span>&#160;T <a class="code" href="classlibMesh_1_1EigenSparseMatrix.html#ab66576dd0a26443238118c8ca5b36a50">EigenSparseMatrix&lt;T&gt;::operator () </a>(<span class="keyword">const</span> numeric_index_type i,</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                                     <span class="keyword">const</span> numeric_index_type j)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  libmesh_assert_less (i, this-&gt;m());</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  libmesh_assert_less (j, this-&gt;n());</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
@@ -478,6 +479,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1EigenSparseMatrix_html_a007b21b13bb885e2d32b22d0ff91161f"><div class="ttname"><a href="classlibMesh_1_1EigenSparseMatrix.html#a007b21b13bb885e2d32b22d0ff91161f">libMesh::EigenSparseMatrix::zero</a></div><div class="ttdeci">virtual void zero() override</div><div class="ttdoc">将所有条目设置为 0。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__sparse__matrix_8C_source.html#l00183">eigen_sparse_matrix.C:183</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EigenSparseMatrix_html_ad23bdd66f3082c1e901b8421f9d29098"><div class="ttname"><a href="classlibMesh_1_1EigenSparseMatrix.html#ad23bdd66f3082c1e901b8421f9d29098">libMesh::EigenSparseMatrix::n</a></div><div class="ttdeci">virtual numeric_index_type n() const override</div><div class="ttdef"><b>Definition:</b> <a href="eigen__sparse__matrix_8C_source.html#l00232">eigen_sparse_matrix.C:232</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EigenSparseMatrix_html_a05c6509a80e6049ee15dbaf6e96c53ce"><div class="ttname"><a href="classlibMesh_1_1EigenSparseMatrix.html#a05c6509a80e6049ee15dbaf6e96c53ce">libMesh::EigenSparseMatrix::get_diagonal</a></div><div class="ttdeci">virtual void get_diagonal(NumericVector&lt; T &gt; &amp;dest) const override</div><div class="ttdoc">复制矩阵的对角线部分到 dest。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__sparse__matrix_8C_source.html#l00143">eigen_sparse_matrix.C:143</a></div></div>
+<div class="ttc" id="namespacelibMesh_1_1libMeshPrivateData_html_ab8b7115ea57ced35ec86d1fdfa0ab853"><div class="ttname"><a href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">libMesh::libMeshPrivateData::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">Flag that tells if init() has been called. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00242">libmesh.C:242</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a68bd665fb9252382cc9a28df4099d76a"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">libMesh::DenseMatrixBase::m</a></div><div class="ttdeci">unsigned int m() const </div><div class="ttdoc">返回矩阵的行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00115">dense_matrix_base.h:115</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EigenSparseMatrix_html_ab2e7a95227bcc7ac84a4c58dc0db0906"><div class="ttname"><a href="classlibMesh_1_1EigenSparseMatrix.html#ab2e7a95227bcc7ac84a4c58dc0db0906">libMesh::EigenSparseMatrix::EigenSparseMatrix</a></div><div class="ttdeci">EigenSparseMatrix(const Parallel::Communicator &amp;comm)</div><div class="ttdoc">构造函数；初始化矩阵为空，没有任何结构，即矩阵无法使用。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__sparse__matrix_8C_source.html#l00163">eigen_sparse_matrix.C:163</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a95dedaf3b58050d303a5e971e1124882"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a95dedaf3b58050d303a5e971e1124882">libMesh::SparseMatrix::m</a></div><div class="ttdeci">virtual numeric_index_type m() const =0</div></div>
@@ -485,6 +487,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1EigenSparseMatrix_html_af0dc94931e85474a5ce81ee9a0f49ee9"><div class="ttname"><a href="classlibMesh_1_1EigenSparseMatrix.html#af0dc94931e85474a5ce81ee9a0f49ee9">libMesh::EigenSparseMatrix::row_start</a></div><div class="ttdeci">virtual numeric_index_type row_start() const override</div><div class="ttdef"><b>Definition:</b> <a href="eigen__sparse__matrix_8C_source.html#l00242">eigen_sparse_matrix.C:242</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EigenSparseMatrix_html_a704716d62aec1858b65b63860c835458"><div class="ttname"><a href="classlibMesh_1_1EigenSparseMatrix.html#a704716d62aec1858b65b63860c835458">libMesh::EigenSparseMatrix::linfty_norm</a></div><div class="ttdeci">virtual Real linfty_norm() const override</div><div class="ttdoc">获取矩阵的 -范数，即最大行和： </div><div class="ttdef"><b>Definition:</b> <a href="eigen__sparse__matrix_8C_source.html#l00347">eigen_sparse_matrix.C:347</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EigenSparseMatrix_html_a4c9708bb2be845edf8dcc9191d2d422b"><div class="ttname"><a href="classlibMesh_1_1EigenSparseMatrix.html#a4c9708bb2be845edf8dcc9191d2d422b">libMesh::EigenSparseMatrix::clear</a></div><div class="ttdeci">virtual void clear() override</div><div class="ttdoc">恢复 SparseMatrix&amp;lt;T&amp;gt; 到原始状态。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__sparse__matrix_8C_source.html#l00172">eigen_sparse_matrix.C:172</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aad2e4639e47d92a7d34c80bf2e936cba"><div class="ttname"><a href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">libMesh::initialized</a></div><div class="ttdeci">bool initialized()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00261">libmesh.C:261</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EigenSparseMatrix_html_a9be7154eaf1755152fdafd8057ef210b"><div class="ttname"><a href="classlibMesh_1_1EigenSparseMatrix.html#a9be7154eaf1755152fdafd8057ef210b">libMesh::EigenSparseMatrix::zero_clone</a></div><div class="ttdeci">virtual std::unique_ptr&lt; SparseMatrix&lt; T &gt; &gt; zero_clone() const override</div><div class="ttdef"><b>Definition:</b> <a href="eigen__sparse__matrix_8C_source.html#l00199">eigen_sparse_matrix.C:199</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EigenSparseMatrix_html_a330fc08a436d3fe8e17efa66255e9ccb"><div class="ttname"><a href="classlibMesh_1_1EigenSparseMatrix.html#a330fc08a436d3fe8e17efa66255e9ccb">libMesh::EigenSparseMatrix::l1_norm</a></div><div class="ttdeci">virtual Real l1_norm() const override</div><div class="ttdoc">获取矩阵的 -范数，即最大列和：  </div><div class="ttdef"><b>Definition:</b> <a href="eigen__sparse__matrix_8C_source.html#l00324">eigen_sparse_matrix.C:324</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1DenseMatrix.html">libMesh::DenseMatrix</a></div><div class="ttdoc">定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix_8h_source.html#l00070">dense_matrix.h:70</a></div></div>
@@ -494,7 +497,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

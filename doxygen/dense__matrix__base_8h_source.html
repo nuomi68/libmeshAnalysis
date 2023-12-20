@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -154,7 +155,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">  122</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a4fb8c524109fd5dff8c98855437544ee">n</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a65ad8af64975eb0ecfc621a75743a869">_n</a>; }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a041c10a32db1f43eccfb86bdc9f63e60">print</a>(std::ostream &amp; os = libMesh::out) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a041c10a32db1f43eccfb86bdc9f63e60">print</a>(std::ostream &amp; os = <a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classlibMesh_1_1DenseMatrixBase.html#ae69bcf4703696e88fb14522c77f46567">  136</a></span>&#160;  <span class="keyword">friend</span> std::ostream &amp; operator &lt;&lt; (std::ostream &amp; os, const DenseMatrixBase&lt;T&gt; &amp; <a class="code" href="classlibMesh_1_1DenseMatrixBase.html#a68bd665fb9252382cc9a28df4099d76a">m</a>)</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  {</div>
@@ -225,13 +226,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1DenseVector_html"><div class="ttname"><a href="classlibMesh_1_1DenseVector.html">libMesh::DenseVector</a></div><div class="ttdoc">定义用于有限元计算的稠密向量类。该类基本上是为了补充 DenseMatrix 类而设计的。 它相对于 std::vector 具有额外的功能，使其在有限元中特别有用，特别是对于方程组。 所有重写的虚拟函...</div><div class="ttdef"><b>Definition:</b> <a href="analytic__function_8h_source.html#l00034">analytic_function.h:34</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html">libMesh::DenseMatrixBase</a></div><div class="ttdoc">为有限元类型的计算定义了一个抽象的稠密矩阵基类。例如 DenseSubMatrices 可以从这个类派生出来。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00045">dense_matrix_base.h:45</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a041c10a32db1f43eccfb86bdc9f63e60"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a041c10a32db1f43eccfb86bdc9f63e60">libMesh::DenseMatrixBase::print</a></div><div class="ttdeci">void print(std::ostream &amp;os=libMesh::out) const </div><div class="ttdoc">漂亮地打印矩阵，默认为 libMesh::out。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base__impl_8h_source.html#l00155">dense_matrix_base_impl.h:155</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a63e3c3158308e2184c12b55ab9ea9a35"><div class="ttname"><a href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></div><div class="ttdeci">OStreamProxy out(std::cout)</div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a9a7ee4ffed185b14a4083303791ab43d"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a9a7ee4ffed185b14a4083303791ab43d">libMesh::DenseMatrixBase::~DenseMatrixBase</a></div><div class="ttdeci">virtual ~DenseMatrixBase()=default</div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_a0472bd2ec76bfa88657299b9d39ab399"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#a0472bd2ec76bfa88657299b9d39ab399">libMesh::DenseMatrixBase::condense</a></div><div class="ttdeci">void condense(const unsigned int i, const unsigned int j, const T val, DenseVectorBase&lt; T &gt; &amp;rhs)</div><div class="ttdoc">将矩阵的 (i,j) 条目压缩出来，强制它取值为 val。这对于在数值模拟中应用边界条件很有用。 保留矩阵的对称性。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base__impl_8h_source.html#l00094">dense_matrix_base_impl.h:94</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrixBase_html_aa7400426b259d1c630a4b26221205e76"><div class="ttname"><a href="classlibMesh_1_1DenseMatrixBase.html#aa7400426b259d1c630a4b26221205e76">libMesh::DenseMatrixBase::_m</a></div><div class="ttdeci">unsigned int _m</div><div class="ttdoc">行维度。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix__base_8h_source.html#l00204">dense_matrix_base.h:204</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_9bd4cbfd6409cef009e38f31cf95dda6.html">src</a></li><li class="navelem"><a class="el" href="dir_28f56bcccd12e4a0ab470f65d1b1ebd5.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_f9975977ce271819849de43d89795655.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -133,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscVector.html#adf587e3e18351379774821ac596f2ac3">   44</a></span>&#160;T <a class="code" href="classlibMesh_1_1PetscVector.html#adf587e3e18351379774821ac596f2ac3">PetscVector&lt;T&gt;::sum</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  this-&gt;_restore_array();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  PetscErrorCode ierr=0;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  PetscScalar value=0.;</div>
@@ -149,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscVector.html#ac41d9d760a17475569c02bbf5d116ebf">   60</a></span>&#160;Real <a class="code" href="classlibMesh_1_1PetscVector.html#ac41d9d760a17475569c02bbf5d116ebf">PetscVector&lt;T&gt;::l1_norm</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  this-&gt;_restore_array();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  PetscErrorCode ierr=0;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  PetscReal value=0.;</div>
@@ -168,7 +169,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  this-&gt;_restore_array();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  PetscErrorCode ierr=0;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  PetscReal value=0.;</div>
@@ -188,7 +189,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  this-&gt;_restore_array();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  PetscErrorCode ierr=0;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  PetscReal value=0.;</div>
@@ -209,7 +210,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  this-&gt;_restore_array();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  this-&gt;add(1., v);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
@@ -225,7 +226,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  this-&gt;_restore_array();</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  this-&gt;add(-1., v);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
@@ -614,7 +615,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  this-&gt;_restore_array();</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  libmesh_assert(this-&gt;closed());</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  PetscScalar s = <a class="code" href="namespacelibMesh.html#ada7dc5a79b033d69bbcfa834e19dfdf3">PS</a>(s_in);</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
@@ -1212,7 +1213,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;  parallel_object_only();</div>
 <div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;</div>
 <div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;  this-&gt;_restore_array();</div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;  libmesh_assert (this-&gt;closed());</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>());</div>
 <div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;</div>
 <div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;  PetscErrorCode ierr = 0;</div>
 <div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;</div>
@@ -1346,7 +1347,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l01266"></a><span class="lineno"><a class="line" href="classlibMesh_1_1PetscVector.html#a01b815df08920f6d33251754c10bf368"> 1266</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscVector.html#a01b815df08920f6d33251754c10bf368">PetscVector&lt;T&gt;::_get_array</a>(<span class="keywordtype">bool</span> read_only)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;</div>
 <div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;  <span class="keywordtype">bool</span> initially_array_is_present = _array_is_present.load(std::memory_order_acquire);</div>
 <div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;</div>
@@ -1429,7 +1430,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;  libmesh_error_msg_if(_values_manually_retrieved,</div>
 <div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;                       <span class="stringliteral">&quot;PetscVector values were manually retrieved but are being automatically restored!&quot;</span>);</div>
 <div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;  <span class="keywordflow">if</span> (_array_is_present.load(std::memory_order_acquire))</div>
 <div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;    {</div>
 <div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;      std::scoped_lock lock(_petsc_get_restore_array_mutex);</div>
@@ -1479,6 +1480,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;<span class="preprocessor">#endif // #ifdef LIBMESH_HAVE_PETSC</span></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a01b815df08920f6d33251754c10bf368"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a01b815df08920f6d33251754c10bf368">libMesh::PetscVector::_get_array</a></div><div class="ttdeci">void _get_array(bool read_only) const </div><div class="ttdoc">从 PETSc 查询数组（如果向量是幽灵的，则还包括本地形式）。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l01266">petsc_vector.C:1266</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a8a9e3ba828bd24ad3bae5a1e4ffb026b"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a8a9e3ba828bd24ad3bae5a1e4ffb026b">libMesh::PetscVector::l2_norm</a></div><div class="ttdeci">virtual Real l2_norm() const override</div><div class="ttdoc">计算 NumericVector 的 L2 范数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00077">petsc_vector.C:77</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a3dc0a134260371bd023e0d0f632399e1"><div class="ttname"><a href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">libMesh::closed</a></div><div class="ttdeci">bool closed()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00268">libmesh.C:268</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_ab3b8505a3e13fa32554cf81302dd1242"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#ab3b8505a3e13fa32554cf81302dd1242">libMesh::PetscVector::localize</a></div><div class="ttdeci">virtual void localize(std::vector&lt; T &gt; &amp;v_local) const override</div><div class="ttdoc">将当前向量的数据本地化到 std::vector v_local 中。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00863">petsc_vector.C:863</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html">libMesh::PetscVector</a></div><div class="ttdoc">该类提供了一个良好的接口，用于访问 PETSc 的 Vec 对象。所有重写的虚拟函数都在 numeric_vector.h 中有文档说明。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l00075">petsc_vector.h:75</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_adbedcad04292938a49ff3b01d65276ed"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#adbedcad04292938a49ff3b01d65276ed">libMesh::PetscVector::add_vector_conjugate_transpose</a></div><div class="ttdeci">void add_vector_conjugate_transpose(const NumericVector&lt; T &gt; &amp;v, const SparseMatrix&lt; T &gt; &amp;A)</div><div class="ttdoc">. </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00299">petsc_vector.C:299</a></div></div>
@@ -1513,6 +1515,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_aff6622db204ae4da8493ef4e582488bd"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#aff6622db204ae4da8493ef4e582488bd">libMesh::PetscVector::init</a></div><div class="ttdeci">virtual void init(const numeric_index_type N, const numeric_index_type n_local, const bool fast=false, const ParallelType type=AUTOMATIC) override</div><div class="ttdoc">初始化 NumericVector 对象。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8h_source.html#l00959">petsc_vector.h:959</a></div></div>
 <div class="ttc" id="structlibMesh_1_1WrappedPetsc_html"><div class="ttname"><a href="structlibMesh_1_1WrappedPetsc.html">libMesh::WrappedPetsc</a></div><div class="ttdef"><b>Definition:</b> <a href="wrapped__petsc_8h_source.html#l00033">wrapped_petsc.h:33</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscMatrix_html"><div class="ttname"><a href="classlibMesh_1_1PetscMatrix.html">libMesh::PetscMatrix</a></div><div class="ttdoc">这个类提供了一个方便的接口，用于操作并行稀疏矩阵的 PETSc C 库数据结构。 所有覆盖的虚拟函数都在 sparse_matrix.h 中有详细的文档说明。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__matrix_8h_source.html#l00092">petsc_matrix.h:92</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aad2e4639e47d92a7d34c80bf2e936cba"><div class="ttname"><a href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">libMesh::initialized</a></div><div class="ttdeci">bool initialized()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00261">libmesh.C:261</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_ac5d22bbaca988db497afe01cf1a26b1b"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#ac5d22bbaca988db497afe01cf1a26b1b">libMesh::PetscVector::operator=</a></div><div class="ttdeci">PetscVector&lt; T &gt; &amp; operator=(const PetscVector&lt; T &gt; &amp;v)</div><div class="ttdoc">复制赋值运算符。 在执行各种检查后调用 VecCopy。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00566">petsc_vector.C:566</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_ad2fd83767893c4ba23b14e2bbf565204"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#ad2fd83767893c4ba23b14e2bbf565204">libMesh::PetscVector::reciprocal</a></div><div class="ttdeci">virtual void reciprocal() override</div><div class="ttdoc">对 NumericVector 中的所有元素取倒数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00168">petsc_vector.C:168</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscVector_html_a25589b50b3bb3c96ccb2bb80c0a2105a"><div class="ttname"><a href="classlibMesh_1_1PetscVector.html#a25589b50b3bb3c96ccb2bb80c0a2105a">libMesh::PetscVector::add_vector</a></div><div class="ttdeci">virtual void add_vector(const T *v, const std::vector&lt; numeric_index_type &gt; &amp;dof_indices) override</div><div class="ttdoc">向指定索引数组的元素中添加向量 v 的元素。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__vector_8C_source.html#l00215">petsc_vector.C:215</a></div></div>
@@ -1528,7 +1531,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

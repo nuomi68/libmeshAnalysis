@@ -23,6 +23,7 @@ var searchData=
   ['sparsematrix',['SparseMatrix',['../classlibMesh_1_1SparseMatrix.html#ae40ff57fbce60cb118f64efecf78cf52',1,'libMesh::SparseMatrix::SparseMatrix(const Parallel::Communicator &amp;comm)'],['../classlibMesh_1_1SparseMatrix.html#aa1540ef14952b1965ffe7f0969a70476',1,'libMesh::SparseMatrix::SparseMatrix(SparseMatrix &amp;&amp;)=default'],['../classlibMesh_1_1SparseMatrix.html#afc811aaa5f1850bd0ec03accb7cd6e56',1,'libMesh::SparseMatrix::SparseMatrix(const SparseMatrix &amp;)=default']]],
   ['sparseshellmatrix',['SparseShellMatrix',['../classlibMesh_1_1SparseShellMatrix.html#abbc3eedfdbafa9cac45b7413157da58a',1,'libMesh::SparseShellMatrix']]],
   ['sqrt',['sqrt',['../namespacestd.html#a5e539986868ffa7c4c08ef163cae5266',1,'std::sqrt(const ADRealEigenVector&lt; T, D, asd &gt; &amp;)'],['../namespacestd.html#a2ef937f7c4c7f7c1a8a0240580ecc8ce',1,'std::sqrt(ADRealEigenVector&lt; T, D, asd &gt; &amp;&amp;)']]],
+  ['stop',['stop',['../namespacelibMesh_1_1MacroFunctions.html#aa458322355d30260679270d2443b10db',1,'libMesh::MacroFunctions']]],
   ['sub_5fmatrix',['sub_matrix',['../classlibMesh_1_1DenseMatrix.html#ae0e34420e6f3899110a2fba353d720b9',1,'libMesh::DenseMatrix']]],
   ['subset_5fl1_5fnorm',['subset_l1_norm',['../classlibMesh_1_1NumericVector.html#a0fdfc2c1d378b5fa4caae6b0ba01c6bb',1,'libMesh::NumericVector']]],
   ['subset_5fl2_5fnorm',['subset_l2_norm',['../classlibMesh_1_1NumericVector.html#af10d4a921168dd52eafd02bffa5d2616',1,'libMesh::NumericVector']]],

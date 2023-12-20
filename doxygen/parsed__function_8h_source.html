@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -700,20 +701,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;  <span class="keywordtype">int</span> error_code = parser.EvalError();</div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;  <span class="keywordflow">if</span> (error_code)</div>
 <div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    {</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;      libMesh::err &lt;&lt; <span class="stringliteral">&quot;ERROR: FunctionParser is unable to evaluate component &quot;</span></div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;      <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;ERROR: FunctionParser is unable to evaluate component &quot;</span></div>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;                   &lt;&lt; component_idx</div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;                   &lt;&lt; <span class="stringliteral">&quot; for &#39;&quot;</span></div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;                   &lt;&lt; function_name;</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : index_range(parsers))</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        <span class="keywordflow">if</span> (parsers[i].<span class="keyword">get</span>() == &amp;parser)</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;          libMesh::err &lt;&lt; <span class="stringliteral">&quot;&#39; of expression &#39;&quot;</span></div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;          <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;&#39; of expression &#39;&quot;</span></div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;                       &lt;&lt; _subexpressions[i];</div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;      libMesh::err &lt;&lt; <span class="stringliteral">&quot;&#39; with arguments:\n&quot;</span>;</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;      <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;&#39; with arguments:\n&quot;</span>;</div>
 <div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; item : _spacetime)</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        libMesh::err &lt;&lt; <span class="charliteral">&#39;\t&#39;</span> &lt;&lt; item &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;      libMesh::err &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="charliteral">&#39;\t&#39;</span> &lt;&lt; item &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;      <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
 <div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;      <span class="comment">// 目前没有API来报告错误消息，我们将手动完成</span></div>
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;      std::string error_message = <span class="stringliteral">&quot;Reason: &quot;</span>;</div>
@@ -823,6 +824,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1ParsedFunction_html_adeb16765a794ade97ebc1d08947680ec"><div class="ttname"><a href="classlibMesh_1_1ParsedFunction.html#adeb16765a794ade97ebc1d08947680ec">libMesh::ParsedFunction::find_name</a></div><div class="ttdeci">std::size_t find_name(std::string_view varname, std::string_view expr) const </div><div class="ttdoc">解析出变量名的辅助函数。 </div><div class="ttdef"><b>Definition:</b> <a href="parsed__function_8h_source.html#l00723">parsed_function.h:723</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFunction_html_ab693948a2d7a9eb9f3594b84f72a50d8"><div class="ttname"><a href="classlibMesh_1_1ParsedFunction.html#ab693948a2d7a9eb9f3594b84f72a50d8">libMesh::ParsedFunction::component</a></div><div class="ttdeci">virtual Output component(unsigned int i, const Point &amp;p, Real time) override</div><div class="ttdoc">计算 ParsedFunction 的特定分量在给定点上的值。 </div><div class="ttdef"><b>Definition:</b> <a href="parsed__function_8h_source.html#l00455">parsed_function.h:455</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFunction_html_a6393ac7bafd140819c61e300674988cf"><div class="ttname"><a href="classlibMesh_1_1ParsedFunction.html#a6393ac7bafd140819c61e300674988cf">libMesh::ParsedFunction::ParsedFunction</a></div><div class="ttdeci">ParsedFunction(std::string expression, const std::vector&lt; std::string &gt; *additional_vars=nullptr, const std::vector&lt; Output &gt; *initial_vals=nullptr)</div><div class="ttdoc">构造函数。使用给定的数学表达式创建一个 ParsedFunction。 </div><div class="ttdef"><b>Definition:</b> <a href="parsed__function_8h_source.html#l00317">parsed_function.h:317</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a74e5bc8a72d210b3d87b0221b1f69db1"><div class="ttname"><a href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a></div><div class="ttdeci">OStreamProxy err(std::cerr)</div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFunction_html_a8af8aa9387414af880e49fd21b06629c"><div class="ttname"><a href="classlibMesh_1_1ParsedFunction.html#a8af8aa9387414af880e49fd21b06629c">libMesh::ParsedFunction::~ParsedFunction</a></div><div class="ttdeci">virtual ~ParsedFunction()=default</div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFunction_html_ac65059e8ede581e7c3e0c6a401b76b46"><div class="ttname"><a href="classlibMesh_1_1ParsedFunction.html#ac65059e8ede581e7c3e0c6a401b76b46">libMesh::ParsedFunction::dx_parsers</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; FunctionParserADBase&lt; Output &gt; &gt; &gt; dx_parsers</div><div class="ttdoc">存储用于计算导数的解析器的集合。 </div><div class="ttdef"><b>Definition:</b> <a href="parsed__function_8h_source.html#l00270">parsed_function.h:270</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFunction_html_a588fe45e77d3c0da254027a4fca9b18d"><div class="ttname"><a href="classlibMesh_1_1ParsedFunction.html#a588fe45e77d3c0da254027a4fca9b18d">libMesh::ParsedFunction::has_derivatives</a></div><div class="ttdeci">virtual bool has_derivatives()</div><div class="ttdoc">查询是否成功生成了自动导数。 </div><div class="ttdef"><b>Definition:</b> <a href="parsed__function_8h_source.html#l00103">parsed_function.h:103</a></div></div>
@@ -842,7 +844,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

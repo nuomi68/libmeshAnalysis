@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -135,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">static</span> std::unique_ptr&lt;ShellMatrix&lt;T&gt;&gt;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="classlibMesh_1_1ShellMatrix.html#a6be702fe777476e38b5e848a5e4c265f">build</a>(<span class="keyword">const</span> Parallel::Communicator &amp; comm,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">const</span> SolverPackage solver_package = libMesh::default_solver_package());</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">const</span> SolverPackage solver_package = <a class="code" href="namespacelibMesh.html#a496c62248223cd940c7715932dd0dc2d">libMesh::default_solver_package</a>());</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlibMesh_1_1ShellMatrix.html#a931d03354f8044d5669e0c614577a2c4">~ShellMatrix</a> ();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
@@ -188,6 +189,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1ShellMatrix_html_a6be702fe777476e38b5e848a5e4c265f"><div class="ttname"><a href="classlibMesh_1_1ShellMatrix.html#a6be702fe777476e38b5e848a5e4c265f">libMesh::ShellMatrix::build</a></div><div class="ttdeci">static std::unique_ptr&lt; ShellMatrix&lt; T &gt; &gt; build(const Parallel::Communicator &amp;comm, const SolverPackage solver_package=libMesh::default_solver_package())</div><div class="ttdoc">使用指定的线性求解器包构建一个 ShellMatrix&amp;lt;T&amp;gt;。 </div><div class="ttdef"><b>Definition:</b> <a href="shell__matrix_8C_source.html#l00032">shell_matrix.C:32</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ShellMatrix_html_a8a1cf848d85e7f710b4d9153c9405248"><div class="ttname"><a href="classlibMesh_1_1ShellMatrix.html#a8a1cf848d85e7f710b4d9153c9405248">libMesh::ShellMatrix::m</a></div><div class="ttdeci">virtual numeric_index_type m() const =0</div></div>
 <div class="ttc" id="classlibMesh_1_1ShellMatrix_html_a754071de77d848c5481a42fd41fc5157"><div class="ttname"><a href="classlibMesh_1_1ShellMatrix.html#a754071de77d848c5481a42fd41fc5157">libMesh::ShellMatrix::vector_mult_add</a></div><div class="ttdeci">virtual void vector_mult_add(NumericVector&lt; T &gt; &amp;dest, const NumericVector&lt; T &gt; &amp;arg) const =0</div><div class="ttdoc">将矩阵与 arg 相乘并将结果添加到 dest 中。 </div></div>
+<div class="ttc" id="namespacelibMesh_html_a496c62248223cd940c7715932dd0dc2d"><div class="ttname"><a href="namespacelibMesh.html#a496c62248223cd940c7715932dd0dc2d">libMesh::default_solver_package</a></div><div class="ttdeci">SolverPackage default_solver_package()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00967">libmesh.C:967</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ShellMatrix_html_a8fa1bc2c6dd3c17e050d9e65def29b1d"><div class="ttname"><a href="classlibMesh_1_1ShellMatrix.html#a8fa1bc2c6dd3c17e050d9e65def29b1d">libMesh::ShellMatrix::ShellMatrix</a></div><div class="ttdeci">ShellMatrix(const Parallel::Communicator &amp;comm_in)</div><div class="ttdoc">构造函数； </div><div class="ttdef"><b>Definition:</b> <a href="shell__matrix_8h_source.html#l00149">shell_matrix.h:149</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ShellMatrix_html_a7204c5b8f3f75b58e3d33db2a2ccb01c"><div class="ttname"><a href="classlibMesh_1_1ShellMatrix.html#a7204c5b8f3f75b58e3d33db2a2ccb01c">libMesh::ShellMatrix::init</a></div><div class="ttdeci">virtual void init()</div><div class="ttdoc">初始化对象。 </div><div class="ttdef"><b>Definition:</b> <a href="shell__matrix_8h_source.html#l00135">shell_matrix.h:135</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ShellMatrix_html_ab89946d220702b4bde5c57f71083009f"><div class="ttname"><a href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">libMesh::ShellMatrix::_dof_map</a></div><div class="ttdeci">DofMap const * _dof_map</div><div class="ttdoc">与此对象关联的 DofMap 对象。 </div><div class="ttdef"><b>Definition:</b> <a href="shell__matrix_8h_source.html#l00141">shell_matrix.h:141</a></div></div>
@@ -198,7 +200,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

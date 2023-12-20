@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -175,7 +176,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">static</span> std::unique_ptr&lt;NumericVector&lt;T&gt;&gt;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="classlibMesh_1_1NumericVector.html#adba4a30965537656bb3b0c6f924ff040">build</a>(<span class="keyword">const</span> Parallel::Communicator &amp; comm,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">const</span> SolverPackage solver_package = libMesh::default_solver_package());</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">const</span> SolverPackage solver_package = <a class="code" href="namespacelibMesh.html#a496c62248223cd940c7715932dd0dc2d">libMesh::default_solver_package</a>());</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NumericVector.html#af4baee6cbf4dedf12212adb08914858e">  159</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1NumericVector.html#af4baee6cbf4dedf12212adb08914858e">initialized</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1NumericVector.html#a3193f0970634e97961f9c174e28e4291">_is_initialized</a>; }</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
@@ -349,9 +350,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NumericVector.html#a2e97ca7134e8c64f0d962fb874dfd90b">pointwise_divide</a> (<span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; vec1,</div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                                <span class="keyword">const</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; vec2) = 0;</div>
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NumericVector.html#a9932a4618eae8d40f938922b4bc04e65">print</a>(std::ostream &amp; os=libMesh::out) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NumericVector.html#a9932a4618eae8d40f938922b4bc04e65">print</a>(std::ostream &amp; os=<a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NumericVector.html#ad3f48ff5522a98fec4a70d022a340f34">print_global</a>(std::ostream &amp; os=libMesh::out) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NumericVector.html#ad3f48ff5522a98fec4a70d022a340f34">print_global</a>(std::ostream &amp; os=<a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;</div>
 <div class="line"><a name="l00847"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NumericVector.html#a79351f9d343287d91dd2e782dfbd508d">  847</a></span>&#160;  <span class="keyword">friend</span> std::ostream &amp; operator &lt;&lt; (std::ostream &amp; os, const NumericVector&lt;T&gt; &amp; v)</div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  {</div>
@@ -400,7 +401,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;                                 <span class="keyword">const</span> ParallelType ptype) :</div>
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;  ParallelObject(comm_in),</div>
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;  _is_closed(false),</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  _is_initialized(false),</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  <a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a>(false),</div>
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  _type(ptype)</div>
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;{</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;}</div>
@@ -414,7 +415,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;                                 <span class="keyword">const</span> ParallelType ptype) :</div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;  ParallelObject(comm_in),</div>
 <div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;  _is_closed(false),</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  _is_initialized(false),</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  <a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a>(false),</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;  _type(ptype)</div>
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;{</div>
 <div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;  libmesh_not_implemented(); <span class="comment">// Abstract base class!</span></div>
@@ -431,7 +432,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;                                 <span class="keyword">const</span> ParallelType ptype) :</div>
 <div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;  ParallelObject(comm_in),</div>
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;  _is_closed(false),</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  _is_initialized(false),</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  <a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a>(false),</div>
 <div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;  _type(ptype)</div>
 <div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;{</div>
 <div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;  libmesh_not_implemented(); <span class="comment">// Abstract base class!</span></div>
@@ -449,7 +450,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;                                 <span class="keyword">const</span> ParallelType ptype) :</div>
 <div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;  ParallelObject(comm_in),</div>
 <div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;  _is_closed(false),</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;  _is_initialized(false),</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;  <a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a>(false),</div>
 <div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;  _type(ptype)</div>
 <div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;{</div>
 <div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;  libmesh_not_implemented(); <span class="comment">// 抽象基类!</span></div>
@@ -463,7 +464,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01002"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NumericVector.html#a1d68d128b5e80a75fea7c24b7f3bcb5b"> 1002</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NumericVector.html#a1d68d128b5e80a75fea7c24b7f3bcb5b">NumericVector&lt;T&gt;::clear</a> ()</div>
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;{</div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;  _is_closed      = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;  _is_initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;  <a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;}</div>
 <div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;</div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;</div>
@@ -563,7 +564,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l01103"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NumericVector.html#a6d07f9822f4f08e2555b2b0380b84c9b"> 1103</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;Complex&gt;::print</a>(std::ostream &amp; os)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;  os &lt;&lt; <span class="stringliteral">&quot;Size\tglobal =  &quot;</span> &lt;&lt; this-&gt;size()</div>
 <div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;     &lt;&lt; <span class="stringliteral">&quot;\t\tlocal =  &quot;</span> &lt;&lt; this-&gt;local_size() &lt;&lt; std::endl;</div>
 <div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;</div>
@@ -581,7 +582,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l01121"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NumericVector.html#a9932a4618eae8d40f938922b4bc04e65"> 1121</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;::print</a>(std::ostream &amp; os)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;  os &lt;&lt; <span class="stringliteral">&quot;Size\tglobal =  &quot;</span> &lt;&lt; this-&gt;size()</div>
 <div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;     &lt;&lt; <span class="stringliteral">&quot;\t\tlocal =  &quot;</span> &lt;&lt; this-&gt;local_size() &lt;&lt; std::endl;</div>
 <div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;</div>
@@ -596,7 +597,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l01136"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NumericVector.html#a8738ee953d8104773c104e5cae6d9041"> 1136</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;Complex&gt;::print_global</a>(std::ostream &amp; os)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;</div>
 <div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;  std::vector&lt;Complex&gt; v(this-&gt;size());</div>
 <div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;  this-&gt;localize(v);</div>
@@ -618,7 +619,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l01158"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NumericVector.html#ad3f48ff5522a98fec4a70d022a340f34"> 1158</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;::print_global</a>(std::ostream &amp; os)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;  libmesh_assert (this-&gt;initialized());</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;  libmesh_assert (this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>());</div>
 <div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;</div>
 <div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;  std::vector&lt;T&gt; v(this-&gt;size());</div>
 <div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;  this-&gt;localize(v);</div>
@@ -640,7 +641,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l01179"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NumericVector.html#a4a3bb09ff24810391b15da006ba39cb4"> 1179</a></span>&#160;<span class="keywordtype">void</span>  <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;::swap</a> (<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; v)</div>
 <div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;{</div>
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;  std::swap(_is_closed, v.<a class="code" href="classlibMesh_1_1NumericVector.html#af52f96de77a3380320753f1ab3a4d7de">_is_closed</a>);</div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;  std::swap(_is_initialized, v.<a class="code" href="classlibMesh_1_1NumericVector.html#a3193f0970634e97961f9c174e28e4291">_is_initialized</a>);</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;  std::swap(<a class="code" href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">_is_initialized</a>, v.<a class="code" href="classlibMesh_1_1NumericVector.html#a3193f0970634e97961f9c174e28e4291">_is_initialized</a>);</div>
 <div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;  std::swap(_type, v.<a class="code" href="classlibMesh_1_1NumericVector.html#a5c7b16576944b6d57634cd07e349b699">_type</a>);</div>
 <div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;}</div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;</div>
@@ -689,10 +690,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_afee3fa5f027f7025beb69e41e8019445"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#afee3fa5f027f7025beb69e41e8019445">libMesh::NumericVector::operator=</a></div><div class="ttdeci">virtual NumericVector&lt; T &gt; &amp; operator=(const NumericVector&lt; T &gt; &amp;v)=0</div><div class="ttdoc">一个复制赋值运算符 </div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_ab4d7da004477eae4d19b369a8aeb7650"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#ab4d7da004477eae4d19b369a8aeb7650">libMesh::NumericVector::size</a></div><div class="ttdeci">virtual numeric_index_type size() const =0</div><div class="ttdoc">获取向量的大小。 </div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a></div><div class="ttdoc">这是一个通用的稀疏矩阵类。该类包含了必须在派生类中覆盖的纯虚拟成员。 使用一个公共的基类允许从不同的求解器包中以不同的格式统一访问稀疏矩阵。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__preconditioner_8h_source.html#l00034">eigen_preconditioner.h:34</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a496c62248223cd940c7715932dd0dc2d"><div class="ttname"><a href="namespacelibMesh.html#a496c62248223cd940c7715932dd0dc2d">libMesh::default_solver_package</a></div><div class="ttdeci">SolverPackage default_solver_package()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00967">libmesh.C:967</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a1595091749d40187c3d304e0998a43b4"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a1595091749d40187c3d304e0998a43b4">libMesh::NumericVector::dot</a></div><div class="ttdeci">virtual T dot(const NumericVector&lt; T &gt; &amp;v) const =0</div><div class="ttdoc">计算 ，即 (*this) 与向量 v 的点积。 </div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_ae0f86fe2a7686ca6eb3e1a219f0415df"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#ae0f86fe2a7686ca6eb3e1a219f0415df">libMesh::NumericVector::scale</a></div><div class="ttdeci">virtual void scale(const T factor)=0</div><div class="ttdoc">缩放向量的每个元素。 </div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a3193f0970634e97961f9c174e28e4291"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a3193f0970634e97961f9c174e28e4291">libMesh::NumericVector::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">在调用 init() 后设置为 true。 </div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8h_source.html#l00918">numeric_vector.h:918</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a12941448438896acddb912db0082c9f2"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a12941448438896acddb912db0082c9f2">libMesh::NumericVector::conjugate</a></div><div class="ttdeci">virtual void conjugate()=0</div><div class="ttdoc">反转向量中每个条目的虚部。 </div></div>
+<div class="ttc" id="namespacelibMesh_1_1libMeshPrivateData_html_ab8b7115ea57ced35ec86d1fdfa0ab853"><div class="ttname"><a href="namespacelibMesh_1_1libMeshPrivateData.html#ab8b7115ea57ced35ec86d1fdfa0ab853">libMesh::libMeshPrivateData::_is_initialized</a></div><div class="ttdeci">bool _is_initialized</div><div class="ttdoc">Flag that tells if init() has been called. </div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00242">libmesh.C:242</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a498e6a1b9b295f56a73d43912aa44152"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a498e6a1b9b295f56a73d43912aa44152">libMesh::NumericVector::el</a></div><div class="ttdeci">virtual T el(const numeric_index_type i) const </div><div class="ttdoc">获取向量的第 i 个条目。 </div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8h_source.html#l00416">numeric_vector.h:416</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a897d5ba71dd43aca7a31513eb431ede1"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a897d5ba71dd43aca7a31513eb431ede1">libMesh::NumericVector::min</a></div><div class="ttdeci">virtual Real min() const =0</div><div class="ttdoc">获取向量中的最小值，或者在复数情况下获取最小的实部。 </div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a0fe5d79952cad28ce33861cbf2e3de4c"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a0fe5d79952cad28ce33861cbf2e3de4c">libMesh::NumericVector::l2_norm</a></div><div class="ttdeci">virtual Real l2_norm() const =0</div><div class="ttdoc">获取向量的 -范数，即条目平方和的平方根。 </div></div>
@@ -718,6 +721,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a482cd1f66b7bf95b5f3470a97ba42dfc"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a482cd1f66b7bf95b5f3470a97ba42dfc">libMesh::NumericVector::abs</a></div><div class="ttdeci">virtual void abs()=0</div><div class="ttdoc">设置 ，对向量中的每个条目进行绝对值操作。 </div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_ad8d59590b587b8d88df969b083432b75"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#ad8d59590b587b8d88df969b083432b75">libMesh::NumericVector::add</a></div><div class="ttdeci">virtual void add(const numeric_index_type i, const T value)=0</div><div class="ttdoc">将 value 添加到由 i 指定的向量条目。 请注意，此方法的库实现是线程安全的， 例如，将在写入向量之前锁定 _numeric_vector_mutex 。 </div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a9932a4618eae8d40f938922b4bc04e65"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a9932a4618eae8d40f938922b4bc04e65">libMesh::NumericVector::print</a></div><div class="ttdeci">virtual void print(std::ostream &amp;os=libMesh::out) const </div><div class="ttdoc">打印本地向量的内容，默认输出到 libMesh::out 流。 </div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8h_source.html#l01121">numeric_vector.h:1121</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aad2e4639e47d92a7d34c80bf2e936cba"><div class="ttname"><a href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">libMesh::initialized</a></div><div class="ttdeci">bool initialized()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00261">libmesh.C:261</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a1d68d128b5e80a75fea7c24b7f3bcb5b"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a1d68d128b5e80a75fea7c24b7f3bcb5b">libMesh::NumericVector::clear</a></div><div class="ttdeci">virtual void clear()</div><div class="ttdoc">将 NumericVector&amp;lt;T&amp;gt; 恢复到原始状态。 </div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8h_source.html#l01002">numeric_vector.h:1002</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a91a484b313f057ae711803fa5111f87c"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a91a484b313f057ae711803fa5111f87c">libMesh::NumericVector::init</a></div><div class="ttdeci">virtual void init(const numeric_index_type n, const numeric_index_type n_local, const bool fast=false, const ParallelType ptype=AUTOMATIC)=0</div><div class="ttdoc">更改向量的维度为 n 。如果可能的话 ，该向量的保留内存保持不变。 如果 n==0 ，所有内存都将被释放。因此，如果要调整向量的大小并释放不需要的内存， 必须首先调用 init(0) ，然后调用 ini...</div></div>
 <div class="ttc" id="classlibMesh_1_1DenseVector_html"><div class="ttname"><a href="classlibMesh_1_1DenseVector.html">libMesh::DenseVector</a></div><div class="ttdoc">定义用于有限元计算的稠密向量类。该类基本上是为了补充 DenseMatrix 类而设计的。 它相对于 std::vector 具有额外的功能，使其在有限元中特别有用，特别是对于方程组。 所有重写的虚拟函...</div><div class="ttdef"><b>Definition:</b> <a href="analytic__function_8h_source.html#l00034">analytic_function.h:34</a></div></div>
@@ -725,6 +729,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a346d8730e49b8b508016601e45653565"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a346d8730e49b8b508016601e45653565">libMesh::NumericVector::first_local_index</a></div><div class="ttdeci">virtual numeric_index_type first_local_index() const =0</div><div class="ttdoc">获取实际存储在该处理器上的第一个向量元素的索引。 </div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_ac4ae361d1fc154441be17e9a36a3a991"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#ac4ae361d1fc154441be17e9a36a3a991">libMesh::NumericVector::linfty_norm</a></div><div class="ttdeci">virtual Real linfty_norm() const =0</div><div class="ttdoc">获取向量的 -范数，即向量的最大绝对值。 </div></div>
 <div class="ttc" id="classlibMesh_1_1ShellMatrix_html"><div class="ttname"><a href="classlibMesh_1_1ShellMatrix.html">libMesh::ShellMatrix</a></div><div class="ttdoc">通用的Shell矩阵，即一个仅定义其对向量的作用的矩阵。此类包含必须在派生类中重写的纯虚拟成员。 </div><div class="ttdef"><b>Definition:</b> <a href="eigen__preconditioner_8h_source.html#l00036">eigen_preconditioner.h:36</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a63e3c3158308e2184c12b55ab9ea9a35"><div class="ttname"><a href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></div><div class="ttdeci">OStreamProxy out(std::cout)</div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a0c9fc73067590ec46925f0821b641435"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a0c9fc73067590ec46925f0821b641435">libMesh::NumericVector::max</a></div><div class="ttdeci">virtual Real max() const =0</div><div class="ttdoc">获取向量中的最大值，或者在复数情况下获取最大的实部。 </div></div>
 <div class="ttc" id="classlibMesh_1_1DenseVector_html_a06832d76a4df1deb9e45afb9555521d0"><div class="ttname"><a href="classlibMesh_1_1DenseVector.html#a06832d76a4df1deb9e45afb9555521d0">libMesh::DenseVector::size</a></div><div class="ttdeci">virtual unsigned int size() const overridefinal</div><div class="ttdef"><b>Definition:</b> <a href="dense__vector_8h_source.html#l00111">dense_vector.h:111</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a948c017449dc147e6d025926e7516446"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a948c017449dc147e6d025926e7516446">libMesh::NumericVector::operator()</a></div><div class="ttdeci">virtual T operator()(const numeric_index_type i) const =0</div><div class="ttdoc">获取向量的第 i 个条目的副本。 </div></div>
@@ -736,7 +741,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

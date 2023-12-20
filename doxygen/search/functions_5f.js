@@ -2,6 +2,7 @@ var searchData=
 [
   ['_5fcholesky_5fback_5fsubstitute',['_cholesky_back_substitute',['../classlibMesh_1_1DenseMatrix.html#a36ea5f3012c8163a48a40d1559179a8e',1,'libMesh::DenseMatrix']]],
   ['_5fcholesky_5fdecompose',['_cholesky_decompose',['../classlibMesh_1_1DenseMatrix.html#a0d41126a4cadcf798ea3009e8dd663b2',1,'libMesh::DenseMatrix']]],
+  ['_5fdummy_5ffunction',['_dummy_function',['../namespacelibMesh_1_1SparsityPattern.html#a859cc7fecedbd239ca60ef57d33fd1d0',1,'libMesh::SparsityPattern']]],
   ['_5fevd_5flapack',['_evd_lapack',['../classlibMesh_1_1DenseMatrix.html#a4e36bfbf1dd58de19573e4c8316f18ee',1,'libMesh::DenseMatrix']]],
   ['_5fget_5farray',['_get_array',['../classlibMesh_1_1PetscVector.html#a01b815df08920f6d33251754c10bf368',1,'libMesh::PetscVector']]],
   ['_5fget_5fsubmatrix',['_get_submatrix',['../classlibMesh_1_1PetscMatrix.html#a25a3a163341ff4aaa4bbe70cafbf40a9',1,'libMesh::PetscMatrix::_get_submatrix()'],['../classlibMesh_1_1SparseMatrix.html#ad47b4dedd1f076290fa018395e10ef47',1,'libMesh::SparseMatrix::_get_submatrix()']]],

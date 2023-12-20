@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -216,7 +217,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  virtual <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1EpetraMatrix.html#a6529df873115b6b9158e83daa71858aa">closed</a>() const override;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  virtual <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EpetraMatrix.html#a7e10419a48e57eb6db6285a2efa15dd8">print_personal</a>(std::ostream &amp; os=libMesh::out) const override;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  virtual <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EpetraMatrix.html#a7e10419a48e57eb6db6285a2efa15dd8">print_personal</a>(std::ostream &amp; os=libMesh::<a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">out</a>) const override;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  virtual <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1EpetraMatrix.html#a8d5bfbd253571db542bfb11d25ed59e8">get_diagonal</a> (<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt;T&gt; &amp; dest) const override;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
@@ -279,12 +280,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1EpetraMatrix_html_a5541d6f3675c22725482fa96bb104f89"><div class="ttname"><a href="classlibMesh_1_1EpetraMatrix.html#a5541d6f3675c22725482fa96bb104f89">libMesh::EpetraMatrix::mat</a></div><div class="ttdeci">Epetra_FECrsMatrix * mat()</div><div class="ttdoc">获取原始Epetra_FECrsMatrix指针。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__matrix_8h_source.html#l00315">trilinos_epetra_matrix.h:315</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1DenseMatrix.html">libMesh::DenseMatrix</a></div><div class="ttdoc">定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix_8h_source.html#l00070">dense_matrix.h:70</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraMatrix_html_a9ec6a9841e1b6b801cf50517a2c1617b"><div class="ttname"><a href="classlibMesh_1_1EpetraMatrix.html#a9ec6a9841e1b6b801cf50517a2c1617b">libMesh::EpetraMatrix::_map</a></div><div class="ttdeci">Epetra_Map * _map</div><div class="ttdoc">分布映射 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__matrix_8h_source.html#l00336">trilinos_epetra_matrix.h:336</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a63e3c3158308e2184c12b55ab9ea9a35"><div class="ttname"><a href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></div><div class="ttdeci">OStreamProxy out(std::cout)</div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraMatrix_html"><div class="ttname"><a href="classlibMesh_1_1EpetraMatrix.html">libMesh::EpetraMatrix</a></div><div class="ttdoc">此类提供了对Epetra数据结构的并行、稀疏矩阵的友好接口。所有重写的虚拟函数在sparse_matrix.h中都有文档。 </div><div class="ttdef"><b>Definition:</b> <a href="trilinos__epetra__matrix_8h_source.html#l00061">trilinos_epetra_matrix.h:61</a></div></div>
 <div class="ttc" id="classlibMesh_1_1EpetraMatrix_html_a7ff42a5fc0e940bfbe04bacfe00ea93f"><div class="ttname"><a href="classlibMesh_1_1EpetraMatrix.html#a7ff42a5fc0e940bfbe04bacfe00ea93f">libMesh::EpetraMatrix::need_full_sparsity_pattern</a></div><div class="ttdeci">virtual bool need_full_sparsity_pattern() const override</div><div class="ttdoc">EpetraMatrix需要完整的稀疏性模式。 </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

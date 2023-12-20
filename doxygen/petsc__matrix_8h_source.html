@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -279,7 +280,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscMatrix.html#a81d41d2574178781e2ddba79cddaea7d">set_destroy_mat_on_exit</a>(<span class="keywordtype">bool</span> destroy = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscMatrix.html#a7ffec6dc4fe10cb229e2b37332ce5576">print_personal</a>(std::ostream &amp; os=libMesh::out) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscMatrix.html#a7ffec6dc4fe10cb229e2b37332ce5576">print_personal</a>(std::ostream &amp; os=<a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1PetscMatrix.html#ab8ab2f1008124d2c41ac8fe38d7bbd6e">print_matlab</a>(<span class="keyword">const</span> std::string &amp; name = <span class="stringliteral">&quot;&quot;</span>) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
@@ -375,13 +376,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1PetscMatrix_html_aaca7a5afeb063716ee67fa11302c2aea"><div class="ttname"><a href="classlibMesh_1_1PetscMatrix.html#aaca7a5afeb063716ee67fa11302c2aea">libMesh::PetscMatrix::mat</a></div><div class="ttdeci">Mat mat()</div><div class="ttdoc">返回原始的 PETSc 矩阵指针。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__matrix_8h_source.html#l00455">petsc_matrix.h:455</a></div></div>
 <div class="ttc" id="namespacelibMesh_html_aa2756cbd218d8c7ddcd954e1ca075a77"><div class="ttname"><a href="namespacelibMesh.html#aa2756cbd218d8c7ddcd954e1ca075a77">libMesh::PetscMatrixType</a></div><div class="ttdeci">PetscMatrixType</div><div class="ttdef"><b>Definition:</b> <a href="petsc__matrix_8h_source.html#l00078">petsc_matrix.h:78</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1DenseMatrix.html">libMesh::DenseMatrix</a></div><div class="ttdoc">定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix_8h_source.html#l00070">dense_matrix.h:70</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a63e3c3158308e2184c12b55ab9ea9a35"><div class="ttname"><a href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></div><div class="ttdeci">OStreamProxy out(std::cout)</div></div>
 <div class="ttc" id="classlibMesh_1_1PetscMatrix_html_a2abf5a41ac8d4c3a7746119e00b63a82"><div class="ttname"><a href="classlibMesh_1_1PetscMatrix.html#a2abf5a41ac8d4c3a7746119e00b63a82">libMesh::PetscMatrix::flush</a></div><div class="ttdeci">virtual void flush() override</div><div class="ttdoc">刷新矩阵的内部缓冲区，确保所有操作都已完成。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__matrix_8C_source.html#l00998">petsc_matrix.C:998</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscMatrix_html_aed2f07ce02f6ee2934fc8e5c80f3a692"><div class="ttname"><a href="classlibMesh_1_1PetscMatrix.html#aed2f07ce02f6ee2934fc8e5c80f3a692">libMesh::PetscMatrix::close</a></div><div class="ttdeci">virtual void close() override</div><div class="ttdoc">完成任何挂起的插入或添加操作。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__matrix_8C_source.html#l00983">petsc_matrix.C:983</a></div></div>
 <div class="ttc" id="classlibMesh_1_1PetscMatrix_html_aab6ddefc0a182f23426fa4676192ba33"><div class="ttname"><a href="classlibMesh_1_1PetscMatrix.html#aab6ddefc0a182f23426fa4676192ba33">libMesh::PetscMatrix::linfty_norm</a></div><div class="ttdeci">virtual Real linfty_norm() const override</div><div class="ttdoc">计算矩阵的无穷范数。 </div><div class="ttdef"><b>Definition:</b> <a href="petsc__matrix_8C_source.html#l00545">petsc_matrix.C:545</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_3a4ce8a80b2aea77096614cbfb01a0ae.html">include</a></li><li class="navelem"><a class="el" href="dir_043f74156bf1060d8536be4b524a84ca.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_e7fee3c13989f8a9ad582fb61a959d2f.html">include</a></li><li class="navelem"><a class="el" href="dir_357a67fc9dc4db1f32b86febdbc96de7.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -203,7 +204,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#ae22c5c779d4441dc2da7c0641646c62e">  244</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#ae22c5c779d4441dc2da7c0641646c62e">closed</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#acb97bb8a409c0239856127155e3acb81">_closed</a>; }</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#a8aafec9c309ce5e59754a223aafb44b8">  250</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a8aafec9c309ce5e59754a223aafb44b8">print_personal</a>(std::ostream &amp; os=libMesh::out)<span class="keyword"> const override </span>{ this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#afcdf5bc4246bc646599e5d1a031b3c96">print</a>(os); }</div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="classlibMesh_1_1LaspackMatrix.html#a8aafec9c309ce5e59754a223aafb44b8">  250</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#a8aafec9c309ce5e59754a223aafb44b8">print_personal</a>(std::ostream &amp; os=<a class="code" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>)<span class="keyword"> const override </span>{ this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#afcdf5bc4246bc646599e5d1a031b3c96">print</a>(os); }</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlibMesh_1_1LaspackMatrix.html#af45565fe488157dc7af53741653aed2f">get_diagonal</a> (<a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;</a> &amp; dest) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
@@ -262,6 +263,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1LaspackMatrix_html"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html">libMesh::LaspackMatrix</a></div><div class="ttdoc">LaspackMatrix类封装了Laspack库中的QMatrix对象。 目前，Laspack仅支持实数数据类型，因此这个类是对 SparseMatrix&amp;lt;T&amp;gt; 的全特化，其中 T = Real。 所...</div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8h_source.html#l00056">laspack_matrix.h:56</a></div></div>
 <div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a18b12232297c7ba17e6e3eeed94b4984"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a18b12232297c7ba17e6e3eeed94b4984">libMesh::LaspackMatrix::set</a></div><div class="ttdeci">virtual void set(const numeric_index_type i, const numeric_index_type j, const T value) override</div><div class="ttdoc">设置LaspackMatrix对象的指定位置  处的值为 value。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00368">laspack_matrix.C:368</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DenseMatrix_html"><div class="ttname"><a href="classlibMesh_1_1DenseMatrix.html">libMesh::DenseMatrix</a></div><div class="ttdoc">定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 </div><div class="ttdef"><b>Definition:</b> <a href="dense__matrix_8h_source.html#l00070">dense_matrix.h:70</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a63e3c3158308e2184c12b55ab9ea9a35"><div class="ttname"><a href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></div><div class="ttdeci">OStreamProxy out(std::cout)</div></div>
 <div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a061078c739ec516aa4305b7b121ec751"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a061078c739ec516aa4305b7b121ec751">libMesh::LaspackMatrix::operator=</a></div><div class="ttdeci">LaspackMatrix &amp; operator=(const LaspackMatrix &amp;)=delete</div></div>
 <div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a2af52fd207dc350e15153cf2aa997bf1"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a2af52fd207dc350e15153cf2aa997bf1">libMesh::LaspackMatrix::pos</a></div><div class="ttdeci">numeric_index_type pos(const numeric_index_type i, const numeric_index_type j) const </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00475">laspack_matrix.C:475</a></div></div>
 <div class="ttc" id="classlibMesh_1_1LaspackMatrix_html_a4bd59d331d80a4cd5b7946a1ce5a5a35"><div class="ttname"><a href="classlibMesh_1_1LaspackMatrix.html#a4bd59d331d80a4cd5b7946a1ce5a5a35">libMesh::LaspackMatrix::add_matrix</a></div><div class="ttdeci">virtual void add_matrix(const DenseMatrix&lt; T &gt; &amp;dm, const std::vector&lt; numeric_index_type &gt; &amp;rows, const std::vector&lt; numeric_index_type &gt; &amp;cols) override</div><div class="ttdoc">将一个DenseMatrix对象的元素加到LaspackMatrix对象的指定行和列。 </div><div class="ttdef"><b>Definition:</b> <a href="laspack__matrix_8C_source.html#l00201">laspack_matrix.C:201</a></div></div>
@@ -269,7 +271,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

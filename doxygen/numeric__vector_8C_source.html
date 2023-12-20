@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_1447d82ea11025b4c606d386dfd5ebae.html">lwz</a></li><li class="navelem"><a class="el" href="dir_290af11d777a0ee579fee11a70544257.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_9bd4cbfd6409cef009e38f31cf95dda6.html">src</a></li><li class="navelem"><a class="el" href="dir_28f56bcccd12e4a0ab470f65d1b1ebd5.html">numerics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_aca5732f3463f86c31e2cf8b655e9c91.html">lwz</a></li><li class="navelem"><a class="el" href="dir_8cd6e838402b13ab6ef6597d22f852f8.html">libmesh</a></li><li class="navelem"><a class="el" href="dir_b67bea1992da7c14177dd4764c9b03c0.html">src</a></li><li class="navelem"><a class="el" href="dir_f9975977ce271819849de43d89795655.html">numerics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -143,7 +144,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#ifdef LIBMESH_HAVE_LASPACK</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> LASPACK_SOLVERS:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="namespacelibMesh.html#aeb2a777af969e03421c99c4afe9d68a0">LASPACK_SOLVERS</a>:</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span> std::make_unique&lt;LaspackVector&lt;T&gt;&gt;(comm, AUTOMATIC);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
@@ -153,12 +154,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#ifdef LIBMESH_TRILINOS_HAVE_EPETRA</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> TRILINOS_SOLVERS:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="namespacelibMesh.html#aa27e267f495ee0599f7cd8981c0cf7ad">TRILINOS_SOLVERS</a>:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> std::make_unique&lt;EpetraVector&lt;T&gt;&gt;(comm, AUTOMATIC);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifdef LIBMESH_HAVE_EIGEN</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> EIGEN_SOLVERS:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="namespacelibMesh.html#ae73defe502d02a0aa591555f4dd18dd4">EIGEN_SOLVERS</a>:</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">return</span> std::make_unique&lt;EigenSparseVector&lt;T&gt;&gt;(comm, AUTOMATIC);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
@@ -504,7 +505,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="classlibMesh_1_1NumericVector.html#a10a9cea4881d772742be379d526a9be1">  416</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;T&gt;::readable</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keywordflow">return</span> this-&gt;initialized() &amp;&amp; this-&gt;closed();</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keywordflow">return</span> this-&gt;<a class="code" href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">initialized</a>() &amp;&amp; this-&gt;<a class="code" href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">closed</a>();</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;}</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
@@ -525,7 +526,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00436"></a><span class="lineno"><a class="line" href="namespacelibMesh.html#af63481288585b5ba172278c33c726667">  436</a></span>&#160;<span class="keyword">template</span> <span class="keyword">class </span>LIBMESH_EXPORT <a class="code" href="classlibMesh_1_1NumericVector.html">NumericVector&lt;Number&gt;</a>;</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;} <span class="comment">// namespace libMesh</span></div>
+<div class="ttc" id="namespacelibMesh_html_a3dc0a134260371bd023e0d0f632399e1"><div class="ttname"><a href="namespacelibMesh.html#a3dc0a134260371bd023e0d0f632399e1">libMesh::closed</a></div><div class="ttdeci">bool closed()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00268">libmesh.C:268</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_aad6ff72985a11a899a0395a72f3a55c2"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#aad6ff72985a11a899a0395a72f3a55c2">libMesh::NumericVector::local_size</a></div><div class="ttdeci">virtual numeric_index_type local_size() const =0</div><div class="ttdoc">获取向量的本地大小，即 index_stop - index_start。 </div></div>
+<div class="ttc" id="namespacelibMesh_html_ae73defe502d02a0aa591555f4dd18dd4"><div class="ttname"><a href="namespacelibMesh.html#ae73defe502d02a0aa591555f4dd18dd4">libMesh::EIGEN_SOLVERS</a></div><div class="ttdeci">EIGEN_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00249">libmesh.C:249</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aa27e267f495ee0599f7cd8981c0cf7ad"><div class="ttname"><a href="namespacelibMesh.html#aa27e267f495ee0599f7cd8981c0cf7ad">libMesh::TRILINOS_SOLVERS</a></div><div class="ttdeci">TRILINOS_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00247">libmesh.C:247</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a8312402f87d116963b29589168aecb72"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a8312402f87d116963b29589168aecb72">libMesh::NumericVector::last_local_index</a></div><div class="ttdeci">virtual numeric_index_type last_local_index() const =0</div><div class="ttdoc">获取实际存储在该处理器上的最后一个向量元素的索引+1。 </div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html">libMesh::NumericVector</a></div><div class="ttdoc">提供了不同线性代数库的向量存储方案的统一接口。 </div><div class="ttdef"><b>Definition:</b> <a href="diagonal__matrix_8h_source.html#l00029">diagonal_matrix.h:29</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a10a9cea4881d772742be379d526a9be1"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a10a9cea4881d772742be379d526a9be1">libMesh::NumericVector::readable</a></div><div class="ttdeci">bool readable() const </div><div class="ttdoc">检查该向量是否能够用于全局操作。 </div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8C_source.html#l00416">numeric_vector.C:416</a></div></div>
@@ -534,7 +538,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_ab4d7da004477eae4d19b369a8aeb7650"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#ab4d7da004477eae4d19b369a8aeb7650">libMesh::NumericVector::size</a></div><div class="ttdeci">virtual numeric_index_type size() const =0</div><div class="ttdoc">获取向量的大小。 </div></div>
 <div class="ttc" id="namespacestd_html_aea71d536ca6ae5ef192477c8e9c9b197"><div class="ttname"><a href="namespacestd.html#aea71d536ca6ae5ef192477c8e9c9b197">std::abs</a></div><div class="ttdeci">ADRealEigenVector&lt; T, D, asd &gt; abs(const ADRealEigenVector&lt; T, D, asd &gt; &amp;)</div><div class="ttdoc">计算自动微分实数向量的绝对值。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l00112">type_vector.h:112</a></div></div>
 <div class="ttc" id="namespacelibMesh_1_1TensorTools_html_aece0d041f4f91b393d2564f4a5e4b1ee"><div class="ttname"><a href="namespacelibMesh_1_1TensorTools.html#aece0d041f4f91b393d2564f4a5e4b1ee">libMesh::TensorTools::norm_sq</a></div><div class="ttdeci">T norm_sq(std::complex&lt; T &gt; a)</div><div class="ttdef"><b>Definition:</b> <a href="tensor__tools_8h_source.html#l00074">tensor_tools.h:74</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aeb2a777af969e03421c99c4afe9d68a0"><div class="ttname"><a href="namespacelibMesh.html#aeb2a777af969e03421c99c4afe9d68a0">libMesh::LASPACK_SOLVERS</a></div><div class="ttdeci">LASPACK_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00251">libmesh.C:251</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_adba4a30965537656bb3b0c6f924ff040"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#adba4a30965537656bb3b0c6f924ff040">libMesh::NumericVector::build</a></div><div class="ttdeci">static std::unique_ptr&lt; NumericVector&lt; T &gt; &gt; build(const Parallel::Communicator &amp;comm, const SolverPackage solver_package=libMesh::default_solver_package())</div><div class="ttdoc">构建一个 NumericVector 对象。 </div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8C_source.html#l00050">numeric_vector.C:50</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aad2e4639e47d92a7d34c80bf2e936cba"><div class="ttname"><a href="namespacelibMesh.html#aad2e4639e47d92a7d34c80bf2e936cba">libMesh::initialized</a></div><div class="ttdeci">bool initialized()</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00261">libmesh.C:261</a></div></div>
 <div class="ttc" id="namespacestd_html_a6e740e64c53e9ae1489f7eee3899c10f"><div class="ttname"><a href="namespacestd.html#a6e740e64c53e9ae1489f7eee3899c10f">std::norm</a></div><div class="ttdeci">ADRealEigenVector&lt; T, D, asd &gt; norm(const ADRealEigenVector&lt; T, D, asd &gt; &amp;)</div><div class="ttdoc">计算自动微分实数向量的范数。 </div><div class="ttdef"><b>Definition:</b> <a href="type__vector_8h_source.html#l00064">type_vector.h:64</a></div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_a346d8730e49b8b508016601e45653565"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a346d8730e49b8b508016601e45653565">libMesh::NumericVector::first_local_index</a></div><div class="ttdeci">virtual numeric_index_type first_local_index() const =0</div><div class="ttdoc">获取实际存储在该处理器上的第一个向量元素的索引。 </div></div>
 <div class="ttc" id="classlibMesh_1_1NumericVector_html_ac4ae361d1fc154441be17e9a36a3a991"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#ac4ae361d1fc154441be17e9a36a3a991">libMesh::NumericVector::linfty_norm</a></div><div class="ttdeci">virtual Real linfty_norm() const =0</div><div class="ttdoc">获取向量的 -范数，即向量的最大绝对值。 </div></div>
@@ -542,7 +548,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 13:58:28 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:03:00 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

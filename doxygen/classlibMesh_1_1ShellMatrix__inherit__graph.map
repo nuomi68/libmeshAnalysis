@@ -1,0 +1,6 @@
+<map id="libMesh::ShellMatrix&lt; T &gt;" name="libMesh::ShellMatrix&lt; T &gt;">
+<area shape="rect" id="node4" href="$classlibMesh_1_1PetscShellMatrix.html" title="这个类允许使用 PETSc shell 矩阵。 所有覆盖的虚拟函数都在 shell_matrix.h 中有文档说明。 " alt="" coords="483,5,711,32"/>
+<area shape="rect" id="node5" href="$classlibMesh_1_1SparseShellMatrix.html" title="允许将任何SparseMatrix对象用作壳矩阵的类。 " alt="" coords="479,56,716,83"/>
+<area shape="rect" id="node6" href="$classlibMesh_1_1SumShellMatrix.html" title="将任意数量的壳矩阵组合成一个单独的壳矩阵，通过将它们相加在一起的类。 " alt="" coords="486,107,709,133"/>
+<area shape="rect" id="node7" href="$classlibMesh_1_1TensorShellMatrix.html" title="由两个向量的张量积构成的壳矩阵，即A = v*w^T。 " alt="" coords="480,157,715,184"/>
+</map>

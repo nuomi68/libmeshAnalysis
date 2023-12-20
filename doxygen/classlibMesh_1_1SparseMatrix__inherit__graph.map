@@ -1,0 +1,8 @@
+<map id="libMesh::SparseMatrix&lt; T &gt;" name="libMesh::SparseMatrix&lt; T &gt;">
+<area shape="rect" id="node4" href="$classlibMesh_1_1DiagonalMatrix.html" title="对角矩阵类，其底层存储是一个向量 " alt="" coords="502,5,721,32"/>
+<area shape="rect" id="node6" href="$classlibMesh_1_1EigenSparseMatrix.html" title="EigenSparseMatrix 类包装了来自 Eigen 库的稀疏矩阵对象。 " alt="" coords="491,56,732,83"/>
+<area shape="rect" id="node7" href="$classlibMesh_1_1EpetraMatrix.html" title="此类提供了对Epetra数据结构的并行、稀疏矩阵的友好接口。所有重写的虚拟函数在sparse_matrix.h中都有文档。 " alt="" coords="510,107,713,133"/>
+<area shape="rect" id="node8" href="$classlibMesh_1_1LaspackMatrix.html" title="LaspackMatrix类封装了Laspack库中的QMatrix对象。 目前，Laspack仅支持实数数据类型，因此这个类是对 SparseMatrix&lt;T&gt; 的全特化，其中 T = Real。 所..." alt="" coords="504,157,719,184"/>
+<area shape="rect" id="node9" href="$classlibMesh_1_1PetscMatrix.html" title="这个类提供了一个方便的接口，用于操作并行稀疏矩阵的 PETSc C 库数据结构。 所有覆盖的虚拟函数都在 sparse_matrix.h 中有详细的文档说明。 " alt="" coords="513,208,709,235"/>
+<area shape="rect" id="node5" href="$classlibMesh_1_1LumpedMassMatrix.html" title="模板类用于构造集中质量矩阵。 可能还有用于计算与整体系统缩放相关的数量。每当在此类上调用 add 方法时，我们都会将提供的值的绝对值相加到行索引 i 中。 " alt="" coords="780,5,1027,32"/>
+</map>

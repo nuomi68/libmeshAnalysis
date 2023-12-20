@@ -1,0 +1,4 @@
+<map id="libMesh::DenseMatrixBase&lt; T &gt;" name="libMesh::DenseMatrixBase&lt; T &gt;">
+<area shape="rect" id="node2" href="$classlibMesh_1_1DenseMatrix.html" title="定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 " alt="" coords="5,80,208,107"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1DenseSubMatrix.html" title="为有限元类型的计算定义密集子矩阵。 在将元素刚度矩阵相加到全局矩阵之前存储非常有用，特别是在存在方程组时。 所有重写的虚拟函数在 dense_matrix_base.h 中有文档。 " alt="" coords="232,80,459,107"/>
+</map>

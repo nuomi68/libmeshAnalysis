@@ -1,0 +1,5 @@
+<map id="libMesh::DenseVectorBase&lt; T &gt;" name="libMesh::DenseVectorBase&lt; T &gt;">
+<area shape="rect" id="node2" href="$classlibMesh_1_1DenseVector.html" title="DenseVector\&lt; Output \&gt;" alt="" coords="5,80,184,107"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1DenseSubVector.html" title="定义了一个用于有限元计算的稠密子向量。 在将元素载荷向量累加到全局向量之前存储这些载荷向量时特别有用，尤其是在存在方程组的情况下。 所有重写的虚拟函数在 dense_vector_base.h 中有文档说明。 " alt="" coords="209,80,434,107"/>
+<area shape="rect" id="node4" href="$classlibMesh_1_1DenseVector.html" title="定义用于有限元计算的稠密向量类。该类基本上是为了补充 DenseMatrix 类而设计的。 它相对于 std::vector 具有额外的功能，使其在有限元中特别有用，特别是对于方程组。 所有重写的虚拟函..." alt="" coords="458,80,659,107"/>
+</map>

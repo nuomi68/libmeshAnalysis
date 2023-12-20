@@ -1,0 +1,4 @@
+<map id="libMesh::LumpedMassMatrix&lt; T &gt;" name="libMesh::LumpedMassMatrix&lt; T &gt;">
+<area shape="rect" id="node2" href="$classlibMesh_1_1DiagonalMatrix.html" title="对角矩阵类，其底层存储是一个向量 " alt="" coords="73,169,292,196"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1SparseMatrix.html" title="这是一个通用的稀疏矩阵类。该类包含了必须在派生类中覆盖的纯虚拟成员。 使用一个公共的基类允许从不同的求解器包中以不同的格式统一访问稀疏矩阵。 " alt="" coords="80,95,285,121"/>
+</map>

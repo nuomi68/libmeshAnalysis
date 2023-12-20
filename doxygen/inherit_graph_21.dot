@@ -1,8 +1,0 @@
-digraph "类继承关系图"
-{
- // INTERACTIVE_SVG=YES
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="libMesh::RawFieldType\l\< FieldType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlibMesh_1_1RawFieldType.html",tooltip="What underlying data type would we need to access in each field? "];
-}

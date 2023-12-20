@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>libmesh解析: GETPOT_NAMESPACE::GetPot::variable结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libmesh解析
+   </div>
+   <div id="projectbrief">本工作只是尝试解析原libmesh的代码,供学习使用</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceGETPOT__NAMESPACE.html">GETPOT_NAMESPACE</a></li><li class="navelem"><a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html">GetPot</a></li><li class="navelem"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html">variable</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">GETPOT_NAMESPACE::GetPot::variable结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Variable to be specified on the command line or in input files.  
+ <a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0f7d2d4f68902872339a519c3edbcfeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a0f7d2d4f68902872339a519c3edbcfeb">variable</a> ()</td></tr>
+<tr class="memdesc:a0f7d2d4f68902872339a519c3edbcfeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructors, destructors, assignment operator  <a href="#a0f7d2d4f68902872339a519c3edbcfeb">更多...</a><br/></td></tr>
+<tr class="separator:a0f7d2d4f68902872339a519c3edbcfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7722d8c94089d930491798db5c57522"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#aa7722d8c94089d930491798db5c57522">variable</a> (const <a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html">variable</a> &amp;)</td></tr>
+<tr class="separator:aa7722d8c94089d930491798db5c57522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a2b07f651ffecbe3f712c46bf47de2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#ab6a2b07f651ffecbe3f712c46bf47de2">variable</a> (const char *Name, const char *Value, const char *FieldSeparator)</td></tr>
+<tr class="separator:ab6a2b07f651ffecbe3f712c46bf47de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55b03aaf750ec4a6ac2a6d75a20254f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#ab55b03aaf750ec4a6ac2a6d75a20254f">~variable</a> ()</td></tr>
+<tr class="separator:ab55b03aaf750ec4a6ac2a6d75a20254f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab311459e166c1b1bf37b254f6c6beffa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html">variable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#ab311459e166c1b1bf37b254f6c6beffa">operator=</a> (const <a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html">variable</a> &amp;Other)</td></tr>
+<tr class="separator:ab311459e166c1b1bf37b254f6c6beffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c285692989febb79e0f3cb35d16e83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a93c285692989febb79e0f3cb35d16e83">take</a> (const char *Value, const char *FieldSeparator)</td></tr>
+<tr class="separator:a93c285692989febb79e0f3cb35d16e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5332191db59ee9e1d44082419032e1"><td class="memItemLeft" align="right" valign="top">const std::string *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a4e5332191db59ee9e1d44082419032e1">get_element</a> (unsigned Idx) const </td></tr>
+<tr class="memdesc:a4e5332191db59ee9e1d44082419032e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a specific element in the string vector (return 0 if not present)  <a href="#a4e5332191db59ee9e1d44082419032e1">更多...</a><br/></td></tr>
+<tr class="separator:a4e5332191db59ee9e1d44082419032e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a54d5b0e6608a2847cd8938785bae0d8d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a54d5b0e6608a2847cd8938785bae0d8d">name</a></td></tr>
+<tr class="memdesc:a54d5b0e6608a2847cd8938785bae0d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">data members  <a href="#a54d5b0e6608a2847cd8938785bae0d8d">更多...</a><br/></td></tr>
+<tr class="separator:a54d5b0e6608a2847cd8938785bae0d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7472c60e2c0869a40c9522f938968082"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getpot_8h.html#a5a06706ab6a8deba857d07e2a3de2db0">STRING_VECTOR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">value</a></td></tr>
+<tr class="separator:a7472c60e2c0869a40c9522f938968082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b9b7da35573cbf79b6e6e05150a00d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a98b9b7da35573cbf79b6e6e05150a00d">original</a></td></tr>
+<tr class="separator:a98b9b7da35573cbf79b6e6e05150a00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Variable to be specified on the command line or in input files. </p>
+<p>(i.e. of the form var='12 312 341') </p>
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l00479">479</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a0f7d2d4f68902872339a519c3edbcfeb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GETPOT_NAMESPACE::GetPot::variable::variable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>constructors, destructors, assignment operator </p>
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l03914">3914</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l03915"></a><span class="lineno"> 3915</span>&#160;  : <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a54d5b0e6608a2847cd8938785bae0d8d">name</a>(),</div>
+<div class="line"><a name="l03916"></a><span class="lineno"> 3916</span>&#160;    <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">value</a>(),</div>
+<div class="line"><a name="l03917"></a><span class="lineno"> 3917</span>&#160;    <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a98b9b7da35573cbf79b6e6e05150a00d">original</a>()</div>
+<div class="line"><a name="l03918"></a><span class="lineno"> 3918</span>&#160;{}</div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a54d5b0e6608a2847cd8938785bae0d8d"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a54d5b0e6608a2847cd8938785bae0d8d">GETPOT_NAMESPACE::GetPot::variable::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">data members </div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l00501">getpot.h:501</a></div></div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a98b9b7da35573cbf79b6e6e05150a00d"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a98b9b7da35573cbf79b6e6e05150a00d">GETPOT_NAMESPACE::GetPot::variable::original</a></div><div class="ttdeci">std::string original</div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l00503">getpot.h:503</a></div></div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a7472c60e2c0869a40c9522f938968082"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">GETPOT_NAMESPACE::GetPot::variable::value</a></div><div class="ttdeci">STRING_VECTOR value</div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l00502">getpot.h:502</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa7722d8c94089d930491798db5c57522"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GETPOT_NAMESPACE::GetPot::variable::variable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html">variable</a> &amp;&#160;</td>
+          <td class="paramname"><em>Other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l03923">3923</a> 行定义.</p>
+
+<p>参考 <a class="el" href="getpot_8h_source.html#l01031">GETPOT_NAMESPACE::GetPot::operator=()</a> , 以及 <a class="el" href="getpot_8h_source.html#l04016">operator=()</a>.</p>
+<div class="fragment"><div class="line"><a name="l03924"></a><span class="lineno"> 3924</span>&#160;{</div>
+<div class="line"><a name="l03925"></a><span class="lineno"> 3925</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l03926"></a><span class="lineno"> 3926</span>&#160;<span class="preprocessor"></span>  <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#ab311459e166c1b1bf37b254f6c6beffa">operator=</a>(Other);</div>
+<div class="line"><a name="l03927"></a><span class="lineno"> 3927</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l03928"></a><span class="lineno"> 3928</span>&#160;<span class="preprocessor"></span>  <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#ab311459e166c1b1bf37b254f6c6beffa">GetPot::variable::operator=</a>(Other);</div>
+<div class="line"><a name="l03929"></a><span class="lineno"> 3929</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l03930"></a><span class="lineno"> 3930</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_ab311459e166c1b1bf37b254f6c6beffa"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#ab311459e166c1b1bf37b254f6c6beffa">GETPOT_NAMESPACE::GetPot::variable::operator=</a></div><div class="ttdeci">variable &amp; operator=(const variable &amp;Other)</div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l04016">getpot.h:4016</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab6a2b07f651ffecbe3f712c46bf47de2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GETPOT_NAMESPACE::GetPot::variable::variable </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>FieldSeparator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l03935">3935</a> 行定义.</p>
+
+<p>参考 <a class="el" href="getpot_8h_source.html#l03956">take()</a>.</p>
+<div class="fragment"><div class="line"><a name="l03936"></a><span class="lineno"> 3936</span>&#160;  : <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a54d5b0e6608a2847cd8938785bae0d8d">name</a>(Name)</div>
+<div class="line"><a name="l03937"></a><span class="lineno"> 3937</span>&#160;{</div>
+<div class="line"><a name="l03938"></a><span class="lineno"> 3938</span>&#160;  <span class="comment">// make a copy of the &#39;Value&#39;</span></div>
+<div class="line"><a name="l03939"></a><span class="lineno"> 3939</span>&#160;  <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a93c285692989febb79e0f3cb35d16e83">take</a>(Value, FieldSeparator);</div>
+<div class="line"><a name="l03940"></a><span class="lineno"> 3940</span>&#160;}</div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a54d5b0e6608a2847cd8938785bae0d8d"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a54d5b0e6608a2847cd8938785bae0d8d">GETPOT_NAMESPACE::GetPot::variable::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">data members </div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l00501">getpot.h:501</a></div></div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a93c285692989febb79e0f3cb35d16e83"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a93c285692989febb79e0f3cb35d16e83">GETPOT_NAMESPACE::GetPot::variable::take</a></div><div class="ttdeci">void take(const char *Value, const char *FieldSeparator)</div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l03956">getpot.h:3956</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab55b03aaf750ec4a6ac2a6d75a20254f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GETPOT_NAMESPACE::GetPot::variable::~variable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l04010">4010</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l04011"></a><span class="lineno"> 4011</span>&#160;{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a4e5332191db59ee9e1d44082419032e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string * GETPOT_NAMESPACE::GetPot::variable::get_element </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Idx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get a specific element in the string vector (return 0 if not present) </p>
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l03945">3945</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="getpot_8h_source.html#l02410">GETPOT_NAMESPACE::GetPot::get_value_no_default()</a> , 以及 <a class="el" href="getpot_8h_source.html#l02327">GETPOT_NAMESPACE::GetPot::operator()()</a>.</p>
+<div class="fragment"><div class="line"><a name="l03946"></a><span class="lineno"> 3946</span>&#160;{</div>
+<div class="line"><a name="l03947"></a><span class="lineno"> 3947</span>&#160;  <span class="keywordflow">if</span> (Idx &gt;= <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">value</a>.size())</div>
+<div class="line"><a name="l03948"></a><span class="lineno"> 3948</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l03949"></a><span class="lineno"> 3949</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l03950"></a><span class="lineno"> 3950</span>&#160;    <span class="keywordflow">return</span> &amp;(<a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">value</a>[Idx]);</div>
+<div class="line"><a name="l03951"></a><span class="lineno"> 3951</span>&#160;}</div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a7472c60e2c0869a40c9522f938968082"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">GETPOT_NAMESPACE::GetPot::variable::value</a></div><div class="ttdeci">STRING_VECTOR value</div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l00502">getpot.h:502</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab311459e166c1b1bf37b254f6c6beffa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html">GetPot::variable</a> &amp; GETPOT_NAMESPACE::GetPot::variable::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html">variable</a> &amp;&#160;</td>
+          <td class="paramname"><em>Other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l04016">4016</a> 行定义.</p>
+
+<p>参考 <a class="el" href="getpot_8h_source.html#l00501">name</a>, <a class="el" href="getpot_8h_source.html#l00503">original</a> , 以及 <a class="el" href="getpot_8h_source.html#l00502">value</a>.</p>
+
+<p>参考自 <a class="el" href="getpot_8h_source.html#l03923">variable()</a>.</p>
+<div class="fragment"><div class="line"><a name="l04017"></a><span class="lineno"> 4017</span>&#160;{</div>
+<div class="line"><a name="l04018"></a><span class="lineno"> 4018</span>&#160;  <span class="keywordflow">if</span> (&amp;Other != <span class="keyword">this</span>)</div>
+<div class="line"><a name="l04019"></a><span class="lineno"> 4019</span>&#160;    {</div>
+<div class="line"><a name="l04020"></a><span class="lineno"> 4020</span>&#160;      <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a54d5b0e6608a2847cd8938785bae0d8d">name</a>     = Other.name;</div>
+<div class="line"><a name="l04021"></a><span class="lineno"> 4021</span>&#160;      <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">value</a>    = Other.value;</div>
+<div class="line"><a name="l04022"></a><span class="lineno"> 4022</span>&#160;      <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a98b9b7da35573cbf79b6e6e05150a00d">original</a> = Other.original;</div>
+<div class="line"><a name="l04023"></a><span class="lineno"> 4023</span>&#160;    }</div>
+<div class="line"><a name="l04024"></a><span class="lineno"> 4024</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l04025"></a><span class="lineno"> 4025</span>&#160;}</div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a54d5b0e6608a2847cd8938785bae0d8d"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a54d5b0e6608a2847cd8938785bae0d8d">GETPOT_NAMESPACE::GetPot::variable::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">data members </div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l00501">getpot.h:501</a></div></div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a98b9b7da35573cbf79b6e6e05150a00d"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a98b9b7da35573cbf79b6e6e05150a00d">GETPOT_NAMESPACE::GetPot::variable::original</a></div><div class="ttdeci">std::string original</div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l00503">getpot.h:503</a></div></div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a7472c60e2c0869a40c9522f938968082"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">GETPOT_NAMESPACE::GetPot::variable::value</a></div><div class="ttdeci">STRING_VECTOR value</div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l00502">getpot.h:502</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a93c285692989febb79e0f3cb35d16e83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GETPOT_NAMESPACE::GetPot::variable::take </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>FieldSeparator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l03956">3956</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="getpot_8h_source.html#l03935">variable()</a>.</p>
+<div class="fragment"><div class="line"><a name="l03957"></a><span class="lineno"> 3957</span>&#160;{</div>
+<div class="line"><a name="l03958"></a><span class="lineno"> 3958</span>&#160;  <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a98b9b7da35573cbf79b6e6e05150a00d">original</a> = std::string(Value); <span class="comment">// string member var</span></div>
+<div class="line"><a name="l03959"></a><span class="lineno"> 3959</span>&#160;  <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">value</a>.clear();                 <span class="comment">// vector&lt;string&gt; member var</span></div>
+<div class="line"><a name="l03960"></a><span class="lineno"> 3960</span>&#160;</div>
+<div class="line"><a name="l03961"></a><span class="lineno"> 3961</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l03962"></a><span class="lineno"> 3962</span>&#160;<span class="comment">  // separate string by white space delimiters using &#39;strtok&#39;</span></div>
+<div class="line"><a name="l03963"></a><span class="lineno"> 3963</span>&#160;<span class="comment">  // thread safe usage of strtok (no static members)</span></div>
+<div class="line"><a name="l03964"></a><span class="lineno"> 3964</span>&#160;<span class="comment">  char* spt = 0;</span></div>
+<div class="line"><a name="l03965"></a><span class="lineno"> 3965</span>&#160;<span class="comment">  // make a copy of the &#39;Value&#39;</span></div>
+<div class="line"><a name="l03966"></a><span class="lineno"> 3966</span>&#160;<span class="comment">  char* copy = new char[strlen(Value)+1];</span></div>
+<div class="line"><a name="l03967"></a><span class="lineno"> 3967</span>&#160;<span class="comment">  strcpy(copy, Value);</span></div>
+<div class="line"><a name="l03968"></a><span class="lineno"> 3968</span>&#160;<span class="comment">  char* follow_token = strtok_r(copy, FieldSeparator, &amp;spt);</span></div>
+<div class="line"><a name="l03969"></a><span class="lineno"> 3969</span>&#160;<span class="comment">  while (follow_token != 0)</span></div>
+<div class="line"><a name="l03970"></a><span class="lineno"> 3970</span>&#160;<span class="comment">  {</span></div>
+<div class="line"><a name="l03971"></a><span class="lineno"> 3971</span>&#160;<span class="comment">  value.push_back(std::string(follow_token));</span></div>
+<div class="line"><a name="l03972"></a><span class="lineno"> 3972</span>&#160;<span class="comment">  follow_token = strtok_r(NULL, FieldSeparator, &amp;spt);</span></div>
+<div class="line"><a name="l03973"></a><span class="lineno"> 3973</span>&#160;<span class="comment">  }</span></div>
+<div class="line"><a name="l03974"></a><span class="lineno"> 3974</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l03975"></a><span class="lineno"> 3975</span>&#160;<span class="comment">  delete [] copy;</span></div>
+<div class="line"><a name="l03976"></a><span class="lineno"> 3976</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l03977"></a><span class="lineno"> 3977</span>&#160;</div>
+<div class="line"><a name="l03978"></a><span class="lineno"> 3978</span>&#160;  <span class="comment">// Don&#39;t use strtok, instead tokenize the input char &quot;Value&quot; using std::string operations so</span></div>
+<div class="line"><a name="l03979"></a><span class="lineno"> 3979</span>&#160;  <span class="comment">// that the results end up in the local &quot;value&quot; member</span></div>
+<div class="line"><a name="l03980"></a><span class="lineno"> 3980</span>&#160;</div>
+<div class="line"><a name="l03981"></a><span class="lineno"> 3981</span>&#160;  <span class="comment">// Construct std::string objects from the input char*s.  I think the only</span></div>
+<div class="line"><a name="l03982"></a><span class="lineno"> 3982</span>&#160;  <span class="comment">// FieldSeparator recognized by GetPot is whitespace?</span></div>
+<div class="line"><a name="l03983"></a><span class="lineno"> 3983</span>&#160;  std::string Value_str = std::string(Value);</div>
+<div class="line"><a name="l03984"></a><span class="lineno"> 3984</span>&#160;  std::string delimiters = std::string(FieldSeparator);</div>
+<div class="line"><a name="l03985"></a><span class="lineno"> 3985</span>&#160;</div>
+<div class="line"><a name="l03986"></a><span class="lineno"> 3986</span>&#160;  <span class="comment">// Skip delimiters at beginning.</span></div>
+<div class="line"><a name="l03987"></a><span class="lineno"> 3987</span>&#160;  std::string::size_type lastPos = Value_str.find_first_not_of(delimiters, 0);</div>
+<div class="line"><a name="l03988"></a><span class="lineno"> 3988</span>&#160;</div>
+<div class="line"><a name="l03989"></a><span class="lineno"> 3989</span>&#160;  <span class="comment">// Find first &quot;non-delimiter&quot;.</span></div>
+<div class="line"><a name="l03990"></a><span class="lineno"> 3990</span>&#160;  std::string::size_type pos     = Value_str.find_first_of(delimiters, lastPos);</div>
+<div class="line"><a name="l03991"></a><span class="lineno"> 3991</span>&#160;</div>
+<div class="line"><a name="l03992"></a><span class="lineno"> 3992</span>&#160;  <span class="comment">// Loop over the input string until all the tokens have been pushed back</span></div>
+<div class="line"><a name="l03993"></a><span class="lineno"> 3993</span>&#160;  <span class="comment">// into the local &quot;value&quot; member.</span></div>
+<div class="line"><a name="l03994"></a><span class="lineno"> 3994</span>&#160;  <span class="keywordflow">while</span> (std::string::npos != pos || std::string::npos != lastPos)</div>
+<div class="line"><a name="l03995"></a><span class="lineno"> 3995</span>&#160;    {</div>
+<div class="line"><a name="l03996"></a><span class="lineno"> 3996</span>&#160;      <span class="comment">// Found a token, add it to the vector.</span></div>
+<div class="line"><a name="l03997"></a><span class="lineno"> 3997</span>&#160;      <a class="code" href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">value</a>.push_back(Value_str.substr(lastPos, pos - lastPos));</div>
+<div class="line"><a name="l03998"></a><span class="lineno"> 3998</span>&#160;</div>
+<div class="line"><a name="l03999"></a><span class="lineno"> 3999</span>&#160;      <span class="comment">// Skip delimiters.  Note the &quot;not_of&quot;</span></div>
+<div class="line"><a name="l04000"></a><span class="lineno"> 4000</span>&#160;      lastPos = Value_str.find_first_not_of(delimiters, pos);</div>
+<div class="line"><a name="l04001"></a><span class="lineno"> 4001</span>&#160;</div>
+<div class="line"><a name="l04002"></a><span class="lineno"> 4002</span>&#160;      <span class="comment">// Find next &quot;non-delimiter&quot;</span></div>
+<div class="line"><a name="l04003"></a><span class="lineno"> 4003</span>&#160;      pos = Value_str.find_first_of(delimiters, lastPos);</div>
+<div class="line"><a name="l04004"></a><span class="lineno"> 4004</span>&#160;    }</div>
+<div class="line"><a name="l04005"></a><span class="lineno"> 4005</span>&#160;</div>
+<div class="line"><a name="l04006"></a><span class="lineno"> 4006</span>&#160;  <span class="comment">// We&#39;re done, all the tokens should now be in the vector&lt;string&gt;</span></div>
+<div class="line"><a name="l04007"></a><span class="lineno"> 4007</span>&#160;}</div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a98b9b7da35573cbf79b6e6e05150a00d"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a98b9b7da35573cbf79b6e6e05150a00d">GETPOT_NAMESPACE::GetPot::variable::original</a></div><div class="ttdeci">std::string original</div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l00503">getpot.h:503</a></div></div>
+<div class="ttc" id="structGETPOT__NAMESPACE_1_1GetPot_1_1variable_html_a7472c60e2c0869a40c9522f938968082"><div class="ttname"><a href="structGETPOT__NAMESPACE_1_1GetPot_1_1variable.html#a7472c60e2c0869a40c9522f938968082">GETPOT_NAMESPACE::GetPot::variable::value</a></div><div class="ttdeci">STRING_VECTOR value</div><div class="ttdef"><b>Definition:</b> <a href="getpot_8h_source.html#l00502">getpot.h:502</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a54d5b0e6608a2847cd8938785bae0d8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string GETPOT_NAMESPACE::GetPot::variable::name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>data members </p>
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l00501">501</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="getpot_8h_source.html#l02929">GETPOT_NAMESPACE::GetPot::_DBE_expand()</a> , 以及 <a class="el" href="getpot_8h_source.html#l04016">operator=()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98b9b7da35573cbf79b6e6e05150a00d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string GETPOT_NAMESPACE::GetPot::variable::original</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l00503">503</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="getpot_8h_source.html#l02929">GETPOT_NAMESPACE::GetPot::_DBE_expand()</a>, <a class="el" href="getpot_8h_source.html#l02895">GETPOT_NAMESPACE::GetPot::_DBE_get_variable()</a>, <a class="el" href="getpot_8h_source.html#l02369">GETPOT_NAMESPACE::GetPot::get_value_no_default()</a>, <a class="el" href="getpot_8h_source.html#l02287">GETPOT_NAMESPACE::GetPot::operator()()</a> , 以及 <a class="el" href="getpot_8h_source.html#l04016">operator=()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7472c60e2c0869a40c9522f938968082"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="getpot_8h.html#a5a06706ab6a8deba857d07e2a3de2db0">STRING_VECTOR</a> GETPOT_NAMESPACE::GetPot::variable::value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="getpot_8h_source.html">getpot.h</a> 第 <a class="el" href="getpot_8h_source.html#l00502">502</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="getpot_8h_source.html#l04016">operator=()</a> , 以及 <a class="el" href="getpot_8h_source.html#l02557">GETPOT_NAMESPACE::GetPot::vector_variable_size()</a>.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/base/<a class="el" href="getpot_8h_source.html">getpot.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2023年 十二月 20日 星期三 14:07:06 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,19 +124,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="textblock">这里列出了所有类成员，并附带类的详细说明:</div>
 
 <h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
+<li>_active_subdomains
+: <a class="el" href="classlibMesh_1_1Variable.html#a37c9779e6cc08241b5d17b4919d02397">libMesh::Variable</a>
+</li>
 <li>_additional_vars
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a5a0f284b515fafd4287841a3d3afe78e">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
 , <a class="el" href="classlibMesh_1_1ParsedFunction.html#aa30921fe037e79358421aa6637077f2d">libMesh::ParsedFunction&lt; Output, OutputGradient &gt;</a>
 </li>
+<li>_adjoint_constraint_values
+: <a class="el" href="classlibMesh_1_1DofMap.html#a89fdd1d933dc29089eabf3e07908374d">libMesh::DofMap</a>
+</li>
+<li>_adjoint_dirichlet_boundaries
+: <a class="el" href="classlibMesh_1_1DofMap.html#a376604ef648f92ce79ed7d2c810b55f3">libMesh::DofMap</a>
+</li>
+<li>_algebraic_ghosting_functors
+: <a class="el" href="classlibMesh_1_1DofMap.html#a378d58f5e860f781a52adb61464c9378">libMesh::DofMap</a>
+</li>
 <li>_array_is_present
 : <a class="el" href="classlibMesh_1_1PetscVector.html#ae10345bff1d65f2b84f7d16c6c7b538c">libMesh::PetscVector&lt; T &gt;</a>
+</li>
+<li>_augment_send_list
+: <a class="el" href="classlibMesh_1_1DofMap.html#a409a5dccf85edf7260f6186482cb9c9c">libMesh::DofMap</a>
+</li>
+<li>_augment_sparsity_pattern
+: <a class="el" href="classlibMesh_1_1DofMap.html#a8d69e59ae9a96426ceca2f356caab1b6">libMesh::DofMap</a>
+</li>
+<li>_basic_initialization()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#afd5e74506f1e5d5e48dd5fb3b95bf414">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_bid
+: <a class="el" href="structlibMesh_1_1Predicates_1_1bid.html#a8c81c6441f094d8280e62eb3ca58f0e3">libMesh::Predicates::bid&lt; T &gt;</a>
 </li>
 <li>_BLAS_Multiply_Flag
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#afa268fd78e9c7110ccb20872bd987653">libMesh::DenseMatrix&lt; T &gt;</a>
 </li>
+<li>_bndry_info
+: <a class="el" href="structlibMesh_1_1Predicates_1_1bid.html#a10dc376ad37febf8b7437cb7a804cbba">libMesh::Predicates::bid&lt; T &gt;</a>
+, <a class="el" href="structlibMesh_1_1Predicates_1_1bnd.html#abf418ac36e2d09b44a77ceae8452abcd">libMesh::Predicates::bnd&lt; T &gt;</a>
+</li>
 <li>_c
-: <a class="el" href="classlibMesh_1_1ConstFEMFunction.html#ad6d25518f4b7fe3e21e095a5ec7387b8">libMesh::ConstFEMFunction&lt; Output &gt;</a>
+: <a class="el" href="classlibMesh_1_1TestClass.html#a36c1a038116ecc93f14139638017333d">libMesh::TestClass</a>
+, <a class="el" href="classlibMesh_1_1ConstFEMFunction.html#ad6d25518f4b7fe3e21e095a5ec7387b8">libMesh::ConstFEMFunction&lt; Output &gt;</a>
 , <a class="el" href="classlibMesh_1_1ConstFunction.html#a55f3968bb03f77072f0b0a14312b438e">libMesh::ConstFunction&lt; Output &gt;</a>
+</li>
+<li>_check_flags()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a53f7feacf3a7e812045596dc26907a3e">GETPOT_NAMESPACE::GetPot</a>
 </li>
 <li>_cholesky_back_substitute()
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#a36ea5f3012c8163a48a40d1559179a8e">libMesh::DenseMatrix&lt; T &gt;</a>
@@ -148,10 +180,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="classlibMesh_1_1EigenSparseMatrix.html#a7c87e1033be4531ec621127843395597">libMesh::EigenSparseMatrix&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1LaspackMatrix.html#acb97bb8a409c0239856127155e3acb81">libMesh::LaspackMatrix&lt; T &gt;</a>
 </li>
+<li>_comm
+: <a class="el" href="classlibMesh_1_1LibMeshInit.html#a0b703a73b149de8aa59d19672f079d3a">libMesh::LibMeshInit</a>
+</li>
+<li>_comment_end
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a9a6feb2a2e21aa1794fa6bcc07288864">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_comment_start
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a616a12e01149ef9025b48c8c35b3c59b">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_constrained_sparsity_construction
+: <a class="el" href="classlibMesh_1_1DofMap.html#a780be47336e49e2f9cd55bba69ee919a">libMesh::DofMap</a>
+</li>
+<li>_convert_from_type()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#abf51396b331f60193bfac1384fb55ed0">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_convert_to_type()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#ad70a41209b5e09e31747c786b964bfc2">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_convert_to_type_no_default()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a3f7a5190a3765959aa919db7d16d3514">GETPOT_NAMESPACE::GetPot</a>
+</li>
 <li>_coords
 : <a class="el" href="classlibMesh_1_1TypeNTensor.html#ad228afbffd1096cec4df46519dfaf9f7">libMesh::TypeNTensor&lt; N, T &gt;</a>
 , <a class="el" href="classlibMesh_1_1TypeTensor.html#a957623f929f3199439d59ff4841e484b">libMesh::TypeTensor&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1TypeVector.html#a164f4a8009b50213232b6fe9e47b5de0">libMesh::TypeVector&lt; T &gt;</a>
+</li>
+<li>_counts
+: <a class="el" href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">libMesh::ReferenceCounter</a>
+</li>
+<li>_coupling_functors
+: <a class="el" href="classlibMesh_1_1DofMap.html#aef1ebc9176a3f7ec9607ba4b26808991">libMesh::DofMap</a>
 </li>
 <li>_csr
 : <a class="el" href="classlibMesh_1_1LaspackMatrix.html#a28e6977288da03310aad694ebe0cfd61">libMesh::LaspackMatrix&lt; T &gt;</a>
@@ -164,8 +223,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="classlibMesh_1_1RawAccessor.html#a57981a40ac1a2f5bcd5d230e3dd5a168">libMesh::RawAccessor&lt; FieldType &gt;</a>
 , <a class="el" href="classlibMesh_1_1RawAccessor_3_01TypeNTensor_3_01N_00_01ScalarType_01_4_01_4.html#a67e117cc0ad03126a93139dd9671ae0a">libMesh::RawAccessor&lt; TypeNTensor&lt; N, ScalarType &gt; &gt;</a>
 </li>
+<li>_DBE_expand()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a8c21be04e2f5f044704efbf224014001">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_DBE_expand_string()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a0774457159df9d5bfe5f1994b88859d1">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_DBE_get_expr_list()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a6476bdd85b89346707f7f9bfdad4617c">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_DBE_get_variable()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a887c00c661671d4ad17dd2733bd5b420">GETPOT_NAMESPACE::GetPot</a>
+</li>
 <li>_decomposition_type
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#ac1da39d620cd6248899c1bf19f421083">libMesh::DenseMatrix&lt; T &gt;</a>
+</li>
+<li>_default_coupling
+: <a class="el" href="classlibMesh_1_1DofMap.html#abb069d1433ad6f8eeb4d5ebf44ae4dc8">libMesh::DofMap</a>
+</li>
+<li>_default_evaluating
+: <a class="el" href="classlibMesh_1_1DofMap.html#a4eb9c9ed9c530781aac48df4fc0cf27b">libMesh::DofMap</a>
 </li>
 <li>_destroy_mat_on_exit
 : <a class="el" href="classlibMesh_1_1PetscMatrix.html#aa9dc3865c6533af85bff507f60ccf94d">libMesh::PetscMatrix&lt; T &gt;</a>
@@ -182,12 +259,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="classlibMesh_1_1RawAccessor.html#ad006b88f004bbaa8fdc5b2741118b277">libMesh::RawAccessor&lt; FieldType &gt;</a>
 , <a class="el" href="classlibMesh_1_1RawAccessor_3_01TypeNTensor_3_01N_00_01ScalarType_01_4_01_4.html#a99b5a018ddf325007562aec445be6f36">libMesh::RawAccessor&lt; TypeNTensor&lt; N, ScalarType &gt; &gt;</a>
 </li>
+<li>_dirichlet_boundaries
+: <a class="el" href="classlibMesh_1_1DofMap.html#a2e9be7e72291d4fd6e841ae7733a5ff0">libMesh::DofMap</a>
+</li>
+<li>_dof_constraints
+: <a class="el" href="classlibMesh_1_1DofMap.html#af7fe4d0cf13618e6dd04ff22fdaca0ba">libMesh::DofMap</a>
+</li>
+<li>_dof_coupling
+: <a class="el" href="classlibMesh_1_1DofMap.html#ab276e172c5488ab3b387b235e28556cf">libMesh::DofMap</a>
+</li>
+<li>_dof_indices()
+: <a class="el" href="classlibMesh_1_1DofMap.html#ab71695347ecade298eba425d3150ffc6">libMesh::DofMap</a>
+</li>
 <li>_dof_map
-: <a class="el" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">libMesh::ShellMatrix&lt; T &gt;</a>
+: <a class="el" href="structlibMesh_1_1Predicates_1_1evaluable.html#a5d735bd5dd8d3408d0634a2d94ad2faf">libMesh::Predicates::evaluable&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1ShellMatrix.html#ab89946d220702b4bde5c57f71083009f">libMesh::ShellMatrix&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">libMesh::SparseMatrix&lt; T &gt;</a>
+</li>
+<li>_dof_maps
+: <a class="el" href="structlibMesh_1_1Predicates_1_1multi__evaluable.html#af2831d7b5dc8d842d4f20b2f2eef3b83">libMesh::Predicates::multi_evaluable&lt; T &gt;</a>
+</li>
+<li>_dont_p_refine
+: <a class="el" href="classlibMesh_1_1DofMap.html#a82dd81ff9e21bdc2d9c80f80c692a9ea">libMesh::DofMap</a>
 </li>
 <li>_dummy
 : <a class="el" href="classlibMesh_1_1ParsedFunction.html#af18364861a6d8182244a5577be0c3c80">libMesh::ParsedFunction&lt; Output, OutputGradient &gt;</a>
+</li>
+<li>_elem_type
+: <a class="el" href="structlibMesh_1_1Predicates_1_1elem__type.html#ad054188d8908807524c7bfaa4e639ebb">libMesh::Predicates::elem_type&lt; T &gt;</a>
+</li>
+<li>_enable_print_counter
+: <a class="el" href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">libMesh::ReferenceCounter</a>
+</li>
+<li>_enabled
+: <a class="el" href="structlibMesh_1_1PerfItem.html#a8b17a1555f3b87bc5327e5cc23fd16b4">libMesh::PerfItem</a>
+</li>
+<li>_end_df
+: <a class="el" href="classlibMesh_1_1DofMap.html#af43f96a9e11b3f4221306fdfd4511aaa">libMesh::DofMap</a>
+</li>
+<li>_end_old_df
+: <a class="el" href="classlibMesh_1_1DofMap.html#ab96f5b260e5925063553da996bb3b428">libMesh::DofMap</a>
+</li>
+<li>_error_on_constraint_loop
+: <a class="el" href="classlibMesh_1_1DofMap.html#aef749fe651254903abfc12d9b81e2a16">libMesh::DofMap</a>
 </li>
 <li>_evd_lapack()
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#a4e36bfbf1dd58de19573e4c8316f18ee">libMesh::DenseMatrix&lt; T &gt;</a>
@@ -196,11 +310,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a530fb28fab8514d6d19149fc35d9a52a">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
 , <a class="el" href="classlibMesh_1_1ParsedFunction.html#a1254837433219e93053dda67d22f36e7">libMesh::ParsedFunction&lt; Output, OutputGradient &gt;</a>
 </li>
+<li>_extra_send_list_context
+: <a class="el" href="classlibMesh_1_1DofMap.html#a6c450ba54bc8caffac28eed88a98a17d">libMesh::DofMap</a>
+</li>
+<li>_extra_send_list_function
+: <a class="el" href="classlibMesh_1_1DofMap.html#af1bdebf08fdd914c71545e45624e3c8f">libMesh::DofMap</a>
+</li>
+<li>_extra_sparsity_context
+: <a class="el" href="classlibMesh_1_1DofMap.html#a283ce213140aa281498b56e138ee8de2">libMesh::DofMap</a>
+</li>
+<li>_extra_sparsity_function
+: <a class="el" href="classlibMesh_1_1DofMap.html#ab3513c402066e6431799e388d62be036">libMesh::DofMap</a>
+</li>
+<li>_field_separator
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a8b3d346cb69c5531f2e1d66550cb3d52">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_find_variable()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a30db4003108951f778195dd5adfdd7c3">GETPOT_NAMESPACE::GetPot</a>
+</li>
 <li>_first
 : <a class="el" href="classlibMesh_1_1PetscVector.html#a37c72213c220ab3b9c796abf265dd154">libMesh::PetscVector&lt; T &gt;</a>
 </li>
+<li>_first_df
+: <a class="el" href="classlibMesh_1_1DofMap.html#ab72062de06b72df985ac5bf16837a7da">libMesh::DofMap</a>
+</li>
 <li>_first_local_index
 : <a class="el" href="classlibMesh_1_1DistributedVector.html#a1b15b5bb6dbe91285cc8798f1ba9bde7">libMesh::DistributedVector&lt; T &gt;</a>
+</li>
+<li>_first_old_df
+: <a class="el" href="classlibMesh_1_1DofMap.html#ab91d708f5167f50c0392b2fd5dea2559">libMesh::DofMap</a>
+</li>
+<li>_first_old_scalar_df
+: <a class="el" href="classlibMesh_1_1DofMap.html#a92da14cf60e82ed600bfe67ca3422765">libMesh::DofMap</a>
+</li>
+<li>_first_scalar_df
+: <a class="el" href="classlibMesh_1_1DofMap.html#af1fc10139391d71da470387d9e4adbb5">libMesh::DofMap</a>
+</li>
+<li>_first_scalar_number
+: <a class="el" href="classlibMesh_1_1Variable.html#a0b90d213d2f3c947785168cdc0302b37">libMesh::Variable</a>
 </li>
 <li>_fptr
 : <a class="el" href="classlibMesh_1_1WrappedFunction.html#ac8beb54b1381ac981645fb3329bd9611">libMesh::WrappedFunction&lt; Output &gt;</a>
@@ -213,9 +360,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>_get_array()
 : <a class="el" href="classlibMesh_1_1PetscVector.html#a01b815df08920f6d33251754c10bf368">libMesh::PetscVector&lt; T &gt;</a>
 </li>
+<li>_get_next_token()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a65b3fa4d62f97d1232c7ea3b32271547">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_get_remaining_string()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a9fa9f5f8f05b3aec383ae0264d5019ab">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_get_section_tree()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#aa75bed35cc4eb1b692d91879d737a27b">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_get_string()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a1065bc65b504c84a69b50bd3a87ef3b6">GETPOT_NAMESPACE::GetPot</a>
+</li>
 <li>_get_submatrix()
 : <a class="el" href="classlibMesh_1_1PetscMatrix.html#a25a3a163341ff4aaa4bbe70cafbf40a9">libMesh::PetscMatrix&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1SparseMatrix.html#ad47b4dedd1f076290fa018395e10ef47">libMesh::SparseMatrix&lt; T &gt;</a>
+</li>
+<li>_get_until_closing_bracket()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a7c1167c385b854ac94fc0fe31f82fe7b">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_get_until_closing_square_bracket()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a8dd09927ce624a7bbfef873f2a8999e1">GETPOT_NAMESPACE::GetPot</a>
 </li>
 <li>_global_size
 : <a class="el" href="classlibMesh_1_1DistributedVector.html#ac2abbff536695b50f8d399984ee9e9bb">libMesh::DistributedVector&lt; T &gt;</a>
@@ -226,9 +391,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>_graph
 : <a class="el" href="classlibMesh_1_1EpetraMatrix.html#abe731cc8a3488c1e2672443836b6ce61">libMesh::EpetraMatrix&lt; T &gt;</a>
 </li>
+<li>_header
+: <a class="el" href="structlibMesh_1_1PerfItem.html#a94c9cc29252eb921c5bef635bec84b96">libMesh::PerfItem</a>
+</li>
 <li>_i_off
 : <a class="el" href="classlibMesh_1_1DenseSubMatrix.html#a366c1930789b5d732749eb900dd6a993">libMesh::DenseSubMatrix&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1DenseSubVector.html#a54769b30f7c28566077636f9fcc29e01">libMesh::DenseSubVector&lt; T &gt;</a>
+</li>
+<li>_id
+: <a class="el" href="classlibMesh_1_1DofObject.html#a5649bec5929d3e4b4bc6b6842996b01d">libMesh::DofObject</a>
+</li>
+<li>_idx_buf
+: <a class="el" href="classlibMesh_1_1DofObject.html#a94e0ed3571b382ac0d21cdf965e4d7f3">libMesh::DofObject</a>
+</li>
+<li>_implicit_neighbor_dofs
+: <a class="el" href="classlibMesh_1_1DofMap.html#a09368a6dcd32c12d7a51dc00852982d5">libMesh::DofMap</a>
+</li>
+<li>_implicit_neighbor_dofs_initialized
+: <a class="el" href="classlibMesh_1_1DofMap.html#aa6ed76ce98cd73ed8339f505a5284fef">libMesh::DofMap</a>
 </li>
 <li>_initial_vals
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a7b2a12c2393c739a72e37d880de3fa8a">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
@@ -237,11 +417,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>_initialized
 : <a class="el" href="classlibMesh_1_1FunctionBase.html#a60dce9ec59c7e8fc68ad067372529858">libMesh::FunctionBase&lt; Output &gt;</a>
 </li>
+<li>_internal_managed_copy()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a777d9c762f45170fa34448c527eb8436">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_internal_string_container
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#acf0fb6cbe03c65d400968b3645288bf1">GETPOT_NAMESPACE::GetPot</a>
+</li>
 <li>_is_closed
-: <a class="el" href="classlibMesh_1_1NumericVector.html#af52f96de77a3380320753f1ab3a4d7de">libMesh::NumericVector&lt; typename &gt;</a>
+: <a class="el" href="classlibMesh_1_1NumericVector.html#a9f798c4a61662ab8486b3ddca31520a3">libMesh::NumericVector&lt; T &gt;</a>
 </li>
 <li>_is_initialized
-: <a class="el" href="classlibMesh_1_1NumericVector.html#a3193f0970634e97961f9c174e28e4291">libMesh::NumericVector&lt; typename &gt;</a>
+: <a class="el" href="classlibMesh_1_1NumericVector.html#a7ec1792df4c8c636e5dd387534067819">libMesh::NumericVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1PetscShellMatrix.html#aed7aedfad6c4f5e4c660e5acec9c3e03">libMesh::PetscShellMatrix&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1Preconditioner.html#a11827c073f85328efda1660f69ad9723">libMesh::Preconditioner&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1SparseMatrix.html#a9af4f8901ed954b3980801faf2250a55">libMesh::SparseMatrix&lt; T &gt;</a>
@@ -250,11 +436,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="classlibMesh_1_1FunctionBase.html#ac7ae0fe70cde587824e70d65124f7586">libMesh::FunctionBase&lt; Output &gt;</a>
 </li>
 <li>_j
-: <a class="el" href="classlibMesh_1_1TypeTensorColumn.html#aea990cc25f1e0429542e0b53b9baecfa">libMesh::TypeTensorColumn&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1ConstTypeTensorColumn.html#a4d1f7d2fb2c4e70d517d4dd939bc6232">libMesh::ConstTypeTensorColumn&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1ConstTypeTensorColumn.html#a4d1f7d2fb2c4e70d517d4dd939bc6232">libMesh::ConstTypeTensorColumn&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1TypeTensorColumn.html#aea990cc25f1e0429542e0b53b9baecfa">libMesh::TypeTensorColumn&lt; T &gt;</a>
 </li>
 <li>_j_off
 : <a class="el" href="classlibMesh_1_1DenseSubMatrix.html#a26094393e2d39e74d6463f848a2cfe38">libMesh::DenseSubMatrix&lt; T &gt;</a>
+</li>
+<li>_label
+: <a class="el" href="structlibMesh_1_1PerfItem.html#ad129f388c75c330c03babc8851d54a85">libMesh::PerfItem</a>
 </li>
 <li>_last
 : <a class="el" href="classlibMesh_1_1PetscVector.html#a7d8c4ef435dcabcd935df8fda66b71c6">libMesh::PetscVector&lt; T &gt;</a>
@@ -264,6 +453,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </li>
 <li>_left_multiply_transpose()
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#a2f77b6db03065e06a5beafcd6097c618">libMesh::DenseMatrix&lt; T &gt;</a>
+</li>
+<li>_level
+: <a class="el" href="structlibMesh_1_1Predicates_1_1level.html#ae392de8cbce5a47c5850eb13d5ce5e19">libMesh::Predicates::level&lt; T &gt;</a>
 </li>
 <li>_local_form
 : <a class="el" href="classlibMesh_1_1PetscVector.html#a04af5355d6a0463f3466750d77143f02">libMesh::PetscVector&lt; T &gt;</a>
@@ -297,13 +489,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </li>
 <li>_mat
 : <a class="el" href="classlibMesh_1_1EigenSparseMatrix.html#a3120aa7028b7103ee2cbbc17bbc1a8f7">libMesh::EigenSparseMatrix&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1TrilinosPreconditioner.html#a17f64368287863c7e6c59a90b40d1752">libMesh::TrilinosPreconditioner&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1PetscMatrix.html#a0deeafca10aa9a80b4adeca9fe5327d2">libMesh::PetscMatrix&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1PetscShellMatrix.html#abf78792d778bc45b322318cc1f96ca60">libMesh::PetscShellMatrix&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1EpetraMatrix.html#a704e963bfa13e7429384b70e37d9bb57">libMesh::EpetraMatrix&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1TrilinosPreconditioner.html#a17f64368287863c7e6c59a90b40d1752">libMesh::TrilinosPreconditioner&lt; T &gt;</a>
 </li>
 <li>_mat_type
 : <a class="el" href="classlibMesh_1_1PetscMatrix.html#a9304c909ffb7e6ddb82dabb7651761b1">libMesh::PetscMatrix&lt; T &gt;</a>
+</li>
+<li>_match_starting_string()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a9bfc4fc5c98b0550f923e6e5a42992a4">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_matrices
+: <a class="el" href="classlibMesh_1_1DofMap.html#aacf8838eb951b139f05e56e338ac2195">libMesh::DofMap</a>
 </li>
 <li>_matrix
 : <a class="el" href="classlibMesh_1_1Preconditioner.html#aeaab9e65a71dd4e30caa3b6ee67e6118">libMesh::Preconditioner&lt; T &gt;</a>
@@ -311,12 +509,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>_matvec_blas()
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#a5d2465444452c11312c2fcb5fb2107b3">libMesh::DenseMatrix&lt; T &gt;</a>
 </li>
+<li>_mesh
+: <a class="el" href="classlibMesh_1_1DofMap.html#ac0f1617e6f28fc596497b370092bcc17">libMesh::DofMap</a>
+</li>
 <li>_multiply_blas()
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#aea249041afc439b88a1ef6624acffa96">libMesh::DenseMatrix&lt; T &gt;</a>
+</li>
+<li>_mutex
+: <a class="el" href="classlibMesh_1_1ReferenceCounter.html#abedbd3a4ce19686187449a8a0557b74b">libMesh::ReferenceCounter</a>
 </li>
 <li>_n
 : <a class="el" href="classlibMesh_1_1DenseMatrixBase.html#a65ad8af64975eb0ecfc621a75743a869">libMesh::DenseMatrixBase&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1DenseSubVector.html#a88fd654008c0e25c31d1c7437c267441">libMesh::DenseSubVector&lt; T &gt;</a>
+</li>
+<li>_n_dfs
+: <a class="el" href="classlibMesh_1_1DofMap.html#a0964620ae8054b969297d1d9087b7b05">libMesh::DofMap</a>
+</li>
+<li>_n_objects
+: <a class="el" href="classlibMesh_1_1ReferenceCounter.html#ad2c30f0f71dcd00f00faa8e46aa3e043">libMesh::ReferenceCounter</a>
+</li>
+<li>_n_old_dfs
+: <a class="el" href="classlibMesh_1_1DofMap.html#abbca79dca4f02ab917e89aeac3113808">libMesh::DofMap</a>
 </li>
 <li>_n_requested_grad_components
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a96edae14c548ef776204c89a8648f94d">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
@@ -327,12 +540,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>_n_requested_vars
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a9ec134fefe68e389a7255efb4e5f3b66">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
 </li>
+<li>_n_SCALAR_dofs
+: <a class="el" href="classlibMesh_1_1DofMap.html#a8dbee781954d22ad785846b3a2a45193">libMesh::DofMap</a>
+</li>
 <li>_n_vars
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#ada72e862d42552a258d9f276cdce8308">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
 </li>
 <li>_name
-: <a class="el" href="classlibMesh_1_1ParsedFEMFunctionParameter.html#a69d04f4c8593fa18f348b1c8595bc483">libMesh::ParsedFEMFunctionParameter&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1Variable.html#a46257bc3411bfb52c558237d320ab70c">libMesh::Variable</a>
 , <a class="el" href="classlibMesh_1_1ParsedFunctionParameter.html#a69f9bde78dae120e3d6f20a2c1e805fb">libMesh::ParsedFunctionParameter&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1ParsedFEMFunctionParameter.html#a69d04f4c8593fa18f348b1c8595bc483">libMesh::ParsedFEMFunctionParameter&lt; T &gt;</a>
+</li>
+<li>_names
+: <a class="el" href="classlibMesh_1_1VariableGroup.html#aa0f9936c807f6e21788f12538c438b9c">libMesh::VariableGroup</a>
 </li>
 <li>_need_var
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a95fc943728fc973ac73f683302628909">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
@@ -343,11 +563,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>_need_var_hess
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#ad594035c0f2a69429f526de1a02e03e2">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
 </li>
+<li>_node_constraints
+: <a class="el" href="classlibMesh_1_1DofMap.html#a8856db766d722a0edaa9f5c5d94d40f7">libMesh::DofMap</a>
+</li>
+<li>_node_dof_indices()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a5da0a54ecad33de039c252ddcc6ecb88">libMesh::DofMap</a>
+</li>
+<li>_number
+: <a class="el" href="classlibMesh_1_1Variable.html#a1548eaad53ac768456434c88fde11125">libMesh::Variable</a>
+</li>
 <li>_number_fptr
 : <a class="el" href="classlibMesh_1_1AnalyticFunction.html#a30ce633b8a2ce6519e31a2a534c8f6b3">libMesh::AnalyticFunction&lt; Output &gt;</a>
 </li>
 <li>_numeric_vector_mutex
-: <a class="el" href="classlibMesh_1_1NumericVector.html#a789931ab2ef4cce68e13f5ab41960b8f">libMesh::NumericVector&lt; typename &gt;</a>
+: <a class="el" href="classlibMesh_1_1NumericVector.html#a7cf0323480050ca4f94dcfb716b31951">libMesh::NumericVector&lt; T &gt;</a>
 </li>
 <li>_param_list
 : <a class="el" href="classlibMesh_1_1TrilinosPreconditioner.html#a644fe45e0191590c8e2686de12e65a09">libMesh::TrilinosPreconditioner&lt; T &gt;</a>
@@ -361,11 +590,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>_parent_vector
 : <a class="el" href="classlibMesh_1_1DenseSubVector.html#af6f861c83d49b81bf7ac0c9735687a0d">libMesh::DenseSubVector&lt; T &gt;</a>
 </li>
+<li>_parse_argument_vector()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a6c9e7f0a7a17f7524aec38293eb29173">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_perflog
+: <a class="el" href="structlibMesh_1_1PerfItem.html#af64ce1795d161e40bbaffb035156d2c0">libMesh::PerfItem</a>
+</li>
+<li>_periodic_boundaries
+: <a class="el" href="classlibMesh_1_1DofMap.html#ab91693b08a22cfe1af7781287157ac8a">libMesh::DofMap</a>
+</li>
 <li>_petsc_get_restore_array_mutex
 : <a class="el" href="classlibMesh_1_1PetscVector.html#a3630c1f76ec8e1f87e8b160904198349">libMesh::PetscVector&lt; T &gt;</a>
 </li>
 <li>_petsc_matrix_mutex
 : <a class="el" href="classlibMesh_1_1PetscMatrix.html#aaca7707205988cb13aaeb731df289129">libMesh::PetscMatrix&lt; T &gt;</a>
+</li>
+<li>_pid
+: <a class="el" href="structlibMesh_1_1Predicates_1_1pid.html#a2a200131884bc7b106143d12a41d4b12">libMesh::Predicates::pid&lt; T &gt;</a>
+, <a class="el" href="structlibMesh_1_1Predicates_1_1semilocal__pid.html#a768409c12699040aa9b4ef03f0ada458">libMesh::Predicates::semilocal_pid&lt; T &gt;</a>
+, <a class="el" href="structlibMesh_1_1Predicates_1_1facelocal__pid.html#a1016957fd32e2bfcf3c8ddbaf2928dc7">libMesh::Predicates::facelocal_pid&lt; T &gt;</a>
 </li>
 <li>_pivots
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#a939baa77effb8233f5165dac7a729f73">libMesh::DenseMatrix&lt; T &gt;</a>
@@ -376,17 +619,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>_preconditioner_type
 : <a class="el" href="classlibMesh_1_1Preconditioner.html#a34bb86dd30ce791b57edceec5c2e727b">libMesh::Preconditioner&lt; T &gt;</a>
 </li>
+<li>_predicates
+: <a class="el" href="structlibMesh_1_1Predicates_1_1abstract__multi__predicate.html#a4b1c7f16762ac24d823ce973fff5284d">libMesh::Predicates::abstract_multi_predicate&lt; T &gt;</a>
+</li>
+<li>_primal_constraint_values
+: <a class="el" href="classlibMesh_1_1DofMap.html#a24e7c497429c2bd81a5cc39f71cfa6e0">libMesh::DofMap</a>
+</li>
+<li>_process_section_label()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#ae45e62c1cf964849d40cc0530e28d1ed">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_processor_id
+: <a class="el" href="classlibMesh_1_1DofObject.html#a050e746316d78d848ea46b99343b8d3e">libMesh::DofObject</a>
+</li>
 <li>_QMat
 : <a class="el" href="classlibMesh_1_1LaspackMatrix.html#a29df7284b5cc9a1f699b86b0cf14aec4">libMesh::LaspackMatrix&lt; T &gt;</a>
+</li>
+<li>_read_in_stream()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#abfde689f1f7c4698b3ca627f96f8aae5">GETPOT_NAMESPACE::GetPot</a>
 </li>
 <li>_read_only_values
 : <a class="el" href="classlibMesh_1_1PetscVector.html#a9eb46c1d93f77b712d832d1679b7f6f3">libMesh::PetscVector&lt; T &gt;</a>
 </li>
+<li>_record_argument_request()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#ade634798323cf9c17d52d94c6d3703a6">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_record_variable_request()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#ab81dd7e7f6509e3348820e36d9dd7934">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_request_variable()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a3aabfcc97bfcc32f68acedcbe4b39b3a">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_requested_arguments
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#ad4363023b75c50c699bede905288bbec">GETPOT_NAMESPACE::GetPot</a>
+</li>
 <li>_requested_normals
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#ae2b247682a259eedf79fadc28f0fe507">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
 </li>
+<li>_requested_sections
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a2c55809254cd08c477d891636a182cc7">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_requested_variables
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#aa65b744e41b5bc65e9292af9e20535b0">GETPOT_NAMESPACE::GetPot</a>
+</li>
 <li>_restore_array()
 : <a class="el" href="classlibMesh_1_1PetscVector.html#aff0f2e31f9cd5cc31ea687c10494ced8">libMesh::PetscVector&lt; T &gt;</a>
+</li>
+<li>_rflag
+: <a class="el" href="structlibMesh_1_1Predicates_1_1flagged.html#a7e8d8698e25a16f56d26100b4b2c667f">libMesh::Predicates::flagged&lt; T &gt;</a>
 </li>
 <li>_right_multiply_transpose()
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#a4674ee22398d31b077076b4fec471771">libMesh::DenseMatrix&lt; T &gt;</a>
@@ -394,12 +673,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>_row_start
 : <a class="el" href="classlibMesh_1_1LaspackMatrix.html#a50b503818bc5ca72ba3e791c8546e3b0">libMesh::LaspackMatrix&lt; T &gt;</a>
 </li>
+<li>_search_string_vector()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#af810e395f642b8cd882c6a0d1b611c2b">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_send_list
+: <a class="el" href="classlibMesh_1_1DofMap.html#a2b3873478d701811b9562b514fc2c369">libMesh::DofMap</a>
+</li>
+<li>_set_variable()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#ab110f63c8fbe6a44011a6bfe86cc5820">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>_shared_functors
+: <a class="el" href="classlibMesh_1_1DofMap.html#ac72a2e7009922c18fc0a59ebcceb58b1">libMesh::DofMap</a>
+</li>
+<li>_skip_whitespace()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#af50aa5722ae30213f61a58485ba4ca3f">GETPOT_NAMESPACE::GetPot</a>
+</li>
 <li>_sp
 : <a class="el" href="classlibMesh_1_1SparseMatrix.html#adb2470aa6002e1c74e8c94bb5b2423d0">libMesh::SparseMatrix&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1DofMap.html#ab14c66a56c0815c857dc662bea96f124">libMesh::DofMap</a>
 </li>
 <li>_spacetime
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a3aa8652dad2dfccbbae11f211593340c">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
 , <a class="el" href="classlibMesh_1_1ParsedFunction.html#ac16934ba5a5c05bbbf47bfc4592460d9">libMesh::ParsedFunction&lt; Output, OutputGradient &gt;</a>
+</li>
+<li>_stashed_dof_constraints
+: <a class="el" href="classlibMesh_1_1DofMap.html#af21470daae1a06d29df4bac4807a019c">libMesh::DofMap</a>
+</li>
+<li>_subdomain
+: <a class="el" href="structlibMesh_1_1Predicates_1_1subdomain.html#a0f009c2a87196e5a3dc533844f6d0407">libMesh::Predicates::subdomain&lt; T &gt;</a>
+</li>
+<li>_subdomain_set
+: <a class="el" href="structlibMesh_1_1Predicates_1_1subdomain__set.html#aa716eb6119b912b2ca29fb903f45e710">libMesh::Predicates::subdomain_set&lt; T &gt;</a>
 </li>
 <li>_subexpressions
 : <a class="el" href="classlibMesh_1_1ParsedFunction.html#a258901ddc23b0c3b3c6fa650630def7d">libMesh::ParsedFunction&lt; Output, OutputGradient &gt;</a>
@@ -415,15 +719,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#ab77af56c610caa11c7968768862dd9f2">libMesh::DenseMatrix&lt; T &gt;</a>
 </li>
 <li>_sys
-: <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a55861c383f7677b3e960f540d687dbbd">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
-, <a class="el" href="classlibMesh_1_1WrappedFunction.html#a3baa3a0a98a02b06bd1d3c245bfb1768">libMesh::WrappedFunction&lt; Output &gt;</a>
+: <a class="el" href="classlibMesh_1_1WrappedFunction.html#a3baa3a0a98a02b06bd1d3c245bfb1768">libMesh::WrappedFunction&lt; Output &gt;</a>
+, <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a55861c383f7677b3e960f540d687dbbd">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
+, <a class="el" href="classlibMesh_1_1Variable.html#a7d0488d8840a0c1175a84e402b89320e">libMesh::Variable</a>
+</li>
+<li>_sys_number
+: <a class="el" href="classlibMesh_1_1DofMap.html#a32b9faf7127f48555386705a952460d6">libMesh::DofMap</a>
 </li>
 <li>_tensor
-: <a class="el" href="classlibMesh_1_1TypeTensorColumn.html#aec64e9da5f530de4df4f549cd0d108d1">libMesh::TypeTensorColumn&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1ConstTypeTensorColumn.html#a0cf5bff4c798857391b1c1aa8b7692a7">libMesh::ConstTypeTensorColumn&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1ConstTypeTensorColumn.html#a0cf5bff4c798857391b1c1aa8b7692a7">libMesh::ConstTypeTensorColumn&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1TypeTensorColumn.html#aec64e9da5f530de4df4f549cd0d108d1">libMesh::TypeTensorColumn&lt; T &gt;</a>
+</li>
+<li>_timpi_init
+: <a class="el" href="classlibMesh_1_1LibMeshInit.html#ab2a4e03e3732c63b4c4beb37e40eae24">libMesh::LibMeshInit</a>
+</li>
+<li>_transformation_matrix
+: <a class="el" href="classlibMesh_1_1PeriodicBoundaryBase.html#a9b40c15082293d48a5f333e364ccb831">libMesh::PeriodicBoundaryBase</a>
 </li>
 <li>_type
-: <a class="el" href="classlibMesh_1_1NumericVector.html#a5c7b16576944b6d57634cd07e349b699">libMesh::NumericVector&lt; typename &gt;</a>
+: <a class="el" href="classlibMesh_1_1Variable.html#a090ae01f230b682249525c2c671f1a54">libMesh::Variable</a>
+, <a class="el" href="classlibMesh_1_1NumericVector.html#a5703f5d080a4ac9c725db7660a768fb8">libMesh::NumericVector&lt; T &gt;</a>
+</li>
+<li>_unique_id
+: <a class="el" href="classlibMesh_1_1DofObject.html#ab39f6184e6759027f5bdd5d758716146">libMesh::DofObject</a>
 </li>
 <li>_use_transpose
 : <a class="el" href="classlibMesh_1_1EpetraMatrix.html#a3aa933cee96fac916cd83d74472502b4">libMesh::EpetraMatrix&lt; T &gt;</a>
@@ -432,15 +750,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="classlibMesh_1_1TensorShellMatrix.html#a6779d9619b7715f104db4dd6020ddde8">libMesh::TensorShellMatrix&lt; T &gt;</a>
 </li>
 <li>_val
-: <a class="el" href="classlibMesh_1_1DenseMatrix.html#a850c40fcb0f9d1f4994bd9ac1d094284">libMesh::DenseMatrix&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1DenseVector.html#a76dbc878af763c7ab4b1edb996fc6e65">libMesh::DenseVector&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1DenseVector.html#a76dbc878af763c7ab4b1edb996fc6e65">libMesh::DenseVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1DenseMatrix.html#a850c40fcb0f9d1f4994bd9ac1d094284">libMesh::DenseMatrix&lt; T &gt;</a>
 </li>
 <li>_valid_derivatives
 : <a class="el" href="classlibMesh_1_1ParsedFunction.html#a7d1ef4f27db669015f0eb534c2501c89">libMesh::ParsedFunction&lt; Output, OutputGradient &gt;</a>
 </li>
 <li>_values
-: <a class="el" href="classlibMesh_1_1PetscVector.html#a6a4fcd82f63d93f1f4b8d94c154ce2ac">libMesh::PetscVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1DistributedVector.html#a1074892adb5701b7c13614058356fc0a">libMesh::DistributedVector&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1DistributedVector.html#a1074892adb5701b7c13614058356fc0a">libMesh::DistributedVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1PetscVector.html#a6a4fcd82f63d93f1f4b8d94c154ce2ac">libMesh::PetscVector&lt; T &gt;</a>
 </li>
 <li>_values_manually_retrieved
 : <a class="el" href="classlibMesh_1_1PetscVector.html#a498e6a3b4b7a1748e68ab5a22c0c9586">libMesh::PetscVector&lt; T &gt;</a>
@@ -448,17 +766,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>_values_read_only
 : <a class="el" href="classlibMesh_1_1PetscVector.html#a3eecd4263e112934648b4d98daf80956">libMesh::PetscVector&lt; T &gt;</a>
 </li>
+<li>_var_num
+: <a class="el" href="structlibMesh_1_1Predicates_1_1evaluable.html#ad17984c6ec455ddd85dca8e04c4fe39a">libMesh::Predicates::evaluable&lt; T &gt;</a>
+</li>
+<li>_var_to_vg
+: <a class="el" href="classlibMesh_1_1DofMap.html#a1bc6f6a2a702bfb9511b442d99fc7a28">libMesh::DofMap</a>
+</li>
+<li>_variable_group_numbers
+: <a class="el" href="classlibMesh_1_1DofMap.html#a04bedd57c80ef97a7d9a0a3e2fe8a248">libMesh::DofMap</a>
+</li>
+<li>_variable_groups
+: <a class="el" href="classlibMesh_1_1DofMap.html#ad840cf4659b6b1a2f781d29225e82743">libMesh::DofMap</a>
+</li>
+<li>_variables
+: <a class="el" href="classlibMesh_1_1DofMap.html#a5232a8054e580a408f394ba1574c63df">libMesh::DofMap</a>
+</li>
 <li>_varnum
 : <a class="el" href="classlibMesh_1_1WrappedFunction.html#adf7545c022630bf86140ddc38537cbd3">libMesh::WrappedFunction&lt; Output &gt;</a>
 </li>
 <li>_vec
-: <a class="el" href="classlibMesh_1_1EigenSparseVector.html#a322f5f4972302c4ad0241e16b7d42888">libMesh::EigenSparseVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1EpetraVector.html#affda08d05cb864d520f4e520bc07a4e8">libMesh::EpetraVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1LaspackVector.html#a14bd0f053f3c627cbf2eca452886ed6f">libMesh::LaspackVector&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1EpetraVector.html#affda08d05cb864d520f4e520bc07a4e8">libMesh::EpetraVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1PetscVector.html#ad5a8a89fa15de5f7bb6fb2d5ab62dea0">libMesh::PetscVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1EigenSparseVector.html#a322f5f4972302c4ad0241e16b7d42888">libMesh::EigenSparseVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1LaspackVector.html#a14bd0f053f3c627cbf2eca452886ed6f">libMesh::LaspackVector&lt; T &gt;</a>
 </li>
 <li>_vector_fptr
 : <a class="el" href="classlibMesh_1_1AnalyticFunction.html#a888f0f296c8499c52c3c462f664d8680">libMesh::AnalyticFunction&lt; Output &gt;</a>
+</li>
+<li>_verify_dirichlet_bc_consistency
+: <a class="el" href="classlibMesh_1_1DofMap.html#a126ef1ca10f48a41d48010b3296ddef7">libMesh::DofMap</a>
+</li>
+<li>_vtk_mpi_controller
+: <a class="el" href="classlibMesh_1_1LibMeshInit.html#a9d670cfd348ec592ed6e6cad3abd302b">libMesh::LibMeshInit</a>
 </li>
 <li>_w
 : <a class="el" href="classlibMesh_1_1TensorShellMatrix.html#a4b9860fc99c7a50fff6481238f1a8f37">libMesh::TensorShellMatrix&lt; T &gt;</a>
@@ -467,7 +806,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 14:03:02 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:07:10 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

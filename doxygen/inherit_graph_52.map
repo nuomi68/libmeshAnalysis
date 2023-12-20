@@ -1,3 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$structlibMesh_1_1TensorTools_1_1MakeNumber_3_01VectorValue_3_01T_01_4_01_4.html" title="libMesh::TensorTools\l::MakeNumber\&lt; VectorValue\l\&lt; T \&gt; \&gt;" alt="" coords="5,5,215,61"/>
+<area shape="rect" id="node1" href="$classlibMesh_1_1SparsityPattern_1_1AugmentSparsityPattern.html" title="Abstract base class to be used to add user&#45;defined implicit degree of freedom couplings. " alt="" coords="5,5,193,47"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1DofMap_1_1AugmentSparsityPattern.html" title="Backwards compatibility for prior AugmentSparsityPattern users. " alt="" coords="241,5,440,47"/>
 </map>

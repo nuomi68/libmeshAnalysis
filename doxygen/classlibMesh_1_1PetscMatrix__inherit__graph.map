@@ -1,3 +1,5 @@
 <map id="libMesh::PetscMatrix&lt; T &gt;" name="libMesh::PetscMatrix&lt; T &gt;">
-<area shape="rect" id="node2" href="$classlibMesh_1_1SparseMatrix.html" title="这是一个通用的稀疏矩阵类。该类包含了必须在派生类中覆盖的纯虚拟成员。 使用一个公共的基类允许从不同的求解器包中以不同的格式统一访问稀疏矩阵。 " alt="" coords="80,95,285,121"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1SparseMatrix.html" title="这是一个通用的稀疏矩阵类。该类包含了必须在派生类中覆盖的纯虚拟成员。 使用一个公共的基类允许从不同的求解器包中以不同的格式统一访问稀疏矩阵。 " alt="" coords="107,169,312,196"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1ReferenceCountedObject.html" title="libMesh::ReferenceCounted\lObject\&lt; SparseMatrix\&lt; T \&gt; \&gt;" alt="" coords="5,80,224,121"/>
+<area shape="rect" id="node4" href="$classlibMesh_1_1ReferenceCounter.html" title="This is the base class for enabling reference counting. " alt="" coords="15,5,214,32"/>
 </map>

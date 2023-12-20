@@ -1,3 +1,6 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PetscSolverException.html" title="A specialization of the SolverException class for PETSc. " alt="" coords="180,5,401,32"/>
+<area shape="rect" id="node1" href="$classlibMesh_1_1DenseVectorBase.html" title="定义用于有限元计算的抽象稠密向量基类。 可以从这个类派生出特定的稠密向量，例如 DenseSubVectors。 " alt="" coords="5,71,239,98"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1DenseVector.html" title="libMesh::DenseVector\l\&lt; Output \&gt;" alt="" coords="318,5,481,47"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1DenseSubVector.html" title="定义了一个用于有限元计算的稠密子向量。 在将元素载荷向量累加到全局向量之前存储这些载荷向量时特别有用，尤其是在存在方程组的情况下。 所有重写的虚拟函数在 dense_vector_base.h 中有文档说明。 " alt="" coords="287,71,512,98"/>
+<area shape="rect" id="node4" href="$classlibMesh_1_1DenseVector.html" title="定义用于有限元计算的稠密向量类。该类基本上是为了补充 DenseMatrix 类而设计的。 它相对于 std::vector 具有额外的功能，使其在有限元中特别有用，特别是对于方程组。 所有重写的虚拟函..." alt="" coords="299,122,500,149"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$classlibMesh_1_1RawAccessor.html" title="This class provides single index access to FieldType (i.e. " alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1DirichletBoundaries.html" title="We&#39;re using a class instead of a typedef to allow forward declarations and future flexibility..." alt="" coords="116,5,325,32"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1SparsityPattern_1_1Graph.html" title="libMesh::SparsityPattern\l::Graph" alt="" coords="131,57,311,98"/>
 </map>

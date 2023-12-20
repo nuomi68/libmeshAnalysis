@@ -1,3 +1,6 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$classlibMesh_1_1LaspackLinearSolver.html" title="libMesh::LaspackLinearSolver\&lt; T \&gt;" alt="" coords="5,5,259,32"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1ConvergenceFailure.html" title="A class representing a solver&#39;s failure to converge, to be thrown by &quot;libmesh_convergence_failure();&quot;..." alt="" coords="175,5,384,32"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1DynamicCastFailure.html" title="A class representing that a dynamic cast failed to produce expected output. " alt="" coords="174,56,385,83"/>
+<area shape="rect" id="node4" href="$classlibMesh_1_1FileError.html" title="A class representing a failed attempt by the library to open a file (or construct an fstream..." alt="" coords="212,107,347,133"/>
+<area shape="rect" id="node5" href="$classlibMesh_1_1FloatingPointException.html" title="A class representing a floating point exception. " alt="" coords="164,157,395,184"/>
 </map>

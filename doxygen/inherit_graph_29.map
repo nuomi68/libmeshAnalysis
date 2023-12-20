@@ -1,3 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$structlibMesh_1_1RawFieldType_3_01TypeNTensor_3_013_00_01Real_01_4_01_4.html" title="libMesh::RawFieldType\l\&lt; TypeNTensor\&lt; 3, Real \&gt; \&gt;" alt="" coords="5,5,215,47"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1LogicError.html" title="A class to represent the internal &quot;this should never happen&quot; errors, to be thrown by &quot;libmesh_error()..." alt="" coords="166,5,313,32"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1NotImplemented.html" title="A class to stub for features that should be in libMesh, but haven&#39;t been written yet, to be thrown by &quot;libmesh_not_implemented();&quot;. " alt="" coords="144,56,335,83"/>
 </map>

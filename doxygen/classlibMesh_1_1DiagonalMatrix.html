@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,8 +89,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-types">Protected 类型</a> &#124;
 <a href="#pro-methods">Protected 成员函数</a> &#124;
 <a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#pro-static-attribs">静态 Protected 属性</a> &#124;
 <a href="classlibMesh_1_1DiagonalMatrix-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">libMesh::DiagonalMatrix&lt; T &gt; 模板类 参考</div>  </div>
@@ -104,7 +106,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="dynheader">
 类 libMesh::DiagonalMatrix&lt; T &gt; 继承关系图:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classlibMesh_1_1DiagonalMatrix__inherit__graph.svg" width="331" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classlibMesh_1_1DiagonalMatrix__inherit__graph.svg" width="366" height="351"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -126,7 +129,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a8c36fb51791ae18562c452faffbfd1bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html">DiagonalMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a8c36fb51791ae18562c452faffbfd1bb">operator=</a> (<a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; T &gt; &amp;&amp;vec)</td></tr>
 <tr class="memdesc:a8c36fb51791ae18562c452faffbfd1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <code>vec</code> 的内容移动到底层对角线存储中  <a href="#a8c36fb51791ae18562c452faffbfd1bb">更多...</a><br/></td></tr>
 <tr class="separator:a8c36fb51791ae18562c452faffbfd1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91edb6bb9b4558a383a73bcfcd9958b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a91edb6bb9b4558a383a73bcfcd9958b5">init</a> (const numeric_index_type <a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a13bed98237f92e0bfc79c3e8964c9b50">m</a>, const numeric_index_type <a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a61e44e71e3ffcf2f946c7e4a0d25ec4c">n</a>, const numeric_index_type m_l, const numeric_index_type n_l, const numeric_index_type nnz=30, const numeric_index_type noz=10, const numeric_index_type blocksize=1) override</td></tr>
+<tr class="memitem:a91edb6bb9b4558a383a73bcfcd9958b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a91edb6bb9b4558a383a73bcfcd9958b5">init</a> (const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a13bed98237f92e0bfc79c3e8964c9b50">m</a>, const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a61e44e71e3ffcf2f946c7e4a0d25ec4c">n</a>, const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> m_l, const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> n_l, const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> nnz=30, const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> noz=10, const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> blocksize=1) override</td></tr>
 <tr class="memdesc:a91edb6bb9b4558a383a73bcfcd9958b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化矩阵的维度和结构  <a href="#a91edb6bb9b4558a383a73bcfcd9958b5">更多...</a><br/></td></tr>
 <tr class="separator:a91edb6bb9b4558a383a73bcfcd9958b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab302585490d009880e39f0d334ec8287"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#ab302585490d009880e39f0d334ec8287">init</a> (ParallelType type=PARALLEL) override</td></tr>
@@ -155,46 +158,46 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a99f5cd4270626f99fb7be6d31850c96f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a99f5cd4270626f99fb7be6d31850c96f">close</a> () override</td></tr>
 <tr class="memdesc:a99f5cd4270626f99fb7be6d31850c96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">完成矩阵的初始化和结构设置，使其可以用于计算。  <a href="#a99f5cd4270626f99fb7be6d31850c96f">更多...</a><br/></td></tr>
 <tr class="separator:a99f5cd4270626f99fb7be6d31850c96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13bed98237f92e0bfc79c3e8964c9b50"><td class="memItemLeft" align="right" valign="top">virtual numeric_index_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a13bed98237f92e0bfc79c3e8964c9b50">m</a> () const override</td></tr>
+<tr class="memitem:a13bed98237f92e0bfc79c3e8964c9b50"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a13bed98237f92e0bfc79c3e8964c9b50">m</a> () const override</td></tr>
 <tr class="memdesc:a13bed98237f92e0bfc79c3e8964c9b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵的总行数。  <a href="#a13bed98237f92e0bfc79c3e8964c9b50">更多...</a><br/></td></tr>
 <tr class="separator:a13bed98237f92e0bfc79c3e8964c9b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61e44e71e3ffcf2f946c7e4a0d25ec4c"><td class="memItemLeft" align="right" valign="top">virtual numeric_index_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a61e44e71e3ffcf2f946c7e4a0d25ec4c">n</a> () const override</td></tr>
+<tr class="memitem:a61e44e71e3ffcf2f946c7e4a0d25ec4c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a61e44e71e3ffcf2f946c7e4a0d25ec4c">n</a> () const override</td></tr>
 <tr class="memdesc:a61e44e71e3ffcf2f946c7e4a0d25ec4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵的总列数。  <a href="#a61e44e71e3ffcf2f946c7e4a0d25ec4c">更多...</a><br/></td></tr>
 <tr class="separator:a61e44e71e3ffcf2f946c7e4a0d25ec4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a558ddf109ea6fcb2cd3f49c8ef283f7f"><td class="memItemLeft" align="right" valign="top">virtual numeric_index_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a558ddf109ea6fcb2cd3f49c8ef283f7f">row_start</a> () const override</td></tr>
+<tr class="memitem:a558ddf109ea6fcb2cd3f49c8ef283f7f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a558ddf109ea6fcb2cd3f49c8ef283f7f">row_start</a> () const override</td></tr>
 <tr class="memdesc:a558ddf109ea6fcb2cd3f49c8ef283f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵在本地计算中的起始行号。  <a href="#a558ddf109ea6fcb2cd3f49c8ef283f7f">更多...</a><br/></td></tr>
 <tr class="separator:a558ddf109ea6fcb2cd3f49c8ef283f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa251cc476547471a183293afb762121b"><td class="memItemLeft" align="right" valign="top">virtual numeric_index_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#aa251cc476547471a183293afb762121b">row_stop</a> () const override</td></tr>
+<tr class="memitem:aa251cc476547471a183293afb762121b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#aa251cc476547471a183293afb762121b">row_stop</a> () const override</td></tr>
 <tr class="memdesc:aa251cc476547471a183293afb762121b"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵在本地计算中的结束行号。  <a href="#aa251cc476547471a183293afb762121b">更多...</a><br/></td></tr>
 <tr class="separator:aa251cc476547471a183293afb762121b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79a20206e53987095808de515b7fa0ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a79a20206e53987095808de515b7fa0ea">set</a> (const numeric_index_type i, const numeric_index_type j, const T value) override</td></tr>
+<tr class="memitem:a79a20206e53987095808de515b7fa0ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a79a20206e53987095808de515b7fa0ea">set</a> (const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> i, const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> j, const T value) override</td></tr>
 <tr class="memdesc:a79a20206e53987095808de515b7fa0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置矩阵中指定位置的元素值。  <a href="#a79a20206e53987095808de515b7fa0ea">更多...</a><br/></td></tr>
 <tr class="separator:a79a20206e53987095808de515b7fa0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec155146d558dd5d9a7a879b4582a27"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a5ec155146d558dd5d9a7a879b4582a27">add</a> (const numeric_index_type i, const numeric_index_type j, const T value) override</td></tr>
+<tr class="memitem:a5ec155146d558dd5d9a7a879b4582a27"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a5ec155146d558dd5d9a7a879b4582a27">add</a> (const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> i, const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> j, const T value) override</td></tr>
 <tr class="memdesc:a5ec155146d558dd5d9a7a879b4582a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">在矩阵中指定位置的元素上添加一个值。  <a href="#a5ec155146d558dd5d9a7a879b4582a27">更多...</a><br/></td></tr>
 <tr class="separator:a5ec155146d558dd5d9a7a879b4582a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a640de3a8a414c5acd62deb8126c0cfb8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a640de3a8a414c5acd62deb8126c0cfb8">add_matrix</a> (const <a class="el" href="classlibMesh_1_1DenseMatrix.html">DenseMatrix</a>&lt; T &gt; &amp;dm, const std::vector&lt; numeric_index_type &gt; &amp;rows, const std::vector&lt; numeric_index_type &gt; &amp;cols) override</td></tr>
+<tr class="memitem:a640de3a8a414c5acd62deb8126c0cfb8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a640de3a8a414c5acd62deb8126c0cfb8">add_matrix</a> (const <a class="el" href="classlibMesh_1_1DenseMatrix.html">DenseMatrix</a>&lt; T &gt; &amp;dm, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;rows, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;cols) override</td></tr>
 <tr class="memdesc:a640de3a8a414c5acd62deb8126c0cfb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定的 <a class="el" href="classlibMesh_1_1DenseMatrix.html" title="定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 ">DenseMatrix</a> <code>dm</code> 添加到矩阵中的指定行和列。  <a href="#a640de3a8a414c5acd62deb8126c0cfb8">更多...</a><br/></td></tr>
 <tr class="separator:a640de3a8a414c5acd62deb8126c0cfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30a3ef723c022412941577a26d0e89a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a30a3ef723c022412941577a26d0e89a8">add_matrix</a> (const <a class="el" href="classlibMesh_1_1DenseMatrix.html">DenseMatrix</a>&lt; T &gt; &amp;dm, const std::vector&lt; numeric_index_type &gt; &amp;dof_indices) override</td></tr>
+<tr class="memitem:a30a3ef723c022412941577a26d0e89a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a30a3ef723c022412941577a26d0e89a8">add_matrix</a> (const <a class="el" href="classlibMesh_1_1DenseMatrix.html">DenseMatrix</a>&lt; T &gt; &amp;dm, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;dof_indices) override</td></tr>
 <tr class="memdesc:a30a3ef723c022412941577a26d0e89a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定的 <a class="el" href="classlibMesh_1_1DenseMatrix.html" title="定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 ">DenseMatrix</a> <code>dm</code> 添加到矩阵中的指定自由度索引。  <a href="#a30a3ef723c022412941577a26d0e89a8">更多...</a><br/></td></tr>
 <tr class="separator:a30a3ef723c022412941577a26d0e89a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b3c1f79a23664e6ec1f471046261be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#aa3b3c1f79a23664e6ec1f471046261be">add</a> (const T a, const <a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;X) override</td></tr>
 <tr class="memdesc:aa3b3c1f79a23664e6ec1f471046261be"><td class="mdescLeft">&#160;</td><td class="mdescRight">用矩阵 <code>X</code> 中的值乘以标量 <code>a</code> 添加到当前矩阵中。  <a href="#aa3b3c1f79a23664e6ec1f471046261be">更多...</a><br/></td></tr>
 <tr class="separator:aa3b3c1f79a23664e6ec1f471046261be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd8997a07aa9fdd9171481ab9f4cf6d4"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#abd8997a07aa9fdd9171481ab9f4cf6d4">operator()</a> (const numeric_index_type i, const numeric_index_type j) const override</td></tr>
+<tr class="memitem:abd8997a07aa9fdd9171481ab9f4cf6d4"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#abd8997a07aa9fdd9171481ab9f4cf6d4">operator()</a> (const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> i, const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> j) const override</td></tr>
 <tr class="memdesc:abd8997a07aa9fdd9171481ab9f4cf6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵中指定位置的元素值。  <a href="#abd8997a07aa9fdd9171481ab9f4cf6d4">更多...</a><br/></td></tr>
 <tr class="separator:abd8997a07aa9fdd9171481ab9f4cf6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6348c9205a3736535f189de6f80accf8"><td class="memItemLeft" align="right" valign="top">virtual Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a6348c9205a3736535f189de6f80accf8">l1_norm</a> () const override</td></tr>
+<tr class="memitem:a6348c9205a3736535f189de6f80accf8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a6348c9205a3736535f189de6f80accf8">l1_norm</a> () const override</td></tr>
 <tr class="memdesc:a6348c9205a3736535f189de6f80accf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算矩阵的 <img class="formulaInl" alt="$l_1$" src="form_20.png"/> 范数。  <a href="#a6348c9205a3736535f189de6f80accf8">更多...</a><br/></td></tr>
 <tr class="separator:a6348c9205a3736535f189de6f80accf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa470c8d97596427f6513d69029e01d8f"><td class="memItemLeft" align="right" valign="top">virtual Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#aa470c8d97596427f6513d69029e01d8f">linfty_norm</a> () const override</td></tr>
+<tr class="memitem:aa470c8d97596427f6513d69029e01d8f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#aa470c8d97596427f6513d69029e01d8f">linfty_norm</a> () const override</td></tr>
 <tr class="memdesc:aa470c8d97596427f6513d69029e01d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算矩阵的 <img class="formulaInl" alt="$l_\infty$" src="form_22.png"/> 范数。  <a href="#aa470c8d97596427f6513d69029e01d8f">更多...</a><br/></td></tr>
 <tr class="separator:aa470c8d97596427f6513d69029e01d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06b4f8f8163587cbf0a523578893769e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a06b4f8f8163587cbf0a523578893769e">closed</a> () const override</td></tr>
 <tr class="memdesc:a06b4f8f8163587cbf0a523578893769e"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩阵是否已关闭，即是否已完成初始化并可以用于计算。  <a href="#a06b4f8f8163587cbf0a523578893769e">更多...</a><br/></td></tr>
 <tr class="separator:a06b4f8f8163587cbf0a523578893769e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1120e7c92f91babd1ac1d7a7503c7ca6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a1120e7c92f91babd1ac1d7a7503c7ca6">print_personal</a> (std::ostream &amp;os=<a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>) const override</td></tr>
+<tr class="memitem:a1120e7c92f91babd1ac1d7a7503c7ca6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a1120e7c92f91babd1ac1d7a7503c7ca6">print_personal</a> (std::ostream &amp;os=<a class="el" href="namespacelibMesh.html#a08e2b5dd30d71db9e43c52a5a631fdae">libMesh::out</a>) const override</td></tr>
 <tr class="memdesc:a1120e7c92f91babd1ac1d7a7503c7ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">在输出流中打印矩阵的个性化信息。  <a href="#a1120e7c92f91babd1ac1d7a7503c7ca6">更多...</a><br/></td></tr>
 <tr class="separator:a1120e7c92f91babd1ac1d7a7503c7ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3c363bc7590eb8c45a8a85c3ca4d712"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#aa3c363bc7590eb8c45a8a85c3ca4d712">get_diagonal</a> (<a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; T &gt; &amp;dest) const override</td></tr>
@@ -203,7 +206,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a962d7eadbf447a7e6413d145b22dca07"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a962d7eadbf447a7e6413d145b22dca07">get_transpose</a> (<a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;dest) const override</td></tr>
 <tr class="memdesc:a962d7eadbf447a7e6413d145b22dca07"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前矩阵的转置，并将其存储在指定的 <a class="el" href="classlibMesh_1_1SparseMatrix.html" title="这是一个通用的稀疏矩阵类。该类包含了必须在派生类中覆盖的纯虚拟成员。 使用一个公共的基类允许从不同的求解器包中以不同的格式统一访问稀疏矩阵。 ">SparseMatrix</a> 对象中。  <a href="#a962d7eadbf447a7e6413d145b22dca07">更多...</a><br/></td></tr>
 <tr class="separator:a962d7eadbf447a7e6413d145b22dca07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fc6983926bee8a221498ef82f155dee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a4fc6983926bee8a221498ef82f155dee">zero_rows</a> (std::vector&lt; numeric_index_type &gt; &amp;rows, T val=0) override</td></tr>
+<tr class="memitem:a4fc6983926bee8a221498ef82f155dee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a4fc6983926bee8a221498ef82f155dee">zero_rows</a> (std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;rows, T val=0) override</td></tr>
 <tr class="memdesc:a4fc6983926bee8a221498ef82f155dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定行的所有元素置零。  <a href="#a4fc6983926bee8a221498ef82f155dee">更多...</a><br/></td></tr>
 <tr class="separator:a4fc6983926bee8a221498ef82f155dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a742f52fd5baf5a5778d0975772f0d2bc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a742f52fd5baf5a5778d0975772f0d2bc">diagonal</a> () const </td></tr>
@@ -211,36 +214,36 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a742f52fd5baf5a5778d0975772f0d2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71ac3668357d2f61480589e2bc9c1b04"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a71ac3668357d2f61480589e2bc9c1b04">initialized</a> () const </td></tr>
 <tr class="separator:a71ac3668357d2f61480589e2bc9c1b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a327789280fc9e054844455b212d143b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a327789280fc9e054844455b212d143b4">attach_dof_map</a> (const DofMap &amp;dof_map)</td></tr>
-<tr class="memdesc:a327789280fc9e054844455b212d143b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置要使用的 <code>DofMap</code> 的指针。如果不使用单独的稀疏性模式， 则使用来自 DofMap 的模式。  <a href="#a327789280fc9e054844455b212d143b4">更多...</a><br/></td></tr>
+<tr class="memitem:a327789280fc9e054844455b212d143b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a327789280fc9e054844455b212d143b4">attach_dof_map</a> (const <a class="el" href="classlibMesh_1_1DofMap.html">DofMap</a> &amp;dof_map)</td></tr>
+<tr class="memdesc:a327789280fc9e054844455b212d143b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置要使用的 <code><a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a></code> 的指针。如果不使用单独的稀疏性模式， 则使用来自 <a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a> 的模式。  <a href="#a327789280fc9e054844455b212d143b4">更多...</a><br/></td></tr>
 <tr class="separator:a327789280fc9e054844455b212d143b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec90c7c742a5636010ac3e57fef0fa11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#aec90c7c742a5636010ac3e57fef0fa11">attach_sparsity_pattern</a> (const SparsityPattern::Build &amp;sp)</td></tr>
-<tr class="memdesc:aec90c7c742a5636010ac3e57fef0fa11"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置要使用的稀疏性模式的指针。在矩阵需要比系统中的大（或更小以提高效率）的模式， 或者在 DofMap 未计算系统稀疏性模式的情况下使用。  <a href="#aec90c7c742a5636010ac3e57fef0fa11">更多...</a><br/></td></tr>
+<tr class="memitem:aec90c7c742a5636010ac3e57fef0fa11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#aec90c7c742a5636010ac3e57fef0fa11">attach_sparsity_pattern</a> (const <a class="el" href="classlibMesh_1_1SparsityPattern_1_1Build.html">SparsityPattern::Build</a> &amp;sp)</td></tr>
+<tr class="memdesc:aec90c7c742a5636010ac3e57fef0fa11"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置要使用的稀疏性模式的指针。在矩阵需要比系统中的大（或更小以提高效率）的模式， 或者在 <a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a> 未计算系统稀疏性模式的情况下使用。  <a href="#aec90c7c742a5636010ac3e57fef0fa11">更多...</a><br/></td></tr>
 <tr class="separator:aec90c7c742a5636010ac3e57fef0fa11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c3741f9333fde25de40eb921fb73f2d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a0c3741f9333fde25de40eb921fb73f2d">need_full_sparsity_pattern</a> () const </td></tr>
 <tr class="separator:a0c3741f9333fde25de40eb921fb73f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b61220d6f442caedbe46f5f0ed2482"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a06b61220d6f442caedbe46f5f0ed2482">update_sparsity_pattern</a> (const SparsityPattern::Graph &amp;)</td></tr>
+<tr class="memitem:a06b61220d6f442caedbe46f5f0ed2482"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a06b61220d6f442caedbe46f5f0ed2482">update_sparsity_pattern</a> (const <a class="el" href="classlibMesh_1_1SparsityPattern_1_1Graph.html">SparsityPattern::Graph</a> &amp;)</td></tr>
 <tr class="memdesc:a06b61220d6f442caedbe46f5f0ed2482"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新矩阵的稀疏性模式。当您的 <code>SparseMatrix&lt;T&gt;</code> 实现不需要此数据时， 只需不覆盖此方法。  <a href="#a06b61220d6f442caedbe46f5f0ed2482">更多...</a><br/></td></tr>
 <tr class="separator:a06b61220d6f442caedbe46f5f0ed2482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae18fc396a9c97da3658c2859611b105a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#ae18fc396a9c97da3658c2859611b105a">flush</a> ()</td></tr>
 <tr class="memdesc:ae18fc396a9c97da3658c2859611b105a"><td class="mdescLeft">&#160;</td><td class="mdescRight">对于 PETSc 矩阵，此函数类似于 close，但不收缩内存。 当我们希望在 ADD_VALUES 和 INSERT_VALUES 之间切换时，这很有用。 在使用矩阵之前应该调用 close。  <a href="#ae18fc396a9c97da3658c2859611b105a">更多...</a><br/></td></tr>
 <tr class="separator:ae18fc396a9c97da3658c2859611b105a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14a9327110a3461f77dbb500c7e385de"><td class="memItemLeft" align="right" valign="top">virtual numeric_index_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a14a9327110a3461f77dbb500c7e385de">local_m</a> () const </td></tr>
+<tr class="memitem:a14a9327110a3461f77dbb500c7e385de"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a14a9327110a3461f77dbb500c7e385de">local_m</a> () const </td></tr>
 <tr class="memdesc:a14a9327110a3461f77dbb500c7e385de"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取此进程拥有的行数。  <a href="#a14a9327110a3461f77dbb500c7e385de">更多...</a><br/></td></tr>
 <tr class="separator:a14a9327110a3461f77dbb500c7e385de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a164ea3f7f89b81307b71a9841da5d723"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a164ea3f7f89b81307b71a9841da5d723">add_block_matrix</a> (const <a class="el" href="classlibMesh_1_1DenseMatrix.html">DenseMatrix</a>&lt; T &gt; &amp;dm, const std::vector&lt; numeric_index_type &gt; &amp;brows, const std::vector&lt; numeric_index_type &gt; &amp;bcols)</td></tr>
+<tr class="memitem:a164ea3f7f89b81307b71a9841da5d723"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a164ea3f7f89b81307b71a9841da5d723">add_block_matrix</a> (const <a class="el" href="classlibMesh_1_1DenseMatrix.html">DenseMatrix</a>&lt; T &gt; &amp;dm, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;brows, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;bcols)</td></tr>
 <tr class="memdesc:a164ea3f7f89b81307b71a9841da5d723"><td class="mdescLeft">&#160;</td><td class="mdescRight">将完整矩阵 <code>dm</code> 添加到 SparseMatrix。这对于在装配时添加元素矩阵很有用。 矩阵被假定为块矩阵，<code>brow、<code>bcol</code> 对应于*块*行和列索引。</code>  <a href="#a164ea3f7f89b81307b71a9841da5d723">更多...</a><br/></td></tr>
 <tr class="separator:a164ea3f7f89b81307b71a9841da5d723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e6edf8061fefad9842371a787a223ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a2e6edf8061fefad9842371a787a223ea">add_block_matrix</a> (const <a class="el" href="classlibMesh_1_1DenseMatrix.html">DenseMatrix</a>&lt; T &gt; &amp;dm, const std::vector&lt; numeric_index_type &gt; &amp;dof_indices)</td></tr>
+<tr class="memitem:a2e6edf8061fefad9842371a787a223ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a2e6edf8061fefad9842371a787a223ea">add_block_matrix</a> (const <a class="el" href="classlibMesh_1_1DenseMatrix.html">DenseMatrix</a>&lt; T &gt; &amp;dm, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;dof_indices)</td></tr>
 <tr class="memdesc:a2e6edf8061fefad9842371a787a223ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">与 <code><a class="el" href="classlibMesh_1_1SparseMatrix.html#a164ea3f7f89b81307b71a9841da5d723" title="将完整矩阵 dm 添加到 SparseMatrix。这对于在装配时添加元素矩阵很有用。 矩阵被假定为块矩阵，brow、bcol 对应于*块*行和列索引。 ">add_block_matrix()</a></code> 相同，但假定行和列映射相同。 因此矩阵 <code>dm</code> 必须是方阵。  <a href="#a2e6edf8061fefad9842371a787a223ea">更多...</a><br/></td></tr>
 <tr class="separator:a2e6edf8061fefad9842371a787a223ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde4b9d93716e5f60c6c5cb939674b88"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#adde4b9d93716e5f60c6c5cb939674b88">matrix_matrix_mult</a> (<a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;, <a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;, bool)</td></tr>
 <tr class="memdesc:adde4b9d93716e5f60c6c5cb939674b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算 Y = A*X，其中 <code>X</code> 为矩阵。  <a href="#adde4b9d93716e5f60c6c5cb939674b88">更多...</a><br/></td></tr>
 <tr class="separator:adde4b9d93716e5f60c6c5cb939674b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c0872092177029316bdcde01b82c16b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a7c0872092177029316bdcde01b82c16b">add_sparse_matrix</a> (const <a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;, const std::map&lt; numeric_index_type, numeric_index_type &gt; &amp;, const std::map&lt; numeric_index_type, numeric_index_type &gt; &amp;, const T)</td></tr>
+<tr class="memitem:a7c0872092177029316bdcde01b82c16b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a7c0872092177029316bdcde01b82c16b">add_sparse_matrix</a> (const <a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;, const std::map&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>, <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;, const std::map&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>, <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;, const T)</td></tr>
 <tr class="memdesc:a7c0872092177029316bdcde01b82c16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <code>scalar*</code> <code>spm</code> 添加到此矩阵的行和列中： A(rows[i], cols[j]) += scalar * spm(i,j)  <a href="#a7c0872092177029316bdcde01b82c16b">更多...</a><br/></td></tr>
 <tr class="separator:a7c0872092177029316bdcde01b82c16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcdf5bc4246bc646599e5d1a031b3c96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#afcdf5bc4246bc646599e5d1a031b3c96">print</a> (std::ostream &amp;os=<a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a>, const bool sparse=false) const </td></tr>
+<tr class="memitem:afcdf5bc4246bc646599e5d1a031b3c96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#afcdf5bc4246bc646599e5d1a031b3c96">print</a> (std::ostream &amp;os=<a class="el" href="namespacelibMesh.html#a08e2b5dd30d71db9e43c52a5a631fdae">libMesh::out</a>, const bool sparse=false) const </td></tr>
 <tr class="memdesc:afcdf5bc4246bc646599e5d1a031b3c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">将矩阵的内容以统一的样式打印到屏幕上，而不考虑正在使用的矩阵/求解器包。  <a href="#afcdf5bc4246bc646599e5d1a031b3c96">更多...</a><br/></td></tr>
 <tr class="separator:afcdf5bc4246bc646599e5d1a031b3c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb54c8b5852bd939c3aab154e4b8d153"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
@@ -249,13 +252,13 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a1c86b740eb898b645a4f670c2b73a57a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a1c86b740eb898b645a4f670c2b73a57a">print_matlab</a> (const std::string &amp;=&quot;&quot;) const </td></tr>
 <tr class="memdesc:a1c86b740eb898b645a4f670c2b73a57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">以 Matlab 的稀疏矩阵格式打印矩阵的内容。可选择将矩阵打印到名为 <code>name</code> 的文件中。 如果未指定 <code>name</code> ,则将其转储到屏幕上。  <a href="#a1c86b740eb898b645a4f670c2b73a57a">更多...</a><br/></td></tr>
 <tr class="separator:a1c86b740eb898b645a4f670c2b73a57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a038e528c68657407305887e203c66e77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a038e528c68657407305887e203c66e77">create_submatrix</a> (<a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;submatrix, const std::vector&lt; numeric_index_type &gt; &amp;rows, const std::vector&lt; numeric_index_type &gt; &amp;cols) const </td></tr>
+<tr class="memitem:a038e528c68657407305887e203c66e77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a038e528c68657407305887e203c66e77">create_submatrix</a> (<a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;submatrix, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;rows, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;cols) const </td></tr>
 <tr class="memdesc:a038e528c68657407305887e203c66e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数创建一个名为 "submatrix" 的矩阵，其定义由 "rows" 和 "cols" 条目中的行和列索引给定。 目前，此操作仅对 <a class="el" href="classlibMesh_1_1PetscMatrix.html" title="这个类提供了一个方便的接口，用于操作并行稀疏矩阵的 PETSc C 库数据结构。 所有覆盖的虚拟函数都在 sparse_matrix.h 中有详细的文档说明。 ">PetscMatrix</a> 类型定义。 注意：<code>rows</code> 和 <code>cols</code> 向量需要排序； 如果 <code>rows</code> 和 <code>cols</code> 向量未排序，则使用下面的 nosort 版本； <code>rows</code> 和 <code>cols</code> 仅包含由此处理器拥有的索引。  <a href="#a038e528c68657407305887e203c66e77">更多...</a><br/></td></tr>
 <tr class="separator:a038e528c68657407305887e203c66e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9a7cb6a920a580d1020cafbd8287500"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#ab9a7cb6a920a580d1020cafbd8287500">create_submatrix_nosort</a> (<a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;, const std::vector&lt; numeric_index_type &gt; &amp;, const std::vector&lt; numeric_index_type &gt; &amp;) const </td></tr>
+<tr class="memitem:ab9a7cb6a920a580d1020cafbd8287500"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#ab9a7cb6a920a580d1020cafbd8287500">create_submatrix_nosort</a> (<a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;) const </td></tr>
 <tr class="memdesc:ab9a7cb6a920a580d1020cafbd8287500"><td class="mdescLeft">&#160;</td><td class="mdescRight">与上述函数类似，此函数创建由 <code>rows</code> 和 <code>cols</code> 向量中的索引定义的 <code>submatrix。</code> 注意：<code>rows</code> 和 <code>cols</code> 可以是无序的； 如果索引已排序，则对于效率更高的操作，请使用上面的函数； <code>rows</code> 和 <code>cols</code> 可以包含由其他处理器拥有的索引。  <a href="#ab9a7cb6a920a580d1020cafbd8287500">更多...</a><br/></td></tr>
 <tr class="separator:ab9a7cb6a920a580d1020cafbd8287500"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c7e04c4379f9769ab43d906eadb8bd2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a8c7e04c4379f9769ab43d906eadb8bd2">reinit_submatrix</a> (<a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;submatrix, const std::vector&lt; numeric_index_type &gt; &amp;rows, const std::vector&lt; numeric_index_type &gt; &amp;cols) const </td></tr>
+<tr class="memitem:a8c7e04c4379f9769ab43d906eadb8bd2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a8c7e04c4379f9769ab43d906eadb8bd2">reinit_submatrix</a> (<a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;submatrix, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;rows, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;cols) const </td></tr>
 <tr class="memdesc:a8c7e04c4379f9769ab43d906eadb8bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数与上述函数类似，但允许您重用 "submatrix" 的现有稀疏性模式，而不是再次分配它。 如果经常提取相同大小的子矩阵，这应该更有效。  <a href="#a8c7e04c4379f9769ab43d906eadb8bd2">更多...</a><br/></td></tr>
 <tr class="separator:a8c7e04c4379f9769ab43d906eadb8bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaccc5857f1a5d5ca264ded0b8bfb986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#adaccc5857f1a5d5ca264ded0b8bfb986">vector_mult</a> (<a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; T &gt; &amp;dest, const <a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; T &gt; &amp;arg) const </td></tr>
@@ -264,7 +267,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a0a7445955e126e341cd9a2e71b3c3976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a0a7445955e126e341cd9a2e71b3c3976">vector_mult_add</a> (<a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; T &gt; &amp;dest, const <a class="el" href="classlibMesh_1_1NumericVector.html">NumericVector</a>&lt; T &gt; &amp;arg) const </td></tr>
 <tr class="memdesc:a0a7445955e126e341cd9a2e71b3c3976"><td class="mdescLeft">&#160;</td><td class="mdescRight">将矩阵乘以 <a class="el" href="classlibMesh_1_1NumericVector.html" title="提供了不同线性代数库的向量存储方案的统一接口。 ">NumericVector</a> <code>arg</code> ,并将结果添加到 <a class="el" href="classlibMesh_1_1NumericVector.html" title="提供了不同线性代数库的向量存储方案的统一接口。 ">NumericVector</a> <code>dest</code> 中。  <a href="#a0a7445955e126e341cd9a2e71b3c3976">更多...</a><br/></td></tr>
 <tr class="separator:a0a7445955e126e341cd9a2e71b3c3976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68d365ec859293cc898a64766e7f7605"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a68d365ec859293cc898a64766e7f7605">get_row</a> (numeric_index_type, std::vector&lt; numeric_index_type &gt; &amp;, std::vector&lt; T &gt; &amp;) const </td></tr>
+<tr class="memitem:a68d365ec859293cc898a64766e7f7605"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a68d365ec859293cc898a64766e7f7605">get_row</a> (<a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>, std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;, std::vector&lt; T &gt; &amp;) const </td></tr>
 <tr class="memdesc:a68d365ec859293cc898a64766e7f7605"><td class="mdescLeft">&#160;</td><td class="mdescRight">从矩阵获取一行。  <a href="#a68d365ec859293cc898a64766e7f7605">更多...</a><br/></td></tr>
 <tr class="separator:a68d365ec859293cc898a64766e7f7605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -274,12 +277,40 @@ Public 成员函数</h2></td></tr>
 &lt; <a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a24060040686ce1e3bf9dd07e47e473da">build</a> (const Parallel::Communicator &amp;comm, const SolverPackage solver_package=<a class="el" href="namespacelibMesh.html#a496c62248223cd940c7715932dd0dc2d">libMesh::default_solver_package</a>(), const MatrixBuildType matrix_build_type=MatrixBuildType::AUTOMATIC)</td></tr>
 <tr class="memdesc:a24060040686ce1e3bf9dd07e47e473da"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用由 <code>solver_package</code> 指定的线性求解器包构建一个 <code>SparseMatrix&lt;T&gt;。</code>  <a href="#a24060040686ce1e3bf9dd07e47e473da">更多...</a><br/></td></tr>
 <tr class="separator:a24060040686ce1e3bf9dd07e47e473da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103b37125ae9eaaadf6f7854df17faa2"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a103b37125ae9eaaadf6f7854df17faa2">get_info</a> ()</td></tr>
+<tr class="memdesc:a103b37125ae9eaaadf6f7854df17faa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a string containing the reference information.  <a href="#a103b37125ae9eaaadf6f7854df17faa2">更多...</a><br/></td></tr>
+<tr class="separator:a103b37125ae9eaaadf6f7854df17faa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ce734a14ffd1dbb6496dab702da8e1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a13ce734a14ffd1dbb6496dab702da8e1">print_info</a> (std::ostream &amp;out_stream=<a class="el" href="namespacelibMesh.html#a08e2b5dd30d71db9e43c52a5a631fdae">libMesh::out</a>)</td></tr>
+<tr class="memdesc:a13ce734a14ffd1dbb6496dab702da8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the reference information, by default to <code><a class="el" href="namespacelibMesh.html#a08e2b5dd30d71db9e43c52a5a631fdae">libMesh::out</a></code>.  <a href="#a13ce734a14ffd1dbb6496dab702da8e1">更多...</a><br/></td></tr>
+<tr class="separator:a13ce734a14ffd1dbb6496dab702da8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e74641afc6e2870c9e1ce412f8c44f"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a50e74641afc6e2870c9e1ce412f8c44f">n_objects</a> ()</td></tr>
+<tr class="memdesc:a50e74641afc6e2870c9e1ce412f8c44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the number of outstanding (created, but not yet destroyed) objects.  <a href="#a50e74641afc6e2870c9e1ce412f8c44f">更多...</a><br/></td></tr>
+<tr class="separator:a50e74641afc6e2870c9e1ce412f8c44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86837c50216b2ddb800b3836d2a08c09"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a86837c50216b2ddb800b3836d2a08c09">enable_print_counter_info</a> ()</td></tr>
+<tr class="memdesc:a86837c50216b2ddb800b3836d2a08c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methods to enable/disable the reference counter output from <a class="el" href="classlibMesh_1_1ReferenceCounter.html#a13ce734a14ffd1dbb6496dab702da8e1" title="Prints the reference information, by default to libMesh::out. ">print_info()</a>  <a href="#a86837c50216b2ddb800b3836d2a08c09">更多...</a><br/></td></tr>
+<tr class="separator:a86837c50216b2ddb800b3836d2a08c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0a2d3d3c531f9f069b0d623d4ace0f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a5c0a2d3d3c531f9f069b0d623d4ace0f">disable_print_counter_info</a> ()</td></tr>
+<tr class="separator:a5c0a2d3d3c531f9f069b0d623d4ace0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected 类型</h2></td></tr>
+<tr class="memitem:adb5daadc989c1fe71ec8d173adf0ed1e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
+std::pair&lt; unsigned int, <br class="typebreak"/>
+unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#adb5daadc989c1fe71ec8d173adf0ed1e">Counts</a></td></tr>
+<tr class="memdesc:adb5daadc989c1fe71ec8d173adf0ed1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure to log the information.  <a href="#adb5daadc989c1fe71ec8d173adf0ed1e">更多...</a><br/></td></tr>
+<tr class="separator:adb5daadc989c1fe71ec8d173adf0ed1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected 成员函数</h2></td></tr>
-<tr class="memitem:ad47b4dedd1f076290fa018395e10ef47"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#ad47b4dedd1f076290fa018395e10ef47">_get_submatrix</a> (<a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;, const std::vector&lt; numeric_index_type &gt; &amp;, const std::vector&lt; numeric_index_type &gt; &amp;, const bool) const </td></tr>
+<tr class="memitem:ad47b4dedd1f076290fa018395e10ef47"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#ad47b4dedd1f076290fa018395e10ef47">_get_submatrix</a> (<a class="el" href="classlibMesh_1_1SparseMatrix.html">SparseMatrix</a>&lt; T &gt; &amp;, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;, const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;, const bool) const </td></tr>
 <tr class="memdesc:ad47b4dedd1f076290fa018395e10ef47"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建子矩阵和 reinit_submatrix 例程的受保护实现。  <a href="#ad47b4dedd1f076290fa018395e10ef47">更多...</a><br/></td></tr>
 <tr class="separator:ad47b4dedd1f076290fa018395e10ef47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cd2f1fbd46c66dade1e750436ee7ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#af0cd2f1fbd46c66dade1e750436ee7ab">increment_constructor_count</a> (const std::string &amp;name) noexcept</td></tr>
+<tr class="memdesc:af0cd2f1fbd46c66dade1e750436ee7ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the construction counter.  <a href="#af0cd2f1fbd46c66dade1e750436ee7ab">更多...</a><br/></td></tr>
+<tr class="separator:af0cd2f1fbd46c66dade1e750436ee7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769ddb2e2299db1aafcdfb33dfb830d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a769ddb2e2299db1aafcdfb33dfb830d8">increment_destructor_count</a> (const std::string &amp;name) noexcept</td></tr>
+<tr class="memdesc:a769ddb2e2299db1aafcdfb33dfb830d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the destruction counter.  <a href="#a769ddb2e2299db1aafcdfb33dfb830d8">更多...</a><br/></td></tr>
+<tr class="separator:a769ddb2e2299db1aafcdfb33dfb830d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected 属性</h2></td></tr>
@@ -287,15 +318,31 @@ Protected 属性</h2></td></tr>
 &lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1DiagonalMatrix.html#abef2633b02a269a73b238232fb6fc50e">_diagonal</a></td></tr>
 <tr class="memdesc:abef2633b02a269a73b238232fb6fc50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">底层对角矩阵存储  <a href="#abef2633b02a269a73b238232fb6fc50e">更多...</a><br/></td></tr>
 <tr class="separator:abef2633b02a269a73b238232fb6fc50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88e1bdd4ea3c4d30c03d64a622546bf4"><td class="memItemLeft" align="right" valign="top">DofMap const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a></td></tr>
-<tr class="memdesc:a88e1bdd4ea3c4d30c03d64a622546bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">与此对象关联的 <code>DofMap</code> 对象。可以查询其在处理器上的自由度计数。  <a href="#a88e1bdd4ea3c4d30c03d64a622546bf4">更多...</a><br/></td></tr>
+<tr class="memitem:a88e1bdd4ea3c4d30c03d64a622546bf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1DofMap.html">DofMap</a> const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a></td></tr>
+<tr class="memdesc:a88e1bdd4ea3c4d30c03d64a622546bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">与此对象关联的 <code><a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a></code> 对象。可以查询其在处理器上的自由度计数。  <a href="#a88e1bdd4ea3c4d30c03d64a622546bf4">更多...</a><br/></td></tr>
 <tr class="separator:a88e1bdd4ea3c4d30c03d64a622546bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb2470aa6002e1c74e8c94bb5b2423d0"><td class="memItemLeft" align="right" valign="top">SparsityPattern::Build const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#adb2470aa6002e1c74e8c94bb5b2423d0">_sp</a></td></tr>
+<tr class="memitem:adb2470aa6002e1c74e8c94bb5b2423d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlibMesh_1_1SparsityPattern_1_1Build.html">SparsityPattern::Build</a> const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#adb2470aa6002e1c74e8c94bb5b2423d0">_sp</a></td></tr>
 <tr class="memdesc:adb2470aa6002e1c74e8c94bb5b2423d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">与此对象关联的 <code>sparsity</code> pattern。在需要时， 应查询其入口计数（或使用 need_full_sparsity_pattern，模式）。  <a href="#adb2470aa6002e1c74e8c94bb5b2423d0">更多...</a><br/></td></tr>
 <tr class="separator:adb2470aa6002e1c74e8c94bb5b2423d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9af4f8901ed954b3980801faf2250a55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1SparseMatrix.html#a9af4f8901ed954b3980801faf2250a55">_is_initialized</a></td></tr>
 <tr class="memdesc:a9af4f8901ed954b3980801faf2250a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">标志，指示矩阵是否已初始化。  <a href="#a9af4f8901ed954b3980801faf2250a55">更多...</a><br/></td></tr>
 <tr class="separator:a9af4f8901ed954b3980801faf2250a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+静态 Protected 属性</h2></td></tr>
+<tr class="memitem:a7c913252d05560f8bc7c75a63547c4c3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classlibMesh_1_1ReferenceCounter.html#adb5daadc989c1fe71ec8d173adf0ed1e">Counts</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">_counts</a></td></tr>
+<tr class="memdesc:a7c913252d05560f8bc7c75a63547c4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actually holds the data.  <a href="#a7c913252d05560f8bc7c75a63547c4c3">更多...</a><br/></td></tr>
+<tr class="separator:a7c913252d05560f8bc7c75a63547c4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c30f0f71dcd00f00faa8e46aa3e043"><td class="memItemLeft" align="right" valign="top">static Threads::atomic<br class="typebreak"/>
+&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#ad2c30f0f71dcd00f00faa8e46aa3e043">_n_objects</a></td></tr>
+<tr class="memdesc:ad2c30f0f71dcd00f00faa8e46aa3e043"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of objects.  <a href="#ad2c30f0f71dcd00f00faa8e46aa3e043">更多...</a><br/></td></tr>
+<tr class="separator:ad2c30f0f71dcd00f00faa8e46aa3e043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abedbd3a4ce19686187449a8a0557b74b"><td class="memItemLeft" align="right" valign="top">static Threads::spin_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#abedbd3a4ce19686187449a8a0557b74b">_mutex</a></td></tr>
+<tr class="memdesc:abedbd3a4ce19686187449a8a0557b74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutual exclusion object to enable thread-safe reference counting.  <a href="#abedbd3a4ce19686187449a8a0557b74b">更多...</a><br/></td></tr>
+<tr class="separator:abedbd3a4ce19686187449a8a0557b74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f75e8a4a280f2c41636f2ae1307a311"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">_enable_print_counter</a> = true</td></tr>
+<tr class="memdesc:a8f75e8a4a280f2c41636f2ae1307a311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to control whether reference count information is printed when print_info is called.  <a href="#a8f75e8a4a280f2c41636f2ae1307a311">更多...</a><br/></td></tr>
+<tr class="separator:a8f75e8a4a280f2c41636f2ae1307a311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
@@ -306,7 +353,33 @@ class libMesh::DiagonalMatrix&lt; T &gt;</h3>
 <dl class="section date"><dt>日期</dt><dd>2019 </dd></dl>
 
 <p>在文件 <a class="el" href="diagonal__matrix_8h_source.html">diagonal_matrix.h</a> 第 <a class="el" href="diagonal__matrix_8h_source.html#l00042">42</a> 行定义.</p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="adb5daadc989c1fe71ec8d173adf0ed1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, std::pair&lt;unsigned int, unsigned int&gt; &gt; <a class="el" href="classlibMesh_1_1ReferenceCounter.html#adb5daadc989c1fe71ec8d173adf0ed1e">libMesh::ReferenceCounter::Counts</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Data structure to log the information. </p>
+<p>The log is identified by the class name. </p>
+
+<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
 <a class="anchor" id="a307bacfb085063144d15ddea40094c09"></a>
 <div class="memitem">
 <div class="memproto">
@@ -342,7 +415,7 @@ template&lt;typename T &gt; </div>
 
 <p>在文件 <a class="el" href="diagonal__matrix_8C_source.html">diagonal_matrix.C</a> 第 <a class="el" href="diagonal__matrix_8C_source.html#l00033">33</a> 行定义.</p>
 
-<p>参考 <a class="el" href="diagonal__matrix_8h_source.html#l00292">libMesh::DiagonalMatrix&lt; T &gt;::_diagonal</a> , 以及 <a class="el" href="numeric__vector_8C_source.html#l00050">libMesh::NumericVector&lt; typename &gt;::build()</a>.</p>
+<p>参考 <a class="el" href="diagonal__matrix_8h_source.html#l00292">libMesh::DiagonalMatrix&lt; T &gt;::_diagonal</a> , 以及 <a class="el" href="numeric__vector_8C_source.html#l00050">libMesh::NumericVector&lt; T &gt;::build()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                                      : SparseMatrix&lt;T&gt;(comm_in)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classlibMesh_1_1DiagonalMatrix.html#abef2633b02a269a73b238232fb6fc50e">_diagonal</a> = <a class="code" href="classlibMesh_1_1NumericVector.html#adba4a30965537656bb3b0c6f924ff040">NumericVector&lt;T&gt;::build</a>(comm_in);</div>
@@ -426,13 +499,13 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -480,13 +553,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::add </td>
           <td>(</td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -608,13 +681,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>brows</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>bcols</em>&#160;</td>
         </tr>
         <tr>
@@ -642,7 +715,7 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  libmesh_assert_equal_to (dm.m() / brows.size(), dm.n() / bcols.size());</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">const</span> numeric_index_type blocksize = cast_int&lt;numeric_index_type&gt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> blocksize = cast_int&lt;numeric_index_type&gt;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    (dm.m() / brows.size());</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  libmesh_assert_equal_to (dm.m()%blocksize, 0);</div>
@@ -655,7 +728,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; row : brows)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      numeric_index_type i = row * blocksize;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> i = row * blocksize;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v=0; v&lt;blocksize; v++)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        rows.push_back(i++);</div>
@@ -663,7 +736,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; col : bcols)</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      numeric_index_type j = col * blocksize;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> j = col * blocksize;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v=0; v&lt;blocksize; v++)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        cols.push_back(j++);</div>
@@ -672,6 +745,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a4c80febebcb230adf46a498247cc43a6">add_matrix</a> (dm, rows, cols);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a4c80febebcb230adf46a498247cc43a6"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a4c80febebcb230adf46a498247cc43a6">libMesh::SparseMatrix::add_matrix</a></div><div class="ttdeci">virtual void add_matrix(const DenseMatrix&lt; T &gt; &amp;dm, const std::vector&lt; numeric_index_type &gt; &amp;rows, const std::vector&lt; numeric_index_type &gt; &amp;cols)=0</div><div class="ttdoc">将完整矩阵 dm 添加到 SparseMatrix。这对于在装配时添加元素矩阵很有用。 </div></div>
+<div class="ttc" id="namespacelibMesh_html_a7b7f67063580fe2c771a3dc5095d6ecb"><div class="ttname"><a href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">libMesh::numeric_index_type</a></div><div class="ttdeci">dof_id_type numeric_index_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00099">id_types.h:99</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -693,7 +767,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>dof_indices</em>&#160;</td>
         </tr>
         <tr>
@@ -739,13 +813,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>rows</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>cols</em>&#160;</td>
         </tr>
         <tr>
@@ -813,7 +887,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>dof_indices</em>&#160;</td>
         </tr>
         <tr>
@@ -868,13 +942,13 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::map&lt; numeric_index_type, numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>, <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::map&lt; numeric_index_type, numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>, <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -917,7 +991,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::attach_dof_map </td>
           <td>(</td>
-          <td class="paramtype">const DofMap &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1DofMap.html">DofMap</a> &amp;&#160;</td>
           <td class="paramname"><em>dof_map</em></td><td>)</td>
           <td></td>
         </tr>
@@ -929,15 +1003,20 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>设置要使用的 <code>DofMap</code> 的指针。如果不使用单独的稀疏性模式， 则使用来自 DofMap 的模式。 </p>
+<p>设置要使用的 <code><a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a></code> 的指针。如果不使用单独的稀疏性模式， 则使用来自 <a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a> 的模式。 </p>
 <p><code>dof_map</code> 的生命周期必须超过 <code>this</code> 的生命周期。 </p>
 
 <p>在文件 <a class="el" href="sparse__matrix_8C_source.html">sparse_matrix.C</a> 第 <a class="el" href="sparse__matrix_8C_source.html#l00058">58</a> 行定义.</p>
+
+<p>参考 <a class="el" href="dof__map_8h_source.html#l00548">libMesh::DofMap::get_sparsity_pattern()</a>.</p>
+
+<p>参考自 <a class="el" href="dof__map_8C_source.html#l00307">libMesh::DofMap::update_sparsity_pattern()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a> = &amp;dof_map;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classlibMesh_1_1SparseMatrix.html#adb2470aa6002e1c74e8c94bb5b2423d0">_sp</a>)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classlibMesh_1_1SparseMatrix.html#adb2470aa6002e1c74e8c94bb5b2423d0">_sp</a> = dof_map.get_sparsity_pattern();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classlibMesh_1_1SparseMatrix.html#adb2470aa6002e1c74e8c94bb5b2423d0">_sp</a> = dof_map.<a class="code" href="classlibMesh_1_1SparsityPattern_1_1Build.html#a7849811fdb1b4272b400cebb96966be7">get_sparsity_pattern</a>();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1SparsityPattern_1_1Build_html_a7849811fdb1b4272b400cebb96966be7"><div class="ttname"><a href="classlibMesh_1_1SparsityPattern_1_1Build.html#a7849811fdb1b4272b400cebb96966be7">libMesh::SparsityPattern::Build::get_sparsity_pattern</a></div><div class="ttdeci">const SparsityPattern::Graph &amp; get_sparsity_pattern() const </div><div class="ttdoc">Rows of sparse matrix indices, indexed by the offset from the first DoF on this processor. </div><div class="ttdef"><b>Definition:</b> <a href="sparsity__pattern_8h_source.html#l00150">sparsity_pattern.h:150</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_adb2470aa6002e1c74e8c94bb5b2423d0"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#adb2470aa6002e1c74e8c94bb5b2423d0">libMesh::SparseMatrix::_sp</a></div><div class="ttdeci">SparsityPattern::Build const * _sp</div><div class="ttdoc">与此对象关联的 sparsity pattern。在需要时， 应查询其入口计数（或使用 need_full_sparsity_pattern，模式）。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8h_source.html#l00500">sparse_matrix.h:500</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a88e1bdd4ea3c4d30c03d64a622546bf4"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">libMesh::SparseMatrix::_dof_map</a></div><div class="ttdeci">DofMap const * _dof_map</div><div class="ttdoc">与此对象关联的 DofMap 对象。可以查询其在处理器上的自由度计数。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8h_source.html#l00494">sparse_matrix.h:494</a></div></div>
 </div><!-- fragment -->
@@ -955,7 +1034,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::attach_sparsity_pattern </td>
           <td>(</td>
-          <td class="paramtype">const SparsityPattern::Build &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1SparsityPattern_1_1Build.html">SparsityPattern::Build</a> &amp;&#160;</td>
           <td class="paramname"><em>sp</em></td><td>)</td>
           <td></td>
         </tr>
@@ -967,10 +1046,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>设置要使用的稀疏性模式的指针。在矩阵需要比系统中的大（或更小以提高效率）的模式， 或者在 DofMap 未计算系统稀疏性模式的情况下使用。 </p>
+<p>设置要使用的稀疏性模式的指针。在矩阵需要比系统中的大（或更小以提高效率）的模式， 或者在 <a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a> 未计算系统稀疏性模式的情况下使用。 </p>
 <p><code>sp</code> 的生命周期必须超过 <code>this</code> 的生命周期。 </p>
 
 <p>在文件 <a class="el" href="sparse__matrix_8C_source.html">sparse_matrix.C</a> 第 <a class="el" href="sparse__matrix_8C_source.html#l00068">68</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dof__map_8C_source.html#l00307">libMesh::DofMap::update_sparsity_pattern()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classlibMesh_1_1SparseMatrix.html#adb2470aa6002e1c74e8c94bb5b2423d0">_sp</a> = &amp;sp;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
@@ -1022,10 +1103,12 @@ template&lt;typename T &gt; </div>
 
 <p>在文件 <a class="el" href="sparse__matrix_8C_source.html">sparse_matrix.C</a> 第 <a class="el" href="sparse__matrix_8C_source.html#l00151">151</a> 行定义.</p>
 
-<p>参考 <a class="el" href="libmesh_8C_source.html#l00249">libMesh::EIGEN_SOLVERS</a>, <a class="el" href="libmesh_8C_source.html#l00251">libMesh::LASPACK_SOLVERS</a> , 以及 <a class="el" href="libmesh_8C_source.html#l00247">libMesh::TRILINOS_SOLVERS</a>.</p>
+<p>参考 <a class="el" href="libmesh_8C_source.html#l00249">libMesh::EIGEN_SOLVERS</a>, <a class="el" href="libmesh_8C_source.html#l00251">libMesh::LASPACK_SOLVERS</a>, <a class="el" href="libmesh__common_8h_source.html#l00516">libMesh::libmesh_ignore()</a> , 以及 <a class="el" href="libmesh_8C_source.html#l00247">libMesh::TRILINOS_SOLVERS</a>.</p>
+
+<p>参考自 <a class="el" href="dof__map__constraints_8C_source.html#l01898">libMesh::DofMap::process_mesh_constraint_rows()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="comment">// Avoid unused parameter warnings when no solver packages are enabled.</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  libmesh_ignore(comm);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="namespacelibMesh.html#a43f45640aab1af26176e69592c666432">libmesh_ignore</a>(comm);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">if</span> (matrix_build_type == MatrixBuildType::DIAGONAL)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> std::make_unique&lt;DiagonalMatrix&lt;T&gt;&gt;(comm);</div>
@@ -1063,6 +1146,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
 <div class="ttc" id="namespacelibMesh_html_ae73defe502d02a0aa591555f4dd18dd4"><div class="ttname"><a href="namespacelibMesh.html#ae73defe502d02a0aa591555f4dd18dd4">libMesh::EIGEN_SOLVERS</a></div><div class="ttdeci">EIGEN_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00249">libmesh.C:249</a></div></div>
 <div class="ttc" id="namespacelibMesh_html_aa27e267f495ee0599f7cd8981c0cf7ad"><div class="ttname"><a href="namespacelibMesh.html#aa27e267f495ee0599f7cd8981c0cf7ad">libMesh::TRILINOS_SOLVERS</a></div><div class="ttdeci">TRILINOS_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00247">libmesh.C:247</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a43f45640aab1af26176e69592c666432"><div class="ttname"><a href="namespacelibMesh.html#a43f45640aab1af26176e69592c666432">libMesh::libmesh_ignore</a></div><div class="ttdeci">void libmesh_ignore(const Args &amp;...)</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00516">libmesh_common.h:516</a></div></div>
 <div class="ttc" id="namespacelibMesh_html_aeb2a777af969e03421c99c4afe9d68a0"><div class="ttname"><a href="namespacelibMesh.html#aeb2a777af969e03421c99c4afe9d68a0">libMesh::LASPACK_SOLVERS</a></div><div class="ttdeci">LASPACK_SOLVERS</div><div class="ttdef"><b>Definition:</b> <a href="libmesh_8C_source.html#l00251">libmesh.C:251</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1239,13 +1323,13 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>rows</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>cols</em>&#160;</td>
         </tr>
         <tr>
@@ -1294,13 +1378,13 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1352,6 +1436,72 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keywordflow">return</span> *<a class="code" href="classlibMesh_1_1DiagonalMatrix.html#abef2633b02a269a73b238232fb6fc50e">_diagonal</a>;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1DiagonalMatrix_html_abef2633b02a269a73b238232fb6fc50e"><div class="ttname"><a href="classlibMesh_1_1DiagonalMatrix.html#abef2633b02a269a73b238232fb6fc50e">libMesh::DiagonalMatrix::_diagonal</a></div><div class="ttdeci">std::unique_ptr&lt; NumericVector&lt; T &gt; &gt; _diagonal</div><div class="ttdoc">底层对角矩阵存储 </div><div class="ttdef"><b>Definition:</b> <a href="diagonal__matrix_8h_source.html#l00292">diagonal_matrix.h:292</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5c0a2d3d3c531f9f069b0d623d4ace0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::ReferenceCounter::disable_print_counter_info </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="reference__counter_8C_source.html">reference_counter.C</a> 第 <a class="el" href="reference__counter_8C_source.html#l00100">100</a> 行定义.</p>
+
+<p>参考 <a class="el" href="reference__counter_8h_source.html#l00143">libMesh::ReferenceCounter::_enable_print_counter</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">_enable_print_counter</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a8f75e8a4a280f2c41636f2ae1307a311"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">libMesh::ReferenceCounter::_enable_print_counter</a></div><div class="ttdeci">static bool _enable_print_counter</div><div class="ttdoc">Flag to control whether reference count information is printed when print_info is called...</div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00143">reference_counter.h:143</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a86837c50216b2ddb800b3836d2a08c09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::ReferenceCounter::enable_print_counter_info </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Methods to enable/disable the reference counter output from <a class="el" href="classlibMesh_1_1ReferenceCounter.html#a13ce734a14ffd1dbb6496dab702da8e1" title="Prints the reference information, by default to libMesh::out. ">print_info()</a> </p>
+
+<p>在文件 <a class="el" href="reference__counter_8C_source.html">reference_counter.C</a> 第 <a class="el" href="reference__counter_8C_source.html#l00094">94</a> 行定义.</p>
+
+<p>参考 <a class="el" href="reference__counter_8h_source.html#l00143">libMesh::ReferenceCounter::_enable_print_counter</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">_enable_print_counter</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a8f75e8a4a280f2c41636f2ae1307a311"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">libMesh::ReferenceCounter::_enable_print_counter</a></div><div class="ttdeci">static bool _enable_print_counter</div><div class="ttdoc">Flag to control whether reference count information is printed when print_info is called...</div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00143">reference_counter.h:143</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1432,6 +1582,63 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="a103b37125ae9eaaadf6f7854df17faa2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string libMesh::ReferenceCounter::get_info </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a string containing the reference information. </p>
+
+<p>在文件 <a class="el" href="reference__counter_8C_source.html">reference_counter.C</a> 第 <a class="el" href="reference__counter_8C_source.html#l00047">47</a> 行定义.</p>
+
+<p>参考 <a class="el" href="reference__counter_8h_source.html#l00124">libMesh::ReferenceCounter::_counts</a>.</p>
+
+<p>参考自 <a class="el" href="reference__counter_8C_source.html#l00081">libMesh::ReferenceCounter::print_info()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#if defined(LIBMESH_ENABLE_REFERENCE_COUNTING) &amp;&amp; defined(DEBUG)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::ostringstream oss;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  oss &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; ---------------------------------------------------------------------------- \n&quot;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;| Reference count information                                                |\n&quot;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; ---------------------------------------------------------------------------- \n&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; [name, cd] : <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">_counts</a>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    oss &lt;&lt; <span class="stringliteral">&quot;| &quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; reference count information:\n&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;|  Creations:    &quot;</span> &lt;&lt; cd.first    &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;|  Destructions: &quot;</span> &lt;&lt; cd.second &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  oss &lt;&lt; <span class="stringliteral">&quot; ---------------------------------------------------------------------------- \n&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">return</span> oss.str();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a7c913252d05560f8bc7c75a63547c4c3"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">libMesh::ReferenceCounter::_counts</a></div><div class="ttdeci">static Counts _counts</div><div class="ttdoc">Actually holds the data. </div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00124">reference_counter.h:124</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a68d365ec859293cc898a64766e7f7605"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1444,13 +1651,13 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname">virtual void <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::get_row </td>
           <td>(</td>
-          <td class="paramtype">numeric_index_type&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -1539,6 +1746,110 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="af0cd2f1fbd46c66dade1e750436ee7ab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::ReferenceCounter::increment_constructor_count </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increments the construction counter. </p>
+<p>Should be called in the constructor of any derived class that will be reference counted. </p>
+
+<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00183">183</a> 行定义.</p>
+
+<p>参考 <a class="el" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a>.</p>
+
+<p>参考自 <a class="el" href="reference__counted__object_8h_source.html#l00074">libMesh::ReferenceCountedObject&lt; SparseMatrix&lt; T &gt; &gt;::ReferenceCountedObject()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  libmesh_try</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    Threads::spin_mutex::scoped_lock lock(Threads::spin_mtx);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    std::pair&lt;unsigned int, unsigned int&gt; &amp; p = <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">_counts</a>[name];</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    p.first++;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  libmesh_catch (...)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">auto</span> stream = <a class="code" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a>.get();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    stream-&gt;exceptions(stream-&gt;goodbit); <span class="comment">// stream must not throw</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;Encountered unrecoverable error while calling &quot;</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;ReferenceCounter::increment_constructor_count() &quot;</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;for a(n) &quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; object.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    std::terminate();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_html_ab0817b8542b150bfa3fb23393df99f28"><div class="ttname"><a href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a></div><div class="ttdeci">OStreamProxy err</div></div>
+<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a7c913252d05560f8bc7c75a63547c4c3"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">libMesh::ReferenceCounter::_counts</a></div><div class="ttdeci">static Counts _counts</div><div class="ttdoc">Actually holds the data. </div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00124">reference_counter.h:124</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a769ddb2e2299db1aafcdfb33dfb830d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::ReferenceCounter::increment_destructor_count </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increments the destruction counter. </p>
+<p>Should be called in the destructor of any derived class that will be reference counted. </p>
+
+<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00207">207</a> 行定义.</p>
+
+<p>参考 <a class="el" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a>.</p>
+
+<p>参考自 <a class="el" href="reference__counted__object_8h_source.html#l00127">libMesh::ReferenceCountedObject&lt; SparseMatrix&lt; T &gt; &gt;::~ReferenceCountedObject()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  libmesh_try</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    Threads::spin_mutex::scoped_lock lock(Threads::spin_mtx);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    std::pair&lt;unsigned int, unsigned int&gt; &amp; p = <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">_counts</a>[name];</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    p.second++;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  libmesh_catch (...)</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keyword">auto</span> stream = <a class="code" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a>.get();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    stream-&gt;exceptions(stream-&gt;goodbit); <span class="comment">// stream must not throw</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;Encountered unrecoverable error while calling &quot;</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;ReferenceCounter::increment_destructor_count() &quot;</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;for a(n) &quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; object.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    std::terminate();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
+<div class="ttc" id="namespacelibMesh_html_ab0817b8542b150bfa3fb23393df99f28"><div class="ttname"><a href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a></div><div class="ttdeci">OStreamProxy err</div></div>
+<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a7c913252d05560f8bc7c75a63547c4c3"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a7c913252d05560f8bc7c75a63547c4c3">libMesh::ReferenceCounter::_counts</a></div><div class="ttdeci">static Counts _counts</div><div class="ttdoc">Actually holds the data. </div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00124">reference_counter.h:124</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a91edb6bb9b4558a383a73bcfcd9958b5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1551,43 +1862,43 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::init </td>
           <td>(</td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>m_l</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>n_l</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>nnz</em> = <code>30</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>noz</em> = <code>10</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>blocksize</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -1666,11 +1977,13 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  libmesh_assert(this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classlibMesh_1_1DiagonalMatrix.html#abef2633b02a269a73b238232fb6fc50e">_diagonal</a>-&gt;init(this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;n_dofs(),</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                  this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;n_dofs_on_processor(this-&gt;processor_id()),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classlibMesh_1_1DiagonalMatrix.html#abef2633b02a269a73b238232fb6fc50e">_diagonal</a>-&gt;init(this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#a77f8d984574b1bf8886057799e9b0134">n_dofs</a>(),</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                  this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#a765ac72717810e0a86f04ab8a938cd22">n_dofs_on_processor</a>(this-&gt;processor_id()),</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                  <span class="comment">/*fast=*/</span><span class="keyword">false</span>,</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                  type);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html_a77f8d984574b1bf8886057799e9b0134"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a77f8d984574b1bf8886057799e9b0134">libMesh::DofMap::n_dofs</a></div><div class="ttdeci">dof_id_type n_dofs() const </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00659">dof_map.h:659</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html_a765ac72717810e0a86f04ab8a938cd22"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a765ac72717810e0a86f04ab8a938cd22">libMesh::DofMap::n_dofs_on_processor</a></div><div class="ttdeci">dof_id_type n_dofs_on_processor(const processor_id_type proc) const </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00675">dof_map.h:675</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a88e1bdd4ea3c4d30c03d64a622546bf4"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">libMesh::SparseMatrix::_dof_map</a></div><div class="ttdeci">DofMap const * _dof_map</div><div class="ttdoc">与此对象关联的 DofMap 对象。可以查询其在处理器上的自由度计数。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8h_source.html#l00494">sparse_matrix.h:494</a></div></div>
 <div class="ttc" id="classlibMesh_1_1DiagonalMatrix_html_abef2633b02a269a73b238232fb6fc50e"><div class="ttname"><a href="classlibMesh_1_1DiagonalMatrix.html#abef2633b02a269a73b238232fb6fc50e">libMesh::DiagonalMatrix::_diagonal</a></div><div class="ttdeci">std::unique_ptr&lt; NumericVector&lt; T &gt; &gt; _diagonal</div><div class="ttdoc">底层对角矩阵存储 </div><div class="ttdef"><b>Definition:</b> <a href="diagonal__matrix_8h_source.html#l00292">diagonal_matrix.h:292</a></div></div>
 </div><!-- fragment -->
@@ -1824,7 +2137,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Real <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::l1_norm </td>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::l1_norm </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1860,7 +2173,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Real <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::linfty_norm </td>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::linfty_norm </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1896,7 +2209,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual numeric_index_type <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::local_m </td>
+          <td class="memname">virtual <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::local_m </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1932,7 +2245,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">numeric_index_type <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::m </td>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::m </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2016,7 +2329,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">numeric_index_type <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::n </td>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::n </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2038,6 +2351,39 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1DiagonalMatrix.html#abef2633b02a269a73b238232fb6fc50e">_diagonal</a>-&gt;size();</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1DiagonalMatrix_html_abef2633b02a269a73b238232fb6fc50e"><div class="ttname"><a href="classlibMesh_1_1DiagonalMatrix.html#abef2633b02a269a73b238232fb6fc50e">libMesh::DiagonalMatrix::_diagonal</a></div><div class="ttdeci">std::unique_ptr&lt; NumericVector&lt; T &gt; &gt; _diagonal</div><div class="ttdoc">底层对角矩阵存储 </div><div class="ttdef"><b>Definition:</b> <a href="diagonal__matrix_8h_source.html#l00292">diagonal_matrix.h:292</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a50e74641afc6e2870c9e1ce412f8c44f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int libMesh::ReferenceCounter::n_objects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prints the number of outstanding (created, but not yet destroyed) objects. </p>
+
+<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00085">85</a> 行定义.</p>
+
+<p>参考 <a class="el" href="reference__counter_8h_source.html#l00132">libMesh::ReferenceCounter::_n_objects</a>.</p>
+
+<p>参考自 <a class="el" href="libmesh_8C_source.html#l00668">libMesh::LibMeshInit::~LibMeshInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="classlibMesh_1_1ReferenceCounter.html#ad2c30f0f71dcd00f00faa8e46aa3e043">_n_objects</a>; }</div>
+<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_ad2c30f0f71dcd00f00faa8e46aa3e043"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#ad2c30f0f71dcd00f00faa8e46aa3e043">libMesh::ReferenceCounter::_n_objects</a></div><div class="ttdeci">static Threads::atomic&lt; unsigned int &gt; _n_objects</div><div class="ttdoc">The number of objects. </div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00132">reference_counter.h:132</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2069,6 +2415,8 @@ template&lt;typename T&gt; </div>
 <p>被 <a class="el" href="classlibMesh_1_1EpetraMatrix.html#a7ff42a5fc0e940bfbe04bacfe00ea93f">libMesh::EpetraMatrix&lt; T &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1LaspackMatrix.html#a9c15dcff18b9de22970c9826be16b6b5">libMesh::LaspackMatrix&lt; T &gt;</a> 重载.</p>
 
 <p>在文件 <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a> 第 <a class="el" href="sparse__matrix_8h_source.html#l00126">126</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dof__map_8C_source.html#l00278">libMesh::DofMap::attach_matrix()</a> , 以及 <a class="el" href="dof__map_8C_source.html#l00307">libMesh::DofMap::update_sparsity_pattern()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 </div><!-- fragment -->
 </div>
@@ -2085,13 +2433,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">T <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>j</em>&#160;</td>
         </tr>
         <tr>
@@ -2238,7 +2586,7 @@ template&lt;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; Complex &gt;::print </td>
+          <td class="memname">void <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; <a class="el" href="namespacelibMesh.html#a43dea8acd5b918a056f650911d139db0">Complex</a> &gt;::print </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>os</em>, </td>
@@ -2263,6 +2611,8 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 
 <p>在文件 <a class="el" href="sparse__matrix_8C_source.html">sparse_matrix.C</a> 第 <a class="el" href="sparse__matrix_8C_source.html#l00117">117</a> 行定义.</p>
+
+<p>参考 <a class="el" href="float128__shims_8h_source.html#l00088">std::imag()</a> , 以及 <a class="el" href="float128__shims_8h_source.html#l00082">std::real()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="comment">// std::complex&lt;&gt;::operator&lt;&lt;() is defined, but use this form</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
@@ -2275,7 +2625,7 @@ template&lt;&gt; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : make_range(this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a95dedaf3b58050d303a5e971e1124882">m</a>()))</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : make_range(this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a759bad4b67e66f75c5a2fdc0772b755b">n</a>()))</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        os &lt;&lt; std::setw(8) &lt;&lt; (*this)(i,j).real() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        os &lt;&lt; std::setw(8) &lt;&lt; (*this)(i,j).<a class="code" href="namespacestd.html#a135c6f57981ce716ac279b212bf42068">real</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      os &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
@@ -2283,11 +2633,13 @@ template&lt;&gt; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : make_range(this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a95dedaf3b58050d303a5e971e1124882">m</a>()))</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : make_range(this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a759bad4b67e66f75c5a2fdc0772b755b">n</a>()))</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        os &lt;&lt; std::setw(8) &lt;&lt; (*this)(i,j).imag() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        os &lt;&lt; std::setw(8) &lt;&lt; (*this)(i,j).<a class="code" href="namespacestd.html#a21a2b1dd2c0304ffadb6c4767d0cdeb4">imag</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      os &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+<div class="ttc" id="namespacestd_html_a135c6f57981ce716ac279b212bf42068"><div class="ttname"><a href="namespacestd.html#a135c6f57981ce716ac279b212bf42068">std::real</a></div><div class="ttdeci">boost::multiprecision::float128 real(const boost::multiprecision::float128 in)</div><div class="ttdef"><b>Definition:</b> <a href="float128__shims_8h_source.html#l00082">float128_shims.h:82</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a95dedaf3b58050d303a5e971e1124882"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a95dedaf3b58050d303a5e971e1124882">libMesh::SparseMatrix::m</a></div><div class="ttdeci">virtual numeric_index_type m() const =0</div></div>
+<div class="ttc" id="namespacestd_html_a21a2b1dd2c0304ffadb6c4767d0cdeb4"><div class="ttname"><a href="namespacestd.html#a21a2b1dd2c0304ffadb6c4767d0cdeb4">std::imag</a></div><div class="ttdeci">boost::multiprecision::float128 imag(const boost::multiprecision::float128)</div><div class="ttdef"><b>Definition:</b> <a href="float128__shims_8h_source.html#l00088">float128_shims.h:88</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a759bad4b67e66f75c5a2fdc0772b755b"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a759bad4b67e66f75c5a2fdc0772b755b">libMesh::SparseMatrix::n</a></div><div class="ttdeci">virtual numeric_index_type n() const =0</div></div>
 </div><!-- fragment -->
 </div>
@@ -2305,7 +2657,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::print </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em> = <code><a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></code>, </td>
+          <td class="paramname"><em>os</em> = <code><a class="el" href="namespacelibMesh.html#a08e2b5dd30d71db9e43c52a5a631fdae">libMesh::out</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2344,9 +2696,9 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="comment">// it&#39;s serialized properly</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">if</span> (this-&gt;processor_id() == 0)</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      libmesh_assert_equal_to (this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;first_dof(), 0);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="keywordflow">for</span> (numeric_index_type i=this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;first_dof();</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;           i!=this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;end_dof(); ++i)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      libmesh_assert_equal_to (this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#a2cc5678707a3bcb0f64b1cb5c73c813c">first_dof</a>(), 0);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> i=this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#a2cc5678707a3bcb0f64b1cb5c73c813c">first_dof</a>();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;           i!=this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#a265de993749f5bab70c3f9c860defd49">end_dof</a>(); ++i)</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        {</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;          <span class="keywordflow">if</span> (sparse)</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            {</div>
@@ -2369,7 +2721,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      std::vector&lt;numeric_index_type&gt; ibuf, jbuf;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      std::vector&lt;T&gt; cbuf;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      numeric_index_type currenti = this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;end_dof();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      <a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> currenti = this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#a265de993749f5bab70c3f9c860defd49">end_dof</a>();</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> p : IntRange&lt;processor_id_type&gt;(1, this-&gt;n_processors()))</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        {</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;          this-&gt;comm().receive(p, ibuf);</div>
@@ -2388,7 +2740,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            {</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;              <span class="keywordflow">if</span> (sparse)</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                {</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                  <span class="keywordflow">for</span> (numeric_index_type j=0; j&lt;this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a759bad4b67e66f75c5a2fdc0772b755b">n</a>(); j++)</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                  <span class="keywordflow">for</span> (<a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> j=0; j&lt;this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a759bad4b67e66f75c5a2fdc0772b755b">n</a>(); j++)</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                    {</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                      <span class="keywordflow">if</span> (currentb &lt; ibuf.size() &amp;&amp;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                          ibuf[currentb] == currenti &amp;&amp;</div>
@@ -2421,7 +2773,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        {</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;          <span class="keywordflow">for</span> (; currenti != this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a95dedaf3b58050d303a5e971e1124882">m</a>(); ++currenti)</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            {</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;              <span class="keywordflow">for</span> (numeric_index_type j=0; j&lt;this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a759bad4b67e66f75c5a2fdc0772b755b">n</a>(); j++)</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;              <span class="keywordflow">for</span> (<a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> j=0; j&lt;this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a759bad4b67e66f75c5a2fdc0772b755b">n</a>(); j++)</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                os &lt;&lt; static_cast&lt;T&gt;(0.0) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;              os &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            }</div>
@@ -2434,8 +2786,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <span class="comment">// We&#39;ll assume each processor has access to entire</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      <span class="comment">// matrix rows, so (*this)(i,j) is valid if i is a local index.</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordflow">for</span> (numeric_index_type i=this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;first_dof();</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;           i!=this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;end_dof(); ++i)</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> i=this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#a2cc5678707a3bcb0f64b1cb5c73c813c">first_dof</a>();</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;           i!=this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">_dof_map</a>-&gt;<a class="code" href="classlibMesh_1_1DofMap.html#a265de993749f5bab70c3f9c860defd49">end_dof</a>(); ++i)</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        {</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          <span class="keywordflow">for</span> (<span class="keyword">auto</span> j : make_range(this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a759bad4b67e66f75c5a2fdc0772b755b">n</a>()))</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            {</div>
@@ -2454,9 +2806,50 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a71ac3668357d2f61480589e2bc9c1b04"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a71ac3668357d2f61480589e2bc9c1b04">libMesh::SparseMatrix::initialized</a></div><div class="ttdeci">virtual bool initialized() const </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8h_source.html#l00102">sparse_matrix.h:102</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html_a2cc5678707a3bcb0f64b1cb5c73c813c"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a2cc5678707a3bcb0f64b1cb5c73c813c">libMesh::DofMap::first_dof</a></div><div class="ttdeci">dof_id_type first_dof(const processor_id_type proc) const </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00684">dof_map.h:684</a></div></div>
+<div class="ttc" id="classlibMesh_1_1DofMap_html_a265de993749f5bab70c3f9c860defd49"><div class="ttname"><a href="classlibMesh_1_1DofMap.html#a265de993749f5bab70c3f9c860defd49">libMesh::DofMap::end_dof</a></div><div class="ttdeci">dof_id_type end_dof(const processor_id_type proc) const </div><div class="ttdef"><b>Definition:</b> <a href="dof__map_8h_source.html#l00708">dof_map.h:708</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_a7b7f67063580fe2c771a3dc5095d6ecb"><div class="ttname"><a href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">libMesh::numeric_index_type</a></div><div class="ttdeci">dof_id_type numeric_index_type</div><div class="ttdef"><b>Definition:</b> <a href="id__types_8h_source.html#l00099">id_types.h:99</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a95dedaf3b58050d303a5e971e1124882"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a95dedaf3b58050d303a5e971e1124882">libMesh::SparseMatrix::m</a></div><div class="ttdeci">virtual numeric_index_type m() const =0</div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a88e1bdd4ea3c4d30c03d64a622546bf4"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a88e1bdd4ea3c4d30c03d64a622546bf4">libMesh::SparseMatrix::_dof_map</a></div><div class="ttdeci">DofMap const * _dof_map</div><div class="ttdoc">与此对象关联的 DofMap 对象。可以查询其在处理器上的自由度计数。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8h_source.html#l00494">sparse_matrix.h:494</a></div></div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a759bad4b67e66f75c5a2fdc0772b755b"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a759bad4b67e66f75c5a2fdc0772b755b">libMesh::SparseMatrix::n</a></div><div class="ttdeci">virtual numeric_index_type n() const =0</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a13ce734a14ffd1dbb6496dab702da8e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void libMesh::ReferenceCounter::print_info </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out_stream</em> = <code><a class="el" href="namespacelibMesh.html#a08e2b5dd30d71db9e43c52a5a631fdae">libMesh::out</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prints the reference information, by default to <code><a class="el" href="namespacelibMesh.html#a08e2b5dd30d71db9e43c52a5a631fdae">libMesh::out</a></code>. </p>
+
+<p>在文件 <a class="el" href="reference__counter_8C_source.html">reference_counter.C</a> 第 <a class="el" href="reference__counter_8C_source.html#l00081">81</a> 行定义.</p>
+
+<p>参考 <a class="el" href="reference__counter_8h_source.html#l00143">libMesh::ReferenceCounter::_enable_print_counter</a> , 以及 <a class="el" href="reference__counter_8C_source.html#l00047">libMesh::ReferenceCounter::get_info()</a>.</p>
+
+<p>参考自 <a class="el" href="libmesh_8C_source.html#l00668">libMesh::LibMeshInit::~LibMeshInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">_enable_print_counter</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    out_stream &lt;&lt; <a class="code" href="classlibMesh_1_1ReferenceCounter.html#a103b37125ae9eaaadf6f7854df17faa2">ReferenceCounter::get_info</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a103b37125ae9eaaadf6f7854df17faa2"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a103b37125ae9eaaadf6f7854df17faa2">libMesh::ReferenceCounter::get_info</a></div><div class="ttdeci">static std::string get_info()</div><div class="ttdoc">Gets a string containing the reference information. </div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8C_source.html#l00047">reference_counter.C:47</a></div></div>
+<div class="ttc" id="classlibMesh_1_1ReferenceCounter_html_a8f75e8a4a280f2c41636f2ae1307a311"><div class="ttname"><a href="classlibMesh_1_1ReferenceCounter.html#a8f75e8a4a280f2c41636f2ae1307a311">libMesh::ReferenceCounter::_enable_print_counter</a></div><div class="ttdeci">static bool _enable_print_counter</div><div class="ttdoc">Flag to control whether reference count information is printed when print_info is called...</div><div class="ttdef"><b>Definition:</b> <a href="reference__counter_8h_source.html#l00143">reference_counter.h:143</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2508,7 +2901,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::print_personal </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em> = <code><a class="el" href="namespacelibMesh.html#a63e3c3158308e2184c12b55ab9ea9a35">libMesh::out</a></code></td><td>)</td>
+          <td class="paramname"><em>os</em> = <code><a class="el" href="namespacelibMesh.html#a08e2b5dd30d71db9e43c52a5a631fdae">libMesh::out</a></code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2555,13 +2948,13 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>rows</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>cols</em>&#160;</td>
         </tr>
         <tr>
@@ -2602,7 +2995,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">numeric_index_type <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::row_start </td>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::row_start </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2637,7 +3030,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">numeric_index_type <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::row_stop </td>
+          <td class="memname"><a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::row_stop </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2674,13 +3067,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::set </td>
           <td>(</td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const numeric_index_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a>&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -2737,7 +3130,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname">virtual void <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::update_sparsity_pattern </td>
           <td>(</td>
-          <td class="paramtype">const SparsityPattern::Graph &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classlibMesh_1_1SparsityPattern_1_1Graph.html">SparsityPattern::Graph</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -2754,6 +3147,8 @@ template&lt;typename T&gt; </div>
 <p>被 <a class="el" href="classlibMesh_1_1EpetraMatrix.html#a4146e7decc2c8a742083964ebead29ec">libMesh::EpetraMatrix&lt; T &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1LaspackMatrix.html#ae2d76cab11ba6e5851d1ddf1b1067de9">libMesh::LaspackMatrix&lt; T &gt;</a> 重载.</p>
 
 <p>在文件 <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a> 第 <a class="el" href="sparse__matrix_8h_source.html#l00133">133</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="dof__map_8C_source.html#l00307">libMesh::DofMap::update_sparsity_pattern()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
@@ -2804,13 +3199,12 @@ template&lt;typename T &gt; </div>
 
 <p>在文件 <a class="el" href="sparse__matrix_8C_source.html">sparse_matrix.C</a> 第 <a class="el" href="sparse__matrix_8C_source.html#l00195">195</a> 行定义.</p>
 
-<p>参考 <a class="el" href="classlibMesh_1_1NumericVector.html#a13a64368e6c7520c7150118e39e2faf2">libMesh::NumericVector&lt; typename &gt;::zero()</a>.</p>
+<p>参考 <a class="el" href="classlibMesh_1_1NumericVector.html#a85b3d4a53413e3745e6ecf1c8b96ca65">libMesh::NumericVector&lt; T &gt;::zero()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  dest.<a class="code" href="classlibMesh_1_1NumericVector.html#a13a64368e6c7520c7150118e39e2faf2">zero</a>();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  dest.zero();</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  this-&gt;<a class="code" href="classlibMesh_1_1SparseMatrix.html#a0a7445955e126e341cd9a2e71b3c3976">vector_mult_add</a>(dest,arg);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
 <div class="ttc" id="classlibMesh_1_1SparseMatrix_html_a0a7445955e126e341cd9a2e71b3c3976"><div class="ttname"><a href="classlibMesh_1_1SparseMatrix.html#a0a7445955e126e341cd9a2e71b3c3976">libMesh::SparseMatrix::vector_mult_add</a></div><div class="ttdeci">void vector_mult_add(NumericVector&lt; T &gt; &amp;dest, const NumericVector&lt; T &gt; &amp;arg) const </div><div class="ttdoc">将矩阵乘以 NumericVector arg ,并将结果添加到 NumericVector dest 中。 </div><div class="ttdef"><b>Definition:</b> <a href="sparse__matrix_8C_source.html#l00205">sparse_matrix.C:205</a></div></div>
-<div class="ttc" id="classlibMesh_1_1NumericVector_html_a13a64368e6c7520c7150118e39e2faf2"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a13a64368e6c7520c7150118e39e2faf2">libMesh::NumericVector::zero</a></div><div class="ttdeci">virtual void zero()=0</div><div class="ttdoc">将所有条目设置为零。等同于 v = 0，但更明显且更快。 </div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2852,13 +3246,12 @@ template&lt;typename T &gt; </div>
 
 <p>在文件 <a class="el" href="sparse__matrix_8C_source.html">sparse_matrix.C</a> 第 <a class="el" href="sparse__matrix_8C_source.html#l00205">205</a> 行定义.</p>
 
-<p>参考 <a class="el" href="numeric__vector_8C_source.html#l00379">libMesh::NumericVector&lt; typename &gt;::add_vector()</a>.</p>
+<p>参考 <a class="el" href="numeric__vector_8C_source.html#l00379">libMesh::NumericVector&lt; T &gt;::add_vector()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="comment">/* This functionality is actually implemented in the \p</span></div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">     NumericVector class.  */</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  dest.<a class="code" href="classlibMesh_1_1NumericVector.html#a577d12daa958dc9708c2a77655844a28">add_vector</a>(arg,*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  dest.add_vector(arg,*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
-<div class="ttc" id="classlibMesh_1_1NumericVector_html_a577d12daa958dc9708c2a77655844a28"><div class="ttname"><a href="classlibMesh_1_1NumericVector.html#a577d12daa958dc9708c2a77655844a28">libMesh::NumericVector::add_vector</a></div><div class="ttdeci">virtual void add_vector(const T *v, const std::vector&lt; numeric_index_type &gt; &amp;dof_indices)</div><div class="ttdoc">计算 ，其中 v 是一个指针， 每个 dof_indices[i] 指定了要添加的值 v[i] 的位置。 这应该在子类中进行重写以提高效率。请注意，此方法的库实现是线程安全的。 ...</div><div class="ttdef"><b>Definition:</b> <a href="numeric__vector_8C_source.html#l00379">numeric_vector.C:379</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2954,7 +3347,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classlibMesh_1_1DiagonalMatrix.html">libMesh::DiagonalMatrix</a>&lt; T &gt;::zero_rows </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; numeric_index_type &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacelibMesh.html#a7b7f67063580fe2c771a3dc5095d6ecb">numeric_index_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>rows</em>, </td>
         </tr>
         <tr>
@@ -2997,6 +3390,32 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a7c913252d05560f8bc7c75a63547c4c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlibMesh_1_1ReferenceCounter.html#adb5daadc989c1fe71ec8d173adf0ed1e">ReferenceCounter::Counts</a> libMesh::ReferenceCounter::_counts</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Actually holds the data. </p>
+
+<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00124">124</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="reference__counter_8C_source.html#l00047">libMesh::ReferenceCounter::get_info()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abef2633b02a269a73b238232fb6fc50e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3035,7 +3454,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DofMap const* <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::_dof_map</td>
+          <td class="memname"><a class="el" href="classlibMesh_1_1DofMap.html">DofMap</a> const* <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::_dof_map</td>
         </tr>
       </table>
   </td>
@@ -3045,9 +3464,35 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>与此对象关联的 <code>DofMap</code> 对象。可以查询其在处理器上的自由度计数。 </p>
+<p>与此对象关联的 <code><a class="el" href="classlibMesh_1_1DofMap.html" title="This class handles the numbering of degrees of freedom on a mesh. ">DofMap</a></code> 对象。可以查询其在处理器上的自由度计数。 </p>
 
 <p>在文件 <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a> 第 <a class="el" href="sparse__matrix_8h_source.html#l00494">494</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f75e8a4a280f2c41636f2ae1307a311"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool libMesh::ReferenceCounter::_enable_print_counter = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag to control whether reference count information is printed when print_info is called. </p>
+
+<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00143">143</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="reference__counter_8C_source.html#l00100">libMesh::ReferenceCounter::disable_print_counter_info()</a>, <a class="el" href="reference__counter_8C_source.html#l00094">libMesh::ReferenceCounter::enable_print_counter_info()</a> , 以及 <a class="el" href="reference__counter_8C_source.html#l00081">libMesh::ReferenceCounter::print_info()</a>.</p>
 
 </div>
 </div>
@@ -3079,6 +3524,57 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="abedbd3a4ce19686187449a8a0557b74b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Threads::spin_mutex libMesh::ReferenceCounter::_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mutual exclusion object to enable thread-safe reference counting. </p>
+
+<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00137">137</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2c30f0f71dcd00f00faa8e46aa3e043"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Threads::atomic&lt; unsigned int &gt; libMesh::ReferenceCounter::_n_objects</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of objects. </p>
+<p>Print the reference count information when the number returns to 0. </p>
+
+<p>在文件 <a class="el" href="reference__counter_8h_source.html">reference_counter.h</a> 第 <a class="el" href="reference__counter_8h_source.html#l00132">132</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="reference__counter_8h_source.html#l00085">libMesh::ReferenceCounter::n_objects()</a>, <a class="el" href="reference__counter_8h_source.html#l00150">libMesh::ReferenceCounter::ReferenceCounter()</a> , 以及 <a class="el" href="reference__counter_8h_source.html#l00171">libMesh::ReferenceCounter::~ReferenceCounter()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="adb2470aa6002e1c74e8c94bb5b2423d0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3089,7 +3585,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SparsityPattern::Build const* <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::_sp</td>
+          <td class="memname"><a class="el" href="classlibMesh_1_1SparsityPattern_1_1Build.html">SparsityPattern::Build</a> const* <a class="el" href="classlibMesh_1_1SparseMatrix.html">libMesh::SparseMatrix</a>&lt; T &gt;::_sp</td>
         </tr>
       </table>
   </td>
@@ -3112,7 +3608,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 14:03:01 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:07:07 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

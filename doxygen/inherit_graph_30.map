@@ -1,3 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$classlibMesh_1_1RefinementSelector.html" title="这个抽象类提供了一个接口，用于选择在给定网格中的每个元素上要使用的细化类型。 目前我们假设一组元素已经被标记为 h 细化，而唯一的具体子类将会更改其中一些元素以标记为 p 细化。 未来的子类可能会处理各..." alt="" coords="5,5,215,32"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1ParsedFEMFunctionParameter.html" title="访问器对象，允许读取和修改参数灵敏度计算中的独立变量。 " alt="" coords="239,5,445,47"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1ParsedFunctionParameter.html" title="访问器对象，允许在参数敏感性计算中读取和修改参数的独立变量。 " alt="" coords="200,71,484,98"/>
 </map>

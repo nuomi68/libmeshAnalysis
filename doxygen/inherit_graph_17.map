@@ -1,4 +1,5 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node2" href="$classlibMesh_1_1ParsedFEMFunctionParameter.html" title="访问器对象，允许读取和修改参数灵敏度计算中的独立变量。 " alt="" coords="239,5,445,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1ParsedFunctionParameter.html" title="访问器对象，允许在参数敏感性计算中读取和修改参数的独立变量。 " alt="" coords="200,71,484,98"/>
+<area shape="rect" id="node1" href="$classlibMesh_1_1DenseMatrixBase.html" title="为有限元类型的计算定义了一个抽象的稠密矩阵基类。例如 DenseSubMatrices 可以从这个类派生出来。 " alt="" coords="5,31,240,57"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1DenseMatrix.html" title="定义用于有限元类型计算的密集矩阵。 用于在求和成全局矩阵之前存储单元刚度矩阵。所有被覆盖的虚函数都记录在dense_matrix_base.h中。 " alt="" coords="300,5,503,32"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1DenseSubMatrix.html" title="为有限元类型的计算定义密集子矩阵。 在将元素刚度矩阵相加到全局矩阵之前存储非常有用，特别是在存在方程组时。 所有重写的虚拟函数在 dense_matrix_base.h 中有文档。 " alt="" coords="288,56,515,83"/>
 </map>

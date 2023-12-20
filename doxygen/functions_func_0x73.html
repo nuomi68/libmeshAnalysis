@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,41 +124,90 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 &#160;
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>satisfy_predicate()
+: <a class="el" href="classvariant__filter__iterator.html#a6d9d351bb9cf99419d0301d109543dd8">variant_filter_iterator&lt; Predicate, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;</a>
+</li>
+<li>SCALAR_dof_indices()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a347faeed226256bbb37de75dda07b8a3">libMesh::DofMap</a>
+</li>
 <li>scale()
-: <a class="el" href="classlibMesh_1_1DenseMatrix.html#acbb89f0334849faeb3be9094d547e655">libMesh::DenseMatrix&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1DenseVector.html#af9c240ca08d420f6c949e6d1295e1fbe">libMesh::DenseVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1EigenSparseVector.html#ac850bef710a15a7719af5de9deba0539">libMesh::EigenSparseVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1EpetraVector.html#aef410814c403c4938f6880febaa1c064">libMesh::EpetraVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1LaspackVector.html#ab5e20aad4565c9d0a118a694cb3a844a">libMesh::LaspackVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1DistributedVector.html#a960dacb6c650542bf345ff8cac002683">libMesh::DistributedVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1NumericVector.html#ae0f86fe2a7686ca6eb3e1a219f0415df">libMesh::NumericVector&lt; typename &gt;</a>
+: <a class="el" href="classlibMesh_1_1DenseVector.html#af9c240ca08d420f6c949e6d1295e1fbe">libMesh::DenseVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1NumericVector.html#a7efb30d08bd1bb55a91f66782238d648">libMesh::NumericVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1PetscVector.html#a81acf2a7c663bbd43f34d59aa1795fa5">libMesh::PetscVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1DistributedVector.html#a960dacb6c650542bf345ff8cac002683">libMesh::DistributedVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1EpetraVector.html#aef410814c403c4938f6880febaa1c064">libMesh::EpetraVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1DenseMatrix.html#acbb89f0334849faeb3be9094d547e655">libMesh::DenseMatrix&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1EigenSparseVector.html#ac850bef710a15a7719af5de9deba0539">libMesh::EigenSparseVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1LaspackVector.html#ab5e20aad4565c9d0a118a694cb3a844a">libMesh::LaspackVector&lt; T &gt;</a>
 </li>
 <li>scale_column()
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#a0371e0d994a6f96858d9b913724a7f1b">libMesh::DenseMatrix&lt; T &gt;</a>
 </li>
+<li>scatter_constraints()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a3db4816e2bba5ce9617e7bee6329de19">libMesh::DofMap</a>
+</li>
+<li>search()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a7001b5ae7d8e58b15008ba4fa77beced">GETPOT_NAMESPACE::GetPot</a>
+</li>
+<li>search_failed()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a72ae0a196750d8e626e402a9246926d1">GETPOT_NAMESPACE::GetPot</a>
+</li>
 <li>select_refinement()
 : <a class="el" href="classlibMesh_1_1RefinementSelector.html#ab24fd5481ebadc4cf448a8f38209e257">libMesh::RefinementSelector</a>
 </li>
+<li>semilocal_index()
+: <a class="el" href="classlibMesh_1_1DofMap.html#aa654bbcfc7f4d67d7cc6e3bb8cc390b3">libMesh::DofMap</a>
+</li>
+<li>semilocal_pid()
+: <a class="el" href="structlibMesh_1_1Predicates_1_1semilocal__pid.html#a33b513c344b0b43cf027362160c56b0f">libMesh::Predicates::semilocal_pid&lt; T &gt;</a>
+</li>
 <li>set()
-: <a class="el" href="classlibMesh_1_1LaspackVector.html#ae2bb82a7bfedc9efeb795e8b1a7a480c">libMesh::LaspackVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1LumpedMassMatrix.html#a5b08690bb454d0ddc39bd08878159913">libMesh::LumpedMassMatrix&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1NumericVector.html#a75fa77b48f43b6c6f17a68fe8de24c03">libMesh::NumericVector&lt; typename &gt;</a>
-, <a class="el" href="classlibMesh_1_1ParsedFEMFunctionParameter.html#a45534b07ba9286cb86f026f45037fc0d">libMesh::ParsedFEMFunctionParameter&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1ParsedFEMFunctionParameter.html#a45534b07ba9286cb86f026f45037fc0d">libMesh::ParsedFEMFunctionParameter&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1ParsedFunctionParameter.html#a3a8de9450efedf4dc19d4b281fe37c3c">libMesh::ParsedFunctionParameter&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1PetscMatrix.html#aebeb922fb84b0f64d870d267afc2b11f">libMesh::PetscMatrix&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a79a20206e53987095808de515b7fa0ea">libMesh::DiagonalMatrix&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1PetscVector.html#a264d93ac75f049144cbd6b89be735f93">libMesh::PetscVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1SparseMatrix.html#ae363ff83d354c71a13b9559be471274b">libMesh::SparseMatrix&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1DistributedVector.html#a2b2e4b5fc3ace78553e870d74f327580">libMesh::DistributedVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1EpetraMatrix.html#a2ea9658210c8ab30e1847ced102e629f">libMesh::EpetraMatrix&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1EpetraVector.html#a7dcf59d9d2901f0886a1057adaf8b308">libMesh::EpetraVector&lt; T &gt;</a>
+, <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a39ce744e8ca2e715298fa0da0f9949d1">GETPOT_NAMESPACE::GetPot</a>
+, <a class="el" href="classlibMesh_1_1DiagonalMatrix.html#a79a20206e53987095808de515b7fa0ea">libMesh::DiagonalMatrix&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1DistributedVector.html#a2b2e4b5fc3ace78553e870d74f327580">libMesh::DistributedVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1EigenSparseMatrix.html#acadd8b9bd60832b53355857d13dbe4e4">libMesh::EigenSparseMatrix&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1EigenSparseVector.html#ab3dbc35090dfb6168960e500868657a4">libMesh::EigenSparseVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1LaspackMatrix.html#a18b12232297c7ba17e6e3eeed94b4984">libMesh::LaspackMatrix&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1LaspackVector.html#ae2bb82a7bfedc9efeb795e8b1a7a480c">libMesh::LaspackVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1LumpedMassMatrix.html#a5b08690bb454d0ddc39bd08878159913">libMesh::LumpedMassMatrix&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1NumericVector.html#a083d7b5e0efa633986bcd2b38bc0b053">libMesh::NumericVector&lt; T &gt;</a>
+</li>
+<li>set_buffer()
+: <a class="el" href="classlibMesh_1_1DofObject.html#a5d52127a88661f66900f9f5177715eb1">libMesh::DofObject</a>
+</li>
+<li>set_constrained_sparsity_construction()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a3d60daee3f791c37d0957d9f367718d2">libMesh::DofMap</a>
 </li>
 <li>set_destroy_mat_on_exit()
 : <a class="el" href="classlibMesh_1_1PetscMatrix.html#a81d41d2574178781e2ddba79cddaea7d">libMesh::PetscMatrix&lt; T &gt;</a>
+</li>
+<li>set_dof_number()
+: <a class="el" href="classlibMesh_1_1DofObject.html#a7d4d36a2c04b47d821c62c4e0bab11b8">libMesh::DofObject</a>
+</li>
+<li>set_error_on_constraint_loop()
+: <a class="el" href="classlibMesh_1_1DofMap.html#af72602b9f4e23db0dbe054bf4dafe123">libMesh::DofMap</a>
+</li>
+<li>set_error_on_cyclic_constraint()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a694b0be4a4514f1d7f0775ddfec78d4b">libMesh::DofMap</a>
+</li>
+<li>set_extra_datum()
+: <a class="el" href="classlibMesh_1_1DofObject.html#ab5e3c3a5bd08233448316558f92a83c4">libMesh::DofObject</a>
+</li>
+<li>set_extra_integer()
+: <a class="el" href="classlibMesh_1_1DofObject.html#ae3ad33fd55ef000261bf20ff77100049">libMesh::DofObject</a>
+</li>
+<li>set_id()
+: <a class="el" href="classlibMesh_1_1DofObject.html#a7efffd05f7f97d503c12c0cbf8fb9862">libMesh::DofObject</a>
+</li>
+<li>set_implicit_neighbor_dofs()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a2eb44e4da2c8afcd039995ef239457da">libMesh::DofMap</a>
 </li>
 <li>set_inline_value()
 : <a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#aa53112ff3a8835219ecd87a097523510">libMesh::ParsedFEMFunction&lt; Output &gt;</a>
@@ -173,23 +222,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>set_matrix_type()
 : <a class="el" href="classlibMesh_1_1PetscMatrix.html#ac91a84725f67d98163344954c4665057">libMesh::PetscMatrix&lt; T &gt;</a>
 </li>
+<li>set_n_comp()
+: <a class="el" href="classlibMesh_1_1DofObject.html#a25df5d5f6f2436cf566954d7b97283db">libMesh::DofObject</a>
+</li>
+<li>set_n_comp_group()
+: <a class="el" href="classlibMesh_1_1DofObject.html#a438678be4844dff0a82e74b1c1ad7844">libMesh::DofObject</a>
+</li>
+<li>set_n_systems()
+: <a class="el" href="classlibMesh_1_1DofObject.html#aeb992cecba98cbbf1b682d25f4043b71">libMesh::DofObject</a>
+</li>
+<li>set_n_vars_per_group()
+: <a class="el" href="classlibMesh_1_1DofObject.html#a616bd6a82ab6ea7633cac2aa3ecf6f88">libMesh::DofObject</a>
+</li>
+<li>set_nonlocal_dof_objects()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a7bad83b3b5e37a8afe4ea251d72df300">libMesh::DofMap</a>
+</li>
+<li>set_old_dof_object()
+: <a class="el" href="classlibMesh_1_1DofObject.html#a085279db05ac736c3d82b8e7f76613df">libMesh::DofObject</a>
+</li>
 <li>set_params()
 : <a class="el" href="classlibMesh_1_1TrilinosPreconditioner.html#a4854f0ccdbbdb45309fc5d681a1697f2">libMesh::TrilinosPreconditioner&lt; T &gt;</a>
 </li>
 <li>set_preconditioner_type()
 : <a class="el" href="classlibMesh_1_1TrilinosPreconditioner.html#a9715e74d1e18a2dc3856ea21163c20ee">libMesh::TrilinosPreconditioner&lt; T &gt;</a>
 </li>
+<li>set_prefix()
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a697ceaf904d78fbc6661263989fab98c">GETPOT_NAMESPACE::GetPot</a>
+</li>
 <li>set_spacetime()
 : <a class="el" href="classlibMesh_1_1ParsedFunction.html#a063c5999731f104a0ba86279effb8a7d">libMesh::ParsedFunction&lt; Output, OutputGradient &gt;</a>
+</li>
+<li>set_transformation_matrix()
+: <a class="el" href="classlibMesh_1_1PeriodicBoundaryBase.html#acfbb459e6fd191d4f757646658a72712">libMesh::PeriodicBoundaryBase</a>
 </li>
 <li>set_type()
 : <a class="el" href="classlibMesh_1_1Preconditioner.html#a007bbd2b1c0cd6192299243405e43b86">libMesh::Preconditioner&lt; T &gt;</a>
 </li>
+<li>set_unique_id()
+: <a class="el" href="classlibMesh_1_1DofObject.html#aabf3f6ff327f837e02e763ff415cd146">libMesh::DofObject</a>
+</li>
+<li>set_variable()
+: <a class="el" href="classlibMesh_1_1PeriodicBoundaryBase.html#abc5bac7a5dbbe2d20b9262e5ec4bd5b4">libMesh::PeriodicBoundaryBase</a>
+</li>
+<li>set_verify_dirichlet_bc_consistency()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a4775dc7cbf1b1d282fcf8fdc088f3eaf">libMesh::DofMap</a>
+</li>
+<li>set_vg_dof_base()
+: <a class="el" href="classlibMesh_1_1DofObject.html#ad068bdde65e8618e982106fecfbf5578">libMesh::DofObject</a>
+</li>
 <li>setIgnoreNonLocalEntries()
 : <a class="el" href="classlibMesh_1_1EpetraVector.html#ab1bcb9302339941f47e7c0b899dd82fe">libMesh::EpetraVector&lt; T &gt;</a>
 </li>
+<li>Setup()
+: <a class="el" href="classlibMesh_1_1Singleton_1_1Setup.html#ab6d077d805029da1b5415064877ab5b3">libMesh::Singleton::Setup</a>
+</li>
 <li>setup()
-: <a class="el" href="classlibMesh_1_1Preconditioner.html#accf912d6b2d67080be4f22d6bbc3b1e6">libMesh::Preconditioner&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1Singleton_1_1Setup.html#af6578067dec6bd36e65dbf15c6968042">libMesh::Singleton::Setup</a>
+, <a class="el" href="classlibMesh_1_1Singleton.html#ade0cc4fecf52c6ab4ba36f01b383a157">libMesh::Singleton</a>
+, <a class="el" href="classlibMesh_1_1Preconditioner.html#accf912d6b2d67080be4f22d6bbc3b1e6">libMesh::Preconditioner&lt; T &gt;</a>
 </li>
 <li>SetUseTranspose()
 : <a class="el" href="classlibMesh_1_1TrilinosPreconditioner.html#ad44e197f25065eea71cf776b18128618">libMesh::TrilinosPreconditioner&lt; T &gt;</a>
@@ -197,27 +287,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>ShellMatrix()
 : <a class="el" href="classlibMesh_1_1ShellMatrix.html#a8fa1bc2c6dd3c17e050d9e65def29b1d">libMesh::ShellMatrix&lt; T &gt;</a>
 </li>
+<li>should_p_refine()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a709945cd61f9c28ef504f3d7d1ac6962">libMesh::DofMap</a>
+</li>
+<li>should_p_refine_var()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a65eaac8ba07b919a2042addb902d4c75">libMesh::DofMap</a>
+</li>
+<li>Singleton()
+: <a class="el" href="classlibMesh_1_1Singleton.html#af8bd1c26bee37a92d3286c9e702e9c25">libMesh::Singleton</a>
+</li>
 <li>size()
-: <a class="el" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">libMesh::DenseSubVector&lt; T &gt;</a>
+: <a class="el" href="classGETPOT__NAMESPACE_1_1GetPot.html#a1988ca608822ce9a3e6bc9b065d870da">GETPOT_NAMESPACE::GetPot</a>
+, <a class="el" href="classlibMesh_1_1DistributedVector.html#afd2f43a9993c44ac1cd936a41c3a98c1">libMesh::DistributedVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1DenseSubVector.html#a8b449465f9d985687703d87c54960404">libMesh::DenseSubVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1DenseVector.html#a06832d76a4df1deb9e45afb9555521d0">libMesh::DenseVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1DenseVectorBase.html#a4ec1ad50c02f01beea21df4c29ed9736">libMesh::DenseVectorBase&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1DistributedVector.html#afd2f43a9993c44ac1cd936a41c3a98c1">libMesh::DistributedVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1EigenSparseVector.html#a729e8fdf09c5da1579195e87257aa9be">libMesh::EigenSparseVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1LaspackVector.html#a1960ab2bb4c795cb621092e677f3d043">libMesh::LaspackVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1NumericVector.html#ab4d7da004477eae4d19b369a8aeb7650">libMesh::NumericVector&lt; typename &gt;</a>
-, <a class="el" href="classlibMesh_1_1PetscVector.html#a290cc789f9c0e1195cfe13c96a3e243e">libMesh::PetscVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1NumericVector.html#a90f2918648bb3c65d88978bd5d0a19bf">libMesh::NumericVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1EpetraVector.html#a6926f4954bccfc19440907eb1070f49e">libMesh::EpetraVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1PetscVector.html#a290cc789f9c0e1195cfe13c96a3e243e">libMesh::PetscVector&lt; T &gt;</a>
 </li>
 <li>slice()
-: <a class="el" href="classlibMesh_1_1TypeVector.html#a792b992a3ab29cf4019e9068b6b42806">libMesh::TypeVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1TypeNTensor.html#ac1b21bf1a9c592928c841801cecce806">libMesh::TypeNTensor&lt; N, T &gt;</a>
+: <a class="el" href="classlibMesh_1_1TypeNTensor.html#ac1b21bf1a9c592928c841801cecce806">libMesh::TypeNTensor&lt; N, T &gt;</a>
 , <a class="el" href="classlibMesh_1_1TypeTensor.html#ad116059594e3056daaf41eb062edb438">libMesh::TypeTensor&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1TypeTensorColumn.html#a2eb5917dc57ba10c05da72b7b50744f5">libMesh::TypeTensorColumn&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1ConstTypeTensorColumn.html#a13f653e369b0f2074d4fb12d256881b9">libMesh::ConstTypeTensorColumn&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1TypeVector.html#af7fe612232c6f64b41e8122e9d2e35de">libMesh::TypeVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1TypeVector.html#a792b992a3ab29cf4019e9068b6b42806">libMesh::TypeVector&lt; T &gt;</a>
 </li>
 <li>solve()
 : <a class="el" href="classlibMesh_1_1TypeTensor.html#a1386453765cbe27239944d806bdb5f1e">libMesh::TypeTensor&lt; T &gt;</a>
+</li>
+<li>SolverException()
+: <a class="el" href="classlibMesh_1_1SolverException.html#a9e3bce676607b2bae98c4db405e4ef53">libMesh::SolverException</a>
+</li>
+<li>sorted_connected_dofs()
+: <a class="el" href="classlibMesh_1_1SparsityPattern_1_1Build.html#af6a369d62cc83a1003e315cf178c9daa">libMesh::SparsityPattern::Build</a>
 </li>
 <li>SparseMatrix()
 : <a class="el" href="classlibMesh_1_1SparseMatrix.html#aa1540ef14952b1965ffe7f0969a70476">libMesh::SparseMatrix&lt; T &gt;</a>
@@ -225,17 +330,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>SparseShellMatrix()
 : <a class="el" href="classlibMesh_1_1SparseShellMatrix.html#abbc3eedfdbafa9cac45b7413157da58a">libMesh::SparseShellMatrix&lt; T &gt;</a>
 </li>
+<li>start_idx()
+: <a class="el" href="classlibMesh_1_1DofObject.html#a596caa488ab92e9e1c58554c1b5b71cc">libMesh::DofObject</a>
+</li>
+<li>start_idx_ints()
+: <a class="el" href="classlibMesh_1_1DofObject.html#a7c3346cea2e8d2a5432637cf53ea4729">libMesh::DofObject</a>
+</li>
+<li>stash_dof_constraints()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a72f54b69e830ade14656c309586850f8">libMesh::DofMap</a>
+</li>
 <li>sub_matrix()
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#ae0e34420e6f3899110a2fba353d720b9">libMesh::DenseMatrix&lt; T &gt;</a>
 </li>
+<li>SubActive()
+: <a class="el" href="structlibMesh_1_1Predicates_1_1SubActive.html#ae9c701c5ea00f1a015ab45a9b5f46c9e">libMesh::Predicates::SubActive&lt; T &gt;</a>
+</li>
+<li>subdomain()
+: <a class="el" href="structlibMesh_1_1Predicates_1_1subdomain.html#acf68ea8ed4ad1f092d1af1eb66fbe2dc">libMesh::Predicates::subdomain&lt; T &gt;</a>
+</li>
+<li>subdomain_set()
+: <a class="el" href="structlibMesh_1_1Predicates_1_1subdomain__set.html#acf8a586821106bbad1a46dc53299eef3">libMesh::Predicates::subdomain_set&lt; T &gt;</a>
+</li>
 <li>subset_l1_norm()
-: <a class="el" href="classlibMesh_1_1NumericVector.html#a0fdfc2c1d378b5fa4caae6b0ba01c6bb">libMesh::NumericVector&lt; typename &gt;</a>
+: <a class="el" href="classlibMesh_1_1NumericVector.html#a0fdfc2c1d378b5fa4caae6b0ba01c6bb">libMesh::NumericVector&lt; T &gt;</a>
 </li>
 <li>subset_l2_norm()
-: <a class="el" href="classlibMesh_1_1NumericVector.html#af10d4a921168dd52eafd02bffa5d2616">libMesh::NumericVector&lt; typename &gt;</a>
+: <a class="el" href="classlibMesh_1_1NumericVector.html#af10d4a921168dd52eafd02bffa5d2616">libMesh::NumericVector&lt; T &gt;</a>
 </li>
 <li>subset_linfty_norm()
-: <a class="el" href="classlibMesh_1_1NumericVector.html#a2216ffa3e765cb08e807d3d0ed92236c">libMesh::NumericVector&lt; typename &gt;</a>
+: <a class="el" href="classlibMesh_1_1NumericVector.html#a2216ffa3e765cb08e807d3d0ed92236c">libMesh::NumericVector&lt; T &gt;</a>
 </li>
 <li>subtract()
 : <a class="el" href="classlibMesh_1_1TypeTensor.html#a7a39776648449c5983a25ca64bdcb70b">libMesh::TypeTensor&lt; T &gt;</a>
@@ -247,41 +370,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </li>
 <li>sum()
 : <a class="el" href="classlibMesh_1_1LaspackVector.html#a3f5669ab444addf837729d361507055b">libMesh::LaspackVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1PetscVector.html#adf587e3e18351379774821ac596f2ac3">libMesh::PetscVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1EigenSparseVector.html#a142e94e4e559b3de912c107527ab202f">libMesh::EigenSparseVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1EpetraVector.html#a9ad1d903e0dfe121698aa0839c4d118a">libMesh::EpetraVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1NumericVector.html#ae1e942ad86eb6888be110d58166acfb2">libMesh::NumericVector&lt; typename &gt;</a>
+, <a class="el" href="classlibMesh_1_1NumericVector.html#ad09f0eab77d58ce125dfc4f400c8ed5d">libMesh::NumericVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1DistributedVector.html#adab92e48467d7abfe7f1a0f68c1a3882">libMesh::DistributedVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1EpetraVector.html#a9ad1d903e0dfe121698aa0839c4d118a">libMesh::EpetraVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1EigenSparseVector.html#a142e94e4e559b3de912c107527ab202f">libMesh::EigenSparseVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1PetscVector.html#adf587e3e18351379774821ac596f2ac3">libMesh::PetscVector&lt; T &gt;</a>
 </li>
 <li>SumIntoGlobalValues()
-: <a class="el" href="classlibMesh_1_1EpetraVector.html#a12568a839178b1bc0cf5385f6734b9f5">libMesh::EpetraVector&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1EpetraVector.html#a8ca96e63b7ac1922212303238cd662b7">libMesh::EpetraVector&lt; T &gt;</a>
 </li>
 <li>SumShellMatrix()
-: <a class="el" href="classlibMesh_1_1SumShellMatrix.html#a6288886426e884288bcb157f3bd91246">libMesh::SumShellMatrix&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1SumShellMatrix.html#abaf99305f749bc002a741ed99f91dd25">libMesh::SumShellMatrix&lt; T &gt;</a>
 </li>
 <li>svd()
-: <a class="el" href="classlibMesh_1_1DenseMatrix.html#a4408d0082e8828803fe3a87dd8635603">libMesh::DenseMatrix&lt; T &gt;</a>
+: <a class="el" href="classlibMesh_1_1DenseMatrix.html#a8370e5458cb815da55d75f12a8d5030e">libMesh::DenseMatrix&lt; T &gt;</a>
 </li>
 <li>svd_solve()
 : <a class="el" href="classlibMesh_1_1DenseMatrix.html#ab2a5ae9c95d19af70e35040667911efa">libMesh::DenseMatrix&lt; T &gt;</a>
 </li>
 <li>swap()
 : <a class="el" href="classlibMesh_1_1PetscMatrix.html#a89482535aa806cb4e39136443ccbb20d">libMesh::PetscMatrix&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1EpetraMatrix.html#aa78772590357af4edde29eb82184f378">libMesh::EpetraMatrix&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1NumericVector.html#a4a3bb09ff24810391b15da006ba39cb4">libMesh::NumericVector&lt; typename &gt;</a>
-, <a class="el" href="classlibMesh_1_1DenseMatrix.html#aa2526a1599a6b9d9b5373c41af8bce1f">libMesh::DenseMatrix&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1EigenSparseVector.html#a1f4d1fc231a0c11c1b757fa1000fc604">libMesh::EigenSparseVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1DistributedVector.html#ad621a6c61edce76c7f3dc8cdc2e19d73">libMesh::DistributedVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1DenseVector.html#ada20ee66c59885ba336012f2cc38a85c">libMesh::DenseVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1EpetraVector.html#a1cbddf4df8535af485078a48905c190e">libMesh::EpetraVector&lt; T &gt;</a>
-, <a class="el" href="classlibMesh_1_1LaspackVector.html#a86a3edcf91f731f15515d3b0b4952a6d">libMesh::LaspackVector&lt; T &gt;</a>
 , <a class="el" href="classlibMesh_1_1PetscVector.html#a624c05d3f58268d7ca298b74a5633f47">libMesh::PetscVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1NumericVector.html#a4a3bb09ff24810391b15da006ba39cb4">libMesh::NumericVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1EpetraMatrix.html#aa78772590357af4edde29eb82184f378">libMesh::EpetraMatrix&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1EpetraVector.html#a1cbddf4df8535af485078a48905c190e">libMesh::EpetraVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1DistributedVector.html#ad621a6c61edce76c7f3dc8cdc2e19d73">libMesh::DistributedVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1EigenSparseVector.html#a1f4d1fc231a0c11c1b757fa1000fc604">libMesh::EigenSparseVector&lt; T &gt;</a>
+, <a class="el" href="classlibMesh_1_1DenseMatrix.html#aa2526a1599a6b9d9b5373c41af8bce1f">libMesh::DenseMatrix&lt; T &gt;</a>
+, <a class="el" href="classvariant__filter__iterator.html#a8361f656fdabad70db4f11da91ccd798">variant_filter_iterator&lt; Predicate, Type, ReferenceType, PointerType, ConstType, ConstReferenceType, ConstPointerType &gt;</a>
+, <a class="el" href="classlibMesh_1_1LaspackVector.html#a86a3edcf91f731f15515d3b0b4952a6d">libMesh::LaspackVector&lt; T &gt;</a>
+</li>
+<li>swap_dof_constraints()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a7168817015b9e35965dbbe7cdd683668">libMesh::DofMap</a>
+</li>
+<li>sys_number()
+: <a class="el" href="classlibMesh_1_1DofMap.html#a244e7a1cd82d5e6ae8780c93205ec1fa">libMesh::DofMap</a>
+</li>
+<li>system()
+: <a class="el" href="classlibMesh_1_1Variable.html#aa9309f13da00bfdd00cd114d0df5f1ec">libMesh::Variable</a>
+</li>
+<li>system_var_to_vg_var()
+: <a class="el" href="classlibMesh_1_1DofObject.html#a12355c17ea63fc4bea6f87c893eaf9ee">libMesh::DofObject</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 14:03:02 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:07:10 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

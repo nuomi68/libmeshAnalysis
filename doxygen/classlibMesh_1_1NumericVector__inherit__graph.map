@@ -1,2 +1,9 @@
-<map id="libMesh::NumericVector&lt; typename &gt;" name="libMesh::NumericVector&lt; typename &gt;">
+<map id="libMesh::NumericVector&lt; T &gt;" name="libMesh::NumericVector&lt; T &gt;">
+<area shape="rect" id="node5" href="$classlibMesh_1_1DistributedVector.html" title="该类提供了一个简单的并行分布式向量数据类型， 专门用于 libmesh。提供了一些集体通信功能。 " alt="" coords="795,5,1027,32"/>
+<area shape="rect" id="node6" href="$classlibMesh_1_1EigenSparseVector.html" title="This class provides a nice interface to the Eigen C++&#45;based data structures for serial vectors..." alt="" coords="791,56,1031,83"/>
+<area shape="rect" id="node7" href="$classlibMesh_1_1EpetraVector.html" title="此类提供了对Trilinos Epetra_Vector对象的友好接口。所有重写的虚拟函数在numeric_vector.h中都有文档。 " alt="" coords="809,107,1012,133"/>
+<area shape="rect" id="node8" href="$classlibMesh_1_1LaspackVector.html" title="这个类为基于laspackc的串行向量数据结构提供了一个很好的接口。 所有被覆盖的虚函数都记录在numeric_vector.h中。 " alt="" coords="804,157,1017,184"/>
+<area shape="rect" id="node9" href="$classlibMesh_1_1PetscVector.html" title="该类提供了一个良好的接口，用于访问 PETSc 的 Vec 对象。所有重写的虚拟函数都在 numeric_vector.h 中有文档说明。 " alt="" coords="813,208,1008,235"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1ReferenceCountedObject.html" title="libMesh::ReferenceCounted\lObject\&lt; NumericVector\&lt; T \&gt; \&gt;" alt="" coords="252,70,480,111"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1ReferenceCounter.html" title="This is the base class for enabling reference counting. " alt="" coords="5,77,204,104"/>
 </map>

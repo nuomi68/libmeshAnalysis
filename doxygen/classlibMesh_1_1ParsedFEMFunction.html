@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -127,13 +127,13 @@ Public 成员函数</h2></td></tr>
 &lt; <a class="el" href="classlibMesh_1_1FEMFunctionBase.html">FEMFunctionBase</a>&lt; Output &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a7608b5784c00d0951b8dcbf74ab1d9e6">clone</a> () const override</td></tr>
 <tr class="memdesc:a7608b5784c00d0951b8dcbf74ab1d9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">克隆函数。  <a href="#a7608b5784c00d0951b8dcbf74ab1d9e6">更多...</a><br/></td></tr>
 <tr class="separator:a7608b5784c00d0951b8dcbf74ab1d9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a0aa4f642f1b479f91408cbed7dafad"><td class="memItemLeft" align="right" valign="top">virtual Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a1a0aa4f642f1b479f91408cbed7dafad">operator()</a> (const FEMContext &amp;c, const Point &amp;p, const Real time=0.) override</td></tr>
+<tr class="memitem:a1a0aa4f642f1b479f91408cbed7dafad"><td class="memItemLeft" align="right" valign="top">virtual Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a1a0aa4f642f1b479f91408cbed7dafad">operator()</a> (const FEMContext &amp;c, const Point &amp;p, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time=0.) override</td></tr>
 <tr class="memdesc:a1a0aa4f642f1b479f91408cbed7dafad"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用运算符，用于计算解析函数的值。  <a href="#a1a0aa4f642f1b479f91408cbed7dafad">更多...</a><br/></td></tr>
 <tr class="separator:a1a0aa4f642f1b479f91408cbed7dafad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79642b61c59b38724c5804c1df91eea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a79642b61c59b38724c5804c1df91eea0">operator()</a> (const FEMContext &amp;c, const Point &amp;p, const Real time, <a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; Output &gt; &amp;output) override</td></tr>
+<tr class="memitem:a79642b61c59b38724c5804c1df91eea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a79642b61c59b38724c5804c1df91eea0">operator()</a> (const FEMContext &amp;c, const Point &amp;p, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time, <a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; Output &gt; &amp;output) override</td></tr>
 <tr class="memdesc:a79642b61c59b38724c5804c1df91eea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用运算符，用于计算解析函数的值。  <a href="#a79642b61c59b38724c5804c1df91eea0">更多...</a><br/></td></tr>
 <tr class="separator:a79642b61c59b38724c5804c1df91eea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3a8152002e712b28362f9f6edbb1d3d"><td class="memItemLeft" align="right" valign="top">virtual Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#ac3a8152002e712b28362f9f6edbb1d3d">component</a> (const FEMContext &amp;c, unsigned int i, const Point &amp;p, Real time=0.) override</td></tr>
+<tr class="memitem:ac3a8152002e712b28362f9f6edbb1d3d"><td class="memItemLeft" align="right" valign="top">virtual Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#ac3a8152002e712b28362f9f6edbb1d3d">component</a> (const FEMContext &amp;c, unsigned int i, const Point &amp;p, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time=0.) override</td></tr>
 <tr class="memdesc:ac3a8152002e712b28362f9f6edbb1d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算解析函数的第 i 个分量的值。  <a href="#ac3a8152002e712b28362f9f6edbb1d3d">更多...</a><br/></td></tr>
 <tr class="separator:ac3a8152002e712b28362f9f6edbb1d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2c86cf0bdc23f14f569ce6e2585d9e9"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#aa2c86cf0bdc23f14f569ce6e2585d9e9">expression</a> ()</td></tr>
@@ -157,7 +157,7 @@ Protected 成员函数</h2></td></tr>
 <tr class="memitem:a205611f2e34f5a6bcef2c3d3f0aff88e"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a205611f2e34f5a6bcef2c3d3f0aff88e">find_name</a> (std::string_view varname, std::string_view expr) const </td></tr>
 <tr class="memdesc:a205611f2e34f5a6bcef2c3d3f0aff88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于解析变量名称的辅助函数。  <a href="#a205611f2e34f5a6bcef2c3d3f0aff88e">更多...</a><br/></td></tr>
 <tr class="separator:a205611f2e34f5a6bcef2c3d3f0aff88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbcd008cbcda221b83422c0ae5997a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#adbcd008cbcda221b83422c0ae5997a1e">eval_args</a> (const FEMContext &amp;c, const Point &amp;p, const Real time)</td></tr>
+<tr class="memitem:adbcd008cbcda221b83422c0ae5997a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#adbcd008cbcda221b83422c0ae5997a1e">eval_args</a> (const FEMContext &amp;c, const Point &amp;p, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time)</td></tr>
 <tr class="memdesc:adbcd008cbcda221b83422c0ae5997a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于计算函数参数的辅助函数。  <a href="#adbcd008cbcda221b83422c0ae5997a1e">更多...</a><br/></td></tr>
 <tr class="separator:adbcd008cbcda221b83422c0ae5997a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a068657a1a3a612530f2e8292f01e04ee"><td class="memItemLeft" align="right" valign="top">Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1ParsedFEMFunction.html#a068657a1a3a612530f2e8292f01e04ee">eval</a> (FunctionParserBase&lt; Output &gt; &amp;parser, std::string_view libmesh_dbg_var(function_name), unsigned int libmesh_dbg_var(component_idx)) const </td></tr>
@@ -460,7 +460,7 @@ template&lt;typename Output &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Real&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
           <td class="paramname"><em>time</em> = <code>0.</code>&#160;</td>
         </tr>
         <tr>
@@ -556,27 +556,27 @@ template&lt;typename Output&gt; </div>
 
 <p>在文件 <a class="el" href="parsed__fem__function_8h_source.html">parsed_fem_function.h</a> 第 <a class="el" href="parsed__fem__function_8h_source.html#l00934">934</a> 行定义.</p>
 
-<p>参考 <a class="el" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err()</a>.</p>
+<p>参考 <a class="el" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a>.</p>
 <div class="fragment"><div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;{</div>
 <div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;<span class="preprocessor">#ifndef NDEBUG</span></div>
 <div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;<span class="preprocessor"></span>  Output result = parser.Eval(<a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a3aa8652dad2dfccbbae11f211593340c">_spacetime</a>.data());</div>
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;  <span class="keywordtype">int</span> error_code = parser.EvalError();</div>
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;  <span class="keywordflow">if</span> (error_code)</div>
 <div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    {</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;      <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;ERROR: FunctionParser is unable to evaluate component &quot;</span></div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;      <a class="code" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;ERROR: FunctionParser is unable to evaluate component &quot;</span></div>
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;                   &lt;&lt; component_idx</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;                   &lt;&lt; <span class="stringliteral">&quot; for &#39;&quot;</span></div>
 <div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;                   &lt;&lt; function_name;</div>
 <div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;</div>
 <div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : index_range(<a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a281fbba10524fdaae5bb02b3322adcef">parsers</a>))</div>
 <div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a281fbba10524fdaae5bb02b3322adcef">parsers</a>[i].<span class="keyword">get</span>() == &amp;parser)</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;          <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;&#39; of expression &#39;&quot;</span></div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;          <a class="code" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;&#39; of expression &#39;&quot;</span></div>
 <div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;                       &lt;&lt; <a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a7cd7162519b80559e1d70e75ae72e331">_subexpressions</a>[i];</div>
 <div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;      <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;&#39; with arguments:\n&quot;</span>;</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;      <a class="code" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a> &lt;&lt; <span class="stringliteral">&quot;&#39; with arguments:\n&quot;</span>;</div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; st : <a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a3aa8652dad2dfccbbae11f211593340c">_spacetime</a>)</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="charliteral">&#39;\t&#39;</span> &lt;&lt; st &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;      <a class="code" href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        <a class="code" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a> &lt;&lt; <span class="charliteral">&#39;\t&#39;</span> &lt;&lt; st &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;      <a class="code" href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;</div>
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;      <span class="comment">// Currently no API to report error messages, we&#39;ll do it manually</span></div>
 <div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;      std::string error_message = <span class="stringliteral">&quot;Reason: &quot;</span>;</div>
@@ -613,7 +613,7 @@ template&lt;typename Output&gt; </div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_a7cd7162519b80559e1d70e75ae72e331"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#a7cd7162519b80559e1d70e75ae72e331">libMesh::ParsedFEMFunction::_subexpressions</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _subexpressions</div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00254">parsed_fem_function.h:254</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_a3aa8652dad2dfccbbae11f211593340c"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#a3aa8652dad2dfccbbae11f211593340c">libMesh::ParsedFEMFunction::_spacetime</a></div><div class="ttdeci">std::vector&lt; Output &gt; _spacetime</div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00265">parsed_fem_function.h:265</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_a281fbba10524fdaae5bb02b3322adcef"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#a281fbba10524fdaae5bb02b3322adcef">libMesh::ParsedFEMFunction::parsers</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; FunctionParserBase&lt; Output &gt; &gt; &gt; parsers</div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00261">parsed_fem_function.h:261</a></div></div>
-<div class="ttc" id="namespacelibMesh_html_a74e5bc8a72d210b3d87b0221b1f69db1"><div class="ttname"><a href="namespacelibMesh.html#a74e5bc8a72d210b3d87b0221b1f69db1">libMesh::err</a></div><div class="ttdeci">OStreamProxy err(std::cerr)</div></div>
+<div class="ttc" id="namespacelibMesh_html_ab0817b8542b150bfa3fb23393df99f28"><div class="ttname"><a href="namespacelibMesh.html#ab0817b8542b150bfa3fb23393df99f28">libMesh::err</a></div><div class="ttdeci">OStreamProxy err</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -694,7 +694,7 @@ template&lt;typename Output &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Real&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
           <td class="paramname"><em>time</em>&#160;</td>
         </tr>
         <tr>
@@ -986,6 +986,8 @@ template&lt;typename Output &gt; </div>
 
 <p>在文件 <a class="el" href="parsed__fem__function_8h_source.html">parsed_fem_function.h</a> 第 <a class="el" href="parsed__fem__function_8h_source.html#l00576">576</a> 行定义.</p>
 
+<p>参考 <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a>.</p>
+
 <p>参考自 <a class="el" href="parsed__fem__function__parameter_8h_source.html#l00086">libMesh::ParsedFEMFunctionParameter&lt; T &gt;::get()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;{</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  libmesh_assert_greater (<a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a7cd7162519b80559e1d70e75ae72e331">_subexpressions</a>.size(), 0);</div>
@@ -1025,8 +1027,8 @@ template&lt;typename Output &gt; </div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;      <span class="comment">// Add the same constants as we used originally.</span></div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;      <span class="keyword">auto</span> fp = std::make_unique&lt;FunctionParserBase&lt;Output&gt;&gt;();</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;      fp-&gt;AddConstant(<span class="stringliteral">&quot;NaN&quot;</span>, std::numeric_limits&lt;Real&gt;::quiet_NaN());</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;      fp-&gt;AddConstant(<span class="stringliteral">&quot;pi&quot;</span>, std::acos(Real(-1)));</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;      fp-&gt;AddConstant(<span class="stringliteral">&quot;e&quot;</span>, std::exp(Real(1)));</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;      fp-&gt;AddConstant(<span class="stringliteral">&quot;pi&quot;</span>, std::acos(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>(-1)));</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;      fp-&gt;AddConstant(<span class="stringliteral">&quot;e&quot;</span>, std::exp(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>(1)));</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;      libmesh_error_msg_if</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        (fp-&gt;Parse(new_subexpression, <a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a261fe98f6bdba48ff6f325779701199d">variables</a>) != -1, <span class="comment">// -1 for success</span></div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;         <span class="stringliteral">&quot;ERROR: FunctionParser is unable to parse modified expression: &quot;</span></div>
@@ -1058,6 +1060,7 @@ template&lt;typename Output &gt; </div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_a261fe98f6bdba48ff6f325779701199d"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#a261fe98f6bdba48ff6f325779701199d">libMesh::ParsedFEMFunction::variables</a></div><div class="ttdeci">std::string variables</div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00282">parsed_fem_function.h:282</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_a068657a1a3a612530f2e8292f01e04ee"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#a068657a1a3a612530f2e8292f01e04ee">libMesh::ParsedFEMFunction::eval</a></div><div class="ttdeci">Output eval(FunctionParserBase&lt; Output &gt; &amp;parser, std::string_view libmesh_dbg_var(function_name), unsigned int libmesh_dbg_var(component_idx)) const </div><div class="ttdoc">评估第 i 个 FunctionParser 并检查结果。 </div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00934">parsed_fem_function.h:934</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_a7cd7162519b80559e1d70e75ae72e331"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#a7cd7162519b80559e1d70e75ae72e331">libMesh::ParsedFEMFunction::_subexpressions</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _subexpressions</div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00254">parsed_fem_function.h:254</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_a205611f2e34f5a6bcef2c3d3f0aff88e"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#a205611f2e34f5a6bcef2c3d3f0aff88e">libMesh::ParsedFEMFunction::find_name</a></div><div class="ttdeci">std::size_t find_name(std::string_view varname, std::string_view expr) const </div><div class="ttdoc">用于解析变量名称的辅助函数。 </div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00779">parsed_fem_function.h:779</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1215,7 +1218,7 @@ template&lt;typename Output &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Real&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
           <td class="paramname"><em>time</em> = <code>0.</code>&#160;</td>
         </tr>
         <tr>
@@ -1280,7 +1283,7 @@ template&lt;typename Output&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Real&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
           <td class="paramname"><em>time</em>, </td>
         </tr>
         <tr>
@@ -1413,6 +1416,8 @@ template&lt;typename Output &gt; </div>
 </dl>
 
 <p>在文件 <a class="el" href="parsed__fem__function_8h_source.html">parsed_fem_function.h</a> 第 <a class="el" href="parsed__fem__function_8h_source.html#l00715">715</a> 行定义.</p>
+
+<p>参考 <a class="el" href="libmesh__common_8h_source.html#l00143">libMesh::Real</a>.</p>
 <div class="fragment"><div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;{</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;  <a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a530fb28fab8514d6d19149fc35d9a52a">_expression</a> = std::move(<a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#aa2c86cf0bdc23f14f569ce6e2585d9e9">expression</a>);</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  <a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a7cd7162519b80559e1d70e75ae72e331">_subexpressions</a>.clear();</div>
@@ -1454,8 +1459,8 @@ template&lt;typename Output &gt; </div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;      <span class="comment">// Add some basic constants, to Real precision.</span></div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;      <span class="keyword">auto</span> fp = std::make_unique&lt;FunctionParserBase&lt;Output&gt;&gt;();</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;      fp-&gt;AddConstant(<span class="stringliteral">&quot;NaN&quot;</span>, std::numeric_limits&lt;Real&gt;::quiet_NaN());</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;      fp-&gt;AddConstant(<span class="stringliteral">&quot;pi&quot;</span>, std::acos(Real(-1)));</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;      fp-&gt;AddConstant(<span class="stringliteral">&quot;e&quot;</span>, std::exp(Real(1)));</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;      fp-&gt;AddConstant(<span class="stringliteral">&quot;pi&quot;</span>, std::acos(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>(-1)));</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;      fp-&gt;AddConstant(<span class="stringliteral">&quot;e&quot;</span>, std::exp(<a class="code" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>(1)));</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;      libmesh_error_msg_if</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        (fp-&gt;Parse(<a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a7cd7162519b80559e1d70e75ae72e331">_subexpressions</a>.back(), <a class="code" href="classlibMesh_1_1ParsedFEMFunction.html#a261fe98f6bdba48ff6f325779701199d">variables</a>) != -1, <span class="comment">// -1 for success</span></div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;         <span class="stringliteral">&quot;ERROR: FunctionParser is unable to parse expression: &quot;</span></div>
@@ -1476,6 +1481,7 @@ template&lt;typename Output &gt; </div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_a530fb28fab8514d6d19149fc35d9a52a"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#a530fb28fab8514d6d19149fc35d9a52a">libMesh::ParsedFEMFunction::_expression</a></div><div class="ttdeci">std::string _expression</div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00253">parsed_fem_function.h:253</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_a7cd7162519b80559e1d70e75ae72e331"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#a7cd7162519b80559e1d70e75ae72e331">libMesh::ParsedFEMFunction::_subexpressions</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _subexpressions</div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00254">parsed_fem_function.h:254</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_a281fbba10524fdaae5bb02b3322adcef"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#a281fbba10524fdaae5bb02b3322adcef">libMesh::ParsedFEMFunction::parsers</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; FunctionParserBase&lt; Output &gt; &gt; &gt; parsers</div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00261">parsed_fem_function.h:261</a></div></div>
+<div class="ttc" id="namespacelibMesh_html_aef28359fb4851abec08fc99cfbac118d"><div class="ttname"><a href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">libMesh::Real</a></div><div class="ttdeci">DIE A HORRIBLE DEATH HERE typedef LIBMESH_DEFAULT_SCALAR_TYPE Real</div><div class="ttdef"><b>Definition:</b> <a href="libmesh__common_8h_source.html#l00143">libmesh_common.h:143</a></div></div>
 <div class="ttc" id="classlibMesh_1_1ParsedFEMFunction_html_aa2c86cf0bdc23f14f569ce6e2585d9e9"><div class="ttname"><a href="classlibMesh_1_1ParsedFEMFunction.html#aa2c86cf0bdc23f14f569ce6e2585d9e9">libMesh::ParsedFEMFunction::expression</a></div><div class="ttdeci">const std::string &amp; expression()</div><div class="ttdoc">获取解析表达式。 </div><div class="ttdef"><b>Definition:</b> <a href="parsed__fem__function_8h_source.html#l00165">parsed_fem_function.h:165</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -2191,7 +2197,7 @@ template&lt;typename Output = Number&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 14:03:01 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:07:07 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

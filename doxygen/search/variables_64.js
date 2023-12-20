@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['data',['data',['../classvariant__filter__iterator.html#a91c8a1a81300340c9e1e78aeb3b73985',1,'variant_filter_iterator']]],
   ['densematrix_3c_20complex_20_3e',['DenseMatrix&lt; Complex &gt;',['../namespacelibMesh.html#ac5377408788f64ab5f6743c83fb3b1c3',1,'libMesh']]],
   ['densematrix_3c_20real_20_3e',['DenseMatrix&lt; Real &gt;',['../namespacelibMesh.html#a46d189ab0edc741b6ce690de7be37ae4',1,'libMesh']]],
   ['densematrixbase_3c_20complex_20_3e',['DenseMatrixBase&lt; Complex &gt;',['../namespacelibMesh.html#aef9174bad3205bd418e47ea5985cc044',1,'libMesh']]],
@@ -14,6 +15,8 @@ var searchData=
   ['densevectorbase_3c_20real_20_3e',['DenseVectorBase&lt; Real &gt;',['../namespacelibMesh.html#abb392a411e969f9b9893bbc4afb3d868',1,'libMesh']]],
   ['diagonalmatrix_3c_20number_20_3e',['DiagonalMatrix&lt; Number &gt;',['../namespacelibMesh.html#ac190c4837324dc59a78c2f1868a1e6fd',1,'libMesh']]],
   ['distributedvector_3c_20number_20_3e',['DistributedVector&lt; Number &gt;',['../namespacelibMesh.html#a31e7e360c1f3684c9599122c80b6bd8f',1,'libMesh']]],
+  ['dof_5fcoupling',['dof_coupling',['../classlibMesh_1_1SparsityPattern_1_1Build.html#a7e288ac68552ad57f0b56c9feff455b2',1,'libMesh::SparsityPattern::Build']]],
+  ['dof_5fmap',['dof_map',['../classlibMesh_1_1SparsityPattern_1_1Build.html#adaaeb1039af971d4376bcd896686a281',1,'libMesh::SparsityPattern::Build']]],
   ['dt_5fparsers',['dt_parsers',['../classlibMesh_1_1ParsedFunction.html#aa4220ad85eff2db9fd35e54bad8d2265',1,'libMesh::ParsedFunction']]],
   ['dummy',['dummy',['../classlibMesh_1_1RawAccessor_3_01TypeNTensor_3_01N_00_01ScalarType_01_4_01_4.html#ab8e141dfb5da5fb5bae02d189ed71a7c',1,'libMesh::RawAccessor&lt; TypeNTensor&lt; N, ScalarType &gt; &gt;']]],
   ['dx_5fparsers',['dx_parsers',['../classlibMesh_1_1ParsedFunction.html#ac65059e8ede581e7c3e0c6a401b76b46',1,'libMesh::ParsedFunction']]],

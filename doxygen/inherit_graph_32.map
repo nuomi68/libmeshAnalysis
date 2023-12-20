@@ -1,3 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$structlibMesh_1_1TensorTools_1_1DecrementRank_3_01TensorValue_3_01T_01_4_01_4.html" title="libMesh::TensorTools\l::DecrementRank\&lt; TensorValue\l\&lt; T \&gt; \&gt;" alt="" coords="5,5,233,61"/>
+<area shape="rect" id="node1" href="$classlibMesh_1_1PeriodicBoundaryBase.html" title="The base class for defining periodic boundaries. " alt="" coords="5,5,232,32"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1PeriodicBoundary.html" title="The definition of a periodic boundary. " alt="" coords="280,5,475,32"/>
 </map>

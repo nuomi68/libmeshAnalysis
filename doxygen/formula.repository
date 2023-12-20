@@ -63,3 +63,7 @@
 \form#62:$ x $
 \form#63:$ i $
 \form#64:$ j $
+\form#65:$ Ue[i] = Ug[dof_indices[i]] $
+\form#66:$ \sqrt{-1} $
+\form#67:$ \pi=3.14159... $
+\form#68:$ zero=0. $

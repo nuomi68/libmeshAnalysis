@@ -17,10 +17,13 @@ var searchData=
   ['dense_5fvector_5fbase_2eh',['dense_vector_base.h',['../dense__vector__base_8h.html',1,'']]],
   ['diagonal_5fmatrix_2ec',['diagonal_matrix.C',['../diagonal__matrix_8C.html',1,'']]],
   ['diagonal_5fmatrix_2eh',['diagonal_matrix.h',['../diagonal__matrix_8h.html',1,'']]],
+  ['dirichlet_5fboundaries_2eh',['dirichlet_boundaries.h',['../dirichlet__boundaries_8h.html',1,'']]],
   ['dirichlet_5fboundary_2ec',['dirichlet_boundary.C',['../dirichlet__boundary_8C.html',1,'']]],
   ['distributed_5fvector_2ec',['distributed_vector.C',['../distributed__vector_8C.html',1,'']]],
   ['distributed_5fvector_2eh',['distributed_vector.h',['../distributed__vector_8h.html',1,'']]],
   ['dof_5fmap_2ec',['dof_map.C',['../dof__map_8C.html',1,'']]],
+  ['dof_5fmap_2eh',['dof_map.h',['../dof__map_8h.html',1,'']]],
   ['dof_5fmap_5fconstraints_2ec',['dof_map_constraints.C',['../dof__map__constraints_8C.html',1,'']]],
-  ['dof_5fobject_2ec',['dof_object.C',['../dof__object_8C.html',1,'']]]
+  ['dof_5fobject_2ec',['dof_object.C',['../dof__object_8C.html',1,'']]],
+  ['dof_5fobject_2eh',['dof_object.h',['../dof__object_8h.html',1,'']]]
 ];

@@ -1,0 +1,4 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$structvariant__filter__iterator_1_1PredBase.html" title="Abstract base class for the predicate. " alt="" coords="5,5,285,91"/>
+<area shape="rect" id="node2" href="$structvariant__filter__iterator_1_1Pred.html" title="The actual predicate is held as a template parameter here. " alt="" coords="333,5,613,91"/>
+</map>

@@ -1,3 +1,5 @@
 <map id="libMesh::TensorShellMatrix&lt; T &gt;" name="libMesh::TensorShellMatrix&lt; T &gt;">
-<area shape="rect" id="node2" href="$classlibMesh_1_1ShellMatrix.html" title="通用的Shell矩阵，即一个仅定义其对向量的作用的矩阵。此类包含必须在派生类中重写的纯虚拟成员。 " alt="" coords="86,95,279,121"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1ShellMatrix.html" title="通用的Shell矩阵，即一个仅定义其对向量的作用的矩阵。此类包含必须在派生类中重写的纯虚拟成员。 " alt="" coords="104,169,297,196"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1ReferenceCountedObject.html" title="libMesh::ReferenceCounted\lObject\&lt; ShellMatrix\&lt; T \&gt; \&gt;" alt="" coords="5,80,212,121"/>
+<area shape="rect" id="node4" href="$classlibMesh_1_1ReferenceCounter.html" title="This is the base class for enabling reference counting. " alt="" coords="9,5,208,32"/>
 </map>

@@ -1,4 +1,6 @@
 <map id="libMesh::DiagonalMatrix&lt; T &gt;" name="libMesh::DiagonalMatrix&lt; T &gt;">
-<area shape="rect" id="node5" href="$classlibMesh_1_1LumpedMassMatrix.html" title="模板类用于构造集中质量矩阵。 可能还有用于计算与整体系统缩放相关的数量。每当在此类上调用 add 方法时，我们都会将提供的值的绝对值相加到行索引 i 中。 " alt="" coords="59,244,306,271"/>
-<area shape="rect" id="node2" href="$classlibMesh_1_1SparseMatrix.html" title="这是一个通用的稀疏矩阵类。该类包含了必须在派生类中覆盖的纯虚拟成员。 使用一个公共的基类允许从不同的求解器包中以不同的格式统一访问稀疏矩阵。 " alt="" coords="80,95,285,121"/>
+<area shape="rect" id="node6" href="$classlibMesh_1_1LumpedMassMatrix.html" title="模板类用于构造集中质量矩阵。 可能还有用于计算与整体系统缩放相关的数量。每当在此类上调用 add 方法时，我们都会将提供的值的绝对值相加到行索引 i 中。 " alt="" coords="86,319,333,345"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1SparseMatrix.html" title="这是一个通用的稀疏矩阵类。该类包含了必须在派生类中覆盖的纯虚拟成员。 使用一个公共的基类允许从不同的求解器包中以不同的格式统一访问稀疏矩阵。 " alt="" coords="107,169,312,196"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1ReferenceCountedObject.html" title="libMesh::ReferenceCounted\lObject\&lt; SparseMatrix\&lt; T \&gt; \&gt;" alt="" coords="5,80,224,121"/>
+<area shape="rect" id="node4" href="$classlibMesh_1_1ReferenceCounter.html" title="This is the base class for enabling reference counting. " alt="" coords="15,5,214,32"/>
 </map>

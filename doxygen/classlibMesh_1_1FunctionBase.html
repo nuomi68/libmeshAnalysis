@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>FunctionBase是一个函数对象的基类，可以在某一点（可选地包括时间）进行评估。  
  <a href="classlibMesh_1_1FunctionBase.html#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="function__base_8h_source.html">function_base.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a>&gt;</code></p>
 <div class="dynheader">
 类 libMesh::FunctionBase&lt; Output &gt; 继承关系图:</div>
 <div class="dyncontent">
@@ -128,15 +128,15 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a1bfcfaf5b067f6c1b63b4d14d83078ef"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr<br class="typebreak"/>
 &lt; <a class="el" href="classlibMesh_1_1FunctionBase.html">FunctionBase</a>&lt; Output &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FunctionBase.html#a1bfcfaf5b067f6c1b63b4d14d83078ef">clone</a> () const =0</td></tr>
 <tr class="separator:a1bfcfaf5b067f6c1b63b4d14d83078ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af15cc1cd251c8c60f4ed0acb91bc3b50"><td class="memItemLeft" align="right" valign="top">virtual Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FunctionBase.html#af15cc1cd251c8c60f4ed0acb91bc3b50">operator()</a> (const Point &amp;p, const Real time=0.)=0</td></tr>
+<tr class="memitem:af15cc1cd251c8c60f4ed0acb91bc3b50"><td class="memItemLeft" align="right" valign="top">virtual Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FunctionBase.html#af15cc1cd251c8c60f4ed0acb91bc3b50">operator()</a> (const Point &amp;p, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time=0.)=0</td></tr>
 <tr class="separator:af15cc1cd251c8c60f4ed0acb91bc3b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe7e2b222c543db7a2ae5a43d6f4e2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FunctionBase.html#aebe7e2b222c543db7a2ae5a43d6f4e2d">operator()</a> (const Point &amp;p, <a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; Output &gt; &amp;output)</td></tr>
 <tr class="memdesc:aebe7e2b222c543db7a2ae5a43d6f4e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluation function for time-independent vector-valued functions.  <a href="#aebe7e2b222c543db7a2ae5a43d6f4e2d">更多...</a><br/></td></tr>
 <tr class="separator:aebe7e2b222c543db7a2ae5a43d6f4e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ee1c4d3b0e784b6f0e160f77e88ae09"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FunctionBase.html#a2ee1c4d3b0e784b6f0e160f77e88ae09">operator()</a> (const Point &amp;p, const Real time, <a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; Output &gt; &amp;output)=0</td></tr>
+<tr class="memitem:a2ee1c4d3b0e784b6f0e160f77e88ae09"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FunctionBase.html#a2ee1c4d3b0e784b6f0e160f77e88ae09">operator()</a> (const Point &amp;p, const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time, <a class="el" href="classlibMesh_1_1DenseVector.html">DenseVector</a>&lt; Output &gt; &amp;output)=0</td></tr>
 <tr class="memdesc:a2ee1c4d3b0e784b6f0e160f77e88ae09"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于时间无关的矢量值函数的评估函数。 将输出值设置在传入的 <code>output</code> <a class="el" href="classlibMesh_1_1DenseVector.html" title="定义用于有限元计算的稠密向量类。该类基本上是为了补充 DenseMatrix 类而设计的。 它相对于 std::vector 具有额外的功能，使其在有限元中特别有用，特别是对于方程组。 所有重写的虚拟函...">DenseVector</a> 中。  <a href="#a2ee1c4d3b0e784b6f0e160f77e88ae09">更多...</a><br/></td></tr>
 <tr class="separator:a2ee1c4d3b0e784b6f0e160f77e88ae09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2630355abfe856f5eb047da0396b67ab"><td class="memItemLeft" align="right" valign="top">virtual Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FunctionBase.html#a2630355abfe856f5eb047da0396b67ab">component</a> (unsigned int i, const Point &amp;p, Real time=0.)</td></tr>
+<tr class="memitem:a2630355abfe856f5eb047da0396b67ab"><td class="memItemLeft" align="right" valign="top">virtual Output&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FunctionBase.html#a2630355abfe856f5eb047da0396b67ab">component</a> (unsigned int i, const Point &amp;p, <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a> time=0.)</td></tr>
 <tr class="separator:a2630355abfe856f5eb047da0396b67ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b78b2741fc53ce08497153e3458ec78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibMesh_1_1FunctionBase.html#a5b78b2741fc53ce08497153e3458ec78">initialized</a> () const </td></tr>
 <tr class="separator:a5b78b2741fc53ce08497153e3458ec78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +165,7 @@ Protected 属性</h2></td></tr>
 <tr class="separator:ac7ae0fe70cde587824e70d65124f7586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><h3>template&lt;typename Output = Number&gt;<br/>
+<div class="textblock"><h3>template&lt;typename Output&gt;<br/>
 class libMesh::FunctionBase&lt; Output &gt;</h3>
 
 <p>FunctionBase是一个函数对象的基类，可以在某一点（可选地包括时间）进行评估。 </p>
@@ -177,7 +177,7 @@ class libMesh::FunctionBase&lt; Output &gt;</h3>
 <dl class="section date"><dt>日期</dt><dd>2003</dd></dl>
 <p>描述了FunctionBase类，它是一个函数对象的基类，用于表示在空间和时间上的数学函数。 这个类的实例可以表示标量或向量值函数，可以在指定的点和时间上进行评估。不同子类可以实现不同类型的函数对象。 使用派生类的构造函数来创建具体的函数对象。每个派生类的必需输入阻碍了常用的 <code>build()</code> 成员的有效使用， 但之后的虚成员允许通过 <code><a class="el" href="classlibMesh_1_1FunctionBase.html" title="FunctionBase是一个函数对象的基类，可以在某一点（可选地包括时间）进行评估。 ">FunctionBase</a></code> * 进行方便的、与libMesh通用的用法。 </p>
 
-<p>在文件 <a class="el" href="function__base_8h_source.html">function_base.h</a> 第 <a class="el" href="function__base_8h_source.html#l00061">61</a> 行定义.</p>
+<p>在文件 <a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a> 第 <a class="el" href="dirichlet__boundaries_8h_source.html#l00044">44</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a class="anchor" id="ab15c161e2a753154fc2be607ee2bba78"></a>
 <div class="memitem">
@@ -228,7 +228,7 @@ template&lt;typename Output &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -256,7 +256,7 @@ template&lt;typename Output = Number&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -282,7 +282,7 @@ template&lt;typename Output = Number&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -308,7 +308,7 @@ template&lt;typename Output = Number&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -341,7 +341,7 @@ template&lt;typename Output = Number&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -364,7 +364,7 @@ template&lt;typename Output = Number&gt; </div>
 
 <p>在 <a class="el" href="classlibMesh_1_1ParsedFunction.html#af12d230a96c5cae56d0da8be6accb927">libMesh::ParsedFunction&lt; Output, OutputGradient &gt;</a>, <a class="el" href="classlibMesh_1_1ParsedFunction.html#af12d230a96c5cae56d0da8be6accb927">libMesh::ParsedFunction&lt; T &gt;</a>, <a class="el" href="classlibMesh_1_1CompositeFunction.html#a9cbbcf478ae58a2c502cc88ec7ec19d4">libMesh::CompositeFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1ParsedFunction.html#abf732aa04a96c1f0acd5a98d2c9d73c5">libMesh::ParsedFunction&lt; Output, OutputGradient &gt;</a>, <a class="el" href="classlibMesh_1_1ParsedFunction.html#abf732aa04a96c1f0acd5a98d2c9d73c5">libMesh::ParsedFunction&lt; T &gt;</a>, <a class="el" href="classlibMesh_1_1AnalyticFunction.html#a987644dd92601640a8478d0eb2da0722">libMesh::AnalyticFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1ConstFunction.html#a91cab16276203a24f26f0d4a16e73a6f">libMesh::ConstFunction&lt; Output &gt;</a>, <a class="el" href="classlibMesh_1_1WrappedFunction.html#a96cc81bd4cba1f3b25fc276f3075f18d">libMesh::WrappedFunction&lt; Output &gt;</a> , 以及 <a class="el" href="classlibMesh_1_1ZeroFunction.html#ad9dbd1f16c69ca3d187781bda82cef6a">libMesh::ZeroFunction&lt; Output &gt;</a> 内被实现.</p>
 
-<p>参考自 <a class="el" href="composite__function_8h_source.html#l00079">libMesh::CompositeFunction&lt; Output &gt;::attach_subfunction()</a>.</p>
+<p>参考自 <a class="el" href="composite__function_8h_source.html#l00079">libMesh::CompositeFunction&lt; Output &gt;::attach_subfunction()</a> , 以及 <a class="el" href="dirichlet__boundary_8C_source.html#l00055">libMesh::DirichletBoundary::DirichletBoundary()</a>.</p>
 
 </div>
 </div>
@@ -392,7 +392,7 @@ template&lt;typename Output &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Real&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
           <td class="paramname"><em>time</em> = <code>0.</code>&#160;</td>
         </tr>
         <tr>
@@ -437,7 +437,7 @@ template&lt;typename Output &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -547,7 +547,7 @@ template&lt;typename Output &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -561,7 +561,7 @@ template&lt;typename Output = Number&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Real&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
           <td class="paramname"><em>time</em> = <code>0.</code>&#160;</td>
         </tr>
         <tr>
@@ -633,7 +633,7 @@ template&lt;typename Output&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -647,7 +647,7 @@ template&lt;typename Output = Number&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Real&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacelibMesh.html#aef28359fb4851abec08fc99cfbac118d">Real</a>&#160;</td>
           <td class="paramname"><em>time</em>, </td>
         </tr>
         <tr>
@@ -686,7 +686,7 @@ template&lt;typename Output = Number&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -712,7 +712,7 @@ template&lt;typename Output = Number&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -774,7 +774,7 @@ template&lt;typename Output &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -803,7 +803,7 @@ template&lt;typename Output = Number&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -831,7 +831,7 @@ template&lt;typename Output = Number&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Output = Number&gt; </div>
+template&lt;typename Output&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -855,12 +855,13 @@ template&lt;typename Output = Number&gt; </div>
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
+<li>/home/lwz/libmesh/include/base/<a class="el" href="dirichlet__boundaries_8h_source.html">dirichlet_boundaries.h</a></li>
 <li>/home/lwz/libmesh/include/numerics/<a class="el" href="function__base_8h_source.html">function_base.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2023年 十二月 20日 星期三 14:03:01 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2023年 十二月 20日 星期三 14:07:06 , 为 libmesh解析使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

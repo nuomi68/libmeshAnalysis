@@ -1,3 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$structlibMesh_1_1TensorTools_1_1MakeNumber_3_01TypeVector_3_01T_01_4_01_4.html" title="libMesh::TensorTools\l::MakeNumber\&lt; TypeVector\l\&lt; T \&gt; \&gt;" alt="" coords="5,5,208,61"/>
+<area shape="rect" id="node2" href="$classlibMesh_1_1SolverException.html" title="A class representing an exception during a solve. " alt="" coords="140,5,327,32"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1PetscSolverException.html" title="A specialization of the SolverException class for PETSc. " alt="" coords="375,5,596,32"/>
 </map>

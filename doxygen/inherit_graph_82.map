@@ -1,3 +1,3 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$structlibMesh_1_1WrappedPetsc.html" title="libMesh::WrappedPetsc\&lt; T \&gt;" alt="" coords="5,5,217,32"/>
+<area shape="rect" id="node1" href="$structlibMesh_1_1TensorTools_1_1MathWrapperTraits.html" title="此辅助结构用于确定模板类是否是我们的数学结构之一， 例如TypeVector、TypeTensor及其后代 " alt="" coords="5,5,196,47"/>
 </map>

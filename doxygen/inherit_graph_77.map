@@ -1,4 +1,3 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$classlibMesh_1_1TypeTensor.html" title="This class defines a tensor in LIBMESH_DIM dimensional space of type T. " alt="" coords="5,5,196,32"/>
-<area shape="rect" id="node2" href="$classlibMesh_1_1TensorValue.html" title="此类定义了LIBMESH_DIM维度的实数或复数空间中的张量。typedef RealTensorValue总是定义为实数值的张量， 而NumberTensorValue则根据库的配置定义为实数或复数值..." alt="" coords="244,5,441,32"/>
+<area shape="rect" id="node1" href="$structlibMesh_1_1TensorTools_1_1MakeReal_3_01TensorValue_3_01T_01_4_01_4.html" title="libMesh::TensorTools\l::MakeReal\&lt; TensorValue\l\&lt; T \&gt; \&gt;" alt="" coords="5,5,192,61"/>
 </map>
